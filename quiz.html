@@ -103,6 +103,8 @@ fetch('data/'+subject+'.json').then(function(r){return r.json()}).then(function(
 A=d;
 document.getElementById('quizTitle').textContent=subject;
 document.getElementById('pageTitle').textContent=subject+' - 题库练习';
+var subs={'创业导论':'复旦大学 · 题库随机练习','舞蹈鉴赏':'北京舞蹈学院 · 题库随机练习','中国书法史':'南开大学 · 超星尔雅 · 题库随机练习','大学英语词汇':'词汇选择题 · 题库随机练习'};
+document.getElementById('quizSubtitle').textContent=subs[subject]||'题库随机练习';
 document.getElementById('totalInfo').textContent='题库共 '+A.length+' 题';
 var chs=[...new Set(A.map(function(q){return q.chapter}))].sort(function(a,b){var x=a.split('.'),y=b.split('.');return(+x[0]-+y[0])||(+x[1]-+y[1])});
 var cf=document.getElementById('cf'),cml=document.getElementById('cml');
