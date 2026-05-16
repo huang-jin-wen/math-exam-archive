@@ -138,7 +138,6 @@ else{var b=MB[i]||{},ua=UA[i]||'';oh='<div class="op">';q.options.forEach(functi
 if(q.type==='多选题'&&!rv){var ks=Object.keys(b);oh+='<div class="sb"><button class="bt bt-s" onclick="SM('+i+')" '+(ks.length===0?'disabled style="opacity:.5"':'')+'>&#x1F4AC; 提交答案</button></div>'}}
 var fh='';if(rv){var ua=UA[i]||'(未作答)',ok=false;if(q.type==='多选题'){ok=ua.split('').sort().join('')===q.answer.split('').sort().join('')}else{ok=ua===q.answer}
 fh='<div class="fb sh '+(ok?'fc':'fi')+'"><strong>'+(ok?'&#x2705; 回答正确！':'&#x274C; 回答错误')+'</strong><br>'+(ok?'':'你的答案：<b>'+ua+'</b><br>')+'正确答案：<b>'+q.answer+'</b>'+(q.type==='判断题'?' ('+(q.answer==='√'?'正确':'错误')+')':'');
-if(q.notes){fh+='<div style="margin-top:10px;padding-top:10px;border-top:1px dashed #e8e8e8;font-size:.95em;line-height:1.8"><strong>&#x1F4D6; 选项释义：</strong><br>';q.options.forEach(function(o){var n=q.notes[o.label]||'';var m=o.label===q.answer?' &#x2714;':'';fh+='<span style="color:'+(o.label===q.answer?'#52c41a':'#666')+'">'+o.label+'. '+o.text+' <span style="color:#999">'+n+'</span>'+m+'</span><br>'});fh+='</div>'}
 if(q.trans){fh+='<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8e8e8;color:#666;font-size:.95em"><strong>&#x1F30D; 整句翻译：</strong>'+q.trans+'</div>'}
 fh+='</div>'}
 document.getElementById('qa').innerHTML='<div class="qc"><div class="qh"><span class="qb '+tc+'">'+q.type+'</span><span class="qp">'+q.chapter+' '+q.chapter_title+' · 第 '+(I+1)+'/'+Q.length+' 题</span></div><div class="qs">'+q.stem+'</div>'+oh+fh+'</div>';U2()}
