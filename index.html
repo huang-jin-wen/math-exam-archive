@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>开心猪和冷脸鼠的学习小站</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--blue:#38bdf8;--purple:#a78bfa;--pink:#f472b6;--green:#4ade80;--orange:#fb923c;--yellow:#fbbf24;--text:#e2e8f0;--sub:#94a3b8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Microsoft YaHei','PingFang SC',sans-serif;line-height:1.7;min-height:100vh}
+
+/* ── Hero ── */
+.hero{text-align:center;padding:60px 20px 50px;background:linear-gradient(135deg,#1e293b 0%,#0f172a 40%,#1a1a2e 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60%;left:-30%;width:160%;height:200%;background:radial-gradient(ellipse at 30% 50%,rgba(56,189,248,.06) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(167,139,250,.05) 0%,transparent 60%);pointer-events:none}
+.hero h1{font-size:2.6em;background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative}
+.hero .subtitle{color:var(--sub);font-size:1.05em;margin-top:10px;position:relative}
+.hero .badge-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:18px;position:relative}
+.hero .badge{background:var(--card);border:1px solid var(--border);padding:5px 16px;border-radius:20px;font-size:.82em;color:var(--sub)}
+
+/* ── Stats bar ── */
+.stats-bar{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:0 auto;max-width:800px;padding:0 20px;position:relative;top:-28px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 20px;text-align:center;flex:1;min-width:110px;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.stat-card .val{font-size:1.7em;font-weight:bold}
+.stat-card .lbl{font-size:.78em;color:var(--sub);margin-top:2px}
+
+/* ── Container ── */
+.container{max-width:960px;margin:0 auto;padding:0 20px 40px}
+
+/* ── Section ── */
+.section-title{color:var(--blue);font-size:1.1em;font-weight:bold;text-align:center;margin:20px 0 18px;padding-bottom:10px;border-bottom:2px dashed var(--border)}
+
+/* ── Exam Cards ── */
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:18px}
+.exam-card{background:var(--card);border-radius:14px;overflow:hidden;border-left:4px solid transparent;transition:transform .25s,box-shadow .25s;cursor:pointer;text-decoration:none;color:inherit;display:block}
+.exam-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.4)}
+.exam-card-inner{padding:20px 22px}
+.exam-card .year{font-size:1.6em;font-weight:bold;margin-bottom:2px}
+.exam-card .course{font-size:.95em;color:var(--sub);margin-bottom:10px}
+.exam-card .meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.exam-card .meta span{font-size:.78em;padding:3px 10px;border-radius:14px}
+.meta-total{background:var(--card);border:1px solid var(--border);color:var(--sub)}
+.meta-score{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.25);color:var(--green)}
+.meta-time{background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25);color:var(--blue)}
+.exam-card .tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{display:inline-block;padding:2px 10px;border-radius:16px;font-size:.72em;font-weight:500}
+.tag-b{background:#0c4a6e;color:#7dd3fc}.tag-p{background:#3b1f6e;color:#c4b5fd}
+.tag-pk{background:#701a4e;color:#f9a8d4}.tag-g{background:#064e3b;color:#6ee7b7}
+.tag-o{background:#7c2d12;color:#fdba74}
+.exam-card .arrow{position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.3em;color:var(--sub);transition:transform .2s,color .2s}
+.exam-card:hover .arrow{transform:translateY(-50%) translateX(4px);color:var(--blue)}
+
+/* ── Placeholder card ── */
+.exam-card.placeholder{border:2px dashed var(--border);opacity:.55;cursor:default}
+.exam-card.placeholder:hover{transform:none;box-shadow:none}
+.exam-card.placeholder .exam-card-inner{text-align:center;padding:36px 22px}
+.exam-card.placeholder .coming{font-size:1.1em;color:var(--sub)}
+.exam-card.placeholder .hint{font-size:.82em;color:var(--border);margin-top:4px}
+
+/* ── Footer ── */
+.footer{text-align:center;color:var(--sub);font-size:.82em;padding:30px 20px;border-top:1px solid var(--border);margin-top:20px}
+
+/* ── Quiz Panel ── */
+.quiz-panel{background:var(--card);border:2px solid var(--pink);border-radius:16px;padding:30px;max-width:700px;margin:30px auto;text-align:center}
+.quiz-panel h2{color:var(--pink);font-size:1.3em;margin-bottom:4px}
+.quiz-panel .quiz-panel-sub{color:var(--sub);font-size:.85em;margin-bottom:20px}
+.quiz-paper-checks{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:20px}
+.paper-check{display:flex;align-items:center;gap:8px;background:#0f172a;border:1.5px solid var(--border);border-radius:10px;padding:10px 16px;cursor:pointer;transition:.2s;user-select:none;font-size:.9em}
+.paper-check:hover{border-color:var(--blue)}
+.paper-check input{display:none}
+.paper-check .dot{width:18px;height:18px;border-radius:5px;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s}
+.paper-check .dot::after{content:'✓';color:transparent;font-size:.75em;font-weight:bold}
+.paper-check.selected .dot{background:var(--green);border-color:var(--green)}
+.paper-check.selected .dot::after{color:#0f172a}
+.paper-check-badge{font-size:.72em;padding:2px 8px;border-radius:10px;background:var(--card);color:var(--sub)}
+.quiz-count-row{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:6px}
+.quiz-count-row span{color:var(--sub);font-size:.9em}
+.quiz-count-select{background:#0f172a;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:8px 14px;font-size:.9em;font-family:inherit;cursor:pointer}
+.quiz-count-select option{background:var(--card)}
+.quiz-go-btn{background:var(--pink);color:#0f172a;border:none;padding:10px 28px;border-radius:10px;font-weight:bold;font-size:.95em;font-family:inherit;cursor:pointer;transition:transform .2s,background .2s}
+.quiz-go-btn:hover{transform:scale(1.04);background:var(--purple)}
+.paper-check.disabled{opacity:.4;cursor:not-allowed;pointer-events:none}
+
+/* ── Anim ── */
+@keyframes slideIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.exam-card{animation:slideIn .5s ease-out backwards}
+.exam-card:nth-child(2){animation-delay:.08s}
+.exam-card:nth-child(3){animation-delay:.16s}
+.exam-card:nth-child(4){animation-delay:.24s}
+.exam-card:nth-child(5){animation-delay:.32s}
+
+@media(max-width:768px){
+  .hero h1{font-size:1.6em}
+  .exam-grid{grid-template-columns:1fr}
+  .stats-bar{gap:8px}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>📚 开心猪和冷脸鼠的学习小站</h1>
+  <p class="subtitle">高数解析 · 题库练习 · 学习工具</p>
+  <div class="badge-row">
+    <span class="badge">🧮 高等数学A3</span>
+    <span class="badge">📝 题库练习 600+题</span>
+    <span class="badge">🎓 多学科学习资源</span>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-card"><div class="val" style="color:var(--blue)">3</div><div class="lbl">数学试卷</div></div>
+  <div class="stat-card"><div class="val" style="color:var(--green)">3</div><div class="lbl">题库练习</div></div>
+  <div class="stat-card"><div class="val" style="color:var(--pink)">600+</div><div class="lbl">练习题目</div></div>
+  <div class="stat-card"><div class="val" style="color:var(--yellow)">51</div><div class="lbl">逐题精讲</div></div>
+</div>
+
+<div class="container">
+
+<div class="section-title">📋 已收录试卷</div>
+
+<div class="exam-grid">
+
+<!-- ═══ Exam 1: 2021-2022 ═══ -->
+<a href="高数A3期末试卷解析.html" class="exam-card" style="border-left-color:var(--purple)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--purple)">2021–2022</div>
+    <div class="course">高等数学A(3) · 期末试卷</div>
+    <div class="meta">
+      <span class="meta-total">📝 17 题</span>
+      <span class="meta-score">📊 100 分</span>
+      <span class="meta-time">⏱ 100 分钟</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-b">链式法则</span><span class="tag tag-b">隐函数求导</span><span class="tag tag-b">可微性</span>
+      <span class="tag tag-p">极值判定</span><span class="tag tag-p">积分方程</span>
+      <span class="tag tag-pk">极坐标</span><span class="tag tag-pk">柱坐标</span>
+      <span class="tag tag-g">球坐标</span><span class="tag tag-o">不等式证明</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+
+<!-- ═══ Exam 2: 2022-2023 ═══ -->
+<a href="高数A3-2023期末试卷解析-v2.html" class="exam-card" style="border-left-color:var(--blue)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--blue)">2022–2023</div>
+    <div class="course">高等数学A(3) · 期末试卷 A卷</div>
+    <div class="meta">
+      <span class="meta-total">📝 17 题</span>
+      <span class="meta-score">📊 100 分</span>
+      <span class="meta-time">⏱ 100 分钟</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-b">方向导数</span><span class="tag tag-b">全微分</span><span class="tag tag-b">二重积分</span>
+      <span class="tag tag-p">切平面</span><span class="tag tag-p">三重积分</span>
+      <span class="tag tag-pk">向量代数</span><span class="tag tag-pk">二次曲面</span>
+      <span class="tag tag-g">可微性</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+
+<!-- ═══ Exam 3: 2023-2024 ═══ -->
+<a href="高数A3-2024期末试卷解析.html" class="exam-card" style="border-left-color:var(--green)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--green)">2023–2024</div>
+    <div class="course">高等数学A(3) · 期末试卷 A卷</div>
+    <div class="meta">
+      <span class="meta-total">📝 17 题</span>
+      <span class="meta-score">📊 100 分</span>
+      <span class="meta-time">⏱ 100 分钟</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-b">偏导数</span><span class="tag tag-b">梯度</span><span class="tag tag-b">Lagrange乘数</span>
+      <span class="tag tag-p">二重积分</span><span class="tag tag-p">三重积分</span>
+      <span class="tag tag-pk">空间曲线</span><span class="tag tag-pk">二次曲面</span>
+      <span class="tag tag-g">证明题</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+
+<!-- ═══ Placeholder: 未来添加 ═══ -->
+<div class="exam-card placeholder">
+  <div class="exam-card-inner">
+    <div class="coming">📦 更多试卷即将添加…</div>
+    <div class="hint">2020-2021 / 期中试卷 / 补考试卷</div>
+  </div>
+</div>
+
+</div><!-- .exam-grid -->
+
+<div class="section-title">📚 其他学习工具</div>
+
+<div class="exam-grid">
+<a href="quiz.html?subject=创业导论" class="exam-card" style="border-left-color:var(--orange)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--orange)">大学生创业导论</div>
+    <div class="course">复旦大学 · 题库随机练习</div>
+    <div class="meta">
+      <span class="meta-total">📝 160 题</span>
+      <span class="meta-score">📋 单选+多选+判断</span>
+      <span class="meta-time">🎲 随机抽题</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-o">创业基础</span><span class="tag tag-o">创新思维</span><span class="tag tag-o">创业计划</span>
+      <span class="tag tag-g">章节筛选</span><span class="tag tag-g">对答案</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+
+<a href="quiz.html?subject=中国书法史" class="exam-card" style="border-left-color:var(--purple)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--purple)">中国书法史</div>
+    <div class="course">南开大学 · 超星尔雅 · 题库随机练习</div>
+    <div class="meta">
+      <span class="meta-total">📝 200 题</span>
+      <span class="meta-score">📋 单选103+多选17+判断80</span>
+      <span class="meta-time">🎲 随机抽题</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-p">书法基础</span><span class="tag tag-p">古典舞</span><span class="tag tag-p">书论</span>
+      <span class="tag tag-g">章节筛选</span><span class="tag tag-g">对答案</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+
+<a href="quiz.html?subject=舞蹈鉴赏" class="exam-card" style="border-left-color:var(--pink)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--pink)">舞蹈鉴赏</div>
+    <div class="course">北京舞蹈学院 · 题库随机练习</div>
+    <div class="meta">
+      <span class="meta-total">📝 240 题</span>
+      <span class="meta-score">📋 单选107+多选37+判断96</span>
+      <span class="meta-time">🎲 随机抽题</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-pk">古典舞</span><span class="tag tag-pk">民间舞</span><span class="tag tag-pk">现代舞</span>
+      <span class="tag tag-g">章节筛选</span><span class="tag tag-g">对答案</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+
+<a href="quiz.html?subject=大学英语词汇" class="exam-card" style="border-left-color:var(--green)">
+  <div class="exam-card-inner">
+    <div class="year" style="color:var(--green)">大学英语2 · B2U1-U4</div>
+    <div class="course">词汇选择题 · 题库随机练习</div>
+    <div class="meta">
+      <span class="meta-total">📝 120 题</span>
+      <span class="meta-score">📋 4个单元 · 单选</span>
+      <span class="meta-time">🎲 随机抽题</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-g">B2U1</span><span class="tag tag-g">B2U2</span><span class="tag tag-g">B2U3</span>
+      <span class="tag tag-g">B2U4</span><span class="tag tag-g">对答案</span>
+    </div>
+  </div>
+  <span class="arrow">→</span>
+</a>
+</div>
+
+<div class="quiz-panel">
+  <h2>🎲 随机组卷</h2>
+  <p class="quiz-panel-sub">勾选试卷 → 选择题数 → 一键抽题，模拟考试</p>
+  <div class="quiz-paper-checks" id="quizPaperChecks">
+    <label class="paper-check selected" data-url="高数A3期末试卷解析.html">
+      <span class="dot"></span> 2021-2022 试卷
+      <span class="paper-check-badge">17题</span>
+    </label>
+    <label class="paper-check selected" data-url="高数A3-2023期末试卷解析-v2.html">
+      <span class="dot"></span> 2022-2023 试卷
+      <span class="paper-check-badge">17题</span>
+    </label>
+    <label class="paper-check selected" data-url="高数A3-2024期末试卷解析.html">
+      <span class="dot"></span> 2023-2024 试卷
+      <span class="paper-check-badge">17题</span>
+    </label>
+  </div>
+  <div class="quiz-count-row">
+    <span>抽取题数：</span>
+    <select class="quiz-count-select" id="quizCountSelect">
+      <option value="3">3 题（快速测试）</option>
+      <option value="5" selected>5 题（常规练习）</option>
+      <option value="8">8 题</option>
+      <option value="12">12 题</option>
+      <option value="17">17 题（全卷）</option>
+    </select>
+    <button class="quiz-go-btn" onclick="startRandomQuiz()">🎯 开始抽题</button>
+  </div>
+</div>
+
+</div><!-- .container -->
+
+<div class="footer">
+  <p>开心猪和冷脸鼠的学习小站 · Made with ❤️</p>
+</div>
+
+<script>
+// Quiz panel logic
+(function(){
+  var checks = document.querySelectorAll('.paper-check');
+  checks.forEach(function(el){
+    el.addEventListener('click',function(e){
+      if(e.target.tagName==='INPUT')return;
+      this.classList.toggle('selected');
+    });
+  });
+})();
+function startRandomQuiz(){
+  var selected = document.querySelectorAll('.paper-check.selected');
+  if(selected.length===0){alert('请至少勾选一套试卷！');return;}
+  var idx = Math.floor(Math.random()*selected.length);
+  var url = selected[idx].getAttribute('data-url');
+  var count = document.getElementById('quizCountSelect').value;
+  window.location.href = url + '#quiz=' + count;
+}
+</script>
+</body>
+</html>

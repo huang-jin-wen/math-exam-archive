@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title id="pageTitle">题库练习</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;background:#f0f2f5;color:#333;min-height:100vh;-webkit-font-smoothing:antialiased}
+.c{max-width:640px;margin:0 auto;padding:20px}
+.h{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:16px 14px;border-radius:12px;margin-bottom:20px;text-align:center}
+.h h1{font-size:1.5em;margin-bottom:6px}
+.h p{opacity:.85;font-size:.9em}
+.ct{background:#fff;border-radius:12px;padding:10px 12px;margin-bottom:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ct label{font-size:.85em;color:#666;white-space:nowrap}
+.ct select,.ct input{padding:8px 12px;border:1px solid #d9d9d9;border-radius:6px;font-size:.9em;background:#fff}
+.ct select{min-width:160px;max-width:220px}
+.ct select:focus,.ct input:focus{outline:none;border-color:#667eea}
+.bt{padding:9px 20px;border:none;border-radius:6px;cursor:pointer;font-size:.9em;font-weight:500;transition:opacity .15s,background-color .15s;white-space:nowrap}
+.bt-p{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}.bt-p:hover{opacity:.85}
+.bt-o{background:#fff;color:#667eea;border:1px solid #667eea}.bt-o:hover{background:#f5f3ff}
+.bt-s{background:#52c41a;color:#fff}.bt-s:hover{opacity:.85}
+.bt-d{background:#ff4d4f;color:#fff}.bt-d:hover{opacity:.85}
+.st{background:#fff;border-radius:12px;padding:10px 14px;margin-bottom:16px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:8px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.si{text-align:center}.sn{font-size:1.4em;font-weight:700;color:#667eea}.sl{font-size:.8em;color:#999}
+.qc{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:16px}
+.qh{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.qb{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.8em;font-weight:500}
+.bs{background:#e6f7ff;color:#1890ff}.bm{background:#fff7e6;color:#fa8c16}.bj{background:#f6ffed;color:#52c41a}
+.qp{font-size:.8em;color:#999}
+.qs{font-size:1.05em;line-height:1.7;margin-bottom:20px;color:#1a1a1a}
+.op{display:flex;flex-direction:column;gap:10px}
+.oi{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border:2px solid #e8e8e8;border-radius:8px;cursor:pointer;transition:border-color .12s,background-color .12s}
+.oi:active{background:#f0f0ff}
+.oi.sel{border-color:#667eea;background:#f0f0ff}
+.oi.ok{border-color:#52c41a;background:#f6ffed}
+.oi.er{border-color:#ff4d4f;background:#fff2f0}
+.oi.di{pointer-events:none}
+.ol{width:30px;height:30px;border-radius:50%;background:#f0f2f5;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.9em;flex-shrink:0;transition:background-color .12s,color .12s}
+.oi.sel .ol{background:#667eea;color:#fff}.oi.ok .ol{background:#52c41a;color:#fff}.oi.er .ol{background:#ff4d4f;color:#fff}
+.ot{line-height:1.5;padding-top:3px;flex:1}
+.jo{display:flex;gap:16px}
+.jb{flex:1;padding:12px;border:2px solid #e8e8e8;border-radius:8px;text-align:center;cursor:pointer;font-size:1.1em;font-weight:600;transition:border-color .12s,background-color .12s}
+.jb:active{background:#f0f0ff}.jb.sel{border-color:#667eea;background:#f0f0ff}
+.jb.ok{border-color:#52c41a;background:#f6ffed}.jb.er{border-color:#ff4d4f;background:#fff2f0}.jb.di{pointer-events:none}
+.sb{margin-top:16px;text-align:center}
+.fb{margin-top:16px;padding:14px 16px;border-radius:8px;display:none;line-height:1.6;animation:fi .3s}
+.fb.sh{display:block}.fc{background:#f6ffed;border:1px solid #b7eb8f}.fi{background:#fff2f0;border:1px solid #ffccc7}
+@keyframes fi{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.ab{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;justify-content:center}
+.em{text-align:center;padding:60px 20px;color:#999}.em p{font-size:.95em}.em .ec{font-size:.8em;color:#bbb;margin-top:8px}
+.cm{background:#fff;border-radius:12px;padding:8px 20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.cmt{cursor:pointer;font-size:.85em;color:#666;user-select:none}.cmt:hover{color:#667eea}
+.cmp{margin-top:8px;padding-top:8px;border-top:1px solid #f0f0f0}
+.cml{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.cpl{font-size:.78em;color:#667eea;cursor:pointer;margin-right:12px;user-select:none}.cpl:hover{text-decoration:underline}
+.chi{display:inline-block;padding:4px 10px;border-radius:14px;font-size:.75em;background:#f5f5f5;cursor:pointer;user-select:none;transition:background-color .12s}
+.chi:hover{background:#e6e6ff}.chi.ck{background:#667eea;color:#fff}
+@media(max-width:600px){.c{padding:10px}.ct{flex-direction:column;align-items:stretch}.ct select,.ct input{width:100%}.bt{width:100%}.jo{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="h"><h1 id="quizTitle">题库练习</h1><p id="quizSubtitle">加载中...</p></div>
+<div class="ct">
+<label>章节</label><select id="cf"><option value="all">全部</option></select>
+<label>题型</label><select id="tf"><option value="all">全部</option><option value="单选题">单选题</option><option value="多选题">多选题</option><option value="判断题">判断题</option></select>
+<label>数量</label><input type="number" id="ci" value="10" min="1" max="999" style="width:60px">
+<button class="bt bt-p" onclick="S()">&#x1F3B2; 抽题</button>
+<button class="bt bt-o" onclick="R()">&#x1F504; 重置</button>
+</div>
+<div class="cm" id="cm">
+<span class="cmt" onclick="TCM()">&#x1F4CB; 多选章节 &#x25B8;</span>
+<div class="cmp" id="cmp" style="display:none">
+<span class="cpl" onclick="SA()">全选</span><span class="cpl" onclick="DA()">清除</span>
+<div class="cml" id="cml"></div>
+</div>
+</div>
+<div class="st">
+<div class="si"><div class="sn" id="st">0</div><div class="sl">题数</div></div>
+<div class="si"><div class="sn" id="sd">0</div><div class="sl">已做</div></div>
+<div class="si"><div class="sn" id="sc">0</div><div class="sl">正确</div></div>
+<div class="si"><div class="sn" id="sa">-</div><div class="sl">正确率</div></div>
+<div class="si"><div class="sn" id="sr">0</div><div class="sl">剩余</div></div>
+</div>
+<div id="qa"><div class="em"><p>&#x1F446; 选择条件，点击「抽题」开始</p><p class="ec" id="totalInfo"></p></div></div>
+<div class="ab" id="ab" style="display:none">
+<button class="bt bt-o" onclick="P()">&#x2B05; 上一题</button>
+<button class="bt bt-p" onclick="N()">下一题 &#x27A1;</button>
+<button class="bt bt-d" onclick="R()">&#x1F504; 重新抽题</button>
+</div>
+</div>
+<script>
+var A=[],Q=[],I=0,UA={},RV={},MB={};
+
+// Load data based on URL param
+var params=new URLSearchParams(window.location.search);
+var subject=params.get('subject');
+if(!subject){document.getElementById('qa').innerHTML='<div class="em"><p>请通过导航页选择科目</p></div>';}
+
+fetch('data/'+subject+'.json').then(function(r){return r.json()}).then(function(d){
+A=d;
+document.getElementById('quizTitle').textContent=subject;
+document.getElementById('pageTitle').textContent=subject+' - 题库练习';
+document.getElementById('totalInfo').textContent='题库共 '+A.length+' 题';
+var chs=[...new Set(A.map(function(q){return q.chapter}))].sort(function(a,b){var x=a.split('.'),y=b.split('.');return(+x[0]-+y[0])||(+x[1]-+y[1])});
+var cf=document.getElementById('cf'),cml=document.getElementById('cml');
+chs.forEach(function(ch){
+var o=document.createElement('option');o.value=ch;
+var q=A.find(function(q){return q.chapter===ch});
+var t=q?q.chapter_title:'';if(t.length>15)t=t.substring(0,14)+'…';
+o.textContent=ch+' '+t;cf.appendChild(o);
+var chi=document.createElement('span');chi.className='chi';chi.textContent=ch;
+chi.title=ch+' '+(q?q.chapter_title:'');
+chi.onclick=function(){this.classList.toggle('ck');UCT()};cml.appendChild(chi);
+});
+}).catch(function(e){
+document.getElementById('qa').innerHTML='<div class="em"><p>加载失败：'+subject+'</p></div>';
+});
+
+function H(a){var b=[].concat(a);for(var i=b.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=b[i];b[i]=b[j];b[j]=t}return b}
+function S(){var ch=document.getElementById('cf').value,tp=document.getElementById('tf').value,n=parseInt(document.getElementById('ci').value)||10,p=A.slice();
+var mc=GS();if(mc){p=p.filter(function(q){return mc.indexOf(q.chapter)>=0})}
+else if(ch!=='all')p=p.filter(function(q){return q.chapter===ch});
+if(tp!=='all')p=p.filter(function(q){return q.type===tp});
+if(!p.length){alert('无符合条件题目');return}n=Math.min(n,p.length);
+Q=H(p).slice(0,n);I=0;UA={};RV={};MB={};U2();V();document.getElementById('ab').style.display='flex'}
+function R(){Q=[];I=0;UA={};RV={};MB={};document.getElementById('qa').innerHTML='<div class="em"><p>&#x1F446; 选择条件，点击「抽题」开始</p><p class="ec">题库共 '+A.length+' 题</p></div>';document.getElementById('ab').style.display='none';U2()}
+function U2(){var t=Q.length,d=Object.keys(UA).length,c=0;for(var i in UA){var q=Q[i];if(q.type==='多选题'){if(UA[i].split('').sort().join('')===q.answer.split('').sort().join(''))c++}else{if(UA[i]===q.answer)c++}}document.getElementById('st').textContent=t;document.getElementById('sd').textContent=d;document.getElementById('sc').textContent=c;document.getElementById('sa').textContent=d>0?Math.round(c/d*100)+'%':'-';document.getElementById('sr').textContent=t-d}
+function T(i,v){if(i in RV)return;var q=Q[i];if(q.type==='多选题'){if(!MB[i])MB[i]={};if(MB[i][v]){delete MB[i][v]}else{MB[i][v]=1}V();return}UA[i]=v;RV[i]=1;V();U2()}
+function SM(i){if(i in RV)return;var b=MB[i]||{};var ks=Object.keys(b).sort();UA[i]=ks.join('');RV[i]=1;V();U2()}
+function V(){if(!Q.length)return;var q=Q[I],i=I,rv=i in RV,tc=q.type==='单选题'?'bs':q.type==='多选题'?'bm':'bj',oh='';
+if(q.type==='判断题'){var ua=UA[i],ca=q.answer,g=function(v){if(!rv)return ua===v?'sel':'';if(v===ca)return'ok';if(v===ua&&ua!==ca)return'er';return''};oh='<div class="jo"><div class="jb '+g('√')+' '+(rv?'di':'')+'" onclick="T('+i+',\'√\')">&#x2705; 正确</div><div class="jb '+g('X')+' '+(rv?'di':'')+'" onclick="T('+i+',\'X\')">&#x274C; 错误</div></div>'}
+else{var b=MB[i]||{},ua=UA[i]||'';oh='<div class="op">';q.options.forEach(function(o){var cl='';if(!rv){if(q.type==='多选题'){if(b[o.label])cl='sel'}else{if(ua===o.label)cl='sel'}}else{var ca=q.answer;if(q.type==='多选题'){if(ca.indexOf(o.label)>=0)cl='ok';if(ua.indexOf(o.label)>=0&&ca.indexOf(o.label)<0)cl='er'}else{if(o.label===ca)cl='ok';if(o.label===ua&&o.label!==ca)cl='er'}}if(rv)cl+=' di';var ck=rv?'':'onclick="T('+i+',\''+o.label+'\')"';oh+='<div class="oi '+cl+'" '+ck+'><div class="ol">'+o.label+'</div><div class="ot">'+o.text+'</div></div>'});oh+='</div>';
+if(q.type==='多选题'&&!rv){var ks=Object.keys(b);oh+='<div class="sb"><button class="bt bt-s" onclick="SM('+i+')" '+(ks.length===0?'disabled style="opacity:.5"':'')+'>&#x1F4AC; 提交答案</button></div>'}}
+var fh='';if(rv){var ua=UA[i]||'(未作答)',ok=false;if(q.type==='多选题'){ok=ua.split('').sort().join('')===q.answer.split('').sort().join('')}else{ok=ua===q.answer}
+fh='<div class="fb sh '+(ok?'fc':'fi')+'"><strong>'+(ok?'&#x2705; 回答正确！':'&#x274C; 回答错误')+'</strong><br>'+(ok?'':'你的答案：<b>'+ua+'</b><br>')+'正确答案：<b>'+q.answer+'</b>'+(q.type==='判断题'?' ('+(q.answer==='√'?'正确':'错误')+')':'');
+if(q.notes){fh+='<div style="margin-top:10px;padding-top:10px;border-top:1px dashed #e8e8e8;font-size:.95em;line-height:1.8"><strong>&#x1F4D6; 选项释义：</strong><br>';q.options.forEach(function(o){var n=q.notes[o.label]||'';var m=o.label===q.answer?' &#x2714;':'';fh+='<span style="color:'+(o.label===q.answer?'#52c41a':'#666')+'">'+o.label+'. '+o.text+' <span style="color:#999">'+n+'</span>'+m+'</span><br>'});fh+='</div>'}
+if(q.trans){fh+='<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8e8e8;color:#666;font-size:.95em"><strong>&#x1F30D; 整句翻译：</strong>'+q.trans+'</div>'}
+fh+='</div>'}
+document.getElementById('qa').innerHTML='<div class="qc"><div class="qh"><span class="qb '+tc+'">'+q.type+'</span><span class="qp">'+q.chapter+' '+q.chapter_title+' · 第 '+(I+1)+'/'+Q.length+' 题</span></div><div class="qs">'+q.stem+'</div>'+oh+fh+'</div>';U2()}
+function N(){if(I<Q.length-1){I++;V();var qc=document.querySelector('.qc');if(qc)qc.scrollIntoView({behavior:'smooth',block:'start'})}}
+function P(){if(I>0){I--;V();var qc=document.querySelector('.qc');if(qc)qc.scrollIntoView({behavior:'smooth',block:'start'})}}
+
+// Multi-select
+function TCM(){var p=document.getElementById('cmp'),t=document.querySelector('.cmt');if(p.style.display==='none'){p.style.display='block';t.innerHTML='&#x1F4CB; 多选章节 &#x25BE;'}else{p.style.display='none';t.innerHTML='&#x1F4CB; 多选章节 &#x25B8;'}}
+function SA(){var cc=document.querySelectorAll('.chi');for(var i=0;i<cc.length;i++)cc[i].classList.add('ck');UCT()}
+function DA(){var cc=document.querySelectorAll('.chi');for(var i=0;i<cc.length;i++)cc[i].classList.remove('ck');UCT()}
+function UCT(){var n=document.querySelectorAll('.chi.ck').length,t=document.querySelector('.cmt');t.innerHTML=n>0?'&#x1F4CB; 多选章节 ('+n+'个) &#x25B8;':'&#x1F4CB; 多选章节 &#x25B8;'}
+function GS(){var cc=document.querySelectorAll('.chi.ck');if(cc.length===0)return null;var r=[];for(var i=0;i<cc.length;i++)r.push(cc[i].textContent);return r}
+
+// Fastclick
+(function(){var t=null,x=0,y=0;document.addEventListener('touchstart',function(e){t=e.target;x=e.touches[0].clientX;y=e.touches[0].clientY},true);document.addEventListener('touchend',function(e){if(t&&(t.tagName==='BUTTON'||t.tagName==='A'||t.className.indexOf('oi')>=0||t.className.indexOf('jb')>=0||t.className.indexOf('chi')>=0)){var dx=e.changedTouches[0].clientX-x,dy=e.changedTouches[0].clientY-y;if(Math.abs(dx)<10&&Math.abs(dy)<10){e.preventDefault();t.click()}}t=null},true)})();
+
+// Keyboard
+document.addEventListener('keydown',function(e){if(!Q.length)return;var i=I,q=Q[i],rv=i in RV;if(e.key==='ArrowRight'||e.key==='n'){e.preventDefault();N()}if(e.key==='ArrowLeft'||e.key==='p'){e.preventDefault();P()}if(!rv){var k=e.key.toUpperCase();if('ABCDE'.indexOf(k)>=0&&q.type!=='判断题'){e.preventDefault();T(i,k)}if(e.key==='Enter'&&q.type==='多选题'){e.preventDefault();SM(i)}if(q.type==='判断题'){if(k==='A'||e.key==='1'){e.preventDefault();T(i,'√')}if(k==='B'||e.key==='0'){e.preventDefault();T(i,'X')}}}});
+</script>
+</body>
+</html>

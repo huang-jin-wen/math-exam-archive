@@ -1,0 +1,4370 @@
+[
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "单选题",
+    "stem": "“同甲”是()的舞蹈中最独特的代表。",
+    "options": [
+      {
+        "label": "A",
+        "text": "农区"
+      },
+      {
+        "label": "B",
+        "text": "牧区"
+      },
+      {
+        "label": "C",
+        "text": "林区"
+      },
+      {
+        "label": "D",
+        "text": "山区"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "单选题",
+    "stem": "藏舞《牛背摇篮》属于以下哪类舞蹈形态?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "作品形态"
+      },
+      {
+        "label": "B",
+        "text": "规训形态"
+      },
+      {
+        "label": "C",
+        "text": "生活形态"
+      },
+      {
+        "label": "D",
+        "text": "原生形态"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "多选题",
+    "stem": "日喀则地区的果谐大致可分为以下哪几种?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "农区果谐"
+      },
+      {
+        "label": "B",
+        "text": "牧区果谐"
+      },
+      {
+        "label": "C",
+        "text": "林区果谐"
+      },
+      {
+        "label": "D",
+        "text": "山区果谐"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "多选题",
+    "stem": "藏舞中表演性组合的形式有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "卓表演性组合"
+      },
+      {
+        "label": "B",
+        "text": "弦子表演性组合"
+      },
+      {
+        "label": "C",
+        "text": "依表演性组合"
+      },
+      {
+        "label": "D",
+        "text": "动律表演性组合"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "判断题",
+    "stem": "牧区果谐的舞蹈人数比农区少。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "判断题",
+    "stem": "“同甲”中的“同”指的是白海螺。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "舞蹈欣赏——范畴与路径",
+    "type": "判断题",
+    "stem": "卓舞是日喀则地区的特色舞蹈。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "舞蹈形态——生活、规训、作品",
+    "type": "单选题",
+    "stem": "属于次生舞蹈的是()的舞蹈。",
+    "options": [
+      {
+        "label": "A",
+        "text": "生活形态"
+      },
+      {
+        "label": "B",
+        "text": "规训形态"
+      },
+      {
+        "label": "C",
+        "text": "作品形态"
+      },
+      {
+        "label": "D",
+        "text": "原生形态"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "舞蹈形态——生活、规训、作品",
+    "type": "单选题",
+    "stem": "生活形态的舞蹈的称谓来源于()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "福柯"
+      },
+      {
+        "label": "B",
+        "text": "车尔尼雪夫斯基"
+      },
+      {
+        "label": "C",
+        "text": "形式主义美学"
+      },
+      {
+        "label": "D",
+        "text": "植物学"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "舞蹈形态——生活、规训、作品",
+    "type": "单选题",
+    "stem": "华北地区的“跳菜舞”主要是用来()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "庆祝喜事"
+      },
+      {
+        "label": "B",
+        "text": "庆望丰收"
+      },
+      {
+        "label": "C",
+        "text": "祭祀祖先"
+      },
+      {
+        "label": "D",
+        "text": "反抗压迫"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "舞蹈形态——生活、规训、作品",
+    "type": "多选题",
+    "stem": "藏舞按区域划分可分为()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "卫藏地区"
+      },
+      {
+        "label": "B",
+        "text": "康巴地区"
+      },
+      {
+        "label": "C",
+        "text": "安多地区"
+      },
+      {
+        "label": "D",
+        "text": "甘牧地区"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "舞蹈形态——生活、规训、作品",
+    "type": "判断题",
+    "stem": "作品形态的舞蹈是一种多种场的多种表演的再生舞蹈。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "舞蹈形态——生活、规训、作品",
+    "type": "判断题",
+    "stem": "西藏地区中,安多地区被称为法区。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "舞蹈层次——原生、次生、再生",
+    "type": "单选题",
+    "stem": "以下描述作品形态舞蹈特征的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "种类繁多,涉及面广"
+      },
+      {
+        "label": "B",
+        "text": "种类繁多,涉及面窄"
+      },
+      {
+        "label": "C",
+        "text": "种类压缩,涉及面窄"
+      },
+      {
+        "label": "D",
+        "text": "种类交融的剧目呈现"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "舞蹈层次——原生、次生、再生",
+    "type": "单选题",
+    "stem": "中国古典舞大部分的舞蹈场是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "教室"
+      },
+      {
+        "label": "B",
+        "text": "舞台"
+      },
+      {
+        "label": "C",
+        "text": "日常生活"
+      },
+      {
+        "label": "D",
+        "text": "剧场"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "舞蹈层次——原生、次生、再生",
+    "type": "多选题",
+    "stem": "下列属于规训形态舞蹈场功能的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "表现泛群体的世俗生活与信仰生活"
+      },
+      {
+        "label": "B",
+        "text": "职业场中职业群体的培养"
+      },
+      {
+        "label": "C",
+        "text": "表现内隐的主流文化意志"
+      },
+      {
+        "label": "D",
+        "text": "表现不同主体构造的不同文本"
+      }
+    ],
+    "answer": "BC"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "舞蹈层次——原生、次生、再生",
+    "type": "判断题",
+    "stem": "同甲是世俗生活的舞蹈。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "舞蹈层次——原生、次生、再生",
+    "type": "判断题",
+    "stem": "芭蕾舞是基督教世界的身体的主流文化的一种内引。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "舞蹈的历史",
+    "type": "单选题",
+    "stem": "林怀民的《稻田》属于()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞台作品"
+      },
+      {
+        "label": "B",
+        "text": "剧场作品"
+      },
+      {
+        "label": "C",
+        "text": "生活场作品"
+      },
+      {
+        "label": "D",
+        "text": "宗庙作品"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "舞蹈的历史",
+    "type": "单选题",
+    "stem": "舞蹈欣赏的主要欣赏对象是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "生活形态的舞蹈"
+      },
+      {
+        "label": "B",
+        "text": "规训形态的舞蹈"
+      },
+      {
+        "label": "C",
+        "text": "作品形态的舞蹈"
+      },
+      {
+        "label": "D",
+        "text": "舞台形态的舞蹈"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "舞蹈的历史",
+    "type": "多选题",
+    "stem": "舞蹈场包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "训练场"
+      },
+      {
+        "label": "B",
+        "text": "生活场"
+      },
+      {
+        "label": "C",
+        "text": "剧场"
+      },
+      {
+        "label": "D",
+        "text": "广场"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "舞蹈的历史",
+    "type": "判断题",
+    "stem": "舞蹈《牛背摇篮》是藏族之间的舞种交融。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "舞蹈的历史",
+    "type": "判断题",
+    "stem": "作品的好坏是欣赏作品形态舞蹈最主要的原则。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "舞蹈的历史",
+    "type": "判断题",
+    "stem": "作品形态又称为剧场形态。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "舞蹈蕴含——粗身、细身、业身",
+    "type": "单选题",
+    "stem": "舞蹈进入()中被称为“细身”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有器世界"
+      },
+      {
+        "label": "B",
+        "text": "有情世界"
+      },
+      {
+        "label": "C",
+        "text": "有知世界"
+      },
+      {
+        "label": "D",
+        "text": "有话世界"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "舞蹈蕴含——粗身、细身、业身",
+    "type": "单选题",
+    "stem": "用身体表达对世界的态度的是以下哪种?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "粗身"
+      },
+      {
+        "label": "B",
+        "text": "细身"
+      },
+      {
+        "label": "C",
+        "text": "业身"
+      },
+      {
+        "label": "D",
+        "text": "身段"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "舞蹈蕴含——粗身、细身、业身",
+    "type": "多选题",
+    "stem": "关注“粗身”中的粗身,涉及到()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "解剖学"
+      },
+      {
+        "label": "B",
+        "text": "人种学"
+      },
+      {
+        "label": "C",
+        "text": "体质人类学"
+      },
+      {
+        "label": "D",
+        "text": "语言学"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "舞蹈蕴含——粗身、细身、业身",
+    "type": "判断题",
+    "stem": "粗身在佛教中叫做灵藏。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "舞蹈蕴含——粗身、细身、业身",
+    "type": "判断题",
+    "stem": "粗身世界被称为有器世界。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "舞蹈蕴含——粗身、细身、业身",
+    "type": "判断题",
+    "stem": "人在进入有话世界后会产生思想和意识。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.6",
+    "chapter_title": "舞蹈世界——有器、有情、有话",
+    "type": "单选题",
+    "stem": "哪个学科是整个符号学的基础?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "语言学"
+      },
+      {
+        "label": "B",
+        "text": "训练学"
+      },
+      {
+        "label": "C",
+        "text": "运动力学"
+      },
+      {
+        "label": "D",
+        "text": "人种学"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.6",
+    "chapter_title": "舞蹈世界——有器、有情、有话",
+    "type": "单选题",
+    "stem": "舞蹈欣赏的主观态度的终点是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞者的技术状态"
+      },
+      {
+        "label": "B",
+        "text": "舞者的敬业精神"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈的优美程度"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈语言符号所表达的意义"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.6",
+    "chapter_title": "舞蹈世界——有器、有情、有话",
+    "type": "单选题",
+    "stem": "舞蹈《舍身饲虎》跳的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "闻法飞天"
+      },
+      {
+        "label": "B",
+        "text": "赞法飞天"
+      },
+      {
+        "label": "C",
+        "text": "涅槃飞天"
+      },
+      {
+        "label": "D",
+        "text": "散花飞天"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.6",
+    "chapter_title": "舞蹈世界——有器、有情、有话",
+    "type": "判断题",
+    "stem": "舞蹈《奥涅金》中的舞会场面是一个社会学的缩影。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.6",
+    "chapter_title": "舞蹈世界——有器、有情、有话",
+    "type": "判断题",
+    "stem": "闻法飞天歌颂的是一种对死亡的态度。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.7",
+    "chapter_title": "舞蹈的至高境界——《飞天》",
+    "type": "单选题",
+    "stem": "意大利早期的出场舞《奥涅金》属于()的舞蹈。",
+    "options": [
+      {
+        "label": "A",
+        "text": "生活形态"
+      },
+      {
+        "label": "B",
+        "text": "规训形态"
+      },
+      {
+        "label": "C",
+        "text": "作品形态"
+      },
+      {
+        "label": "D",
+        "text": "舞台形态"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.7",
+    "chapter_title": "舞蹈的至高境界——《飞天》",
+    "type": "多选题",
+    "stem": "下面属于唐代宫廷舞蹈的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "春英传"
+      },
+      {
+        "label": "B",
+        "text": "佳人剪牡丹"
+      },
+      {
+        "label": "C",
+        "text": "抛球乐"
+      },
+      {
+        "label": "D",
+        "text": "兰陵王"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.7",
+    "chapter_title": "舞蹈的至高境界——《飞天》",
+    "type": "多选题",
+    "stem": "下面属于业身中外部语境的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈生态学"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈社会学"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈人类学"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈符号学"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.7",
+    "chapter_title": "舞蹈的至高境界——《飞天》",
+    "type": "判断题",
+    "stem": "舞蹈的粗身是舞蹈欣赏的终点。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.7",
+    "chapter_title": "舞蹈的至高境界——《飞天》",
+    "type": "判断题",
+    "stem": "大传统的舞蹈是一个主流舞蹈。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.7",
+    "chapter_title": "舞蹈的至高境界——《飞天》",
+    "type": "判断题",
+    "stem": "泰国舞蹈属于黄河文明。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "单选题",
+    "stem": "以下舞蹈欣赏的主观范畴中()属于有话世界。",
+    "options": [
+      {
+        "label": "A",
+        "text": "粗身"
+      },
+      {
+        "label": "B",
+        "text": "细身"
+      },
+      {
+        "label": "C",
+        "text": "业身"
+      },
+      {
+        "label": "D",
+        "text": "身段"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "多选题",
+    "stem": "舞蹈的舞种形式有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "独舞"
+      },
+      {
+        "label": "B",
+        "text": "双人舞"
+      },
+      {
+        "label": "C",
+        "text": "三人舞"
+      },
+      {
+        "label": "D",
+        "text": "群舞"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "多选题",
+    "stem": "走进剧场欣赏舞蹈时,需要关注的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞种形式与表演形式"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈结构与语篇"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈主题的N 级指示"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈的商品属性"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "多选题",
+    "stem": "舞蹈语篇中,短篇小说的故事情节一般包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "发生"
+      },
+      {
+        "label": "B",
+        "text": "发展"
+      },
+      {
+        "label": "C",
+        "text": "高潮"
+      },
+      {
+        "label": "D",
+        "text": "结局"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "判断题",
+    "stem": "作品形态的舞蹈是依据形式主义美学定下的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "判断题",
+    "stem": "作品形态的舞蹈等同于剧场舞蹈。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.8",
+    "chapter_title": "舞种形式与表演形式",
+    "type": "判断题",
+    "stem": "舞蹈《天鹅之歌》是目前最短、最环保的舞剧。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.9",
+    "chapter_title": "舞蹈结构与语篇幅",
+    "type": "单选题",
+    "stem": "舞蹈《天鹅之歌》属于()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "古典芭蕾"
+      },
+      {
+        "label": "B",
+        "text": "现代芭蕾"
+      },
+      {
+        "label": "C",
+        "text": "当代芭蕾"
+      },
+      {
+        "label": "D",
+        "text": "宫廷芭蕾"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.9",
+    "chapter_title": "舞蹈结构与语篇幅",
+    "type": "单选题",
+    "stem": "当代芭蕾舞最主要的特点是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "专业性"
+      },
+      {
+        "label": "B",
+        "text": "独创性"
+      },
+      {
+        "label": "C",
+        "text": "开放性"
+      },
+      {
+        "label": "D",
+        "text": "融合性"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.9",
+    "chapter_title": "舞蹈结构与语篇幅",
+    "type": "单选题",
+    "stem": "以下()是舞蹈欣赏时的第一位。",
+    "options": [
+      {
+        "label": "A",
+        "text": "时间因素"
+      },
+      {
+        "label": "B",
+        "text": "空间因素"
+      },
+      {
+        "label": "C",
+        "text": "专业因素"
+      },
+      {
+        "label": "D",
+        "text": "剧目因素"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.9",
+    "chapter_title": "舞蹈结构与语篇幅",
+    "type": "多选题",
+    "stem": "剧场舞台上的东方代表指的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "生命"
+      },
+      {
+        "label": "B",
+        "text": "光明"
+      },
+      {
+        "label": "C",
+        "text": "前进"
+      },
+      {
+        "label": "D",
+        "text": "压抑"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.9",
+    "chapter_title": "舞蹈结构与语篇幅",
+    "type": "判断题",
+    "stem": "舞蹈的内容构成舞蹈的整体结构。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.9",
+    "chapter_title": "舞蹈结构与语篇幅",
+    "type": "判断题",
+    "stem": "在丧葬礼仪中,西方代表寻祖。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "单选题",
+    "stem": "以下()是舞蹈欣赏中的终极欣赏对象。",
+    "options": [
+      {
+        "label": "A",
+        "text": "动作"
+      },
+      {
+        "label": "B",
+        "text": "服饰"
+      },
+      {
+        "label": "C",
+        "text": "姿势"
+      },
+      {
+        "label": "D",
+        "text": "表情"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "单选题",
+    "stem": "以下()被称为是全世界人类的第一媒介。",
+    "options": [
+      {
+        "label": "A",
+        "text": "音响"
+      },
+      {
+        "label": "B",
+        "text": "文字"
+      },
+      {
+        "label": "C",
+        "text": "图画"
+      },
+      {
+        "label": "D",
+        "text": "视频"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "多选题",
+    "stem": "细读身体时需要注意()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞台调度"
+      },
+      {
+        "label": "B",
+        "text": "表情"
+      },
+      {
+        "label": "C",
+        "text": "姿势"
+      },
+      {
+        "label": "D",
+        "text": "动作"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "多选题",
+    "stem": "古典芭蕾舞中的姿势要求有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "平衡"
+      },
+      {
+        "label": "B",
+        "text": "对称"
+      },
+      {
+        "label": "C",
+        "text": "和谐"
+      },
+      {
+        "label": "D",
+        "text": "优美"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "多选题",
+    "stem": "非本体的模态有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "文字"
+      },
+      {
+        "label": "B",
+        "text": "音响"
+      },
+      {
+        "label": "C",
+        "text": "服装"
+      },
+      {
+        "label": "D",
+        "text": "道具"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "判断题",
+    "stem": "单双三的调度中,主要是靠身体的投射来表示身体的方向性和调度 性。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "判断题",
+    "stem": "舞蹈欣赏中,本体是第一位。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.10",
+    "chapter_title": "舞蹈主题的N 级提示",
+    "type": "判断题",
+    "stem": "舞蹈的肢体语言是内在语言。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.11",
+    "chapter_title": "身体与多模态媒介的互补",
+    "type": "单选题",
+    "stem": "天鹅湖的故事取材于()的童话。",
+    "options": [
+      {
+        "label": "A",
+        "text": "俄罗斯"
+      },
+      {
+        "label": "B",
+        "text": "丹麦"
+      },
+      {
+        "label": "C",
+        "text": "英国"
+      },
+      {
+        "label": "D",
+        "text": "法国"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.12",
+    "chapter_title": "名舞欣赏——《天鹅湖二幕》",
+    "type": "单选题",
+    "stem": "舞蹈《天鹅湖二幕》中用到的编舞法是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "机遇编舞法"
+      },
+      {
+        "label": "B",
+        "text": "即兴编舞法"
+      },
+      {
+        "label": "C",
+        "text": "环境编舞法"
+      },
+      {
+        "label": "D",
+        "text": "交响编舞法"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.12",
+    "chapter_title": "名舞欣赏——《天鹅湖二幕》",
+    "type": "多选题",
+    "stem": "以下属于舞蹈《天鹅湖二幕》中舞段的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "群鹅华尔兹"
+      },
+      {
+        "label": "B",
+        "text": "奥杰塔与王子双人舞"
+      },
+      {
+        "label": "C",
+        "text": "四小天鹅舞"
+      },
+      {
+        "label": "D",
+        "text": "天鹅组舞"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.12",
+    "chapter_title": "名舞欣赏——《天鹅湖二幕》",
+    "type": "多选题",
+    "stem": "舞蹈《天鹅湖二幕》中用到的舞蹈形式有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "独舞"
+      },
+      {
+        "label": "B",
+        "text": "双人舞"
+      },
+      {
+        "label": "C",
+        "text": "群舞"
+      },
+      {
+        "label": "D",
+        "text": "组舞"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.12",
+    "chapter_title": "名舞欣赏——《天鹅湖二幕》",
+    "type": "判断题",
+    "stem": "舞蹈《天鹅湖二幕》描述的是白天鹅恋爱心理的外化。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.12",
+    "chapter_title": "名舞欣赏——《天鹅湖二幕》",
+    "type": "判断题",
+    "stem": "舞蹈的身体语言言说的方式包括局部动作和全身一体动作。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.13",
+    "chapter_title": "舞蹈文化场——文化尊重与传承",
+    "type": "单选题",
+    "stem": "下列()容许生活动作的出现。",
+    "options": [
+      {
+        "label": "A",
+        "text": "古典舞剧"
+      },
+      {
+        "label": "B",
+        "text": "现代舞剧"
+      },
+      {
+        "label": "C",
+        "text": "芭蕾舞剧"
+      },
+      {
+        "label": "D",
+        "text": "当代舞剧"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.13",
+    "chapter_title": "舞蹈文化场——文化尊重与传承",
+    "type": "单选题",
+    "stem": "上等舞剧的标准是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有叙事,有舞蹈"
+      },
+      {
+        "label": "B",
+        "text": "有叙事,无舞蹈"
+      },
+      {
+        "label": "C",
+        "text": "无叙事,有舞蹈"
+      },
+      {
+        "label": "D",
+        "text": "无叙事,无舞蹈"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.13",
+    "chapter_title": "舞蹈文化场——文化尊重与传承",
+    "type": "多选题",
+    "stem": "以下()是属于舞蹈语篇的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞剧"
+      },
+      {
+        "label": "B",
+        "text": "舞段"
+      },
+      {
+        "label": "C",
+        "text": "舞句"
+      },
+      {
+        "label": "D",
+        "text": "动作"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.13",
+    "chapter_title": "舞蹈文化场——文化尊重与传承",
+    "type": "判断题",
+    "stem": "舞剧中最小的动作要依据语篇来定。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.13",
+    "chapter_title": "舞蹈文化场——文化尊重与传承",
+    "type": "判断题",
+    "stem": "舞蹈的形式和舞蹈的内容之间相互关联。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "单选题",
+    "stem": "舞蹈《睡美人·洗礼》中第一个出场的仙女是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无虑仙女"
+      },
+      {
+        "label": "B",
+        "text": "温柔仙女"
+      },
+      {
+        "label": "C",
+        "text": "慷慨仙女"
+      },
+      {
+        "label": "D",
+        "text": "活泼仙女"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "多选题",
+    "stem": "古典舞审美的原则包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "时间及延伸原则"
+      },
+      {
+        "label": "B",
+        "text": "附属主流社会及动作语汇原则"
+      },
+      {
+        "label": "C",
+        "text": "古典美及价值判断原则"
+      },
+      {
+        "label": "D",
+        "text": "空间原则"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "多选题",
+    "stem": "舞蹈《睡美人·洗礼》中用到的舞段包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "面包渣变奏"
+      },
+      {
+        "label": "B",
+        "text": "子弹变奏"
+      },
+      {
+        "label": "C",
+        "text": "金手指变奏"
+      },
+      {
+        "label": "D",
+        "text": "播撒变奏"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "多选题",
+    "stem": "古典舞欣赏原则中的时间及延伸原则是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "与古代相连"
+      },
+      {
+        "label": "B",
+        "text": "与现代相连"
+      },
+      {
+        "label": "C",
+        "text": "至今尚存"
+      },
+      {
+        "label": "D",
+        "text": "脍炙人口"
+      }
+    ],
+    "answer": "AC"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "判断题",
+    "stem": "舞蹈《睡美人·洗礼》属于现代舞蹈。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "判断题",
+    "stem": "舞蹈《睡美人·洗礼》中慷慨仙女采用的舞段是金手指变奏。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.14",
+    "chapter_title": "古典审美——时间及延伸原则",
+    "type": "判断题",
+    "stem": "共产主义革命就是同传统的所有制关系实行最彻底的决裂,包括与 传统艺术的决裂。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.15",
+    "chapter_title": "附属主流社会及动作语汇原则",
+    "type": "多选题",
+    "stem": "法国七月革命时期创作的芭蕾舞剧有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《关不住的女儿》"
+      },
+      {
+        "label": "B",
+        "text": "《仙女》"
+      },
+      {
+        "label": "C",
+        "text": "《吉赛尔》"
+      },
+      {
+        "label": "D",
+        "text": "《巴赫塔》"
+      }
+    ],
+    "answer": "BC"
+  },
+  {
+    "chapter": "1.15",
+    "chapter_title": "附属主流社会及动作语汇原则",
+    "type": "多选题",
+    "stem": "古典舞审美原则中,附属主流社会及动作语汇原则包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "类群身份的人和事"
+      },
+      {
+        "label": "B",
+        "text": "标准化的符号呈现"
+      },
+      {
+        "label": "C",
+        "text": "与古代相连"
+      },
+      {
+        "label": "D",
+        "text": "至今尚存"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "1.15",
+    "chapter_title": "附属主流社会及动作语汇原则",
+    "type": "多选题",
+    "stem": "古典的原则是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "技巧性"
+      },
+      {
+        "label": "B",
+        "text": "随机性"
+      },
+      {
+        "label": "C",
+        "text": "程式化"
+      },
+      {
+        "label": "D",
+        "text": "个性化"
+      }
+    ],
+    "answer": "AC"
+  },
+  {
+    "chapter": "1.15",
+    "chapter_title": "附属主流社会及动作语汇原则",
+    "type": "判断题",
+    "stem": "芭蕾舞剧《希尔维娅》是1871 年巴黎公社时期创作的舞剧。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.15",
+    "chapter_title": "附属主流社会及动作语汇原则",
+    "type": "判断题",
+    "stem": "中国古典舞主要面临着身体母语历时性的回溯问题。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.16",
+    "chapter_title": "古典美及价值判断原则",
+    "type": "单选题",
+    "stem": "按时间原则推算,下列不属于次生文明的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "希腊文明"
+      },
+      {
+        "label": "B",
+        "text": "日本的雅乐"
+      },
+      {
+        "label": "C",
+        "text": "韩国的宫廷舞"
+      },
+      {
+        "label": "D",
+        "text": "两河文明"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.16",
+    "chapter_title": "古典美及价值判断原则",
+    "type": "单选题",
+    "stem": "古典意义的最高境界是在哪方面追求“经典”的意义?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "价值观念方面"
+      },
+      {
+        "label": "B",
+        "text": "专业技巧方面"
+      },
+      {
+        "label": "C",
+        "text": "表现形式方面"
+      },
+      {
+        "label": "D",
+        "text": "结构语篇方面"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.16",
+    "chapter_title": "古典美及价值判断原则",
+    "type": "多选题",
+    "stem": "古典意义在于()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "追求历史地位上的独特性"
+      },
+      {
+        "label": "B",
+        "text": "追求现代意义上的的独特性"
+      },
+      {
+        "label": "C",
+        "text": "追求历史地位上的魅力经久性"
+      },
+      {
+        "label": "D",
+        "text": "追求现代意义上的魅力经久性"
+      }
+    ],
+    "answer": "AD"
+  },
+  {
+    "chapter": "1.16",
+    "chapter_title": "古典美及价值判断原则",
+    "type": "多选题",
+    "stem": "按照丹托的定义,语境是具有()方面的艺术世界。",
+    "options": [
+      {
+        "label": "A",
+        "text": "现代的"
+      },
+      {
+        "label": "B",
+        "text": "历史的"
+      },
+      {
+        "label": "C",
+        "text": "理论氛围的"
+      },
+      {
+        "label": "D",
+        "text": "舞台氛围的"
+      }
+    ],
+    "answer": "BC"
+  },
+  {
+    "chapter": "1.16",
+    "chapter_title": "古典美及价值判断原则",
+    "type": "判断题",
+    "stem": "古典作为一种价值观念,从古至今保持着恒久的生命力。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.16",
+    "chapter_title": "古典美及价值判断原则",
+    "type": "判断题",
+    "stem": "马丁在舞蹈概念中规定:古典舞跳“古”。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.17",
+    "chapter_title": "古典舞范本——印度史诗与古典舞",
+    "type": "单选题",
+    "stem": "以下()是法国的主流舞蹈。",
+    "options": [
+      {
+        "label": "A",
+        "text": "古典芭蕾"
+      },
+      {
+        "label": "B",
+        "text": "现代芭蕾"
+      },
+      {
+        "label": "C",
+        "text": "当代芭蕾"
+      },
+      {
+        "label": "D",
+        "text": "宫廷芭蕾"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.17",
+    "chapter_title": "古典舞范本——印度史诗与古典舞",
+    "type": "单选题",
+    "stem": "以下()是印度主流文化的代表。",
+    "options": [
+      {
+        "label": "A",
+        "text": "印度宝莱坞"
+      },
+      {
+        "label": "B",
+        "text": "印度民间艺术"
+      },
+      {
+        "label": "C",
+        "text": "印度古典舞"
+      },
+      {
+        "label": "D",
+        "text": "印度现代舞"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.17",
+    "chapter_title": "古典舞范本——印度史诗与古典舞",
+    "type": "多选题",
+    "stem": "芭蕾舞《睡美人·成人礼》中体现出的独立的价值判断是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高尚的"
+      },
+      {
+        "label": "B",
+        "text": "端庄的"
+      },
+      {
+        "label": "C",
+        "text": "温文尔雅的"
+      },
+      {
+        "label": "D",
+        "text": "反叛的"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.17",
+    "chapter_title": "古典舞范本——印度史诗与古典舞",
+    "type": "判断题",
+    "stem": "印度所有的古典舞的剧目必须是古代的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.17",
+    "chapter_title": "古典舞范本——印度史诗与古典舞",
+    "type": "判断题",
+    "stem": "印度七个古典舞流派的舞蹈内容和形式都各不相同。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.18",
+    "chapter_title": "古典舞的艺术场域",
+    "type": "单选题",
+    "stem": "印度婆罗多舞者需要经过多久的训练才能走上舞台（ ）?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11 年"
+      },
+      {
+        "label": "B",
+        "text": "12 年"
+      },
+      {
+        "label": "C",
+        "text": "13 年"
+      },
+      {
+        "label": "D",
+        "text": "14 年"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.18",
+    "chapter_title": "古典舞的艺术场域",
+    "type": "多选题",
+    "stem": "以下属于中国“四大丑”的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "太监"
+      },
+      {
+        "label": "B",
+        "text": "缠足"
+      },
+      {
+        "label": "C",
+        "text": "纳妾"
+      },
+      {
+        "label": "D",
+        "text": "娼妓"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.18",
+    "chapter_title": "古典舞的艺术场域",
+    "type": "多选题",
+    "stem": "韩国一般用哪些舞蹈来迎接各国贵宾?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "佳人剪牡丹"
+      },
+      {
+        "label": "B",
+        "text": "僧舞"
+      },
+      {
+        "label": "C",
+        "text": "孔雀舞"
+      },
+      {
+        "label": "D",
+        "text": "兰陵王"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "1.18",
+    "chapter_title": "古典舞的艺术场域",
+    "type": "判断题",
+    "stem": "印度古典舞的动作语汇原则与其他国家大致相同。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.18",
+    "chapter_title": "古典舞的艺术场域",
+    "type": "判断题",
+    "stem": "剧场属于古典舞中的舞蹈场。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.19",
+    "chapter_title": "古典舞的程式",
+    "type": "单选题",
+    "stem": "韩国僧舞是僧舞由中国传入韩国后,与韩国传统的()合为一体形成 的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "扇子舞"
+      },
+      {
+        "label": "B",
+        "text": "鹤舞"
+      },
+      {
+        "label": "C",
+        "text": "剑舞"
+      },
+      {
+        "label": "D",
+        "text": "铜钹舞"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.19",
+    "chapter_title": "古典舞的程式",
+    "type": "单选题",
+    "stem": "下列正确理解古典舞的时间原则的一项是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "创作内容及时间都必须是古代"
+      },
+      {
+        "label": "B",
+        "text": "创作内容必须是古代,创作时间未必"
+      },
+      {
+        "label": "C",
+        "text": "创作内容及时间都不一定是古代"
+      },
+      {
+        "label": "D",
+        "text": "没有要求"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.19",
+    "chapter_title": "古典舞的程式",
+    "type": "单选题",
+    "stem": "()是中国古典舞与现代舞的分界线。",
+    "options": [
+      {
+        "label": "A",
+        "text": "唐代"
+      },
+      {
+        "label": "B",
+        "text": "鸦片战争"
+      },
+      {
+        "label": "C",
+        "text": "五四运动"
+      },
+      {
+        "label": "D",
+        "text": "新中国成立"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.19",
+    "chapter_title": "古典舞的程式",
+    "type": "判断题",
+    "stem": "个体在自我心灵净化过程中达到超越是韩国僧舞的主题。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.19",
+    "chapter_title": "古典舞的程式",
+    "type": "判断题",
+    "stem": "韩国古典舞《佳人剪牡丹》不能用来表达国家昌盛。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.20",
+    "chapter_title": "中国古典舞的时空",
+    "type": "单选题",
+    "stem": "中国古典舞《楚腰》是()基本结构。",
+    "options": [
+      {
+        "label": "A",
+        "text": "慢板、快板、慢板"
+      },
+      {
+        "label": "B",
+        "text": "快板、慢板、快板"
+      },
+      {
+        "label": "C",
+        "text": "快板、慢板、慢板"
+      },
+      {
+        "label": "D",
+        "text": "慢板、慢板、快板"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.20",
+    "chapter_title": "中国古典舞的时空",
+    "type": "单选题",
+    "stem": "中国古典舞的开始时期是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "先秦"
+      },
+      {
+        "label": "B",
+        "text": "秦朝"
+      },
+      {
+        "label": "C",
+        "text": "唐代"
+      },
+      {
+        "label": "D",
+        "text": "清代"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.20",
+    "chapter_title": "中国古典舞的时空",
+    "type": "单选题",
+    "stem": "舞蹈的()是通过舞蹈中的动作、表情、姿势等具体形象来表达舞蹈 所蕴含的意念。",
+    "options": [
+      {
+        "label": "A",
+        "text": "情境"
+      },
+      {
+        "label": "B",
+        "text": "意境"
+      },
+      {
+        "label": "C",
+        "text": "意象"
+      },
+      {
+        "label": "D",
+        "text": "语境"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.20",
+    "chapter_title": "中国古典舞的时空",
+    "type": "判断题",
+    "stem": "中国古典舞的表现特点是空间上的全部、时间上的一段。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.20",
+    "chapter_title": "中国古典舞的时空",
+    "type": "判断题",
+    "stem": "中国古典舞形成了各种不同的形式和风格归因于我们有超长的历史 和超大的民族。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.21",
+    "chapter_title": "中国古典舞的文化",
+    "type": "单选题",
+    "stem": "从历时性的纵轴划分,《相和歌》属于()舞蹈。",
+    "options": [
+      {
+        "label": "A",
+        "text": "儒教"
+      },
+      {
+        "label": "B",
+        "text": "道教"
+      },
+      {
+        "label": "C",
+        "text": "汉唐"
+      },
+      {
+        "label": "D",
+        "text": "魏晋南北朝"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.21",
+    "chapter_title": "中国古典舞的文化",
+    "type": "单选题",
+    "stem": "从空间的横轴上划分,《闻法飞天》属于()舞蹈。",
+    "options": [
+      {
+        "label": "A",
+        "text": "先秦"
+      },
+      {
+        "label": "B",
+        "text": "释教"
+      },
+      {
+        "label": "C",
+        "text": "儒教"
+      },
+      {
+        "label": "D",
+        "text": "唐代"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.21",
+    "chapter_title": "中国古典舞的文化",
+    "type": "单选题",
+    "stem": "中国古典舞按照()的划分标准,可分为儒教舞蹈、释教舞蹈、道教 舞蹈等。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民族"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈场"
+      },
+      {
+        "label": "C",
+        "text": "信仰"
+      },
+      {
+        "label": "D",
+        "text": "社会地位"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.21",
+    "chapter_title": "中国古典舞的文化",
+    "type": "判断题",
+    "stem": "中国古典舞鉴赏的步骤是,首先从时间和空间上分析舞蹈类别,再根 据舞蹈类别进一步分析主题、结构、动作等。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.21",
+    "chapter_title": "中国古典舞的文化",
+    "type": "判断题",
+    "stem": "《秦王点兵》属于先秦舞蹈是从时间上进行划分的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.22",
+    "chapter_title": "中国古典舞的遗存",
+    "type": "单选题",
+    "stem": "《秦王点兵》中棱角型的舞台调度展现了唐代武舞()的主题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "尚武性"
+      },
+      {
+        "label": "B",
+        "text": "矛盾性"
+      },
+      {
+        "label": "C",
+        "text": "攻击性"
+      },
+      {
+        "label": "D",
+        "text": "和谐性"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.22",
+    "chapter_title": "中国古典舞的遗存",
+    "type": "单选题",
+    "stem": "舞蹈中用脚打鼓来表达心声的是()方式。",
+    "options": [
+      {
+        "label": "A",
+        "text": "踏鼓"
+      },
+      {
+        "label": "B",
+        "text": "打鼓"
+      },
+      {
+        "label": "C",
+        "text": "踏舞"
+      },
+      {
+        "label": "D",
+        "text": "道具舞"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.22",
+    "chapter_title": "中国古典舞的遗存",
+    "type": "单选题",
+    "stem": "()是《秦王点兵》动作结构的来源。",
+    "options": [
+      {
+        "label": "A",
+        "text": "奥迪西"
+      },
+      {
+        "label": "B",
+        "text": "僧舞"
+      },
+      {
+        "label": "C",
+        "text": "芭蕾"
+      },
+      {
+        "label": "D",
+        "text": "华尔兹"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.22",
+    "chapter_title": "中国古典舞的遗存",
+    "type": "判断题",
+    "stem": "舞蹈家的信仰支撑对其作品没有太大影响。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.22",
+    "chapter_title": "中国古典舞的遗存",
+    "type": "判断题",
+    "stem": "《秦王点兵》是一个唐代舞蹈,它显示了汉代宫廷状态、表现了儒 家的奋进精神。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "舞蹈的主题信息最先是从()中获得的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈场地"
+      },
+      {
+        "label": "B",
+        "text": "舞台布置"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈时间"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈名称"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "舞蹈《闻法飞天》由敦煌壁画中的()而来。",
+    "options": [
+      {
+        "label": "A",
+        "text": "赞法飞天"
+      },
+      {
+        "label": "B",
+        "text": "听法飞天"
+      },
+      {
+        "label": "C",
+        "text": "涅槃飞天"
+      },
+      {
+        "label": "D",
+        "text": "颂法飞天"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "舞蹈得到主流与非主流社会的共同认可是()的显著特点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈丰富化"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈现代化"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈大众化"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈平民化"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "判断题",
+    "stem": "涅槃飞天舞表达的是人们对死亡的态度与思考。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "判断题",
+    "stem": "敦煌舞都属于汉族舞。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "()的要求是要舞蹈应在技术构成和程式化方面达到高标准。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈历史分析"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈外在环境"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈理论分析"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈本体"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "舞蹈《千手观音》从佛教道义上讲,它的缺陷在于()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "观音下莲花台"
+      },
+      {
+        "label": "B",
+        "text": "观音坐莲花台"
+      },
+      {
+        "label": "C",
+        "text": "音乐不符合"
+      },
+      {
+        "label": "D",
+        "text": "动作表现力不够"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "舞蹈《醉狐》属于()的整体风格。",
+    "options": [
+      {
+        "label": "A",
+        "text": "多变"
+      },
+      {
+        "label": "B",
+        "text": "典雅"
+      },
+      {
+        "label": "C",
+        "text": "滑稽"
+      },
+      {
+        "label": "D",
+        "text": "优美"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "判断题",
+    "stem": "古典舞是来源于民间的舞蹈。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "判断题",
+    "stem": "舞蹈《醉狐》对人们对自由的追求进行了充分的表达。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "舞蹈《挽扇仕女》的创作特点是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "融合性"
+      },
+      {
+        "label": "B",
+        "text": "原型复现"
+      },
+      {
+        "label": "C",
+        "text": "回溯性"
+      },
+      {
+        "label": "D",
+        "text": "模仿性"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "单选题",
+    "stem": "中国古典舞的创作想要持续向前发展,就必须先追根溯源、研究历 史、建构回溯性作品,这被称为()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "欲进先退"
+      },
+      {
+        "label": "B",
+        "text": "欲前先后"
+      },
+      {
+        "label": "C",
+        "text": "逢开必合"
+      },
+      {
+        "label": "D",
+        "text": "逢冲必靠"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "多选题",
+    "stem": "下列属于古典舞应具有的“古典风格”的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "与古代相连"
+      },
+      {
+        "label": "B",
+        "text": "至今尚存"
+      },
+      {
+        "label": "C",
+        "text": "有形式规则"
+      },
+      {
+        "label": "D",
+        "text": "能迅速走红"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "判断题",
+    "stem": "满族宫廷舞中的旋转是舞蹈《挽扇仕女》的创作基础。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.23",
+    "chapter_title": "从《飞天》到裂面舞",
+    "type": "判断题",
+    "stem": "古典舞的动作应从自身国家的古代历史和文化发源而来。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.26",
+    "chapter_title": "中国古典舞的困境",
+    "type": "单选题",
+    "stem": "“昆舞”的起源是京昆戏曲中的()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "京剧"
+      },
+      {
+        "label": "B",
+        "text": "南昆"
+      },
+      {
+        "label": "C",
+        "text": "北昆"
+      },
+      {
+        "label": "D",
+        "text": "京韵"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.26",
+    "chapter_title": "中国古典舞的困境",
+    "type": "单选题",
+    "stem": "戏曲舞蹈于()时期发展成熟。",
+    "options": [
+      {
+        "label": "A",
+        "text": "秦汉"
+      },
+      {
+        "label": "B",
+        "text": "唐宋"
+      },
+      {
+        "label": "C",
+        "text": "明清"
+      },
+      {
+        "label": "D",
+        "text": "民国"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.26",
+    "chapter_title": "中国古典舞的困境",
+    "type": "单选题",
+    "stem": "学院古典舞原则的是下列哪一项()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "照搬传统"
+      },
+      {
+        "label": "B",
+        "text": "批判传统"
+      },
+      {
+        "label": "C",
+        "text": "创新并发展传统"
+      },
+      {
+        "label": "D",
+        "text": "尊重并承接传统"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.26",
+    "chapter_title": "中国古典舞的困境",
+    "type": "判断题",
+    "stem": "中国古典舞在身体语言的建构中照抄照搬芭蕾的动作而丧失自我的 现象被称为假晶现象。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.26",
+    "chapter_title": "中国古典舞的困境",
+    "type": "判断题",
+    "stem": "古典舞中的“身韵”是从京昆戏曲中的京剧和南昆来的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.27",
+    "chapter_title": "中国古典舞的重建",
+    "type": "单选题",
+    "stem": "俄罗斯舞蹈《白桦树》体现了俄罗斯的()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民间世俗生活"
+      },
+      {
+        "label": "B",
+        "text": "民间信仰生活"
+      },
+      {
+        "label": "C",
+        "text": "宫廷生活"
+      },
+      {
+        "label": "D",
+        "text": "宗庙生活"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.28",
+    "chapter_title": "舞台民间舞的向度——民间本元",
+    "type": "单选题",
+    "stem": "()是民间舞与古典舞最大的不同之处。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民间舞自身即生活"
+      },
+      {
+        "label": "B",
+        "text": "民间舞有民间信仰做支撑"
+      },
+      {
+        "label": "C",
+        "text": "民间舞有独特的传承方式"
+      },
+      {
+        "label": "D",
+        "text": "民间舞有自身的实践语境"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.28",
+    "chapter_title": "舞台民间舞的向度——民间本元",
+    "type": "单选题",
+    "stem": "影响群舞效果的最重要因素是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈技巧"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈道具"
+      },
+      {
+        "label": "C",
+        "text": "舞台调度"
+      },
+      {
+        "label": "D",
+        "text": "舞台灯光"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.28",
+    "chapter_title": "舞台民间舞的向度——民间本元",
+    "type": "多选题",
+    "stem": "“莫伊塞耶夫式”民间舞蹈创作原则包括下列哪些选项()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "对已形成的民间舞蹈做艺术方面的解释"
+      },
+      {
+        "label": "B",
+        "text": "根据民间的传统来创造新型的舞蹈"
+      },
+      {
+        "label": "C",
+        "text": "把许多民间舞蹈形象概括在一个舞蹈中"
+      },
+      {
+        "label": "D",
+        "text": "将主流思想融合到民间舞蹈中"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.28",
+    "chapter_title": "舞台民间舞的向度——民间本元",
+    "type": "判断题",
+    "stem": "舞台民间舞都是改编自传统成型的民间舞。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.28",
+    "chapter_title": "舞台民间舞的向度——民间本元",
+    "type": "判断题",
+    "stem": "民间舞蹈缺乏一些自主能力,比如抗国家干扰的自主能力。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.29",
+    "chapter_title": "舞台民间舞的向度——创作多元",
+    "type": "单选题",
+    "stem": "下列哪一项不属于舞蹈叙事向度()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "宏大叙事"
+      },
+      {
+        "label": "B",
+        "text": "戏说叙事"
+      },
+      {
+        "label": "C",
+        "text": "私人叙事"
+      },
+      {
+        "label": "D",
+        "text": "述说乡土"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.29",
+    "chapter_title": "舞台民间舞的向度——创作多元",
+    "type": "单选题",
+    "stem": "下列哪一项不属于舞台民间舞种类()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "直接从民间来,稍加整理的舞蹈"
+      },
+      {
+        "label": "B",
+        "text": "几个民间舞集中起来编成一个新型舞蹈"
+      },
+      {
+        "label": "C",
+        "text": "根据民间音乐、文学、绘画等材料创作而来的舞蹈"
+      },
+      {
+        "label": "D",
+        "text": "根据舞蹈家对民间生活的想象创作而来的舞蹈"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.29",
+    "chapter_title": "舞台民间舞的向度——创作多元",
+    "type": "多选题",
+    "stem": "下列不属于述说乡土舞蹈的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《孔雀舞》"
+      },
+      {
+        "label": "B",
+        "text": "《雀之灵》"
+      },
+      {
+        "label": "C",
+        "text": "《双人孔雀舞》"
+      },
+      {
+        "label": "D",
+        "text": "《碧波孔雀》"
+      }
+    ],
+    "answer": "ABD"
+  },
+  {
+    "chapter": "1.29",
+    "chapter_title": "舞台民间舞的向度——创作多元",
+    "type": "判断题",
+    "stem": "用民间舞蹈的素材和形式来表达舞者自己的感受,称为私人叙事舞 蹈。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.29",
+    "chapter_title": "舞台民间舞的向度——创作多元",
+    "type": "判断题",
+    "stem": "宏大叙事舞蹈在阐述国家主题时都是直接阐述的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.30",
+    "chapter_title": "外国民间舞",
+    "type": "单选题",
+    "stem": "非洲舞蹈多样性形成的最主要影响因素是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "国家"
+      },
+      {
+        "label": "B",
+        "text": "族群"
+      },
+      {
+        "label": "C",
+        "text": "地缘"
+      },
+      {
+        "label": "D",
+        "text": "文化"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.31",
+    "chapter_title": "民间舞的实践语境与技术形式",
+    "type": "单选题",
+    "stem": "南非民间舞蹈中的踢腿舞的来源是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "宗教礼仪"
+      },
+      {
+        "label": "B",
+        "text": "民间风俗"
+      },
+      {
+        "label": "C",
+        "text": "搏击动作"
+      },
+      {
+        "label": "D",
+        "text": "动物动作"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.31",
+    "chapter_title": "民间舞的实践语境与技术形式",
+    "type": "单选题",
+    "stem": "舞蹈动作常采用夸张延长,并且()形式也可以进一步展现舞蹈的主 题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "收缩延长"
+      },
+      {
+        "label": "B",
+        "text": "平缓渐进"
+      },
+      {
+        "label": "C",
+        "text": "快速调度"
+      },
+      {
+        "label": "D",
+        "text": "放大延长"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.31",
+    "chapter_title": "民间舞的实践语境与技术形式",
+    "type": "单选题",
+    "stem": "舞台民间舞不同于生活中的民间舞的最大不同之处在于()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "有观众观看"
+      },
+      {
+        "label": "B",
+        "text": "时间和空间压缩"
+      },
+      {
+        "label": "C",
+        "text": "音乐多元化"
+      },
+      {
+        "label": "D",
+        "text": "动作标准化"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.31",
+    "chapter_title": "民间舞的实践语境与技术形式",
+    "type": "判断题",
+    "stem": "舞蹈、音乐、绘画等艺术的基础中包括语言。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.31",
+    "chapter_title": "民间舞的实践语境与技术形式",
+    "type": "判断题",
+    "stem": "舞台民间舞整体的发展方向是典雅方向。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "单选题",
+    "stem": "“中国民族民间舞”这一错误称谓直接导致了()的结果。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民间舞形式混乱"
+      },
+      {
+        "label": "B",
+        "text": "民间舞内容混乱"
+      },
+      {
+        "label": "C",
+        "text": "民间舞思想消减"
+      },
+      {
+        "label": "D",
+        "text": "民间舞类型消减"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "单选题",
+    "stem": "()是中国民间舞思维混乱的主要原因。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中国民间舞形式多样"
+      },
+      {
+        "label": "B",
+        "text": "中国民间舞内容混乱"
+      },
+      {
+        "label": "C",
+        "text": "中国民间舞术语错误"
+      },
+      {
+        "label": "D",
+        "text": "中国民间舞缺乏专业舞者"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "多选题",
+    "stem": "欣赏舞蹈需要把握的三要素是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "思维"
+      },
+      {
+        "label": "B",
+        "text": "语意"
+      },
+      {
+        "label": "C",
+        "text": "思想"
+      },
+      {
+        "label": "D",
+        "text": "形式"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "判断题",
+    "stem": "要将中国民间舞恢复到本元,必须理清中国传统舞蹈的内在逻辑关 系。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "判断题",
+    "stem": "中国各少数民族的古典与民间舞以及汉族的民间舞属于正确的“中 国民族民间舞”的范围。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "单选题",
+    "stem": "傣族孔雀舞中手掌掌形是()含义。",
+    "options": [
+      {
+        "label": "A",
+        "text": "孔雀攻击"
+      },
+      {
+        "label": "B",
+        "text": "孔雀息枝"
+      },
+      {
+        "label": "C",
+        "text": "孔雀嬉戏"
+      },
+      {
+        "label": "D",
+        "text": "没有特殊含义"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "单选题",
+    "stem": "孔雀舞中“孔雀嘴”手形是()语意。",
+    "options": [
+      {
+        "label": "A",
+        "text": "展现孔雀的嘴型"
+      },
+      {
+        "label": "B",
+        "text": "表现孔雀的高傲"
+      },
+      {
+        "label": "C",
+        "text": "表达吉祥如意"
+      },
+      {
+        "label": "D",
+        "text": "展示高贵圣洁"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "单选题",
+    "stem": "舞蹈《雀之灵》属于()舞。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民间舞"
+      },
+      {
+        "label": "B",
+        "text": "古典舞"
+      },
+      {
+        "label": "C",
+        "text": "现代舞"
+      },
+      {
+        "label": "D",
+        "text": "当代舞"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "判断题",
+    "stem": "观众在不同的舞蹈场中得到的是相同的感受和思想。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.32",
+    "chapter_title": "中国民族民间舞",
+    "type": "判断题",
+    "stem": "欣赏舞台民间舞,无法感受民间的乐趣,但却可以获得深刻的思想。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "单选题",
+    "stem": "()是研究舞蹈首先要研究的问题。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈由什么人跳"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈的形式有哪些"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈的内容是什么"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈的舞台调度如何"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "单选题",
+    "stem": "下列哪一项都是原生的傣族民间舞。()",
+    "options": [
+      {
+        "label": "A",
+        "text": "《孔雀舞者》和《雀之灵》"
+      },
+      {
+        "label": "B",
+        "text": "《双人孔雀舞》和《孔雀架子舞》"
+      },
+      {
+        "label": "C",
+        "text": "《双人孔雀舞》和《碧波孔雀》"
+      },
+      {
+        "label": "D",
+        "text": "《孔雀架子舞》和《雀之灵》"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "单选题",
+    "stem": "下列哪一项不属于当代中国民间舞的身份群体()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "民间艺人"
+      },
+      {
+        "label": "B",
+        "text": "职业舞者"
+      },
+      {
+        "label": "C",
+        "text": "二老艺人"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈爱好者"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "判断题",
+    "stem": "中国民间舞三个身份群体是平行关系。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "判断题",
+    "stem": "再生民间舞的重构者又叫“二老艺人”。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "单选题",
+    "stem": "()造成了民间舞的形式主宰了内容。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈形式变化过多"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈民族属性的消解"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈主题不明确"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈内容不丰满"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "单选题",
+    "stem": "《双人孔雀舞》内容的来源是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "汉族的民歌"
+      },
+      {
+        "label": "B",
+        "text": "傣族的神话传说"
+      },
+      {
+        "label": "C",
+        "text": "白族的巫术信仰"
+      },
+      {
+        "label": "D",
+        "text": "傣族的世俗生活"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "单选题",
+    "stem": "下列哪一项不属于孔雀舞的形式()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "三人舞"
+      },
+      {
+        "label": "B",
+        "text": "双人舞"
+      },
+      {
+        "label": "C",
+        "text": "男子独舞"
+      },
+      {
+        "label": "D",
+        "text": "女子群舞"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "判断题",
+    "stem": "舞蹈《孔雀飞来》展示了民间的信仰生活。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.34",
+    "chapter_title": "中国民间舞舞者",
+    "type": "判断题",
+    "stem": "世俗生活和信仰生活属于民间艺人跳的孔雀舞的内容。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.36",
+    "chapter_title": "民间舞《济公》赏析",
+    "type": "单选题",
+    "stem": "舞蹈《济公》表达的主要内容是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "天地仁和"
+      },
+      {
+        "label": "B",
+        "text": "普度众生"
+      },
+      {
+        "label": "C",
+        "text": "吉祥如意"
+      },
+      {
+        "label": "D",
+        "text": "万物均等"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.36",
+    "chapter_title": "民间舞《济公》赏析",
+    "type": "单选题",
+    "stem": "下列哪一项是舞台民间舞形成的正确一般过程()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "职业舞者直接民间艺人的舞蹈内容和形式搬上舞台"
+      },
+      {
+        "label": "B",
+        "text": "二老艺人将民间艺人的舞蹈进行提炼后搬上舞台"
+      },
+      {
+        "label": "C",
+        "text": "民间艺人的舞蹈先由二老艺人提炼,再由职业舞者提炼,最终形成精品搬上舞台"
+      },
+      {
+        "label": "D",
+        "text": "职业舞者根据自身对民间的想象创作出作品搬上舞台"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.36",
+    "chapter_title": "民间舞《济公》赏析",
+    "type": "单选题",
+    "stem": "民间艺人使用哪一个动作模态跳的舞蹈《济公》()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "京剧的“丑”角"
+      },
+      {
+        "label": "B",
+        "text": "京剧的“旦”角"
+      },
+      {
+        "label": "C",
+        "text": "河北地秧歌的“妞”角"
+      },
+      {
+        "label": "D",
+        "text": "河北地秧歌的“丑”角"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.36",
+    "chapter_title": "民间舞《济公》赏析",
+    "type": "判断题",
+    "stem": "职业舞者将民间舞蹈搬上舞台时,实现舞蹈形式的精致化的方式往 往是通过消解民间舞道具。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.36",
+    "chapter_title": "民间舞《济公》赏析",
+    "type": "判断题",
+    "stem": "舞蹈形式是舞台民间舞重返民间时首先要了解的东西。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "单选题",
+    "stem": "下列哪一项不属于中国古典舞来源()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈家的想象"
+      },
+      {
+        "label": "B",
+        "text": "现实生活中保留的活体"
+      },
+      {
+        "label": "C",
+        "text": "文献与图像"
+      },
+      {
+        "label": "D",
+        "text": "民间"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "单选题",
+    "stem": "民间舞的身份逻辑应是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈学者"
+      },
+      {
+        "label": "B",
+        "text": "职业舞者"
+      },
+      {
+        "label": "C",
+        "text": "二老艺人"
+      },
+      {
+        "label": "D",
+        "text": "农民"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "单选题",
+    "stem": "下列哪一项属于中国传统舞蹈范畴()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "中国古典舞和中国民族民间舞"
+      },
+      {
+        "label": "B",
+        "text": "中国古典舞和中国民间舞"
+      },
+      {
+        "label": "C",
+        "text": "中国古典舞、中国民间舞和中国当代舞"
+      },
+      {
+        "label": "D",
+        "text": "中国民间舞和中国当代舞"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "判断题",
+    "stem": "民间舞采用的创作方式应是自由开放的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "判断题",
+    "stem": "目前中国古典舞已完全消失在了民间。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "单选题",
+    "stem": "下列选项可作为一类舞蹈的代表的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "仅有民间艺人的舞蹈"
+      },
+      {
+        "label": "B",
+        "text": "仅有二老艺人的舞蹈"
+      },
+      {
+        "label": "C",
+        "text": "仅有职业舞者的舞蹈"
+      },
+      {
+        "label": "D",
+        "text": "ABC 均可"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "单选题",
+    "stem": "()是观众对舞蹈有错误认知的外部原因。",
+    "options": [
+      {
+        "label": "A",
+        "text": "媒介传播"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈内容"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈加工形式"
+      },
+      {
+        "label": "D",
+        "text": "环境设置"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "单选题",
+    "stem": "虽然舞蹈是一种艺术形式,但其背后也常蕴含着()的追求。",
+    "options": [
+      {
+        "label": "A",
+        "text": "古典层面"
+      },
+      {
+        "label": "B",
+        "text": "文学层面"
+      },
+      {
+        "label": "C",
+        "text": "世俗层面"
+      },
+      {
+        "label": "D",
+        "text": "信仰层面"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "判断题",
+    "stem": "如果把握不好中国民间舞的三个身份群体的平行关系,就会对中国 民间舞产生极大的瓦解作用。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.37",
+    "chapter_title": "以舞为本的绝症",
+    "type": "判断题",
+    "stem": "各民族的民间舞蹈的代表只能是职业舞者的舞蹈。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.39",
+    "chapter_title": "何谓时代性——古典与民间的时代反哺",
+    "type": "单选题",
+    "stem": "古典舞的时代性的意思是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "古典舞符合现代的审美观"
+      },
+      {
+        "label": "B",
+        "text": "古典舞蕴含现代时尚元素"
+      },
+      {
+        "label": "C",
+        "text": "古典舞给当下时代带了反哺"
+      },
+      {
+        "label": "D",
+        "text": "古典舞拥有现代新潮思想观念"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.39",
+    "chapter_title": "何谓时代性——古典与民间的时代反哺",
+    "type": "单选题",
+    "stem": "()是舞蹈教育早期职业化的弊端。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈内容同质化"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈知识储备不足"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈理论理解不深刻"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈技能单一化"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.39",
+    "chapter_title": "何谓时代性——古典与民间的时代反哺",
+    "type": "多选题",
+    "stem": "下列属于当代中国主流舞蹈的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "传统民间舞"
+      },
+      {
+        "label": "B",
+        "text": "芭蕾舞"
+      },
+      {
+        "label": "C",
+        "text": "古典舞"
+      },
+      {
+        "label": "D",
+        "text": "职业民间舞"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "1.39",
+    "chapter_title": "何谓时代性——古典与民间的时代反哺",
+    "type": "判断题",
+    "stem": "各类舞蹈如果在思维、思想和形式三个方面定位不清,就会导致走 向混乱状态。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.39",
+    "chapter_title": "何谓时代性——古典与民间的时代反哺",
+    "type": "判断题",
+    "stem": "舞台民间舞进入主流状态,其舞蹈内容也要求是主流内容。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.40",
+    "chapter_title": "现代舞——从《睡美人》到《海棠依旧》",
+    "type": "单选题",
+    "stem": "舞蹈《海棠依旧》属于下面哪一项芭蕾。()",
+    "options": [
+      {
+        "label": "A",
+        "text": "现代芭蕾"
+      },
+      {
+        "label": "B",
+        "text": "当代芭蕾"
+      },
+      {
+        "label": "C",
+        "text": "古代芭蕾"
+      },
+      {
+        "label": "D",
+        "text": "民间芭蕾"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.40",
+    "chapter_title": "现代舞——从《睡美人》到《海棠依旧》",
+    "type": "单选题",
+    "stem": "《海棠依旧》中女主人的女儿生产的地点是在下列哪国的公寓地下 室。()",
+    "options": [
+      {
+        "label": "A",
+        "text": "美国"
+      },
+      {
+        "label": "B",
+        "text": "法国"
+      },
+      {
+        "label": "C",
+        "text": "意大利"
+      },
+      {
+        "label": "D",
+        "text": "英国"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.40",
+    "chapter_title": "现代舞——从《睡美人》到《海棠依旧》",
+    "type": "单选题",
+    "stem": "下列哪一项是《海棠依旧》的构成形式中第一个洗礼的地点。()",
+    "options": [
+      {
+        "label": "A",
+        "text": "皇宫"
+      },
+      {
+        "label": "B",
+        "text": "卫生间"
+      },
+      {
+        "label": "C",
+        "text": "平民产房"
+      },
+      {
+        "label": "D",
+        "text": "高贵公寓"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.40",
+    "chapter_title": "现代舞——从《睡美人》到《海棠依旧》",
+    "type": "判断题",
+    "stem": "《海棠依旧》讲述的是两个女人的一生。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.40",
+    "chapter_title": "现代舞——从《睡美人》到《海棠依旧》",
+    "type": "判断题",
+    "stem": "徐志摩属于古典人物形象。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.40",
+    "chapter_title": "现代舞——从《睡美人》到《海棠依旧》",
+    "type": "判断题",
+    "stem": "现代舞和当代舞的发展相距的时间是1000 年。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.41",
+    "chapter_title": "审美与审丑之间",
+    "type": "单选题",
+    "stem": "()是现代舞必须表现出的基本观念。",
+    "options": [
+      {
+        "label": "A",
+        "text": "对人生存态度的反思"
+      },
+      {
+        "label": "B",
+        "text": "对社会矛盾的抨击"
+      },
+      {
+        "label": "C",
+        "text": "对美好生活的向往"
+      },
+      {
+        "label": "D",
+        "text": "对人性的批判"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.41",
+    "chapter_title": "审美与审丑之间",
+    "type": "单选题",
+    "stem": "()是现代舞与传统舞最根本的差异。",
+    "options": [
+      {
+        "label": "A",
+        "text": "时间变化"
+      },
+      {
+        "label": "B",
+        "text": "空间变化"
+      },
+      {
+        "label": "C",
+        "text": "人物形象变化"
+      },
+      {
+        "label": "D",
+        "text": "形式变化"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.41",
+    "chapter_title": "审美与审丑之间",
+    "type": "单选题",
+    "stem": "不仅越出了原生舞蹈的功能性范畴,而且公开反对女乐士的过度身 体修辞的奢侈行为的是()舞。",
+    "options": [
+      {
+        "label": "A",
+        "text": "原始舞"
+      },
+      {
+        "label": "B",
+        "text": "古典舞"
+      },
+      {
+        "label": "C",
+        "text": "民间舞"
+      },
+      {
+        "label": "D",
+        "text": "现代舞"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.41",
+    "chapter_title": "审美与审丑之间",
+    "type": "判断题",
+    "stem": "舞蹈《海棠依旧》的深刻的舞蹈内容,是通过细致的身体动作反映 出来的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.41",
+    "chapter_title": "审美与审丑之间",
+    "type": "判断题",
+    "stem": "舞蹈中的空间变化的展现需要通过时间变化。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.42",
+    "chapter_title": "舞蹈身体语料的扩大",
+    "type": "单选题",
+    "stem": "()是现代舞的本质。",
+    "options": [
+      {
+        "label": "A",
+        "text": "蕴含现代思想观念"
+      },
+      {
+        "label": "B",
+        "text": "用身体书写现实"
+      },
+      {
+        "label": "C",
+        "text": "用细致动作反映内容"
+      },
+      {
+        "label": "D",
+        "text": "反映时代性"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.42",
+    "chapter_title": "舞蹈身体语料的扩大",
+    "type": "单选题",
+    "stem": "现代舞的历史身体语源除古代文明阶段的传统舞蹈外,还包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "当代文明阶段的新传统舞蹈"
+      },
+      {
+        "label": "B",
+        "text": "舞台民间舞蹈"
+      },
+      {
+        "label": "C",
+        "text": "部落文化阶段的舞蹈"
+      },
+      {
+        "label": "D",
+        "text": "新古典舞蹈"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.42",
+    "chapter_title": "舞蹈身体语料的扩大",
+    "type": "多选题",
+    "stem": "现代舞身体语料的三个语源包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "历史"
+      },
+      {
+        "label": "B",
+        "text": "异域"
+      },
+      {
+        "label": "C",
+        "text": "生活"
+      },
+      {
+        "label": "D",
+        "text": "想象"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.42",
+    "chapter_title": "舞蹈身体语料的扩大",
+    "type": "判断题",
+    "stem": "当舞蹈上出现过多的奢华的身体行为时,观念展现的时间必然会被 压缩。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.42",
+    "chapter_title": "舞蹈身体语料的扩大",
+    "type": "判断题",
+    "stem": "现代舞最扩大最具质感的身体语源是异域。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.43",
+    "chapter_title": "外国现代舞——从审美到审丑",
+    "type": "单选题",
+    "stem": "()是现代舞最重要的“审丑”方式。",
+    "options": [
+      {
+        "label": "A",
+        "text": "狞厉"
+      },
+      {
+        "label": "B",
+        "text": "变形"
+      },
+      {
+        "label": "C",
+        "text": "和谐"
+      },
+      {
+        "label": "D",
+        "text": "诙谐"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.43",
+    "chapter_title": "外国现代舞——从审美到审丑",
+    "type": "单选题",
+    "stem": "一般情况下,三人舞的舞蹈形式是为了展现()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "冲突对抗"
+      },
+      {
+        "label": "B",
+        "text": "和谐"
+      },
+      {
+        "label": "C",
+        "text": "自我展示"
+      },
+      {
+        "label": "D",
+        "text": "平衡对称"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.43",
+    "chapter_title": "外国现代舞——从审美到审丑",
+    "type": "多选题",
+    "stem": "下列选项中属于“丑学”的意义的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "扩大艺术的审视角度"
+      },
+      {
+        "label": "B",
+        "text": "平衡美学的偏颇"
+      },
+      {
+        "label": "C",
+        "text": "匡正人类在感性学方面的失误"
+      },
+      {
+        "label": "D",
+        "text": "补充美学的疏漏"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "1.43",
+    "chapter_title": "外国现代舞——从审美到审丑",
+    "type": "判断题",
+    "stem": "“审丑”是审视现代舞的最主要美学形态。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.43",
+    "chapter_title": "外国现代舞——从审美到审丑",
+    "type": "判断题",
+    "stem": "现代舞完全处于审丑范围内。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.44",
+    "chapter_title": "中国现代舞（一）",
+    "type": "单选题",
+    "stem": "()是现代舞的关注中心。",
+    "options": [
+      {
+        "label": "A",
+        "text": "表情"
+      },
+      {
+        "label": "B",
+        "text": "手臂"
+      },
+      {
+        "label": "C",
+        "text": "躯干"
+      },
+      {
+        "label": "D",
+        "text": "脚"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.44",
+    "chapter_title": "中国现代舞（一）",
+    "type": "单选题",
+    "stem": "()是现代舞的剧场形式。",
+    "options": [
+      {
+        "label": "A",
+        "text": "仰视"
+      },
+      {
+        "label": "B",
+        "text": "俯视"
+      },
+      {
+        "label": "C",
+        "text": "平视"
+      },
+      {
+        "label": "D",
+        "text": "没有特定要求"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.44",
+    "chapter_title": "中国现代舞（一）",
+    "type": "单选题",
+    "stem": "西方现代舞产生时期是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "文艺复兴时期"
+      },
+      {
+        "label": "B",
+        "text": "二十世纪二三十年代"
+      },
+      {
+        "label": "C",
+        "text": "十九世纪中期"
+      },
+      {
+        "label": "D",
+        "text": "二战结束后"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.44",
+    "chapter_title": "中国现代舞（一）",
+    "type": "判断题",
+    "stem": "舞蹈《也许我要飞翔》阐释的是一种在物欲满足下人对精神的追求。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.44",
+    "chapter_title": "中国现代舞（一）",
+    "type": "判断题",
+    "stem": "舞蹈的身体动作逐渐由展示转化为表现,是古典舞向现代舞转变过 程的特点。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.45",
+    "chapter_title": "中国现代舞（二）",
+    "type": "单选题",
+    "stem": "现代舞的最终欣赏状态应是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "审美"
+      },
+      {
+        "label": "B",
+        "text": "审丑"
+      },
+      {
+        "label": "C",
+        "text": "反思"
+      },
+      {
+        "label": "D",
+        "text": "娱乐"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.46",
+    "chapter_title": "当代舞——从反叛到融合",
+    "type": "单选题",
+    "stem": "当代舞与现代舞反传统的态度不同,它的最大特点是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "对传统舞蹈的继承"
+      },
+      {
+        "label": "B",
+        "text": "对现代舞的创新"
+      },
+      {
+        "label": "C",
+        "text": "对传统舞蹈的尊重"
+      },
+      {
+        "label": "D",
+        "text": "对各种舞种的融合"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.46",
+    "chapter_title": "当代舞——从反叛到融合",
+    "type": "单选题",
+    "stem": "以()为本是当代舞的美学理想。",
+    "options": [
+      {
+        "label": "A",
+        "text": "现代舞"
+      },
+      {
+        "label": "B",
+        "text": "民间舞"
+      },
+      {
+        "label": "C",
+        "text": "古典舞"
+      },
+      {
+        "label": "D",
+        "text": "原生舞"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.46",
+    "chapter_title": "当代舞——从反叛到融合",
+    "type": "单选题",
+    "stem": "()是中国当代舞的“软肋”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈内容不丰满"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈形式单一"
+      },
+      {
+        "label": "C",
+        "text": "后期的发展规划不明确"
+      },
+      {
+        "label": "D",
+        "text": "前期的古典舞与民间舞不完善"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.46",
+    "chapter_title": "当代舞——从反叛到融合",
+    "type": "判断题",
+    "stem": "当代舞融合了现代舞和古典芭蕾各自的优势。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.46",
+    "chapter_title": "当代舞——从反叛到融合",
+    "type": "判断题",
+    "stem": "当代舞是舞蹈种类之一,又称当代舞蹈。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.47",
+    "chapter_title": "外国当代舞的构成",
+    "type": "单选题",
+    "stem": "()是印度宝莱坞舞蹈能够成熟发展的主要原因。",
+    "options": [
+      {
+        "label": "A",
+        "text": "借鉴外来舞蹈的优势"
+      },
+      {
+        "label": "B",
+        "text": "媒体的大力宣传"
+      },
+      {
+        "label": "C",
+        "text": "印度古典舞与民间舞的发达"
+      },
+      {
+        "label": "D",
+        "text": "宝莱坞舞蹈的历史悠久"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.47",
+    "chapter_title": "外国当代舞的构成",
+    "type": "单选题",
+    "stem": "法国的前卫舞蹈的表演场合是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "巴黎大歌剧院"
+      },
+      {
+        "label": "B",
+        "text": "红磨坊"
+      },
+      {
+        "label": "C",
+        "text": "巴士底剧场"
+      },
+      {
+        "label": "D",
+        "text": "群众生活"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.47",
+    "chapter_title": "外国当代舞的构成",
+    "type": "多选题",
+    "stem": "下列属于中国高雅舞蹈的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "芭蕾舞"
+      },
+      {
+        "label": "B",
+        "text": "中国古典舞"
+      },
+      {
+        "label": "C",
+        "text": "军旅舞蹈"
+      },
+      {
+        "label": "D",
+        "text": "中国民间舞"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "1.47",
+    "chapter_title": "外国当代舞的构成",
+    "type": "判断题",
+    "stem": "舞蹈的身体语言与舞种必须严格匹配。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.47",
+    "chapter_title": "外国当代舞的构成",
+    "type": "判断题",
+    "stem": "印度民间舞的舞者不都是职业舞者。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.48",
+    "chapter_title": "中国当代舞",
+    "type": "单选题",
+    "stem": "想要真正意识到舞蹈的价值,必须从舞蹈欣赏层面发展到()层面。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈继承"
+      },
+      {
+        "label": "B",
+        "text": "舞蹈批评"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈创新"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈推广"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.48",
+    "chapter_title": "中国当代舞",
+    "type": "单选题",
+    "stem": "()是舞蹈评论理论的首要评论点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "舞蹈语言信息"
+      },
+      {
+        "label": "B",
+        "text": "舞者身份"
+      },
+      {
+        "label": "C",
+        "text": "舞蹈种类"
+      },
+      {
+        "label": "D",
+        "text": "舞蹈动机"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.48",
+    "chapter_title": "中国当代舞",
+    "type": "单选题",
+    "stem": "舞蹈评论理论是关于()的一个评价系统。",
+    "options": [
+      {
+        "label": "A",
+        "text": "动作细节"
+      },
+      {
+        "label": "B",
+        "text": "形式内容"
+      },
+      {
+        "label": "C",
+        "text": "种类归属"
+      },
+      {
+        "label": "D",
+        "text": "人际意义"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.48",
+    "chapter_title": "中国当代舞",
+    "type": "判断题",
+    "stem": "城市群众舞蹈包括职业舞者所跳的交谊舞。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.48",
+    "chapter_title": "中国当代舞",
+    "type": "判断题",
+    "stem": "对生活形态的舞蹈进行评价时,不能站在专业高雅的角度评价,而应 站在舞蹈自身的语境中评价。",
+    "options": [],
+    "answer": "√"
+  }
+]

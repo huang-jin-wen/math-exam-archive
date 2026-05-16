@@ -1,0 +1,2935 @@
+[
+  {
+    "chapter": "1.1",
+    "chapter_title": "大学生的创业现状",
+    "type": "判断题",
+    "stem": "创业与创业者的学历存在一定的关系，但在某种程度上又不受学历的束缚。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "大学生的创业现状",
+    "type": "判断题",
+    "stem": "从目前的形势来看，社会上自主创业的人将越来越多，甚至有可能成为今后就 业的主流。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "大学生创业成为趋势的原因",
+    "type": "判断题",
+    "stem": "就业成本的增加是形成创业趋势的原因之一。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "大学生创业成为趋势的原因",
+    "type": "判断题",
+    "stem": "自贸区也是政府职能的一种改革。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "创业的定义及本质",
+    "type": "单选题",
+    "stem": "（ ）对失败的容忍率更大。",
+    "options": [
+      {
+        "label": "A",
+        "text": "风险基金"
+      },
+      {
+        "label": "B",
+        "text": "股票基金"
+      },
+      {
+        "label": "C",
+        "text": "天使基金"
+      },
+      {
+        "label": "D",
+        "text": "债券基金"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "创业的定义及本质",
+    "type": "单选题",
+    "stem": "通过莫里斯所做的创业定义研究发现，对于创业定义的理解中出现频次最高的 词是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "新事业、新机会"
+      },
+      {
+        "label": "B",
+        "text": "创新、新产品、新市场"
+      },
+      {
+        "label": "C",
+        "text": "追逐机会"
+      },
+      {
+        "label": "D",
+        "text": "开始、创建、创造"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "创业的定义及本质",
+    "type": "多选题",
+    "stem": "以下关于创业活动说法正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "创业活动是经济快速增长的外生性力量"
+      },
+      {
+        "label": "B",
+        "text": "是激发民间活动力的重要形式"
+      },
+      {
+        "label": "C",
+        "text": "是促进就业的重要途径"
+      },
+      {
+        "label": "D",
+        "text": "是推动自主创新和发展高科技产业、现代服务业等高端产业的重要力量"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "创业的定义及本质",
+    "type": "判断题",
+    "stem": "现有政策允许知识资本折合成相当比例的有形资产，以股权占有形式参与投入，创办实业。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.3",
+    "chapter_title": "创业的定义及本质",
+    "type": "判断题",
+    "stem": "网络经济、虚拟经济等经济形态的出现，为大学生自主创办大型知识型企业创 造了条件。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "单选题",
+    "stem": "从（ ）的视角来看，创业包含了使已有生产方式或是产品过时的资源独特组合。",
+    "options": [
+      {
+        "label": "A",
+        "text": "财富的创造"
+      },
+      {
+        "label": "B",
+        "text": "企业的创造"
+      },
+      {
+        "label": "C",
+        "text": "创新的创造"
+      },
+      {
+        "label": "D",
+        "text": "变革的创造"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "单选题",
+    "stem": "从变革的创造的视角来看，创业（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "包含了为了获得利润进行生产的风险承担"
+      },
+      {
+        "label": "B",
+        "text": "包含了对生产要素包括劳动力的雇佣、管理和发展等"
+      },
+      {
+        "label": "C",
+        "text": "是为了开发没有开启的市场机会，为顾客创造价值的过程"
+      },
+      {
+        "label": "D",
+        "text": "包含了为了抓住环境中的机会而进行的创造性的变革"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "单选题",
+    "stem": "SWOT 分析中，“W”代表（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "优势"
+      },
+      {
+        "label": "B",
+        "text": "劣势"
+      },
+      {
+        "label": "C",
+        "text": "机会"
+      },
+      {
+        "label": "D",
+        "text": "挑战"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "单选题",
+    "stem": "利用机会，克服劣势的战略为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "S-O 战略"
+      },
+      {
+        "label": "B",
+        "text": "W-O 战略"
+      },
+      {
+        "label": "C",
+        "text": "W-T 战略"
+      },
+      {
+        "label": "D",
+        "text": "S-T 战略"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "多选题",
+    "stem": "创业的形式包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自由资金创业"
+      },
+      {
+        "label": "B",
+        "text": "引进天使基金"
+      },
+      {
+        "label": "C",
+        "text": "引进PE 风险投资基金"
+      },
+      {
+        "label": "D",
+        "text": "合伙的形式"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "多选题",
+    "stem": "从增长的视角来看，创业被定义成为了（ ）的增长，一种正向的、强烈的导 向。",
+    "options": [
+      {
+        "label": "A",
+        "text": "机会"
+      },
+      {
+        "label": "B",
+        "text": "销售"
+      },
+      {
+        "label": "C",
+        "text": "雇佣"
+      },
+      {
+        "label": "D",
+        "text": "资产"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "1.4",
+    "chapter_title": "创业的形式",
+    "type": "判断题",
+    "stem": "从财富创造的视角来看，创业体现了一项从前没有过的新企业的创造。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "创业面临的问题及处理建议",
+    "type": "单选题",
+    "stem": "关于大学生创业，社会应负的责任不包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "设置系统的创业平台"
+      },
+      {
+        "label": "B",
+        "text": "转变思想观念"
+      },
+      {
+        "label": "C",
+        "text": "营造创业氛围，实现全民创业"
+      },
+      {
+        "label": "D",
+        "text": "加强优秀创业人物及创业事迹的宣传"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "创业面临的问题及处理建议",
+    "type": "多选题",
+    "stem": "关于大学生创业，高校应负的责任包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "在创业课程设置与创业指导等方面作出进步的努力"
+      },
+      {
+        "label": "B",
+        "text": "创新的教育模式"
+      },
+      {
+        "label": "C",
+        "text": "提高大学生的自身素质"
+      },
+      {
+        "label": "D",
+        "text": "务实的创业具体实施方案"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "1.5",
+    "chapter_title": "创业面临的问题及处理建议",
+    "type": "判断题",
+    "stem": "大学生创业要做好充足的心理准备，并培养自己的商业头脑意识。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "中国创业者的素质",
+    "type": "单选题",
+    "stem": "“有努力工作实现个人目标的渴望”指中国创业者身上具有的（ ）素质。",
+    "options": [
+      {
+        "label": "A",
+        "text": "适应能力"
+      },
+      {
+        "label": "B",
+        "text": "竞争性"
+      },
+      {
+        "label": "C",
+        "text": "纪律性"
+      },
+      {
+        "label": "D",
+        "text": "动力"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "中国创业者的素质",
+    "type": "多选题",
+    "stem": "中国创业者身上具有的素质包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "诚实"
+      },
+      {
+        "label": "B",
+        "text": "组织"
+      },
+      {
+        "label": "C",
+        "text": "说服力"
+      },
+      {
+        "label": "D",
+        "text": "毅力"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "中国创业者的素质",
+    "type": "判断题",
+    "stem": "“相信自己能做成计划中的事”体现了中国创业者身上具有动力的素质。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "成功创业者具备的特点",
+    "type": "单选题",
+    "stem": "“看清最终目标并坚定方向”体现了中国创业者身上具有（ ）的素质。",
+    "options": [
+      {
+        "label": "A",
+        "text": "诚实"
+      },
+      {
+        "label": "B",
+        "text": "毅力"
+      },
+      {
+        "label": "C",
+        "text": "视野"
+      },
+      {
+        "label": "D",
+        "text": "动力"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "成功创业者具备的特点",
+    "type": "单选题",
+    "stem": "中国创业者身上具有的“说服力”的素质是指（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "以诚待人"
+      },
+      {
+        "label": "B",
+        "text": "有能力安排好自己的生活，并使任务和信息条理化"
+      },
+      {
+        "label": "C",
+        "text": "努力实现目标，不放弃"
+      },
+      {
+        "label": "D",
+        "text": "劝说别人明白你的观点并对之感兴趣"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "成功创业者具备的特点",
+    "type": "判断题",
+    "stem": "对于创业成功是否能够成功，创业者的素质具有更大的决定性因素。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "企业家的素质",
+    "type": "单选题",
+    "stem": "以下不属于“五缘文化”的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "亲缘"
+      },
+      {
+        "label": "B",
+        "text": "业缘"
+      },
+      {
+        "label": "C",
+        "text": "乡缘"
+      },
+      {
+        "label": "D",
+        "text": "地缘"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "企业家的素质",
+    "type": "单选题",
+    "stem": "“同学、同行之间的关系”是指“五缘文化”中的（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "亲缘"
+      },
+      {
+        "label": "B",
+        "text": "业缘"
+      },
+      {
+        "label": "C",
+        "text": "乡缘"
+      },
+      {
+        "label": "D",
+        "text": "地缘"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "企业家的素质",
+    "type": "单选题",
+    "stem": "成功测创业者是“三商”的总和，其中（ ）排在首位。",
+    "options": [
+      {
+        "label": "A",
+        "text": "情商"
+      },
+      {
+        "label": "B",
+        "text": "智商"
+      },
+      {
+        "label": "C",
+        "text": "胆商"
+      },
+      {
+        "label": "D",
+        "text": "健商"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "企业家的素质",
+    "type": "多选题",
+    "stem": "一名成功的创业家应具备的素质包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "富有强烈的挑战性"
+      },
+      {
+        "label": "B",
+        "text": "求异的创造性思维"
+      },
+      {
+        "label": "C",
+        "text": "应付危机和挑战的能力"
+      },
+      {
+        "label": "D",
+        "text": "团队精神和卓越的领导才能、科学的知识结构"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "企业家的素质",
+    "type": "判断题",
+    "stem": "“清晰的使命感和愿景、严密推理的能力与综合能力、善于整合资源”等，这些都 是一名成功的创业家需要具备的素质。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "企业家的素质",
+    "type": "判断题",
+    "stem": "“高度的社会责任感、对机会的把握”等是一名成功的创业家需要具备的素质。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.4",
+    "chapter_title": "创业者的职业性向",
+    "type": "单选题",
+    "stem": "霍兰德职业性向理论提出（ ）种职业性向。",
+    "options": [
+      {
+        "label": "A",
+        "text": "三"
+      },
+      {
+        "label": "B",
+        "text": "六"
+      },
+      {
+        "label": "C",
+        "text": "十二"
+      },
+      {
+        "label": "D",
+        "text": "十八"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "2.4",
+    "chapter_title": "创业者的职业性向",
+    "type": "单选题",
+    "stem": "具有（ ）的人，通常表现为分析、创造、好奇、独立等个性特质，会被吸引去 从事那些善于思考、组织和理解的活动。",
+    "options": [
+      {
+        "label": "A",
+        "text": "实际性向"
+      },
+      {
+        "label": "B",
+        "text": "调研性向"
+      },
+      {
+        "label": "C",
+        "text": "社会性向"
+      },
+      {
+        "label": "D",
+        "text": "常规性向"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "2.4",
+    "chapter_title": "创业者的职业性向",
+    "type": "单选题",
+    "stem": "具有企业性向的人，通常表现为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自信、进取、精力充沛、威气凌人等个性特质，会被吸引去从事那些包含着大量以影响 他人或获得权力为目的的职业"
+      },
+      {
+        "label": "B",
+        "text": "顺从、高效、实际、缺乏想象力、缺乏灵活性等个性特质，会被吸引去从事那些包含着 大量结构性的且规则较为固定的职业"
+      },
+      {
+        "label": "C",
+        "text": "分析、创造、好奇、独立等个性特质，会被吸引去从事那些善于思考、组织和理解的活 动。"
+      },
+      {
+        "label": "D",
+        "text": "富有想象力、无序、杂乱、理想、情绪化、不实际等个性特质，会被吸引去从事那些包 含着大量自我表现、情感表达以及个性化活动的职业"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "2.4",
+    "chapter_title": "创业者的职业性向",
+    "type": "多选题",
+    "stem": "具有企业性向的人，适合的职业包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "法官"
+      },
+      {
+        "label": "B",
+        "text": "公关专家"
+      },
+      {
+        "label": "C",
+        "text": "管理人员"
+      },
+      {
+        "label": "D",
+        "text": "业务经理"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "2.4",
+    "chapter_title": "创业者的职业性向",
+    "type": "判断题",
+    "stem": "具有实际性向的人，通常表现为顺从、高效、实际、缺乏想象力、缺乏灵活性 等个性特质，会被吸引去从事那些包含着大量结构性的且规则较为固定的职业。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "2.5",
+    "chapter_title": "创业者的素质",
+    "type": "单选题",
+    "stem": "下列不属于美国教育的特点的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "封闭型"
+      },
+      {
+        "label": "B",
+        "text": "服务型"
+      },
+      {
+        "label": "C",
+        "text": "开放型"
+      },
+      {
+        "label": "D",
+        "text": "学分制"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "2.5",
+    "chapter_title": "创业者的素质",
+    "type": "多选题",
+    "stem": "面对创业，我们需要考虑下列哪些问题？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "是否具有无穷的精力"
+      },
+      {
+        "label": "B",
+        "text": "是否相信自己的决策能力"
+      },
+      {
+        "label": "C",
+        "text": "是否富有主动精神，能自我激励"
+      },
+      {
+        "label": "D",
+        "text": "是否自律性高、责任心重"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "2.5",
+    "chapter_title": "创业者的素质",
+    "type": "判断题",
+    "stem": "相对于美国教育，我国的教育是服务型和封闭型的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "创业的概念及基本要素",
+    "type": "单选题",
+    "stem": "创业的基本要素不包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "组织"
+      },
+      {
+        "label": "B",
+        "text": "产品"
+      },
+      {
+        "label": "C",
+        "text": "资源"
+      },
+      {
+        "label": "D",
+        "text": "价值"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "创业的概念及基本要素",
+    "type": "多选题",
+    "stem": "杰弗里·A·蒂蒙斯认为，创业是一种思考、推理和行为方式，这种方式是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "机会驱动"
+      },
+      {
+        "label": "B",
+        "text": "注重方法"
+      },
+      {
+        "label": "C",
+        "text": "与领导相平衡"
+      },
+      {
+        "label": "D",
+        "text": "创造出新颖的产品或服务"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "创业的概念及基本要素",
+    "type": "判断题",
+    "stem": "霍华德·H·斯蒂文森认为：创业是对机会的追逐，与当时控制的资源无关。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "创业的类型",
+    "type": "单选题",
+    "stem": "独立创业的方式不包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "创新型创业"
+      },
+      {
+        "label": "B",
+        "text": "从属型创业"
+      },
+      {
+        "label": "C",
+        "text": "母体分离"
+      },
+      {
+        "label": "D",
+        "text": "模仿型创业"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "创业的类型",
+    "type": "多选题",
+    "stem": "创业的类型包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "创新型创业"
+      },
+      {
+        "label": "B",
+        "text": "独立创业"
+      },
+      {
+        "label": "C",
+        "text": "母体分离"
+      },
+      {
+        "label": "D",
+        "text": "企业内创业"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "创业的类型",
+    "type": "判断题",
+    "stem": "组织是协调创业活动的系统，其显著特征包括：创业者的强有力领导和完善的 正式的结构和制度。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "创业的类型",
+    "type": "判断题",
+    "stem": "企业内创业是指组织内部的管理者、技术人员或职员，离开原组织，但利用在 组织中的资源，成立新的企业，进行营利活动。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "创业的动机",
+    "type": "单选题",
+    "stem": "（ ）是指进入成熟期的为了获得持续增长和长久的竞争优势，为了倡导创新并 使其研成果产品化，通过授权和资源保障等支持的创业。",
+    "options": [
+      {
+        "label": "A",
+        "text": "独立创业"
+      },
+      {
+        "label": "B",
+        "text": "母体分离"
+      },
+      {
+        "label": "C",
+        "text": "企业内创业"
+      },
+      {
+        "label": "D",
+        "text": "从属型创业"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "创业的动机",
+    "type": "多选题",
+    "stem": "蒂蒙斯模型的含义表明，创业过程依赖于（ ）三要素的匹配和平衡。",
+    "options": [
+      {
+        "label": "A",
+        "text": "动机"
+      },
+      {
+        "label": "B",
+        "text": "机会"
+      },
+      {
+        "label": "C",
+        "text": "创业团队"
+      },
+      {
+        "label": "D",
+        "text": "资源"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "创业的动机",
+    "type": "判断题",
+    "stem": "创业的作用包括：促进经济增长、促进就业和有助于技术创新。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "单选题",
+    "stem": "（ ）实际上就是把一个想法落地为现实的一种创业行动的一个桥梁。",
+    "options": [
+      {
+        "label": "A",
+        "text": "商机"
+      },
+      {
+        "label": "B",
+        "text": "资源"
+      },
+      {
+        "label": "C",
+        "text": "商业计划书"
+      },
+      {
+        "label": "D",
+        "text": "工作团队"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "单选题",
+    "stem": "根据蒂蒙斯模型，（ ）是创业过程的核心动力。",
+    "options": [
+      {
+        "label": "A",
+        "text": "商业机会"
+      },
+      {
+        "label": "B",
+        "text": "创始人"
+      },
+      {
+        "label": "C",
+        "text": "工作团队"
+      },
+      {
+        "label": "D",
+        "text": "资源"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "单选题",
+    "stem": "威克姆模型认为，创业活动包括（ ）个要素。",
+    "options": [
+      {
+        "label": "A",
+        "text": "二"
+      },
+      {
+        "label": "B",
+        "text": "三"
+      },
+      {
+        "label": "C",
+        "text": "四"
+      },
+      {
+        "label": "D",
+        "text": "五"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "单选题",
+    "stem": "（ ）更能考虑到创业的动态性。",
+    "options": [
+      {
+        "label": "A",
+        "text": "蒂蒙斯模型"
+      },
+      {
+        "label": "B",
+        "text": "威克姆模型"
+      },
+      {
+        "label": "C",
+        "text": "盖特纳模型"
+      },
+      {
+        "label": "D",
+        "text": "克里斯琴模型"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "多选题",
+    "stem": "创业过程是一个连续不断的寻求动态平衡的行为组合。团队必须做的核心工作 是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "对商机的理性分析和把握"
+      },
+      {
+        "label": "B",
+        "text": "对风险的认识和规避"
+      },
+      {
+        "label": "C",
+        "text": "对资源的最合理的利用和配置"
+      },
+      {
+        "label": "D",
+        "text": "对工作团队适应性的分析和认识"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "多选题",
+    "stem": "以下哪些属于克里斯琴模型提出的创业类型？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "安定型创业"
+      },
+      {
+        "label": "B",
+        "text": "冒险型创业"
+      },
+      {
+        "label": "C",
+        "text": "创新型创业"
+      },
+      {
+        "label": "D",
+        "text": "从属型创业"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "判断题",
+    "stem": "根据蒂蒙斯模型，创始人或工作团队是创业成功的必要保证。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.4",
+    "chapter_title": "创业的理论模型",
+    "type": "判断题",
+    "stem": "蒂蒙斯模型认为，创业者任务的本质就是有效处理机会、资源和组织之间的关 系。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.5",
+    "chapter_title": "创业生命周期理论",
+    "type": "单选题",
+    "stem": "（ ）处于创业的生命周期理论的系统研究阶段。",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 世纪50 至60 年代"
+      },
+      {
+        "label": "B",
+        "text": "20 世纪60 至70 年代"
+      },
+      {
+        "label": "C",
+        "text": "20 世纪70 至80 年代"
+      },
+      {
+        "label": "D",
+        "text": "21 世纪初期"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "3.5",
+    "chapter_title": "创业生命周期理论",
+    "type": "单选题",
+    "stem": "葛雷纳的成长性企业阶段模型包括（ ）个阶段。",
+    "options": [
+      {
+        "label": "A",
+        "text": "二"
+      },
+      {
+        "label": "B",
+        "text": "三"
+      },
+      {
+        "label": "C",
+        "text": "四"
+      },
+      {
+        "label": "D",
+        "text": "五"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "3.5",
+    "chapter_title": "创业生命周期理论",
+    "type": "判断题",
+    "stem": "根据爱迪思成长企业十阶段论，孕育期容易出现创业空想。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.6",
+    "chapter_title": "创业的原则",
+    "type": "单选题",
+    "stem": "创业的（ ）包括：启动资金越小越好；不讲究排场，配置以能够运行为准；人 员精简到最低限度；生产管理功能尽量社会化。",
+    "options": [
+      {
+        "label": "A",
+        "text": "择业原则"
+      },
+      {
+        "label": "B",
+        "text": "投资最小化原则"
+      },
+      {
+        "label": "C",
+        "text": "风险最低化原则"
+      },
+      {
+        "label": "D",
+        "text": "产品简约化原则"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "3.6",
+    "chapter_title": "创业的原则",
+    "type": "多选题",
+    "stem": "创业的原则包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "择业原则"
+      },
+      {
+        "label": "B",
+        "text": "投资最小化原则"
+      },
+      {
+        "label": "C",
+        "text": "产品简约化原则"
+      },
+      {
+        "label": "D",
+        "text": "风险最低化原则"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "3.6",
+    "chapter_title": "创业的原则",
+    "type": "判断题",
+    "stem": "创业的择业原则包括从事自己力所能及的行业；准入门槛低；竞争对手少，最 好是新兴的、独特的行业或产品。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.6",
+    "chapter_title": "创业的原则",
+    "type": "判断题",
+    "stem": "产品的简约化原则是指：不要尝试打政策的擦边球；营销收益能尽快兑现；承 接与自己能力相符的业务；保持足够的先进流量。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "创新思维的本质",
+    "type": "多选题",
+    "stem": "创新思维的特点包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "非常规性"
+      },
+      {
+        "label": "B",
+        "text": "积极主动性"
+      },
+      {
+        "label": "C",
+        "text": "常规性"
+      },
+      {
+        "label": "D",
+        "text": "动态性"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "创新思维的本质",
+    "type": "判断题",
+    "stem": "搞发明创造要有创造力，创新思维就是构成创造力的核心。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.2",
+    "chapter_title": "创新思维的特征",
+    "type": "判断题",
+    "stem": "通过学习、自我谈话和被领导和家长推出去，不断锻炼可以获得心理安全区。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "创新思维的培养",
+    "type": "单选题",
+    "stem": "根据研究，企业的竞争包括三个阶段，其中（ ）是解决问题的阶段。",
+    "options": [
+      {
+        "label": "A",
+        "text": "争原料、争设备阶段"
+      },
+      {
+        "label": "B",
+        "text": "争科技性人才阶段"
+      },
+      {
+        "label": "C",
+        "text": "争智囊行人才阶段"
+      },
+      {
+        "label": "D",
+        "text": "争管理模式阶段"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "创新思维的培养",
+    "type": "单选题",
+    "stem": "根据研究，企业的竞争第二个阶段主要是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "争原料、争设备阶段"
+      },
+      {
+        "label": "B",
+        "text": "争科技性人才阶段"
+      },
+      {
+        "label": "C",
+        "text": "争智囊行人才阶段"
+      },
+      {
+        "label": "D",
+        "text": "争管理模式阶段"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "创新思维的培养",
+    "type": "判断题",
+    "stem": "思维惯性和思维定势合起来就称为思维障碍。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.4",
+    "chapter_title": "企业思维的枷锁",
+    "type": "单选题",
+    "stem": "（ ）表现为不敏感，思维不活跃。",
+    "options": [
+      {
+        "label": "A",
+        "text": "自我中心型思维障碍"
+      },
+      {
+        "label": "B",
+        "text": "自卑型思维障碍"
+      },
+      {
+        "label": "C",
+        "text": "麻木型思维障碍"
+      },
+      {
+        "label": "D",
+        "text": "偏执性思维障碍"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "4.4",
+    "chapter_title": "企业思维的枷锁",
+    "type": "单选题",
+    "stem": "打破权威性思维障碍的解决方法是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "克服从众心理，坚持自我"
+      },
+      {
+        "label": "B",
+        "text": "先来一番彻底的审查，尊重而不是迷信"
+      },
+      {
+        "label": "C",
+        "text": "打破对经验的依赖与崇拜，将经验转变为创新"
+      },
+      {
+        "label": "D",
+        "text": "尽信书不如无书"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "4.4",
+    "chapter_title": "企业思维的枷锁",
+    "type": "判断题",
+    "stem": "自我中心型思维障碍表现为大多颇为自信，但有的是钻牛角尖，明知这条道路 走不通，非要往前闯，不知道及时转弯子。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.5",
+    "chapter_title": "创新思维的培养视角",
+    "type": "单选题",
+    "stem": "“声不过五，五声之变，不可胜听也；色不过五，五色之变，不可胜观也”体现了（ ）思维。",
+    "options": [
+      {
+        "label": "A",
+        "text": "求同"
+      },
+      {
+        "label": "B",
+        "text": "求异"
+      },
+      {
+        "label": "C",
+        "text": "组合"
+      },
+      {
+        "label": "D",
+        "text": "求合"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "4.5",
+    "chapter_title": "创新思维的培养视角",
+    "type": "多选题",
+    "stem": "下列关于扩展视角的关系叙述正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "否定-肯定-待定"
+      },
+      {
+        "label": "B",
+        "text": "今日-往日-未日"
+      },
+      {
+        "label": "C",
+        "text": "自我-非我-大我"
+      },
+      {
+        "label": "D",
+        "text": "求合-求同-求异"
+      }
+    ],
+    "answer": "BC"
+  },
+  {
+    "chapter": "4.5",
+    "chapter_title": "创新思维的培养视角",
+    "type": "判断题",
+    "stem": "做市场的生意要注重求异思维。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.6",
+    "chapter_title": "培养创新思维习惯",
+    "type": "单选题",
+    "stem": "“无序-有序-超序”是扩展视角的一种方法，其中“无序”指（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "逻辑论证"
+      },
+      {
+        "label": "B",
+        "text": "打破条框"
+      },
+      {
+        "label": "C",
+        "text": "实施论证"
+      },
+      {
+        "label": "D",
+        "text": "演绎推理"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "4.6",
+    "chapter_title": "培养创新思维习惯",
+    "type": "判断题",
+    "stem": "“无序-有序-超序”是扩展视角的一种方法，其中“超序”指逻辑论证。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.7",
+    "chapter_title": "创新思维修炼的技术",
+    "type": "单选题",
+    "stem": "“卫生酒精”的发明采用了（ ）思维方法。",
+    "options": [
+      {
+        "label": "A",
+        "text": "颠倒思维"
+      },
+      {
+        "label": "B",
+        "text": "综合思维"
+      },
+      {
+        "label": "C",
+        "text": "侧向思维"
+      },
+      {
+        "label": "D",
+        "text": "逆向思维"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "4.7",
+    "chapter_title": "创新思维修炼的技术",
+    "type": "单选题",
+    "stem": "（ ）是一种通过把注意力引向外部其他领域和事物，从而受到启发，找到超出 限定条件之外的新思路。",
+    "options": [
+      {
+        "label": "A",
+        "text": "逆向思维"
+      },
+      {
+        "label": "B",
+        "text": "颠倒思维"
+      },
+      {
+        "label": "C",
+        "text": "发散思维"
+      },
+      {
+        "label": "D",
+        "text": "侧向思维"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "4.7",
+    "chapter_title": "创新思维修炼的技术",
+    "type": "多选题",
+    "stem": "以下哪些属于激发潜能的方式？（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "良性暗示"
+      },
+      {
+        "label": "B",
+        "text": "梦境顿悟"
+      },
+      {
+        "label": "C",
+        "text": "冥想境界"
+      },
+      {
+        "label": "D",
+        "text": "逆向思维"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "4.7",
+    "chapter_title": "创新思维修炼的技术",
+    "type": "判断题",
+    "stem": "梦会将毫不想干的事物联系在一起，而这可能恰恰是你的正常思维所忽略的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.7",
+    "chapter_title": "创新思维修炼的技术",
+    "type": "判断题",
+    "stem": "颠倒思维从实质上来讲，与逆向思维完全不同。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.8",
+    "chapter_title": "创新思维修炼的方法",
+    "type": "单选题",
+    "stem": "（ ）主要侧重于资料和信息。",
+    "options": [
+      {
+        "label": "A",
+        "text": "白帽思维"
+      },
+      {
+        "label": "B",
+        "text": "红帽思维"
+      },
+      {
+        "label": "C",
+        "text": "黑帽思维"
+      },
+      {
+        "label": "D",
+        "text": "绿帽思维"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "4.8",
+    "chapter_title": "创新思维修炼的方法",
+    "type": "单选题",
+    "stem": "（ ）代表着一种创新与冒险。",
+    "options": [
+      {
+        "label": "A",
+        "text": "白帽思维"
+      },
+      {
+        "label": "B",
+        "text": "红帽思维"
+      },
+      {
+        "label": "C",
+        "text": "黑帽思维"
+      },
+      {
+        "label": "D",
+        "text": "绿帽思维"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "4.8",
+    "chapter_title": "创新思维修炼的方法",
+    "type": "判断题",
+    "stem": "白帽思维侧重于直觉与情感。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "创业机会的重要性",
+    "type": "单选题",
+    "stem": "胡润富豪榜在新中国成立()周年时第一次推出。",
+    "options": [
+      {
+        "label": "A",
+        "text": "三十"
+      },
+      {
+        "label": "B",
+        "text": "四十"
+      },
+      {
+        "label": "C",
+        "text": "五十"
+      },
+      {
+        "label": "D",
+        "text": "六十"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "创业机会的重要性",
+    "type": "判断题",
+    "stem": "一名敏锐的创业者往往能够把握住普通人可能没有意识到的机会，从而占据市场 先机。",
+    "options": [
+      {
+        "label": "A",
+        "text": "商业机会"
+      },
+      {
+        "label": "B",
+        "text": "创业机会"
+      },
+      {
+        "label": "C",
+        "text": "际遇"
+      },
+      {
+        "label": "D",
+        "text": "机遇"
+      }
+    ],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "创业机会的含义",
+    "type": "单选题",
+    "stem": "创业机会的来源不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "问题型机会"
+      },
+      {
+        "label": "B",
+        "text": "趋势型机会"
+      },
+      {
+        "label": "C",
+        "text": "组合型机会"
+      },
+      {
+        "label": "D",
+        "text": "常规型机会"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "创业机会的含义",
+    "type": "单选题",
+    "stem": "()指当目的或手段任意一方的状况未知，等待创业者去进行机会发掘。",
+    "options": [
+      {
+        "label": "A",
+        "text": "识别型机会"
+      },
+      {
+        "label": "B",
+        "text": "发现型机会"
+      },
+      {
+        "label": "C",
+        "text": "创造型机会"
+      },
+      {
+        "label": "D",
+        "text": "窗口型机会"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "创业机会的含义",
+    "type": "多选题",
+    "stem": "奥地利经济学派认为创业机会与商业机会的根本区别在于()或()创造潜力的差异。",
+    "options": [
+      {
+        "label": "A",
+        "text": "利润"
+      },
+      {
+        "label": "B",
+        "text": "价值"
+      },
+      {
+        "label": "C",
+        "text": "产品"
+      },
+      {
+        "label": "D",
+        "text": "资源"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "创业机会的含义",
+    "type": "多选题",
+    "stem": "创业机会是可以为购买者或使用者创造或增加价值的产品或服务，它具有()的特 点。",
+    "options": [
+      {
+        "label": "A",
+        "text": "吸引力"
+      },
+      {
+        "label": "B",
+        "text": "持久性"
+      },
+      {
+        "label": "C",
+        "text": "适时性"
+      },
+      {
+        "label": "D",
+        "text": "独特性"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "创业机会的含义",
+    "type": "判断题",
+    "stem": "商机与创业机会实质上是一个概念。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "创业机会的含义",
+    "type": "判断题",
+    "stem": "识别型机会指市场中的目的-手段关系十分明显时，创业家可通过目的-手段关系 的连接来辨别机会。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.3",
+    "chapter_title": "创业机会的分类",
+    "type": "判断题",
+    "stem": "创业机会具有客观性的特征。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.4",
+    "chapter_title": "创业机会的特征",
+    "type": "单选题",
+    "stem": "（ ）是创业机会识别的主要来源。",
+    "options": [
+      {
+        "label": "A",
+        "text": "先前经验"
+      },
+      {
+        "label": "B",
+        "text": "认知因素"
+      },
+      {
+        "label": "C",
+        "text": "社会关系网络"
+      },
+      {
+        "label": "D",
+        "text": "创造性"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "5.4",
+    "chapter_title": "创业机会的特征",
+    "type": "多选题",
+    "stem": "创业机会具有（ ）的特征。",
+    "options": [
+      {
+        "label": "A",
+        "text": "客观性"
+      },
+      {
+        "label": "B",
+        "text": "时效性"
+      },
+      {
+        "label": "C",
+        "text": "均衡性"
+      },
+      {
+        "label": "D",
+        "text": "差异性"
+      },
+      {
+        "label": "E",
+        "text": "成本性"
+      }
+    ],
+    "answer": "ABCDE"
+  },
+  {
+    "chapter": "5.4",
+    "chapter_title": "创业机会的特征",
+    "type": "判断题",
+    "stem": "借助“弱关系”的优势在于用最少的成本去获取更多的人际关系。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.5",
+    "chapter_title": "创业机会的来源(上)",
+    "type": "单选题",
+    "stem": "创造过程可分为五个阶段，其中第二个阶段为 ()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "准备"
+      },
+      {
+        "label": "B",
+        "text": "孵化"
+      },
+      {
+        "label": "C",
+        "text": "洞察"
+      },
+      {
+        "label": "D",
+        "text": "阐述"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "5.5",
+    "chapter_title": "创业机会的来源(上)",
+    "type": "多选题",
+    "stem": "创业机会的来源包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "科技的进步"
+      },
+      {
+        "label": "B",
+        "text": "制度变革"
+      },
+      {
+        "label": "C",
+        "text": "社会因素的变化"
+      },
+      {
+        "label": "D",
+        "text": "人口因素的变化"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "5.6",
+    "chapter_title": "创业机会的来源(下)",
+    "type": "判断题",
+    "stem": "市场需求的变化是创业机会的来源之一。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.7",
+    "chapter_title": "创业机会的识别",
+    "type": "单选题",
+    "stem": "蒂蒙斯的创业机会评价框架涉及()个方面53 项指标。",
+    "options": [
+      {
+        "label": "A",
+        "text": "四"
+      },
+      {
+        "label": "B",
+        "text": "六"
+      },
+      {
+        "label": "C",
+        "text": "八"
+      },
+      {
+        "label": "D",
+        "text": "十六"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "5.7",
+    "chapter_title": "创业机会的识别",
+    "type": "单选题",
+    "stem": "新眼光调查注重()调查。",
+    "options": [
+      {
+        "label": "A",
+        "text": "初级"
+      },
+      {
+        "label": "B",
+        "text": "二级"
+      },
+      {
+        "label": "C",
+        "text": "三级"
+      },
+      {
+        "label": "D",
+        "text": "四级"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "5.7",
+    "chapter_title": "创业机会的识别",
+    "type": "判断题",
+    "stem": "通过创造获得创业机会的方法在新技术行业中最为常见。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.8",
+    "chapter_title": "创业机会评价框架",
+    "type": "单选题",
+    "stem": "()的行业特点是大量规模相近的企业。",
+    "options": [
+      {
+        "label": "A",
+        "text": "新兴行业"
+      },
+      {
+        "label": "B",
+        "text": "成熟行业"
+      },
+      {
+        "label": "C",
+        "text": "分散行业"
+      },
+      {
+        "label": "D",
+        "text": "衰退行业"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "5.8",
+    "chapter_title": "创业机会评价框架",
+    "type": "单选题",
+    "stem": "根据刘常勇的创业机会评价框架，()不属于回报评价。",
+    "options": [
+      {
+        "label": "A",
+        "text": "评价创业机会的市场渗透力"
+      },
+      {
+        "label": "B",
+        "text": "毛利率应该高于40%"
+      },
+      {
+        "label": "C",
+        "text": "能否创造新企业在市场上的战略价值"
+      },
+      {
+        "label": "D",
+        "text": "资本市场的活跃程度"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "5.8",
+    "chapter_title": "创业机会评价框架",
+    "type": "判断题",
+    "stem": "头脑风暴法的过程是:提出问题-问题组合-集思广益-意见组合。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "5.8",
+    "chapter_title": "创业机会评价框架",
+    "type": "判断题",
+    "stem": "成熟行业的行业特点是需求增长缓慢，有限的产品创新。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.1",
+    "chapter_title": "创业战略的内涵",
+    "type": "多选题",
+    "stem": "创业战略包含的三个问题是()",
+    "options": [
+      {
+        "label": "A",
+        "text": "做什么"
+      },
+      {
+        "label": "B",
+        "text": "如何做"
+      },
+      {
+        "label": "C",
+        "text": "由谁来做"
+      },
+      {
+        "label": "D",
+        "text": "做到什么程度"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "团队与创业",
+    "type": "多选题",
+    "stem": "创业团队需要具备的特点有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "目标一致"
+      },
+      {
+        "label": "B",
+        "text": "相互了解信任"
+      },
+      {
+        "label": "C",
+        "text": "拥有核心"
+      },
+      {
+        "label": "D",
+        "text": "相濡以沫"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "团队与创业",
+    "type": "判断题",
+    "stem": "创业关注的核心是卓有成效成效的创业团队。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "创业团队的来源",
+    "type": "单选题",
+    "stem": "创业团队的工作绩效应该()团队中的每个人的单独的绩效的总和。",
+    "options": [
+      {
+        "label": "A",
+        "text": "小于"
+      },
+      {
+        "label": "B",
+        "text": "等于"
+      },
+      {
+        "label": "C",
+        "text": "大于"
+      },
+      {
+        "label": "D",
+        "text": "不确定"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "创业团队的来源",
+    "type": "判断题",
+    "stem": "沈南鹏在携程这个团队主要负责吸引风险投资方面。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.4",
+    "chapter_title": "创业团队的构成及作用",
+    "type": "单选题",
+    "stem": "如果创业团队存在（ ）问题，基本上所有的风险投资家都会拒绝投资。",
+    "options": [
+      {
+        "label": "A",
+        "text": "资金"
+      },
+      {
+        "label": "B",
+        "text": "管理"
+      },
+      {
+        "label": "C",
+        "text": "发展"
+      },
+      {
+        "label": "D",
+        "text": "诚信"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "6.4",
+    "chapter_title": "创业团队的构成及作用",
+    "type": "多选题",
+    "stem": "以下选项属于创业机会视角下的创业团队优势的是()",
+    "options": [
+      {
+        "label": "A",
+        "text": "机会获得能力较高"
+      },
+      {
+        "label": "B",
+        "text": "机会识别能力较高"
+      },
+      {
+        "label": "C",
+        "text": "机会开发能力较高"
+      },
+      {
+        "label": "D",
+        "text": "机会利用能力较高"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "6.4",
+    "chapter_title": "创业团队的构成及作用",
+    "type": "判断题",
+    "stem": "董事会具有指导、增加自信的作用。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.5",
+    "chapter_title": "如何选择创业合作者",
+    "type": "单选题",
+    "stem": "创业团队的相似性特点会团队带来一个明显的缺点就是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "效率问题"
+      },
+      {
+        "label": "B",
+        "text": "冗余问题"
+      },
+      {
+        "label": "C",
+        "text": "沟通问题"
+      },
+      {
+        "label": "D",
+        "text": "发展问题"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "6.5",
+    "chapter_title": "如何选择创业合作者",
+    "type": "单选题",
+    "stem": "生命周期处于（ ）阶段时，创业团队的凝聚力和有效性都是低水平。",
+    "options": [
+      {
+        "label": "A",
+        "text": "出生"
+      },
+      {
+        "label": "B",
+        "text": "成长"
+      },
+      {
+        "label": "C",
+        "text": "成熟"
+      },
+      {
+        "label": "D",
+        "text": "衰老"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "6.6",
+    "chapter_title": "创业初期及其管理",
+    "type": "单选题",
+    "stem": "新企业在成长过程中有两个特点，不确定性和()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "缓慢性"
+      },
+      {
+        "label": "B",
+        "text": "偏见性"
+      },
+      {
+        "label": "C",
+        "text": "复杂性"
+      },
+      {
+        "label": "D",
+        "text": "稳定性"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "6.6",
+    "chapter_title": "创业初期及其管理",
+    "type": "多选题",
+    "stem": "以下选项属于创业初期的优势的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "内部结构简单"
+      },
+      {
+        "label": "B",
+        "text": "在进入新行业的情况下竞争者较少"
+      },
+      {
+        "label": "C",
+        "text": "承担风险的代价不大"
+      },
+      {
+        "label": "D",
+        "text": "办事效率较高"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "6.6",
+    "chapter_title": "创业初期及其管理",
+    "type": "判断题",
+    "stem": "创业初期是以生存为首要目标的阶段",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.7",
+    "chapter_title": "创新企业的优缺点",
+    "type": "多选题",
+    "stem": "先行企业享受早期进入市场的优势有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "拥有较高的市场份额"
+      },
+      {
+        "label": "B",
+        "text": "较长的生存时间"
+      },
+      {
+        "label": "C",
+        "text": "市场竞争者多"
+      },
+      {
+        "label": "D",
+        "text": "成为同类产品的领导者"
+      }
+    ],
+    "answer": "ABD"
+  },
+  {
+    "chapter": "6.7",
+    "chapter_title": "创新企业的优缺点",
+    "type": "判断题",
+    "stem": "创业期间可能存在的“自由骑士效应”对先行企业来说是一种好的作用。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "创业计划书的含义",
+    "type": "单选题",
+    "stem": "在创业过程中()是一个创业主题的“灵魂”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "创业项目书"
+      },
+      {
+        "label": "B",
+        "text": "市场营销"
+      },
+      {
+        "label": "C",
+        "text": "人力资源"
+      },
+      {
+        "label": "D",
+        "text": "财务管理"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "创业计划书的含义",
+    "type": "多选题",
+    "stem": "下列关于创业计划书叙述正确的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "是创业者计划创立的业务的书面摘要"
+      },
+      {
+        "label": "B",
+        "text": "它为业务的发展提供指示图和衡量业务进展情况的标准"
+      },
+      {
+        "label": "C",
+        "text": "仅用于描述与拟创办企业相关的内部环境条件"
+      },
+      {
+        "label": "D",
+        "text": "创业计划项目书仅包含市场营销、财务和人力资源"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "创业计划书的含义",
+    "type": "判断题",
+    "stem": "创业计划书可以帮助创业者树立清晰的愿景、树立创业的信心。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "创业计划书的内容(上)",
+    "type": "单选题",
+    "stem": "对于分散行业，对创业者的建议是() 。",
+    "options": [
+      {
+        "label": "A",
+        "text": "尽早进入"
+      },
+      {
+        "label": "B",
+        "text": "不轻易进入"
+      },
+      {
+        "label": "C",
+        "text": "加盟连锁"
+      },
+      {
+        "label": "D",
+        "text": "不进入"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "创业计划书的内容(上)",
+    "type": "单选题",
+    "stem": "一般情况下，创业计划书的第四部内容是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "企业介绍"
+      },
+      {
+        "label": "B",
+        "text": "行业分析"
+      },
+      {
+        "label": "C",
+        "text": "产品服务介绍"
+      },
+      {
+        "label": "D",
+        "text": "人员即组织结构"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "创业计划书的内容(上)",
+    "type": "判断题",
+    "stem": "“红海战略”是指进入的行业是新兴行业，几乎没有竞争对手。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "创业计划书的内容(上)",
+    "type": "判断题",
+    "stem": "创业计划书的企业介绍部分，一定要介绍公司理念和公司的战略目标。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "创业计划书的内容(下)",
+    "type": "单选题",
+    "stem": "()反应某一时刻企业的状况、投资这可以用其中的数据得到的比率指标来衡量企业 的经营状况。",
+    "options": [
+      {
+        "label": "A",
+        "text": "现金流量"
+      },
+      {
+        "label": "B",
+        "text": "资产负债表"
+      },
+      {
+        "label": "C",
+        "text": "损益表"
+      },
+      {
+        "label": "D",
+        "text": "财务状况变动表"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "创业计划书的内容(下)",
+    "type": "单选题",
+    "stem": "创业计划书中营销策略的内容不包括()",
+    "options": [
+      {
+        "label": "A",
+        "text": "市场机构和营销渠道的选择"
+      },
+      {
+        "label": "B",
+        "text": "营销队伍和管理"
+      },
+      {
+        "label": "C",
+        "text": "目标顾客和目标市场"
+      },
+      {
+        "label": "D",
+        "text": "价格决策"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "创业计划书的内容(下)",
+    "type": "多选题",
+    "stem": "创业计划书中关于产品服务的介绍包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "产品/服务的特点和竞争优势"
+      },
+      {
+        "label": "B",
+        "text": "产品/服务的市场前景预测"
+      },
+      {
+        "label": "C",
+        "text": "需求进行预测"
+      },
+      {
+        "label": "D",
+        "text": "促销计划和广告策略"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "创业计划书的内容(下)",
+    "type": "判断题",
+    "stem": "流动资金反映的是企业的营利状况，它是企业在一段时间运作后的经营成果。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "创业计划书的书写格式",
+    "type": "单选题",
+    "stem": "精简版创业计划书第三部分的内容一般是 ()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "商业模式"
+      },
+      {
+        "label": "B",
+        "text": "解决方案"
+      },
+      {
+        "label": "C",
+        "text": "营销和销售战略"
+      },
+      {
+        "label": "D",
+        "text": "竞争分析"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "创业计划书的书写格式",
+    "type": "判断题",
+    "stem": "精简版创业计划书第四部分的内容一般是“潜在的魔力”，主要叙述你的公司如何 做到与众不同。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "创业计划书的书写格式",
+    "type": "判断题",
+    "stem": "在创业计划书中，风险资本的退出部分应包括退出方式和退出时间的内容。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.5",
+    "chapter_title": "创业计划书的检查",
+    "type": "单选题",
+    "stem": "\"5C 概念“不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "Concept 概念"
+      },
+      {
+        "label": "B",
+        "text": "Customers 顾客"
+      },
+      {
+        "label": "C",
+        "text": "Catalog 目录"
+      },
+      {
+        "label": "D",
+        "text": "Capital 资本"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "7.5",
+    "chapter_title": "创业计划书的检查",
+    "type": "多选题",
+    "stem": "创业计划书经常出现的问题包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "形象主题不突出"
+      },
+      {
+        "label": "B",
+        "text": "忘记联络方式"
+      },
+      {
+        "label": "C",
+        "text": "形式新颖"
+      },
+      {
+        "label": "D",
+        "text": "名字有号召力"
+      }
+    ],
+    "answer": "AB"
+  },
+  {
+    "chapter": "7.5",
+    "chapter_title": "创业计划书的检查",
+    "type": "判断题",
+    "stem": "写好创业项目数需要思考的问题包括:关注产品、敢于竞争、了解市场和表明行动 的方针等。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.6",
+    "chapter_title": "相关创业实务的步骤",
+    "type": "单选题",
+    "stem": "创办个体工商户首先应办理()",
+    "options": [
+      {
+        "label": "A",
+        "text": "递交申请材料"
+      },
+      {
+        "label": "B",
+        "text": "领取《准予行政许可决定书》"
+      },
+      {
+        "label": "C",
+        "text": "到工商局交费并领取营业执照"
+      },
+      {
+        "label": "D",
+        "text": "名称预先登记"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "7.6",
+    "chapter_title": "相关创业实务的步骤",
+    "type": "单选题",
+    "stem": "IMC 定位方法的核心理念和主张是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "强调产品的具体特殊功效和利益"
+      },
+      {
+        "label": "B",
+        "text": "塑造形象长远投资"
+      },
+      {
+        "label": "C",
+        "text": "消费者的认知"
+      },
+      {
+        "label": "D",
+        "text": "创造心理位置、强调第一"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "7.6",
+    "chapter_title": "相关创业实务的步骤",
+    "type": "判断题",
+    "stem": "创办合伙企业需要经过“领取《企业名称预先核准通知书》，同时领取《企业设立登 记申请书》”的流程。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.6",
+    "chapter_title": "相关创业实务的步骤",
+    "type": "判断题",
+    "stem": "品牌定位是为了适应消费者心目中的某一特定地位而涉及产品及其营销组合的 行为。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "创业筹备的风险规避",
+    "type": "单选题",
+    "stem": "()是指依法形式职权，从事国家管理活动的各种国家机关。",
+    "options": [
+      {
+        "label": "A",
+        "text": "企业法人"
+      },
+      {
+        "label": "B",
+        "text": "机关法人"
+      },
+      {
+        "label": "C",
+        "text": "社会团体法人"
+      },
+      {
+        "label": "D",
+        "text": "事业单位法人"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "创业筹备的风险规避",
+    "type": "多选题",
+    "stem": "以下哪些属于企业法人?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "机关法人"
+      },
+      {
+        "label": "B",
+        "text": "全民所有制法人"
+      },
+      {
+        "label": "C",
+        "text": "社会团体法人"
+      },
+      {
+        "label": "D",
+        "text": "集体所有制法人"
+      }
+    ],
+    "answer": "BD"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "创业筹备的风险规避",
+    "type": "判断题",
+    "stem": "大学生创业者在创业初期一定要做好市场调研，一般来说选择启动资金不多、人 手配备要求不高的项目，从小本经营做起来比价适宜。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "创业筹备的风险规避",
+    "type": "判断题",
+    "stem": "法人是在法律上人格化了的、依法具有民事权利能力和民事行为能力并独立享有 民事权利、承担民事义务的自然人。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "9.1",
+    "chapter_title": "企业上市的原因",
+    "type": "判断题",
+    "stem": "处于孵化期的企业通过上市获得更多的投资，就具有了收购兼并产业链上下整合 的能力。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "9.2",
+    "chapter_title": "企业上市的意义",
+    "type": "单选题",
+    "stem": "“企业通过上市筹集的充足资本可以帮助企业在市场情况不景气或突发情况时及 时进行业务调整或转型而不至于出现经营困难”体现了上市给企业带来的()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "融资效应"
+      },
+      {
+        "label": "B",
+        "text": "财富效应"
+      },
+      {
+        "label": "C",
+        "text": "竞争效应"
+      },
+      {
+        "label": "D",
+        "text": "经营安全效应"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "9.2",
+    "chapter_title": "企业上市的意义",
+    "type": "判断题",
+    "stem": "公司上市后企业品牌提升，银行贷款等间接融资也更为便利，为企业今后的资本 运营如收购兼并等业务的开展奠定坚实的基础。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "9.2",
+    "chapter_title": "企业上市的意义",
+    "type": "判断题",
+    "stem": "境内外市场在供求关系上存在很大不同，在境外发行的股票能够得到境内投资者 的踊跃认购。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "9.3",
+    "chapter_title": "企业上市的流程",
+    "type": "单选题",
+    "stem": "创业企业上市的流程中第二阶段是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "改制阶段"
+      },
+      {
+        "label": "B",
+        "text": "申报材料制作及申报阶段"
+      },
+      {
+        "label": "C",
+        "text": "辅导阶段"
+      },
+      {
+        "label": "D",
+        "text": "股票发行及上市阶段"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "9.3",
+    "chapter_title": "企业上市的流程",
+    "type": "单选题",
+    "stem": "对于上市企业主体资格要求中，要求企业持续经营()年以上。",
+    "options": [
+      {
+        "label": "A",
+        "text": "二"
+      },
+      {
+        "label": "B",
+        "text": "三"
+      },
+      {
+        "label": "C",
+        "text": "五"
+      },
+      {
+        "label": "D",
+        "text": "十"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "9.3",
+    "chapter_title": "企业上市的流程",
+    "type": "判断题",
+    "stem": "企业上市将面临更多市场风险，股票价格易受市场波动，影响公司资产价值的因 素增大。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "9.3",
+    "chapter_title": "企业上市的流程",
+    "type": "判断题",
+    "stem": "在创业企业上市的申报阶段，企业董事、高管要全程参与申报文件制作，包括对 反馈意见的处理。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "10.1",
+    "chapter_title": "创业模式",
+    "type": "多选题",
+    "stem": "创业的模式包含()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "继承家族企业模式"
+      },
+      {
+        "label": "B",
+        "text": "白手起家模式"
+      },
+      {
+        "label": "C",
+        "text": "收购现有企业模式"
+      },
+      {
+        "label": "D",
+        "text": "依附创业模式"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "走出创业失败的误区",
+    "type": "多选题",
+    "stem": "以下选项属于创业后的失败误区的有()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "机构膨胀与管理失调"
+      },
+      {
+        "label": "B",
+        "text": "过渡扩张与财务失控"
+      },
+      {
+        "label": "C",
+        "text": "坐享其成与挥霍浪费"
+      },
+      {
+        "label": "D",
+        "text": "头脑发热与好大喜功"
+      }
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "走出创业失败的误区",
+    "type": "判断题",
+    "stem": "要想成为长赢的高成长企业，要有不断创新的意识和能力。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "走出创业失败的误区",
+    "type": "判断题",
+    "stem": "创业者在创业前要有非常乐观的心态和明确的计划。",
+    "options": [],
+    "answer": "X"
+  }
+]

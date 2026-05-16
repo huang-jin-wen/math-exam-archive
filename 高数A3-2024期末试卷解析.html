@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>2023-2024 高等数学A(3) 期末试卷A卷 · 逐题精讲</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--blue:#38bdf8;--purple:#a78bfa;--pink:#f472b6;--green:#4ade80;--orange:#fb923c;--yellow:#fbbf24;--text:#e2e8f0;--sub:#94a3b8;--warn:#f87171}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Microsoft YaHei','PingFang SC',sans-serif;line-height:1.7}
+.hero{text-align:center;padding:50px 20px 40px;background:linear-gradient(135deg,#1e293b,#0f172a)}
+.hero h1{font-size:2.5em;background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--sub);font-size:1.05em;margin-top:8px}
+.hero .exam-info{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:12px}
+.hero .exam-info span{background:var(--card);border:1px solid var(--border);padding:4px 14px;border-radius:20px;font-size:.82em;color:var(--sub)}
+.back-link{text-align:center;margin-top:-26px;padding-bottom:10px}
+.back-link a{color:var(--sub);text-decoration:none;font-size:.88em;transition:color .2s}
+.back-link a:hover{color:var(--blue)}
+.progress-wrap{position:sticky;top:0;z-index:101;background:rgba(15,23,42,.95);backdrop-filter:blur(10px);padding:8px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}
+.progress-track{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.progress-fill{height:100%;background:var(--green);border-radius:3px;transition:width .4s;width:0%}
+.progress-wrap span{font-size:.82em;color:var(--sub);white-space:nowrap}
+.nav{position:sticky;top:40px;background:rgba(15,23,42,.9);backdrop-filter:blur(10px);padding:8px 16px;z-index:100;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.nav a{color:var(--sub);text-decoration:none;padding:4px 10px;border-radius:6px;transition:.2s;font-size:.8em}
+.nav a:hover{color:var(--text);background:var(--card)}
+.nav .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:3px;vertical-align:middle}
+.container{max-width:1100px;margin:0 auto;padding:16px}
+.section-title{color:var(--sub);text-align:center;margin:28px 0 8px;font-size:1.1em;padding:10px 0;border-bottom:1px dashed var(--border)}
+.problem{background:var(--card);border-radius:14px;margin:22px 0;overflow:hidden;border-left:4px solid transparent;animation:slideIn .5s ease-out}
+.problem:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.problem-header{padding:16px 24px;cursor:pointer;display:flex;align-items:center;gap:14px;user-select:none;transition:background .2s}
+.problem-header:hover{background:rgba(255,255,255,.03)}
+.problem-body{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.problem.open .problem-body{max-height:8000px}
+.toggle-icon{transition:transform .3s;font-size:1.1em;color:var(--sub);flex-shrink:0}
+.problem.open .toggle-icon{transform:rotate(90deg)}
+.num{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:1.2em;flex-shrink:0}
+.problem-body-inner{padding:0 24px 20px}
+.tabs{display:flex;gap:4px;margin:14px 0 0;border-bottom:2px solid var(--border);overflow-x:auto}
+.tab{padding:7px 14px;background:none;border:none;color:var(--sub);cursor:pointer;font-size:.85em;font-family:inherit;border-bottom:2px solid transparent;margin-bottom:-2px;transition:.2s;white-space:nowrap}
+.tab:hover{color:var(--text)}
+.tab.active{border-bottom-color:var(--blue);color:var(--blue)}
+.tab-panel{display:none;animation:fadeIn .3s ease-out}
+.tab-panel.active{display:block}
+.step-reveal{margin:10px 0}
+.step-reveal .step-item{display:flex;gap:10px;align-items:flex-start;margin:6px 0;max-height:0;overflow:hidden;opacity:0;transition:all .4s ease;padding:0}
+.step-reveal .step-item.shown{max-height:220px;opacity:1;padding:7px 0;animation:slideIn .3s ease-out}
+.step-num{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:.82em;flex-shrink:0;color:#0f172a}
+.step-text{flex:1;padding-top:1px;font-size:.92em}
+.btn-next{background:var(--blue);color:#0f172a;border:none;padding:7px 20px;border-radius:7px;cursor:pointer;font-weight:bold;font-size:.88em;font-family:inherit;transition:.2s;margin:8px auto;display:block}
+.btn-next:hover{transform:scale(1.04);filter:brightness(1.1)}
+.quiz-box{background:#0f172a;border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin:16px 0}
+.quiz-q{color:var(--yellow);font-weight:bold;margin-bottom:8px;font-size:.92em}
+.quiz-opts{display:flex;flex-wrap:wrap;gap:6px}
+.quiz-opt{background:var(--card);border:1px solid var(--border);color:var(--text);padding:5px 14px;border-radius:18px;cursor:pointer;font-size:.85em;font-family:inherit;transition:.2s}
+.quiz-opt:hover{background:var(--border)}
+.quiz-feedback{margin-top:8px;font-size:.88em;min-height:18px}
+.quiz-feedback.correct{color:var(--green)}
+.quiz-feedback.wrong{color:var(--warn)}
+.box{background:#0f172a;border:1px solid var(--border);border-radius:9px;padding:14px 18px;margin:8px 0}
+.box-math{font-family:'Cambria Math','Times New Roman',serif;font-size:1.05em;color:var(--yellow);line-height:1.8}
+.warning{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.25);border-radius:9px;padding:12px 16px;margin:12px 0;color:var(--yellow);font-size:.9em}
+.tip{background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.25);border-radius:9px;padding:12px 16px;margin:12px 0;color:var(--blue);font-size:.9em}
+.think-step{background:#0f172a;border:1px solid var(--border);border-radius:9px;padding:14px 18px;margin:10px 0}
+.think-step h4{font-size:.88em;color:var(--sub);margin-bottom:6px}
+.think-step p{font-size:.92em;line-height:1.7;color:var(--text)}
+.think-step .highlight{color:var(--yellow);font-weight:500}
+.tag{display:inline-block;padding:2px 10px;border-radius:16px;font-size:.75em;margin:2px;font-weight:500}
+.tag-b{background:#0c4a6e;color:#7dd3fc}.tag-p{background:#3b1f6e;color:#c4b5fd}
+.tag-pk{background:#701a4e;color:#f9a8d4}.tag-g{background:#064e3b;color:#6ee7b7}
+.tag-o{background:#7c2d12;color:#fdba74}
+.sqrt{display:inline-flex;align-items:flex-end;vertical-align:middle}
+.sqrt::before{content:'√';font-size:1.15em;margin-right:-2px;line-height:1.1}
+.sqrt .sqrt-inner{border-top:1.5px solid;padding-top:1px;display:inline-block;line-height:1.35}
+.intl{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1;margin:0 1px}
+.intl-u{font-size:.62em;white-space:nowrap}
+.intl-s{font-size:1.35em;line-height:1}
+.intl-l{font-size:.62em;white-space:nowrap}
+.intl2 .intl-s{font-size:1.55em;letter-spacing:-1px}
+.intl2 .intl-u,.intl2 .intl-l{font-size:.6em}
+.mastery{display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);cursor:pointer;font-size:.88em;color:var(--sub);transition:color .2s}
+.mastery.checked{color:var(--green)}
+.mastery input{display:none}
+.mastery .check-box{width:20px;height:20px;border:2px solid var(--border);border-radius:5px;display:flex;align-items:center;justify-content:center;transition:.2s;flex-shrink:0}
+.mastery.checked .check-box{background:var(--green);border-color:var(--green)}
+.know-map{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin:28px 0;text-align:center}
+.know-map h2{margin-bottom:10px;font-size:1.2em}
+.know-map canvas{cursor:pointer;max-width:100%}
+.know-sum{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin:28px 0}
+.know-sum h2{font-size:1.3em;margin-bottom:16px}
+.know-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.know-card{background:#0f172a;border:1px solid var(--border);border-radius:10px;padding:16px}
+.know-card h3{font-size:1em;margin-bottom:6px}
+.know-card .problems{font-size:.82em;color:var(--sub)}
+.know-card .focus{font-size:.85em;margin-top:6px;color:var(--text)}
+.know-bar{height:3px;border-radius:2px;margin-top:8px}
+.know-bar.blue{background:var(--blue)}.know-bar.purple{background:var(--purple)}.know-bar.pink{background:var(--pink)}.know-bar.green{background:var(--green)}
+.stats-bar{display:flex;flex-wrap:wrap;gap:14px;margin:16px 0 28px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 20px;text-align:center;flex:1;min-width:130px}
+.stat-card .val{font-size:1.8em;font-weight:bold}
+.stat-card .lbl{font-size:.8em;color:var(--sub);margin-top:2px}
+.answer-key{background:var(--card);border:2px solid var(--green);border-radius:14px;padding:24px;margin:28px 0}
+.answer-key h2{font-size:1.3em;margin-bottom:16px;color:var(--green);text-align:center}
+.answer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.ans-item{background:#0f172a;border:1px solid var(--border);border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.ans-num{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:.82em;flex-shrink:0}
+.ans-text{font-size:.85em;color:var(--text);font-family:'Cambria Math','Times New Roman',serif;line-height:1.4}
+.ans-text b{color:var(--green)}
+@keyframes slideIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.footer{text-align:center;color:var(--sub);font-size:.82em;padding:30px 20px}
+@media(max-width:768px){.hero h1{font-size:1.6em}.nav{gap:3px}.tab{padding:5px 10px;font-size:.78em}.know-grid{grid-template-columns:1fr}}
+.quiz-launch-btn{background:var(--pink);color:#0f172a;border:none;padding:4px 16px;border-radius:16px;cursor:pointer;font-weight:bold;font-size:.82em;font-family:inherit;transition:.2s;margin-left:8px;white-space:nowrap}
+.quiz-launch-btn:hover{transform:scale(1.05);filter:brightness(1.1)}
+.quiz-mode-bar{display:none;position:sticky;top:40px;z-index:102;background:#701a4e;padding:8px 20px;text-align:center;justify-content:center;align-items:center;gap:14px;border-bottom:2px solid var(--pink)}
+.quiz-mode-bar span{font-size:.88em;color:#f9a8d4}
+.quiz-mode-bar button{background:rgba(255,255,255,.15);color:var(--text);border:1px solid var(--pink);padding:4px 14px;border-radius:14px;cursor:pointer;font-size:.8em;font-family:inherit;transition:.2s}
+.quiz-mode-bar button:hover{background:rgba(255,255,255,.25)}
+.quiz-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.75);z-index:999;justify-content:center;align-items:center}
+.quiz-modal.show{display:flex}
+.quiz-modal-card{background:var(--card);border:2px solid var(--pink);border-radius:14px;padding:30px;max-width:400px;width:90%;text-align:center}
+.quiz-modal-card h3{margin-bottom:10px;font-size:1.2em;color:var(--pink)}
+.quiz-modal-card p{color:var(--sub);margin-bottom:18px;font-size:.9em}
+.quiz-count-opts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.quiz-count-opt{width:56px;height:56px;border-radius:50%;border:2px solid var(--border);background:var(--card);color:var(--text);font-size:1.1em;font-weight:bold;cursor:pointer;font-family:inherit;transition:.2s}
+.quiz-count-opt:hover{border-color:var(--pink);color:var(--pink);transform:scale(1.08)}
+.quiz-count-opt.all{width:auto;padding:0 18px;border-radius:28px;font-size:.95em}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<h1>2023–2024 高等数学A(3) · 期末试卷 A卷</h1>
+<p>中国矿业大学 · 逐题精讲 · 交互式学习</p>
+<div class="exam-info">
+<span>📋 A卷</span><span>⏱ 100分钟</span><span>📝 17题</span><span>📊 满分100分</span>
+</div>
+</div>
+<div class="back-link"><a href="index.html">← 返回试卷解析库</a></div>
+
+<div class="progress-wrap">
+<span>📊 掌握进度</span>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+<span id="progressText">0/17</span>
+<button class="quiz-launch-btn" onclick="showQuizModal()">🎲 随机抽题</button>
+</div>
+
+<div class="quiz-mode-bar" id="quizModeBar">
+<span>🎲 考试模式 · <strong id="quizCount">0</strong> 题</span>
+<button onclick="reshuffleQuiz()">🔄 重新抽题</button>
+<button onclick="exitExamMode()">❌ 退出考试</button>
+</div>
+
+<nav class="nav" id="topNav">
+<a href="#p1"><span class="dot" style="background:var(--pink)"></span>1</a>
+<a href="#p2"><span class="dot" style="background:var(--pink)"></span>2</a>
+<a href="#p3"><span class="dot" style="background:var(--blue)"></span>3</a>
+<a href="#p4"><span class="dot" style="background:var(--blue)"></span>4</a>
+<a href="#p5"><span class="dot" style="background:var(--blue)"></span>5</a>
+<a href="#p6"><span class="dot" style="background:var(--blue)"></span>6</a>
+<a href="#p7"><span class="dot" style="background:var(--pink)"></span>7</a>
+<a href="#p8"><span class="dot" style="background:var(--pink)"></span>8</a>
+<a href="#p9"><span class="dot" style="background:var(--blue)"></span>9</a>
+<a href="#p10"><span class="dot" style="background:var(--blue)"></span>10</a>
+<a href="#p11"><span class="dot" style="background:var(--pink)"></span>11</a>
+<a href="#p12"><span class="dot" style="background:var(--blue)"></span>12</a>
+<a href="#p13"><span class="dot" style="background:var(--blue)"></span>13</a>
+<a href="#p14"><span class="dot" style="background:var(--blue)"></span>14</a>
+<a href="#p15"><span class="dot" style="background:var(--blue)"></span>15</a>
+<a href="#p16"><span class="dot" style="background:var(--blue)"></span>16</a>
+<a href="#p17"><span class="dot" style="background:var(--blue)"></span>17</a>
+</nav>
+
+<div class="container" id="mainContainer">
+
+<div class="section-title">一、填空题 <span style="font-weight:400;font-size:.85em">（共5题，每小题4分，满分20分）</span></div>
+
+<!-- ═══ PROBLEM 1 ═══ -->
+<div class="problem open" id="p1" style="border-left-color:var(--pink)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--pink);color:#0f172a">1</div>
+<div style="flex:1"><h2>单位向量 <span style="font-weight:400;color:var(--sub);font-size:.75em">Unit Vector &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>(1/√3)(−1,−1,1)</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p1')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p1')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p1')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p1')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>与向量 <b>a</b>=(1,1,−1) 方向平行且与z轴正向夹角为锐角的单位向量是________.</div>
+<div style="margin:8px 0"><span class="tag tag-pk">空间向量</span><span class="tag tag-pk">单位化</span></div>
+<div class="think-step"><h4>🔍 先看清楚题目在问啥</h4><p>咱们来拆一下题干：它要我们找一个<span class="highlight">单位向量</span>，这个向量得满足两个条件——<span class="highlight">跟 a=(1,1,−1) 平行</span>，而且<span class="highlight">跟 z 轴的夹角不能是钝角（必须是锐角）</span>。说白了就是从 a 的两个方向里挑对的那个！</p></div>
+<div class="think-step"><h4>💡 先把向量"标准化"</h4><p>跟 a 平行的单位向量，无非就是 ±a/|a| 嘛。好，先算模：|a| = √(1²+1²+(−1)²) = <span class="sqrt"><span class="sqrt-inner">3</span></span>。所以两个候选是：(1/√3, 1/√3, −1/√3) 和它的反方向。前者 z 分量是 −1/√3 <span class="highlight">负的</span>，说明它往下指——跟 z 轴正向的夹角是个钝角，pass！</p></div>
+<div class="think-step"><h4>🎯 突破口：看 z 分量的符号！</h4><p>既然第一个候选挂了，那咱们取反方向：<span class="highlight">(−1/√3, −1/√3, 1/√3)</span>。你看它的 z 分量是 +1/√3 > 0，跟 z 轴正向的夹角是锐角，完美！两个条件全部满足。</p></div>
+<div class="think-step"><h4>⚠️ 这里最容易掉坑</h4><p>不少同学算完 |a| 就直接写 (1/√3, 1/√3, −1/√3)，忘了还有第二个条件。记住：<span class="highlight">平行向量有两个方向</span>，一定要根据题干的附加条件来筛选！</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>与 <b>a</b>=(1,1,−1) 平行且与z轴正向成锐角的单位向量</div>
+<div style="margin:8px 0"><span class="tag tag-pk">空间向量</span></div>
+<div class="step-reveal" id="steps-p1">
+<div class="step-item"><div class="step-num" style="background:var(--pink)">1</div><div class="step-text"><strong>求模：</strong>|<b>a</b>| = <span class="sqrt"><span class="sqrt-inner">1²+1²+(−1)²</span></span> = <span class="sqrt"><span class="sqrt-inner">3</span></span></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">2</div><div class="step-text"><strong>单位化：</strong>±(1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, 1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, −1/<span class="sqrt"><span class="sqrt-inner">3</span></span>)</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">3</div><div class="step-text"><strong>判断夹角：</strong>z分量>0取正号→取负方向：<b>(−1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, −1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, 1/<span class="sqrt"><span class="sqrt-inner">3</span></span>)</b></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--pink);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①向量模的计算；②单位向量的定义（方向相同、模为1）；③方向判断——与坐标轴夹角由对应分量符号决定。</p></div>
+<div class="tip"><p style="font-size:.92em">💡 与某轴夹角为锐角 ⇔ 该轴对应的坐标分量 > 0。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 算出单位向量后必须检查z分量符号！忘记检查直接填 (1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, 1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, −1/<span class="sqrt"><span class="sqrt-inner">3</span></span>) 是典型错误。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 向量 (1,1,−1) 与 z 轴正向的夹角是？</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'z分量=-1→钝角，不是锐角')">锐角</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'正确！z分量为负→夹角为钝角')">钝角</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'不是直角，是钝角')">直角</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p1')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 2 ═══ -->
+<div class="problem open" id="p2" style="border-left-color:var(--pink)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--pink);color:#0f172a">2</div>
+<div style="flex:1"><h2>旋转曲面与投影曲线 <span style="font-weight:400;color:var(--sub);font-size:.75em">Surface of Revolution &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>{x²+y²=1/5, z=0}</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p2')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p2')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p2')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p2')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>平面曲线 {y²+4z²=1; x=0} 绕z轴旋转一周生成的旋转曲面与圆锥面 z²=x²+y² 相交，该交线在xOy面上的投影曲线的方程是________.</div>
+<div style="margin:8px 0"><span class="tag tag-pk">空间几何</span><span class="tag tag-pk">旋转曲面</span><span class="tag tag-b">投影曲线</span></div>
+<div class="think-step"><h4>🔍 先搞清楚题目要你干啥</h4><p>这道题看起来绕，咱们拆开看：①有一条曲线躺在 yOz 平面里（x=0 那个条件就是它），②让这条曲线绕 z 轴转一圈形成一个曲面，③这个曲面跟一个圆锥面撞上了，④交线往 xOy 平面（地面）上投个影。一句话：<span class="highlight">绕圈→求面→求交→投影</span>，四步走。</p></div>
+<div class="think-step"><h4>💡 关键技巧：绕 z 轴旋转咋写</h4><p>记住这个口诀：<span class="highlight">绕哪个轴转，那个坐标就不动；另外两个坐标用"到轴距离"替换</span>。绕 z 轴转 → z 不变，y² 变成 (x²+y²)。原曲线 y²+4z²=1 → 旋转曲面：<b>x²+y²+4z²=1</b>。你看，是不是就像把 y² "撑开"成一个圆了？</p></div>
+<div class="think-step"><h4>🎯 突破口：设 r² = x²+y²</h4><p>圆锥面是 z² = x²+y² = r²。把它代入旋转曲面方程：r² + 4r² = 1 → 5r² = 1 → <span class="highlight">r² = 1/5</span>。哎呀，交线到 z 轴的距离是固定的！那它在 xOy 面上的投影就是个圆：<b>x²+y²=1/5</b>。</p></div>
+<div class="think-step"><h4>⚠️ 这两个坑别踩</h4><p>①绕哪个轴转别搞错——绕 z 轴时替换的是 x²+y²，绕 x 轴才替换 y²+z²；②投影到 xOy 面意味着 z=0，所以最终答案要写 <span class="highlight">{x²+y²=1/5; z=0}</span>，单独写 x²+y²=1/5 不完整（虽然很多同学偷懒只写前面）。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>平面曲线 {y²+4z²=1; x=0} 绕z轴旋转</div>
+<div style="margin:8px 0"><span class="tag tag-pk">旋转曲面</span></div>
+<div class="step-reveal" id="steps-p2">
+<div class="step-item"><div class="step-num" style="background:var(--pink)">1</div><div class="step-text"><strong>写旋转曲面：</strong>绕z轴旋转→用 (x²+y²) 替换原方程中的 y²：<b>x²+y²+4z²=1</b></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">2</div><div class="step-text"><strong>与圆锥面联立：</strong>将 z²=x²+y² 代入→ 5(x²+y²)=1</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">3</div><div class="step-text"><strong>投影曲线：x²+y²=1/5</strong>（在xOy面即z=0处）</div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--pink);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①绕坐标轴旋转的曲线方程变换规则；②空间曲线投影→消去一个变量。这是空间解析几何的经典组合题。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 绕z轴旋转→y²替换为x²+y²。绕x轴→z²替换为y²+z²。别搞混！</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 曲线{y²+4z²=1, x=0}绕z轴旋转后，新曲面方程中x²的系数是？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'正确！y²被x²+y²替换，x²系数为1')">1</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'y²被替换后系数不变，仍为1')">4</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p2')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 3 ═══ -->
+<div class="problem open" id="p3" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">3</div>
+<div style="flex:1"><h2>梯度计算 <span style="font-weight:400;color:var(--sub);font-size:.75em">Gradient &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>(1/2, 0, 1/2)</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p3')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p3')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p3')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p3')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>函数 f(x,y,z)=ln(x+<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>) 在点(1,0,1)处的梯度 grad f(1,0,1)=________.</div>
+<div style="margin:8px 0"><span class="tag tag-b">偏导数</span><span class="tag tag-b">梯度</span></div>
+<div class="think-step"><h4>🔍 梯度是啥？就是三个偏导装进一个括号里</h4><p>梯度的定义超级直接：<span class="highlight">grad f = (∂f/∂x, ∂f/∂y, ∂f/∂z)</span>。所以这道题本质上就是让你算三个偏导然后代入点(1,0,1)。ln 复合的函数，链式法则是少不了的。</p></div>
+<div class="think-step"><h4>💡 把里面那一坨"包起来"</h4><p>设 u = x + √(y²+z²)，那 f = ln u。对 x 求偏导最简单：<span class="highlight">∂f/∂x = 1/u · 1 = 1/u</span>（因为 u 对 x 的偏导就是 1）。对 y 和 z 稍麻烦点——u 里面套了个根号，得再来一次链式：∂u/∂y = y/√(y²+z²)，∂u/∂z = z/√(y²+z²)。</p></div>
+<div class="think-step"><h4>🎯 代入点 (1,0,1)，一步到位</h4><p>先算 u：u = 1 + √(0²+1²) = 1+1 = 2。然后三个偏导：f_x = 1/2；f_y = (1/2)·(0/1) = <span class="highlight">0</span>（注意 y=0 让分子直接毙了）；f_z = (1/2)·(1/1) = 1/2。所以梯度就是 <b>(1/2, 0, 1/2)</b>。</p></div>
+<div class="think-step"><h4>⚠️ f_y = 0 不是算错了，是 y=0 导致的</h4><p>很多同学算到 f_y=0 会怀疑自己是不是漏了什么——别慌！y=0 就是这个点的特殊性，没啥问题。另外<span class="highlight">别忘了 u 本身也出现在分母里</span>，不是只有根号部分在分母。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>f=ln(x+<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>), 求grad f(1,0,1)</div>
+<div style="margin:8px 0"><span class="tag tag-b">梯度</span></div>
+<div class="step-reveal" id="steps-p3">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>偏导公式：</strong>f_x=1/(x+<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>), f_y=y/[(x+<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>)<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>], f_z=z/[(x+<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>)<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>]</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>代入(1,0,1)：</strong>x+<span class="sqrt"><span class="sqrt-inner">y²+z²</span></span>=2, y=0, z=1→f_x=1/2, f_y=0, f_z=1/2</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>grad f(1,0,1) = (1/2, 0, 1/2)</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①三元函数偏导数计算；②链式法则（ln复合+根号复合）；③梯度向量的定义。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 求根号内对y的偏导时，y=0代入使该项为0，但偏导公式本身不能漏写。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 f=ln(x+√(y²+z²))在(1,0,1)处，f_y=？</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'y=0代入后分子为0')">1/2</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'正确！y=0→分子为0→f_y=0')">0</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'不对')">1</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p3')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 4 ═══ -->
+<div class="problem open" id="p4" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">4</div>
+<div style="flex:1"><h2>交换积分次序 <span style="font-weight:400;color:var(--sub);font-size:.75em">Switch Integration Order &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>∫₀¹ dy ∫<sub>y−1</sub><sup>1−y</sup> f(x,y) dx</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p4')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p4')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p4')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p4')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>交换积分顺序：<span class="intl"><span class="intl-u">0</span><span class="intl-s">∫</span><span class="intl-l">−1</span></span> dx <span class="intl"><span class="intl-u">1+x</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> f(x,y)dy + <span class="intl"><span class="intl-u">1</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> dx <span class="intl"><span class="intl-u">1−x</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> f(x,y)dy = ________</div>
+<div style="margin:8px 0"><span class="tag tag-b">二重积分</span><span class="tag tag-pk">积分区域</span></div>
+<div class="think-step"><h4>🔍 别被两段积分吓到，先看清边界</h4><p>题目给了两段累次积分粘在一起。第一段：x 从 −1 到 0，y 从 0 到 1+x；第二段：x 从 0 到 1，y 从 0 到 1−x。注意这两段里 y 的下限都是 0，上限都是 x 的线性函数——说明区域是从 x 轴往上长。</p></div>
+<div class="think-step"><h4>💡 必杀技：画图！</h4><p>一画图就清楚了。第一条斜线 y=1+x：过 (−1,0) 和 (0,1)。第二条斜线 y=1−x：过 (0,1) 和 (1,0)。两条斜线在 (0,1) 汇合，加上 x 轴上的线段 [−1,1]，正好拼成一个<span class="highlight">等腰三角形：顶点 (−1,0), (0,1), (1,0)</span>。</p></div>
+<div class="think-step"><h4>🎯 交换次序：先 y 后 x → 先 x 后 y</h4><p>现在咱们要把积分顺序翻过来。y 的范围最简单：从三角形底部 y=0 到顶部 y=1。然后固定一个 y，看 x 的范围——左边界是 y=1+x → <span class="highlight">x=y−1</span>，右边界是 y=1−x → <span class="highlight">x=1−y</span>。所以：∫₀¹ dy ∫_{y−1}^{1−y} f(x,y) dx。</p></div>
+<div class="think-step"><h4>⚠️ 常见错误：把三角形拆成两块写</h4><p>有些同学交换次序后还想着写两段——没必要！先 y 后 x 时确实需要两段（因为 x 的左右边界在不同区间定义不同），但反过来先 x 后 y，<span class="highlight">整个三角形用一段就够了</span>，因为对每个固定的 y，x 的左右边界表达式是统一的。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>交换积分次序</div>
+<div style="margin:8px 0"><span class="tag tag-b">二重积分</span></div>
+<div class="step-reveal" id="steps-p4">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>确定区域D：</strong>是三角形 {(−1,0)→(0,1)→(1,0)}。D={(x,y) | y∈[0,1], y−1≤x≤1−y}</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>交换后：</strong><span class="intl"><span class="intl-u">1</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> dy <span class="intl"><span class="intl-u">1−y</span><span class="intl-s">∫</span><span class="intl-l">y−1</span></span> f(x,y)dx</div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①根据二次积分上下限还原积分区域；②画出区域图形后从另一个方向描区域。核心技能：由上下限写出区域不等式。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 交换后x的下限是y−1（负值），上限是1−y。别把不等号方向搞反——下限≤上限必须成立，验证y=0.5时x∈[−0.5, 0.5] ✓。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 区域D的顶点不包括？</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'(−1,0)是顶点')">(−1,0)</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'(0,1)是顶点')">(0,1)</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'正确！顶点是(−1,0), (0,1), (1,0)')">(0,0)</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p4')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 5 ═══ -->
+<div class="problem open" id="p5" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">5</div>
+<div style="flex:1"><h2>转动惯量 <span style="font-weight:400;color:var(--sub);font-size:.75em">Moment of Inertia &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>π/4</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p5')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p5')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p5')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p5')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>面密度为1的平面薄片 D={(x,y)|x²+y²≤1} 关于y轴的转动惯量 I_y=________.</div>
+<div style="margin:8px 0"><span class="tag tag-b">二重积分应用</span><span class="tag tag-g">转动惯量</span></div>
+<div class="think-step"><h4>🔍 先回忆公式：转动惯量 = "距离平方 × 质量"</h4><p>关于 y 轴的转动惯量 I_y，说白了就是<span class="highlight">每个点到 y 轴距离的平方乘以质量</span>再积分。点到 y 轴的距离就是 |x|，所以被积函数是 x²。面密度 ρ=1 说明单位面积质量为 1，那区域的面积就是总质量，不用单独乘 ρ。</p></div>
+<div class="think-step"><h4>💡 圆域积分？上极坐标！</h4><p>D 是单位圆 x²+y²≤1，这要是用直角坐标算累死了。极坐标直接：x=r cosθ, dxdy→r dr dθ，被积函数 x²=r²cos²θ，雅可比多一个 r，所以里面变成 <span class="highlight">r³ cos²θ dr dθ</span>。θ 转一圈 0→2π，r 从 0 到 1。</p></div>
+<div class="think-step"><h4>🎯 分离变量，干净利落</h4><p>I_y = ∫₀²π cos²θ dθ · ∫₀¹ r³ dr。这两个积分咱们都熟：∫₀²π cos²θ dθ = <span class="highlight">π</span>（利用半角公式或者对称性直接出），∫₀¹ r³ dr = 1/4。所以 I_y = π × 1/4 = <b>π/4</b>。</p></div>
+<div class="think-step"><h4>⚠️ 三个坑：搞错轴、忘乘r、算错∫cos²</h4><p>① I_y 用的是到 y 轴的距离平方 = x²，不是 y²（那是 I_x）；② 极坐标的 dxdy 换成 r dr dθ，那个 <span class="highlight">r 经常被漏掉</span>；③ ∫₀²π cos²θ dθ = π，不是 2π——你可以验证 cos²θ 的平均值是 1/2，乘以区间长度 2π 就是 π。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>I_y = ∯_D x² dxdy, D: x²+y²≤1</div>
+<div style="margin:8px 0"><span class="tag tag-b">二重积分</span></div>
+<div class="step-reveal" id="steps-p5">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>极坐标：</strong>x=r cosθ, ∯ x² dxdy = <span class="intl"><span class="intl-u">2π</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> dθ <span class="intl"><span class="intl-u">1</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> r²cos²θ·r dr</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>分离变量：</strong><span class="intl"><span class="intl-u">1</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> r³ dr = 1/4, <span class="intl"><span class="intl-u">2π</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> cos²θ dθ = π</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>I_y = 1/4 × π = π/4</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①转动惯量的二重积分表达式；②极坐标变换+积分可分离性（圆形区域的优势）；③关于x轴和y轴的转动惯量对称。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 极坐标变换后多一个r：dxdy → r dr dθ。忘记r是最常见的错误，会导致结果为π/3（错）。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 单位圆关于x轴的转动惯量 I_x = ?</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'I_y才是π/4，但I_x也一样')">和I_y不一样</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'正确！由对称性I_x=I_y=π/4')">π/4</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'不对')">π/2</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p5')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<div class="section-title">二、单项选择题 <span style="font-weight:400;font-size:.85em">（共5题，每小题4分，满分20分）</span></div>
+
+<!-- ═══ PROBLEM 6 ═══ -->
+<div class="problem open" id="p6" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">6</div>
+<div style="flex:1"><h2>多元函数的连续性与偏导数 <span style="font-weight:400;color:var(--sub);font-size:.75em">Continuity & Partial Derivatives &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>A</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p6')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p6')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p6')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p6')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>f(x,y)={xy/(x²+y²), (x,y)≠(0,0); 0, (x,y)=(0,0)} 在(0,0)处（ ）。(A)不连续，偏导数存在 (B)连续，偏导数不存在 (C)连续，偏导数存在 (D)不连续，偏导数不存在</div>
+<div style="margin:8px 0"><span class="tag tag-b">多元函数</span><span class="tag tag-g">经典反例</span></div>
+<div class="think-step"><h4>🔍 经典老题，但每次都有同学做错</h4><p>这道题考的是<span class="highlight">多元函数里最反直觉的一件事</span>：偏导数存在 ≠ 连续。函数在 (0,0) 定义为 0，其他地方是 xy/(x²+y²)。咱们先看连续性，再看偏导。</p></div>
+<div class="think-step"><h4>💡 连续性的杀手锏：沿不同路径趋近</h4><p>沿着 y=kx 逼近原点：f(x,kx) = kx²/(x²+k²x²) = <span class="highlight">k/(1+k²)</span>。你看，这个极限跟 k 有关！k=0 时极限是 0，k=1 时极限是 1/2。不同路径得到的极限不一样 → <span class="highlight">极限不存在 → 函数在原点不连续</span>。</p></div>
+<div class="think-step"><h4>🎯 偏导数反而存在！这才是反直觉的地方</h4><p>按定义算偏导：f_x(0,0) = lim_{h→0} [f(h,0)−f(0,0)]/h。沿 x 轴，f(h,0) = h·0/(h²+0) = 0，减 0 再除以 h 还是 0。同理 f_y(0,0) = 0。<span class="highlight">两个偏导都存在，都是 0</span>。所以这函数不连续但偏导存在 → 选 <b>A</b>。</p></div>
+<div class="think-step"><h4>⚠️ 敲黑板：多元和一元不一样！</h4><p>一元函数：可导 ⇒ 连续（铁律）。多元函数：偏导数存在 ⇏ 连续（这个反例就是证据）。<span class="highlight">多元函数要保证连续，得要求"可微"</span>（比偏导存在更强的条件）。别拿一元的直觉套多元！</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>f(x,y)=xy/(x²+y²)在(0,0)处</div>
+<div style="margin:8px 0"><span class="tag tag-b">多元函数</span></div>
+<div class="step-reveal" id="steps-p6">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>连续性：</strong>沿y=kx→lim=k/(1+k²)依赖于k→<strong>极限不存在→不连续</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>偏导数：</strong>f_x(0,0)=lim(f(h,0)−0)/h=0, f_y(0,0)=lim(f(0,h)−0)/h=0→<strong>偏导数存在</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>结论：不连续，但偏导数存在 → 选A</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①多元函数极限沿不同路径可能不同；②偏导数定义→固定其他变量的一元函数求导；③多元函数的"可导"≠"连续"——这是理解多元微积分的关键。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 最大陷阱：把一元结论（可导⇒连续）套用到多元。多元中偏导存在⇏连续，经典反例就是这道题。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 f=xy/(x²+y²)沿y=x趋近(0,0)的极限值？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'正确！k=1→1/(1+1)=1/2')">1/2</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'k=1时不是0')">0</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'极限不存在不是无穷大')">∞</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p6')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 7 ═══ -->
+<div class="problem open" id="p7" style="border-left-color:var(--pink)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--pink);color:#0f172a">7</div>
+<div style="flex:1"><h2>空间直线夹角 <span style="font-weight:400;color:var(--sub);font-size:.75em">Angle Between Lines &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>C (π/3)</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p7')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p7')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p7')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p7')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>L₁: x+1=(y−5)/(−2)=z+8 与 L₂: {x−y=6; 2y+z=3} 的夹角为（ ）。(A)π/6 (B)π/4 (C)π/3 (D)π/2</div>
+<div style="margin:8px 0"><span class="tag tag-pk">空间解析几何</span><span class="tag tag-pk">方向向量</span></div>
+<div class="think-step"><h4>🔍 看见两条直线，先想：它们怎么摆的？</h4><p>这道题问的是夹角。L₁ 给得很大方——标准对称式 x+1=(y-5)/(-2)=z+8，一眼就能读出方向向量。L₂ 就不那么友好了，它用了<span class="highlight">两个平面的交线来表示</span>。别慌，咱们挨个拆。</p></div>
+<div class="think-step"><h4>💡 L₂ 的方向向量？用"叉乘大法"！</h4><p>两个平面交线的方向向量 = 两个平面法向量的叉乘，这是铁律。平面 x−y=6 的法向量 n₁=(1,−1,0)，平面 2y+z=3 的法向量 n₂=(0,2,1)。叉乘：<b>s₂ = n₁ × n₂ = (−1,−1,2)</b>。叉乘时用行列式最不容易错，i 分量 = (−1)·1 − 0·2 = −1，j 分量 = −(1·1 − 0·0) = −1，k 分量 = 1·2 − (−1)·0 = 2。</p></div>
+<div class="think-step"><h4>🎯 套公式，一秒出答案</h4><p>L₁ 方向向量 s₁ = (1, −2, 1)，L₂ = (−1, −1, 2)。cosθ = |s₁·s₂|/(|s₁||s₂|) = |−1+2+2|/(√6·√6) = <span class="highlight">3/6 = 1/2</span>。cosθ=1/2 → θ=π/3。选 <b>C</b>。</p></div>
+<div class="think-step"><h4>⚠️ 记牢：直线夹角永远是锐角</h4><p>公式里那个绝对值不是装饰品！两条直线的夹角定义为<span class="highlight">锐角或直角</span>，所以分子一定要取绝对值。叉乘顺序反过来结果还是那个方向（只差正负号），所以不用担心 L₁ 和 L₂ 的方向向量正负号——取了绝对值都一样。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>L₁: x+1=(y−5)/(−2)=z+8, L₂: {x−y=6; 2y+z=3}</div>
+<div style="margin:8px 0"><span class="tag tag-pk">方向向量</span></div>
+<div class="step-reveal" id="steps-p7">
+<div class="step-item"><div class="step-num" style="background:var(--pink)">1</div><div class="step-text"><strong>L₁方向向量：s₁=(1, −2, 1)</strong>（对称式中x,y,z的分母系数）</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">2</div><div class="step-text"><strong>L₂方向向量：s₂=n₁×n₂=(1,−1,0)×(0,2,1)=(−1,−1,2)</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">3</div><div class="step-text"><strong>cosθ=|(−1+2+2)|/(√6·√6)=3/6=1/2→θ=π/3，选C</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--pink);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①对称式方程→方向向量；②一般式方程→叉乘法向量得方向；③向量夹角公式；④两直线的夹角取锐角（用绝对值）。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 叉乘顺序：n₁×n₂和n₂×n₁差一个符号，但方向向量的正负号不影响夹角（因为加了绝对值）。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 cos 60° = ?</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！')">1/2</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, 'cos45°=√2/2')">√2/2</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, 'cos30°=√3/2')">√3/2</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p7')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 8 ═══ -->
+<div class="problem open" id="p8" style="border-left-color:var(--pink)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--pink);color:#0f172a">8</div>
+<div style="flex:1"><h2>二次曲面判定 <span style="font-weight:400;color:var(--sub);font-size:.75em">Quadric Surface Classification &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>B（单叶双曲面）</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p8')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p8')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p8')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p8')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>关于二次曲面 S: x²+ay²+bz²=1 的结论中错误的是（ ）。(A)若a=b=1，S表示球面 (B)若a≠b，S表示椭球面 (C)若b=0，S表示柱面 (D)若a=1，S表示旋转曲面</div>
+<div style="margin:8px 0"><span class="tag tag-pk">二次曲面</span><span class="tag tag-p">分类讨论</span></div>
+<div class="think-step"><h4>🔍 这题考的不是计算，是"分类意识"</h4><p>x² + ay² + bz² = 1 这个形式里，a 和 b 只是说它们是实数——可能是正的、零、甚至负的！题目要你找哪个结论是<span class="highlight">错的</span>，所以每句话都得仔细掂量。</p></div>
+<div class="think-step"><h4>💡 一个选项一个选项地过，别跳</h4><p>(A) a=b=1 → x²+y²+z²=1，明摆着的球面，✔。 (C) b=0 → x²+ay²=1，z 没了——母线平行于 z 轴的柱面，✔。 (D) a=1 → x²+y²+bz²=1，x 和 y 的系数一样大，说明绕 z 轴方向是对称的，确实是个旋转曲面，✔。</p></div>
+<div class="think-step"><h4>🎯 B 为什么摔了？忘考虑负数了！</h4><p>(B) 说 a≠b 就是椭球面。问题在哪？<span class="highlight">椭球面要求三个平方项系数都是正的</span>。如果 a=1, b=−1，那就变成了 x²+y²−z²=1——这是单叶双曲面！a≠b 没法保证 b > 0。拿个反例就推翻，所以选 <b>B</b>。</p></div>
+<div class="think-step"><h4>⚠️ "系数不相等 ≠ 椭球面"，这个坑经常挖</h4><p>二次曲面分类的第一要务：<span class="highlight">看系数的正负号</span>，而不是数值。三个正 = 椭球面，两正一负 = 单叶双曲面，一正两负 = 双叶双曲面，等等。题目没有说 a,b > 0，就别帮它加条件。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>S: x²+ay²+bz²=1，找错误结论</div>
+<div style="margin:8px 0"><span class="tag tag-pk">二次曲面</span></div>
+<div class="step-reveal" id="steps-p8">
+<div class="step-item"><div class="step-num" style="background:var(--pink)">1</div><div class="step-text"><strong>(A) a=b=1：x²+y²+z²=1→球面 ✓</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">2</div><div class="step-text"><strong>(B) a≠b：不保证a,b为正→反例a=1,b=−1→x²+y²−z²=1（单叶双曲面）→结论错误 ✗</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">3</div><div class="step-text"><strong>(C) b=0→柱面 ✓ (D) a=1→x,y系数相等→旋转曲面 ✓ 选B</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--pink);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①二次曲面的标准方程分类（椭球面/双曲面/柱面/旋转曲面）；②系数符号决定曲面类型——a≠b时若一正一负则是双曲面而非椭球面。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 默认系数为正的思维定势。题目没说a,b为正，所以a≠b不能推出椭球面（可能是一正一负的双曲面）。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 x²+y²−z²=1 是什么曲面？</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'不是椭球面，有负系数')">椭球面</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！x²+y²−z²=1是单叶双曲面')">单叶双曲面</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'不是柱面')">柱面</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p8')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 9 ═══ -->
+<div class="problem open" id="p9" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">9</div>
+<div style="flex:1"><h2>极坐标转直角坐标 <span style="font-weight:400;color:var(--sub);font-size:.75em">Polar to Cartesian &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>C</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p9')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p9')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p9')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p9')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>将 I=<span class="intl"><span class="intl-u">π/2</span><span class="intl-s">∫</span><span class="intl-l">π/4</span></span> dθ <span class="intl"><span class="intl-u">2sinθ</span><span class="intl-s">∫</span><span class="intl-l">0</span></span> rf(rcosθ,rsinθ)dr 化为直角坐标二次积分。</div>
+<div style="margin:8px 0"><span class="tag tag-b">二重积分</span><span class="tag tag-pk">坐标变换</span></div>
+<div class="think-step"><h4>🔍 极坐标转直角坐标，核心就一件事——"把图画出来"</h4><p>题目给的积分：θ 从 π/4 到 π/2，r 从 0 到 2sinθ。θ 的范围划定了角度扇面，r 的上限 r=2sinθ 则是区域的边界曲线。第一步：<span class="highlight">r=2sinθ 在直角坐标下长什么样？</span></p></div>
+<div class="think-step"><h4>💡 经典恒等式：r=2sinθ ⇔ x²+(y−1)²=1</h4><p>两边同乘 r：r² = 2r sinθ。r² = x²+y²，r sinθ = y。所以 x²+y² = 2y → x²+(y−1)² = 1。这是一个圆心在 (0,1)、半径 1 的圆，恰好经过原点。</p></div>
+<div class="think-step"><h4>🎯 扇形怎么划？θ=π/4 是 y=x 线，θ=π/2 是 y 轴</h4><p>在这个圆内部，θ 从 π/4 到 π/2 截出来的是一个<span class="highlight">扇形</span>——上宽下窄。关键是要分段描述：y < 1 的部分左边以 y=x 线为界（x≥y），y > 1 的部分左边以 y 轴为界（x≥0）。右边始终是圆。所以答案需要两段积分拼起来，对照选项选 <b>C</b>。</p></div>
+<div class="think-step"><h4>⚠️ 一道题两个坑：没分段 & 方向搞反</h4><p>①不能整个区域写一段——因为左边界在 y=1 处从 y=x 变成了 x=0，表达式变了。②选项里有的写 x 从 0 到 y、有的写 x 从 y 到圆——看清楚角度方向，<span class="highlight">θ=π/4 对应的线是 y=x</span>，它在这个扇形里是左边界。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>化极坐标积分为直角坐标</div>
+<div style="margin:8px 0"><span class="tag tag-b">二重积分</span></div>
+<div class="step-reveal" id="steps-p9">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>还原区域：</strong>r=2sinθ→x²+(y−1)²≤1, θ∈[π/4,π/2]→区域在y=x右侧</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>直角坐标分段：</strong>y∈[0,1]→x: y→√(2y−y²)；y∈[1,2]→x: 0→√(2y−y²)</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>对照选项→C：</strong>I=∫₀¹ dy ∫₀² fdx + ∫₁² dy ∫₀^{√(2y−y²)} fdx</div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①极坐标方程→直角坐标还原（r=2sinθ→圆）；②区域的分段描述；③化累次积分的标准流程。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ r=2sinθ对应的圆是x²+(y−1)²=1（圆心在(0,1)），不是x²+(y+1)²=1。注意sinθ系数的正负号。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 r=2sinθ 对应的圆心是？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！圆心(0,1)半径1')">(0,1)</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '(0,-1)对应r=-2sinθ')">(0,-1)</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '不是原点')">(0,0)</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p9')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 10 ═══ -->
+<div class="problem open" id="p10" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">10</div>
+<div style="flex:1"><h2>条件极值·Lagrange乘数法 <span style="font-weight:400;color:var(--sub);font-size:.75em">Lagrange Multiplier &nbsp; 4分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>D</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p10')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p10')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p10')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p10')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>设 f(x,y), φ(x,y) 均可微，且 φ<sub>y</sub>(x,y)≠0。已知 (x₀,y₀) 是 f(x,y) 在 φ(x,y)=0 下的一个极值点，则（ ）。<br>(A) 若 f<sub>x</sub>=0，则 f<sub>y</sub>=0 &emsp; (B) 若 f<sub>x</sub>=0，则 f<sub>y</sub>≠0<br>(C) 若 f<sub>x</sub>≠0，则 f<sub>y</sub>=0 &emsp; (D) 若 f<sub>x</sub>≠0，则 f<sub>y</sub>≠0</div>
+<div style="margin:8px 0"><span class="tag tag-b">Lagrange乘数</span><span class="tag tag-p">条件极值</span></div>
+<div class="think-step"><h4>🔍 Lagrange 乘数法的"灵魂"——梯度平行</h4><p>条件极值点 (x₀,y₀) 处，∇f = λ∇φ。展开就是：f<sub>x</sub> = λφ<sub>x</sub>，f<sub>y</sub> = λφ<sub>y</sub>。题目给了 φ<sub>y</sub> ≠ 0，这个条件是关键——它锁住了 y 方向。</p></div>
+<div class="think-step"><h4>💡 把 λ 当成"桥梁"来推理</h4><p>如果 f<sub>x</sub> ≠ 0，那 f<sub>x</sub> = λφ<sub>x</sub> ≠ 0，所以 <span class="highlight">λ 必定不是零</span>（要是 λ=0，f<sub>x</sub> 就只能是 0 了，矛盾！）。确定了 λ≠0 之后，看 f<sub>y</sub> = λφ<sub>y</sub>——λ 非零、φ<sub>y</sub> 题目说非零，那 f<sub>y</sub> 必然也非零！</p></div>
+<div class="think-step"><h4>🎯 为什么 (A) 是错的？因为 λ 可能为零</h4><p>(A) 说 f<sub>x</sub>=0 就推出 f<sub>y</sub>=0。不对！f<sub>x</sub>=0 有两种可能：① λ=0（此时 f<sub>y</sub>=λφ<sub>y</sub>=0）；② λ≠0 但 φ<sub>x</sub>=0（此时 f<sub>y</sub>=λφ<sub>y</sub>≠0）。<span class="highlight">从 f<sub>x</sub>=0 推不出 f<sub>y</sub>=0</span>。选 <b>D</b>。</p></div>
+<div class="think-step"><h4>⚠️ 把 Lagrange 条件"用活"，别死记</h4><p>这类题的逻辑链是：f<sub>x</sub>≠0 → λ≠0 →（乘上 φ<sub>y</sub>≠0）f<sub>y</sub>≠0。反过来，f<sub>x</sub>=0 时 λ 可能为零也可能不为零，所以啥都推不出来。<span class="highlight">记住：f<sub>x</sub> 和 f<sub>y</sub> 通过 λ 关联，而非直接决定彼此</span>。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>Lagrange条件极值的偏导关系判断题</div>
+<div style="margin:8px 0"><span class="tag tag-b">Lagrange乘数</span></div>
+<div class="step-reveal" id="steps-p10">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>Lagrange必要条件：</strong>∇f=λ∇φ → f<sub>x</sub>=λφ<sub>x</sub>, f<sub>y</sub>=λφ<sub>y</sub></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>(D) 的推导：</strong>f<sub>x</sub>≠0 → λ≠0 → 又 φ<sub>y</sub>≠0 → f<sub>y</sub>=λφ<sub>y</sub>≠0。故 f<sub>x</sub>≠0 ⇒ f<sub>y</sub>≠0</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>(A) 的反例：</strong>取 f=x²+y, φ=x²+y²−1 在 (0,1)：φ<sub>x</sub>=0, f<sub>x</sub>=0 但 f<sub>y</sub>=1≠0</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">4</div><div class="step-text"><strong>故选 (D)</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①Lagrange乘数法核心条件 ∇f=λ∇φ；②逻辑推理：λ 是链接 f<sub>x</sub> 和 f<sub>y</sub> 的桥梁——一旦 f<sub>x</sub>≠0 迫使 λ≠0；③φ<sub>y</sub>≠0 是"保险丝"，确保 λ≠0 能传导到 f<sub>y</sub>≠0。</p></div>
+<div class="tip"><h3 style="color:var(--blue);margin-bottom:6px">💡 解题技巧</h3><p style="font-size:.92em">"若P则Q"判断题：优先验证决定性条件链。本题 f<sub>x</sub>≠0 → λ≠0 → f<sub>y</sub>≠0 是一条单向链。(A) 无法保证 f<sub>y</sub>=0，构造反例即可排除。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ <strong>致命误区：</strong>不要直觉认为"极值点两偏导要么都零要么都非零"。(A) 的漏洞在于 φ<sub>x</sub>=0 时 λ 可以任意取值，f<sub>y</sub> 不受 f<sub>x</sub>=0 约束。</p></div>
+<div class="warning"><p style="font-size:.92em">⚠️ φ<sub>y</sub>≠0 是核心条件——若无此条件，(D) 的推导会断裂（λ≠0 不能保证 f<sub>y</sub>=λφ<sub>y</sub>≠0）。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 Lagrange条件极值的必要条件是？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！极值点处目标函数和约束函数的梯度平行')">∇f = λ∇φ</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '这是二阶充分条件')">Hesse矩阵正定</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '无条件极值的必要条件')">f_x = f_y = 0</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p10')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<div class="section-title">三、解答题 <span style="font-weight:400;font-size:.85em">（共7题，满分60分）</span></div>
+
+<!-- ═══ PROBLEM 11 ═══ -->
+<div class="problem open" id="p11" style="border-left-color:var(--pink)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--pink);color:#0f172a">11</div>
+<div style="flex:1"><h2>空间曲线·切线与法平面 <span style="font-weight:400;color:var(--sub);font-size:.75em">Tangent & Normal Plane &nbsp; 9分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>t=1: 法平面 x−2y+3z=6<br>t=1/3: 法平面 81x−54y+27z=34</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p11')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p11')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p11')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p11')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>空间曲线 L: x=t, y=−t², z=t³。找一点使该点切线平行于平面 x+2y+z=4，并求L过该点的法平面方程。</div>
+<div style="margin:8px 0"><span class="tag tag-pk">空间曲线</span><span class="tag tag-pk">切线</span><span class="tag tag-b">法平面</span></div>
+<div class="think-step"><h4>🔍 "切线平行于平面"翻译成数学语言</h4><p>空间曲线给的是参数方程 x=t, y=−t², z=t³。第一步求切向量：对 t 求导得 T = (1, −2t, 3t²)。平面 x+2y+z=4 的法向量 n = (1,2,1)。<span class="highlight">切线平行于平面 ⇔ 切向量垂直于法向量</span>——很多人第一反应是"平行"，但切线是在平面"外面"和平面"并排"，所以它跟平面的法向量是垂直的！</p></div>
+<div class="think-step"><h4>💡 T·n = 0，解出 t 值</h4><p>T·n = 1×1 + (−2t)×2 + 3t²×1 = 1 − 4t + 3t² = 0。因式分解：(3t−1)(t−1)=0。<span class="highlight">t = 1/3 或 t = 1</span>。两个 t 都有效——说明曲线上有两处切线同时平行于这个平面。</p></div>
+<div class="think-step"><h4>🎯 法平面怎么求？用切向量当法向量！</h4><p>t=1 时：P=(1,−1,1)，T=(1,−2,3)。法平面方程：(x−1) + (−2)(y+1) + 3(z−1) = 0 → <b>x − 2y + 3z − 6 = 0</b>。t=1/3 时同理，P=(1/3, −1/9, 1/27)，T=(1, −2/3, 1/3)，法平面方程化简后写出。两个都要答。</p></div>
+<div class="think-step"><h4>⚠️ "切线平行平面"≠"切向量平行法向量"</h4><p>这是最经典的混淆点。切线跟平面平行——意思是切线"横躺着"跟平面同方向，那它当然跟平面的法向量垂直。反过来，<span class="highlight">如果直线垂直于平面，切向量才平行于法向量</span>。一句话牢记：平行平面 = 垂直法向量。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>L: x=t, y=−t², z=t³</div>
+<div style="margin:8px 0"><span class="tag tag-pk">空间曲线</span></div>
+<div class="step-reveal" id="steps-p11">
+<div class="step-item"><div class="step-num" style="background:var(--pink)">1</div><div class="step-text"><strong>切向量：T=(1, −2t, 3t²)。平面法向量：n=(1,2,1)</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">2</div><div class="step-text"><strong>T·n=0：1−4t+3t²=0→t=1/3或t=1</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">3</div><div class="step-text"><strong>t=1：P₁=(1,−1,1), T₁=(1,−2,3)→法平面：x−2y+3z=6</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--pink)">4</div><div class="step-text"><strong>t=1/3：P₂=(1/3,−1/9,1/27), T₂=(1,−2/3,1/3)→法平面：x−2y/3+z/3=34/81→归整 81x−54y+27z=34</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--pink);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①参数曲线的切向量求法（对各分量求导）；②线与面平行的条件（方向向量⊥法向量）；③法平面方程→以切向量为法向量过已知点。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 线与面平行⇔T·n=0，不要写成T∥n！T∥n是垂直关系。二次方程可能有两个解，都要求。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 切线与平面平行的条件？</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'切向量平行于法向量是与平面垂直')">T∥n</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！平行⇔方向向量⊥法向量→点积=0')">T·n=0</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p11')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 12 ═══ -->
+<div class="problem open" id="p12" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">12</div>
+<div style="flex:1"><h2>二阶复合偏导之差 <span style="font-weight:400;color:var(--sub);font-size:.75em">Second-Order Composite P.D. &nbsp; 9分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>(y²−x²)(f<sub>11</sub>−f<sub>22</sub>)</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p12')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p12')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p12')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p12')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>z=f(xy, (x²+y²)/2)，f具有二阶连续偏导数，求 ∂²z/∂x² − ∂²z/∂y²。</div>
+<div style="margin:8px 0"><span class="tag tag-b">复合偏导</span><span class="tag tag-b">链式法则</span><span class="tag tag-p">二阶导</span></div>
+<div class="think-step"><h4>🔍 复合函数求导，先"拆包"</h4><p>z = f(u,v)，其中 u = xy，v = (x²+y²)/2。咱们需要 ∂²z/∂x² − ∂²z/∂y²。因为 u 和 v 关于 x,y 有很好的对称性（uₓ=y, u<sub>y</sub>=x; vₓ=x, v<sub>y</sub>=y），这提示最终结果应该很简洁。</p></div>
+<div class="think-step"><h4>💡 一阶偏导先写对</h4><p>链式法则：∂z/∂x = f₁·uₓ + f₂·vₓ = <span class="highlight">y f₁ + x f₂</span>。∂z/∂y = f₁·u<sub>y</sub> + f₂·v<sub>y</sub> = x f₁ + y f₂。注意 f₁ 和 f₂ 本身还是 u,v 的函数，求二阶导时它们还会被再次链式求导。</p></div>
+<div class="think-step"><h4>🎯 二阶导求出来再相减，很多项会消掉</h4><p>∂²z/∂x² = y·(f₁₁·y+f₁₂·x) + f₂ + x·(f₂₁·y+f₂₂·x) = y²f₁₁ + 2xy f₁₂ + f₂ + x²f₂₂。∂²z/∂y² = x²f₁₁ + 2xy f₁₂ + f₂ + y²f₂₂。注意到交叉项 2xy f₁₂ 和直线项 f₂ 在两个二阶导里<span class="highlight">一模一样</span>！相减时直接消掉：<b>(y²−x²)f₁₁ + (x²−y²)f₂₂ = (y²−x²)(f₁₁−f₂₂)</b>。</p></div>
+<div class="think-step"><h4>⚠️ vₓ=x, v<sub>y</sub>=y 这一对别搞反</h4><p>v = (x²+y²)/2，所以 vₓ = (2x)/2 = x，v<sub>y</sub> = (2y)/2 = y。不是交叉的！另外 f₁₂ 和 f₂₁ 混偏导如果二阶连续则相等，但在表达式里两边是对称出现的，代入时注意符号就行。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>z=f(xy, (x²+y²)/2)，求 ∂²z/∂x²−∂²z/∂y²</div>
+<div style="margin:8px 0"><span class="tag tag-b">复合偏导</span></div>
+<div class="step-reveal" id="steps-p12">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>一阶：</strong>∂z/∂x=y·f₁+x·f₂，∂z/∂y=x·f₁+y·f₂</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>∂²z/∂x²=y²f₁₁+2xy f₁₂+f₂+x²f₂₂</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>∂²z/∂y²=x²f₁₁+2xy f₁₂+f₂+y²f₂₂</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">4</div><div class="step-text"><strong>相减：∂²z/∂x²−∂²z/∂y²=(y²−x²)(f₁₁−f₂₂)</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①多元链式法则（二阶）；②f₂的求导注意链式法则；③利用对称性简化——f₁₂项和f₂项在相减时恰好抵消，这是题目设计的巧妙之处。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ v_x=x, v_y=y——注意v=(x²+y²)/2，不是v=xy。求导不要搞反。f₁和f₂各自都是u和v的函数，二阶导时还要再链式法则。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 v=(x²+y²)/2，v_x=？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！v_x=x（(x²)/2求导=x)')">x</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, 'v对x求导是x不是y')">y</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p12')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 13 ═══ -->
+<div class="problem open" id="p13" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">13</div>
+<div style="flex:1"><h2>隐函数全微分 <span style="font-weight:400;color:var(--sub);font-size:.75em">Implicit Function Total Differential &nbsp; 9分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>dz = (z sin x−cos y)/(cos x−y sin z) dx + (x sin y−cos z)/(cos x−y sin z) dy</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p13')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p13')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p13')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p13')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>设 x cos y + y cos z + z cos x = 1，求 dz。</div>
+<div style="margin:8px 0"><span class="tag tag-b">隐函数求导</span><span class="tag tag-b">全微分</span></div>
+<div class="think-step"><h4>🔍 隐函数求全微分，一步到位最省事</h4><p>方程 x cos y + y cos z + z cos x = 1，z 是 x,y 的隐函数。求 dz 不需要分别算 ∂z/∂x 和 ∂z/∂y——<span class="highlight">直接全微分</span>，把 dx、dy、dz 理顺就行。</p></div>
+<div class="think-step"><h4>💡 三项分别微分，每个都要用乘法法则</h4><p>每一项都是"一个变量 × 另一个变量的余弦"这种积的形式。d(x cos y) = cos y·dx + x·(−sin y·dy) = <span class="highlight">cos y dx − x sin y dy</span>。同样：d(y cos z) = cos z dy − y sin z dz；d(z cos x) = cos x dz − z sin x dx。右边 d(1)=0。</p></div>
+<div class="think-step"><h4>🎯 合并同类项，把 dz 解出来</h4><p>把 dx、dy、dz 的系数分别归拢：(cos y − z sin x)dx + (cos z − x sin y)dy + (cos x − y sin z)dz = 0。移项：<b>dz = −[(cos y−z sin x)dx + (cos z−x sin y)dy] / (cos x − y sin z)</b>。这就是最终答案。</p></div>
+<div class="think-step"><h4>⚠️ dz 的分母是 (cos x − y sin z)，别搞混</h4><p>d(z cos x) 里的 −z sin x dx 项容易漏掉负号。cos x·d(z) + z·(−sin x dx) = cos x dz − z sin x dx——<span class="highlight">千万注意 sin 求导出 cos 没错，但多出来那个负号是 cos 求导来的</span>。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>x cos y+y cos z+z cos x=1，求dz</div>
+<div style="margin:8px 0"><span class="tag tag-b">全微分</span></div>
+<div class="step-reveal" id="steps-p13">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>全微分：</strong>d(x cos y)+d(y cos z)+d(z cos x)=0</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>逐项展开：</strong>cos y dx−x sin y dy + cos z dy−y sin z dz + cos x dz−z sin x dx = 0</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>合并并解出dz：</strong>dz=−[(cos y−z sin x)dx+(cos z−x sin y)dy]/(cos x−y sin z)</div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①隐函数的全微分——不解出z也能求dz；②乘法微分法则d(uv)=u dv+v du；③三角函数微分。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ d(z cos x)包含了dz项。展开后把所有含dz的项移到一边，不含dz的移到另一边，再解出dz。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 d(z cos x) = ?</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this, false, '少了一项')">−z sin x dx</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '少了一项')">cos x dz</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！u dv+v du')">cos x dz−z sin x dx</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p13')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 14 ═══ -->
+<div class="problem open" id="p14" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">14</div>
+<div style="flex:1"><h2>Lagrange乘数法·条件极值 <span style="font-weight:400;color:var(--sub);font-size:.75em">Constrained Extrema &nbsp; 9分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>最小值点 (1/14, 1/7, 3/14)，f<sub>min</sub>=1/14</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p14')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p14')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p14')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p14')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>求 f(x,y,z)=x²+y²+z² 在约束 x+2y+3z=1 下的最小值点及最小值。</div>
+<div style="margin:8px 0"><span class="tag tag-b">Lagrange乘数</span><span class="tag tag-p">条件极值</span></div>
+<div class="think-step"><h4>🔍 几何直觉：原点到平面的最短距离</h4><p>f = x²+y²+z² 就是点 (x,y,z) 到原点的距离平方。约束条件 x+2y+3z=1 定义了一个平面。这道题说白了就是：<span class="highlight">在平面上找一个点，让这个点离原点最近</span>。几何上答案就是原点往平面作垂线的垂足。</p></div>
+<div class="think-step"><h4>💡 Lagrange 乘数法，设好 L 函数</h4><p>L = x²+y²+z² − λ(x+2y+3z−1)。三个偏导各自等于零：∂L/∂x = 2x − λ = 0 → x = λ/2；∂L/∂y = 2y − 2λ = 0 → <span class="highlight">y = λ</span>（注意系数是 2λ，不是 λ！）；∂L/∂z = 2z − 3λ = 0 → z = 3λ/2。</p></div>
+<div class="think-step"><h4>🎯 代回约束方程，一气呵成</h4><p>把 x,y,z 用 λ 表示后代入平面方程：λ/2 + 2λ + 9λ/2 = (1/2+2+9/2)λ = <span class="highlight">7λ = 1</span> → λ = 1/7。回代：最小值点 = (1/14, 1/7, 3/14)，最小值 = 1/196+1/49+9/196 = <b>1/14</b>。</p></div>
+<div class="think-step"><h4>⚠️ 约束系数直接影响 λ 前面的系数</h4><p>∂L/∂y = 2y − 2λ——这里的 2λ 来自约束里 y 的系数 2。很多人写成了 2y − λ = 0，那就全错了。<span class="highlight">Lagrange 乘数法：每个变量的约束系数要原封不动地乘在 λ 上</span>。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>min f=x²+y²+z², s.t. x+2y+3z=1</div>
+<div style="margin:8px 0"><span class="tag tag-b">Lagrange</span></div>
+<div class="step-reveal" id="steps-p14">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>Lagrange函数：</strong>L=x²+y²+z²−λ(x+2y+3z−1)</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>∂L/∂x=2x−λ=0→x=λ/2；∂L/∂y=2y−2λ=0→y=λ；∂L/∂z=2z−3λ=0→z=3λ/2</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>代入约束：λ/2+2λ+9λ/2=7λ=1→λ=1/7</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">4</div><div class="step-text"><strong>最小值点(1/14, 1/7, 3/14)，f_min=1/14</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①Lagrange乘数法标准流程；②三元函数的条件极值；③几何意义——原点到平面的最近距离=1/√14。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 约束系数2,3会"平方后反比"影响变量值：y=λ（除以1），z=3λ/2（3/2倍）。系数大的变量占的"权重"小。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 ∂L/∂y = 2y−2λ = 0，所以 y = ?</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！2y=2λ→y=λ')">λ</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '不是λ/2')">λ/2</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '不是2λ')">2λ</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p14')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 15 ═══ -->
+<div class="problem open" id="p15" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">15</div>
+<div style="flex:1"><h2>三重积分·对称性 <span style="font-weight:400;color:var(--sub);font-size:.75em">Triple Integral Symmetry &nbsp; 9分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>8π</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p15')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p15')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p15')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p15')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>Ω: π²≤x²+y²+z²≤4π²，计算 I=<span class="intl intl2"><span class="intl-u"></span><span class="intl-s">∭</span><span class="intl-l">Ω</span></span> (cos<span class="sqrt"><span class="sqrt-inner">x²+y²+z²</span></span>/<span class="sqrt"><span class="sqrt-inner">x²+y²+z²</span></span> + z sin<span class="sqrt"><span class="sqrt-inner">x²+y²</span></span>) dV。</div>
+<div style="margin:8px 0"><span class="tag tag-b">三重积分</span><span class="tag tag-g">对称性</span><span class="tag tag-p">球坐标</span></div>
+<div class="think-step"><h4>🔍 别被吓到！先看对称性能救你一命</h4><p>积分区域 Ω 是个球壳：π² ≤ x²+y²+z² ≤ 4π²，也就是 π ≤ ρ ≤ 2π。被积函数分两块。第二块 z sin(√(x²+y²)) 里有一个<span class="highlight">单独的 z</span>——z 是奇函数，而球壳关于 xy 平面对称，所以这一块积分 = <b>0</b>！这就少了一半工作量。</p></div>
+<div class="think-step"><h4>💡 第一块只跟 ρ 有关，球坐标安排上</h4><p>cos(√(x²+y²+z²)) / √(x²+y²+z²) = cosρ / ρ。球坐标体积微元 dV = ρ² sinφ dρ dφ dθ。化出来：I = ∫₀²π dθ · ∫₀ᴨ sinφ dφ · ∫ᴨ²ᴨ (cosρ/ρ)·ρ² dρ = ∫₀²π dθ · ∫₀ᴨ sinφ dφ · ∫ᴨ²ᴨ <span class="highlight">ρ cosρ</span> dρ。</p></div>
+<div class="think-step"><h4>🎯 分部积分算最后那个一维积分</h4><p>∫ ρ cosρ dρ = ρ sinρ + cosρ（对 ρ 分部积分，u=ρ, dv=cosρ dρ）。代入 [π, 2π]：在 2π 处 = 0+1 = 1；在 π 处 = 0+(−1) = −1。结果 = 1−(−1) = <span class="highlight">2</span>。前面 θ 积分 = 2π，φ 积分 = 2。总结果：2π × 2 × 2 = <b>8π</b>。</p></div>
+<div class="think-step"><h4>⚠️ cos(2π)=1, cos(π)=−1 ——最容易算反的地方</h4><p>分部积分后带上下限，在 2π 处 ρ sin(2π) = 0，cos(2π) = 1。在 π 处 ρ sin(π) = 0，cos(π) = −1。<span class="highlight">别把 −1 写成 0 或 1</span>。另外 ρ cosρ 的原函数是 ρ sinρ + cosρ，不是 ρ sinρ − cosρ，符号别搞错。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>I=<span class="intl intl2"><span class="intl-u"></span><span class="intl-s">∭</span><span class="intl-l">Ω</span></span>(cosρ/ρ+z sin√(x²+y²))dV</div>
+<div style="margin:8px 0"><span class="tag tag-b">球坐标</span></div>
+<div class="step-reveal" id="steps-p15">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>对称性：</strong>z sin√(x²+y²)关于z为奇函数，而Ω关于xy面对称→积分=0</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>球坐标：</strong>I₁=<span class="intl"><span class="intl-u">2π</span><span class="intl-s">∫</span><span class="intl-l">0</span></span>dθ <span class="intl"><span class="intl-u">π</span><span class="intl-s">∫</span><span class="intl-l">0</span></span>sinφ dφ <span class="intl"><span class="intl-u">2π</span><span class="intl-s">∫</span><span class="intl-l">π</span></span> ρ cosρ dρ</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>角度积分=4π，ρ积分=[ρ sinρ+cosρ]_π^{2π}=2</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">4</div><div class="step-text"><strong>I=4π×2=8π</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①奇偶对称性在三重积分中的应用；②球坐标变换；③分部积分法；④双项积分拆开处理。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ 球坐标中dV=ρ²sinφ dρ dφ dθ。cosρ/ρ乘以ρ²→ρcosρ dρ，别漏掉ρ²因子。分部积分后代入上下限注意cos值的正负。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 ∫ρ cosρ dρ = ?</p>
+<div class="quiz-opts">
+<button class="quiz-opt" onclick="checkQuiz(this,false,'少了一项')">ρ sinρ</button>
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！分部积分法。')">ρ sinρ+cosρ</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '符号错了')">ρ sinρ−cosρ</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p15')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 16 ═══ -->
+<div class="problem open" id="p16" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">16</div>
+<div style="flex:1"><h2>曲面积分·球面部分面积 <span style="font-weight:400;color:var(--sub);font-size:.75em">Surface Area &nbsp; 9分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>8(π−2)</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p16')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p16')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p16')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p16')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>球面 x²+y²+z²=4 含在圆柱 x²+y²=2x 内的那部分面积。</div>
+<div style="margin:8px 0"><span class="tag tag-b">曲面积分</span><span class="tag tag-pk">柱面截球</span></div>
+<div class="think-step"><h4>🔍 先想象一下这个几何体</h4><p>球面半径 2。圆柱 x²+y²=2x 配成 (x−1)²+y²=1——圆心在 (1,0)、半径 1，正好和球在原点处"贴边"。球面被这根柱子切下去，<span class="highlight">截出来的部分像个"帽子"</span>。因为球关于 xy 面对称，只需要算上半球面的面积再乘 2。</p></div>
+<div class="think-step"><h4>💡 曲面面积微元 dS 是关键</h4><p>上半球面 z = √(4−x²−y²)。面积微元 dS = √(1+zₓ²+z<sub>y</sub>²) dxdy。zₓ = −x/z，z<sub>y</sub> = −y/z。1 + zₓ² + z<sub>y</sub>² = 1 + x²/z² + y²/z² = (z²+x²+y²)/z² = <span class="highlight">4/(4−r²)</span>。所以 dS = 2/√(4−r²) · r dr dθ（注意转极坐标时 dxdy = r dr dθ）。</p></div>
+<div class="think-step"><h4>🎯 划好积分范围，小心计算</h4><p>圆柱 r=2cosθ，θ∈[−π/2, π/2]。总面积 S = 2 × ∫∫ 上半球面 dS = 2 × ∫_{−π/2}^{π/2} dθ ∫₀^{2cosθ} (2r/√(4−r²)) dr = 4 ∫ dθ [−√(4−r²)]₀^{2cosθ} = 4 ∫ (2−2|sinθ|) dθ = <span class="highlight">8∫ (1−|sinθ|) dθ = 8(π−2) = 8π−16</span>。</p></div>
+<div class="think-step"><h4>⚠️ r=2cosθ 的 θ 范围是 [−π/2, π/2]，不是 [0, π]</h4><p>圆 (x−1)²+y²=1 在极坐标下 r=2cosθ，当 θ 超过 ±π/2 时 cosθ 变负 r 就没意义了。另外 √(4−4cos²θ) = 2|sinθ|（不是 2sinθ），<span class="highlight">加了绝对值后积分要分段或利用对称性</span>。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>球面x²+y²+z²=4含在x²+y²=2x内的面积</div>
+<div style="margin:8px 0"><span class="tag tag-b">曲面积分</span></div>
+<div class="step-reveal" id="steps-p16">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>对称性×2：</strong>S=2∬_D √(1+z_x²+z_y²)dxdy, D: r≤2cosθ, θ∈[−π/2,π/2]</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>dS=2r/<span class="sqrt"><span class="sqrt-inner">4−r²</span></span> dr dθ。S=4∫₋_{π/2}^{π/2} ∫₀^{2cosθ} r/<span class="sqrt"><span class="sqrt-inner">4−r²</span></span> dr dθ</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>内积分=[−<span class="sqrt"><span class="sqrt-inner">4−r²</span></span>]₀^{2cosθ}=2(1−|sinθ|)</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">4</div><div class="step-text"><strong>S=8∫₋_{π/2}^{π/2}(1−|sinθ|)dθ=8(π−2)=8π−16</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①曲面面积公式dS=√(1+z_x²+z_y²)dxdy；②极坐标下r=2cosθ（圆过极点）；③带绝对值的三角函数积分。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ |sinθ|积分时注意θ∈[−π/2,π/2]，sinθ在[−π/2,0]为负→|sinθ|=−sinθ。S=8(π−2)不是8π。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 r=2cosθ中θ的范围是？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！cosθ≥0→θ∈[−π/2,π/2]')">[−π/2, π/2]</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '[0,π]时cosθ可取负')">[0, π]</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '[0,2π]太大了')">[0, 2π]</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p16')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+<!-- ═══ PROBLEM 17 ═══ -->
+<div class="problem open" id="p17" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">17</div>
+<div style="flex:1"><h2>积分不等式证明 <span style="font-weight:400;color:var(--sub);font-size:.75em">Integral Inequality &nbsp; 6分</span></h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+<div class="box box-math" style="border-left:3px solid var(--green)"><strong>✅ 标准答案：</strong>|∫<sub>a</sub><sup>b</sup> f(x)e<sup>ikx</sup>dx|² ≤ (∫<sub>a</sub><sup>b</sup> |f(x)|dx)²</div>
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','p17')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','p17')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','p17')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','p17')">⚠ 易错提醒</button>
+</div>
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>证明 (∫_a^b f(x)cos kx dx)²+(∫_a^b f(x)sin kx dx)² ≤ (∫_a^b |f(x)| dx)²，f在[a,b]上连续。</div>
+<div style="margin:8px 0"><span class="tag tag-b">积分不等式</span><span class="tag tag-p">复变方法</span></div>
+<div class="think-step"><h4>🔍 看见 cos 和 sin 凑一对，脑子里该响警报</h4><p>左边是两个实积分的平方和：一个带 cos kx、一个带 sin kx。这组合太眼熟了——<span class="highlight">复数的实部和虚部！</span>令 A = ∫f(x)cos kx dx，B = ∫f(x)sin kx dx，那 A²+B² = |A + iB|² = |∫f(x)(cos kx + i sin kx)dx|² = |∫f(x)e^{ikx}dx|²。欧拉公式一出，两个积分就合体了。</p></div>
+<div class="think-step"><h4>💡 复积分的模 ≤ 被积函数模的积分</h4><p>这是复数积分的不等式：|∫ g(x) dx| ≤ ∫ |g(x)| dx。把 g(x) = f(x)e^{ikx} 代入：|∫ f(x)e^{ikx} dx| ≤ ∫ |f(x)e^{ikx}| dx。但 |e^{ikx}| = 1！因为 e^{ikx} 是单位圆上的复数，模永远是 1。所以右边 = <span class="highlight">∫ |f(x)| dx</span>，干净利落。</p></div>
+<div class="think-step"><h4>🎯 两边平方，证明完成</h4><p>|∫f(x)e^{ikx}dx| ≤ ∫|f(x)|dx → 两边平方 → A²+B² ≤ (∫|f(x)|dx)²。<span class="highlight">证毕。</span>全程只用了一个不等式：积分的模 ≤ 模的积分，加上欧拉公式把两个三角函数打包成 e^{ikx}。</p></div>
+<div class="think-step"><h4>⚠️ 这道题用 Cauchy-Schwarz 也行，但复变方法优雅十倍</h4><p>如果你不熟悉复变方法，也可以对向量 (∫f cos kx, ∫f sin kx) 用 Cauchy-Schwarz。但复变方法不需要任何额外的工具——<span class="highlight">e^{ikx} 模为 1</span> 这个事实直接消灭了所有复杂性。两种方法都行，但考场上复变法快得多。</p></div>
+</div>
+<div class="tab-panel" data-panel="steps">
+<div class="box box-math"><strong>题目：</strong>证明积分不等式</div>
+<div style="margin:8px 0"><span class="tag tag-b">积分不等式</span></div>
+<div class="step-reveal" id="steps-p17">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>构复数：</strong>左边=|∫_a^b f(x)e^{ikx}dx|²=|∫f cos kx dx + i∫f sin kx dx|²</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>|∫g(x)dx| ≤ ∫|g(x)|dx（积分绝对值不等式）</strong></div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">3</div><div class="step-text"><strong>|f(x)e^{ikx}|=|f(x)|·|e^{ikx}|=|f(x)| → 右端=∫|f(x)|dx → 证毕</strong></div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div></div>
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3 style="color:var(--blue);margin-bottom:6px">🎯 考点拆解</h3><p style="font-size:.92em">①Euler公式e^{ikx}=cos kx+i sin kx；②复数模的定义；③积分绝对值不等式|∫g|≤∫|g|；④关键技巧：把两个看似不相关的实积分统一为一个复积分处理。</p></div>
+<div class="tip"><p style="font-size:.92em">💡 这道题的精髓是"合并"——用复指数函数把cos和sin统一起来，瞬间简化问题。这是Fourier分析中的常见技巧。</p></div></div>
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p style="font-size:.92em">⚠️ |e^{ikx}|=1是关键——如果忘了这点，会以为右边还有|cos kx|或|sin kx|的积分。不是的！复数模去除了三角函数振荡的复杂性。</p></div></div>
+<div class="quiz-box"><p class="quiz-q">🧪 |e^{ikx}| = ?</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this, true, '正确！单位复数模恒为1')">1</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '不对，|e^{ikx}|=√(cos²kx+sin²kx)=1')">|cos kx|</button>
+<button class="quiz-opt" onclick="checkQuiz(this, false, '不对')">|k|</button></div><div class="quiz-feedback"></div></div>
+<div class="mastery" onclick="toggleMastery(this,'p17')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+</div></div></div>
+
+</div><!-- .container -->
+
+<div class="container">
+
+<div class="stats-bar">
+<div class="stat-card"><div class="val" style="color:var(--green)">17</div><div class="lbl">总题数</div></div>
+<div class="stat-card"><div class="val" style="color:var(--yellow)">100</div><div class="lbl">总分</div></div>
+<div class="stat-card"><div class="val" style="color:var(--blue)">8</div><div class="lbl">偏导/微分题</div></div>
+<div class="stat-card"><div class="val" style="color:var(--pink)">5</div><div class="lbl">向量/几何题</div></div>
+<div class="stat-card"><div class="val" style="color:var(--purple)">4</div><div class="lbl">综合/论证题</div></div>
+</div>
+
+<div class="know-sum">
+<h2 style="text-align:center">📋 知识点 & 考点完整分析</h2>
+<div class="know-grid">
+<div class="know-card"><div class="know-bar blue"></div><h3 style="color:var(--blue)">一、偏导数与全微分</h3><p class="problems">题 3, 6, 10, 12, 13, 14</p><p class="focus"><b>分数：</b>约 37 分<br><b>考点：</b>梯度、连续性判定、Lagrange乘数法、二阶复合偏导、隐函数全微分、条件极值</p></div>
+<div class="know-card"><div class="know-bar blue"></div><h3 style="color:var(--blue)">二、重积分与曲面积分</h3><p class="problems">题 4, 5, 9, 15, 16</p><p class="focus"><b>分数：</b>约 31 分<br><b>考点：</b>交换积分次序、转动惯量、坐标变换、球坐标三重积分、曲面积分</p></div>
+<div class="know-card"><div class="know-bar pink"></div><h3 style="color:var(--pink)">三、空间解析几何</h3><p class="problems">题 1, 2, 7, 8, 11</p><p class="focus"><b>分数：</b>约 25 分<br><b>考点：</b>方向向量、旋转曲面、投影曲线、直线夹角、二次曲面分类、空间曲线的切线与法平面</p></div>
+<div class="know-card"><div class="know-bar purple"></div><h3 style="color:var(--purple)">四、证明与综合</h3><p class="problems">题 17</p><p class="focus"><b>分数：</b>6 分<br><b>考点：</b>积分不等式、复变方法、积分模不等式</p></div>
+</div>
+<div class="tip"><p style="font-size:.92em">💡 本卷特点：重多元微积分核心概念（链式法则、Lagrange乘数、坐标变换），空间解析几何占比适中，最后一题为积分不等式的技巧性证明。整体难度中等偏上，需要扎实的计算基本功。</p></div></div>
+
+<div class="know-map">
+<h2>🗺 知识点关联图谱</h2>
+<canvas id="mapCanvas" width="900" height="380"></canvas>
+<p style="color:var(--sub);font-size:.78em;margin-top:6px">点击彩球跳转到对应题目</p></div>
+
+<div class="answer-key">
+<h2>✅ 参考答案速查</h2>
+<div class="answer-grid">
+<div class="ans-item"><div class="ans-num" style="background:var(--pink)">1</div><div class="ans-text">(−1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, −1/<span class="sqrt"><span class="sqrt-inner">3</span></span>, 1/<span class="sqrt"><span class="sqrt-inner">3</span></span>)</div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--pink)">2</div><div class="ans-text">{x²+y²=<b>1/5</b>, z=0}</div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">3</div><div class="ans-text">(<b>1/2, 0, 1/2</b>)</div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">4</div><div class="ans-text">∫₀¹ dy ∫<sub>y−1</sub><sup>1−y</sup> f dx</div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">5</div><div class="ans-text"><b>π/4</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">6</div><div class="ans-text"><b>A</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--pink)">7</div><div class="ans-text"><b>C</b> (π/3)</div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--pink)">8</div><div class="ans-text"><b>B</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">9</div><div class="ans-text"><b>C</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">10</div><div class="ans-text"><b>D</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--pink)">11</div><div class="ans-text">t=1: <b>x−2y+3z=6</b><br>t=1/3: <b>81x−54y+27z=34</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">12</div><div class="ans-text"><b>(y²−x²)(f<sub>11</sub>−f<sub>22</sub>)</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">13</div><div class="ans-text">dz = <b>(z sin x−cos y)/(cos x−y sin z)</b> dx + <b>(x sin y−cos z)/(cos x−y sin z)</b> dy</div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">14</div><div class="ans-text">(<b>1/14, 1/7, 3/14</b>), <b>1/14</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">15</div><div class="ans-text"><b>8π</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">16</div><div class="ans-text"><b>8(π−2)</b></div></div>
+<div class="ans-item"><div class="ans-num" style="background:var(--blue)">17</div><div class="ans-text">|<span class="intl"><span class="intl-u">b</span><span class="intl-s">∫</span><span class="intl-l">a</span></span> f e<sup>ikx</sup>dx|² ≤ (<span class="intl"><span class="intl-u">b</span><span class="intl-s">∫</span><span class="intl-l">a</span></span>|f|dx)²</div></div>
+</div></div>
+
+<div class="footer"><p>高等数学A(3) 试卷解析库 · 逐题精讲，交互式学习</p></div>
+</div>
+
+<script>
+let mastered = new Set();
+let totalProblems = 17;
+
+function revealNext(btn) {
+  const container = btn.closest('.step-reveal');
+  if (!container) return;
+  const state = btn.getAttribute('data-state') || 'revealing';
+  if (state === 'expanded') {
+    container.querySelectorAll('.step-item.shown').forEach(el => el.classList.remove('shown'));
+    btn.textContent = '👇 下一步';
+    btn.style.background = 'var(--blue)';
+    btn.setAttribute('data-state', 'revealing');
+    return;
+  }
+  const hidden = container.querySelectorAll('.step-item:not(.shown)');
+  if (hidden.length > 0) {
+    hidden[0].classList.add('shown');
+    const remaining = hidden.length - 1;
+    if (remaining === 0) {
+      btn.textContent = '🔄 收起全部';
+      btn.style.background = 'var(--green)';
+      btn.setAttribute('data-state', 'expanded');
+    } else {
+      btn.textContent = '👇 下一步 (' + remaining + '步剩余)';
+    }
+  }
+}
+
+function checkQuiz(btn, correct, msg) {
+  const fb = btn.parentElement.nextElementSibling;
+  fb.textContent = msg;
+  fb.className = 'quiz-feedback ' + (correct ? 'correct' : 'wrong');
+  if (correct) { btn.style.background = 'var(--green)'; btn.style.color = '#0f172a'; btn.style.borderColor = 'var(--green)'; }
+  else { btn.style.background = 'rgba(244,114,182,.25)'; btn.style.borderColor = 'var(--pink)';
+    btn.parentElement.querySelectorAll('.quiz-opt.correct').forEach(c => { c.style.background = 'rgba(74,222,128,.2)'; c.style.borderColor = 'var(--green)'; }); }
+}
+
+function switchTab(tabBtn, panelId, problemId) {
+  const container = tabBtn.closest('.tabs').parentElement;
+  container.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  container.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  tabBtn.classList.add('active');
+  const panel = container.querySelector('.tab-panel[data-panel="' + panelId + '"]');
+  if (panel) panel.classList.add('active');
+}
+
+function toggleMastery(el, id) {
+  el.classList.toggle('checked');
+  if (el.classList.contains('checked')) mastered.add(id); else mastered.delete(id);
+  document.getElementById('progressFill').style.width = (mastered.size/totalProblems*100) + '%';
+  document.getElementById('progressText').textContent = mastered.size + '/' + totalProblems;
+}
+
+// —— Knowledge Map ——
+(function(){
+  const c = document.getElementById('mapCanvas');
+  if (!c) return;
+  const ctx = c.getContext('2d');
+  const nodes = {
+    grad:{x:120,y:40,label:'梯度',sub:'题3',color:'#38bdf8',target:'p3'},
+    chain:{x:320,y:40,label:'链式法则',sub:'题12',color:'#38bdf8',target:'p12'},
+    lagrange:{x:520,y:40,label:'Lagrange',sub:'题10,14',color:'#38bdf8',target:'p10'},
+    implicit:{x:720,y:40,label:'隐函数',sub:'题13',color:'#38bdf8',target:'p13'},
+    double:{x:120,y:150,label:'二重积分',sub:'题4,9',color:'#38bdf8',target:'p4'},
+    triple:{x:320,y:150,label:'三重积分',sub:'题15',color:'#38bdf8',target:'p15'},
+    surface:{x:520,y:150,label:'曲面积分',sub:'题16',color:'#38bdf8',target:'p16'},
+    vector:{x:120,y:260,label:'空间向量',sub:'题1,7',color:'#f472b6',target:'p1'},
+    quadric:{x:320,y:260,label:'二次曲面',sub:'题8',color:'#f472b6',target:'p8'},
+    curve:{x:520,y:260,label:'空间曲线',sub:'题2,11',color:'#f472b6',target:'p2'},
+    inertia:{x:720,y:260,label:'转动惯量',sub:'题5',color:'#4ade80',target:'p5'},
+    inequality:{x:120,y:340,label:'积分不等式',sub:'题17',color:'#a78bfa',target:'p17'},
+    continuity:{x:320,y:340,label:'连续/偏导',sub:'题6',color:'#a78bfa',target:'p6'}
+  };
+  const edges = [
+    {from:'grad',to:'chain',label:''},
+    {from:'chain',to:'lagrange',label:''},
+    {from:'lagrange',to:'implicit',label:'对偶'},
+    {from:'double',to:'triple',label:'推广'},
+    {from:'triple',to:'surface',label:'降维'},
+    {from:'vector',to:'curve',label:''},
+    {from:'curve',to:'quadric',label:''},
+    {from:'double',to:'inertia',label:'应用'},
+    {from:'lagrange',to:'inequality',label:'极值思想'},
+    {from:'continuity',to:'lagrange',label:'可微性'}
+  ];
+  function drawMap() {
+    ctx.clearRect(0,0,c.width,c.height);
+    edges.forEach(({from,to,label}) => {
+      const a=nodes[from], b=nodes[to];
+      if(!a||!b)return;
+      ctx.strokeStyle='#334155'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+      if(label){ctx.fillStyle='#64748b'; ctx.font='10px Microsoft YaHei'; ctx.fillText(label,(a.x+b.x)/2,(a.y+b.y)/2-6);}
+    });
+    Object.values(nodes).forEach(n => {
+      ctx.fillStyle=n.color; ctx.beginPath(); ctx.arc(n.x,n.y,22,0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='#0f172a'; ctx.font='bold 11px Microsoft YaHei'; ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText(n.label,n.x,n.y);
+      ctx.fillStyle='#cbd5e1'; ctx.font='9px Microsoft YaHei'; ctx.fillText(n.sub,n.x,n.y+17);
+    });
+    ctx.textAlign='start'; ctx.textBaseline='alphabetic';
+  }
+  drawMap();
+  c.addEventListener('click', e => {
+    const rect = c.getBoundingClientRect();
+    const mx = (e.clientX-rect.left)*(c.width/rect.width), my = (e.clientY-rect.top)*(c.height/rect.height);
+    for (const [id, n] of Object.entries(nodes)) {
+      if (Math.hypot(mx-n.x, my-n.y) < 22 && n.target) {
+        const el = document.getElementById(n.target);
+        if (el) { el.scrollIntoView({behavior:'smooth',block:'center'}); if (!el.classList.contains('open')) el.classList.add('open'); }
+      }
+    }
+  });
+})();
+
+function handleHash() {
+  const hash = window.location.hash;
+  if (!hash) return;
+  if (hash.startsWith('#quiz=')) {
+    var n = parseInt(hash.replace('#quiz=',''));
+    if (n > 0) { setTimeout(function(){ enterExamMode(n); }, 300); }
+    return;
+  }
+  const target = document.querySelector(hash);
+  if (!target) return;
+  if (!target.classList.contains('open')) target.classList.add('open');
+  setTimeout(() => { const rect = target.getBoundingClientRect(); window.scrollBy({ top: rect.top - 90, behavior: 'smooth' }); }, 100);
+}
+window.addEventListener('hashchange', handleHash);
+window.addEventListener('load', handleHash);
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('.nav a[href^="#"]');
+  if (!link) return;
+  e.preventDefault();
+  window.location.hash = link.getAttribute('href');
+});
+document.addEventListener('DOMContentLoaded', () => {
+  totalProblems = document.querySelectorAll('.problem').length;
+  document.getElementById('progressText').textContent = '0/' + totalProblems;
+  setTimeout(handleHash, 200);
+});
+
+// —— Random Quiz ——
+function showQuizModal(){
+  document.getElementById('quizModal').classList.add('show');
+}
+function closeQuizModal(){
+  document.getElementById('quizModal').classList.remove('show');
+}
+function selectQuizCount(n){
+  closeQuizModal();
+  enterExamMode(n);
+}
+function enterExamMode(n){
+  var all=document.querySelectorAll('.problem');
+  var arr=Array.from(all);
+  for(var i=arr.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=arr[i];arr[i]=arr[j];arr[j]=t;}
+  var sel=arr.slice(0,Math.min(n,arr.length));
+  all.forEach(function(p){p.style.display='none';p.classList.remove('open');});
+  sel.forEach(function(p,i){
+    p.style.display='';p.classList.add('open');p.style.borderLeftColor='var(--pink)';
+    setTimeout(function(){p.scrollIntoView({behavior:'smooth',block:'center'});},i*120);
+  });
+  document.getElementById('quizModeBar').style.display='flex';
+  document.getElementById('quizCount').textContent=sel.length;
+  var nav=document.getElementById('topNav');if(nav)nav.style.top='80px';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function reshuffleQuiz(){
+  var n=parseInt(document.getElementById('quizCount').textContent)||5;
+  enterExamMode(n);
+}
+function exitExamMode(){
+  document.querySelectorAll('.problem').forEach(function(p){
+    p.style.display='';p.classList.remove('open');
+    var c=p.style.borderLeftColor;p.style.borderLeftColor='';
+  });
+  document.getElementById('quizModeBar').style.display='none';
+  var nav=document.getElementById('topNav');if(nav)nav.style.top='40px';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+
+<div class="quiz-modal" id="quizModal" onclick="if(event.target===this)closeQuizModal()">
+<div class="quiz-modal-card">
+<h3>🎲 随机抽题模拟考试</h3>
+<p>选择抽取题目数量（共17题）</p>
+<div class="quiz-count-opts">
+<button class="quiz-count-opt" onclick="selectQuizCount(5)">5</button>
+<button class="quiz-count-opt" onclick="selectQuizCount(8)">8</button>
+<button class="quiz-count-opt" onclick="selectQuizCount(12)">12</button>
+<button class="quiz-count-opt all" onclick="selectQuizCount(17)">全部17题</button>
+</div>
+<button class="btn-next" onclick="closeQuizModal()" style="background:var(--border);margin:0 auto">取消</button>
+</div></div>
+
+</body>
+</html>

@@ -1,0 +1,3642 @@
+[
+  {
+    "chapter": "1.1",
+    "chapter_title": "书法艺术和书法习字",
+    "type": "单选题",
+    "stem": "书法定义的要点不包括()",
+    "options": [
+      {
+        "label": "A",
+        "text": "表现方法"
+      },
+      {
+        "label": "B",
+        "text": "书写工具"
+      },
+      {
+        "label": "C",
+        "text": "表现对象"
+      },
+      {
+        "label": "D",
+        "text": "书写人群"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "书法艺术和书法习字",
+    "type": "单选题",
+    "stem": "中国古代()的转写就是日本的平假名和片假名。",
+    "options": [
+      {
+        "label": "A",
+        "text": "行书"
+      },
+      {
+        "label": "B",
+        "text": "楷书"
+      },
+      {
+        "label": "C",
+        "text": "草书"
+      },
+      {
+        "label": "D",
+        "text": "隶书"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "书法艺术和书法习字",
+    "type": "单选题",
+    "stem": "不属于汉字文化圈的国家是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "阿富汗"
+      },
+      {
+        "label": "B",
+        "text": "韩国"
+      },
+      {
+        "label": "C",
+        "text": "日本"
+      },
+      {
+        "label": "D",
+        "text": "新加坡"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "书法艺术和书法习字",
+    "type": "判断题",
+    "stem": "从广义上讲,书写文字的方法就是书法。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "1.1",
+    "chapter_title": "书法艺术和书法习字",
+    "type": "判断题",
+    "stem": "概念内涵丰富了,外延也会随之扩大。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "书法自觉和书法意义",
+    "type": "单选题",
+    "stem": "()时期是书法艺术的自觉时期。",
+    "options": [
+      {
+        "label": "A",
+        "text": "明朝"
+      },
+      {
+        "label": "B",
+        "text": "唐朝"
+      },
+      {
+        "label": "C",
+        "text": "西周"
+      },
+      {
+        "label": "D",
+        "text": "魏晋"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "书法自觉和书法意义",
+    "type": "单选题",
+    "stem": "()是秦始皇统一中国以后采用的文字。",
+    "options": [
+      {
+        "label": "A",
+        "text": "金文"
+      },
+      {
+        "label": "B",
+        "text": "小篆"
+      },
+      {
+        "label": "C",
+        "text": "甲骨文"
+      },
+      {
+        "label": "D",
+        "text": "汉隶"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "书法自觉和书法意义",
+    "type": "单选题",
+    "stem": "()早期的考古学文化的代表是仰韶文化。",
+    "options": [
+      {
+        "label": "A",
+        "text": "黄河中上游地区"
+      },
+      {
+        "label": "B",
+        "text": "山东地区"
+      },
+      {
+        "label": "C",
+        "text": "黄河中下游"
+      },
+      {
+        "label": "D",
+        "text": "长江流域地区"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "书法自觉和书法意义",
+    "type": "判断题",
+    "stem": "书法的历史就是文字的历史",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "1.2",
+    "chapter_title": "书法自觉和书法意义",
+    "type": "判断题",
+    "stem": "甲骨文是中国最早的文字",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "仓颉说和伏羲说",
+    "type": "单选题",
+    "stem": "奚仲发明了()",
+    "options": [
+      {
+        "label": "A",
+        "text": "书"
+      },
+      {
+        "label": "B",
+        "text": "稼"
+      },
+      {
+        "label": "C",
+        "text": "邢"
+      },
+      {
+        "label": "D",
+        "text": "车"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "仓颉说和伏羲说",
+    "type": "单选题",
+    "stem": "关于汉字起源的说法不正确的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "源于图画说"
+      },
+      {
+        "label": "B",
+        "text": "结绳记事说"
+      },
+      {
+        "label": "C",
+        "text": "瓷器符号说"
+      },
+      {
+        "label": "D",
+        "text": "八卦说"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "仓颉说和伏羲说",
+    "type": "单选题",
+    "stem": "()是埃及最古老的文字。",
+    "options": [
+      {
+        "label": "A",
+        "text": "圣书字"
+      },
+      {
+        "label": "B",
+        "text": "楔形字"
+      },
+      {
+        "label": "C",
+        "text": "表形字"
+      },
+      {
+        "label": "D",
+        "text": "汉字"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "仓颉说和伏羲说",
+    "type": "判断题",
+    "stem": "位列十三经之首的是《诗经》。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "2.1",
+    "chapter_title": "仓颉说和伏羲说",
+    "type": "判断题",
+    "stem": "后稷被认为是西周人的祖先。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "黄河上游文化说",
+    "type": "单选题",
+    "stem": "()是南宋著名学者郑桥的作品。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《满江红》"
+      },
+      {
+        "label": "B",
+        "text": "《题临安邸》"
+      },
+      {
+        "label": "C",
+        "text": "《过零丁洋》"
+      },
+      {
+        "label": "D",
+        "text": "《通志》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "黄河上游文化说",
+    "type": "单选题",
+    "stem": "八卦由八种卦相来象征着天地八种不同性质的事物,而其中乾代表了()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "水"
+      },
+      {
+        "label": "B",
+        "text": "地"
+      },
+      {
+        "label": "C",
+        "text": "天"
+      },
+      {
+        "label": "D",
+        "text": "火"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "黄河上游文化说",
+    "type": "单选题",
+    "stem": "()主张:“一生二,二生三,三生万物”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "道家"
+      },
+      {
+        "label": "B",
+        "text": "儒家"
+      },
+      {
+        "label": "C",
+        "text": "法家"
+      },
+      {
+        "label": "D",
+        "text": "墨家"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "黄河上游文化说",
+    "type": "判断题",
+    "stem": "一个民族、一个部落甚至是一个人都可以创造文字。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "2.2",
+    "chapter_title": "黄河上游文化说",
+    "type": "判断题",
+    "stem": "文字是用于记录语言的一种工具。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "黄河中下游文化说",
+    "type": "单选题",
+    "stem": "()是山东地区的代表文化。",
+    "options": [
+      {
+        "label": "A",
+        "text": "半坡文化"
+      },
+      {
+        "label": "B",
+        "text": "仰韶文化"
+      },
+      {
+        "label": "C",
+        "text": "河姆渡文化"
+      },
+      {
+        "label": "D",
+        "text": "龙山文化"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "黄河中下游文化说",
+    "type": "单选题",
+    "stem": "()时期出现了印陶文。",
+    "options": [
+      {
+        "label": "A",
+        "text": "西周"
+      },
+      {
+        "label": "B",
+        "text": "战国"
+      },
+      {
+        "label": "C",
+        "text": "春秋"
+      },
+      {
+        "label": "D",
+        "text": "商朝"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "黄河中下游文化说",
+    "type": "单选题",
+    "stem": "丁公陶文是在()被发现的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "山东地区"
+      },
+      {
+        "label": "B",
+        "text": "河北地区"
+      },
+      {
+        "label": "C",
+        "text": "东北地区"
+      },
+      {
+        "label": "D",
+        "text": "河南地区"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "黄河中下游文化说",
+    "type": "判断题",
+    "stem": "汉字起源于史前时期陶器刻划的符号。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "2.3",
+    "chapter_title": "黄河中下游文化说",
+    "type": "判断题",
+    "stem": "早期文字的形成是写出来的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "千年甲骨的发现之谜",
+    "type": "单选题",
+    "stem": "甲骨文的主要使用时期是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "春秋"
+      },
+      {
+        "label": "B",
+        "text": "夏朝"
+      },
+      {
+        "label": "C",
+        "text": "西周"
+      },
+      {
+        "label": "D",
+        "text": "商朝"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "千年甲骨的发现之谜",
+    "type": "单选题",
+    "stem": "甲骨文的发现者不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "王懿荣"
+      },
+      {
+        "label": "B",
+        "text": "王襄"
+      },
+      {
+        "label": "C",
+        "text": "罗振玉"
+      },
+      {
+        "label": "D",
+        "text": "孟广慧"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "千年甲骨的发现之谜",
+    "type": "单选题",
+    "stem": "()不属于甲骨四堂。",
+    "options": [
+      {
+        "label": "A",
+        "text": "刘鹗"
+      },
+      {
+        "label": "B",
+        "text": "王国维"
+      },
+      {
+        "label": "C",
+        "text": "郭沫若"
+      },
+      {
+        "label": "D",
+        "text": "董作宾"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "千年甲骨的发现之谜",
+    "type": "判断题",
+    "stem": "通常说的甲骨文就是指殷墟甲骨文。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.1",
+    "chapter_title": "千年甲骨的发现之谜",
+    "type": "判断题",
+    "stem": "国子监是古代的一个管理机构。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "甲骨文字的特点(上)",
+    "type": "单选题",
+    "stem": "文字造字的方法主要有六种,()是排在第一位的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "会意"
+      },
+      {
+        "label": "B",
+        "text": "假借"
+      },
+      {
+        "label": "C",
+        "text": "形声"
+      },
+      {
+        "label": "D",
+        "text": "象形"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "甲骨文字的特点(上)",
+    "type": "单选题",
+    "stem": "()是我们国家目前见到的最早的系统文字",
+    "options": [
+      {
+        "label": "A",
+        "text": "金文"
+      },
+      {
+        "label": "B",
+        "text": "甲骨文"
+      },
+      {
+        "label": "C",
+        "text": "陶文"
+      },
+      {
+        "label": "D",
+        "text": "隶书"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "甲骨文字的特点(上)",
+    "type": "单选题",
+    "stem": "()是甲骨文的发现地。",
+    "options": [
+      {
+        "label": "A",
+        "text": "河南安阳"
+      },
+      {
+        "label": "B",
+        "text": "陕西西安"
+      },
+      {
+        "label": "C",
+        "text": "山东济南"
+      },
+      {
+        "label": "D",
+        "text": "河南洛阳"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "甲骨文字的特点(上)",
+    "type": "判断题",
+    "stem": "甲骨文是一种象形文字。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.2",
+    "chapter_title": "甲骨文字的特点(上)",
+    "type": "判断题",
+    "stem": "卜辞是甲骨文形成的文句。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "甲骨文字的特点(下)",
+    "type": "单选题",
+    "stem": "()是“王”字最早的意思。",
+    "options": [
+      {
+        "label": "A",
+        "text": "天子"
+      },
+      {
+        "label": "B",
+        "text": "王子"
+      },
+      {
+        "label": "C",
+        "text": "领导"
+      },
+      {
+        "label": "D",
+        "text": "武器"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "甲骨文字的特点(下)",
+    "type": "单选题",
+    "stem": "甲骨文字的美不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "圆润秀美"
+      },
+      {
+        "label": "B",
+        "text": "象形性"
+      },
+      {
+        "label": "C",
+        "text": "左右式对换"
+      },
+      {
+        "label": "D",
+        "text": "对称字"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "甲骨文字的特点(下)",
+    "type": "多选题",
+    "stem": "以下哪个属于书法的基本要素?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "字法"
+      },
+      {
+        "label": "B",
+        "text": "句法"
+      },
+      {
+        "label": "C",
+        "text": "笔法"
+      },
+      {
+        "label": "D",
+        "text": "章法"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "甲骨文字的特点(下)",
+    "type": "判断题",
+    "stem": "甲骨文在不同的分期写法是一样的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "3.3",
+    "chapter_title": "甲骨文字的特点(下)",
+    "type": "判断题",
+    "stem": "甲骨文属于自觉的书法艺术体系。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "殷商金文",
+    "type": "单选题",
+    "stem": "金文刻铸在()的表面。",
+    "options": [
+      {
+        "label": "A",
+        "text": "龟甲兽骨"
+      },
+      {
+        "label": "B",
+        "text": "刻石"
+      },
+      {
+        "label": "C",
+        "text": "简牍帛书"
+      },
+      {
+        "label": "D",
+        "text": "青铜器"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "殷商金文",
+    "type": "单选题",
+    "stem": "()是商周时期占主导地位的文字。",
+    "options": [
+      {
+        "label": "A",
+        "text": "简牍文字"
+      },
+      {
+        "label": "B",
+        "text": "甲骨文"
+      },
+      {
+        "label": "C",
+        "text": "金文"
+      },
+      {
+        "label": "D",
+        "text": "陶文"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "殷商金文",
+    "type": "多选题",
+    "stem": "以下()不是欧阳修的作品。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《集古录》"
+      },
+      {
+        "label": "B",
+        "text": "《金石录》"
+      },
+      {
+        "label": "C",
+        "text": "《历代钟鼎彝器款识法帖》"
+      },
+      {
+        "label": "D",
+        "text": "《捃古录金文》"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "殷商金文",
+    "type": "判断题",
+    "stem": "断代法是研究金文的基本方法之一。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.1",
+    "chapter_title": "殷商金文",
+    "type": "判断题",
+    "stem": "甲骨文又名钟鼎文或中鼎款识。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.2",
+    "chapter_title": "两周金文",
+    "type": "单选题",
+    "stem": "“子子孙孙永宝用”是在()出现的一种嘏辞。",
+    "options": [
+      {
+        "label": "A",
+        "text": "西周早期"
+      },
+      {
+        "label": "B",
+        "text": "商代晚期"
+      },
+      {
+        "label": "C",
+        "text": "西周晚期"
+      },
+      {
+        "label": "D",
+        "text": "西周中期"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "4.2",
+    "chapter_title": "两周金文",
+    "type": "单选题",
+    "stem": "()是第一次出现了“中国”这两个字的器物。",
+    "options": [
+      {
+        "label": "A",
+        "text": "天亡"
+      },
+      {
+        "label": "B",
+        "text": "利簋"
+      },
+      {
+        "label": "C",
+        "text": "何尊"
+      },
+      {
+        "label": "D",
+        "text": "保卣"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "4.2",
+    "chapter_title": "两周金文",
+    "type": "单选题",
+    "stem": "()的主要存在时期是西周。",
+    "options": [
+      {
+        "label": "A",
+        "text": "金文"
+      },
+      {
+        "label": "B",
+        "text": "陶文"
+      },
+      {
+        "label": "C",
+        "text": "甲骨文"
+      },
+      {
+        "label": "D",
+        "text": "隶书"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "4.2",
+    "chapter_title": "两周金文",
+    "type": "判断题",
+    "stem": "象形意味弱是商代金文的书法特点。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.2",
+    "chapter_title": "两周金文",
+    "type": "判断题",
+    "stem": "长铭文字最早出现于商代晚期。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "诸侯金文",
+    "type": "单选题",
+    "stem": "()的一个主要特点是在兵器上刻铸文字。",
+    "options": [
+      {
+        "label": "A",
+        "text": "西晋时期"
+      },
+      {
+        "label": "B",
+        "text": "春秋时期"
+      },
+      {
+        "label": "C",
+        "text": "西周时期"
+      },
+      {
+        "label": "D",
+        "text": "战国时期"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "诸侯金文",
+    "type": "单选题",
+    "stem": "周代的中兴之主是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "周厉王"
+      },
+      {
+        "label": "B",
+        "text": "周宣王"
+      },
+      {
+        "label": "C",
+        "text": "周夷王"
+      },
+      {
+        "label": "D",
+        "text": "周幽王"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "诸侯金文",
+    "type": "单选题",
+    "stem": "()是周宣王时期出现的著名的青铜器。",
+    "options": [
+      {
+        "label": "A",
+        "text": "毛公鼎"
+      },
+      {
+        "label": "B",
+        "text": "司母戊大方鼎"
+      },
+      {
+        "label": "C",
+        "text": "四羊方尊"
+      },
+      {
+        "label": "D",
+        "text": "龙虎尊"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "诸侯金文",
+    "type": "判断题",
+    "stem": "长铭较多是春秋晚期金文内容的特征。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "4.3",
+    "chapter_title": "诸侯金文",
+    "type": "判断题",
+    "stem": "商周时期,在以楚国为主的南方地区中,文字变化的特点是以齐长为美。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "小篆的起源",
+    "type": "单选题",
+    "stem": "不属于小篆的书法特征是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "字形扁平"
+      },
+      {
+        "label": "B",
+        "text": "圆润秀美"
+      },
+      {
+        "label": "C",
+        "text": "笔画整齐"
+      },
+      {
+        "label": "D",
+        "text": "线条匀称"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "小篆的起源",
+    "type": "多选题",
+    "stem": "以下属于常说的书体的名字是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "真"
+      },
+      {
+        "label": "B",
+        "text": "草"
+      },
+      {
+        "label": "C",
+        "text": "隶"
+      },
+      {
+        "label": "D",
+        "text": "文"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "小篆的起源",
+    "type": "多选题",
+    "stem": "下列不属于“秦书八体”的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "甲骨文"
+      },
+      {
+        "label": "B",
+        "text": "小篆"
+      },
+      {
+        "label": "C",
+        "text": "草书"
+      },
+      {
+        "label": "D",
+        "text": "楷书"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "小篆的起源",
+    "type": "判断题",
+    "stem": "所用形体的多变性是秦代小篆最大的文字特点。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "5.1",
+    "chapter_title": "小篆的起源",
+    "type": "判断题",
+    "stem": "秦时期古隶多用于非正式场合。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "方圆笔法",
+    "type": "单选题",
+    "stem": "不属于汉篆文字的结构特点是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "方圆不悖"
+      },
+      {
+        "label": "B",
+        "text": "屈伸有致"
+      },
+      {
+        "label": "C",
+        "text": "增删就形"
+      },
+      {
+        "label": "D",
+        "text": "字形修长"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "方圆笔法",
+    "type": "单选题",
+    "stem": "()是汉代新出现的一种书体。",
+    "options": [
+      {
+        "label": "A",
+        "text": "草书"
+      },
+      {
+        "label": "B",
+        "text": "隶书"
+      },
+      {
+        "label": "C",
+        "text": "楷书"
+      },
+      {
+        "label": "D",
+        "text": "篆书"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "方圆笔法",
+    "type": "单选题",
+    "stem": "()的主要的书写方式是以圆笔为主。",
+    "options": [
+      {
+        "label": "A",
+        "text": "小篆"
+      },
+      {
+        "label": "B",
+        "text": "金文"
+      },
+      {
+        "label": "C",
+        "text": "大篆"
+      },
+      {
+        "label": "D",
+        "text": "隶书"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "方圆笔法",
+    "type": "判断题",
+    "stem": "小篆在汉代还是一种正式的书体。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "5.2",
+    "chapter_title": "方圆笔法",
+    "type": "判断题",
+    "stem": "篆书既是一种书体也是一种字体。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "6.1",
+    "chapter_title": "隶书起源",
+    "type": "单选题",
+    "stem": "隶书的书写载体是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "铁器"
+      },
+      {
+        "label": "B",
+        "text": "龟甲兽骨"
+      },
+      {
+        "label": "C",
+        "text": "青铜器"
+      },
+      {
+        "label": "D",
+        "text": "简牍帛书和刻石"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "6.1",
+    "chapter_title": "隶书起源",
+    "type": "多选题",
+    "stem": "下列不属于今文字范畴的字体是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "甲骨文"
+      },
+      {
+        "label": "B",
+        "text": "隶书"
+      },
+      {
+        "label": "C",
+        "text": "金文"
+      },
+      {
+        "label": "D",
+        "text": "小篆"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "6.1",
+    "chapter_title": "隶书起源",
+    "type": "多选题",
+    "stem": "下列属于汉碑隶书刻石的内容是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "契约"
+      },
+      {
+        "label": "B",
+        "text": "纪功"
+      },
+      {
+        "label": "C",
+        "text": "祭祀"
+      },
+      {
+        "label": "D",
+        "text": "经典"
+      }
+    ],
+    "answer": "ABD"
+  },
+  {
+    "chapter": "6.1",
+    "chapter_title": "隶书起源",
+    "type": "判断题",
+    "stem": "隶书在书法史上是一个质的转变和过渡,它上承篆书下启草书。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "6.1",
+    "chapter_title": "隶书起源",
+    "type": "判断题",
+    "stem": "隶书使书法告别了延续三千多年的古文字,开启了今文字。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "帛书汉简",
+    "type": "单选题",
+    "stem": "()是隶书文字最明显的特征。",
+    "options": [
+      {
+        "label": "A",
+        "text": "笔直"
+      },
+      {
+        "label": "B",
+        "text": "平整"
+      },
+      {
+        "label": "C",
+        "text": "松散"
+      },
+      {
+        "label": "D",
+        "text": "蚕头燕尾"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "帛书汉简",
+    "type": "单选题",
+    "stem": "隶书主要的使用时期是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "商"
+      },
+      {
+        "label": "B",
+        "text": "西周"
+      },
+      {
+        "label": "C",
+        "text": "汉代"
+      },
+      {
+        "label": "D",
+        "text": "秦"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "帛书汉简",
+    "type": "多选题",
+    "stem": "以下哪个属于隶书刻石?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "五凤二年刻石"
+      },
+      {
+        "label": "B",
+        "text": "广陵中殿刻石"
+      },
+      {
+        "label": "C",
+        "text": "鹿孝禹刻石"
+      },
+      {
+        "label": "D",
+        "text": "杨量买山刻石"
+      }
+    ],
+    "answer": "ABD"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "帛书汉简",
+    "type": "判断题",
+    "stem": "在西汉初年,隶书被当做学童应试的内容之一。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "6.2",
+    "chapter_title": "帛书汉简",
+    "type": "判断题",
+    "stem": "汉代书写的主要形式是篆书。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "木犊石碑",
+    "type": "单选题",
+    "stem": "下列哪个碑出土于安阳。()",
+    "options": [
+      {
+        "label": "A",
+        "text": "《乙瑛碑》"
+      },
+      {
+        "label": "B",
+        "text": "《草金碑》"
+      },
+      {
+        "label": "C",
+        "text": "《史晨碑》"
+      },
+      {
+        "label": "D",
+        "text": "《张景碑》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "木犊石碑",
+    "type": "单选题",
+    "stem": "“自汉代以来,碑碣云起”这句话出自刘勰的哪部作品?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "《文心雕龙》"
+      },
+      {
+        "label": "B",
+        "text": "《灭惑论》"
+      },
+      {
+        "label": "C",
+        "text": "《梁建安王造剡山石城寺石像碑》"
+      },
+      {
+        "label": "D",
+        "text": "《神思》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "木犊石碑",
+    "type": "多选题",
+    "stem": "以下属于东汉隶书的风格是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "力求统一"
+      },
+      {
+        "label": "B",
+        "text": "平整端方"
+      },
+      {
+        "label": "C",
+        "text": "怪诞草率"
+      },
+      {
+        "label": "D",
+        "text": "清俊秀雅"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "木犊石碑",
+    "type": "判断题",
+    "stem": "到西汉时期,隶书发展已经渐趋成熟了。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "6.3",
+    "chapter_title": "木犊石碑",
+    "type": "判断题",
+    "stem": "东汉前期隶书的代表作是《三老讳字忌日记》。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "书法自觉",
+    "type": "单选题",
+    "stem": "下列哪个是对书法艺术的时代特征错误的概括?()",
+    "options": [
+      {
+        "label": "A",
+        "text": "宋人尚意"
+      },
+      {
+        "label": "B",
+        "text": "晋人尚韵"
+      },
+      {
+        "label": "C",
+        "text": "唐人尚法"
+      },
+      {
+        "label": "D",
+        "text": "清人尚姿"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "书法自觉",
+    "type": "单选题",
+    "stem": "明代至清中叶是自觉书法艺术的( )时期。",
+    "options": [
+      {
+        "label": "A",
+        "text": "守成"
+      },
+      {
+        "label": "B",
+        "text": "发皇"
+      },
+      {
+        "label": "C",
+        "text": "集大成"
+      },
+      {
+        "label": "D",
+        "text": "求变"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "书法自觉",
+    "type": "多选题",
+    "stem": "属于书法基本理论的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "本质论"
+      },
+      {
+        "label": "B",
+        "text": "现象论"
+      },
+      {
+        "label": "C",
+        "text": "技法论"
+      },
+      {
+        "label": "D",
+        "text": "创作论"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "书法自觉",
+    "type": "判断题",
+    "stem": "唐代著名书法家孙过庭的代表作是《书谱》。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.1",
+    "chapter_title": "书法自觉",
+    "type": "判断题",
+    "stem": "张大千画的作品之一是《竹林七贤》。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "楷书起源",
+    "type": "单选题",
+    "stem": "在书法史上,书法家()被誉为“小圣”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "钟繇"
+      },
+      {
+        "label": "B",
+        "text": "王羲之"
+      },
+      {
+        "label": "C",
+        "text": "钟会"
+      },
+      {
+        "label": "D",
+        "text": "王献之"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "楷书起源",
+    "type": "单选题",
+    "stem": "()是汉末的刘德升发明的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "行书"
+      },
+      {
+        "label": "B",
+        "text": "楷书"
+      },
+      {
+        "label": "C",
+        "text": "草书"
+      },
+      {
+        "label": "D",
+        "text": "隶书"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "楷书起源",
+    "type": "多选题",
+    "stem": "以下属于王羲之楷书的传世刻本是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《宣示表》"
+      },
+      {
+        "label": "B",
+        "text": "《乐毅论》"
+      },
+      {
+        "label": "C",
+        "text": "《黄庭经》"
+      },
+      {
+        "label": "D",
+        "text": "《东方朔画赞》"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "楷书起源",
+    "type": "判断题",
+    "stem": "大楷是保留至今最早的楷书。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.2",
+    "chapter_title": "楷书起源",
+    "type": "判断题",
+    "stem": "楷书是由隶书转变而来的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "行书起源(上)",
+    "type": "单选题",
+    "stem": "王珉的《行书状》形容了()之美。",
+    "options": [
+      {
+        "label": "A",
+        "text": "草书"
+      },
+      {
+        "label": "B",
+        "text": "楷书"
+      },
+      {
+        "label": "C",
+        "text": "隶书"
+      },
+      {
+        "label": "D",
+        "text": "行书"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "行书起源(上)",
+    "type": "多选题",
+    "stem": "以下属于唐代的行书家的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "欧阳询"
+      },
+      {
+        "label": "B",
+        "text": "张旭"
+      },
+      {
+        "label": "C",
+        "text": "虞世南"
+      },
+      {
+        "label": "D",
+        "text": "褚遂良"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "行书起源(上)",
+    "type": "多选题",
+    "stem": "以下属于王羲之的书法理论贡献是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《论书》"
+      },
+      {
+        "label": "B",
+        "text": "《用笔赋》"
+      },
+      {
+        "label": "C",
+        "text": "《洛神赋》"
+      },
+      {
+        "label": "D",
+        "text": "《书论》"
+      }
+    ],
+    "answer": "ABD"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "行书起源(上)",
+    "type": "判断题",
+    "stem": "在中国的书法史上数量最多的是草书。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.3",
+    "chapter_title": "行书起源(上)",
+    "type": "判断题",
+    "stem": "魏晋名士的特点是重声誉、重细节,同时也讲究容止。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "行书起源(下)",
+    "type": "单选题",
+    "stem": "()是王献之的楷书代表作。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《兰草贴》"
+      },
+      {
+        "label": "B",
+        "text": "《黄庭经》"
+      },
+      {
+        "label": "C",
+        "text": "《乐毅论》"
+      },
+      {
+        "label": "D",
+        "text": "《洛神赋》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "行书起源(下)",
+    "type": "单选题",
+    "stem": "()被称为“天下第一行书”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《兰亭序》"
+      },
+      {
+        "label": "B",
+        "text": "《祭侄文稿》"
+      },
+      {
+        "label": "C",
+        "text": "《中秋帖》"
+      },
+      {
+        "label": "D",
+        "text": "《寒食帖》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "行书起源(下)",
+    "type": "多选题",
+    "stem": "以下属于《兰亭序》的摹本是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "虞世南临本"
+      },
+      {
+        "label": "B",
+        "text": "欧阳询临本"
+      },
+      {
+        "label": "C",
+        "text": "褚遂良临本"
+      },
+      {
+        "label": "D",
+        "text": "冯承素临本"
+      }
+    ],
+    "answer": "ACD"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "行书起源(下)",
+    "type": "判断题",
+    "stem": "王献之是一个楷书书法家。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "7.4",
+    "chapter_title": "行书起源(下)",
+    "type": "判断题",
+    "stem": "王献之的贡献是在书法上创造了神俊言美的大令体。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "三草之分",
+    "type": "单选题",
+    "stem": "急就章的初始含义是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "在很短时间完成的东西"
+      },
+      {
+        "label": "B",
+        "text": "古代的一种识字课本"
+      },
+      {
+        "label": "C",
+        "text": "铺救"
+      },
+      {
+        "label": "D",
+        "text": "负笈"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "三草之分",
+    "type": "单选题",
+    "stem": "()是《草书势》的作者。",
+    "options": [
+      {
+        "label": "A",
+        "text": "崔瑗"
+      },
+      {
+        "label": "B",
+        "text": "卫恒"
+      },
+      {
+        "label": "C",
+        "text": "晓衍"
+      },
+      {
+        "label": "D",
+        "text": "杨泉"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "三草之分",
+    "type": "多选题",
+    "stem": "关于“章草”的说法不正确的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "“章”表示有章法"
+      },
+      {
+        "label": "B",
+        "text": "“章”得名于东汉章帝"
+      },
+      {
+        "label": "C",
+        "text": "“章草”用于奏章"
+      },
+      {
+        "label": "D",
+        "text": "“章”来源于《急就章》的“章”"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "三草之分",
+    "type": "判断题",
+    "stem": "《法书考》是书法理论家盛熙明的作品之一。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "8.1",
+    "chapter_title": "三草之分",
+    "type": "判断题",
+    "stem": "狂草是草书的最早形态。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "8.2",
+    "chapter_title": "二王行草(上)",
+    "type": "单选题",
+    "stem": "()是保存时代最早的有关实际章草的墨迹。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《出师表》"
+      },
+      {
+        "label": "B",
+        "text": "《月仪帖》"
+      },
+      {
+        "label": "C",
+        "text": "《绝交书》"
+      },
+      {
+        "label": "D",
+        "text": "《平复帖》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "8.2",
+    "chapter_title": "二王行草(上)",
+    "type": "单选题",
+    "stem": "()被后人称为“草圣”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "怀素"
+      },
+      {
+        "label": "B",
+        "text": "索靖"
+      },
+      {
+        "label": "C",
+        "text": "张芝"
+      },
+      {
+        "label": "D",
+        "text": "王羲之"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "8.2",
+    "chapter_title": "二王行草(上)",
+    "type": "单选题",
+    "stem": "()是杨泉的代表作。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《草书赋》"
+      },
+      {
+        "label": "B",
+        "text": "《四体书势》"
+      },
+      {
+        "label": "C",
+        "text": "《草书状》"
+      },
+      {
+        "label": "D",
+        "text": "《草书势》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "8.2",
+    "chapter_title": "二王行草(上)",
+    "type": "判断题",
+    "stem": "今草的体势是在西晋初年基本上完成的。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "8.2",
+    "chapter_title": "二王行草(上)",
+    "type": "判断题",
+    "stem": "《草书势》不仅是一篇理论著作,也是草书体中难得的佳作。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "8.3",
+    "chapter_title": "二王行草(下)",
+    "type": "单选题",
+    "stem": "()是《太子舍人帖》的作者。",
+    "options": [
+      {
+        "label": "A",
+        "text": "王僧虔"
+      },
+      {
+        "label": "B",
+        "text": "王慈"
+      },
+      {
+        "label": "C",
+        "text": "王志"
+      },
+      {
+        "label": "D",
+        "text": "王献之"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "8.3",
+    "chapter_title": "二王行草(下)",
+    "type": "多选题",
+    "stem": "三希堂法帖包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《大观帖》"
+      },
+      {
+        "label": "B",
+        "text": "《伯远帖》"
+      },
+      {
+        "label": "C",
+        "text": "《中秋帖》"
+      },
+      {
+        "label": "D",
+        "text": "《快雪时晴帖》"
+      }
+    ],
+    "answer": "BCD"
+  },
+  {
+    "chapter": "8.3",
+    "chapter_title": "二王行草(下)",
+    "type": "多选题",
+    "stem": "属于王羲之草书帖的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《上虞帖》"
+      },
+      {
+        "label": "B",
+        "text": "《寒切帖》"
+      },
+      {
+        "label": "C",
+        "text": "《十七帖》"
+      },
+      {
+        "label": "D",
+        "text": "《绛帖》"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "8.3",
+    "chapter_title": "二王行草(下)",
+    "type": "判断题",
+    "stem": "飞白最早是由汉代的蔡邕提出的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "8.3",
+    "chapter_title": "二王行草(下)",
+    "type": "判断题",
+    "stem": "米芾是南北朝著名的大书法家。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "9.1",
+    "chapter_title": "六朝书艺",
+    "type": "单选题",
+    "stem": "“南朝四百八十寺,多少楼台烟雨中”,描述的是()兴盛的一个状况。",
+    "options": [
+      {
+        "label": "A",
+        "text": "伊斯兰教"
+      },
+      {
+        "label": "B",
+        "text": "道教"
+      },
+      {
+        "label": "C",
+        "text": "佛教"
+      },
+      {
+        "label": "D",
+        "text": "基督教"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "9.1",
+    "chapter_title": "六朝书艺",
+    "type": "单选题",
+    "stem": "()是《古今书评》的作者。",
+    "options": [
+      {
+        "label": "A",
+        "text": "袁昂"
+      },
+      {
+        "label": "B",
+        "text": "王愔"
+      },
+      {
+        "label": "C",
+        "text": "王僧虞"
+      },
+      {
+        "label": "D",
+        "text": "虞和"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "9.1",
+    "chapter_title": "六朝书艺",
+    "type": "多选题",
+    "stem": "以下属于方笔魏碑的代表作是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "高贞碑"
+      },
+      {
+        "label": "B",
+        "text": "《张猛龙碑》"
+      },
+      {
+        "label": "C",
+        "text": "《始平公造像》"
+      },
+      {
+        "label": "D",
+        "text": "《张玄墓志》"
+      }
+    ],
+    "answer": "ABC"
+  },
+  {
+    "chapter": "9.1",
+    "chapter_title": "六朝书艺",
+    "type": "判断题",
+    "stem": "永字八法就是总结了永字八种笔画的写法。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "9.1",
+    "chapter_title": "六朝书艺",
+    "type": "判断题",
+    "stem": "北方的行书统称为北碑。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "10.1",
+    "chapter_title": "隋杨楷书",
+    "type": "单选题",
+    "stem": "隋朝碑志的代表作不包括()",
+    "options": [
+      {
+        "label": "A",
+        "text": "《苏孝慈碑》"
+      },
+      {
+        "label": "B",
+        "text": "《龙藏寺碑》"
+      },
+      {
+        "label": "C",
+        "text": "《董美人碑》"
+      },
+      {
+        "label": "D",
+        "text": "《五人墓碑记》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "10.1",
+    "chapter_title": "隋杨楷书",
+    "type": "单选题",
+    "stem": "在()时期,书法艺术史达到第二个高峰。",
+    "options": [
+      {
+        "label": "A",
+        "text": "春秋战国时代"
+      },
+      {
+        "label": "B",
+        "text": "唐朝"
+      },
+      {
+        "label": "C",
+        "text": "魏晋时代"
+      },
+      {
+        "label": "D",
+        "text": "南北朝时代"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "10.1",
+    "chapter_title": "隋杨楷书",
+    "type": "单选题",
+    "stem": "楷书四大家中不是唐朝人的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "赵孟頫"
+      },
+      {
+        "label": "B",
+        "text": "欧阳询"
+      },
+      {
+        "label": "C",
+        "text": "柳公权"
+      },
+      {
+        "label": "D",
+        "text": "颜真卿"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "10.1",
+    "chapter_title": "隋杨楷书",
+    "type": "判断题",
+    "stem": "碑志楷书在隋代呈现出一种过渡的样态。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "10.1",
+    "chapter_title": "隋杨楷书",
+    "type": "判断题",
+    "stem": "楷书又分为小楷和大楷。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "10.2",
+    "chapter_title": "欧颜柳赵(上)",
+    "type": "单选题",
+    "stem": "()是褚遂良的代表作()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《唐人书评》"
+      },
+      {
+        "label": "B",
+        "text": "《九成宫碑》"
+      },
+      {
+        "label": "C",
+        "text": "《梦奠帖》"
+      },
+      {
+        "label": "D",
+        "text": "阴符经"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "10.2",
+    "chapter_title": "欧颜柳赵(上)",
+    "type": "单选题",
+    "stem": "下面不是对欧阳询书法特点的概括的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "险"
+      },
+      {
+        "label": "B",
+        "text": "严"
+      },
+      {
+        "label": "C",
+        "text": "偏"
+      },
+      {
+        "label": "D",
+        "text": "绝"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "10.2",
+    "chapter_title": "欧颜柳赵(上)",
+    "type": "单选题",
+    "stem": "欧阳询的书法代表作不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《道因法师碑》"
+      },
+      {
+        "label": "B",
+        "text": "《皇甫诞碑》"
+      },
+      {
+        "label": "C",
+        "text": "《虞恭公碑》"
+      },
+      {
+        "label": "D",
+        "text": "《划度寺碑》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "10.2",
+    "chapter_title": "欧颜柳赵(上)",
+    "type": "判断题",
+    "stem": "《孔子庙堂碑》是虞世南的行书代表作。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "10.2",
+    "chapter_title": "欧颜柳赵(上)",
+    "type": "判断题",
+    "stem": "褚遂良的书写笔法变化多端。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "10.3",
+    "chapter_title": "欧颜柳赵(中)",
+    "type": "单选题",
+    "stem": "薛稷的代表作是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《岳麓寺碑》"
+      },
+      {
+        "label": "B",
+        "text": "《叶有道碑》"
+      },
+      {
+        "label": "C",
+        "text": "《李思训碑》"
+      },
+      {
+        "label": "D",
+        "text": "《信行禅师碑》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "10.3",
+    "chapter_title": "欧颜柳赵(中)",
+    "type": "单选题",
+    "stem": "有“晚擅出蓝”之誉的是()的书法。",
+    "options": [
+      {
+        "label": "A",
+        "text": "李北海"
+      },
+      {
+        "label": "B",
+        "text": "虞世南"
+      },
+      {
+        "label": "C",
+        "text": "陆柬之"
+      },
+      {
+        "label": "D",
+        "text": "张旭"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "10.3",
+    "chapter_title": "欧颜柳赵(中)",
+    "type": "单选题",
+    "stem": "中国书法史上的巅峰之作是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《祭侄文稿》"
+      },
+      {
+        "label": "B",
+        "text": "《多宝塔碑》"
+      },
+      {
+        "label": "C",
+        "text": "《大堂中兴颂》"
+      },
+      {
+        "label": "D",
+        "text": "《颜家庙碑》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "10.3",
+    "chapter_title": "欧颜柳赵(中)",
+    "type": "判断题",
+    "stem": "薛稷的书写笔画对后世的瘦金体有很大影响。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "10.3",
+    "chapter_title": "欧颜柳赵(中)",
+    "type": "判断题",
+    "stem": "陆机被称为唐代书法艺术史上贡献最大的人。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "10.4",
+    "chapter_title": "欧颜柳赵(下)",
+    "type": "单选题",
+    "stem": "柳公权的代表作不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《神策军碑》"
+      },
+      {
+        "label": "B",
+        "text": "《金刚经》"
+      },
+      {
+        "label": "C",
+        "text": "《玄秘塔碑》"
+      },
+      {
+        "label": "D",
+        "text": "《圣母帖》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "10.4",
+    "chapter_title": "欧颜柳赵(下)",
+    "type": "单选题",
+    "stem": "()不是对柳体特点的概括。",
+    "options": [
+      {
+        "label": "A",
+        "text": "挺拔"
+      },
+      {
+        "label": "B",
+        "text": "豪迈"
+      },
+      {
+        "label": "C",
+        "text": "俊俏"
+      },
+      {
+        "label": "D",
+        "text": "瘦硬"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "10.4",
+    "chapter_title": "欧颜柳赵(下)",
+    "type": "单选题",
+    "stem": "后世对()的书法有“颜筋柳骨”的赞誉。",
+    "options": [
+      {
+        "label": "A",
+        "text": "柳公权"
+      },
+      {
+        "label": "B",
+        "text": "虞世南"
+      },
+      {
+        "label": "C",
+        "text": "褚遂良"
+      },
+      {
+        "label": "D",
+        "text": "欧阳询"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "10.4",
+    "chapter_title": "欧颜柳赵(下)",
+    "type": "判断题",
+    "stem": "可以用外进内松来形容柳体词的结构。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "10.4",
+    "chapter_title": "欧颜柳赵(下)",
+    "type": "判断题",
+    "stem": "释怀素是唐代著名的草书家之一。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "10.5",
+    "chapter_title": "唐人篆隶",
+    "type": "单选题",
+    "stem": "被称为“小李杜”的“李”是指()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "李白"
+      },
+      {
+        "label": "B",
+        "text": "李清照"
+      },
+      {
+        "label": "C",
+        "text": "李贺"
+      },
+      {
+        "label": "D",
+        "text": "李商隐"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "10.5",
+    "chapter_title": "唐人篆隶",
+    "type": "单选题",
+    "stem": "“古不乖时,今不同弊”的书法观是()提出的,这为书法美学理论奠定了基础。",
+    "options": [
+      {
+        "label": "A",
+        "text": "张怀瓘"
+      },
+      {
+        "label": "B",
+        "text": "李阳冰"
+      },
+      {
+        "label": "C",
+        "text": "孙过庭"
+      },
+      {
+        "label": "D",
+        "text": "张彦远"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "10.5",
+    "chapter_title": "唐人篆隶",
+    "type": "单选题",
+    "stem": "张怀瓘的著作不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《历代名画记》"
+      },
+      {
+        "label": "B",
+        "text": "《书估》"
+      },
+      {
+        "label": "C",
+        "text": "《书仪》"
+      },
+      {
+        "label": "D",
+        "text": "《书断》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "10.5",
+    "chapter_title": "唐人篆隶",
+    "type": "判断题",
+    "stem": "李阳冰是位唐代著名的篆书大家。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "10.5",
+    "chapter_title": "唐人篆隶",
+    "type": "判断题",
+    "stem": "《书谱》不是用楷书写成的。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "承前启后",
+    "type": "单选题",
+    "stem": "()这一书体的的特点是介于行楷之间。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《夏热帖》"
+      },
+      {
+        "label": "B",
+        "text": "《三坟记》"
+      },
+      {
+        "label": "C",
+        "text": "《城隍庙碑记》"
+      },
+      {
+        "label": "D",
+        "text": "《韭花帖》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "承前启后",
+    "type": "单选题",
+    "stem": "()的经典之一是《神仙起居法》。",
+    "options": [
+      {
+        "label": "A",
+        "text": "佛家"
+      },
+      {
+        "label": "B",
+        "text": "道家"
+      },
+      {
+        "label": "C",
+        "text": "儒家"
+      },
+      {
+        "label": "D",
+        "text": "法家"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "承前启后",
+    "type": "单选题",
+    "stem": "“问君能有几多愁,恰似一江春水向东流”,这句话出自()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《虞美人》"
+      },
+      {
+        "label": "B",
+        "text": "《法书要录》"
+      },
+      {
+        "label": "C",
+        "text": "《书谱》"
+      },
+      {
+        "label": "D",
+        "text": "《文字论》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "承前启后",
+    "type": "判断题",
+    "stem": "徐铉是位五代时期著名的文学家和草书家。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "11.1",
+    "chapter_title": "承前启后",
+    "type": "判断题",
+    "stem": "被称为杨少师和杨疯子的人是杨凝世。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "12.1",
+    "chapter_title": "北宋文风",
+    "type": "单选题",
+    "stem": "李建中的书法墨迹不包括()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《土母帖》"
+      },
+      {
+        "label": "B",
+        "text": "《贵宅帖》"
+      },
+      {
+        "label": "C",
+        "text": "《同年帖》"
+      },
+      {
+        "label": "D",
+        "text": "《大观帖》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "12.1",
+    "chapter_title": "北宋文风",
+    "type": "单选题",
+    "stem": "宋代书法家()的代表作是《书史》。",
+    "options": [
+      {
+        "label": "A",
+        "text": "苏轼"
+      },
+      {
+        "label": "B",
+        "text": "米芾"
+      },
+      {
+        "label": "C",
+        "text": "黄庭坚"
+      },
+      {
+        "label": "D",
+        "text": "蔡襄"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "12.1",
+    "chapter_title": "北宋文风",
+    "type": "单选题",
+    "stem": "()体现了宋代书法趋势。",
+    "options": [
+      {
+        "label": "A",
+        "text": "趋时贵书"
+      },
+      {
+        "label": "B",
+        "text": "帖学减弱"
+      },
+      {
+        "label": "C",
+        "text": "名家辈出"
+      },
+      {
+        "label": "D",
+        "text": "达到书法的高峰"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "12.1",
+    "chapter_title": "北宋文风",
+    "type": "判断题",
+    "stem": "《绛帖》属于宋代的碑帖。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "12.1",
+    "chapter_title": "北宋文风",
+    "type": "判断题",
+    "stem": "“帖学”的出现没有带来积极意义。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "12.2",
+    "chapter_title": "苏黄米蔡(上)",
+    "type": "单选题",
+    "stem": "写楷书的宋代四大家主要是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "苏轼"
+      },
+      {
+        "label": "B",
+        "text": "黄庭坚"
+      },
+      {
+        "label": "C",
+        "text": "米芾"
+      },
+      {
+        "label": "D",
+        "text": "蔡襄"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "12.2",
+    "chapter_title": "苏黄米蔡(上)",
+    "type": "单选题",
+    "stem": "苏轼是宋代()书风的提倡者之一。",
+    "options": [
+      {
+        "label": "A",
+        "text": "尚姿"
+      },
+      {
+        "label": "B",
+        "text": "尚意"
+      },
+      {
+        "label": "C",
+        "text": "尚韵"
+      },
+      {
+        "label": "D",
+        "text": "尚法"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "12.2",
+    "chapter_title": "苏黄米蔡(上)",
+    "type": "单选题",
+    "stem": "()不属于我们通常说的“三苏”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "苏过"
+      },
+      {
+        "label": "B",
+        "text": "苏轼"
+      },
+      {
+        "label": "C",
+        "text": "苏洵"
+      },
+      {
+        "label": "D",
+        "text": "苏辙"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "12.2",
+    "chapter_title": "苏黄米蔡(上)",
+    "type": "判断题",
+    "stem": "苏轼不在“唐宋八大家”之列。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "12.2",
+    "chapter_title": "苏黄米蔡(上)",
+    "type": "判断题",
+    "stem": "苏轼是以婉约派为主要书写风格的词人。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "12.3",
+    "chapter_title": "苏黄米蔡(中)",
+    "type": "单选题",
+    "stem": "()不属于“苏门四学士”()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "黄庭坚"
+      },
+      {
+        "label": "B",
+        "text": "秦观"
+      },
+      {
+        "label": "C",
+        "text": "张磊"
+      },
+      {
+        "label": "D",
+        "text": "蔡襄"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "12.3",
+    "chapter_title": "苏黄米蔡(中)",
+    "type": "单选题",
+    "stem": "()的代表作是《书史》。",
+    "options": [
+      {
+        "label": "A",
+        "text": "苏辙"
+      },
+      {
+        "label": "B",
+        "text": "米芾"
+      },
+      {
+        "label": "C",
+        "text": "黄庭坚"
+      },
+      {
+        "label": "D",
+        "text": "周越"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "12.3",
+    "chapter_title": "苏黄米蔡(中)",
+    "type": "单选题",
+    "stem": "()是黄庭坚草书的代表作。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《花气熏人帖》"
+      },
+      {
+        "label": "B",
+        "text": "《松风阁诗》"
+      },
+      {
+        "label": "C",
+        "text": "《虹县诗》"
+      },
+      {
+        "label": "D",
+        "text": "黄州寒食试卷跋"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "12.3",
+    "chapter_title": "苏黄米蔡(中)",
+    "type": "判断题",
+    "stem": "《跋怀素书后》是苏洵的代表作之一。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "12.3",
+    "chapter_title": "苏黄米蔡(中)",
+    "type": "判断题",
+    "stem": "黄庭坚创立了江西诗派。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "12.4",
+    "chapter_title": "苏黄米蔡(下)",
+    "type": "单选题",
+    "stem": "()四大家影响最大的是米芾。",
+    "options": [
+      {
+        "label": "A",
+        "text": "清"
+      },
+      {
+        "label": "B",
+        "text": "唐"
+      },
+      {
+        "label": "C",
+        "text": "明"
+      },
+      {
+        "label": "D",
+        "text": "宋"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "12.4",
+    "chapter_title": "苏黄米蔡(下)",
+    "type": "单选题",
+    "stem": "()被世称为“小米”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "米芾"
+      },
+      {
+        "label": "B",
+        "text": "米友仁"
+      },
+      {
+        "label": "C",
+        "text": "欧阳询"
+      },
+      {
+        "label": "D",
+        "text": "王献之"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "12.4",
+    "chapter_title": "苏黄米蔡(下)",
+    "type": "单选题",
+    "stem": "()不属于蔡京的代表作。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《行书对联》"
+      },
+      {
+        "label": "B",
+        "text": "《节夫帖》"
+      },
+      {
+        "label": "C",
+        "text": "《听琴图题诗》"
+      },
+      {
+        "label": "D",
+        "text": "《十八学士图跋》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "12.4",
+    "chapter_title": "苏黄米蔡(下)",
+    "type": "判断题",
+    "stem": "宋代是一个书法艺术以及文学艺术发展都很衰微的时代。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "12.4",
+    "chapter_title": "苏黄米蔡(下)",
+    "type": "判断题",
+    "stem": "瘦金体是宋徽宗自创的一种新书体。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "13.1",
+    "chapter_title": "赵俞康鲜",
+    "type": "单选题",
+    "stem": "()是赵绘画的传世名作。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《草书心经》"
+      },
+      {
+        "label": "B",
+        "text": "《跋文赋》"
+      },
+      {
+        "label": "C",
+        "text": "《急就章》"
+      },
+      {
+        "label": "D",
+        "text": "《鹊华秋色图》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "13.1",
+    "chapter_title": "赵俞康鲜",
+    "type": "单选题",
+    "stem": "元朝的是()是“楷书四大家”之一。",
+    "options": [
+      {
+        "label": "A",
+        "text": "柳公权"
+      },
+      {
+        "label": "B",
+        "text": "颜真卿"
+      },
+      {
+        "label": "C",
+        "text": "赵孟頫"
+      },
+      {
+        "label": "D",
+        "text": "欧阳询"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "13.1",
+    "chapter_title": "赵俞康鲜",
+    "type": "单选题",
+    "stem": "《汲黯传》是学习()的一个范本。",
+    "options": [
+      {
+        "label": "A",
+        "text": "小楷"
+      },
+      {
+        "label": "B",
+        "text": "隶书"
+      },
+      {
+        "label": "C",
+        "text": "行书"
+      },
+      {
+        "label": "D",
+        "text": "草书"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "13.1",
+    "chapter_title": "赵俞康鲜",
+    "type": "判断题",
+    "stem": "杨维桢诗风奇诡,文字奇古,因而被称为铁崖体。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "13.1",
+    "chapter_title": "赵俞康鲜",
+    "type": "判断题",
+    "stem": "两宋书法的精华集中在南宋。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "14.1",
+    "chapter_title": "征明其昌",
+    "type": "单选题",
+    "stem": "()不在明代所说的“三杨”之列。",
+    "options": [
+      {
+        "label": "A",
+        "text": "杨荣"
+      },
+      {
+        "label": "B",
+        "text": "杨士奇"
+      },
+      {
+        "label": "C",
+        "text": "杨溥"
+      },
+      {
+        "label": "D",
+        "text": "杨凌"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "14.1",
+    "chapter_title": "征明其昌",
+    "type": "单选题",
+    "stem": "()是近代著名的书法理论家丁文隽的代表作。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《行书册页》"
+      },
+      {
+        "label": "B",
+        "text": "《书法经论》"
+      },
+      {
+        "label": "C",
+        "text": "《论书语》"
+      },
+      {
+        "label": "D",
+        "text": "《金农漆书》"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "14.1",
+    "chapter_title": "征明其昌",
+    "type": "单选题",
+    "stem": "“晋人书取韵,唐人书取法,宋人书取意”,这个观点是()提出来的。",
+    "options": [
+      {
+        "label": "A",
+        "text": "董其昌"
+      },
+      {
+        "label": "B",
+        "text": "宋克"
+      },
+      {
+        "label": "C",
+        "text": "张瑞图"
+      },
+      {
+        "label": "D",
+        "text": "朴茂"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "14.1",
+    "chapter_title": "征明其昌",
+    "type": "判断题",
+    "stem": "明代已经不盛行帖学了。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "14.1",
+    "chapter_title": "征明其昌",
+    "type": "判断题",
+    "stem": "郑板桥是明代晚期最著名的书法大家。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "14.2",
+    "chapter_title": "枝山瑞图",
+    "type": "单选题",
+    "stem": "()是唐伯虎的作品。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《伯远帖》"
+      },
+      {
+        "label": "B",
+        "text": "《赤壁赋》"
+      },
+      {
+        "label": "C",
+        "text": "《中秋帖》"
+      },
+      {
+        "label": "D",
+        "text": "《漫兴诗稿》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "14.2",
+    "chapter_title": "枝山瑞图",
+    "type": "单选题",
+    "stem": "()不属于王充的作品。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《送阵子龄会试》"
+      },
+      {
+        "label": "B",
+        "text": "《西苑诗》"
+      },
+      {
+        "label": "C",
+        "text": "《快雪时请帖》"
+      },
+      {
+        "label": "D",
+        "text": "《游包山集》"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "14.2",
+    "chapter_title": "枝山瑞图",
+    "type": "单选题",
+    "stem": "以下不是“吴中四才子”的是()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "张瑞图"
+      },
+      {
+        "label": "B",
+        "text": "祝允明"
+      },
+      {
+        "label": "C",
+        "text": "文徽明"
+      },
+      {
+        "label": "D",
+        "text": "徐祯卿"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "14.2",
+    "chapter_title": "枝山瑞图",
+    "type": "判断题",
+    "stem": "徐祯卿发明了一种用笔方法,叫金刚杵。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "14.2",
+    "chapter_title": "枝山瑞图",
+    "type": "判断题",
+    "stem": "宋克不是明代初期闻名于书坛的书法家“三宋二沈”之一。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "15.1",
+    "chapter_title": "中兴尚变",
+    "type": "单选题",
+    "stem": "()不是清代晚期的书法家。",
+    "options": [
+      {
+        "label": "A",
+        "text": "赵之谦"
+      },
+      {
+        "label": "B",
+        "text": "康有为"
+      },
+      {
+        "label": "C",
+        "text": "何绍基"
+      },
+      {
+        "label": "D",
+        "text": "王充"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "15.1",
+    "chapter_title": "中兴尚变",
+    "type": "单选题",
+    "stem": "()的文号是“八大山人”。",
+    "options": [
+      {
+        "label": "A",
+        "text": "张裕钊"
+      },
+      {
+        "label": "B",
+        "text": "吴昌硕"
+      },
+      {
+        "label": "C",
+        "text": "朱耷"
+      },
+      {
+        "label": "D",
+        "text": "金农"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "15.1",
+    "chapter_title": "中兴尚变",
+    "type": "单选题",
+    "stem": "被称为“清初第一写家”的是()的书法。",
+    "options": [
+      {
+        "label": "A",
+        "text": "傅山"
+      },
+      {
+        "label": "B",
+        "text": "郑板桥"
+      },
+      {
+        "label": "C",
+        "text": "刘墉"
+      },
+      {
+        "label": "D",
+        "text": "王文治"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "15.1",
+    "chapter_title": "中兴尚变",
+    "type": "判断题",
+    "stem": "傅山的书法形式主要是楷书。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "15.1",
+    "chapter_title": "中兴尚变",
+    "type": "判断题",
+    "stem": "郑板桥是“诗书画三绝”。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "15.2",
+    "chapter_title": "碑学大成",
+    "type": "单选题",
+    "stem": "“浓墨宰相,淡墨探花”,指的是刘墉和()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "何绍基"
+      },
+      {
+        "label": "B",
+        "text": "阮元"
+      },
+      {
+        "label": "C",
+        "text": "邓石如"
+      },
+      {
+        "label": "D",
+        "text": "王文治"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "15.2",
+    "chapter_title": "碑学大成",
+    "type": "单选题",
+    "stem": "漆书是()提出的一种独特的书体。",
+    "options": [
+      {
+        "label": "A",
+        "text": "郑板桥"
+      },
+      {
+        "label": "B",
+        "text": "金农"
+      },
+      {
+        "label": "C",
+        "text": "刘墉"
+      },
+      {
+        "label": "D",
+        "text": "赵之谦"
+      }
+    ],
+    "answer": "B"
+  },
+  {
+    "chapter": "15.2",
+    "chapter_title": "碑学大成",
+    "type": "单选题",
+    "stem": "()是郑板桥的代表作之一。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《新修城隍庙碑》"
+      },
+      {
+        "label": "B",
+        "text": "《金农漆书》"
+      },
+      {
+        "label": "C",
+        "text": "《行书东坡文》"
+      },
+      {
+        "label": "D",
+        "text": "《行书对联》"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "15.2",
+    "chapter_title": "碑学大成",
+    "type": "判断题",
+    "stem": "金农不是扬州八怪之一。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "15.2",
+    "chapter_title": "碑学大成",
+    "type": "判断题",
+    "stem": "中国科举制度在殿试中取得进士第二名叫做探花。",
+    "options": [],
+    "answer": "X"
+  },
+  {
+    "chapter": "15.3",
+    "chapter_title": "返本开新",
+    "type": "单选题",
+    "stem": "中国书法史上很著名的一个书法理论著作是康有为的()。",
+    "options": [
+      {
+        "label": "A",
+        "text": "《艺舟双楫》"
+      },
+      {
+        "label": "B",
+        "text": "《论书语》"
+      },
+      {
+        "label": "C",
+        "text": "《行书册页》"
+      },
+      {
+        "label": "D",
+        "text": "《广艺舟双楫》"
+      }
+    ],
+    "answer": "D"
+  },
+  {
+    "chapter": "15.3",
+    "chapter_title": "返本开新",
+    "type": "单选题",
+    "stem": "()的代表作是《论书语》。",
+    "options": [
+      {
+        "label": "A",
+        "text": "包世臣"
+      },
+      {
+        "label": "B",
+        "text": "吴昌硕"
+      },
+      {
+        "label": "C",
+        "text": "孙伯翔"
+      },
+      {
+        "label": "D",
+        "text": "赵之谦"
+      }
+    ],
+    "answer": "C"
+  },
+  {
+    "chapter": "15.3",
+    "chapter_title": "返本开新",
+    "type": "单选题",
+    "stem": "楷书则主要包括()和魏碑。",
+    "options": [
+      {
+        "label": "A",
+        "text": "唐楷"
+      },
+      {
+        "label": "B",
+        "text": "宋楷"
+      },
+      {
+        "label": "C",
+        "text": "明楷"
+      },
+      {
+        "label": "D",
+        "text": "清楷"
+      }
+    ],
+    "answer": "A"
+  },
+  {
+    "chapter": "15.3",
+    "chapter_title": "返本开新",
+    "type": "判断题",
+    "stem": "吴昌硕是清末著名的书画家。",
+    "options": [],
+    "answer": "√"
+  },
+  {
+    "chapter": "15.3",
+    "chapter_title": "返本开新",
+    "type": "判断题",
+    "stem": "康有为提倡碑学。",
+    "options": [],
+    "answer": "√"
+  }
+]
