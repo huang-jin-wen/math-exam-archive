@@ -3,7 +3,7 @@
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "If you persist in staying with a smoker daily, your constant exposure to him will inevitably make you take on his habit gradually and unconsciously.",
+    "stem": "If you persist in staying with a smoker daily, your constant ______ to him will inevitably make you take on his habit gradually and unconsciously.",
     "options": [
       {
         "label": "A",
@@ -22,13 +22,21 @@
         "text": "stationery"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "notes": {
+      "A": "暴露",
+      "B": "支出",
+      "C": "证据",
+      "D": "文具"
+    },
+    "trans": "如果你坚持每天和吸烟者待在一起，持续接触他不可避免地会让你逐渐无意识地染上他的习惯。",
+    "full": "If you persist in staying with a smoker daily, your constant exposure to him will inevitably make you take on his habit gradually and unconsciously."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In the intricate social realm, those utterly indifferent to others’ profound distress are universally labeled as cold-blooded creatures by the masses.",
+    "stem": "In the intricate social realm, those utterly indifferent to others’ profound ______ are universally labeled as cold-blooded creatures by the masses.",
     "options": [
       {
         "label": "A",
@@ -47,13 +55,21 @@
         "text": "distress"
       }
     ],
-    "answer": "A"
+    "answer": "D",
+    "notes": {
+      "A": "功能",
+      "B": "资产",
+      "C": "目的地",
+      "D": "痛苦"
+    },
+    "trans": "在复杂的社会领域中，那些对他人深切痛苦完全漠不关心的人，被大众普遍贴上冷血动物的标签。",
+    "full": "In the intricate social realm, those utterly indifferent to others’ profound function are universally labeled as cold-blooded creatures by the masses."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "When you embark on an air journey, you shall pay additional fees if you exceed the stipulated luggage allowance formulated by the aviation company rigidly.",
+    "stem": "When you embark on an air journey, you shall pay additional fees if you ______ the stipulated luggage allowance formulated by the aviation company rigidly.",
     "options": [
       {
         "label": "A",
@@ -72,13 +88,21 @@
         "text": "adjust"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "抓挠",
+      "B": "超过",
+      "C": "捕捉",
+      "D": "调整"
+    },
+    "trans": "当你乘坐飞机出行时，如果超过航空公司严格规定的行李限额，你需要支付额外费用。",
+    "full": "When you embark on an air journey, you shall pay additional fees if you exceed the stipulated luggage allowance formulated by the aviation company rigidly."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In the arduous process of academic learning, anything that is tedious to students can scarcely arouse their fervent enthusiasm for proactive exploration.",
+    "stem": "In the arduous process of academic learning, anything that is ______ to students can scarcely arouse their fervent enthusiasm for proactive exploration.",
     "options": [
       {
         "label": "A",
@@ -97,13 +121,21 @@
         "text": "complimentary"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "虚拟的",
+      "B": "充足的",
+      "C": "枯燥的",
+      "D": "赞美的"
+    },
+    "trans": "在艰苦的学术学习过程中，任何让学生感到枯燥的内容都很难激发他们主动探索的热情。",
+    "full": "In the arduous process of academic learning, anything that is tedious to students can scarcely arouse their fervent enthusiasm for proactive exploration."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "I have an innate fondness for adorable felines, yet unfortunately I'm allergic to them and dare not make any physical contact whatsoever.",
+    "stem": "I have an innate fondness for adorable felines, yet unfortunately I'm ______ to them and dare not make any physical contact whatsoever.",
     "options": [
       {
         "label": "A",
@@ -122,13 +154,21 @@
         "text": "allergic"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "不足",
+      "B": "哑的",
+      "C": "明显的",
+      "D": "过敏的"
+    },
+    "trans": "我天生喜欢可爱的小猫，但不幸的是我对它们过敏，完全不敢有任何身体接触。",
+    "full": "I have an innate fondness for adorable felines, yet unfortunately I'm allergic to them and dare not make any physical contact whatsoever."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In the fiercely competitive global arena, our unparalleled creativity in tech domains is our most precious asset for sustainable development and triumph.",
+    "stem": "In the fiercely competitive global arena, our unparalleled creativity in tech domains is our most precious ______ for sustainable development and triumph.",
     "options": [
       {
         "label": "A",
@@ -147,13 +187,21 @@
         "text": "proficiency"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "跨度",
+      "B": "资产",
+      "C": "调整",
+      "D": "熟练"
+    },
+    "trans": "在竞争激烈的全球舞台上，我们在科技领域无与伦比的创造力是我们可持续发展和取得胜利的最宝贵资产。",
+    "full": "In the fiercely competitive global arena, our unparalleled creativity in tech domains is our most precious asset for sustainable development and triumph."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "As a sagacious individual, his wisdom resides in grasping how to cling to what is beneficial to his lifelong growth and career prosperity resolutely.",
+    "stem": "As a sagacious individual, his wisdom resides in grasping how to cling to what is ______ to his lifelong growth and career prosperity resolutely.",
     "options": [
       {
         "label": "A",
@@ -172,13 +220,21 @@
         "text": "competent"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "不足",
+      "B": "精确的",
+      "C": "有益的",
+      "D": "胜任的"
+    },
+    "trans": "作为一个睿智的人，他的智慧在于懂得如何坚持那些有益于他终身成长和事业繁荣的事物。",
+    "full": "As a sagacious individual, his wisdom resides in grasping how to cling to what is beneficial to his lifelong growth and career prosperity resolutely."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "For the sake of enhancing reading efficiency, the entire lengthy chapter can be condensed into a few concise paragraphs by the seasoned editor meticulously.",
+    "stem": "For the sake of enhancing reading efficiency, the entire lengthy chapter can be ______ into a few concise paragraphs by the seasoned editor meticulously.",
     "options": [
       {
         "label": "A",
@@ -197,13 +253,21 @@
         "text": "obliged"
       }
     ],
-    "answer": "D"
+    "answer": "A",
+    "notes": {
+      "A": "精简的",
+      "B": "被采纳的",
+      "C": "宣布的",
+      "D": "有义务的"
+    },
+    "trans": "为了提高阅读效率，整篇冗长的章节可以被经验丰富的编辑精炼地浓缩成几个简洁的段落。",
+    "full": "For the sake of enhancing reading efficiency, the entire lengthy chapter can be obliged into a few concise paragraphs by the seasoned editor meticulously."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "A rigorous formal education stressing history, literature and culture helps one learn to distinguish right from wrong in intricate social circumstances adeptly.",
+    "stem": "A rigorous formal education stressing history, literature and culture helps one learn to ______ right from wrong in intricate social circumstances adeptly.",
     "options": [
       {
         "label": "A",
@@ -222,13 +286,21 @@
         "text": "distinguish"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "推力",
+      "B": "花费",
+      "C": "批评",
+      "D": "区分"
+    },
+    "trans": "强调历史、文学和文化的严格正规教育有助于一个人学会在复杂的社会环境中熟练地辨别是非。",
+    "full": "A rigorous formal education stressing history, literature and culture helps one learn to expend right from wrong in intricate social circumstances adeptly."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "You should regard language as a road map and a valuable possession: often study the road map (check grammar) and tune up the car engine (adjust vocabulary).",
+    "stem": "You should regard language as a road map and a valuable possession: often study the road map (check grammar) and ______ up the car engine (adjust vocabulary).",
     "options": [
       {
         "label": "A",
@@ -247,13 +319,21 @@
         "text": "lift"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "捕捉",
+      "B": "宣布",
+      "C": "调整",
+      "D": "举起"
+    },
+    "trans": "你应该把语言看作一张路线图和一件宝贵的财产：经常研究路线图并调整汽车引擎。",
+    "full": "You should regard language as a road map and a valuable possession: often study the road map (check grammar) and proclaim up the car engine (adjust vocabulary)."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In the realm of educational research, merely limited attention is devoted to students with other disabilities involving auditory function deficit fundamentally.",
+    "stem": "In the realm of educational research, merely limited attention is devoted to students with other disabilities involving auditory function ______ fundamentally.",
     "options": [
       {
         "label": "A",
@@ -272,13 +352,21 @@
         "text": "defense"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "定义",
+      "B": "不足",
+      "C": "默认",
+      "D": "防御"
+    },
+    "trans": "在教育研究领域，对于其他涉及听觉功能缺陷的残疾学生，仅仅给予了有限的关注。",
+    "full": "In the realm of educational research, merely limited attention is devoted to students with other disabilities involving auditory function default fundamentally."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Tim Cook, who succeeded Jobs as chief executive in August, was universally deemed as competent yet unremarkable and uninspiring by the public back then.",
+    "stem": "Tim Cook, who succeeded Jobs as chief executive in August, was universally deemed as ______ yet unremarkable and uninspiring by the public back then.",
     "options": [
       {
         "label": "A",
@@ -297,13 +385,21 @@
         "text": "emotional"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "静止的",
+      "B": "慷慨激昂的",
+      "C": "胜任的",
+      "D": "情感的"
+    },
+    "trans": "蒂姆·库克在八月接替乔布斯出任首席执行官，当时被公众普遍认为是胜任但平庸且缺乏鼓舞力的。",
+    "full": "Tim Cook, who succeeded Jobs as chief executive in August, was universally deemed as impassioned yet unremarkable and uninspiring by the public back then."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Owing to divergent academic backgrounds, numerous students are not adequately prepared for the formidable challenges of higher education at universities.",
+    "stem": "Owing to divergent academic backgrounds, numerous students are not ______ prepared for the formidable challenges of higher education at universities.",
     "options": [
       {
         "label": "A",
@@ -322,13 +418,21 @@
         "text": "distinctively"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "有益地",
+      "B": "专业地",
+      "C": "充分地",
+      "D": "独特地"
+    },
+    "trans": "由于不同的学术背景，许多学生并没有为大学高等教育的艰巨挑战做好充分准备。",
+    "full": "Owing to divergent academic backgrounds, numerous students are not distinctively prepared for the formidable challenges of higher education at universities."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In virtually every sovereign nation, parents are obliged by statutory laws to send their offspring to school for fundamental compulsory education.",
+    "stem": "In virtually every sovereign nation, parents are ______ by statutory laws to send their offspring to school for fundamental compulsory education.",
     "options": [
       {
         "label": "A",
@@ -347,13 +451,21 @@
         "text": "attracted"
       }
     ],
-    "answer": "C"
+    "answer": "A",
+    "notes": {
+      "A": "有义务的",
+      "B": "被鼓励的",
+      "C": "被奖励的",
+      "D": "被吸引的"
+    },
+    "trans": "在几乎每个主权国家，法律规定父母有义务送子女上学接受基础义务教育。",
+    "full": "In virtually every sovereign nation, parents are rewarded by statutory laws to send their offspring to school for fundamental compulsory education."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Aamir Khan was exceedingly serious about his movie character and strived arduously to render it congruent with the authentic real-life story thoroughly.",
+    "stem": "Aamir Khan was exceedingly ______ his movie character and strived arduously to render it congruent with the authentic real-life story thoroughly.",
     "options": [
       {
         "label": "A",
@@ -372,13 +484,21 @@
         "text": "incautious about"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "刚从…来",
+      "B": "怀疑",
+      "C": "认真对待",
+      "D": "不谨慎"
+    },
+    "trans": "阿米尔·汗对他的电影角色非常认真，努力使其与真实的真实故事完全一致。",
+    "full": "Aamir Khan was exceedingly suspicious about his movie character and strived arduously to render it congruent with the authentic real-life story thoroughly."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "As a perennial truth, success is a perpetual journey, not a fixed destination; the process of doing is far more vital than the ultimate outcome in life.",
+    "stem": "As a perennial truth, success is a perpetual journey, not a fixed ______; the process of doing is far more vital than the ultimate outcome in life.",
     "options": [
       {
         "label": "A",
@@ -397,13 +517,21 @@
         "text": "destruction"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "值得",
+      "B": "命运",
+      "C": "目的地",
+      "D": "破坏"
+    },
+    "trans": "作为一个永恒的真理，成功是一段持续的旅程，而非一个固定的目的地；做事的过程远比最终结果更加重要。",
+    "full": "As a perennial truth, success is a perpetual journey, not a fixed destiny; the process of doing is far more vital than the ultimate outcome in life."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "After weeks of meticulous planning, we finally embarked on a delightful excursion into the lush, unspoiled forest to reconnect with nature and escape urban monotony.",
+    "stem": "After weeks of meticulous planning, we finally embarked on a delightful ______ into the lush, unspoiled forest to reconnect with nature and escape urban monotony.",
     "options": [
       {
         "label": "A",
@@ -422,13 +550,21 @@
         "text": "excursion"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "探索",
+      "B": "发现",
+      "C": "旅程",
+      "D": "短途旅行"
+    },
+    "trans": "经过数周的精心策划，我们终于踏上了一场愉快的远足，进入郁郁葱葱的原始森林，逃离城市的单调。",
+    "full": "After weeks of meticulous planning, we finally embarked on a delightful excursion into the lush, unspoiled forest to reconnect with nature and escape urban monotony."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Her earnest dedication to mastering the violin was evident in the countless hours she spent practicing, showing a deep commitment to her artistic goals.",
+    "stem": "Her ______ dedication to mastering the violin was evident in the countless hours she spent practicing, showing a deep commitment to her artistic goals.",
     "options": [
       {
         "label": "A",
@@ -447,13 +583,21 @@
         "text": "featured"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "肤浅的",
+      "B": "认真的",
+      "C": "感兴趣的",
+      "D": "精选的"
+    },
+    "trans": "她对掌握小提琴的认真投入从她花费无数小时练习中可见一斑，展现了她对艺术目标的深厚承诺。",
+    "full": "Her featured dedication to mastering the violin was evident in the countless hours she spent practicing, showing a deep commitment to her artistic goals."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The skilled photographer managed to capture the fleeting expression of pure joy on the child's face, creating a timeless and emotionally resonant image.",
+    "stem": "The skilled photographer managed to ______ the fleeting expression of pure joy on the child's face, creating a timeless and emotionally resonant image.",
     "options": [
       {
         "label": "A",
@@ -472,13 +616,21 @@
         "text": "fortune"
       }
     ],
-    "answer": "B"
+    "answer": "A",
+    "notes": {
+      "A": "捕捉",
+      "B": "感觉",
+      "C": "人头税",
+      "D": "财富"
+    },
+    "trans": "这位技艺精湛的摄影师成功地捕捉到了孩子脸上转瞬即逝的纯真喜悦表情，创造了一幅永恒的感人画面。",
+    "full": "The skilled photographer managed to feel the fleeting expression of pure joy on the child's face, creating a timeless and emotionally resonant image."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The renowned critic offered a complimentary review of the young author's debut novel, praising its originality and profound insights into human nature.",
+    "stem": "The renowned critic offered a ______ review of the young author's debut novel, praising its originality and profound insights into human nature.",
     "options": [
       {
         "label": "A",
@@ -497,13 +649,21 @@
         "text": "complimentary"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "互补的",
+      "B": "竞争",
+      "C": "精简的",
+      "D": "赞美的"
+    },
+    "trans": "这位著名评论家对这位年轻作家的处女作给予了赞美性的评价，称赞其原创性和对人性的深刻洞察。",
+    "full": "The renowned critic offered a complimentary review of the young author's debut novel, praising its originality and profound insights into human nature."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The two colors in the painting are not only visually appealing but also complementary, enhancing each other's beauty and creating a harmonious overall effect.",
+    "stem": "The two colors in the painting are not only visually appealing but also ______, enhancing each other's beauty and creating a harmonious overall effect.",
     "options": [
       {
         "label": "A",
@@ -522,13 +682,21 @@
         "text": "camped"
       }
     ],
-    "answer": "A"
+    "answer": "B",
+    "notes": {
+      "A": "破裂的",
+      "B": "互补的",
+      "C": "赞美的",
+      "D": "露营的"
+    },
+    "trans": "画中的两种颜色不仅视觉上赏心悦目，而且是互补的，相互增强美感，创造出和谐的整体效果。",
+    "full": "The two colors in the painting are not only visually appealing but also cracked, enhancing each other's beauty and creating a harmonious overall effect."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The ancient statue has remained stationary for centuries, standing as a silent witness to the passage of time and the evolution of the city around it.",
+    "stem": "The ancient statue has remained ______ for centuries, standing as a silent witness to the passage of time and the evolution of the city around it.",
     "options": [
       {
         "label": "A",
@@ -547,13 +715,21 @@
         "text": "splendid"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "文具",
+      "B": "静止的",
+      "C": "稳定的",
+      "D": "壮丽的"
+    },
+    "trans": "这座古老的雕像已经静止了几个世纪，默默见证着时间的流逝和周围城市的变迁。",
+    "full": "The ancient statue has remained splendid for centuries, standing as a silent witness to the passage of time and the evolution of the city around it."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In scientific experiments, it is crucial to make precise measurements to ensure the validity of the results and avoid any potential errors in the data analysis.",
+    "stem": "In scientific experiments, it is crucial to make ______ measurements to ensure the validity of the results and avoid any potential errors in the data analysis.",
     "options": [
       {
         "label": "A",
@@ -572,13 +748,21 @@
         "text": "grey"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "空的",
+      "B": "精确的",
+      "C": "阴沉的",
+      "D": "灰色的"
+    },
+    "trans": "在科学实验中，进行精确的测量对于确保结果的有效性和避免数据分析错误至关重要。",
+    "full": "In scientific experiments, it is crucial to make precise measurements to ensure the validity of the results and avoid any potential errors in the data analysis."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "If you leave the milk out of the refrigerator for too long, it will quickly sour and become undrinkable, posing a risk to your health if consumed.",
+    "stem": "If you leave the milk out of the refrigerator for too long, it will quickly ______ and become undrinkable, posing a risk to your health if consumed.",
     "options": [
       {
         "label": "A",
@@ -597,13 +781,21 @@
         "text": "pronunciation"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "风味",
+      "B": "气味",
+      "C": "酸的",
+      "D": "发音"
+    },
+    "trans": "如果你把牛奶放在冰箱外太长时间，它会很快变酸，变得无法饮用，如果饮用会对健康构成风险。",
+    "full": "If you leave the milk out of the refrigerator for too long, it will quickly sour and become undrinkable, posing a risk to your health if consumed."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "As she watched her daughter graduate with honors, her heart began to swell with immense pride and joy, tears of happiness welling up in her eyes.",
+    "stem": "As she watched her daughter graduate with honors, her heart began to ______ immense pride and joy, tears of happiness welling up in her eyes.",
     "options": [
       {
         "label": "A",
@@ -622,13 +814,21 @@
         "text": "swell with"
       }
     ],
-    "answer": "C"
+    "answer": "D",
+    "notes": {
+      "A": "沉浸于",
+      "B": "吸收到",
+      "C": "陷入",
+      "D": "充满"
+    },
+    "trans": "当她看着女儿以优异成绩毕业时，她的心中开始充满无比的自豪和喜悦，幸福的泪水在眼眶中打转。",
+    "full": "As she watched her daughter graduate with honors, her heart began to sink into immense pride and joy, tears of happiness welling up in her eyes."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "While strolling through the bustling market, I happened to run into an old friend from college whom I hadn't seen in over a decade, leading to a warm reunion.",
+    "stem": "While strolling through the bustling market, I happened to ______ an old friend from college whom I hadn't seen in over a decade, leading to a warm reunion.",
     "options": [
       {
         "label": "A",
@@ -647,13 +847,21 @@
         "text": "run away"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "贬低",
+      "B": "用完",
+      "C": "偶遇",
+      "D": "逃跑"
+    },
+    "trans": "在熙熙攘攘的市场中漫步时，我碰巧遇到了一位十多年未见的老大学朋友，引发了一场温暖的团聚。",
+    "full": "While strolling through the bustling market, I happened to run away an old friend from college whom I hadn't seen in over a decade, leading to a warm reunion."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "After hours of intense discussion, the team finally managed to nail down the exact date and venue for the upcoming product launch event.",
+    "stem": "After hours of intense discussion, the team finally managed to ______ the exact date and venue for the upcoming product launch event.",
     "options": [
       {
         "label": "A",
@@ -672,13 +880,21 @@
         "text": "pulled off"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "钉在",
+      "B": "确定",
+      "C": "拉下",
+      "D": "成功完成"
+    },
+    "trans": "经过数小时的激烈讨论，团队终于设法确定了即将举行的产品发布活动的确切日期和地点。",
+    "full": "After hours of intense discussion, the team finally managed to pulled down the exact date and venue for the upcoming product launch event."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Without a map or a functioning GPS, it's easy to get lost in the winding streets of the old town, especially when the signs are written in an unfamiliar language.",
+    "stem": "Without a map or a functioning GPS, it's easy to get ______ in the winding streets of the old town, especially when the signs are written in an unfamiliar language.",
     "options": [
       {
         "label": "A",
@@ -697,13 +913,21 @@
         "text": "get wrong"
       }
     ],
-    "answer": "C"
+    "answer": "A",
+    "notes": {
+      "A": "迷路",
+      "B": "松开",
+      "C": "丢失的",
+      "D": "搞错"
+    },
+    "trans": "没有地图或能正常工作的GPS，在古老城镇蜿蜒的街道上很容易迷路，尤其是当路标用不熟悉的语言书写时。",
+    "full": "Without a map or a functioning GPS, it's easy to get lost in the winding streets of the old town, especially when the signs are written in an unfamiliar language."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The state-of-the-art research laboratory is equipped with cutting-edge technology and sophisticated instruments to facilitate groundbreaking scientific discoveries.",
+    "stem": "The state-of-the-art research laboratory is ______ cutting-edge technology and sophisticated instruments to facilitate groundbreaking scientific discoveries.",
     "options": [
       {
         "label": "A",
@@ -722,13 +946,21 @@
         "text": "equipped with"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "装备有",
+      "B": "倡导",
+      "C": "宣布",
+      "D": "配备"
+    },
+    "trans": "这座最先进的研究实验室配备了尖端技术和精密仪器，以促进突破性的科学发现。",
+    "full": "The state-of-the-art research laboratory is equipped with cutting-edge technology and sophisticated instruments to facilitate groundbreaking scientific discoveries."
   },
   {
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Fresh from a year-long study abroad program in Paris, she returned home with a newfound fluency in French and a broader cultural perspective.",
+    "stem": "______ a year-long study abroad program in Paris, she returned home with a newfound fluency in French and a broader cultural perspective.",
     "options": [
       {
         "label": "A",
@@ -747,13 +979,21 @@
         "text": "Distinguished from"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "从…开始",
+      "B": "刚从…来",
+      "C": "施加",
+      "D": "区别于"
+    },
+    "trans": "刚从为期一年的巴黎留学项目归来，她带着新获得的法语流利度和更广阔的文化视野回家了。",
+    "full": "Fresh from a year-long study abroad program in Paris, she returned home with a newfound fluency in French and a broader cultural perspective."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "After receiving multiple reports from residents, the police immediately launched an investigation into the burglary that occurred in the quiet neighborhood last night, during which valuable items were stolen from three houses.",
+    "stem": "After receiving multiple reports from residents, the police immediately launched an investigation into the ______ that occurred in the quiet neighborhood last night, during which valuable items were stolen from three houses.",
     "options": [
       {
         "label": "A",
@@ -772,13 +1012,21 @@
         "text": "failure"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "notes": {
+      "A": "入室盗窃",
+      "B": "慈善",
+      "C": "胜利",
+      "D": "失败"
+    },
+    "trans": "在收到多位居民的报告后，警方立即对昨晚在安静社区发生的入室盗窃案展开调查，期间三户人家的贵重物品被盗。",
+    "full": "After receiving multiple reports from residents, the police immediately launched an investigation into the burglary that occurred in the quiet neighborhood last night, during which valuable items were stolen from three houses."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "As they walked through the grand halls and admired the golden carvings on the walls, the tourists were amazed by the magnificence of the ancient palace and its detailed decorations.",
+    "stem": "As they walked through the grand halls and admired the golden carvings on the walls, the tourists were amazed by the ______ of the ancient palace and its detailed decorations.",
     "options": [
       {
         "label": "A",
@@ -797,13 +1045,21 @@
         "text": "dependence"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "notes": {
+      "A": "壮丽",
+      "B": "弱点",
+      "C": "善良",
+      "D": "依赖"
+    },
+    "trans": "当他们穿行于宏伟的大厅、欣赏墙壁上的金色雕刻时，游客们被这座古老宫殿的壮丽及其精美装饰所震撼。",
+    "full": "As they walked through the grand halls and admired the golden carvings on the walls, the tourists were amazed by the magnificence of the ancient palace and its detailed decorations."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Due to the CEO’s careless judgment and the lack of market research, the company suffered a massive loss due to the big wrong investment decision.",
+    "stem": "Due to the CEO’s careless judgment and the lack of market research, the company suffered a ______ loss due to the big wrong investment decision.",
     "options": [
       {
         "label": "A",
@@ -822,13 +1078,21 @@
         "text": "common"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "轻微的",
+      "B": "巨大的",
+      "C": "狭窄的",
+      "D": "普通的"
+    },
+    "trans": "由于CEO的粗心判断和缺乏市场调研，公司因一项重大的错误投资决策而遭受了巨大损失。",
+    "full": "Due to the CEO’s careless judgment and the lack of market research, the company suffered a massive loss due to the big wrong investment decision."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "With the help of a professional interior designer, the placement of the new furniture in the living room not only maximized the use of space but also made the entire area more comfortable and organized.",
+    "stem": "With the help of a professional interior designer, the ______ of the new furniture in the living room not only maximized the use of space but also made the entire area more comfortable and organized.",
     "options": [
       {
         "label": "A",
@@ -847,13 +1111,21 @@
         "text": "departure"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "运动",
+      "B": "到达",
+      "C": "摆放",
+      "D": "离开"
+    },
+    "trans": "在专业室内设计师的帮助下，客厅中新家具的摆放不仅最大化了空间利用，还使整个区域更加舒适和有序。",
+    "full": "With the help of a professional interior designer, the placement of the new furniture in the living room not only maximized the use of space but also made the entire area more comfortable and organized."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "If you find yourself stuck on the group project and unable to make progress despite trying your best, please don’t hesitate to ask your teammates or instructor for help.",
+    "stem": "If you find yourself stuck on the group project and unable to make progress despite trying your best, please don’t ______ to ask your teammates or instructor for help.",
     "options": [
       {
         "label": "A",
@@ -872,13 +1144,21 @@
         "text": "hesitate"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "假装",
+      "B": "管理",
+      "C": "挣扎",
+      "D": "犹豫"
+    },
+    "trans": "如果你发现自己在小组项目中陷入困境，尽管尽了最大努力仍无法取得进展，请不要犹豫向队友或导师寻求帮助。",
+    "full": "If you find yourself stuck on the group project and unable to make progress despite trying your best, please don’t hesitate to ask your teammates or instructor for help."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "To ensure that your room is reserved and prepared for your arrival, the hotel requires guests to confirm their booking by phone or email at least 24 hours before checking in.",
+    "stem": "To ensure that your room is reserved and prepared for your arrival, the hotel requires guests to ______ their booking by phone or email at least 24 hours before checking in.",
     "options": [
       {
         "label": "A",
@@ -897,13 +1177,21 @@
         "text": "forget"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "重复",
+      "B": "确认",
+      "C": "记住",
+      "D": "忘记"
+    },
+    "trans": "为确保房间被预留并准备好，酒店要求客人在办理入住前至少24小时通过电话或邮件确认预订。",
+    "full": "To ensure that your room is reserved and prepared for your arrival, the hotel requires guests to confirm their booking by phone or email at least 24 hours before checking in."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Before signing the contract to buy the apartment, we need to calculate the total cost carefully, including the down payment, monthly mortgage, and additional fees for property management.",
+    "stem": "Before signing the contract to buy the apartment, we need to ______ the total cost carefully, including the down payment, monthly mortgage, and additional fees for property management.",
     "options": [
       {
         "label": "A",
@@ -922,13 +1210,21 @@
         "text": "remember"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "猜测",
+      "B": "描述",
+      "C": "计算",
+      "D": "记住"
+    },
+    "trans": "在签署购买公寓的合同之前，我们需要仔细计算总成本，包括首付、月供以及物业管理的额外费用。",
+    "full": "Before signing the contract to buy the apartment, we need to calculate the total cost carefully, including the down payment, monthly mortgage, and additional fees for property management."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The research team’s survey covers a wide spectrum of opinions from teenagers, young adults, middle-aged people, and the elderly, providing a comprehensive view of public attitudes toward environmental protection.",
+    "stem": "The research team’s survey covers a wide ______ of opinions from teenagers, young adults, middle-aged people, and the elderly, providing a comprehensive view of public attitudes toward environmental protection.",
     "options": [
       {
         "label": "A",
@@ -947,13 +1243,21 @@
         "text": "spectrum"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "选择",
+      "B": "结果",
+      "C": "原因",
+      "D": "范围"
+    },
+    "trans": "研究团队的调查涵盖了从青少年到老年人的广泛意见，为公众对环境保护的态度提供了全面的视角。",
+    "full": "The research team’s survey covers a wide spectrum of opinions from teenagers, young adults, middle-aged people, and the elderly, providing a comprehensive view of public attitudes toward environmental protection."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "During weekends when she has no urgent tasks, Lisa likes to browse online shopping platforms for hours, looking through new clothing collections and home decor items without a specific purchase plan.",
+    "stem": "During weekends when she has no urgent tasks, Lisa likes to ______ online shopping platforms for hours, looking through new clothing collections and home decor items without a specific purchase plan.",
     "options": [
       {
         "label": "A",
@@ -972,13 +1276,21 @@
         "text": "break"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "充电",
+      "B": "浏览",
+      "C": "锁",
+      "D": "打破"
+    },
+    "trans": "在没有紧急任务的周末，丽莎喜欢花数小时浏览在线购物平台，翻看新款服装和家居装饰品，但没有具体的购买计划。",
+    "full": "During weekends when she has no urgent tasks, Lisa likes to browse online shopping platforms for hours, looking through new clothing collections and home decor items without a specific purchase plan."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Since the government announced the new policy to reduce carbon emissions, public sentiment toward the measure has been generally positive, with most people supporting the efforts to protect the environment.",
+    "stem": "Since the government announced the new policy to reduce carbon emissions, public ______ toward the measure has been generally positive, with most people supporting the efforts to protect the environment.",
     "options": [
       {
         "label": "A",
@@ -997,13 +1309,21 @@
         "text": "goal"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "行动",
+      "B": "情绪",
+      "C": "任务",
+      "D": "目标"
+    },
+    "trans": "自政府宣布减少碳排放的新政策以来，公众对这一措施的态度总体上是积极的，大多数人支持保护环境的努力。",
+    "full": "Since the government announced the new policy to reduce carbon emissions, public sentiment toward the measure has been generally positive, with most people supporting the efforts to protect the environment."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Located on the southern coast with soft beaches, clear blue water, and a mild climate all year round, the small city has become a popular tourist resort that attracts millions of visitors from home and abroad every summer.",
+    "stem": "Located on the southern coast with soft beaches, clear blue water, and a mild climate all year round, the small city has become a popular tourist ______ that attracts millions of visitors from home and abroad every summer.",
     "options": [
       {
         "label": "A",
@@ -1022,13 +1342,21 @@
         "text": "zone"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "区域",
+      "B": "地点",
+      "C": "度假胜地",
+      "D": "区域"
+    },
+    "trans": "这座城市位于南部海岸，拥有柔软的沙滩、清澈的海水和全年温和的气候，已成为一个受欢迎的旅游度假胜地，每年吸引数百万游客。",
+    "full": "Located on the southern coast with soft beaches, clear blue water, and a mild climate all year round, the small city has become a popular tourist resort that attracts millions of visitors from home and abroad every summer."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Doctors and health experts suggest that maintaining a balanced diet, getting enough sleep, and doing regular exercise can not only improve physical fitness but also help prolong people’s lifespan by reducing the risk of chronic diseases.",
+    "stem": "Doctors and health experts suggest that maintaining a balanced diet, getting enough sleep, and doing regular exercise can not only improve physical fitness but also help ______ people’s lifespan by reducing the risk of chronic diseases.",
     "options": [
       {
         "label": "A",
@@ -1047,13 +1375,21 @@
         "text": "waste"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "缩短",
+      "B": "延长",
+      "C": "限制",
+      "D": "浪费"
+    },
+    "trans": "医生和健康专家建议，保持均衡饮食、充足睡眠和定期锻炼，不仅可以改善身体素质，还有助于延长人们的寿命。",
+    "full": "Doctors and health experts suggest that maintaining a balanced diet, getting enough sleep, and doing regular exercise can not only improve physical fitness but also help prolong people’s lifespan by reducing the risk of chronic diseases."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Before submitting your academic paper to the journal, it is essential to proofread it carefully several times to check for spelling mistakes, grammar errors, and inconsistent logical arguments.",
+    "stem": "Before submitting your academic paper to the journal, it is essential to ______ it carefully several times to check for spelling mistakes, grammar errors, and inconsistent logical arguments.",
     "options": [
       {
         "label": "A",
@@ -1072,13 +1408,21 @@
         "text": "proofread"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "重写",
+      "B": "背诵",
+      "C": "复述",
+      "D": "校对"
+    },
+    "trans": "在向期刊提交学术论文之前，必须仔细校对几遍，检查拼写错误、语法错误和逻辑论证不一致的地方。",
+    "full": "Before submitting your academic paper to the journal, it is essential to proofread it carefully several times to check for spelling mistakes, grammar errors, and inconsistent logical arguments."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "After working on the new songs for over a year and completing the recording and mixing process, the popular band announced that they would release their third studio album on all major music platforms next month.",
+    "stem": "After working on the new songs for over a year and completing the recording and mixing process, the popular band announced that they would ______ their third studio album on all major music platforms next month.",
     "options": [
       {
         "label": "A",
@@ -1097,13 +1441,21 @@
         "text": "design"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "隐藏",
+      "B": "取消",
+      "C": "发布",
+      "D": "设计"
+    },
+    "trans": "在花了超过一年时间创作新歌并完成录制和混音后，这支流行乐队宣布将于下个月在所有主要音乐平台上发布他们的第三张专辑。",
+    "full": "After working on the new songs for over a year and completing the recording and mixing process, the popular band announced that they would release their third studio album on all major music platforms next month."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "During the team meeting, his rude and disrespectful comments about his colleagues’ work not only hurt others’ feelings but also threatened to provoke anger and unnecessary arguments that would affect the project’s progress.",
+    "stem": "During the team meeting, his rude and disrespectful comments about his colleagues’ work not only hurt others’ feelings but also threatened to ______ anger and unnecessary arguments that would affect the project’s progress.",
     "options": [
       {
         "label": "A",
@@ -1122,13 +1474,21 @@
         "text": "avoid"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "平静",
+      "B": "激起",
+      "C": "忽略",
+      "D": "避免"
+    },
+    "trans": "在团队会议上，他对同事工作的粗鲁和不尊重的评论不仅伤害了他人感情，还可能激起愤怒和不必要的争论，影响项目进展。",
+    "full": "During the team meeting, his rude and disrespectful comments about his colleagues’ work not only hurt others’ feelings but also threatened to provoke anger and unnecessary arguments that would affect the project’s progress."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The company prides itself on being a reputable employer, known for fair labor practices and ethical standards.",
+    "stem": "The company prides itself on being a ______ employer, known for fair labor practices and ethical standards.",
     "options": [
       {
         "label": "A",
@@ -1147,13 +1507,21 @@
         "text": "centralized"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "盈利的",
+      "B": "声誉好的",
+      "C": "有争议的",
+      "D": "集中的"
+    },
+    "trans": "该公司以其作为一家声誉良好的雇主而自豪，以公平的劳动实践和道德标准著称。",
+    "full": "The company prides itself on being a reputable employer, known for fair labor practices and ethical standards."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The team leader agreed to supervise the project, ensuring all deadlines are met and resources are allocated efficiently.",
+    "stem": "The team leader agreed to ______ the project, ensuring all deadlines are met and resources are allocated efficiently.",
     "options": [
       {
         "label": "A",
@@ -1172,13 +1540,21 @@
         "text": "supervise"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "放弃",
+      "B": "委派",
+      "C": "承担",
+      "D": "监督"
+    },
+    "trans": "团队领导同意监督该项目，确保所有截止日期都得到遵守，资源得到高效分配。",
+    "full": "The team leader agreed to supervise the project, ensuring all deadlines are met and resources are allocated efficiently."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Parents are liable for their children’s safety under the law, even when they are not physically present.",
+    "stem": "Parents are ______ for their children’s safety under the law, even when they are not physically present.",
     "options": [
       {
         "label": "A",
@@ -1197,13 +1573,21 @@
         "text": "liable"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "不情愿的",
+      "B": "免疫的",
+      "C": "感激的",
+      "D": "有责任的"
+    },
+    "trans": "根据法律，父母对子女的安全负有责任，即使他们本人不在场。",
+    "full": "Parents are liable for their children’s safety under the law, even when they are not physically present."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "As the largest shareholder, she holds a dominant position in the boardroom, often influencing major decisions.",
+    "stem": "As the largest shareholder, she holds a ______ position in the boardroom, often influencing major decisions.",
     "options": [
       {
         "label": "A",
@@ -1222,13 +1606,21 @@
         "text": "symbolic"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "被动的",
+      "B": "主导的",
+      "C": "支持的",
+      "D": "象征性的"
+    },
+    "trans": "作为最大的股东，她在董事会中占据主导地位，经常影响重大决策。",
+    "full": "As the largest shareholder, she holds a dominant position in the boardroom, often influencing major decisions."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Economists speculate that the recession could worsen if interest rates remain unchanged.",
+    "stem": "Economists ______ that the recession could worsen if interest rates remain unchanged.",
     "options": [
       {
         "label": "A",
@@ -1247,13 +1639,21 @@
         "text": "speculate"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "衡量",
+      "B": "否认",
+      "C": "忽视",
+      "D": "推测"
+    },
+    "trans": "经济学家推测，如果利率保持不变，经济衰退可能会恶化。",
+    "full": "Economists speculate that the recession could worsen if interest rates remain unchanged."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Sarah is passionate about environmental justice and volunteers weekly at local clean-up events.",
+    "stem": "Sarah is ______ environmental justice and volunteers weekly at local clean-up events.",
     "options": [
       {
         "label": "A",
@@ -1272,13 +1672,21 @@
         "text": "annoyed by"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "notes": {
+      "A": "热衷于",
+      "B": "厌倦",
+      "C": "漠不关心",
+      "D": "被惹恼"
+    },
+    "trans": "莎拉热衷于环境正义，每周都在当地的清洁活动中做志愿者。",
+    "full": "Sarah is passionate about environmental justice and volunteers weekly at local clean-up events."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "He became obsessed with video games, neglecting work and relationships as his obsession grew.",
+    "stem": "He became ______ video games, neglecting work and relationships as his obsession grew.",
     "options": [
       {
         "label": "A",
@@ -1297,13 +1705,21 @@
         "text": "obsessed with"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "谨慎",
+      "B": "容忍",
+      "C": "热衷于",
+      "D": "沉迷于"
+    },
+    "trans": "他开始沉迷于电子游戏，随着沉迷的加深，工作和人际关系都被忽视了。",
+    "full": "He became obsessed with video games, neglecting work and relationships as his obsession grew."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Visitors gazed in awe at the ancient temple’s intricate carvings, marveling at its historical significance.",
+    "stem": "Visitors gazed ______ at the ancient temple’s intricate carvings, marveling at its historical significance.",
     "options": [
       {
         "label": "A",
@@ -1322,13 +1738,21 @@
         "text": "on purpose"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "轻松地",
+      "B": "敬畏地",
+      "C": "偶然",
+      "D": "故意"
+    },
+    "trans": "游客们敬畏地凝视着古庙精美的雕刻，惊叹于其历史意义。",
+    "full": "Visitors gazed in awe at the ancient temple’s intricate carvings, marveling at its historical significance."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The student’s math grades this term have been consistently not up to par, so the teacher suggested extra tutoring.",
+    "stem": "The student’s math grades this term have been consistently ______, so the teacher suggested extra tutoring.",
     "options": [
       {
         "label": "A",
@@ -1347,13 +1771,21 @@
         "text": "state-of-the-art"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "极其",
+      "B": "在轨道上",
+      "C": "未达标",
+      "D": "最先进的"
+    },
+    "trans": "该学生本学期的数学成绩一直未达标，因此老师建议进行额外辅导。",
+    "full": "The student’s math grades this term have been consistently not up to par, so the teacher suggested extra tutoring."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The leader was furious because the report wasn’t submitted on time, which let down the entire team.",
+    "stem": "The leader was furious because the report wasn’t submitted on time, which ______ the entire team.",
     "options": [
       {
         "label": "A",
@@ -1372,13 +1804,21 @@
         "text": "let out"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "扔掉",
+      "B": "结果是",
+      "C": "使失望",
+      "D": "释放"
+    },
+    "trans": "领导非常愤怒，因为报告没有按时提交，这使整个团队失望了。",
+    "full": "The leader was furious because the report wasn’t submitted on time, which let down the entire team."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The professor encouraged students to pick her brains about the project during office hours for research guidance.",
+    "stem": "The professor encouraged students to ______ about the project during office hours for research guidance.",
     "options": [
       {
         "label": "A",
@@ -1397,13 +1837,21 @@
         "text": "pick her brains"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "扔掉想法",
+      "B": "赶走她",
+      "C": "支持她",
+      "D": "请教她"
+    },
+    "trans": "教授鼓励学生在办公时间来向她请教研究项目，以获得研究指导。",
+    "full": "The professor encouraged students to pick her brains about the project during office hours for research guidance."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "After completing his foundational courses, he decided to formalize his academic priorities by majoring in economics and minoring in sociology as complementary fields.",
+    "stem": "After completing his foundational courses, he decided to formalize his academic priorities by majoring in economics and minoring in sociology as complementary fields ______.",
     "options": [
       {
         "label": "A",
@@ -1422,13 +1870,21 @@
         "text": "dominating in; generalizing in"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "专攻;泛化",
+      "B": "专注;浏览",
+      "C": "主修;辅修",
+      "D": "主导;泛化"
+    },
+    "trans": "在完成基础课程后，他决定明确自己的学术重点，主修经济学并辅修社会学作为互补领域。",
+    "full": "After completing his foundational courses, he decided to formalize his academic priorities by majoring in economics and minoring in sociology as complementary fields majoring in; minoring in."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Drawing from her extensive training in classical literature and decades of research experience, her encyclopedic knowledge of ancient myths and philosophies serves as a reservoir of inspiration in her writing.",
+    "stem": "Drawing from her extensive training in classical literature and decades of research experience, her encyclopedic knowledge of ancient myths and philosophies serves as a ______ of inspiration in her writing.",
     "options": [
       {
         "label": "A",
@@ -1447,13 +1903,21 @@
         "text": "reservation"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "来源",
+      "B": "起源",
+      "C": "水库;储备",
+      "D": "保留"
+    },
+    "trans": "凭借她在古典文学方面的广泛训练和数十年的研究经验，她对古代神话和哲学的广博知识成为她写作中灵感的源泉。",
+    "full": "Drawing from her extensive training in classical literature and decades of research experience, her encyclopedic knowledge of ancient myths and philosophies serves as a reservoir of inspiration in her writing."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Contrary to predictions, the experiment turned up a groundbreaking discovery that challenged existing theories.",
+    "stem": "Contrary to predictions, the experiment ______ a groundbreaking discovery that challenged existing theories.",
     "options": [
       {
         "label": "A",
@@ -1472,13 +1936,21 @@
         "text": "turned up"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "上交",
+      "B": "结果是",
+      "C": "变成",
+      "D": "出现"
+    },
+    "trans": "与预测相反，实验结果出现了一项挑战现有理论的突破性发现。",
+    "full": "Contrary to predictions, the experiment turned up a groundbreaking discovery that challenged existing theories."
   },
   {
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "During the heated debate, he suddenly came up with a wild idea, surprising everyone in the room.",
+    "stem": "During the heated debate, he suddenly ______ a wild idea, surprising everyone in the room.",
     "options": [
       {
         "label": "A",
@@ -1497,13 +1969,21 @@
         "text": "pointed out"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "扔掉",
+      "B": "想出",
+      "C": "抑制",
+      "D": "指出"
+    },
+    "trans": "在激烈的辩论中，他突然想出了一个疯狂的主意，让房间里的每个人都大吃一惊。",
+    "full": "During the heated debate, he suddenly came up with a wild idea, surprising everyone in the room."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In daily life, we often take it for granted that our parents will always be there to support us, forgetting to cherish their presence until it is too late.",
+    "stem": "In daily life, we often ______ that our parents will always be there to support us, forgetting to cherish their presence until it is too late.",
     "options": [
       {
         "label": "A",
@@ -1522,13 +2002,21 @@
         "text": "take it in granted"
       }
     ],
-    "answer": "A"
+    "answer": "B",
+    "notes": {
+      "A": "视为理所当然(错误表达)",
+      "B": "视为理所当然",
+      "C": "错误搭配",
+      "D": "错误搭配"
+    },
+    "trans": "在日常生活中，我们常常把父母永远在我们身边支持我们视为理所当然，忘记珍惜他们的存在，直到为时已晚。",
+    "full": "In daily life, we often take it as granted that our parents will always be there to support us, forgetting to cherish their presence until it is too late."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The research team decided to conduct a series of complex experiments to verify the hypothesis that had been proposed by their distinguished professor.",
+    "stem": "The research team decided to ______ a series of complex experiments to verify the hypothesis that had been proposed by their distinguished professor.",
     "options": [
       {
         "label": "A",
@@ -1547,13 +2035,21 @@
         "text": "confirm"
       }
     ],
-    "answer": "A"
+    "answer": "C",
+    "notes": {
+      "A": "精简",
+      "B": "导致",
+      "C": "进行",
+      "D": "确认"
+    },
+    "trans": "研究团队决定进行一系列复杂的实验来验证他们杰出教授提出的假设。",
+    "full": "The research team decided to condense a series of complex experiments to verify the hypothesis that had been proposed by their distinguished professor."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Having spent three decades in this peaceful coastal town, the old fisherman is accustomed to waking up before dawn to set out on the calm sea.",
+    "stem": "Having spent three decades in this peaceful coastal town, the old fisherman ______ waking up before dawn to set out on the calm sea.",
     "options": [
       {
         "label": "A",
@@ -1572,13 +2068,21 @@
         "text": "is accustomed to"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "适应",
+      "B": "致力于",
+      "C": "沉迷于",
+      "D": "习惯于"
+    },
+    "trans": "在这座宁静的海滨小镇生活了三十年后，这位老渔夫已经习惯于在黎明前醒来，出发驶向平静的海面。",
+    "full": "Having spent three decades in this peaceful coastal town, the old fisherman is dedicated to waking up before dawn to set out on the calm sea."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The most striking feature of this smartwatch is its extended battery life, which allows users to operate the device for several days without recharging.",
+    "stem": "The most striking ______ of this smartwatch is its extended battery life, which allows users to operate the device for several days without recharging.",
     "options": [
       {
         "label": "A",
@@ -1597,13 +2101,21 @@
         "text": "fracture"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "家具",
+      "B": "未来",
+      "C": "特征",
+      "D": "骨折"
+    },
+    "trans": "这款智能手表最引人注目的特点是它的超长电池续航时间，允许用户在不需要充电的情况下使用数天。",
+    "full": "The most striking feature of this smartwatch is its extended battery life, which allows users to operate the device for several days without recharging."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "When describing his adventurous journey through the Amazon rainforest, he tended to exaggerate the dangers he encountered in order to make the story more thrilling.",
+    "stem": "When describing his adventurous journey through the Amazon rainforest, he tended to ______ the dangers he encountered in order to make the story more thrilling.",
     "options": [
       {
         "label": "A",
@@ -1622,13 +2134,21 @@
         "text": "evaluate"
       }
     ],
-    "answer": "D"
+    "answer": "A",
+    "notes": {
+      "A": "夸大",
+      "B": "检查",
+      "C": "执行",
+      "D": "评估"
+    },
+    "trans": "在描述他穿越亚马逊雨林的冒险旅程时，他倾向于夸大所遇到的危险，以使故事更加惊心动魄。",
+    "full": "When describing his adventurous journey through the Amazon rainforest, he tended to evaluate the dangers he encountered in order to make the story more thrilling."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Faced with the harsh criticism from the public, the manager simply shrugged his shoulders and claimed that he was not responsible for the company’s failure.",
+    "stem": "Faced with the harsh criticism from the public, the manager simply ______ his shoulders and claimed that he was not responsible for the company’s failure.",
     "options": [
       {
         "label": "A",
@@ -1647,13 +2167,21 @@
         "text": "shrieked"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "下沉",
+      "B": "耸肩",
+      "C": "缩小",
+      "D": "尖叫"
+    },
+    "trans": "面对公众的严厉批评，经理只是耸了耸肩，声称自己对公司的失败不负责任。",
+    "full": "Faced with the harsh criticism from the public, the manager simply shrugged his shoulders and claimed that he was not responsible for the company’s failure."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The human resources department aims to recruit talented graduates from top universities who possess both professional skills and a strong sense of responsibility.",
+    "stem": "The human resources department aims to ______ talented graduates from top universities who possess both professional skills and a strong sense of responsibility.",
     "options": [
       {
         "label": "A",
@@ -1672,13 +2200,21 @@
         "text": "recruit"
       }
     ],
-    "answer": "C"
+    "answer": "D",
+    "notes": {
+      "A": "请求",
+      "B": "需要",
+      "C": "回收",
+      "D": "招募"
+    },
+    "trans": "人力资源部门旨在从顶尖大学招募具有专业技能和强烈责任感的优秀毕业生。",
+    "full": "The human resources department aims to reclaim talented graduates from top universities who possess both professional skills and a strong sense of responsibility."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "To complete this challenging project, one must persevere through numerous difficulties and remain focused on the final goal without being easily discouraged.",
+    "stem": "To complete this challenging project, one must ______ through numerous difficulties and remain focused on the final goal without being easily discouraged.",
     "options": [
       {
         "label": "A",
@@ -1697,13 +2233,21 @@
         "text": "prepare"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "保存",
+      "B": "坚持",
+      "C": "感知",
+      "D": "准备"
+    },
+    "trans": "要完成这个具有挑战性的项目，你必须克服无数困难，保持专注于最终目标，不轻易气馁。",
+    "full": "To complete this challenging project, one must prepare through numerous difficulties and remain focused on the final goal without being easily discouraged."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "It is remarkable how the ancient structure has managed to endure centuries of wars, natural disasters, and the relentless test of time in this region.",
+    "stem": "It is remarkable how the ancient structure has managed to ______ centuries of wars, natural disasters, and the relentless test of time in this region.",
     "options": [
       {
         "label": "A",
@@ -1722,13 +2266,21 @@
         "text": "enroll"
       }
     ],
-    "answer": "B"
+    "answer": "A",
+    "notes": {
+      "A": "忍受",
+      "B": "确保",
+      "C": "赋予",
+      "D": "注册"
+    },
+    "trans": "令人惊叹的是，这座古老的建筑竟然经受住了这个地区几个世纪的战争、自然灾害和时间的无情考验。",
+    "full": "It is remarkable how the ancient structure has managed to ensure centuries of wars, natural disasters, and the relentless test of time in this region."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The company’s financial report revealed some internal problems, such as inefficient management and outdated production processes, which required immediate reform.",
+    "stem": "The company’s financial report revealed some ______ problems, such as inefficient management and outdated production processes, which required immediate reform.",
     "options": [
       {
         "label": "A",
@@ -1747,13 +2299,21 @@
         "text": "internal"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "非正式的",
+      "B": "外部的",
+      "C": "永恒的",
+      "D": "内部的"
+    },
+    "trans": "公司的财务报告揭示了一些内部问题，如管理效率低下和生产流程过时，这些问题需要立即改革。",
+    "full": "The company’s financial report revealed some external problems, such as inefficient management and outdated production processes, which required immediate reform."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The professor decided to assign each student a specific topic for the final paper, ensuring that a wide range of subjects would be thoroughly explored.",
+    "stem": "The professor decided to ______ each student a specific topic for the final paper, ensuring that a wide range of subjects would be thoroughly explored.",
     "options": [
       {
         "label": "A",
@@ -1772,13 +2332,21 @@
         "text": "combine"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "设计",
+      "B": "辞职",
+      "C": "分配",
+      "D": "结合"
+    },
+    "trans": "教授决定为每个学生分配一个特定的期末论文题目，确保广泛的主题都能得到深入探索。",
+    "full": "The professor decided to assign each student a specific topic for the final paper, ensuring that a wide range of subjects would be thoroughly explored."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The professor emphasized that the ancient manuscript was a/an invaluable cultural treasure, providing irreplaceable insights into the history of medieval literature.",
+    "stem": "The professor emphasized that the ancient manuscript was a/an ______ cultural treasure, providing irreplaceable insights into the history of medieval literature.",
     "options": [
       {
         "label": "A",
@@ -1797,13 +2365,21 @@
         "text": "invariable"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "有价值的",
+      "B": "无价值的",
+      "C": "无价的",
+      "D": "不变的"
+    },
+    "trans": "教授强调这份古代手稿是一件无价的文化瑰宝，为研究中世纪文学史提供了不可替代的洞见。",
+    "full": "The professor emphasized that the ancient manuscript was a/an valueless cultural treasure, providing irreplaceable insights into the history of medieval literature."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "While innovative ideas are important, sometimes conventional methods that have been proven effective over time can still yield satisfactory results in business.",
+    "stem": "While innovative ideas are important, sometimes ______ methods that have been proven effective over time can still yield satisfactory results in business.",
     "options": [
       {
         "label": "A",
@@ -1822,13 +2398,21 @@
         "text": "conditional"
       }
     ],
-    "answer": "D"
+    "answer": "A",
+    "notes": {
+      "A": "传统的",
+      "B": "对话的",
+      "C": "有争议的",
+      "D": "有条件的"
+    },
+    "trans": "虽然创新想法很重要，但有时经过时间验证证明有效的传统方法仍然可以在商业中产生令人满意的结果。",
+    "full": "While innovative ideas are important, sometimes conditional methods that have been proven effective over time can still yield satisfactory results in business."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Before embarking on the long journey, we must ensure that we have sufficient food, water, and medical supplies to cope with any unexpected emergencies.",
+    "stem": "Before embarking on the long journey, we must ensure that we have ______ food, water, and medical supplies to cope with any unexpected emergencies.",
     "options": [
       {
         "label": "A",
@@ -1847,13 +2431,21 @@
         "text": "sufficient"
       }
     ],
-    "answer": "C"
+    "answer": "D",
+    "notes": {
+      "A": "精通的",
+      "B": "不足的",
+      "C": "高效的",
+      "D": "充足的"
+    },
+    "trans": "在踏上漫长旅程之前，我们必须确保有充足的食物、水和医疗用品来应对任何突发的紧急情况。",
+    "full": "Before embarking on the long journey, we must ensure that we have efficient food, water, and medical supplies to cope with any unexpected emergencies."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "He decided to accept the demanding job for the sake of financial stability, believing that the high salary would eventually compensate for the heavy workload.",
+    "stem": "He decided to accept the demanding job ______ financial stability, believing that the high salary would eventually compensate for the heavy workload.",
     "options": [
       {
         "label": "A",
@@ -1872,13 +2464,21 @@
         "text": "with the sake of"
       }
     ],
-    "answer": "B"
+    "answer": "A",
+    "notes": {
+      "A": "为了",
+      "B": "错误搭配",
+      "C": "错误搭配",
+      "D": "错误搭配"
+    },
+    "trans": "他决定为了经济稳定而接受这份要求苛刻的工作，相信高薪最终会弥补繁重的工作量。",
+    "full": "He decided to accept the demanding job by the sake of financial stability, believing that the high salary would eventually compensate for the heavy workload."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Regular vigorous exercise not only strengthens the body but also enhances mental resilience, helping individuals better cope with daily stress and anxiety.",
+    "stem": "Regular ______ exercise not only strengthens the body but also enhances mental resilience, helping individuals better cope with daily stress and anxiety.",
     "options": [
       {
         "label": "A",
@@ -1897,13 +2497,21 @@
         "text": "vigorous"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "幽默的",
+      "B": "危险的",
+      "C": "严格的",
+      "D": "充满活力的"
+    },
+    "trans": "定期进行充满活力的锻炼不仅能强健身体，还能增强心理韧性，帮助个人更好地应对日常压力和焦虑。",
+    "full": "Regular dangerous exercise not only strengthens the body but also enhances mental resilience, helping individuals better cope with daily stress and anxiety."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The journalist was praised for his strong work ethic, as he refused to disclose his confidential sources even when faced with legal threats.",
+    "stem": "The journalist was praised for his strong work ______, as he refused to disclose his confidential sources even when faced with legal threats.",
     "options": [
       {
         "label": "A",
@@ -1922,13 +2530,21 @@
         "text": "epoch"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "民族的",
+      "B": "伦理",
+      "C": "史诗",
+      "D": "时代"
+    },
+    "trans": "这位记者因其强烈的职业道德而受到赞扬，因为他即使在面临法律威胁时也拒绝透露机密消息来源。",
+    "full": "The journalist was praised for his strong work epoch, as he refused to disclose his confidential sources even when faced with legal threats."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Some prominent economists have argued that the boom of the housing market in the early 2000s paralleled a surge in consumer spending during the same historical period.",
+    "stem": "Some prominent economists have argued that the boom of the housing market in the early 2000s ______ a surge in consumer spending during the same historical period.",
     "options": [
       {
         "label": "A",
@@ -1947,13 +2563,21 @@
         "text": "paraded"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "瘫痪的",
+      "B": "改述的",
+      "C": "平行的",
+      "D": "游行的"
+    },
+    "trans": "一些著名经济学家认为，21世纪初房地产市场的繁荣与同一历史时期消费支出的激增是平行的。",
+    "full": "Some prominent economists have argued that the boom of the housing market in the early 2000s paraded a surge in consumer spending during the same historical period."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The museum plans to exhibit a collection of contemporary artworks that reflect the social changes and cultural diversity of the past few decades.",
+    "stem": "The museum plans to ______ a collection of contemporary artworks that reflect the social changes and cultural diversity of the past few decades.",
     "options": [
       {
         "label": "A",
@@ -1972,13 +2596,21 @@
         "text": "inhibit"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "禁止",
+      "B": "居住",
+      "C": "展出",
+      "D": "抑制"
+    },
+    "trans": "博物馆计划展出一系列反映过去几十年社会变迁和文化多样性的当代艺术作品。",
+    "full": "The museum plans to inhabit a collection of contemporary artworks that reflect the social changes and cultural diversity of the past few decades."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The success of the community project relied heavily on collective effort, as every member contributed their unique skills and worked toward a shared objective.",
+    "stem": "The success of the community project relied heavily on ______ effort, as every member contributed their unique skills and worked toward a shared objective.",
     "options": [
       {
         "label": "A",
@@ -1997,13 +2629,21 @@
         "text": "effective"
       }
     ],
-    "answer": "D"
+    "answer": "A",
+    "notes": {
+      "A": "集体的",
+      "B": "选择性的",
+      "C": "各自的",
+      "D": "有效的"
+    },
+    "trans": "社区项目的成功在很大程度上依赖于集体努力，因为每个成员都贡献了自己独特的技能，朝着共同的目标努力。",
+    "full": "The success of the community project relied heavily on effective effort, as every member contributed their unique skills and worked toward a shared objective."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Despite numerous failed attempts, the young scientist decided to persist in his research, believing that perseverance would eventually lead to a breakthrough.",
+    "stem": "Despite numerous failed attempts, the young scientist decided to ______ in his research, believing that perseverance would eventually lead to a breakthrough.",
     "options": [
       {
         "label": "A",
@@ -2022,13 +2662,21 @@
         "text": "consist"
       }
     ],
-    "answer": "A"
+    "answer": "C",
+    "notes": {
+      "A": "抵抗",
+      "B": "坚持",
+      "C": "坚持",
+      "D": "由…组成"
+    },
+    "trans": "尽管经历了无数次失败的尝试，这位年轻的科学家决定坚持他的研究，相信毅力最终会带来突破。",
+    "full": "Despite numerous failed attempts, the young scientist decided to resist in his research, believing that perseverance would eventually lead to a breakthrough."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The sudden announcement of the company’s bankruptcy stunned the entire industry, as no one had anticipated such a dramatic collapse of the giant corporation.",
+    "stem": "The sudden announcement of the company’s bankruptcy ______ the entire industry, as no one had anticipated such a dramatic collapse of the giant corporation.",
     "options": [
       {
         "label": "A",
@@ -2047,13 +2695,21 @@
         "text": "stunned"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "下沉",
+      "B": "缩小",
+      "C": "发臭",
+      "D": "震惊的"
+    },
+    "trans": "公司破产的突然公告震惊了整个行业，因为没有人预料到这个巨头企业会如此戏剧性地崩溃。",
+    "full": "The sudden announcement of the company’s bankruptcy stunned the entire industry, as no one had anticipated such a dramatic collapse of the giant corporation."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "To expand its market share, the startup needs to tap into the vast potential of social media platforms to effectively reach younger consumers.",
+    "stem": "To expand its market share, the startup needs to ______ the vast potential of social media platforms to effectively reach younger consumers.",
     "options": [
       {
         "label": "A",
@@ -2072,13 +2728,21 @@
         "text": "tap over"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "轻敲",
+      "B": "输入",
+      "C": "利用",
+      "D": "轻拍"
+    },
+    "trans": "为了扩大市场份额，这家创业公司需要利用社交媒体平台的巨大潜力，有效触达年轻消费者。",
+    "full": "To expand its market share, the startup needs to tap in the vast potential of social media platforms to effectively reach younger consumers."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Despite facing numerous setbacks, the young athlete continued to strive for excellence, training relentlessly with the hope of winning an Olympic medal.",
+    "stem": "Despite facing numerous setbacks, the young athlete continued to ______ excellence, training relentlessly with the hope of winning an Olympic medal.",
     "options": [
       {
         "label": "A",
@@ -2097,13 +2761,21 @@
         "text": "strive for"
       }
     ],
-    "answer": "C"
+    "answer": "D",
+    "notes": {
+      "A": "与…斗争",
+      "B": "努力去",
+      "C": "与…抗争",
+      "D": "追求"
+    },
+    "trans": "尽管面临无数挫折，这位年轻运动员继续追求卓越，不懈训练，希望赢得奥运奖牌。",
+    "full": "Despite facing numerous setbacks, the young athlete continued to strive against excellence, training relentlessly with the hope of winning an Olympic medal."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The emotional speech delivered by the veteran soldier managed to stir a deep sense of patriotism and gratitude among all the audience members present.",
+    "stem": "The emotional speech delivered by the veteran soldier managed to ______ a deep sense of patriotism and gratitude among all the audience members present.",
     "options": [
       {
         "label": "A",
@@ -2122,13 +2794,21 @@
         "text": "stem"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "操控",
+      "B": "激起",
+      "C": "盯着",
+      "D": "源于"
+    },
+    "trans": "这位退伍老兵发表的感人演讲成功地在在场所有观众中激起了一种深深的爱国情怀和感激之情。",
+    "full": "The emotional speech delivered by the veteran soldier managed to stare a deep sense of patriotism and gratitude among all the audience members present."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Using colorful metaphors and vivid descriptions, the skilled author can weave a fascinating story that captivates readers from the very first page.",
+    "stem": "Using colorful metaphors and vivid descriptions, the skilled author can ______ a fascinating story that captivates readers from the very first page.",
     "options": [
       {
         "label": "A",
@@ -2147,13 +2827,21 @@
         "text": "weep"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "挥手",
+      "B": "编织",
+      "C": "放弃",
+      "D": "哭泣"
+    },
+    "trans": "通过使用丰富多彩的比喻和生动的描述，这位技艺娴熟的作家能够编织出一个引人入胜的故事，从第一页就牢牢抓住读者。",
+    "full": "Using colorful metaphors and vivid descriptions, the skilled author can weep a fascinating story that captivates readers from the very first page."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "A good leader should be able to motivate his team members by recognizing their achievements and providing meaningful opportunities for professional growth.",
+    "stem": "A good leader should be able to ______ his team members by recognizing their achievements and providing meaningful opportunities for professional growth.",
     "options": [
       {
         "label": "A",
@@ -2172,13 +2860,21 @@
         "text": "migrate"
       }
     ],
-    "answer": "C"
+    "answer": "A",
+    "notes": {
+      "A": "激励",
+      "B": "动员",
+      "C": "最小化",
+      "D": "迁移"
+    },
+    "trans": "一个好的领导者应该能够通过认可团队成员的成就和提供有意义的职业成长机会来激励他们。",
+    "full": "A good leader should be able to minimize his team members by recognizing their achievements and providing meaningful opportunities for professional growth."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "One of the primary goals of the educational reform is to retain talented teachers by offering them competitive salaries and a supportive working environment.",
+    "stem": "One of the primary goals of the educational reform is to ______ talented teachers by offering them competitive salaries and a supportive working environment.",
     "options": [
       {
         "label": "A",
@@ -2197,13 +2893,21 @@
         "text": "detain"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "包含",
+      "B": "达到",
+      "C": "保留",
+      "D": "拘留"
+    },
+    "trans": "教育改革的主要目标之一是通过提供有竞争力的薪酬和支持性的工作环境来留住优秀教师。",
+    "full": "One of the primary goals of the educational reform is to retain talented teachers by offering them competitive salaries and a supportive working environment."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In order to solve the complex problem, we need to be resourceful and creative, finding innovative ways to utilize the limited resources available to us.",
+    "stem": "In order to solve the complex problem, we need to be ______ and creative, finding innovative ways to utilize the limited resources available to us.",
     "options": [
       {
         "label": "A",
@@ -2222,13 +2926,21 @@
         "text": "respectful"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "可敬的",
+      "B": "各自的",
+      "C": "足智多谋的",
+      "D": "尊敬的"
+    },
+    "trans": "为了解决这个复杂的问题，我们需要足智多谋、富有创造力，找到创新的方式来利用我们可用的有限资源。",
+    "full": "In order to solve the complex problem, we need to be respectful and creative, finding innovative ways to utilize the limited resources available to us."
   },
   {
     "chapter": "B2U3",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Through careful observation and analysis, we can perceive subtle changes in consumer behavior that often indicate emerging trends in the market.",
+    "stem": "Through careful observation and analysis, we can ______ subtle changes in consumer behavior that often indicate emerging trends in the market.",
     "options": [
       {
         "label": "A",
@@ -2247,13 +2959,21 @@
         "text": "perceive"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "欺骗",
+      "B": "收到",
+      "C": "构想",
+      "D": "感知"
+    },
+    "trans": "通过仔细观察和分析，我们可以感知到消费者行为中微妙的变化，这些变化往往预示着市场中新兴的趋势。",
+    "full": "Through careful observation and analysis, we can receive subtle changes in consumer behavior that often indicate emerging trends in the market."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Recall that very basic building block we introduced last week, which allowed you to grab a random number between 1 and 10 or between 1 and 100.",
+    "stem": "Recall that very basic building block we introduced last week, which allowed you to grab a ______ number between 1 and 10 or between 1 and 100.",
     "options": [
       {
         "label": "A",
@@ -2272,13 +2992,21 @@
         "text": "diligent"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "notes": {
+      "A": "随机的",
+      "B": "地质的",
+      "C": "坚决的",
+      "D": "勤奋的"
+    },
+    "trans": "回想一下我们上周介绍的那个非常基础的构建模块，它允许你获取一个介于1和10之间或1和100之间的随机数。",
+    "full": "Recall that very basic building block we introduced last week, which allowed you to grab a random number between 1 and 10 or between 1 and 100."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "It is the 70th anniversary of both the world's anti-fascism war and the victory of China's Resistance War against Japanese Aggression this year.",
+    "stem": "It is the 70th ______ of both the world's anti-fascism war and the victory of China's Resistance War against Japanese Aggression this year.",
     "options": [
       {
         "label": "A",
@@ -2297,13 +3025,21 @@
         "text": "anniversary"
       }
     ],
-    "answer": "A"
+    "answer": "D",
+    "notes": {
+      "A": "冲动",
+      "B": "例外",
+      "C": "合作",
+      "D": "周年纪念"
+    },
+    "trans": "今年是世界反法西斯战争胜利70周年，也是中国抗日战争胜利70周年。",
+    "full": "It is the 70th impulse of both the world's anti-fascism war and the victory of China's Resistance War against Japanese Aggression this year."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "What mattered most was getting into a good elementary school, middle school and high school so that they would finally be admitted to a top college.",
+    "stem": "What mattered most was getting into a good elementary school, middle school and high school so that they would finally ______ a top college.",
     "options": [
       {
         "label": "A",
@@ -2322,13 +3058,21 @@
         "text": "be entrusted to"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "被传承",
+      "B": "被录取",
+      "C": "嵌入",
+      "D": "被委托"
+    },
+    "trans": "最重要的是进入一所好的小学、中学和高中，这样他们最终才能被一所顶尖大学录取。",
+    "full": "What mattered most was getting into a good elementary school, middle school and high school so that they would finally be admitted to a top college."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The Chinese people united in the grand endeavor to rejuvenate the nation, ensuring prosperity and harmony for every citizen.",
+    "stem": "The Chinese people united in the grand endeavor to ______ the nation, ensuring prosperity and harmony for every citizen.",
     "options": [
       {
         "label": "A",
@@ -2347,13 +3091,21 @@
         "text": "resound"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "微弱的",
+      "B": "复兴",
+      "C": "象征",
+      "D": "回响"
+    },
+    "trans": "中国人民团结在复兴民族的伟大事业中，确保每个公民的繁荣与和谐。",
+    "full": "The Chinese people united in the grand endeavor to symbolize the nation, ensuring prosperity and harmony for every citizen."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Returning to my alma mater after a decade, I walked through the familiar gates, greeted my old professors and felt immense gratitude for the education and memories.",
+    "stem": "Returning to my ______ after a decade, I walked through the familiar gates, greeted my old professors and felt immense gratitude for the education and memories.",
     "options": [
       {
         "label": "A",
@@ -2372,13 +3124,21 @@
         "text": "testament"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "学费",
+      "B": "财务",
+      "C": "母校",
+      "D": "证明"
+    },
+    "trans": "十年后回到母校，我走过熟悉的大门，问候了老教授们，感受到了对教育和回忆的无比感激。",
+    "full": "Returning to my testament after a decade, I walked through the familiar gates, greeted my old professors and felt immense gratitude for the education and memories."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Google's business model assumes that people will entrust it with ever more information about their lives, to be stored in the company's \"cloud\" of remote computers.",
+    "stem": "Google's business model assumes that people will ______ it with ever more information about their lives, to be stored in the company's \"cloud\" of remote computers.",
     "options": [
       {
         "label": "A",
@@ -2397,13 +3157,21 @@
         "text": "chase"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "解锁",
+      "B": "委托",
+      "C": "实现",
+      "D": "追逐"
+    },
+    "trans": "谷歌的商业模式假设人们会委托它存储越来越多关于他们生活的信息，保存在公司远程计算机的云中。",
+    "full": "Google's business model assumes that people will entrust it with ever more information about their lives, to be stored in the company's \"cloud\" of remote computers."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The study of law has been recognized for centuries as a basic intellectual discipline in European universities.",
+    "stem": "The study of law has been recognized for centuries as a basic intellectual ______ in European universities.",
     "options": [
       {
         "label": "A",
@@ -2422,13 +3190,21 @@
         "text": "geophysics"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "地壳",
+      "B": "学科",
+      "C": "策略",
+      "D": "地球物理学"
+    },
+    "trans": "几个世纪以来，法学研究在欧洲大学中一直被认为是一门基础的知识学科。",
+    "full": "The study of law has been recognized for centuries as a basic intellectual strategy in European universities."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Consequently, the strategy to maximize overall profit from a new product is to charge less than the greatest possible price.",
+    "stem": "Consequently, the strategy to ______ overall profit from a new product is to charge less than the greatest possible price.",
     "options": [
       {
         "label": "A",
@@ -2447,13 +3223,21 @@
         "text": "maximize"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "notes": {
+      "A": "纪念",
+      "B": "微弱的",
+      "C": "承认",
+      "D": "最大化"
+    },
+    "trans": "因此，从一个新产品中实现整体利润最大化的策略是收取低于最大可能价格的费用。",
+    "full": "Consequently, the strategy to maximize overall profit from a new product is to charge less than the greatest possible price."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "I was a workaholic and this meant that my health and personal relationships came a distance second to my business.",
+    "stem": "I was a ______ and this meant that my health and personal relationships came a distance second to my business.",
     "options": [
       {
         "label": "A",
@@ -2472,13 +3256,21 @@
         "text": "geophysicist"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "疯狂的",
+      "B": "工作狂",
+      "C": "爱国者",
+      "D": "地球物理学家"
+    },
+    "trans": "我是一个工作狂，这意味着我的健康和个人关系远在我的事业之后，排在第二位。",
+    "full": "I was a workaholic and this meant that my health and personal relationships came a distance second to my business."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Apart from being intelligent, he is also diligent and warm-hearted, which earned him everyone's respect in the team.",
+    "stem": "Apart from being intelligent, he is also ______ and warm-hearted, which earned him everyone's respect in the team.",
     "options": [
       {
         "label": "A",
@@ -2497,13 +3289,21 @@
         "text": "typical"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "冲动的",
+      "B": "象征性的",
+      "C": "勤奋的",
+      "D": "典型的"
+    },
+    "trans": "除了聪明之外，他还很勤奋和热心肠，这为他赢得了团队中每个人的尊重。",
+    "full": "Apart from being intelligent, he is also symbolic and warm-hearted, which earned him everyone's respect in the team."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Parents and teachers can help children by providing explicit instruction regarding the mind as a learning machine.",
+    "stem": "Parents and teachers can help children by providing ______ instruction regarding the mind as a learning machine.",
     "options": [
       {
         "label": "A",
@@ -2522,13 +3322,21 @@
         "text": "cutting-edge"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "随机的",
+      "B": "明确的",
+      "C": "博士的",
+      "D": "尖端的"
+    },
+    "trans": "家长和老师可以通过提供关于心智作为学习机器的明确指导来帮助孩子。",
+    "full": "Parents and teachers can help children by providing doctoral instruction regarding the mind as a learning machine."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The inspiring speech about unity and peace continued to resound in our hearts long after the conference had officially ended.",
+    "stem": "The inspiring speech about unity and peace continued to ______ in our hearts long after the conference had officially ended.",
     "options": [
       {
         "label": "A",
@@ -2547,13 +3355,21 @@
         "text": "resound"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "解锁",
+      "B": "见证",
+      "C": "承认",
+      "D": "回响"
+    },
+    "trans": "那场关于团结与和平的鼓舞人心的演讲在会议正式结束很久之后仍然在我们心中回响。",
+    "full": "The inspiring speech about unity and peace continued to witness in our hearts long after the conference had officially ended."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Due to the urgent situation, all employees were asked to return to the office immediately.",
+    "stem": "Due to the ______ situation, all employees were asked to return to the office immediately.",
     "options": [
       {
         "label": "A",
@@ -2572,13 +3388,21 @@
         "text": "geological"
       }
     ],
-    "answer": "D"
+    "answer": "A",
+    "notes": {
+      "A": "紧急的",
+      "B": "暂时的",
+      "C": "卓越的",
+      "D": "地质的"
+    },
+    "trans": "由于情况紧急，所有员工被要求立即返回办公室。",
+    "full": "Due to the geological situation, all employees were asked to return to the office immediately."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Successfully completing a doctoral thesis requires not only original research and a rigorous dissertation but also unwavering dedication and resilience.",
+    "stem": "Successfully completing a ______ thesis requires not only original research and a rigorous dissertation but also unwavering dedication and resilience.",
     "options": [
       {
         "label": "A",
@@ -2597,13 +3421,21 @@
         "text": "unyielding"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "联合的",
+      "B": "博士的",
+      "C": "战略的",
+      "D": "不屈的"
+    },
+    "trans": "成功完成一篇博士论文不仅需要原创性研究和严谨的论文写作，还需要坚定不移的奉献精神和坚韧不拔的毅力。",
+    "full": "Successfully completing a strategic thesis requires not only original research and a rigorous dissertation but also unwavering dedication and resilience."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "They give each other a gold ring to symbolize their marriage commitment.",
+    "stem": "They give each other a gold ring to symbolize their marriage ______ment.",
     "options": [
       {
         "label": "A",
@@ -2622,13 +3454,21 @@
         "text": "commit"
       }
     ],
-    "answer": "B"
+    "answer": "A",
+    "notes": {
+      "A": "象征",
+      "B": "尊敬",
+      "C": "消失",
+      "D": "承诺"
+    },
+    "trans": "他们互赠金戒指以象征他们的婚姻承诺。",
+    "full": "They give each other a gold ring to symbolize their marriage reverement."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "A faint golden sunlight filtered through the leaves,casting delicate patterns on the quiet path.",
+    "stem": "A ______ golden sunlight filtered through the leaves,casting delicate patterns on the quiet path.",
     "options": [
       {
         "label": "A",
@@ -2647,13 +3487,21 @@
         "text": "exceptional"
       }
     ],
-    "answer": "B"
+    "answer": "A",
+    "notes": {
+      "A": "微弱的",
+      "B": "有帮助的",
+      "C": "疯狂的",
+      "D": "卓越的"
+    },
+    "trans": "一缕微弱的金色阳光透过树叶洒下，在静谧的小径上投射出精致的图案。",
+    "full": "A instrumental golden sunlight filtered through the leaves,casting delicate patterns on the quiet path."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "While cutting away tumors deep in the brain, she watched the movement of her surgical tools in a computer graphics image of the patient's brain.",
+    "stem": "While cutting away ______ deep in the brain, she watched the movement of her surgical tools in a computer graphics image of the patient's brain.",
     "options": [
       {
         "label": "A",
@@ -2672,13 +3520,21 @@
         "text": "seminars"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "冲动(复数)",
+      "B": "差距",
+      "C": "肿瘤",
+      "D": "研讨会"
+    },
+    "trans": "在切除大脑深处的肿瘤时，她通过患者大脑的计算机图形图像观察手术器械的运动。",
+    "full": "While cutting away seminars deep in the brain, she watched the movement of her surgical tools in a computer graphics image of the patient's brain."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "\"Resolutely adhering to one's principled stance is not the same thing as being hardline,\" he said.",
+    "stem": "\"______ adhering to one's principled stance is not the same thing as being hardline,\" he said.",
     "options": [
       {
         "label": "A",
@@ -2697,13 +3553,21 @@
         "text": "Explicitly"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "随机地",
+      "B": "坚决地",
+      "C": "通常",
+      "D": "明确地"
+    },
+    "trans": "坚决坚持自己的原则立场和强硬不是一回事，他说。",
+    "full": "\"Explicitly adhering to one's principled stance is not the same thing as being hardline,\" he said."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Many young people, most of whom were well-educated, headed for remote regions to chase their dreams.",
+    "stem": "Many young people, most of whom were well-educated, headed for remote regions to ______ their dreams.",
     "options": [
       {
         "label": "A",
@@ -2722,13 +3586,21 @@
         "text": "blame"
       }
     ],
-    "answer": "B"
+    "answer": "C",
+    "notes": {
+      "A": "超过",
+      "B": "推力",
+      "C": "追逐",
+      "D": "责备"
+    },
+    "trans": "许多年轻人，其中大多数受过良好教育，前往偏远地区追逐他们的梦想。",
+    "full": "Many young people, most of whom were well-educated, headed for remote regions to thrust their dreams."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "His whole life was a life of patriotism, love for the motherland and the people and a life of utter devotion to the literary cause of the people.",
+    "stem": "His whole life was a life of ______, love for the motherland and the people and a life of utter devotion to the literary cause of the people.",
     "options": [
       {
         "label": "A",
@@ -2747,13 +3619,21 @@
         "text": "cement"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "工作狂",
+      "B": "爱国主义",
+      "C": "开端",
+      "D": "水泥"
+    },
+    "trans": "他的一生是爱国主义的一生，是对祖国和人民的热爱的一生，是对人民文学事业无私奉献的一生。",
+    "full": "His whole life was a life of cement, love for the motherland and the people and a life of utter devotion to the literary cause of the people."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The key used for your application object will be embedded in your rules, making it difficult to change once you have a library of rules.",
+    "stem": "The key used for your application object will ______ your rules, making it difficult to change once you have a library of rules.",
     "options": [
       {
         "label": "A",
@@ -2772,13 +3652,21 @@
         "text": "hole up"
       }
     ],
-    "answer": "A"
+    "answer": "C",
+    "notes": {
+      "A": "与…竞赛",
+      "B": "得到回报",
+      "C": "嵌入",
+      "D": "躲藏"
+    },
+    "trans": "你的应用程序对象所使用的密钥将被嵌入在你的规则中，这使得一旦你有了规则库就很难更改。",
+    "full": "The key used for your application object will race against your rules, making it difficult to change once you have a library of rules."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The promise of finding long-term technological solutions to the problem of world food shortages seems difficult to fulfill.",
+    "stem": "The promise of finding long-term technological solutions to the problem of world food shortages seems difficult to ______.",
     "options": [
       {
         "label": "A",
@@ -2797,13 +3685,21 @@
         "text": "sacrifice"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "复兴",
+      "B": "实现",
+      "C": "最大化",
+      "D": "牺牲"
+    },
+    "trans": "寻找解决世界粮食短缺问题的长期技术解决方案的承诺似乎难以实现。",
+    "full": "The promise of finding long-term technological solutions to the problem of world food shortages seems difficult to sacrifice."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Despite facing numerous setbacks early in his career, the inventor's exceptional tenacity and creative thinking ultimately led to a breakthrough that transformed the entire industry.",
+    "stem": "Despite facing numerous setbacks early in his career, the inventor's ______ tenacity and creative thinking ultimately led to a breakthrough that transformed the entire industry.",
     "options": [
       {
         "label": "A",
@@ -2822,13 +3718,21 @@
         "text": "confidential"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "notes": {
+      "A": "紧急的",
+      "B": "卓越的",
+      "C": "原子的",
+      "D": "机密的"
+    },
+    "trans": "尽管在职业生涯早期面临无数次挫折，这位发明家的卓越韧性和创造性思维最终带来了改变整个行业的突破。",
+    "full": "Despite facing numerous setbacks early in his career, the inventor's exceptional tenacity and creative thinking ultimately led to a breakthrough that transformed the entire industry."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The general approved a strategic withdrawal, sacrificing territory to regroup forces and win a longer war.",
+    "stem": "The general approved a ______ withdrawal, sacrificing territory to regroup forces and win a longer war.",
     "options": [
       {
         "label": "A",
@@ -2847,13 +3751,21 @@
         "text": "multidiscipline"
       }
     ],
-    "answer": "C"
+    "answer": "A",
+    "notes": {
+      "A": "战略的",
+      "B": "认真的",
+      "C": "明确的",
+      "D": "多学科的"
+    },
+    "trans": "将军批准了一次战略性撤退，牺牲领土以重新集结力量，赢得一场更长的战争。",
+    "full": "The general approved a explicit withdrawal, sacrificing territory to regroup forces and win a longer war."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "In the face of profound adversity, their unwavering unity transformed a moment of potential despair into a powerful energy for collective growth and resilience.",
+    "stem": "In the face of profound ______, their unwavering unity transformed a moment of potential despair into a powerful energy for collective growth and resilience.",
     "options": [
       {
         "label": "A",
@@ -2872,13 +3784,21 @@
         "text": "beacon"
       }
     ],
-    "answer": "C"
+    "answer": "B",
+    "notes": {
+      "A": "荒野",
+      "B": "逆境",
+      "C": "支柱",
+      "D": "灯塔"
+    },
+    "trans": "面对深重的逆境，他们坚定不移的团结将可能绝望的时刻转化为集体成长和坚韧的强大能量。",
+    "full": "In the face of profound backbone, their unwavering unity transformed a moment of potential despair into a powerful energy for collective growth and resilience."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The research seminar provided a valuable forum for graduate students to present their thesis proposals and receive constructive critical feedback.",
+    "stem": "The research ______ provided a valuable forum for graduate students to present their thesis proposals and receive constructive critical feedback.",
     "options": [
       {
         "label": "A",
@@ -2897,13 +3817,21 @@
         "text": "anonymity"
       }
     ],
-    "answer": "D"
+    "answer": "C",
+    "notes": {
+      "A": "差距",
+      "B": "肿瘤",
+      "C": "研讨会",
+      "D": "匿名"
+    },
+    "trans": "研究研讨会为研究生提供了一个宝贵的论坛，让他们展示论文提案并获得建设性的批评反馈。",
+    "full": "The research anonymity provided a valuable forum for graduate students to present their thesis proposals and receive constructive critical feedback."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Earth's crust consists mainly of igneous and metamorphic rocks.",
+    "stem": "Earth's ______ consists mainly of igneous and metamorphic rocks.",
     "options": [
       {
         "label": "A",
@@ -2922,13 +3850,21 @@
         "text": "fragment"
       }
     ],
-    "answer": "C"
+    "answer": "A",
+    "notes": {
+      "A": "地壳",
+      "B": "爆炸",
+      "C": "大气",
+      "D": "碎片"
+    },
+    "trans": "地壳主要由火成岩和变质岩组成。",
+    "full": "Earth's atmosphere consists mainly of igneous and metamorphic rocks."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "We must acknowledge the significant contributions of our dedicated team, whose hard work made this project a resounding success.",
+    "stem": "We must ______ the significant contributions of our dedicated team, whose hard work made this project a resounding success.",
     "options": [
       {
         "label": "A",
@@ -2947,13 +3883,21 @@
         "text": "necessitate"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "notes": {
+      "A": "支持",
+      "B": "反驳",
+      "C": "承认",
+      "D": "需要"
+    },
+    "trans": "我们必须承认我们敬业团队的巨大贡献，正是他们的辛勤工作使这个项目取得了巨大成功。",
+    "full": "We must acknowledge the significant contributions of our dedicated team, whose hard work made this project a resounding success."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Only by their joint efforts, can parents and children bridge the generation gap between them.",
+    "stem": "Only by their ______ efforts, can parents and children bridge the generation gap between them.",
     "options": [
       {
         "label": "A",
@@ -2972,13 +3916,21 @@
         "text": "distressed"
       }
     ],
-    "answer": "D"
+    "answer": "B",
+    "notes": {
+      "A": "战略的",
+      "B": "联合的",
+      "C": "实现的",
+      "D": "痛苦的"
+    },
+    "trans": "只有通过父母和孩子的共同努力，他们才能弥合彼此之间的代沟。",
+    "full": "Only by their distressed efforts, can parents and children bridge the generation gap between them."
   },
   {
     "chapter": "B2U4",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "The sudden, powerful impulse to leap from the moving train was quickly suppressed by my brain's overwhelming instinct for survival.",
+    "stem": "The sudden, powerful ______ to leap from the moving train was quickly suppressed by my brain's overwhelming instinct for survival.",
     "options": [
       {
         "label": "A",
@@ -2997,6 +3949,14 @@
         "text": "impulse"
       }
     ],
-    "answer": "B"
+    "answer": "D",
+    "notes": {
+      "A": "爱国主义",
+      "B": "碎片",
+      "C": "不足",
+      "D": "冲动"
+    },
+    "trans": "从行驶的火车上跳下去的突如其来的强烈冲动，很快就被我大脑中压倒性的生存本能压制住了。",
+    "full": "The sudden, powerful fragment to leap from the moving train was quickly suppressed by my brain's overwhelming instinct for survival."
   }
 ]
