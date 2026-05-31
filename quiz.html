@@ -62,6 +62,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 .fi-inp{border:2px solid #d0d5dd;border-radius:6px;padding:5px 10px;font-size:.95em;width:100px;font-family:inherit;outline:none;transition:border .2s}
 .fi-inp:focus{border-color:#4a90d9}
 .fi-inp:disabled{background:#f0f0f0;color:#666}
+.fi-mk{display:inline-block;min-width:32px;text-align:center;border-bottom:2px solid #667eea;margin:0 3px;color:#667eea;font-weight:600;font-size:.9em;padding:0 2px}
+.fi-row{margin-top:16px;padding:12px 16px;background:#f8f9fc;border-radius:8px;border:1px solid #e8ecf1}
+.fi-row-tip{font-size:.82em;color:#667eea;margin-bottom:10px;font-weight:500}
+.fi-row-item{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.fi-row-item:last-child{margin-bottom:0}
+.fi-row-label{font-weight:600;color:#555;min-width:44px;font-size:.88em}
 
 /* ===== 代码块 ===== */
 .code-block{background:#1e293b;color:#e2e8f0;border-radius:8px;padding:12px 16px;margin:10px 0;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.85em;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
@@ -379,11 +385,14 @@ function renderQuestion() {
   const typeClass = q.type === '单选题' ? 'bs' : q.type === '多选题' ? 'bm' : q.type === '填空题' ? 'bf' : 'bj';
 
   // 渲染选项区域
+  let stemHTML = '';
   let optionHTML = '';
   if (q.type === '判断题') {
     optionHTML = renderTrueFalse(i, answered);
   } else if (q.type === '填空题') {
-    optionHTML = renderFillIn(i, answered);
+    const fi = renderFillIn(i, answered);
+    stemHTML = fi.stem;
+    optionHTML = fi.inputs;
   } else {
     optionHTML = renderOptions(i, answered);
   }
@@ -429,7 +438,7 @@ function renderQuestion() {
     '<span class="qb ' + typeClass + '">' + q.type + '</span>' +
     '<span class="qp">' + q.chapter + ' ' + q.chapter_title + ' · 第 ' + (i + 1) + '/' + questionPool.length + ' 题</span>' +
     '</div>' +
-    (q.type === '填空题' ? '' : '<div class="qs">' + renderStem(q.stem) + '</div>') +
+    (q.type === '填空题' ? stemHTML : '<div class="qs">' + renderStem(q.stem) + '</div>') +
     optionHTML + feedbackHTML +
     '</div>';
 
@@ -453,34 +462,63 @@ function renderTrueFalse(i, answered) {
     '</div>';
 }
 
-/* ===== 填空题渲染 ===== */
+/* ===== 填空题渲染（题干+代码块 → 底部统一输入框） ===== */
 function renderFillIn(i, answered) {
   const q = questionPool[i];
-  const blanks = q.blanks || [];
   const ua = userAnswers[i] || '';
   const parts = ua ? ua.split('|') : [];
   const stem = q.stem;
 
-  // 生成输入框的替换函数
-  const replaceInputs = (text) => text.replace(/【(\d+)】/g, (match, bn) => {
-    const idx = parseInt(bn) - 1;
-    const val = parts[idx] || '';
-    const disabled = answered ? 'disabled' : '';
-    return ' <input type="text" class="fi-inp" id="fb' + i + '_' + idx + '" value="' +
-      escapeAttr(val) + '" ' + disabled + ' placeholder="填空' + bn + '"> ';
-  });
+  // 确定空数量（去重【数字】编号）
+  const blankSet = new Set();
+  stem.replace(/【(\d+)】/g, (m, n) => { blankSet.add(parseInt(n)); return m; });
+  const blankCount = blankSet.size || (q.answer ? q.answer.split('|').length : 1);
 
-  // 检测是否有代码块（包含 \n）
-  if (stem.includes('\n')) {
-    const segments = stem.split('\n');
-    const desc = replaceInputs(escapeHTML(segments[0]));
-    const codeLines = segments.slice(1).map(l => replaceInputs(highlightPython(l))).join('\n');
-    return '<div class="fi-wrap">' + desc +
-      '<div class="code-block">' + codeLines + '</div></div>';
+  //【数字】→ 视觉占位标记
+  const marker = (n) => '<span class="fi-mk">（' + n + '）</span>';
+
+  // 检测代码块
+  const hasCode = stem.includes('\n');
+  let descHTML = '';
+  let codeHTML = '';
+
+  if (hasCode) {
+    const lines = stem.split('\n');
+    const rawDesc = lines[0];
+    const rawCode = lines.slice(1).join('\n');
+
+    descHTML = escapeHTML(rawDesc).replace(/【(\d+)】/g, (m, n) => marker(n));
+
+    const codeLines = rawCode.split('\n').map(l => {
+      let line = escapeHTML(l);
+      line = highlightPython(line);
+      line = line.replace(/【(\d+)】/g, (m, n) => marker(n));
+      return line;
+    }).join('\n');
+
+    codeHTML = '<div class="code-block">' + codeLines + '</div>';
+  } else {
+    descHTML = escapeHTML(stem).replace(/【(\d+)】/g, (m, n) => marker(n));
   }
 
-  // 普通填空题（无代码）
-  return '<div class="fi-wrap">' + replaceInputs(escapeHTML(stem)) + '</div>';
+  // 题干区域
+  const stemHTML = '<div class="qs">' + descHTML + codeHTML + '</div>';
+
+  // 底部统一输入框
+  let inputsHTML = '<div class="fi-row">';
+  inputsHTML += '<div class="fi-row-tip">📝 作答区（共 ' + blankCount + ' 空）</div>';
+  for (let j = 0; j < blankCount; j++) {
+    const val = parts[j] || '';
+    const dis = answered ? 'disabled' : '';
+    inputsHTML += '<div class="fi-row-item">' +
+      '<span class="fi-row-label">第' + (j + 1) + '空</span>' +
+      '<input type="text" class="fi-inp" id="fb' + i + '_' + j +
+      '" value="' + escapeAttr(val) + '" ' + dis + ' placeholder="请输入答案">' +
+      '</div>';
+  }
+  inputsHTML += '</div>';
+
+  return { stem: stemHTML, inputs: inputsHTML };
 }
 
 /* ===== 单选/多选渲染 ===== */
