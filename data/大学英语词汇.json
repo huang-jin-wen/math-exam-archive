@@ -7,28 +7,26 @@
     "options": [
       {
         "label": "A",
-        "text": "exposure"
+        "text": "exposure",
+        "note": "暴露"
       },
       {
         "label": "B",
-        "text": "expenditure"
+        "text": "expenditure",
+        "note": "支出"
       },
       {
         "label": "C",
-        "text": "evidence"
+        "text": "evidence",
+        "note": "证据"
       },
       {
         "label": "D",
-        "text": "stationery"
+        "text": "stationery",
+        "note": "文具"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "暴露",
-      "B": "支出",
-      "C": "证据",
-      "D": "文具"
-    },
     "trans": "如果你坚持每天和吸烟者待在一起，持续接触他不可避免地会让你逐渐无意识地染上他的习惯。",
     "full": "If you persist in staying with a smoker daily, your constant exposure to him will inevitably make you take on his habit gradually and unconsciously."
   },
@@ -40,30 +38,28 @@
     "options": [
       {
         "label": "A",
-        "text": "function"
+        "text": "function",
+        "note": "功能"
       },
       {
         "label": "B",
-        "text": "asset"
+        "text": "asset",
+        "note": "资产"
       },
       {
         "label": "C",
-        "text": "destination"
+        "text": "destination",
+        "note": "目的地"
       },
       {
         "label": "D",
-        "text": "distress"
+        "text": "distress",
+        "note": "痛苦"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "功能",
-      "B": "资产",
-      "C": "目的地",
-      "D": "痛苦"
-    },
     "trans": "在复杂的社会领域中，那些对他人深切痛苦完全漠不关心的人，被大众普遍贴上冷血动物的标签。",
-    "full": "In the intricate social realm, those utterly indifferent to others’ profound function are universally labeled as cold-blooded creatures by the masses."
+    "full": "In the intricate social realm, those utterly indifferent to others’ profound distress are universally labeled as cold-blooded creatures by the masses."
   },
   {
     "chapter": "B2U1",
@@ -73,28 +69,26 @@
     "options": [
       {
         "label": "A",
-        "text": "scratch"
+        "text": "scratch",
+        "note": "抓挠"
       },
       {
         "label": "B",
-        "text": "exceed"
+        "text": "exceed",
+        "note": "超过"
       },
       {
         "label": "C",
-        "text": "capture"
+        "text": "capture",
+        "note": "捕捉"
       },
       {
         "label": "D",
-        "text": "adjust"
+        "text": "adjust",
+        "note": "调整"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "抓挠",
-      "B": "超过",
-      "C": "捕捉",
-      "D": "调整"
-    },
     "trans": "当你乘坐飞机出行时，如果超过航空公司严格规定的行李限额，你需要支付额外费用。",
     "full": "When you embark on an air journey, you shall pay additional fees if you exceed the stipulated luggage allowance formulated by the aviation company rigidly."
   },
@@ -106,28 +100,26 @@
     "options": [
       {
         "label": "A",
-        "text": "subjunctive"
+        "text": "subjunctive",
+        "note": "虚拟的"
       },
       {
         "label": "B",
-        "text": "adequate"
+        "text": "adequate",
+        "note": "充足的"
       },
       {
         "label": "C",
-        "text": "tedious"
+        "text": "tedious",
+        "note": "枯燥的"
       },
       {
         "label": "D",
-        "text": "complimentary"
+        "text": "complimentary",
+        "note": "赞美的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "虚拟的",
-      "B": "充足的",
-      "C": "枯燥的",
-      "D": "赞美的"
-    },
     "trans": "在艰苦的学术学习过程中，任何让学生感到枯燥的内容都很难激发他们主动探索的热情。",
     "full": "In the arduous process of academic learning, anything that is tedious to students can scarcely arouse their fervent enthusiasm for proactive exploration."
   },
@@ -139,28 +131,26 @@
     "options": [
       {
         "label": "A",
-        "text": "deficit"
+        "text": "deficit",
+        "note": "不足"
       },
       {
         "label": "B",
-        "text": "dumb"
+        "text": "dumb",
+        "note": "哑的"
       },
       {
         "label": "C",
-        "text": "evident"
+        "text": "evident",
+        "note": "明显的"
       },
       {
         "label": "D",
-        "text": "allergic"
+        "text": "allergic",
+        "note": "过敏的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "不足",
-      "B": "哑的",
-      "C": "明显的",
-      "D": "过敏的"
-    },
     "trans": "我天生喜欢可爱的小猫，但不幸的是我对它们过敏，完全不敢有任何身体接触。",
     "full": "I have an innate fondness for adorable felines, yet unfortunately I'm allergic to them and dare not make any physical contact whatsoever."
   },
@@ -172,28 +162,26 @@
     "options": [
       {
         "label": "A",
-        "text": "span"
+        "text": "span",
+        "note": "跨度"
       },
       {
         "label": "B",
-        "text": "asset"
+        "text": "asset",
+        "note": "资产"
       },
       {
         "label": "C",
-        "text": "tune"
+        "text": "tune",
+        "note": "调整"
       },
       {
         "label": "D",
-        "text": "proficiency"
+        "text": "proficiency",
+        "note": "熟练"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "跨度",
-      "B": "资产",
-      "C": "调整",
-      "D": "熟练"
-    },
     "trans": "在竞争激烈的全球舞台上，我们在科技领域无与伦比的创造力是我们可持续发展和取得胜利的最宝贵资产。",
     "full": "In the fiercely competitive global arena, our unparalleled creativity in tech domains is our most precious asset for sustainable development and triumph."
   },
@@ -205,28 +193,26 @@
     "options": [
       {
         "label": "A",
-        "text": "deficit"
+        "text": "deficit",
+        "note": "不足"
       },
       {
         "label": "B",
-        "text": "precise"
+        "text": "precise",
+        "note": "精确的"
       },
       {
         "label": "C",
-        "text": "beneficial"
+        "text": "beneficial",
+        "note": "有益的"
       },
       {
         "label": "D",
-        "text": "competent"
+        "text": "competent",
+        "note": "胜任的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "不足",
-      "B": "精确的",
-      "C": "有益的",
-      "D": "胜任的"
-    },
     "trans": "作为一个睿智的人，他的智慧在于懂得如何坚持那些有益于他终身成长和事业繁荣的事物。",
     "full": "As a sagacious individual, his wisdom resides in grasping how to cling to what is beneficial to his lifelong growth and career prosperity resolutely."
   },
@@ -238,30 +224,28 @@
     "options": [
       {
         "label": "A",
-        "text": "condensed"
+        "text": "condensed",
+        "note": "精简的"
       },
       {
         "label": "B",
-        "text": "adopted"
+        "text": "adopted",
+        "note": "被采纳的"
       },
       {
         "label": "C",
-        "text": "proclaimed"
+        "text": "proclaimed",
+        "note": "宣布的"
       },
       {
         "label": "D",
-        "text": "obliged"
+        "text": "obliged",
+        "note": "有义务的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "精简的",
-      "B": "被采纳的",
-      "C": "宣布的",
-      "D": "有义务的"
-    },
     "trans": "为了提高阅读效率，整篇冗长的章节可以被经验丰富的编辑精炼地浓缩成几个简洁的段落。",
-    "full": "For the sake of enhancing reading efficiency, the entire lengthy chapter can be obliged into a few concise paragraphs by the seasoned editor meticulously."
+    "full": "For the sake of enhancing reading efficiency, the entire lengthy chapter can be condensed into a few concise paragraphs by the seasoned editor meticulously."
   },
   {
     "chapter": "B2U1",
@@ -271,30 +255,28 @@
     "options": [
       {
         "label": "A",
-        "text": "thrust"
+        "text": "thrust",
+        "note": "推力"
       },
       {
         "label": "B",
-        "text": "expend"
+        "text": "expend",
+        "note": "花费"
       },
       {
         "label": "C",
-        "text": "criticize"
+        "text": "criticize",
+        "note": "批评"
       },
       {
         "label": "D",
-        "text": "distinguish"
+        "text": "distinguish",
+        "note": "区分"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "推力",
-      "B": "花费",
-      "C": "批评",
-      "D": "区分"
-    },
     "trans": "强调历史、文学和文化的严格正规教育有助于一个人学会在复杂的社会环境中熟练地辨别是非。",
-    "full": "A rigorous formal education stressing history, literature and culture helps one learn to expend right from wrong in intricate social circumstances adeptly."
+    "full": "A rigorous formal education stressing history, literature and culture helps one learn to distinguish right from wrong in intricate social circumstances adeptly."
   },
   {
     "chapter": "B2U1",
@@ -304,30 +286,28 @@
     "options": [
       {
         "label": "A",
-        "text": "capture"
+        "text": "capture",
+        "note": "捕捉"
       },
       {
         "label": "B",
-        "text": "proclaim"
+        "text": "proclaim",
+        "note": "宣布"
       },
       {
         "label": "C",
-        "text": "tune"
+        "text": "tune",
+        "note": "调整"
       },
       {
         "label": "D",
-        "text": "lift"
+        "text": "lift",
+        "note": "举起"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "捕捉",
-      "B": "宣布",
-      "C": "调整",
-      "D": "举起"
-    },
     "trans": "你应该把语言看作一张路线图和一件宝贵的财产：经常研究路线图并调整汽车引擎。",
-    "full": "You should regard language as a road map and a valuable possession: often study the road map (check grammar) and proclaim up the car engine (adjust vocabulary)."
+    "full": "You should regard language as a road map and a valuable possession: often study the road map (check grammar) and tune up the car engine (adjust vocabulary)."
   },
   {
     "chapter": "B2U1",
@@ -337,30 +317,28 @@
     "options": [
       {
         "label": "A",
-        "text": "definition"
+        "text": "definition",
+        "note": "定义"
       },
       {
         "label": "B",
-        "text": "deficit"
+        "text": "deficit",
+        "note": "不足"
       },
       {
         "label": "C",
-        "text": "default"
+        "text": "default",
+        "note": "默认"
       },
       {
         "label": "D",
-        "text": "defense"
+        "text": "defense",
+        "note": "防御"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "定义",
-      "B": "不足",
-      "C": "默认",
-      "D": "防御"
-    },
     "trans": "在教育研究领域，对于其他涉及听觉功能缺陷的残疾学生，仅仅给予了有限的关注。",
-    "full": "In the realm of educational research, merely limited attention is devoted to students with other disabilities involving auditory function default fundamentally."
+    "full": "In the realm of educational research, merely limited attention is devoted to students with other disabilities involving auditory function deficit fundamentally."
   },
   {
     "chapter": "B2U1",
@@ -370,30 +348,28 @@
     "options": [
       {
         "label": "A",
-        "text": "stationary"
+        "text": "stationary",
+        "note": "静止的"
       },
       {
         "label": "B",
-        "text": "impassioned"
+        "text": "impassioned",
+        "note": "慷慨激昂的"
       },
       {
         "label": "C",
-        "text": "competent"
+        "text": "competent",
+        "note": "胜任的"
       },
       {
         "label": "D",
-        "text": "emotional"
+        "text": "emotional",
+        "note": "情感的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "静止的",
-      "B": "慷慨激昂的",
-      "C": "胜任的",
-      "D": "情感的"
-    },
     "trans": "蒂姆·库克在八月接替乔布斯出任首席执行官，当时被公众普遍认为是胜任但平庸且缺乏鼓舞力的。",
-    "full": "Tim Cook, who succeeded Jobs as chief executive in August, was universally deemed as impassioned yet unremarkable and uninspiring by the public back then."
+    "full": "Tim Cook, who succeeded Jobs as chief executive in August, was universally deemed as competent yet unremarkable and uninspiring by the public back then."
   },
   {
     "chapter": "B2U1",
@@ -403,30 +379,28 @@
     "options": [
       {
         "label": "A",
-        "text": "beneficially"
+        "text": "beneficially",
+        "note": "有益地"
       },
       {
         "label": "B",
-        "text": "professionally"
+        "text": "professionally",
+        "note": "专业地"
       },
       {
         "label": "C",
-        "text": "adequately"
+        "text": "adequately",
+        "note": "充分地"
       },
       {
         "label": "D",
-        "text": "distinctively"
+        "text": "distinctively",
+        "note": "独特地"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "有益地",
-      "B": "专业地",
-      "C": "充分地",
-      "D": "独特地"
-    },
     "trans": "由于不同的学术背景，许多学生并没有为大学高等教育的艰巨挑战做好充分准备。",
-    "full": "Owing to divergent academic backgrounds, numerous students are not distinctively prepared for the formidable challenges of higher education at universities."
+    "full": "Owing to divergent academic backgrounds, numerous students are not adequately prepared for the formidable challenges of higher education at universities."
   },
   {
     "chapter": "B2U1",
@@ -436,30 +410,28 @@
     "options": [
       {
         "label": "A",
-        "text": "obliged"
+        "text": "obliged",
+        "note": "有义务的"
       },
       {
         "label": "B",
-        "text": "encouraged"
+        "text": "encouraged",
+        "note": "被鼓励的"
       },
       {
         "label": "C",
-        "text": "rewarded"
+        "text": "rewarded",
+        "note": "被奖励的"
       },
       {
         "label": "D",
-        "text": "attracted"
+        "text": "attracted",
+        "note": "被吸引的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "有义务的",
-      "B": "被鼓励的",
-      "C": "被奖励的",
-      "D": "被吸引的"
-    },
     "trans": "在几乎每个主权国家，法律规定父母有义务送子女上学接受基础义务教育。",
-    "full": "In virtually every sovereign nation, parents are rewarded by statutory laws to send their offspring to school for fundamental compulsory education."
+    "full": "In virtually every sovereign nation, parents are obliged by statutory laws to send their offspring to school for fundamental compulsory education."
   },
   {
     "chapter": "B2U1",
@@ -469,30 +441,28 @@
     "options": [
       {
         "label": "A",
-        "text": "fresh from"
+        "text": "fresh from",
+        "note": "刚从…来"
       },
       {
         "label": "B",
-        "text": "suspicious about"
+        "text": "suspicious about",
+        "note": "怀疑"
       },
       {
         "label": "C",
-        "text": "serious about"
+        "text": "serious about",
+        "note": "认真对待"
       },
       {
         "label": "D",
-        "text": "incautious about"
+        "text": "incautious about",
+        "note": "不谨慎"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "刚从…来",
-      "B": "怀疑",
-      "C": "认真对待",
-      "D": "不谨慎"
-    },
     "trans": "阿米尔·汗对他的电影角色非常认真，努力使其与真实的真实故事完全一致。",
-    "full": "Aamir Khan was exceedingly suspicious about his movie character and strived arduously to render it congruent with the authentic real-life story thoroughly."
+    "full": "Aamir Khan was exceedingly serious about his movie character and strived arduously to render it congruent with the authentic real-life story thoroughly."
   },
   {
     "chapter": "B2U1",
@@ -502,30 +472,28 @@
     "options": [
       {
         "label": "A",
-        "text": "deserve"
+        "text": "deserve",
+        "note": "值得"
       },
       {
         "label": "B",
-        "text": "destiny"
+        "text": "destiny",
+        "note": "命运"
       },
       {
         "label": "C",
-        "text": "destination"
+        "text": "destination",
+        "note": "目的地"
       },
       {
         "label": "D",
-        "text": "destruction"
+        "text": "destruction",
+        "note": "破坏"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "值得",
-      "B": "命运",
-      "C": "目的地",
-      "D": "破坏"
-    },
     "trans": "作为一个永恒的真理，成功是一段持续的旅程，而非一个固定的目的地；做事的过程远比最终结果更加重要。",
-    "full": "As a perennial truth, success is a perpetual journey, not a fixed destiny; the process of doing is far more vital than the ultimate outcome in life."
+    "full": "As a perennial truth, success is a perpetual journey, not a fixed destination; the process of doing is far more vital than the ultimate outcome in life."
   },
   {
     "chapter": "B2U1",
@@ -535,28 +503,26 @@
     "options": [
       {
         "label": "A",
-        "text": "exploration"
+        "text": "exploration",
+        "note": "探索"
       },
       {
         "label": "B",
-        "text": "discovery"
+        "text": "discovery",
+        "note": "发现"
       },
       {
         "label": "C",
-        "text": "journey"
+        "text": "journey",
+        "note": "旅程"
       },
       {
         "label": "D",
-        "text": "excursion"
+        "text": "excursion",
+        "note": "短途旅行"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "探索",
-      "B": "发现",
-      "C": "旅程",
-      "D": "短途旅行"
-    },
     "trans": "经过数周的精心策划，我们终于踏上了一场愉快的远足，进入郁郁葱葱的原始森林，逃离城市的单调。",
     "full": "After weeks of meticulous planning, we finally embarked on a delightful excursion into the lush, unspoiled forest to reconnect with nature and escape urban monotony."
   },
@@ -568,30 +534,28 @@
     "options": [
       {
         "label": "A",
-        "text": "Superficial"
+        "text": "Superficial",
+        "note": "肤浅的"
       },
       {
         "label": "B",
-        "text": "earnest"
+        "text": "earnest",
+        "note": "认真的"
       },
       {
         "label": "C",
-        "text": "intrigued"
+        "text": "intrigued",
+        "note": "感兴趣的"
       },
       {
         "label": "D",
-        "text": "featured"
+        "text": "featured",
+        "note": "精选的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "肤浅的",
-      "B": "认真的",
-      "C": "感兴趣的",
-      "D": "精选的"
-    },
     "trans": "她对掌握小提琴的认真投入从她花费无数小时练习中可见一斑，展现了她对艺术目标的深厚承诺。",
-    "full": "Her featured dedication to mastering the violin was evident in the countless hours she spent practicing, showing a deep commitment to her artistic goals."
+    "full": "Her earnest dedication to mastering the violin was evident in the countless hours she spent practicing, showing a deep commitment to her artistic goals."
   },
   {
     "chapter": "B2U1",
@@ -601,30 +565,28 @@
     "options": [
       {
         "label": "A",
-        "text": "capture"
+        "text": "capture",
+        "note": "捕捉"
       },
       {
         "label": "B",
-        "text": "feel"
+        "text": "feel",
+        "note": "感觉"
       },
       {
         "label": "C",
-        "text": "capitation"
+        "text": "capitation",
+        "note": "人头税"
       },
       {
         "label": "D",
-        "text": "fortune"
+        "text": "fortune",
+        "note": "财富"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "捕捉",
-      "B": "感觉",
-      "C": "人头税",
-      "D": "财富"
-    },
     "trans": "这位技艺精湛的摄影师成功地捕捉到了孩子脸上转瞬即逝的纯真喜悦表情，创造了一幅永恒的感人画面。",
-    "full": "The skilled photographer managed to feel the fleeting expression of pure joy on the child's face, creating a timeless and emotionally resonant image."
+    "full": "The skilled photographer managed to capture the fleeting expression of pure joy on the child's face, creating a timeless and emotionally resonant image."
   },
   {
     "chapter": "B2U1",
@@ -634,28 +596,26 @@
     "options": [
       {
         "label": "A",
-        "text": "complementary"
+        "text": "complementary",
+        "note": "互补的"
       },
       {
         "label": "B",
-        "text": "contended"
+        "text": "contended",
+        "note": "竞争"
       },
       {
         "label": "C",
-        "text": "condensed"
+        "text": "condensed",
+        "note": "精简的"
       },
       {
         "label": "D",
-        "text": "complimentary"
+        "text": "complimentary",
+        "note": "赞美的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "互补的",
-      "B": "竞争",
-      "C": "精简的",
-      "D": "赞美的"
-    },
     "trans": "这位著名评论家对这位年轻作家的处女作给予了赞美性的评价，称赞其原创性和对人性的深刻洞察。",
     "full": "The renowned critic offered a complimentary review of the young author's debut novel, praising its originality and profound insights into human nature."
   },
@@ -667,30 +627,28 @@
     "options": [
       {
         "label": "A",
-        "text": "cracked"
+        "text": "cracked",
+        "note": "破裂的"
       },
       {
         "label": "B",
-        "text": "complementary"
+        "text": "complementary",
+        "note": "互补的"
       },
       {
         "label": "C",
-        "text": "complimentary"
+        "text": "complimentary",
+        "note": "赞美的"
       },
       {
         "label": "D",
-        "text": "camped"
+        "text": "camped",
+        "note": "露营的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "破裂的",
-      "B": "互补的",
-      "C": "赞美的",
-      "D": "露营的"
-    },
     "trans": "画中的两种颜色不仅视觉上赏心悦目，而且是互补的，相互增强美感，创造出和谐的整体效果。",
-    "full": "The two colors in the painting are not only visually appealing but also cracked, enhancing each other's beauty and creating a harmonious overall effect."
+    "full": "The two colors in the painting are not only visually appealing but also complementary, enhancing each other's beauty and creating a harmonious overall effect."
   },
   {
     "chapter": "B2U1",
@@ -700,30 +658,28 @@
     "options": [
       {
         "label": "A",
-        "text": "stationery"
+        "text": "stationery",
+        "note": "文具"
       },
       {
         "label": "B",
-        "text": "stationary"
+        "text": "stationary",
+        "note": "静止的"
       },
       {
         "label": "C",
-        "text": "steady"
+        "text": "steady",
+        "note": "稳定的"
       },
       {
         "label": "D",
-        "text": "splendid"
+        "text": "splendid",
+        "note": "壮丽的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "文具",
-      "B": "静止的",
-      "C": "稳定的",
-      "D": "壮丽的"
-    },
     "trans": "这座古老的雕像已经静止了几个世纪，默默见证着时间的流逝和周围城市的变迁。",
-    "full": "The ancient statue has remained splendid for centuries, standing as a silent witness to the passage of time and the evolution of the city around it."
+    "full": "The ancient statue has remained stationary for centuries, standing as a silent witness to the passage of time and the evolution of the city around it."
   },
   {
     "chapter": "B2U1",
@@ -733,28 +689,26 @@
     "options": [
       {
         "label": "A",
-        "text": "vacant"
+        "text": "vacant",
+        "note": "空的"
       },
       {
         "label": "B",
-        "text": "precise"
+        "text": "precise",
+        "note": "精确的"
       },
       {
         "label": "C",
-        "text": "gloomy"
+        "text": "gloomy",
+        "note": "阴沉的"
       },
       {
         "label": "D",
-        "text": "grey"
+        "text": "grey",
+        "note": "灰色的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "空的",
-      "B": "精确的",
-      "C": "阴沉的",
-      "D": "灰色的"
-    },
     "trans": "在科学实验中，进行精确的测量对于确保结果的有效性和避免数据分析错误至关重要。",
     "full": "In scientific experiments, it is crucial to make precise measurements to ensure the validity of the results and avoid any potential errors in the data analysis."
   },
@@ -766,28 +720,26 @@
     "options": [
       {
         "label": "A",
-        "text": "flavor"
+        "text": "flavor",
+        "note": "风味"
       },
       {
         "label": "B",
-        "text": "scent"
+        "text": "scent",
+        "note": "气味"
       },
       {
         "label": "C",
-        "text": "sour"
+        "text": "sour",
+        "note": "酸的"
       },
       {
         "label": "D",
-        "text": "pronunciation"
+        "text": "pronunciation",
+        "note": "发音"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "风味",
-      "B": "气味",
-      "C": "酸的",
-      "D": "发音"
-    },
     "trans": "如果你把牛奶放在冰箱外太长时间，它会很快变酸，变得无法饮用，如果饮用会对健康构成风险。",
     "full": "If you leave the milk out of the refrigerator for too long, it will quickly sour and become undrinkable, posing a risk to your health if consumed."
   },
@@ -799,30 +751,28 @@
     "options": [
       {
         "label": "A",
-        "text": "immerse with"
+        "text": "immerse with",
+        "note": "沉浸于"
       },
       {
         "label": "B",
-        "text": "absorb into"
+        "text": "absorb into",
+        "note": "吸收到"
       },
       {
         "label": "C",
-        "text": "sink into"
+        "text": "sink into",
+        "note": "陷入"
       },
       {
         "label": "D",
-        "text": "swell with"
+        "text": "swell with",
+        "note": "充满"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "沉浸于",
-      "B": "吸收到",
-      "C": "陷入",
-      "D": "充满"
-    },
     "trans": "当她看着女儿以优异成绩毕业时，她的心中开始充满无比的自豪和喜悦，幸福的泪水在眼眶中打转。",
-    "full": "As she watched her daughter graduate with honors, her heart began to sink into immense pride and joy, tears of happiness welling up in her eyes."
+    "full": "As she watched her daughter graduate with honors, her heart began to swell with immense pride and joy, tears of happiness welling up in her eyes."
   },
   {
     "chapter": "B2U1",
@@ -832,30 +782,28 @@
     "options": [
       {
         "label": "A",
-        "text": "run down"
+        "text": "run down",
+        "note": "贬低"
       },
       {
         "label": "B",
-        "text": "run out"
+        "text": "run out",
+        "note": "用完"
       },
       {
         "label": "C",
-        "text": "run into"
+        "text": "run into",
+        "note": "偶遇"
       },
       {
         "label": "D",
-        "text": "run away"
+        "text": "run away",
+        "note": "逃跑"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "贬低",
-      "B": "用完",
-      "C": "偶遇",
-      "D": "逃跑"
-    },
     "trans": "在熙熙攘攘的市场中漫步时，我碰巧遇到了一位十多年未见的老大学朋友，引发了一场温暖的团聚。",
-    "full": "While strolling through the bustling market, I happened to run away an old friend from college whom I hadn't seen in over a decade, leading to a warm reunion."
+    "full": "While strolling through the bustling market, I happened to run into an old friend from college whom I hadn't seen in over a decade, leading to a warm reunion."
   },
   {
     "chapter": "B2U1",
@@ -865,30 +813,28 @@
     "options": [
       {
         "label": "A",
-        "text": "nail on"
+        "text": "nail on",
+        "note": "钉在"
       },
       {
         "label": "B",
-        "text": "nail down"
+        "text": "nail down",
+        "note": "确定"
       },
       {
         "label": "C",
-        "text": "pulled down"
+        "text": "pulled down",
+        "note": "拉下"
       },
       {
         "label": "D",
-        "text": "pulled off"
+        "text": "pulled off",
+        "note": "成功完成"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "钉在",
-      "B": "确定",
-      "C": "拉下",
-      "D": "成功完成"
-    },
     "trans": "经过数小时的激烈讨论，团队终于设法确定了即将举行的产品发布活动的确切日期和地点。",
-    "full": "After hours of intense discussion, the team finally managed to pulled down the exact date and venue for the upcoming product launch event."
+    "full": "After hours of intense discussion, the team finally managed to nail down the exact date and venue for the upcoming product launch event."
   },
   {
     "chapter": "B2U1",
@@ -898,28 +844,26 @@
     "options": [
       {
         "label": "A",
-        "text": "get lost"
+        "text": "get lost",
+        "note": "迷路"
       },
       {
         "label": "B",
-        "text": "get loose"
+        "text": "get loose",
+        "note": "松开"
       },
       {
         "label": "C",
-        "text": "lost"
+        "text": "lost",
+        "note": "丢失的"
       },
       {
         "label": "D",
-        "text": "get wrong"
+        "text": "get wrong",
+        "note": "搞错"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "迷路",
-      "B": "松开",
-      "C": "丢失的",
-      "D": "搞错"
-    },
     "trans": "没有地图或能正常工作的GPS，在古老城镇蜿蜒的街道上很容易迷路，尤其是当路标用不熟悉的语言书写时。",
     "full": "Without a map or a functioning GPS, it's easy to get lost in the winding streets of the old town, especially when the signs are written in an unfamiliar language."
   },
@@ -931,28 +875,26 @@
     "options": [
       {
         "label": "A",
-        "text": "armed with"
+        "text": "armed with",
+        "note": "装备有"
       },
       {
         "label": "B",
-        "text": "advocated with"
+        "text": "advocated with",
+        "note": "倡导"
       },
       {
         "label": "C",
-        "text": "announced"
+        "text": "announced",
+        "note": "宣布"
       },
       {
         "label": "D",
-        "text": "equipped with"
+        "text": "equipped with",
+        "note": "配备"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "装备有",
-      "B": "倡导",
-      "C": "宣布",
-      "D": "配备"
-    },
     "trans": "这座最先进的研究实验室配备了尖端技术和精密仪器，以促进突破性的科学发现。",
     "full": "The state-of-the-art research laboratory is equipped with cutting-edge technology and sophisticated instruments to facilitate groundbreaking scientific discoveries."
   },
@@ -964,28 +906,26 @@
     "options": [
       {
         "label": "A",
-        "text": "Start From"
+        "text": "Start From",
+        "note": "从…开始"
       },
       {
         "label": "B",
-        "text": "Fresh from"
+        "text": "Fresh from",
+        "note": "刚从…来"
       },
       {
         "label": "C",
-        "text": "Exerted"
+        "text": "Exerted",
+        "note": "施加"
       },
       {
         "label": "D",
-        "text": "Distinguished from"
+        "text": "Distinguished from",
+        "note": "区别于"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "从…开始",
-      "B": "刚从…来",
-      "C": "施加",
-      "D": "区别于"
-    },
     "trans": "刚从为期一年的巴黎留学项目归来，她带着新获得的法语流利度和更广阔的文化视野回家了。",
     "full": "Fresh from a year-long study abroad program in Paris, she returned home with a newfound fluency in French and a broader cultural perspective."
   },
@@ -997,28 +937,26 @@
     "options": [
       {
         "label": "A",
-        "text": "burglary"
+        "text": "burglary",
+        "note": "入室盗窃"
       },
       {
         "label": "B",
-        "text": "charity"
+        "text": "charity",
+        "note": "慈善"
       },
       {
         "label": "C",
-        "text": "victory"
+        "text": "victory",
+        "note": "胜利"
       },
       {
         "label": "D",
-        "text": "failure"
+        "text": "failure",
+        "note": "失败"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "入室盗窃",
-      "B": "慈善",
-      "C": "胜利",
-      "D": "失败"
-    },
     "trans": "在收到多位居民的报告后，警方立即对昨晚在安静社区发生的入室盗窃案展开调查，期间三户人家的贵重物品被盗。",
     "full": "After receiving multiple reports from residents, the police immediately launched an investigation into the burglary that occurred in the quiet neighborhood last night, during which valuable items were stolen from three houses."
   },
@@ -1030,28 +968,26 @@
     "options": [
       {
         "label": "A",
-        "text": "magnificence"
+        "text": "magnificence",
+        "note": "壮丽"
       },
       {
         "label": "B",
-        "text": "weakness"
+        "text": "weakness",
+        "note": "弱点"
       },
       {
         "label": "C",
-        "text": "kindness"
+        "text": "kindness",
+        "note": "善良"
       },
       {
         "label": "D",
-        "text": "dependence"
+        "text": "dependence",
+        "note": "依赖"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "壮丽",
-      "B": "弱点",
-      "C": "善良",
-      "D": "依赖"
-    },
     "trans": "当他们穿行于宏伟的大厅、欣赏墙壁上的金色雕刻时，游客们被这座古老宫殿的壮丽及其精美装饰所震撼。",
     "full": "As they walked through the grand halls and admired the golden carvings on the walls, the tourists were amazed by the magnificence of the ancient palace and its detailed decorations."
   },
@@ -1063,28 +999,26 @@
     "options": [
       {
         "label": "A",
-        "text": "slight"
+        "text": "slight",
+        "note": "轻微的"
       },
       {
         "label": "B",
-        "text": "massive"
+        "text": "massive",
+        "note": "巨大的"
       },
       {
         "label": "C",
-        "text": "narrow"
+        "text": "narrow",
+        "note": "狭窄的"
       },
       {
         "label": "D",
-        "text": "common"
+        "text": "common",
+        "note": "普通的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "轻微的",
-      "B": "巨大的",
-      "C": "狭窄的",
-      "D": "普通的"
-    },
     "trans": "由于CEO的粗心判断和缺乏市场调研，公司因一项重大的错误投资决策而遭受了巨大损失。",
     "full": "Due to the CEO’s careless judgment and the lack of market research, the company suffered a massive loss due to the big wrong investment decision."
   },
@@ -1096,28 +1030,26 @@
     "options": [
       {
         "label": "A",
-        "text": "movement"
+        "text": "movement",
+        "note": "运动"
       },
       {
         "label": "B",
-        "text": "arrival"
+        "text": "arrival",
+        "note": "到达"
       },
       {
         "label": "C",
-        "text": "placement"
+        "text": "placement",
+        "note": "摆放"
       },
       {
         "label": "D",
-        "text": "departure"
+        "text": "departure",
+        "note": "离开"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "运动",
-      "B": "到达",
-      "C": "摆放",
-      "D": "离开"
-    },
     "trans": "在专业室内设计师的帮助下，客厅中新家具的摆放不仅最大化了空间利用，还使整个区域更加舒适和有序。",
     "full": "With the help of a professional interior designer, the placement of the new furniture in the living room not only maximized the use of space but also made the entire area more comfortable and organized."
   },
@@ -1129,28 +1061,26 @@
     "options": [
       {
         "label": "A",
-        "text": "pretend"
+        "text": "pretend",
+        "note": "假装"
       },
       {
         "label": "B",
-        "text": "manage"
+        "text": "manage",
+        "note": "管理"
       },
       {
         "label": "C",
-        "text": "struggle"
+        "text": "struggle",
+        "note": "挣扎"
       },
       {
         "label": "D",
-        "text": "hesitate"
+        "text": "hesitate",
+        "note": "犹豫"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "假装",
-      "B": "管理",
-      "C": "挣扎",
-      "D": "犹豫"
-    },
     "trans": "如果你发现自己在小组项目中陷入困境，尽管尽了最大努力仍无法取得进展，请不要犹豫向队友或导师寻求帮助。",
     "full": "If you find yourself stuck on the group project and unable to make progress despite trying your best, please don’t hesitate to ask your teammates or instructor for help."
   },
@@ -1162,28 +1092,26 @@
     "options": [
       {
         "label": "A",
-        "text": "repeat"
+        "text": "repeat",
+        "note": "重复"
       },
       {
         "label": "B",
-        "text": "confirm"
+        "text": "confirm",
+        "note": "确认"
       },
       {
         "label": "C",
-        "text": "remember"
+        "text": "remember",
+        "note": "记住"
       },
       {
         "label": "D",
-        "text": "forget"
+        "text": "forget",
+        "note": "忘记"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "重复",
-      "B": "确认",
-      "C": "记住",
-      "D": "忘记"
-    },
     "trans": "为确保房间被预留并准备好，酒店要求客人在办理入住前至少24小时通过电话或邮件确认预订。",
     "full": "To ensure that your room is reserved and prepared for your arrival, the hotel requires guests to confirm their booking by phone or email at least 24 hours before checking in."
   },
@@ -1195,28 +1123,26 @@
     "options": [
       {
         "label": "A",
-        "text": "guess"
+        "text": "guess",
+        "note": "猜测"
       },
       {
         "label": "B",
-        "text": "describe"
+        "text": "describe",
+        "note": "描述"
       },
       {
         "label": "C",
-        "text": "calculate"
+        "text": "calculate",
+        "note": "计算"
       },
       {
         "label": "D",
-        "text": "remember"
+        "text": "remember",
+        "note": "记住"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "猜测",
-      "B": "描述",
-      "C": "计算",
-      "D": "记住"
-    },
     "trans": "在签署购买公寓的合同之前，我们需要仔细计算总成本，包括首付、月供以及物业管理的额外费用。",
     "full": "Before signing the contract to buy the apartment, we need to calculate the total cost carefully, including the down payment, monthly mortgage, and additional fees for property management."
   },
@@ -1228,28 +1154,26 @@
     "options": [
       {
         "label": "A",
-        "text": "choice"
+        "text": "choice",
+        "note": "选择"
       },
       {
         "label": "B",
-        "text": "result"
+        "text": "result",
+        "note": "结果"
       },
       {
         "label": "C",
-        "text": "reason"
+        "text": "reason",
+        "note": "原因"
       },
       {
         "label": "D",
-        "text": "spectrum"
+        "text": "spectrum",
+        "note": "范围"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "选择",
-      "B": "结果",
-      "C": "原因",
-      "D": "范围"
-    },
     "trans": "研究团队的调查涵盖了从青少年到老年人的广泛意见，为公众对环境保护的态度提供了全面的视角。",
     "full": "The research team’s survey covers a wide spectrum of opinions from teenagers, young adults, middle-aged people, and the elderly, providing a comprehensive view of public attitudes toward environmental protection."
   },
@@ -1261,28 +1185,26 @@
     "options": [
       {
         "label": "A",
-        "text": "charge"
+        "text": "charge",
+        "note": "充电"
       },
       {
         "label": "B",
-        "text": "browse"
+        "text": "browse",
+        "note": "浏览"
       },
       {
         "label": "C",
-        "text": "lock"
+        "text": "lock",
+        "note": "锁"
       },
       {
         "label": "D",
-        "text": "break"
+        "text": "break",
+        "note": "打破"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "充电",
-      "B": "浏览",
-      "C": "锁",
-      "D": "打破"
-    },
     "trans": "在没有紧急任务的周末，丽莎喜欢花数小时浏览在线购物平台，翻看新款服装和家居装饰品，但没有具体的购买计划。",
     "full": "During weekends when she has no urgent tasks, Lisa likes to browse online shopping platforms for hours, looking through new clothing collections and home decor items without a specific purchase plan."
   },
@@ -1294,28 +1216,26 @@
     "options": [
       {
         "label": "A",
-        "text": "action"
+        "text": "action",
+        "note": "行动"
       },
       {
         "label": "B",
-        "text": "sentiment"
+        "text": "sentiment",
+        "note": "情绪"
       },
       {
         "label": "C",
-        "text": "task"
+        "text": "task",
+        "note": "任务"
       },
       {
         "label": "D",
-        "text": "goal"
+        "text": "goal",
+        "note": "目标"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "行动",
-      "B": "情绪",
-      "C": "任务",
-      "D": "目标"
-    },
     "trans": "自政府宣布减少碳排放的新政策以来，公众对这一措施的态度总体上是积极的，大多数人支持保护环境的努力。",
     "full": "Since the government announced the new policy to reduce carbon emissions, public sentiment toward the measure has been generally positive, with most people supporting the efforts to protect the environment."
   },
@@ -1327,28 +1247,26 @@
     "options": [
       {
         "label": "A",
-        "text": "area"
+        "text": "area",
+        "note": "区域"
       },
       {
         "label": "B",
-        "text": "site"
+        "text": "site",
+        "note": "地点"
       },
       {
         "label": "C",
-        "text": "resort"
+        "text": "resort",
+        "note": "度假胜地"
       },
       {
         "label": "D",
-        "text": "zone"
+        "text": "zone",
+        "note": "区域"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "区域",
-      "B": "地点",
-      "C": "度假胜地",
-      "D": "区域"
-    },
     "trans": "这座城市位于南部海岸，拥有柔软的沙滩、清澈的海水和全年温和的气候，已成为一个受欢迎的旅游度假胜地，每年吸引数百万游客。",
     "full": "Located on the southern coast with soft beaches, clear blue water, and a mild climate all year round, the small city has become a popular tourist resort that attracts millions of visitors from home and abroad every summer."
   },
@@ -1360,28 +1278,26 @@
     "options": [
       {
         "label": "A",
-        "text": "shorten"
+        "text": "shorten",
+        "note": "缩短"
       },
       {
         "label": "B",
-        "text": "prolong"
+        "text": "prolong",
+        "note": "延长"
       },
       {
         "label": "C",
-        "text": "limit"
+        "text": "limit",
+        "note": "限制"
       },
       {
         "label": "D",
-        "text": "waste"
+        "text": "waste",
+        "note": "浪费"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "缩短",
-      "B": "延长",
-      "C": "限制",
-      "D": "浪费"
-    },
     "trans": "医生和健康专家建议，保持均衡饮食、充足睡眠和定期锻炼，不仅可以改善身体素质，还有助于延长人们的寿命。",
     "full": "Doctors and health experts suggest that maintaining a balanced diet, getting enough sleep, and doing regular exercise can not only improve physical fitness but also help prolong people’s lifespan by reducing the risk of chronic diseases."
   },
@@ -1393,28 +1309,26 @@
     "options": [
       {
         "label": "A",
-        "text": "rewrite"
+        "text": "rewrite",
+        "note": "重写"
       },
       {
         "label": "B",
-        "text": "recite"
+        "text": "recite",
+        "note": "背诵"
       },
       {
         "label": "C",
-        "text": "retell"
+        "text": "retell",
+        "note": "复述"
       },
       {
         "label": "D",
-        "text": "proofread"
+        "text": "proofread",
+        "note": "校对"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "重写",
-      "B": "背诵",
-      "C": "复述",
-      "D": "校对"
-    },
     "trans": "在向期刊提交学术论文之前，必须仔细校对几遍，检查拼写错误、语法错误和逻辑论证不一致的地方。",
     "full": "Before submitting your academic paper to the journal, it is essential to proofread it carefully several times to check for spelling mistakes, grammar errors, and inconsistent logical arguments."
   },
@@ -1426,28 +1340,26 @@
     "options": [
       {
         "label": "A",
-        "text": "hide"
+        "text": "hide",
+        "note": "隐藏"
       },
       {
         "label": "B",
-        "text": "cancel"
+        "text": "cancel",
+        "note": "取消"
       },
       {
         "label": "C",
-        "text": "release"
+        "text": "release",
+        "note": "发布"
       },
       {
         "label": "D",
-        "text": "design"
+        "text": "design",
+        "note": "设计"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "隐藏",
-      "B": "取消",
-      "C": "发布",
-      "D": "设计"
-    },
     "trans": "在花了超过一年时间创作新歌并完成录制和混音后，这支流行乐队宣布将于下个月在所有主要音乐平台上发布他们的第三张专辑。",
     "full": "After working on the new songs for over a year and completing the recording and mixing process, the popular band announced that they would release their third studio album on all major music platforms next month."
   },
@@ -1459,28 +1371,26 @@
     "options": [
       {
         "label": "A",
-        "text": "calm"
+        "text": "calm",
+        "note": "平静"
       },
       {
         "label": "B",
-        "text": "provoke"
+        "text": "provoke",
+        "note": "激起"
       },
       {
         "label": "C",
-        "text": "ignore"
+        "text": "ignore",
+        "note": "忽略"
       },
       {
         "label": "D",
-        "text": "avoid"
+        "text": "avoid",
+        "note": "避免"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "平静",
-      "B": "激起",
-      "C": "忽略",
-      "D": "避免"
-    },
     "trans": "在团队会议上，他对同事工作的粗鲁和不尊重的评论不仅伤害了他人感情，还可能激起愤怒和不必要的争论，影响项目进展。",
     "full": "During the team meeting, his rude and disrespectful comments about his colleagues’ work not only hurt others’ feelings but also threatened to provoke anger and unnecessary arguments that would affect the project’s progress."
   },
@@ -1492,28 +1402,26 @@
     "options": [
       {
         "label": "A",
-        "text": "profitable"
+        "text": "profitable",
+        "note": "盈利的"
       },
       {
         "label": "B",
-        "text": "reputable"
+        "text": "reputable",
+        "note": "声誉好的"
       },
       {
         "label": "C",
-        "text": "controversial"
+        "text": "controversial",
+        "note": "有争议的"
       },
       {
         "label": "D",
-        "text": "centralized"
+        "text": "centralized",
+        "note": "集中的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "盈利的",
-      "B": "声誉好的",
-      "C": "有争议的",
-      "D": "集中的"
-    },
     "trans": "该公司以其作为一家声誉良好的雇主而自豪，以公平的劳动实践和道德标准著称。",
     "full": "The company prides itself on being a reputable employer, known for fair labor practices and ethical standards."
   },
@@ -1525,28 +1433,26 @@
     "options": [
       {
         "label": "A",
-        "text": "abandon"
+        "text": "abandon",
+        "note": "放弃"
       },
       {
         "label": "B",
-        "text": "delegate"
+        "text": "delegate",
+        "note": "委派"
       },
       {
         "label": "C",
-        "text": "undertake"
+        "text": "undertake",
+        "note": "承担"
       },
       {
         "label": "D",
-        "text": "supervise"
+        "text": "supervise",
+        "note": "监督"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "放弃",
-      "B": "委派",
-      "C": "承担",
-      "D": "监督"
-    },
     "trans": "团队领导同意监督该项目，确保所有截止日期都得到遵守，资源得到高效分配。",
     "full": "The team leader agreed to supervise the project, ensuring all deadlines are met and resources are allocated efficiently."
   },
@@ -1558,28 +1464,26 @@
     "options": [
       {
         "label": "A",
-        "text": "reluctant"
+        "text": "reluctant",
+        "note": "不情愿的"
       },
       {
         "label": "B",
-        "text": "immune"
+        "text": "immune",
+        "note": "免疫的"
       },
       {
         "label": "C",
-        "text": "grateful"
+        "text": "grateful",
+        "note": "感激的"
       },
       {
         "label": "D",
-        "text": "liable"
+        "text": "liable",
+        "note": "有责任的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "不情愿的",
-      "B": "免疫的",
-      "C": "感激的",
-      "D": "有责任的"
-    },
     "trans": "根据法律，父母对子女的安全负有责任，即使他们本人不在场。",
     "full": "Parents are liable for their children’s safety under the law, even when they are not physically present."
   },
@@ -1591,28 +1495,26 @@
     "options": [
       {
         "label": "A",
-        "text": "passive"
+        "text": "passive",
+        "note": "被动的"
       },
       {
         "label": "B",
-        "text": "dominant"
+        "text": "dominant",
+        "note": "主导的"
       },
       {
         "label": "C",
-        "text": "supportive"
+        "text": "supportive",
+        "note": "支持的"
       },
       {
         "label": "D",
-        "text": "symbolic"
+        "text": "symbolic",
+        "note": "象征性的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "被动的",
-      "B": "主导的",
-      "C": "支持的",
-      "D": "象征性的"
-    },
     "trans": "作为最大的股东，她在董事会中占据主导地位，经常影响重大决策。",
     "full": "As the largest shareholder, she holds a dominant position in the boardroom, often influencing major decisions."
   },
@@ -1624,28 +1526,26 @@
     "options": [
       {
         "label": "A",
-        "text": "measure"
+        "text": "measure",
+        "note": "衡量"
       },
       {
         "label": "B",
-        "text": "deny"
+        "text": "deny",
+        "note": "否认"
       },
       {
         "label": "C",
-        "text": "overlook"
+        "text": "overlook",
+        "note": "忽视"
       },
       {
         "label": "D",
-        "text": "speculate"
+        "text": "speculate",
+        "note": "推测"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "衡量",
-      "B": "否认",
-      "C": "忽视",
-      "D": "推测"
-    },
     "trans": "经济学家推测，如果利率保持不变，经济衰退可能会恶化。",
     "full": "Economists speculate that the recession could worsen if interest rates remain unchanged."
   },
@@ -1657,28 +1557,26 @@
     "options": [
       {
         "label": "A",
-        "text": "passionate about"
+        "text": "passionate about",
+        "note": "热衷于"
       },
       {
         "label": "B",
-        "text": "bored with"
+        "text": "bored with",
+        "note": "厌倦"
       },
       {
         "label": "C",
-        "text": "indifferent to"
+        "text": "indifferent to",
+        "note": "漠不关心"
       },
       {
         "label": "D",
-        "text": "annoyed by"
+        "text": "annoyed by",
+        "note": "被惹恼"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "热衷于",
-      "B": "厌倦",
-      "C": "漠不关心",
-      "D": "被惹恼"
-    },
     "trans": "莎拉热衷于环境正义，每周都在当地的清洁活动中做志愿者。",
     "full": "Sarah is passionate about environmental justice and volunteers weekly at local clean-up events."
   },
@@ -1690,28 +1588,26 @@
     "options": [
       {
         "label": "A",
-        "text": "cautious about"
+        "text": "cautious about",
+        "note": "谨慎"
       },
       {
         "label": "B",
-        "text": "tolerant of"
+        "text": "tolerant of",
+        "note": "容忍"
       },
       {
         "label": "C",
-        "text": "passionate about"
+        "text": "passionate about",
+        "note": "热衷于"
       },
       {
         "label": "D",
-        "text": "obsessed with"
+        "text": "obsessed with",
+        "note": "沉迷于"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "谨慎",
-      "B": "容忍",
-      "C": "热衷于",
-      "D": "沉迷于"
-    },
     "trans": "他开始沉迷于电子游戏，随着沉迷的加深，工作和人际关系都被忽视了。",
     "full": "He became obsessed with video games, neglecting work and relationships as his obsession grew."
   },
@@ -1723,28 +1619,26 @@
     "options": [
       {
         "label": "A",
-        "text": "with ease"
+        "text": "with ease",
+        "note": "轻松地"
       },
       {
         "label": "B",
-        "text": "in awe"
+        "text": "in awe",
+        "note": "敬畏地"
       },
       {
         "label": "C",
-        "text": "by accident"
+        "text": "by accident",
+        "note": "偶然"
       },
       {
         "label": "D",
-        "text": "on purpose"
+        "text": "on purpose",
+        "note": "故意"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "轻松地",
-      "B": "敬畏地",
-      "C": "偶然",
-      "D": "故意"
-    },
     "trans": "游客们敬畏地凝视着古庙精美的雕刻，惊叹于其历史意义。",
     "full": "Visitors gazed in awe at the ancient temple’s intricate carvings, marveling at its historical significance."
   },
@@ -1756,28 +1650,26 @@
     "options": [
       {
         "label": "A",
-        "text": "beyond measure"
+        "text": "beyond measure",
+        "note": "极其"
       },
       {
         "label": "B",
-        "text": "on track"
+        "text": "on track",
+        "note": "在轨道上"
       },
       {
         "label": "C",
-        "text": "not up to par"
+        "text": "not up to par",
+        "note": "未达标"
       },
       {
         "label": "D",
-        "text": "state-of-the-art"
+        "text": "state-of-the-art",
+        "note": "最先进的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "极其",
-      "B": "在轨道上",
-      "C": "未达标",
-      "D": "最先进的"
-    },
     "trans": "该学生本学期的数学成绩一直未达标，因此老师建议进行额外辅导。",
     "full": "The student’s math grades this term have been consistently not up to par, so the teacher suggested extra tutoring."
   },
@@ -1789,28 +1681,26 @@
     "options": [
       {
         "label": "A",
-        "text": "threw out"
+        "text": "threw out",
+        "note": "扔掉"
       },
       {
         "label": "B",
-        "text": "turned out"
+        "text": "turned out",
+        "note": "结果是"
       },
       {
         "label": "C",
-        "text": "let down"
+        "text": "let down",
+        "note": "使失望"
       },
       {
         "label": "D",
-        "text": "let out"
+        "text": "let out",
+        "note": "释放"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "扔掉",
-      "B": "结果是",
-      "C": "使失望",
-      "D": "释放"
-    },
     "trans": "领导非常愤怒，因为报告没有按时提交，这使整个团队失望了。",
     "full": "The leader was furious because the report wasn’t submitted on time, which let down the entire team."
   },
@@ -1822,28 +1712,26 @@
     "options": [
       {
         "label": "A",
-        "text": "throw her ideas"
+        "text": "throw her ideas",
+        "note": "扔掉想法"
       },
       {
         "label": "B",
-        "text": "turn her out"
+        "text": "turn her out",
+        "note": "赶走她"
       },
       {
         "label": "C",
-        "text": "stand by her"
+        "text": "stand by her",
+        "note": "支持她"
       },
       {
         "label": "D",
-        "text": "pick her brains"
+        "text": "pick her brains",
+        "note": "请教她"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "扔掉想法",
-      "B": "赶走她",
-      "C": "支持她",
-      "D": "请教她"
-    },
     "trans": "教授鼓励学生在办公时间来向她请教研究项目，以获得研究指导。",
     "full": "The professor encouraged students to pick her brains about the project during office hours for research guidance."
   },
@@ -1855,28 +1743,26 @@
     "options": [
       {
         "label": "A",
-        "text": "specializing in; generalizing in"
+        "text": "specializing in; generalizing in",
+        "note": "专攻;泛化"
       },
       {
         "label": "B",
-        "text": "focusing on; skimming through"
+        "text": "focusing on; skimming through",
+        "note": "专注;浏览"
       },
       {
         "label": "C",
-        "text": "majoring in; minoring in"
+        "text": "majoring in; minoring in",
+        "note": "主修;辅修"
       },
       {
         "label": "D",
-        "text": "dominating in; generalizing in"
+        "text": "dominating in; generalizing in",
+        "note": "主导;泛化"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "专攻;泛化",
-      "B": "专注;浏览",
-      "C": "主修;辅修",
-      "D": "主导;泛化"
-    },
     "trans": "在完成基础课程后，他决定明确自己的学术重点，主修经济学并辅修社会学作为互补领域。",
     "full": "After completing his foundational courses, he decided to formalize his academic priorities by majoring in economics and minoring in sociology as complementary fields majoring in; minoring in."
   },
@@ -1888,28 +1774,26 @@
     "options": [
       {
         "label": "A",
-        "text": "source"
+        "text": "source",
+        "note": "来源"
       },
       {
         "label": "B",
-        "text": "origin"
+        "text": "origin",
+        "note": "起源"
       },
       {
         "label": "C",
-        "text": "reservoir"
+        "text": "reservoir",
+        "note": "水库;储备"
       },
       {
         "label": "D",
-        "text": "reservation"
+        "text": "reservation",
+        "note": "保留"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "来源",
-      "B": "起源",
-      "C": "水库;储备",
-      "D": "保留"
-    },
     "trans": "凭借她在古典文学方面的广泛训练和数十年的研究经验，她对古代神话和哲学的广博知识成为她写作中灵感的源泉。",
     "full": "Drawing from her extensive training in classical literature and decades of research experience, her encyclopedic knowledge of ancient myths and philosophies serves as a reservoir of inspiration in her writing."
   },
@@ -1921,30 +1805,28 @@
     "options": [
       {
         "label": "A",
-        "text": "turned in"
+        "text": "turned in",
+        "note": "上交"
       },
       {
         "label": "B",
-        "text": "turned out"
+        "text": "turned out",
+        "note": "结果是"
       },
       {
         "label": "C",
-        "text": "turned into"
+        "text": "turned into",
+        "note": "变成"
       },
       {
         "label": "D",
-        "text": "turned up"
+        "text": "turned up",
+        "note": "出现"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "上交",
-      "B": "结果是",
-      "C": "变成",
-      "D": "出现"
-    },
     "trans": "与预测相反，实验结果出现了一项挑战现有理论的突破性发现。",
-    "full": "Contrary to predictions, the experiment turned up a groundbreaking discovery that challenged existing theories."
+    "full": "Contrary to predictions, the experiment turned out a groundbreaking discovery that challenged existing theories."
   },
   {
     "chapter": "B2U2",
@@ -1954,28 +1836,26 @@
     "options": [
       {
         "label": "A",
-        "text": "threw out"
+        "text": "threw out",
+        "note": "扔掉"
       },
       {
         "label": "B",
-        "text": "came up with"
+        "text": "came up with",
+        "note": "想出"
       },
       {
         "label": "C",
-        "text": "held back"
+        "text": "held back",
+        "note": "抑制"
       },
       {
         "label": "D",
-        "text": "pointed out"
+        "text": "pointed out",
+        "note": "指出"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "扔掉",
-      "B": "想出",
-      "C": "抑制",
-      "D": "指出"
-    },
     "trans": "在激烈的辩论中，他突然想出了一个疯狂的主意，让房间里的每个人都大吃一惊。",
     "full": "During the heated debate, he suddenly came up with a wild idea, surprising everyone in the room."
   },
@@ -1987,30 +1867,28 @@
     "options": [
       {
         "label": "A",
-        "text": "take it as granted"
+        "text": "take it as granted",
+        "note": "视为理所当然(错误表达)"
       },
       {
         "label": "B",
-        "text": "take it for granted"
+        "text": "take it for granted",
+        "note": "视为理所当然"
       },
       {
         "label": "C",
-        "text": "take it with granted"
+        "text": "take it with granted",
+        "note": "错误搭配"
       },
       {
         "label": "D",
-        "text": "take it in granted"
+        "text": "take it in granted",
+        "note": "错误搭配"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "视为理所当然(错误表达)",
-      "B": "视为理所当然",
-      "C": "错误搭配",
-      "D": "错误搭配"
-    },
     "trans": "在日常生活中，我们常常把父母永远在我们身边支持我们视为理所当然，忘记珍惜他们的存在，直到为时已晚。",
-    "full": "In daily life, we often take it as granted that our parents will always be there to support us, forgetting to cherish their presence until it is too late."
+    "full": "In daily life, we often take it for granted that our parents will always be there to support us, forgetting to cherish their presence until it is too late."
   },
   {
     "chapter": "B2U3",
@@ -2020,30 +1898,28 @@
     "options": [
       {
         "label": "A",
-        "text": "condense"
+        "text": "condense",
+        "note": "精简"
       },
       {
         "label": "B",
-        "text": "conduce"
+        "text": "conduce",
+        "note": "导致"
       },
       {
         "label": "C",
-        "text": "conduct"
+        "text": "conduct",
+        "note": "进行"
       },
       {
         "label": "D",
-        "text": "confirm"
+        "text": "confirm",
+        "note": "确认"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "精简",
-      "B": "导致",
-      "C": "进行",
-      "D": "确认"
-    },
     "trans": "研究团队决定进行一系列复杂的实验来验证他们杰出教授提出的假设。",
-    "full": "The research team decided to condense a series of complex experiments to verify the hypothesis that had been proposed by their distinguished professor."
+    "full": "The research team decided to conduct a series of complex experiments to verify the hypothesis that had been proposed by their distinguished professor."
   },
   {
     "chapter": "B2U3",
@@ -2053,30 +1929,28 @@
     "options": [
       {
         "label": "A",
-        "text": "is adjusted to"
+        "text": "is adjusted to",
+        "note": "适应"
       },
       {
         "label": "B",
-        "text": "is dedicated to"
+        "text": "is dedicated to",
+        "note": "致力于"
       },
       {
         "label": "C",
-        "text": "is addicted to"
+        "text": "is addicted to",
+        "note": "沉迷于"
       },
       {
         "label": "D",
-        "text": "is accustomed to"
+        "text": "is accustomed to",
+        "note": "习惯于"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "适应",
-      "B": "致力于",
-      "C": "沉迷于",
-      "D": "习惯于"
-    },
     "trans": "在这座宁静的海滨小镇生活了三十年后，这位老渔夫已经习惯于在黎明前醒来，出发驶向平静的海面。",
-    "full": "Having spent three decades in this peaceful coastal town, the old fisherman is dedicated to waking up before dawn to set out on the calm sea."
+    "full": "Having spent three decades in this peaceful coastal town, the old fisherman is accustomed to waking up before dawn to set out on the calm sea."
   },
   {
     "chapter": "B2U3",
@@ -2086,28 +1960,26 @@
     "options": [
       {
         "label": "A",
-        "text": "furniture"
+        "text": "furniture",
+        "note": "家具"
       },
       {
         "label": "B",
-        "text": "future"
+        "text": "future",
+        "note": "未来"
       },
       {
         "label": "C",
-        "text": "feature"
+        "text": "feature",
+        "note": "特征"
       },
       {
         "label": "D",
-        "text": "fracture"
+        "text": "fracture",
+        "note": "骨折"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "家具",
-      "B": "未来",
-      "C": "特征",
-      "D": "骨折"
-    },
     "trans": "这款智能手表最引人注目的特点是它的超长电池续航时间，允许用户在不需要充电的情况下使用数天。",
     "full": "The most striking feature of this smartwatch is its extended battery life, which allows users to operate the device for several days without recharging."
   },
@@ -2119,30 +1991,28 @@
     "options": [
       {
         "label": "A",
-        "text": "exaggerate"
+        "text": "exaggerate",
+        "note": "夸大"
       },
       {
         "label": "B",
-        "text": "examine"
+        "text": "examine",
+        "note": "检查"
       },
       {
         "label": "C",
-        "text": "execute"
+        "text": "execute",
+        "note": "执行"
       },
       {
         "label": "D",
-        "text": "evaluate"
+        "text": "evaluate",
+        "note": "评估"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "夸大",
-      "B": "检查",
-      "C": "执行",
-      "D": "评估"
-    },
     "trans": "在描述他穿越亚马逊雨林的冒险旅程时，他倾向于夸大所遇到的危险，以使故事更加惊心动魄。",
-    "full": "When describing his adventurous journey through the Amazon rainforest, he tended to evaluate the dangers he encountered in order to make the story more thrilling."
+    "full": "When describing his adventurous journey through the Amazon rainforest, he tended to exaggerate the dangers he encountered in order to make the story more thrilling."
   },
   {
     "chapter": "B2U3",
@@ -2152,28 +2022,26 @@
     "options": [
       {
         "label": "A",
-        "text": "sank"
+        "text": "sank",
+        "note": "下沉"
       },
       {
         "label": "B",
-        "text": "shrugged"
+        "text": "shrugged",
+        "note": "耸肩"
       },
       {
         "label": "C",
-        "text": "shrank"
+        "text": "shrank",
+        "note": "缩小"
       },
       {
         "label": "D",
-        "text": "shrieked"
+        "text": "shrieked",
+        "note": "尖叫"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "下沉",
-      "B": "耸肩",
-      "C": "缩小",
-      "D": "尖叫"
-    },
     "trans": "面对公众的严厉批评，经理只是耸了耸肩，声称自己对公司的失败不负责任。",
     "full": "Faced with the harsh criticism from the public, the manager simply shrugged his shoulders and claimed that he was not responsible for the company’s failure."
   },
@@ -2185,30 +2053,28 @@
     "options": [
       {
         "label": "A",
-        "text": "request"
+        "text": "request",
+        "note": "请求"
       },
       {
         "label": "B",
-        "text": "require"
+        "text": "require",
+        "note": "需要"
       },
       {
         "label": "C",
-        "text": "reclaim"
+        "text": "reclaim",
+        "note": "回收"
       },
       {
         "label": "D",
-        "text": "recruit"
+        "text": "recruit",
+        "note": "招募"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "请求",
-      "B": "需要",
-      "C": "回收",
-      "D": "招募"
-    },
     "trans": "人力资源部门旨在从顶尖大学招募具有专业技能和强烈责任感的优秀毕业生。",
-    "full": "The human resources department aims to reclaim talented graduates from top universities who possess both professional skills and a strong sense of responsibility."
+    "full": "The human resources department aims to recruit talented graduates from top universities who possess both professional skills and a strong sense of responsibility."
   },
   {
     "chapter": "B2U3",
@@ -2218,30 +2084,28 @@
     "options": [
       {
         "label": "A",
-        "text": "preserve"
+        "text": "preserve",
+        "note": "保存"
       },
       {
         "label": "B",
-        "text": "persevere"
+        "text": "persevere",
+        "note": "坚持"
       },
       {
         "label": "C",
-        "text": "perceive"
+        "text": "perceive",
+        "note": "感知"
       },
       {
         "label": "D",
-        "text": "prepare"
+        "text": "prepare",
+        "note": "准备"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "保存",
-      "B": "坚持",
-      "C": "感知",
-      "D": "准备"
-    },
     "trans": "要完成这个具有挑战性的项目，你必须克服无数困难，保持专注于最终目标，不轻易气馁。",
-    "full": "To complete this challenging project, one must prepare through numerous difficulties and remain focused on the final goal without being easily discouraged."
+    "full": "To complete this challenging project, one must persevere through numerous difficulties and remain focused on the final goal without being easily discouraged."
   },
   {
     "chapter": "B2U3",
@@ -2251,30 +2115,28 @@
     "options": [
       {
         "label": "A",
-        "text": "endure"
+        "text": "endure",
+        "note": "忍受"
       },
       {
         "label": "B",
-        "text": "ensure"
+        "text": "ensure",
+        "note": "确保"
       },
       {
         "label": "C",
-        "text": "endow"
+        "text": "endow",
+        "note": "赋予"
       },
       {
         "label": "D",
-        "text": "enroll"
+        "text": "enroll",
+        "note": "注册"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "忍受",
-      "B": "确保",
-      "C": "赋予",
-      "D": "注册"
-    },
     "trans": "令人惊叹的是，这座古老的建筑竟然经受住了这个地区几个世纪的战争、自然灾害和时间的无情考验。",
-    "full": "It is remarkable how the ancient structure has managed to ensure centuries of wars, natural disasters, and the relentless test of time in this region."
+    "full": "It is remarkable how the ancient structure has managed to endure centuries of wars, natural disasters, and the relentless test of time in this region."
   },
   {
     "chapter": "B2U3",
@@ -2284,30 +2146,28 @@
     "options": [
       {
         "label": "A",
-        "text": "informal"
+        "text": "informal",
+        "note": "非正式的"
       },
       {
         "label": "B",
-        "text": "external"
+        "text": "external",
+        "note": "外部的"
       },
       {
         "label": "C",
-        "text": "eternal"
+        "text": "eternal",
+        "note": "永恒的"
       },
       {
         "label": "D",
-        "text": "internal"
+        "text": "internal",
+        "note": "内部的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "非正式的",
-      "B": "外部的",
-      "C": "永恒的",
-      "D": "内部的"
-    },
     "trans": "公司的财务报告揭示了一些内部问题，如管理效率低下和生产流程过时，这些问题需要立即改革。",
-    "full": "The company’s financial report revealed some external problems, such as inefficient management and outdated production processes, which required immediate reform."
+    "full": "The company’s financial report revealed some internal problems, such as inefficient management and outdated production processes, which required immediate reform."
   },
   {
     "chapter": "B2U3",
@@ -2317,28 +2177,26 @@
     "options": [
       {
         "label": "A",
-        "text": "design"
+        "text": "design",
+        "note": "设计"
       },
       {
         "label": "B",
-        "text": "resign"
+        "text": "resign",
+        "note": "辞职"
       },
       {
         "label": "C",
-        "text": "assign"
+        "text": "assign",
+        "note": "分配"
       },
       {
         "label": "D",
-        "text": "combine"
+        "text": "combine",
+        "note": "结合"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "设计",
-      "B": "辞职",
-      "C": "分配",
-      "D": "结合"
-    },
     "trans": "教授决定为每个学生分配一个特定的期末论文题目，确保广泛的主题都能得到深入探索。",
     "full": "The professor decided to assign each student a specific topic for the final paper, ensuring that a wide range of subjects would be thoroughly explored."
   },
@@ -2350,30 +2208,28 @@
     "options": [
       {
         "label": "A",
-        "text": "valued"
+        "text": "valued",
+        "note": "有价值的"
       },
       {
         "label": "B",
-        "text": "valueless"
+        "text": "valueless",
+        "note": "无价值的"
       },
       {
         "label": "C",
-        "text": "invaluable"
+        "text": "invaluable",
+        "note": "无价的"
       },
       {
         "label": "D",
-        "text": "invariable"
+        "text": "invariable",
+        "note": "不变的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "有价值的",
-      "B": "无价值的",
-      "C": "无价的",
-      "D": "不变的"
-    },
     "trans": "教授强调这份古代手稿是一件无价的文化瑰宝，为研究中世纪文学史提供了不可替代的洞见。",
-    "full": "The professor emphasized that the ancient manuscript was a/an valueless cultural treasure, providing irreplaceable insights into the history of medieval literature."
+    "full": "The professor emphasized that the ancient manuscript was a/an invaluable cultural treasure, providing irreplaceable insights into the history of medieval literature."
   },
   {
     "chapter": "B2U3",
@@ -2383,30 +2239,28 @@
     "options": [
       {
         "label": "A",
-        "text": "conventional"
+        "text": "conventional",
+        "note": "传统的"
       },
       {
         "label": "B",
-        "text": "conversational"
+        "text": "conversational",
+        "note": "对话的"
       },
       {
         "label": "C",
-        "text": "controversial"
+        "text": "controversial",
+        "note": "有争议的"
       },
       {
         "label": "D",
-        "text": "conditional"
+        "text": "conditional",
+        "note": "有条件的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "传统的",
-      "B": "对话的",
-      "C": "有争议的",
-      "D": "有条件的"
-    },
     "trans": "虽然创新想法很重要，但有时经过时间验证证明有效的传统方法仍然可以在商业中产生令人满意的结果。",
-    "full": "While innovative ideas are important, sometimes conditional methods that have been proven effective over time can still yield satisfactory results in business."
+    "full": "While innovative ideas are important, sometimes conventional methods that have been proven effective over time can still yield satisfactory results in business."
   },
   {
     "chapter": "B2U3",
@@ -2416,30 +2270,28 @@
     "options": [
       {
         "label": "A",
-        "text": "proficient"
+        "text": "proficient",
+        "note": "精通的"
       },
       {
         "label": "B",
-        "text": "deficient"
+        "text": "deficient",
+        "note": "不足的"
       },
       {
         "label": "C",
-        "text": "efficient"
+        "text": "efficient",
+        "note": "高效的"
       },
       {
         "label": "D",
-        "text": "sufficient"
+        "text": "sufficient",
+        "note": "充足的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "精通的",
-      "B": "不足的",
-      "C": "高效的",
-      "D": "充足的"
-    },
     "trans": "在踏上漫长旅程之前，我们必须确保有充足的食物、水和医疗用品来应对任何突发的紧急情况。",
-    "full": "Before embarking on the long journey, we must ensure that we have efficient food, water, and medical supplies to cope with any unexpected emergencies."
+    "full": "Before embarking on the long journey, we must ensure that we have sufficient food, water, and medical supplies to cope with any unexpected emergencies."
   },
   {
     "chapter": "B2U3",
@@ -2449,30 +2301,28 @@
     "options": [
       {
         "label": "A",
-        "text": "for the sake of"
+        "text": "for the sake of",
+        "note": "为了"
       },
       {
         "label": "B",
-        "text": "by the sake of"
+        "text": "by the sake of",
+        "note": "错误搭配"
       },
       {
         "label": "C",
-        "text": "on the sake of"
+        "text": "on the sake of",
+        "note": "错误搭配"
       },
       {
         "label": "D",
-        "text": "with the sake of"
+        "text": "with the sake of",
+        "note": "错误搭配"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "为了",
-      "B": "错误搭配",
-      "C": "错误搭配",
-      "D": "错误搭配"
-    },
     "trans": "他决定为了经济稳定而接受这份要求苛刻的工作，相信高薪最终会弥补繁重的工作量。",
-    "full": "He decided to accept the demanding job by the sake of financial stability, believing that the high salary would eventually compensate for the heavy workload."
+    "full": "He decided to accept the demanding job for the sake of financial stability, believing that the high salary would eventually compensate for the heavy workload."
   },
   {
     "chapter": "B2U3",
@@ -2482,30 +2332,28 @@
     "options": [
       {
         "label": "A",
-        "text": "humorous"
+        "text": "humorous",
+        "note": "幽默的"
       },
       {
         "label": "B",
-        "text": "dangerous"
+        "text": "dangerous",
+        "note": "危险的"
       },
       {
         "label": "C",
-        "text": "rigorous"
+        "text": "rigorous",
+        "note": "严格的"
       },
       {
         "label": "D",
-        "text": "vigorous"
+        "text": "vigorous",
+        "note": "充满活力的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "幽默的",
-      "B": "危险的",
-      "C": "严格的",
-      "D": "充满活力的"
-    },
     "trans": "定期进行充满活力的锻炼不仅能强健身体，还能增强心理韧性，帮助个人更好地应对日常压力和焦虑。",
-    "full": "Regular dangerous exercise not only strengthens the body but also enhances mental resilience, helping individuals better cope with daily stress and anxiety."
+    "full": "Regular vigorous exercise not only strengthens the body but also enhances mental resilience, helping individuals better cope with daily stress and anxiety."
   },
   {
     "chapter": "B2U3",
@@ -2515,30 +2363,28 @@
     "options": [
       {
         "label": "A",
-        "text": "ethnic"
+        "text": "ethnic",
+        "note": "民族的"
       },
       {
         "label": "B",
-        "text": "ethic"
+        "text": "ethic",
+        "note": "伦理"
       },
       {
         "label": "C",
-        "text": "epic"
+        "text": "epic",
+        "note": "史诗"
       },
       {
         "label": "D",
-        "text": "epoch"
+        "text": "epoch",
+        "note": "时代"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "民族的",
-      "B": "伦理",
-      "C": "史诗",
-      "D": "时代"
-    },
     "trans": "这位记者因其强烈的职业道德而受到赞扬，因为他即使在面临法律威胁时也拒绝透露机密消息来源。",
-    "full": "The journalist was praised for his strong work epoch, as he refused to disclose his confidential sources even when faced with legal threats."
+    "full": "The journalist was praised for his strong work ethic, as he refused to disclose his confidential sources even when faced with legal threats."
   },
   {
     "chapter": "B2U3",
@@ -2548,30 +2394,28 @@
     "options": [
       {
         "label": "A",
-        "text": "paralyzed"
+        "text": "paralyzed",
+        "note": "瘫痪的"
       },
       {
         "label": "B",
-        "text": "paraphrased"
+        "text": "paraphrased",
+        "note": "改述的"
       },
       {
         "label": "C",
-        "text": "paralleled"
+        "text": "paralleled",
+        "note": "平行的"
       },
       {
         "label": "D",
-        "text": "paraded"
+        "text": "paraded",
+        "note": "游行的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "瘫痪的",
-      "B": "改述的",
-      "C": "平行的",
-      "D": "游行的"
-    },
     "trans": "一些著名经济学家认为，21世纪初房地产市场的繁荣与同一历史时期消费支出的激增是平行的。",
-    "full": "Some prominent economists have argued that the boom of the housing market in the early 2000s paraded a surge in consumer spending during the same historical period."
+    "full": "Some prominent economists have argued that the boom of the housing market in the early 2000s paralleled a surge in consumer spending during the same historical period."
   },
   {
     "chapter": "B2U3",
@@ -2581,30 +2425,28 @@
     "options": [
       {
         "label": "A",
-        "text": "prohibit"
+        "text": "prohibit",
+        "note": "禁止"
       },
       {
         "label": "B",
-        "text": "inhabit"
+        "text": "inhabit",
+        "note": "居住"
       },
       {
         "label": "C",
-        "text": "exhibit"
+        "text": "exhibit",
+        "note": "展出"
       },
       {
         "label": "D",
-        "text": "inhibit"
+        "text": "inhibit",
+        "note": "抑制"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "禁止",
-      "B": "居住",
-      "C": "展出",
-      "D": "抑制"
-    },
     "trans": "博物馆计划展出一系列反映过去几十年社会变迁和文化多样性的当代艺术作品。",
-    "full": "The museum plans to inhabit a collection of contemporary artworks that reflect the social changes and cultural diversity of the past few decades."
+    "full": "The museum plans to exhibit a collection of contemporary artworks that reflect the social changes and cultural diversity of the past few decades."
   },
   {
     "chapter": "B2U3",
@@ -2614,30 +2456,28 @@
     "options": [
       {
         "label": "A",
-        "text": "collective"
+        "text": "collective",
+        "note": "集体的"
       },
       {
         "label": "B",
-        "text": "selective"
+        "text": "selective",
+        "note": "选择性的"
       },
       {
         "label": "C",
-        "text": "respective"
+        "text": "respective",
+        "note": "各自的"
       },
       {
         "label": "D",
-        "text": "effective"
+        "text": "effective",
+        "note": "有效的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "集体的",
-      "B": "选择性的",
-      "C": "各自的",
-      "D": "有效的"
-    },
     "trans": "社区项目的成功在很大程度上依赖于集体努力，因为每个成员都贡献了自己独特的技能，朝着共同的目标努力。",
-    "full": "The success of the community project relied heavily on effective effort, as every member contributed their unique skills and worked toward a shared objective."
+    "full": "The success of the community project relied heavily on collective effort, as every member contributed their unique skills and worked toward a shared objective."
   },
   {
     "chapter": "B2U3",
@@ -2647,30 +2487,28 @@
     "options": [
       {
         "label": "A",
-        "text": "resist"
+        "text": "resist",
+        "note": "抵抗"
       },
       {
         "label": "B",
-        "text": "insist"
+        "text": "insist",
+        "note": "坚持"
       },
       {
         "label": "C",
-        "text": "persist"
+        "text": "persist",
+        "note": "坚持"
       },
       {
         "label": "D",
-        "text": "consist"
+        "text": "consist",
+        "note": "由…组成"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "抵抗",
-      "B": "坚持",
-      "C": "坚持",
-      "D": "由…组成"
-    },
     "trans": "尽管经历了无数次失败的尝试，这位年轻的科学家决定坚持他的研究，相信毅力最终会带来突破。",
-    "full": "Despite numerous failed attempts, the young scientist decided to resist in his research, believing that perseverance would eventually lead to a breakthrough."
+    "full": "Despite numerous failed attempts, the young scientist decided to persist in his research, believing that perseverance would eventually lead to a breakthrough."
   },
   {
     "chapter": "B2U3",
@@ -2680,28 +2518,26 @@
     "options": [
       {
         "label": "A",
-        "text": "sank"
+        "text": "sank",
+        "note": "下沉"
       },
       {
         "label": "B",
-        "text": "shrank"
+        "text": "shrank",
+        "note": "缩小"
       },
       {
         "label": "C",
-        "text": "stank"
+        "text": "stank",
+        "note": "发臭"
       },
       {
         "label": "D",
-        "text": "stunned"
+        "text": "stunned",
+        "note": "震惊的"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "下沉",
-      "B": "缩小",
-      "C": "发臭",
-      "D": "震惊的"
-    },
     "trans": "公司破产的突然公告震惊了整个行业，因为没有人预料到这个巨头企业会如此戏剧性地崩溃。",
     "full": "The sudden announcement of the company’s bankruptcy stunned the entire industry, as no one had anticipated such a dramatic collapse of the giant corporation."
   },
@@ -2713,30 +2549,28 @@
     "options": [
       {
         "label": "A",
-        "text": "tap on"
+        "text": "tap on",
+        "note": "轻敲"
       },
       {
         "label": "B",
-        "text": "tap in"
+        "text": "tap in",
+        "note": "输入"
       },
       {
         "label": "C",
-        "text": "tap into"
+        "text": "tap into",
+        "note": "利用"
       },
       {
         "label": "D",
-        "text": "tap over"
+        "text": "tap over",
+        "note": "轻拍"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "轻敲",
-      "B": "输入",
-      "C": "利用",
-      "D": "轻拍"
-    },
     "trans": "为了扩大市场份额，这家创业公司需要利用社交媒体平台的巨大潜力，有效触达年轻消费者。",
-    "full": "To expand its market share, the startup needs to tap in the vast potential of social media platforms to effectively reach younger consumers."
+    "full": "To expand its market share, the startup needs to tap into the vast potential of social media platforms to effectively reach younger consumers."
   },
   {
     "chapter": "B2U3",
@@ -2746,30 +2580,28 @@
     "options": [
       {
         "label": "A",
-        "text": "strive with"
+        "text": "strive with",
+        "note": "与…斗争"
       },
       {
         "label": "B",
-        "text": "strive to"
+        "text": "strive to",
+        "note": "努力去"
       },
       {
         "label": "C",
-        "text": "strive against"
+        "text": "strive against",
+        "note": "与…抗争"
       },
       {
         "label": "D",
-        "text": "strive for"
+        "text": "strive for",
+        "note": "追求"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "与…斗争",
-      "B": "努力去",
-      "C": "与…抗争",
-      "D": "追求"
-    },
     "trans": "尽管面临无数挫折，这位年轻运动员继续追求卓越，不懈训练，希望赢得奥运奖牌。",
-    "full": "Despite facing numerous setbacks, the young athlete continued to strive against excellence, training relentlessly with the hope of winning an Olympic medal."
+    "full": "Despite facing numerous setbacks, the young athlete continued to strive for excellence, training relentlessly with the hope of winning an Olympic medal."
   },
   {
     "chapter": "B2U3",
@@ -2779,30 +2611,28 @@
     "options": [
       {
         "label": "A",
-        "text": "steer"
+        "text": "steer",
+        "note": "操控"
       },
       {
         "label": "B",
-        "text": "stir"
+        "text": "stir",
+        "note": "激起"
       },
       {
         "label": "C",
-        "text": "stare"
+        "text": "stare",
+        "note": "盯着"
       },
       {
         "label": "D",
-        "text": "stem"
+        "text": "stem",
+        "note": "源于"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "操控",
-      "B": "激起",
-      "C": "盯着",
-      "D": "源于"
-    },
     "trans": "这位退伍老兵发表的感人演讲成功地在在场所有观众中激起了一种深深的爱国情怀和感激之情。",
-    "full": "The emotional speech delivered by the veteran soldier managed to stare a deep sense of patriotism and gratitude among all the audience members present."
+    "full": "The emotional speech delivered by the veteran soldier managed to stir a deep sense of patriotism and gratitude among all the audience members present."
   },
   {
     "chapter": "B2U3",
@@ -2812,30 +2642,28 @@
     "options": [
       {
         "label": "A",
-        "text": "wave"
+        "text": "wave",
+        "note": "挥手"
       },
       {
         "label": "B",
-        "text": "weave"
+        "text": "weave",
+        "note": "编织"
       },
       {
         "label": "C",
-        "text": "waive"
+        "text": "waive",
+        "note": "放弃"
       },
       {
         "label": "D",
-        "text": "weep"
+        "text": "weep",
+        "note": "哭泣"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "挥手",
-      "B": "编织",
-      "C": "放弃",
-      "D": "哭泣"
-    },
     "trans": "通过使用丰富多彩的比喻和生动的描述，这位技艺娴熟的作家能够编织出一个引人入胜的故事，从第一页就牢牢抓住读者。",
-    "full": "Using colorful metaphors and vivid descriptions, the skilled author can weep a fascinating story that captivates readers from the very first page."
+    "full": "Using colorful metaphors and vivid descriptions, the skilled author can weave a fascinating story that captivates readers from the very first page."
   },
   {
     "chapter": "B2U3",
@@ -2845,30 +2673,28 @@
     "options": [
       {
         "label": "A",
-        "text": "motivate"
+        "text": "motivate",
+        "note": "激励"
       },
       {
         "label": "B",
-        "text": "mobilize"
+        "text": "mobilize",
+        "note": "动员"
       },
       {
         "label": "C",
-        "text": "minimize"
+        "text": "minimize",
+        "note": "最小化"
       },
       {
         "label": "D",
-        "text": "migrate"
+        "text": "migrate",
+        "note": "迁移"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "激励",
-      "B": "动员",
-      "C": "最小化",
-      "D": "迁移"
-    },
     "trans": "一个好的领导者应该能够通过认可团队成员的成就和提供有意义的职业成长机会来激励他们。",
-    "full": "A good leader should be able to minimize his team members by recognizing their achievements and providing meaningful opportunities for professional growth."
+    "full": "A good leader should be able to motivate his team members by recognizing their achievements and providing meaningful opportunities for professional growth."
   },
   {
     "chapter": "B2U3",
@@ -2878,28 +2704,26 @@
     "options": [
       {
         "label": "A",
-        "text": "contain"
+        "text": "contain",
+        "note": "包含"
       },
       {
         "label": "B",
-        "text": "attain"
+        "text": "attain",
+        "note": "达到"
       },
       {
         "label": "C",
-        "text": "retain"
+        "text": "retain",
+        "note": "保留"
       },
       {
         "label": "D",
-        "text": "detain"
+        "text": "detain",
+        "note": "拘留"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "包含",
-      "B": "达到",
-      "C": "保留",
-      "D": "拘留"
-    },
     "trans": "教育改革的主要目标之一是通过提供有竞争力的薪酬和支持性的工作环境来留住优秀教师。",
     "full": "One of the primary goals of the educational reform is to retain talented teachers by offering them competitive salaries and a supportive working environment."
   },
@@ -2911,30 +2735,28 @@
     "options": [
       {
         "label": "A",
-        "text": "respectable"
+        "text": "respectable",
+        "note": "可敬的"
       },
       {
         "label": "B",
-        "text": "respective"
+        "text": "respective",
+        "note": "各自的"
       },
       {
         "label": "C",
-        "text": "resourceful"
+        "text": "resourceful",
+        "note": "足智多谋的"
       },
       {
         "label": "D",
-        "text": "respectful"
+        "text": "respectful",
+        "note": "尊敬的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "可敬的",
-      "B": "各自的",
-      "C": "足智多谋的",
-      "D": "尊敬的"
-    },
     "trans": "为了解决这个复杂的问题，我们需要足智多谋、富有创造力，找到创新的方式来利用我们可用的有限资源。",
-    "full": "In order to solve the complex problem, we need to be respectful and creative, finding innovative ways to utilize the limited resources available to us."
+    "full": "In order to solve the complex problem, we need to be resourceful and creative, finding innovative ways to utilize the limited resources available to us."
   },
   {
     "chapter": "B2U3",
@@ -2944,30 +2766,28 @@
     "options": [
       {
         "label": "A",
-        "text": "deceive"
+        "text": "deceive",
+        "note": "欺骗"
       },
       {
         "label": "B",
-        "text": "receive"
+        "text": "receive",
+        "note": "收到"
       },
       {
         "label": "C",
-        "text": "conceive"
+        "text": "conceive",
+        "note": "构想"
       },
       {
         "label": "D",
-        "text": "perceive"
+        "text": "perceive",
+        "note": "感知"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "欺骗",
-      "B": "收到",
-      "C": "构想",
-      "D": "感知"
-    },
     "trans": "通过仔细观察和分析，我们可以感知到消费者行为中微妙的变化，这些变化往往预示着市场中新兴的趋势。",
-    "full": "Through careful observation and analysis, we can receive subtle changes in consumer behavior that often indicate emerging trends in the market."
+    "full": "Through careful observation and analysis, we can perceive subtle changes in consumer behavior that often indicate emerging trends in the market."
   },
   {
     "chapter": "B2U4",
@@ -2977,28 +2797,26 @@
     "options": [
       {
         "label": "A",
-        "text": "random"
+        "text": "random",
+        "note": "随机的"
       },
       {
         "label": "B",
-        "text": "geological"
+        "text": "geological",
+        "note": "地质的"
       },
       {
         "label": "C",
-        "text": "resolute"
+        "text": "resolute",
+        "note": "坚决的"
       },
       {
         "label": "D",
-        "text": "diligent"
+        "text": "diligent",
+        "note": "勤奋的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "随机的",
-      "B": "地质的",
-      "C": "坚决的",
-      "D": "勤奋的"
-    },
     "trans": "回想一下我们上周介绍的那个非常基础的构建模块，它允许你获取一个介于1和10之间或1和100之间的随机数。",
     "full": "Recall that very basic building block we introduced last week, which allowed you to grab a random number between 1 and 10 or between 1 and 100."
   },
@@ -3010,30 +2828,28 @@
     "options": [
       {
         "label": "A",
-        "text": "impulse"
+        "text": "impulse",
+        "note": "冲动"
       },
       {
         "label": "B",
-        "text": "exception"
+        "text": "exception",
+        "note": "例外"
       },
       {
         "label": "C",
-        "text": "collaboration"
+        "text": "collaboration",
+        "note": "合作"
       },
       {
         "label": "D",
-        "text": "anniversary"
+        "text": "anniversary",
+        "note": "周年纪念"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "冲动",
-      "B": "例外",
-      "C": "合作",
-      "D": "周年纪念"
-    },
     "trans": "今年是世界反法西斯战争胜利70周年，也是中国抗日战争胜利70周年。",
-    "full": "It is the 70th impulse of both the world's anti-fascism war and the victory of China's Resistance War against Japanese Aggression this year."
+    "full": "It is the 70th anniversary of both the world's anti-fascism war and the victory of China's Resistance War against Japanese Aggression this year."
   },
   {
     "chapter": "B2U4",
@@ -3043,28 +2859,26 @@
     "options": [
       {
         "label": "A",
-        "text": "be passed down"
+        "text": "be passed down",
+        "note": "被传承"
       },
       {
         "label": "B",
-        "text": "be admitted to"
+        "text": "be admitted to",
+        "note": "被录取"
       },
       {
         "label": "C",
-        "text": "be embedded in"
+        "text": "be embedded in",
+        "note": "嵌入"
       },
       {
         "label": "D",
-        "text": "be entrusted to"
+        "text": "be entrusted to",
+        "note": "被委托"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "被传承",
-      "B": "被录取",
-      "C": "嵌入",
-      "D": "被委托"
-    },
     "trans": "最重要的是进入一所好的小学、中学和高中，这样他们最终才能被一所顶尖大学录取。",
     "full": "What mattered most was getting into a good elementary school, middle school and high school so that they would finally be admitted to a top college."
   },
@@ -3076,30 +2890,28 @@
     "options": [
       {
         "label": "A",
-        "text": "faint"
+        "text": "faint",
+        "note": "微弱的"
       },
       {
         "label": "B",
-        "text": "rejuvenate"
+        "text": "rejuvenate",
+        "note": "复兴"
       },
       {
         "label": "C",
-        "text": "symbolize"
+        "text": "symbolize",
+        "note": "象征"
       },
       {
         "label": "D",
-        "text": "resound"
+        "text": "resound",
+        "note": "回响"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "微弱的",
-      "B": "复兴",
-      "C": "象征",
-      "D": "回响"
-    },
     "trans": "中国人民团结在复兴民族的伟大事业中，确保每个公民的繁荣与和谐。",
-    "full": "The Chinese people united in the grand endeavor to symbolize the nation, ensuring prosperity and harmony for every citizen."
+    "full": "The Chinese people united in the grand endeavor to rejuvenate the nation, ensuring prosperity and harmony for every citizen."
   },
   {
     "chapter": "B2U4",
@@ -3109,30 +2921,28 @@
     "options": [
       {
         "label": "A",
-        "text": "tuition"
+        "text": "tuition",
+        "note": "学费"
       },
       {
         "label": "B",
-        "text": "finance"
+        "text": "finance",
+        "note": "财务"
       },
       {
         "label": "C",
-        "text": "alma mater"
+        "text": "alma mater",
+        "note": "母校"
       },
       {
         "label": "D",
-        "text": "testament"
+        "text": "testament",
+        "note": "证明"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "学费",
-      "B": "财务",
-      "C": "母校",
-      "D": "证明"
-    },
     "trans": "十年后回到母校，我走过熟悉的大门，问候了老教授们，感受到了对教育和回忆的无比感激。",
-    "full": "Returning to my testament after a decade, I walked through the familiar gates, greeted my old professors and felt immense gratitude for the education and memories."
+    "full": "Returning to my alma mater after a decade, I walked through the familiar gates, greeted my old professors and felt immense gratitude for the education and memories."
   },
   {
     "chapter": "B2U4",
@@ -3142,28 +2952,26 @@
     "options": [
       {
         "label": "A",
-        "text": "unlock"
+        "text": "unlock",
+        "note": "解锁"
       },
       {
         "label": "B",
-        "text": "entrust"
+        "text": "entrust",
+        "note": "委托"
       },
       {
         "label": "C",
-        "text": "fulfill"
+        "text": "fulfill",
+        "note": "实现"
       },
       {
         "label": "D",
-        "text": "chase"
+        "text": "chase",
+        "note": "追逐"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "解锁",
-      "B": "委托",
-      "C": "实现",
-      "D": "追逐"
-    },
     "trans": "谷歌的商业模式假设人们会委托它存储越来越多关于他们生活的信息，保存在公司远程计算机的云中。",
     "full": "Google's business model assumes that people will entrust it with ever more information about their lives, to be stored in the company's \"cloud\" of remote computers."
   },
@@ -3175,30 +2983,28 @@
     "options": [
       {
         "label": "A",
-        "text": "crust"
+        "text": "crust",
+        "note": "地壳"
       },
       {
         "label": "B",
-        "text": "discipline"
+        "text": "discipline",
+        "note": "学科"
       },
       {
         "label": "C",
-        "text": "strategy"
+        "text": "strategy",
+        "note": "策略"
       },
       {
         "label": "D",
-        "text": "geophysics"
+        "text": "geophysics",
+        "note": "地球物理学"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "地壳",
-      "B": "学科",
-      "C": "策略",
-      "D": "地球物理学"
-    },
     "trans": "几个世纪以来，法学研究在欧洲大学中一直被认为是一门基础的知识学科。",
-    "full": "The study of law has been recognized for centuries as a basic intellectual strategy in European universities."
+    "full": "The study of law has been recognized for centuries as a basic intellectual discipline in European universities."
   },
   {
     "chapter": "B2U4",
@@ -3208,28 +3014,26 @@
     "options": [
       {
         "label": "A",
-        "text": "commemorate"
+        "text": "commemorate",
+        "note": "纪念"
       },
       {
         "label": "B",
-        "text": "faint"
+        "text": "faint",
+        "note": "微弱的"
       },
       {
         "label": "C",
-        "text": "admit"
+        "text": "admit",
+        "note": "承认"
       },
       {
         "label": "D",
-        "text": "maximize"
+        "text": "maximize",
+        "note": "最大化"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "纪念",
-      "B": "微弱的",
-      "C": "承认",
-      "D": "最大化"
-    },
     "trans": "因此，从一个新产品中实现整体利润最大化的策略是收取低于最大可能价格的费用。",
     "full": "Consequently, the strategy to maximize overall profit from a new product is to charge less than the greatest possible price."
   },
@@ -3241,28 +3045,26 @@
     "options": [
       {
         "label": "A",
-        "text": "lunatic"
+        "text": "lunatic",
+        "note": "疯狂的"
       },
       {
         "label": "B",
-        "text": "workaholic"
+        "text": "workaholic",
+        "note": "工作狂"
       },
       {
         "label": "C",
-        "text": "patriot"
+        "text": "patriot",
+        "note": "爱国者"
       },
       {
         "label": "D",
-        "text": "geophysicist"
+        "text": "geophysicist",
+        "note": "地球物理学家"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "疯狂的",
-      "B": "工作狂",
-      "C": "爱国者",
-      "D": "地球物理学家"
-    },
     "trans": "我是一个工作狂，这意味着我的健康和个人关系远在我的事业之后，排在第二位。",
     "full": "I was a workaholic and this meant that my health and personal relationships came a distance second to my business."
   },
@@ -3274,30 +3076,28 @@
     "options": [
       {
         "label": "A",
-        "text": "impulsive"
+        "text": "impulsive",
+        "note": "冲动的"
       },
       {
         "label": "B",
-        "text": "symbolic"
+        "text": "symbolic",
+        "note": "象征性的"
       },
       {
         "label": "C",
-        "text": "diligent"
+        "text": "diligent",
+        "note": "勤奋的"
       },
       {
         "label": "D",
-        "text": "typical"
+        "text": "typical",
+        "note": "典型的"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "冲动的",
-      "B": "象征性的",
-      "C": "勤奋的",
-      "D": "典型的"
-    },
     "trans": "除了聪明之外，他还很勤奋和热心肠，这为他赢得了团队中每个人的尊重。",
-    "full": "Apart from being intelligent, he is also symbolic and warm-hearted, which earned him everyone's respect in the team."
+    "full": "Apart from being intelligent, he is also diligent and warm-hearted, which earned him everyone's respect in the team."
   },
   {
     "chapter": "B2U4",
@@ -3307,30 +3107,28 @@
     "options": [
       {
         "label": "A",
-        "text": "random"
+        "text": "random",
+        "note": "随机的"
       },
       {
         "label": "B",
-        "text": "explicit"
+        "text": "explicit",
+        "note": "明确的"
       },
       {
         "label": "C",
-        "text": "doctoral"
+        "text": "doctoral",
+        "note": "博士的"
       },
       {
         "label": "D",
-        "text": "cutting-edge"
+        "text": "cutting-edge",
+        "note": "尖端的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "随机的",
-      "B": "明确的",
-      "C": "博士的",
-      "D": "尖端的"
-    },
     "trans": "家长和老师可以通过提供关于心智作为学习机器的明确指导来帮助孩子。",
-    "full": "Parents and teachers can help children by providing doctoral instruction regarding the mind as a learning machine."
+    "full": "Parents and teachers can help children by providing explicit instruction regarding the mind as a learning machine."
   },
   {
     "chapter": "B2U4",
@@ -3340,30 +3138,28 @@
     "options": [
       {
         "label": "A",
-        "text": "unlock"
+        "text": "unlock",
+        "note": "解锁"
       },
       {
         "label": "B",
-        "text": "witness"
+        "text": "witness",
+        "note": "见证"
       },
       {
         "label": "C",
-        "text": "acknowledge"
+        "text": "acknowledge",
+        "note": "承认"
       },
       {
         "label": "D",
-        "text": "resound"
+        "text": "resound",
+        "note": "回响"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "解锁",
-      "B": "见证",
-      "C": "承认",
-      "D": "回响"
-    },
     "trans": "那场关于团结与和平的鼓舞人心的演讲在会议正式结束很久之后仍然在我们心中回响。",
-    "full": "The inspiring speech about unity and peace continued to witness in our hearts long after the conference had officially ended."
+    "full": "The inspiring speech about unity and peace continued to resound in our hearts long after the conference had officially ended."
   },
   {
     "chapter": "B2U4",
@@ -3373,30 +3169,28 @@
     "options": [
       {
         "label": "A",
-        "text": "urgent"
+        "text": "urgent",
+        "note": "紧急的"
       },
       {
         "label": "B",
-        "text": "temporal"
+        "text": "temporal",
+        "note": "暂时的"
       },
       {
         "label": "C",
-        "text": "exceptional"
+        "text": "exceptional",
+        "note": "卓越的"
       },
       {
         "label": "D",
-        "text": "geological"
+        "text": "geological",
+        "note": "地质的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "紧急的",
-      "B": "暂时的",
-      "C": "卓越的",
-      "D": "地质的"
-    },
     "trans": "由于情况紧急，所有员工被要求立即返回办公室。",
-    "full": "Due to the geological situation, all employees were asked to return to the office immediately."
+    "full": "Due to the urgent situation, all employees were asked to return to the office immediately."
   },
   {
     "chapter": "B2U4",
@@ -3406,30 +3200,28 @@
     "options": [
       {
         "label": "A",
-        "text": "joint"
+        "text": "joint",
+        "note": "联合的"
       },
       {
         "label": "B",
-        "text": "doctoral"
+        "text": "doctoral",
+        "note": "博士的"
       },
       {
         "label": "C",
-        "text": "strategic"
+        "text": "strategic",
+        "note": "战略的"
       },
       {
         "label": "D",
-        "text": "unyielding"
+        "text": "unyielding",
+        "note": "不屈的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "联合的",
-      "B": "博士的",
-      "C": "战略的",
-      "D": "不屈的"
-    },
     "trans": "成功完成一篇博士论文不仅需要原创性研究和严谨的论文写作，还需要坚定不移的奉献精神和坚韧不拔的毅力。",
-    "full": "Successfully completing a strategic thesis requires not only original research and a rigorous dissertation but also unwavering dedication and resilience."
+    "full": "Successfully completing a doctoral thesis requires not only original research and a rigorous dissertation but also unwavering dedication and resilience."
   },
   {
     "chapter": "B2U4",
@@ -3439,28 +3231,26 @@
     "options": [
       {
         "label": "A",
-        "text": "symbolize"
+        "text": "symbolize",
+        "note": "象征"
       },
       {
         "label": "B",
-        "text": "revere"
+        "text": "revere",
+        "note": "尊敬"
       },
       {
         "label": "C",
-        "text": "vanish"
+        "text": "vanish",
+        "note": "消失"
       },
       {
         "label": "D",
-        "text": "commit"
+        "text": "commit",
+        "note": "承诺"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "象征",
-      "B": "尊敬",
-      "C": "消失",
-      "D": "承诺"
-    },
     "trans": "他们互赠金戒指以象征他们的婚姻承诺。",
     "full": "They give each other a gold ring to symbolize their marriage reverement."
   },
@@ -3472,30 +3262,28 @@
     "options": [
       {
         "label": "A",
-        "text": "faint"
+        "text": "faint",
+        "note": "微弱的"
       },
       {
         "label": "B",
-        "text": "instrumental"
+        "text": "instrumental",
+        "note": "有帮助的"
       },
       {
         "label": "C",
-        "text": "lunatic"
+        "text": "lunatic",
+        "note": "疯狂的"
       },
       {
         "label": "D",
-        "text": "exceptional"
+        "text": "exceptional",
+        "note": "卓越的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "微弱的",
-      "B": "有帮助的",
-      "C": "疯狂的",
-      "D": "卓越的"
-    },
     "trans": "一缕微弱的金色阳光透过树叶洒下，在静谧的小径上投射出精致的图案。",
-    "full": "A instrumental golden sunlight filtered through the leaves,casting delicate patterns on the quiet path."
+    "full": "A faint golden sunlight filtered through the leaves,casting delicate patterns on the quiet path."
   },
   {
     "chapter": "B2U4",
@@ -3505,30 +3293,28 @@
     "options": [
       {
         "label": "A",
-        "text": "impulses"
+        "text": "impulses",
+        "note": "冲动(复数)"
       },
       {
         "label": "B",
-        "text": "gaps"
+        "text": "gaps",
+        "note": "差距"
       },
       {
         "label": "C",
-        "text": "tumors"
+        "text": "tumors",
+        "note": "肿瘤"
       },
       {
         "label": "D",
-        "text": "seminars"
+        "text": "seminars",
+        "note": "研讨会"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "冲动(复数)",
-      "B": "差距",
-      "C": "肿瘤",
-      "D": "研讨会"
-    },
     "trans": "在切除大脑深处的肿瘤时，她通过患者大脑的计算机图形图像观察手术器械的运动。",
-    "full": "While cutting away seminars deep in the brain, she watched the movement of her surgical tools in a computer graphics image of the patient's brain."
+    "full": "While cutting away tumors deep in the brain, she watched the movement of her surgical tools in a computer graphics image of the patient's brain."
   },
   {
     "chapter": "B2U4",
@@ -3538,30 +3324,28 @@
     "options": [
       {
         "label": "A",
-        "text": "Randomly"
+        "text": "Randomly",
+        "note": "随机地"
       },
       {
         "label": "B",
-        "text": "Resolutely"
+        "text": "Resolutely",
+        "note": "坚决地"
       },
       {
         "label": "C",
-        "text": "Typically"
+        "text": "Typically",
+        "note": "通常"
       },
       {
         "label": "D",
-        "text": "Explicitly"
+        "text": "Explicitly",
+        "note": "明确地"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "随机地",
-      "B": "坚决地",
-      "C": "通常",
-      "D": "明确地"
-    },
     "trans": "坚决坚持自己的原则立场和强硬不是一回事，他说。",
-    "full": "\"Explicitly adhering to one's principled stance is not the same thing as being hardline,\" he said."
+    "full": "\"Resolutely adhering to one's principled stance is not the same thing as being hardline,\" he said."
   },
   {
     "chapter": "B2U4",
@@ -3571,30 +3355,28 @@
     "options": [
       {
         "label": "A",
-        "text": "exceed"
+        "text": "exceed",
+        "note": "超过"
       },
       {
         "label": "B",
-        "text": "thrust"
+        "text": "thrust",
+        "note": "推力"
       },
       {
         "label": "C",
-        "text": "chase"
+        "text": "chase",
+        "note": "追逐"
       },
       {
         "label": "D",
-        "text": "blame"
+        "text": "blame",
+        "note": "责备"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "超过",
-      "B": "推力",
-      "C": "追逐",
-      "D": "责备"
-    },
     "trans": "许多年轻人，其中大多数受过良好教育，前往偏远地区追逐他们的梦想。",
-    "full": "Many young people, most of whom were well-educated, headed for remote regions to thrust their dreams."
+    "full": "Many young people, most of whom were well-educated, headed for remote regions to chase their dreams."
   },
   {
     "chapter": "B2U4",
@@ -3604,30 +3386,28 @@
     "options": [
       {
         "label": "A",
-        "text": "workaholic"
+        "text": "workaholic",
+        "note": "工作狂"
       },
       {
         "label": "B",
-        "text": "patriotism"
+        "text": "patriotism",
+        "note": "爱国主义"
       },
       {
         "label": "C",
-        "text": "outset"
+        "text": "outset",
+        "note": "开端"
       },
       {
         "label": "D",
-        "text": "cement"
+        "text": "cement",
+        "note": "水泥"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "工作狂",
-      "B": "爱国主义",
-      "C": "开端",
-      "D": "水泥"
-    },
     "trans": "他的一生是爱国主义的一生，是对祖国和人民的热爱的一生，是对人民文学事业无私奉献的一生。",
-    "full": "His whole life was a life of cement, love for the motherland and the people and a life of utter devotion to the literary cause of the people."
+    "full": "His whole life was a life of patriotism, love for the motherland and the people and a life of utter devotion to the literary cause of the people."
   },
   {
     "chapter": "B2U4",
@@ -3637,30 +3417,28 @@
     "options": [
       {
         "label": "A",
-        "text": "race against"
+        "text": "race against",
+        "note": "与…竞赛"
       },
       {
         "label": "B",
-        "text": "pay off"
+        "text": "pay off",
+        "note": "得到回报"
       },
       {
         "label": "C",
-        "text": "be embedded in"
+        "text": "be embedded in",
+        "note": "嵌入"
       },
       {
         "label": "D",
-        "text": "hole up"
+        "text": "hole up",
+        "note": "躲藏"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "与…竞赛",
-      "B": "得到回报",
-      "C": "嵌入",
-      "D": "躲藏"
-    },
     "trans": "你的应用程序对象所使用的密钥将被嵌入在你的规则中，这使得一旦你有了规则库就很难更改。",
-    "full": "The key used for your application object will race against your rules, making it difficult to change once you have a library of rules."
+    "full": "The key used for your application object will be embedded in your rules, making it difficult to change once you have a library of rules."
   },
   {
     "chapter": "B2U4",
@@ -3670,30 +3448,28 @@
     "options": [
       {
         "label": "A",
-        "text": "rejuvenate"
+        "text": "rejuvenate",
+        "note": "复兴"
       },
       {
         "label": "B",
-        "text": "fulfill"
+        "text": "fulfill",
+        "note": "实现"
       },
       {
         "label": "C",
-        "text": "maximize"
+        "text": "maximize",
+        "note": "最大化"
       },
       {
         "label": "D",
-        "text": "sacrifice"
+        "text": "sacrifice",
+        "note": "牺牲"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "复兴",
-      "B": "实现",
-      "C": "最大化",
-      "D": "牺牲"
-    },
     "trans": "寻找解决世界粮食短缺问题的长期技术解决方案的承诺似乎难以实现。",
-    "full": "The promise of finding long-term technological solutions to the problem of world food shortages seems difficult to sacrifice."
+    "full": "The promise of finding long-term technological solutions to the problem of world food shortages seems difficult to fulfill."
   },
   {
     "chapter": "B2U4",
@@ -3703,28 +3479,26 @@
     "options": [
       {
         "label": "A",
-        "text": "urgent"
+        "text": "urgent",
+        "note": "紧急的"
       },
       {
         "label": "B",
-        "text": "exceptional"
+        "text": "exceptional",
+        "note": "卓越的"
       },
       {
         "label": "C",
-        "text": "atomic"
+        "text": "atomic",
+        "note": "原子的"
       },
       {
         "label": "D",
-        "text": "confidential"
+        "text": "confidential",
+        "note": "机密的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "紧急的",
-      "B": "卓越的",
-      "C": "原子的",
-      "D": "机密的"
-    },
     "trans": "尽管在职业生涯早期面临无数次挫折，这位发明家的卓越韧性和创造性思维最终带来了改变整个行业的突破。",
     "full": "Despite facing numerous setbacks early in his career, the inventor's exceptional tenacity and creative thinking ultimately led to a breakthrough that transformed the entire industry."
   },
@@ -3736,30 +3510,28 @@
     "options": [
       {
         "label": "A",
-        "text": "strategic"
+        "text": "strategic",
+        "note": "战略的"
       },
       {
         "label": "B",
-        "text": "earnest"
+        "text": "earnest",
+        "note": "认真的"
       },
       {
         "label": "C",
-        "text": "explicit"
+        "text": "explicit",
+        "note": "明确的"
       },
       {
         "label": "D",
-        "text": "multidiscipline"
+        "text": "multidiscipline",
+        "note": "多学科的"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "战略的",
-      "B": "认真的",
-      "C": "明确的",
-      "D": "多学科的"
-    },
     "trans": "将军批准了一次战略性撤退，牺牲领土以重新集结力量，赢得一场更长的战争。",
-    "full": "The general approved a explicit withdrawal, sacrificing territory to regroup forces and win a longer war."
+    "full": "The general approved a strategic withdrawal, sacrificing territory to regroup forces and win a longer war."
   },
   {
     "chapter": "B2U4",
@@ -3769,30 +3541,28 @@
     "options": [
       {
         "label": "A",
-        "text": "wilderness"
+        "text": "wilderness",
+        "note": "荒野"
       },
       {
         "label": "B",
-        "text": "adversity"
+        "text": "adversity",
+        "note": "逆境"
       },
       {
         "label": "C",
-        "text": "backbone"
+        "text": "backbone",
+        "note": "支柱"
       },
       {
         "label": "D",
-        "text": "beacon"
+        "text": "beacon",
+        "note": "灯塔"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "荒野",
-      "B": "逆境",
-      "C": "支柱",
-      "D": "灯塔"
-    },
     "trans": "面对深重的逆境，他们坚定不移的团结将可能绝望的时刻转化为集体成长和坚韧的强大能量。",
-    "full": "In the face of profound backbone, their unwavering unity transformed a moment of potential despair into a powerful energy for collective growth and resilience."
+    "full": "In the face of profound adversity, their unwavering unity transformed a moment of potential despair into a powerful energy for collective growth and resilience."
   },
   {
     "chapter": "B2U4",
@@ -3802,30 +3572,28 @@
     "options": [
       {
         "label": "A",
-        "text": "gap"
+        "text": "gap",
+        "note": "差距"
       },
       {
         "label": "B",
-        "text": "tumor"
+        "text": "tumor",
+        "note": "肿瘤"
       },
       {
         "label": "C",
-        "text": "seminar"
+        "text": "seminar",
+        "note": "研讨会"
       },
       {
         "label": "D",
-        "text": "anonymity"
+        "text": "anonymity",
+        "note": "匿名"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "差距",
-      "B": "肿瘤",
-      "C": "研讨会",
-      "D": "匿名"
-    },
     "trans": "研究研讨会为研究生提供了一个宝贵的论坛，让他们展示论文提案并获得建设性的批评反馈。",
-    "full": "The research anonymity provided a valuable forum for graduate students to present their thesis proposals and receive constructive critical feedback."
+    "full": "The research seminar provided a valuable forum for graduate students to present their thesis proposals and receive constructive critical feedback."
   },
   {
     "chapter": "B2U4",
@@ -3835,30 +3603,28 @@
     "options": [
       {
         "label": "A",
-        "text": "crust"
+        "text": "crust",
+        "note": "地壳"
       },
       {
         "label": "B",
-        "text": "detonation"
+        "text": "detonation",
+        "note": "爆炸"
       },
       {
         "label": "C",
-        "text": "atmosphere"
+        "text": "atmosphere",
+        "note": "大气"
       },
       {
         "label": "D",
-        "text": "fragment"
+        "text": "fragment",
+        "note": "碎片"
       }
     ],
     "answer": "A",
-    "notes": {
-      "A": "地壳",
-      "B": "爆炸",
-      "C": "大气",
-      "D": "碎片"
-    },
     "trans": "地壳主要由火成岩和变质岩组成。",
-    "full": "Earth's atmosphere consists mainly of igneous and metamorphic rocks."
+    "full": "Earth's crust consists mainly of igneous and metamorphic rocks."
   },
   {
     "chapter": "B2U4",
@@ -3868,28 +3634,26 @@
     "options": [
       {
         "label": "A",
-        "text": "bolster"
+        "text": "bolster",
+        "note": "支持"
       },
       {
         "label": "B",
-        "text": "disprove"
+        "text": "disprove",
+        "note": "反驳"
       },
       {
         "label": "C",
-        "text": "acknowledge"
+        "text": "acknowledge",
+        "note": "承认"
       },
       {
         "label": "D",
-        "text": "necessitate"
+        "text": "necessitate",
+        "note": "需要"
       }
     ],
     "answer": "C",
-    "notes": {
-      "A": "支持",
-      "B": "反驳",
-      "C": "承认",
-      "D": "需要"
-    },
     "trans": "我们必须承认我们敬业团队的巨大贡献，正是他们的辛勤工作使这个项目取得了巨大成功。",
     "full": "We must acknowledge the significant contributions of our dedicated team, whose hard work made this project a resounding success."
   },
@@ -3901,30 +3665,28 @@
     "options": [
       {
         "label": "A",
-        "text": "strategic"
+        "text": "strategic",
+        "note": "战略的"
       },
       {
         "label": "B",
-        "text": "joint"
+        "text": "joint",
+        "note": "联合的"
       },
       {
         "label": "C",
-        "text": "fulfilled"
+        "text": "fulfilled",
+        "note": "实现的"
       },
       {
         "label": "D",
-        "text": "distressed"
+        "text": "distressed",
+        "note": "痛苦的"
       }
     ],
     "answer": "B",
-    "notes": {
-      "A": "战略的",
-      "B": "联合的",
-      "C": "实现的",
-      "D": "痛苦的"
-    },
     "trans": "只有通过父母和孩子的共同努力，他们才能弥合彼此之间的代沟。",
-    "full": "Only by their distressed efforts, can parents and children bridge the generation gap between them."
+    "full": "Only by their joint efforts, can parents and children bridge the generation gap between them."
   },
   {
     "chapter": "B2U4",
@@ -3934,29 +3696,957 @@
     "options": [
       {
         "label": "A",
-        "text": "patriotism"
+        "text": "patriotism",
+        "note": "爱国主义"
       },
       {
         "label": "B",
-        "text": "fragment"
+        "text": "fragment",
+        "note": "碎片"
       },
       {
         "label": "C",
-        "text": "deficit"
+        "text": "deficit",
+        "note": "不足"
       },
       {
         "label": "D",
-        "text": "impulse"
+        "text": "impulse",
+        "note": "冲动"
       }
     ],
     "answer": "D",
-    "notes": {
-      "A": "爱国主义",
-      "B": "碎片",
-      "C": "不足",
-      "D": "冲动"
-    },
     "trans": "从行驶的火车上跳下去的突如其来的强烈冲动，很快就被我大脑中压倒性的生存本能压制住了。",
-    "full": "The sudden, powerful fragment to leap from the moving train was quickly suppressed by my brain's overwhelming instinct for survival."
+    "full": "The sudden, powerful impulse to leap from the moving train was quickly suppressed by my brain's overwhelming instinct for survival."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The municipal government must carefully _______ its limited resources to ensure that essential public services remain fully operational throughout the fiscal year.",
+    "options": [
+      {
+        "label": "A",
+        "text": "bargain",
+        "note": "讨价还价"
+      },
+      {
+        "label": "B",
+        "text": "budget",
+        "note": "预算"
+      },
+      {
+        "label": "C",
+        "text": "browser",
+        "note": "浏览器"
+      },
+      {
+        "label": "D",
+        "text": "bucket",
+        "note": "桶"
+      }
+    ],
+    "answer": "B",
+    "trans": "市政府必须谨慎预算其有限资源，以确保基本公共服务在整个财政年度保持全面运作。",
+    "full": "The municipal government must carefully budget its limited resources to ensure that essential public services remain fully operational throughout the fiscal year."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The young artist continues to _______ conventional artistic norms by creating controversial works that challenge established aesthetic standards and social expectations.",
+    "options": [
+      {
+        "label": "A",
+        "text": "define",
+        "note": "定义"
+      },
+      {
+        "label": "B",
+        "text": "delay",
+        "note": "延迟"
+      },
+      {
+        "label": "C",
+        "text": "defy",
+        "note": "违抗"
+      },
+      {
+        "label": "D",
+        "text": "defend",
+        "note": "辩护"
+      }
+    ],
+    "answer": "C",
+    "trans": "这位年轻艺术家继续违抗传统艺术规范，创作出挑战既定审美标准和社会期望的争议性作品。",
+    "full": "The young artist continues to defy conventional artistic norms by creating controversial works that challenge established aesthetic standards and social expectations."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "She faced a ______： whether to accept the low-paid job with better development or the high-paid one with more pressure.",
+    "options": [
+      {
+        "label": "A",
+        "text": "obstacle",
+        "note": "障碍"
+      },
+      {
+        "label": "B",
+        "text": "dilemma",
+        "note": "困境"
+      },
+      {
+        "label": "C",
+        "text": "debate",
+        "note": "辩论"
+      },
+      {
+        "label": "D",
+        "text": "deliberate",
+        "note": "深思熟虑的"
+      }
+    ],
+    "answer": "B",
+    "trans": "她面临一个困境：是接受工资低但发展前景更好的工作，还是工资高但压力更大的工作。",
+    "full": "She faced a dilemma： whether to accept the low-paid job with better development or the high-paid one with more pressure."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The city's cultural life is ______， with various festivals, art exhibitions and music performances held all year round.",
+    "options": [
+      {
+        "label": "A",
+        "text": "adverse",
+        "note": "不利的"
+      },
+      {
+        "label": "B",
+        "text": "diverse",
+        "note": "多样的"
+      },
+      {
+        "label": "C",
+        "text": "delicate",
+        "note": "精致的"
+      },
+      {
+        "label": "D",
+        "text": "precise",
+        "note": "精确的"
+      }
+    ],
+    "answer": "B",
+    "trans": "这座城市的文化生活丰富多样，全年举办各种节日、艺术展览和音乐演出。",
+    "full": "The city's cultural life is diverse， with various festivals, art exhibitions and music performances held all year round."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Companies are eager to build brand _____ in their customers, which involves ensuring their repeat purchases of the same brand.",
+    "options": [
+      {
+        "label": "A",
+        "text": "luxury",
+        "note": "奢侈"
+      },
+      {
+        "label": "B",
+        "text": "liberty",
+        "note": "自由"
+      },
+      {
+        "label": "C",
+        "text": "loyalty",
+        "note": "忠诚"
+      },
+      {
+        "label": "D",
+        "text": "curiosity",
+        "note": "好奇"
+      }
+    ],
+    "answer": "C",
+    "trans": "公司渴望在客户中建立品牌忠诚度，这涉及确保客户对同一品牌的重复购买。",
+    "full": "Companies are eager to build brand loyalty in their customers, which involves ensuring their repeat purchases of the same brand."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "As a shrewd politician with decades of experience, he knows how to effectively _____ public opinion and sway the masses for his own benefit.",
+    "options": [
+      {
+        "label": "A",
+        "text": "reveal",
+        "note": "揭示"
+      },
+      {
+        "label": "B",
+        "text": "manufacture",
+        "note": "制造"
+      },
+      {
+        "label": "C",
+        "text": "modify",
+        "note": "修改"
+      },
+      {
+        "label": "D",
+        "text": "manipulate",
+        "note": "操纵"
+      }
+    ],
+    "answer": "D",
+    "trans": "作为一个拥有数十年经验的精明政治家，他知道如何有效操纵公众舆论来为自己谋利。",
+    "full": "As a shrewd politician with decades of experience, he knows how to effectively manipulate public opinion and sway the masses for his own benefit."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Being a judge for the speech contest, her main ______ is to be fair and impartial when scoring the students' performance.",
+    "options": [
+      {
+        "label": "A",
+        "text": "objection",
+        "note": "反对"
+      },
+      {
+        "label": "B",
+        "text": "obligation",
+        "note": "义务"
+      },
+      {
+        "label": "C",
+        "text": "objective",
+        "note": "目标"
+      },
+      {
+        "label": "D",
+        "text": "observation",
+        "note": "观察"
+      }
+    ],
+    "answer": "B",
+    "trans": "作为演讲比赛的评委，她的主要义务是在给学生表现打分时保持公平公正。",
+    "full": "Being a judge for the speech contest, her main obligation is to be fair and impartial when scoring the students' performance."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "From my ______， we should focus on improving the quality of the course rather than just increasing the class hours.",
+    "options": [
+      {
+        "label": "A",
+        "text": "perception",
+        "note": "感知"
+      },
+      {
+        "label": "B",
+        "text": "perspective",
+        "note": "视角"
+      },
+      {
+        "label": "C",
+        "text": "permission",
+        "note": "许可"
+      },
+      {
+        "label": "D",
+        "text": "possession",
+        "note": "拥有"
+      }
+    ],
+    "answer": "B",
+    "trans": "从我的视角来看，我们应该专注于提高课程质量，而不仅仅是增加课时。",
+    "full": "From my perspective， we should focus on improving the quality of the course rather than just increasing the class hours."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The new mayor promised to _______ the city's chronic traffic congestion by implementing comprehensive public transportation reforms and strict vehicle restrictions.",
+    "options": [
+      {
+        "label": "A",
+        "text": "target",
+        "note": "瞄准"
+      },
+      {
+        "label": "B",
+        "text": "transform",
+        "note": "转变"
+      },
+      {
+        "label": "C",
+        "text": "tolerate",
+        "note": "容忍"
+      },
+      {
+        "label": "D",
+        "text": "tackle",
+        "note": "处理"
+      }
+    ],
+    "answer": "D",
+    "trans": "新市长承诺通过全面的公交改革和严格的车辆限行来解决城市长期存在的交通拥堵问题。",
+    "full": "The new mayor promised to tackle the city's chronic traffic congestion by implementing comprehensive public transportation reforms and strict vehicle restrictions."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Foreign forces were accused of attempting to _______ the sovereign nation's territory without declaring war or obtaining official permission from the international community.",
+    "options": [
+      {
+        "label": "A",
+        "text": "invade",
+        "note": "入侵"
+      },
+      {
+        "label": "B",
+        "text": "intrude",
+        "note": "闯入"
+      },
+      {
+        "label": "C",
+        "text": "invest",
+        "note": "投资"
+      },
+      {
+        "label": "D",
+        "text": "investigate",
+        "note": "调查"
+      }
+    ],
+    "answer": "A",
+    "trans": "外国军队被指控企图在未宣战或未获国际社会正式许可的情况下入侵该主权国家领土。",
+    "full": "Foreign forces were accused of attempting to invade the sovereign nation's territory without declaring war or obtaining official permission from the international community."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "All manufacturing operations have been temporarily ___________ at the assembly plant while rigorous safety checks are carried out to prevent worker injuries.",
+    "options": [
+      {
+        "label": "A",
+        "text": "survived",
+        "note": "幸存"
+      },
+      {
+        "label": "B",
+        "text": "stocked",
+        "note": "储存"
+      },
+      {
+        "label": "C",
+        "text": "supplied",
+        "note": "供应"
+      },
+      {
+        "label": "D",
+        "text": "suspended",
+        "note": "暂停"
+      }
+    ],
+    "answer": "D",
+    "trans": "装配厂的所有制造作业已暂时暂停，同时正在进行严格的安全检查以防止工人受伤。",
+    "full": "All manufacturing operations have been temporarily suspended at the assembly plant while rigorous safety checks are carried out to prevent worker injuries."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The independent investigation was ______ by the loss of all crucial documentation and vital evidence regarding the case.",
+    "options": [
+      {
+        "label": "A",
+        "text": "proposed",
+        "note": "提议"
+      },
+      {
+        "label": "B",
+        "text": "highlighted",
+        "note": "突出"
+      },
+      {
+        "label": "C",
+        "text": "hindered",
+        "note": "阻碍"
+      },
+      {
+        "label": "D",
+        "text": "honored",
+        "note": "尊敬"
+      }
+    ],
+    "answer": "C",
+    "trans": "独立调查因所有关键文件和重要证据的丢失而受到阻碍。",
+    "full": "The independent investigation was hindered by the loss of all crucial documentation and vital evidence regarding the case."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Before making the final decision, you'd better ______ a professional to get some useful advice.",
+    "options": [
+      {
+        "label": "A",
+        "text": "conduct",
+        "note": "进行"
+      },
+      {
+        "label": "B",
+        "text": "consume",
+        "note": "消耗"
+      },
+      {
+        "label": "C",
+        "text": "consult",
+        "note": "咨询"
+      },
+      {
+        "label": "D",
+        "text": "confirm",
+        "note": "确认"
+      }
+    ],
+    "answer": "C",
+    "trans": "在做最终决定之前，你最好咨询专业人士以获得一些有用的建议。",
+    "full": "Before making the final decision, you'd better consult a professional to get some useful advice."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The sudden explosion caused the crowded square to _______ immediately, with people running in all directions to escape the potential danger and debris.",
+    "options": [
+      {
+        "label": "A",
+        "text": "secure",
+        "note": "保护"
+      },
+      {
+        "label": "B",
+        "text": "scatter",
+        "note": "散开"
+      },
+      {
+        "label": "C",
+        "text": "select",
+        "note": "选择"
+      },
+      {
+        "label": "D",
+        "text": "spatter",
+        "note": "溅洒"
+      }
+    ],
+    "answer": "B",
+    "trans": "突如其来的爆炸导致拥挤的广场立刻散开，人们四散奔逃以躲避潜在的危险和碎片。",
+    "full": "The sudden explosion caused the crowded square to scatter immediately, with people running in all directions to escape the potential danger and debris."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Desperate to join the army, she ________ herself as a bearded young man by cutting her hair so she could fight on the battlefield.",
+    "options": [
+      {
+        "label": "A",
+        "text": "disgusted",
+        "note": "厌恶"
+      },
+      {
+        "label": "B",
+        "text": "disguised",
+        "note": "伪装"
+      },
+      {
+        "label": "C",
+        "text": "disposed",
+        "note": "处理"
+      },
+      {
+        "label": "D",
+        "text": "devised",
+        "note": "设计"
+      }
+    ],
+    "answer": "B",
+    "trans": "渴望参军，她剪掉头发伪装成一位长胡子的年轻人，以便能在战场上战斗。",
+    "full": "Desperate to join the army, she disguised herself as a bearded young man by cutting her hair so she could fight on the battlefield."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Many economists predict that the country will face a severe economic _______ next year as manufacturing output declines and unemployment rates continue to rise steadily.",
+    "options": [
+      {
+        "label": "A",
+        "text": "concession",
+        "note": "让步"
+      },
+      {
+        "label": "B",
+        "text": "succession",
+        "note": "连续"
+      },
+      {
+        "label": "C",
+        "text": "procession",
+        "note": "队列"
+      },
+      {
+        "label": "D",
+        "text": "recession",
+        "note": "衰退"
+      }
+    ],
+    "answer": "D",
+    "trans": "许多经济学家预测，随着制造业产出下降和失业率持续上升，该国明年将面临严重的经济衰退。",
+    "full": "Many economists predict that the country will face a severe economic recession next year as manufacturing output declines and unemployment rates continue to rise steadily."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The two countries have decided to _______ diplomatic talks next month after a six-month suspension caused by the ongoing border dispute between neighbors.",
+    "options": [
+      {
+        "label": "A",
+        "text": "presume",
+        "note": "假定"
+      },
+      {
+        "label": "B",
+        "text": "assume",
+        "note": "假设"
+      },
+      {
+        "label": "C",
+        "text": "consume",
+        "note": "消费"
+      },
+      {
+        "label": "D",
+        "text": "resume",
+        "note": "恢复"
+      }
+    ],
+    "answer": "D",
+    "trans": "两邻国已决定在下个月恢复因持续边境争端而中断了六个月的外交谈判。",
+    "full": "The two countries have decided to resume diplomatic talks next month after a six-month suspension caused by the ongoing border dispute between neighbors."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Parents who adopt a highly _______ approach to child-rearing often allow their children unlimited freedom without setting clear behavioral boundaries or strict rules.",
+    "options": [
+      {
+        "label": "A",
+        "text": "permissible",
+        "note": "可允许的"
+      },
+      {
+        "label": "B",
+        "text": "permissive",
+        "note": "宽容的"
+      },
+      {
+        "label": "C",
+        "text": "submissive",
+        "note": "顺从的"
+      },
+      {
+        "label": "D",
+        "text": "aggressive",
+        "note": "侵略的"
+      }
+    ],
+    "answer": "B",
+    "trans": "采取高度宽容育儿方式的父母通常允许孩子无限自由，而不设定明确的行为界限或严格规则。",
+    "full": "Parents who adopt a highly permissive approach to child-rearing often allow their children unlimited freedom without setting clear behavioral boundaries or strict rules."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The new apartment building offers _______ living spaces designed for young professionals who prefer efficiency and convenience over excessive square footage in cities.",
+    "options": [
+      {
+        "label": "A",
+        "text": "concise",
+        "note": "简洁的"
+      },
+      {
+        "label": "B",
+        "text": "contract",
+        "note": "合同"
+      },
+      {
+        "label": "C",
+        "text": "compact",
+        "note": "紧凑的"
+      },
+      {
+        "label": "D",
+        "text": "contact",
+        "note": "联系"
+      }
+    ],
+    "answer": "C",
+    "trans": "新公寓楼提供紧凑型生活空间，专为偏好效率和便利而非超大面积的年轻城市专业人士设计。",
+    "full": "The new apartment building offers compact living spaces designed for young professionals who prefer efficiency and convenience over excessive square footage in cities."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The environmental group launched a public awareness _______ to encourage local citizens to reduce plastic waste and protect fragile ocean ecosystems.",
+    "options": [
+      {
+        "label": "A",
+        "text": "champagne",
+        "note": "香槟"
+      },
+      {
+        "label": "B",
+        "text": "champion",
+        "note": "冠军"
+      },
+      {
+        "label": "C",
+        "text": "campaign",
+        "note": "运动/活动"
+      },
+      {
+        "label": "D",
+        "text": "companion",
+        "note": "同伴"
+      }
+    ],
+    "answer": "C",
+    "trans": "环保组织发起了一场公众意识运动，鼓励当地市民减少塑料垃圾并保护脆弱的海洋生态系统。",
+    "full": "The environmental group launched a public awareness campaign to encourage local citizens to reduce plastic waste and protect fragile ocean ecosystems."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The central government plans to _______ new environmental regulations next week that will strictly control industrial emissions and promote sustainable development in manufacturing sectors.",
+    "options": [
+      {
+        "label": "A",
+        "text": "issue",
+        "note": "发布"
+      },
+      {
+        "label": "B",
+        "text": "ensure",
+        "note": "确保"
+      },
+      {
+        "label": "C",
+        "text": "assure",
+        "note": "保证"
+      },
+      {
+        "label": "D",
+        "text": "pursue",
+        "note": "追求"
+      }
+    ],
+    "answer": "A",
+    "trans": "中央政府计划下周发布新的环保法规，严格管控工业排放并促进制造业可持续发展。",
+    "full": "The central government plans to issue new environmental regulations next week that will strictly control industrial emissions and promote sustainable development in manufacturing sectors."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Advanced municipal water purification systems can effectively _______ out harmful contaminants and bacteria before the treated water finally reaches household taps.",
+    "options": [
+      {
+        "label": "A",
+        "text": "alter",
+        "note": "改变"
+      },
+      {
+        "label": "B",
+        "text": "filter",
+        "note": "过滤"
+      },
+      {
+        "label": "C",
+        "text": "liter",
+        "note": "升"
+      },
+      {
+        "label": "D",
+        "text": "falter",
+        "note": "犹豫"
+      }
+    ],
+    "answer": "B",
+    "trans": "先进的市政水净化系统可以有效过滤掉有害污染物和细菌，使处理后的水最终到达家庭水龙头。",
+    "full": "Advanced municipal water purification systems can effectively filter out harmful contaminants and bacteria before the treated water finally reaches household taps."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The _______ reason for the project failure was poor communication between team members rather than any lack of technical expertise or financial resources.",
+    "options": [
+      {
+        "label": "A",
+        "text": "principal",
+        "note": "主要的"
+      },
+      {
+        "label": "B",
+        "text": "disciple",
+        "note": "门徒"
+      },
+      {
+        "label": "C",
+        "text": "principle",
+        "note": "原则"
+      },
+      {
+        "label": "D",
+        "text": "multiple",
+        "note": "多个的"
+      }
+    ],
+    "answer": "A",
+    "trans": "项目失败的主要原因是团队成员之间的沟通不畅，而非技术专长或财务资源的缺乏。",
+    "full": "The principal reason for the project failure was poor communication between team members rather than any lack of technical expertise or financial resources."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The local authority decided to _______ a heavy tax on luxury goods to increase public revenue and reduce growing social inequality in the region.",
+    "options": [
+      {
+        "label": "A",
+        "text": "propose",
+        "note": "提议"
+      },
+      {
+        "label": "B",
+        "text": "dispose",
+        "note": "处理"
+      },
+      {
+        "label": "C",
+        "text": "impose",
+        "note": "征收"
+      },
+      {
+        "label": "D",
+        "text": "expose",
+        "note": "暴露"
+      }
+    ],
+    "answer": "C",
+    "trans": "地方当局决定对奢侈品征收重税，以增加公共收入并减少该地区日益加剧的社会不平等。",
+    "full": "The local authority decided to impose a heavy tax on luxury goods to increase public revenue and reduce growing social inequality in the region."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The professor asked students to choose a specific historical event that would _______ the complex relationship between rapid economic development and long-term environmental protection.",
+    "options": [
+      {
+        "label": "A",
+        "text": "example",
+        "note": "例子"
+      },
+      {
+        "label": "B",
+        "text": "simplify",
+        "note": "简化"
+      },
+      {
+        "label": "C",
+        "text": "amplify",
+        "note": "放大"
+      },
+      {
+        "label": "D",
+        "text": "exemplify",
+        "note": "例证"
+      }
+    ],
+    "answer": "D",
+    "trans": "教授要求学生选择一个特定的历史事件来例证经济快速发展与长期环境保护之间的复杂关系。",
+    "full": "The professor asked students to choose a specific historical event that would exemplify the complex relationship between rapid economic development and long-term environmental protection."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Many young professionals today still have the _______ that career success comes easily without years of hard work and persistent effort in competitive fields.",
+    "options": [
+      {
+        "label": "A",
+        "text": "delusion",
+        "note": "妄想"
+      },
+      {
+        "label": "B",
+        "text": "allusion",
+        "note": "暗指"
+      },
+      {
+        "label": "C",
+        "text": "conclusion",
+        "note": "结论"
+      },
+      {
+        "label": "D",
+        "text": "illusion",
+        "note": "错觉"
+      }
+    ],
+    "answer": "D",
+    "trans": "如今许多年轻专业人士仍然抱有错觉，认为在竞争激烈的领域中不经过多年努力就能轻易获得事业成功。",
+    "full": "Many young professionals today still have the illusion that career success comes easily without years of hard work and persistent effort in competitive fields."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The doctor prescribed a traditional herbal medicine as an effective _______ for the patient's chronic insomnia and related anxiety disorders affecting daily life.",
+    "options": [
+      {
+        "label": "A",
+        "text": "mediate",
+        "note": "调解"
+      },
+      {
+        "label": "B",
+        "text": "remedy",
+        "note": "疗法"
+      },
+      {
+        "label": "C",
+        "text": "healing",
+        "note": "愈合"
+      },
+      {
+        "label": "D",
+        "text": "recover",
+        "note": "恢复"
+      }
+    ],
+    "answer": "B",
+    "trans": "医生开了一种传统草药作为有效疗法来治疗患者影响日常生活的慢性失眠和相关焦虑障碍。",
+    "full": "The doctor prescribed a traditional herbal medicine as an effective remedy for the patient's chronic insomnia and related anxiety disorders affecting daily life."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "After working for the company for ten years, every employee _______ receive a full pension upon retirement according to the new labor contract agreement signed last month.",
+    "options": [
+      {
+        "label": "A",
+        "text": "is titled to",
+        "note": "被冠名为"
+      },
+      {
+        "label": "B",
+        "text": "is entitled to",
+        "note": "有权"
+      },
+      {
+        "label": "C",
+        "text": "is subjected to",
+        "note": "受制于"
+      },
+      {
+        "label": "D",
+        "text": "is committed to",
+        "note": "致力于"
+      }
+    ],
+    "answer": "B",
+    "trans": "根据上个月签署的新劳动合同协议，每位在公司工作满十年的员工都有权在退休时领取全额养老金。",
+    "full": "After working for the company for ten years, every employee is entitled to receive a full pension upon retirement according to the new labor contract agreement signed last month."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "Despite numerous unexpected challenges and external pressures, the research team managed to _______ and complete the project before the strict deadline imposed by the funding agency.",
+    "options": [
+      {
+        "label": "A",
+        "text": "stay on track",
+        "note": "保持正轨"
+      },
+      {
+        "label": "B",
+        "text": "get on track",
+        "note": "走上正轨"
+      },
+      {
+        "label": "C",
+        "text": "get off track",
+        "note": "偏离正轨"
+      },
+      {
+        "label": "D",
+        "text": "lose track",
+        "note": "失去联系"
+      }
+    ],
+    "answer": "A",
+    "trans": "尽管面临无数意想不到的挑战和外部压力，研究团队仍设法保持正轨并在资助机构规定的严格截止日期前完成了项目。",
+    "full": "Despite numerous unexpected challenges and external pressures, the research team managed to stay on track and complete the project before the strict deadline imposed by the funding agency."
+  },
+  {
+    "chapter": "B2U5",
+    "chapter_title": "词汇练习",
+    "type": "单选题",
+    "stem": "The lecture was so dense with technical information that many students found it difficult to _______ all the complex theories presented by the professor in a single session.",
+    "options": [
+      {
+        "label": "A",
+        "text": "take on",
+        "note": "承担"
+      },
+      {
+        "label": "B",
+        "text": "take up",
+        "note": "占据"
+      },
+      {
+        "label": "C",
+        "text": "take in",
+        "note": "吸收/理解"
+      },
+      {
+        "label": "D",
+        "text": "take over",
+        "note": "接管"
+      }
+    ],
+    "answer": "C",
+    "trans": "讲座的技术信息非常密集，许多学生发现很难在一节课中吸收教授呈现的所有复杂理论。",
+    "full": "The lecture was so dense with technical information that many students found it difficult to take in all the complex theories presented by the professor in a single session."
   }
 ]
