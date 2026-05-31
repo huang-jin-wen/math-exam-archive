@@ -604,8 +604,8 @@ function renderOptions(i, answered) {
     const click = answered ? '' : 'onclick="answerQuestion(' + i + ',\'' + o.label + '\')"';
     html += '<div class="oi ' + cls + '" ' + click + '>' +
       '<div class="ol">' + o.label + '</div>' +
-      '<div class="ot">' + o.text +
-      (answered && o.note ? ' <span style="color:#999;font-size:.9em">（' + o.note + '）</span>' : '') +
+      '<div class="ot">' + escapeHTML(o.text) +
+      (answered && o.note ? ' <span style="color:#999;font-size:.9em">（' + escapeHTML(o.note) + '）</span>' : '') +
       '</div></div>';
   });
   html += '</div>';
