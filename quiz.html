@@ -473,8 +473,7 @@ function renderFillIn(i, answered) {
   // 检测是否有代码块（包含 \n）
   if (stem.includes('\n')) {
     const segments = stem.split('\n');
-    const desc = escapeHTML(segments[0]);
-    // 先高亮再替换输入框，避免 replaceInputs 的 HTML 被错误高亮
+    const desc = replaceInputs(escapeHTML(segments[0]));
     const codeLines = segments.slice(1).map(l => replaceInputs(highlightPython(l))).join('\n');
     return '<div class="fi-wrap">' + desc +
       '<div class="code-block">' + codeLines + '</div></div>';
