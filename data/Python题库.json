@@ -203,7 +203,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx = 12.34\nprint(type(x))",
+    "stem": "下面代码的输出结果是（）。; x = 12.34; print(type(x))",
     "options": [
       {
         "label": "A",
@@ -228,7 +228,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx = 0x0101\nprint(x)",
+    "stem": "下面代码的输出结果是（）。; x = 0x0101; print(x)",
     "options": [
       {
         "label": "A",
@@ -253,7 +253,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx = 0x1010\nprint(x)",
+    "stem": "下面代码的输出结果是（）。; x = 0x1010; print(x)",
     "options": [
       {
         "label": "A",
@@ -278,7 +278,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx = 0b1010\nprint(x)",
+    "stem": "下面代码的输出结果是（）。; x = 0b1010; print(x)",
     "options": [
       {
         "label": "A",
@@ -303,7 +303,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx = 0o1010\nprint(x)",
+    "stem": "下面代码的输出结果是（）。; x = 0o1010; print(x)",
     "options": [
       {
         "label": "A",
@@ -328,7 +328,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\n>>> bin(10)",
+    "stem": "下面代码的输出结果是（）。; >>> bin(10)",
     "options": [
       {
         "label": "A",
@@ -353,7 +353,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\n>>> hex(255)",
+    "stem": "下面代码的输出结果是（）。; >>> hex(255)",
     "options": [
       {
         "label": "A",
@@ -378,7 +378,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\n>>> oct(-255)",
+    "stem": "下面代码的输出结果是（）。; >>> oct(-255)",
     "options": [
       {
         "label": "A",
@@ -428,7 +428,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\na = 5\nb = 6\nc = 7\nprint(pow(b,2) - 4*a*c)",
+    "stem": "下面代码的输出结果是（）。; a = 5; b = 6; c = 7; print(pow(b,2) - 4*a*c)",
     "options": [
       {
         "label": "A",
@@ -453,7 +453,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nprint(pow(2,10))",
+    "stem": "下面代码的输出结果是（）。; print(pow(2,10))",
     "options": [
       {
         "label": "A",
@@ -478,7 +478,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nprint(pow(3,0.5)*pow(3,0.5)==3)",
+    "stem": "下面代码的输出结果是（）。; print(pow(3,0.5)*pow(3,0.5)==3)",
     "options": [
       {
         "label": "A",
@@ -503,7 +503,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx=10\ny=3\nprint(divmod(x,y))",
+    "stem": "下面代码的输出结果是（）。; x=10; y=3; print(divmod(x,y))",
     "options": [
       {
         "label": "A",
@@ -528,7 +528,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nprint(round(0.1 + 0.2,1) != 0.3)",
+    "stem": "下面代码的输出结果是（）。; print(round(0.1 + 0.2,1) != 0.3)",
     "options": [
       {
         "label": "A",
@@ -553,7 +553,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nprint(0.1 + 0.2 == 0.3)",
+    "stem": "下面代码的输出结果是（）。; print(0.1 + 0.2 == 0.3)",
     "options": [
       {
         "label": "A",
@@ -578,7 +578,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nsum = 1\nfor i in range(1,101):\nsum += i\nprint(sum)",
+    "stem": "下面代码的输出结果是（）。; sum = 1; for i in range(1,101):; sum += i; print(sum)",
     "options": [
       {
         "label": "A",
@@ -603,7 +603,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nsum = 0\nfor i in range(2,11):\nif i % 2 == 0:\nsum += i\nelse:\nsum -= i\nprint(sum)",
+    "stem": "下面代码的输出结果是（）。; sum = 0; for i in range(2,11):; if i % 2 == 0:; sum += i; else:; sum -= i; print(sum)",
     "options": [
       {
         "label": "A",
@@ -628,7 +628,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nsum = 0\nfor i in range(0,10):\nif i % 2 == 0:\nsum -= i\nelse:\nsum += i\nprint(sum)",
+    "stem": "下面代码的输出结果是（）。; sum = 0; for i in range(0,10):; if i % 2 == 0:; sum -= i; else:; sum += i; print(sum)",
     "options": [
       {
         "label": "A",
@@ -653,7 +653,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nfor num in range(2,10):\nif num > 1:\nfor i in range(2,num):\nif (num % i) == 0:\nbreak\nelse:\nprint(num,end='')",
+    "stem": "下面代码的输出结果是（）。; for num in range(2,10):; if num > 1:; for i in range(2,num):; if (num % i) == 0:; break; else:; print(num,end='')",
     "options": [
       {
         "label": "A",
@@ -678,7 +678,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\na = []\nfor i in range(2,10):\ncount = 0\nfor x in range(2,i-1):\nif i % x == 0:\ncount += 1\nif count != 0:\na.append(i)\nprint(a)\n**答案：** [4,6,8,9]\n**第29题**\n下面代码的输出结果是（）。\na = 2.0\nb = 1.0\ns = 0\nfor n in range(1,4):\ns += a / b\nt = a\na = a + b\nb = t\nprint(round(s,2))",
+    "stem": "下面代码的输出结果是（）。; a = []; for i in range(2,10):; count = 0; for x in range(2,i-1):; if i % x == 0:; count += 1; if count != 0:; a.append(i); print(a); **答案：** [4,6,8,9]; **第29题**; 下面代码的输出结果是（）。; a = 2.0; b = 1.0; s = 0; for n in range(1,4):; s += a / b; t = a; a = a + b; b = t; print(round(s,2))",
     "options": [
       {
         "label": "A",
@@ -703,7 +703,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nlist1 = [i*2 for i in 'Python']\nprint(list1)",
+    "stem": "下面代码的输出结果是（）。; list1 = [i*2 for i in 'Python']; print(list1)",
     "options": [
       {
         "label": "A",
@@ -728,7 +728,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nlist1 = [m+n for m in 'AB' for n in 'CD']\nprint(list1)",
+    "stem": "下面代码的输出结果是（）。; list1 = [m+n for m in 'AB' for n in 'CD']; print(list1)",
     "options": [
       {
         "label": "A",
@@ -753,7 +753,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nlist1 = [(m,n) for m in 'AB' for n in 'CD']\nprint(list1)",
+    "stem": "下面代码的输出结果是（）。; list1 = [(m,n) for m in 'AB' for n in 'CD']; print(list1)",
     "options": [
       {
         "label": "A",
@@ -778,7 +778,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nlist1 = [(m,n) for m in 'ABC' for n in 'ABC' if m!=n]\nprint(list1)",
+    "stem": "下面代码的输出结果是（）。; list1 = [(m,n) for m in 'ABC' for n in 'ABC' if m!=n]; print(list1)",
     "options": [
       {
         "label": "A",
@@ -803,7 +803,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nlist1 = []\nfor i in range(1,11):\nlist1.append(i**2)\nprint(list1)",
+    "stem": "下面代码的输出结果是（）。; list1 = []; for i in range(1,11):; list1.append(i**2); print(list1)",
     "options": [
       {
         "label": "A",
@@ -828,7 +828,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nL = [1,2,3,4,5]\ns1 = ','.join(str(n) for n in L)\nprint(s1)",
+    "stem": "下面代码的输出结果是（）。; L = [1,2,3,4,5]; s1 = ','.join(str(n) for n in L); print(s1)",
     "options": [
       {
         "label": "A",
@@ -853,7 +853,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nstr1=\"k:1|k1:2|k2:3|k3:4\"\nstr_list=str1.split('|')\nd={}\nfor c in str_list:\nkey,value=c.split(':')\nd[key]=value\nprint(d)",
+    "stem": "下面代码的输出结果是（）。; str1=\"k:1|k1:2|k2:3|k3:4\"; str_list=str1.split('|'); d={}; for c in str_list:; key,value=c.split(':'); d[key]=value; print(d)",
     "options": [
       {
         "label": "A",
@@ -878,7 +878,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\ns = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]\nprint(s[4:])",
+    "stem": "下面代码的输出结果是（）。; s = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]; print(s[4:])",
     "options": [
       {
         "label": "A",
@@ -903,7 +903,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\ns = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]\nprint(s[1:4:2])",
+    "stem": "下面代码的输出结果是（）。; s = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]; print(s[1:4:2])",
     "options": [
       {
         "label": "A",
@@ -928,7 +928,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nd = {\"大海\": \"蓝色\", \"天空\": \"灰色\", \"大地\": \"黑色\"}\nprint(d[\"大地\"], d.get(\"大地\", \"黄色\"))",
+    "stem": "下面代码的输出结果是（）。; d = {\"大海\": \"蓝色\", \"天空\": \"灰色\", \"大地\": \"黑色\"}; print(d[\"大地\"], d.get(\"大地\", \"黄色\"))",
     "options": [
       {
         "label": "A",
@@ -953,7 +953,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nfor a in [\"torch\",\"soap\",\"bath\"]:\nprint(a)",
+    "stem": "下面代码的输出结果是（）。; for a in [\"torch\",\"soap\",\"bath\"]:; print(a)",
     "options": [
       {
         "label": "A",
@@ -966,7 +966,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nfor s in \"HelloWorld\":\nif s==\"W\":\ncontinue\nprint(s,end=\"\")",
+    "stem": "下面代码的输出结果是（）。; for s in \"HelloWorld\":; if s==\"W\":; continue; print(s,end=\"\")",
     "options": [
       {
         "label": "A",
@@ -991,7 +991,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nfor s in \"HelloWorld\":\nif s==\"W\":\nbreak\nprint(s,end=\"\")",
+    "stem": "下面代码的输出结果是（）。; for s in \"HelloWorld\":; if s==\"W\":; break; print(s,end=\"\")",
     "options": [
       {
         "label": "A",
@@ -1016,7 +1016,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nfor s in \"abc\":\nfor i in range(3):\nprint(s,end=\"\")\nif s==\"c\":\nbreak",
+    "stem": "下面代码的输出结果是（）。; for s in \"abc\":; for i in range(3):; print(s,end=\"\"); if s==\"c\":; break",
     "options": [
       {
         "label": "A",
@@ -1041,7 +1041,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\na = \"ac\"\nb = \"bd\"\nc = a + b\nprint(c)",
+    "stem": "下面代码的输出结果是（）。; a = \"ac\"; b = \"bd\"; c = a + b; print(c)",
     "options": [
       {
         "label": "A",
@@ -1066,7 +1066,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\na = \"alex\"\nb = a.capitalize()\nprint(a,end=\",\")\nprint(b)",
+    "stem": "下面代码的输出结果是（）。; a = \"alex\"; b = a.capitalize(); print(a,end=\",\"); print(b)",
     "options": [
       {
         "label": "A",
@@ -1091,7 +1091,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nvlist = list(range(5))\nprint(vlist)",
+    "stem": "下面代码的输出结果是（）。; vlist = list(range(5)); print(vlist)",
     "options": [
       {
         "label": "A",
@@ -1116,7 +1116,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nls = list(range(1,4))\nprint(ls)",
+    "stem": "下面代码的输出结果是（）。; ls = list(range(1,4)); print(ls)",
     "options": [
       {
         "label": "A",
@@ -1141,7 +1141,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\ntuple(range(2,10,2))",
+    "stem": "下面代码的输出结果是（）。; tuple(range(2,10,2))",
     "options": [
       {
         "label": "A",
@@ -1166,7 +1166,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\nx=3.1415926\nprint(round(x,2), round(x))",
+    "stem": "下面代码的输出结果是（）。; x=3.1415926; print(round(x,2), round(x))",
     "options": [
       {
         "label": "A",
@@ -1191,7 +1191,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是（）。\ns = set()\ntype(s)",
+    "stem": "下面代码的输出结果是（）。; s = set(); type(s)",
     "options": [
       {
         "label": "A",
@@ -1366,7 +1366,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "给出如下代码\ns = \"abcdefghijklmn\"\nprint(s[1:10:3])\n上述代码的输出结果是（）。",
+    "stem": "给出如下代码; s = \"abcdefghijklmn\"; print(s[1:10:3]); 上述代码的输出结果是（）。",
     "options": [
       {
         "label": "A",
@@ -1466,7 +1466,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "以下选项中能输出\"海贝色\"的是（）。\nDictColor = {\"seashell\":\"海贝色\",\"gold\":\"金色\",\"pink\":\"粉红色\",\"brown\":\"棕色\",\"purple\":\"紫色\",\"tomato\":\"西红柿色\"}",
+    "stem": "以下选项中能输出\"海贝色\"的是（）。; DictColor = {\"seashell\":\"海贝色\",\"gold\":\"金色\",\"pink\":\"粉红色\",\"brown\":\"棕色\",\"purple\":\"紫色\",\"tomato\":\"西红柿色\"}",
     "options": [
       {
         "label": "A",
@@ -2116,7 +2116,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的执行结果是\n>>> abs(-3+4j)",
+    "stem": "下面代码的执行结果是; >>> abs(-3+4j)",
     "options": [
       {
         "label": "A",
@@ -2141,7 +2141,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的执行结果是\n>>> 1.23e-4 + 5.67e+8j.real",
+    "stem": "下面代码的执行结果是; >>> 1.23e-4 + 5.67e+8j.real",
     "options": [
       {
         "label": "A",
@@ -2166,7 +2166,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的执行结果是（）。\na = 10.99\nprint(complex(a))",
+    "stem": "下面代码的执行结果是（）。; a = 10.99; print(complex(a))",
     "options": [
       {
         "label": "A",
@@ -2441,7 +2441,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下列while循环中print语句执行的次数为（）。\nk=10\nwhile k>1:\nprint(k)\nk=k/2",
+    "stem": "下列while循环中print语句执行的次数为（）。; k=10; while k>1:; print(k); k=k/2",
     "options": [
       {
         "label": "A",
@@ -2616,7 +2616,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "当用户输入abc时，下面代码的输出结果是()。\ntry:\nn = 0\nn = input(\"请输入一个整数: \")\ndef pow10(n):\nreturn n**10\nexcept:\nprint(\"程序执行错误\")",
+    "stem": "当用户输入abc时，下面代码的输出结果是()。; try:; n = 0; n = input(\"请输入一个整数: \"); def pow10(n):; return n**10; except:; print(\"程序执行错误\")",
     "options": [
       {
         "label": "A",
@@ -2641,7 +2641,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的执行结果是\n>>> True / False",
+    "stem": "下面代码的执行结果是; >>> True / False",
     "options": [
       {
         "label": "A",
@@ -2666,7 +2666,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是\ns = 1\nwhile(s<=1):\nprint('计数: ',s)\ns = s + 1",
+    "stem": "下面代码的输出结果是; s = 1; while(s<=1):; print('计数: ',s); s = s + 1",
     "options": [
       {
         "label": "A",
@@ -2679,7 +2679,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是\nx=2\ny=2.0\nif(x==y):\nprint(\"Equal\")\nelse:\nprint(\"Not Equal\")",
+    "stem": "下面代码的输出结果是; x=2; y=2.0; if(x==y):; print(\"Equal\"); else:; print(\"Not Equal\")",
     "options": [
       {
         "label": "A",
@@ -2704,7 +2704,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下列语句执行后的输出是（）。\nif 2:\nprint(5)\nelse:\nprint(6)",
+    "stem": "下列语句执行后的输出是（）。; if 2:; print(5); else:; print(6)",
     "options": [
       {
         "label": "A",
@@ -2729,7 +2729,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "while True:\nguess = eval(input())\nif guess == 0x452//2:\nbreak\n作为输入能够结束程序运行的是().",
+    "stem": "while True:; guess = eval(input()); if guess == 0x452//2:; break; 作为输入能够结束程序运行的是().",
     "options": [
       {
         "label": "A",
@@ -2754,7 +2754,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "给出如下代码\nimport random\nnum = random.randint(1,10)\nwhile True:\nguess = input()\ni = int(guess)\nif i == num:\nprint(\"你猜对了\")\nbreak\nelif i < num:\nprint(\"小了\")\nelif i > num:\nprint(\"大了\")\n以下选项中描述错误的是（）。",
+    "stem": "给出如下代码; import random; num = random.randint(1,10); while True:; guess = input(); i = int(guess); if i == num:; print(\"你猜对了\"); break; elif i < num:; print(\"小了\"); elif i > num:; print(\"大了\"); 以下选项中描述错误的是（）。",
     "options": [
       {
         "label": "A",
@@ -2904,7 +2904,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "关于下面代码中的变量x，以下选项中描述正确的是（）。\nfo = open(fname, \"r\")\nfor x in fo:\nprint(x)\nfo.close()",
+    "stem": "关于下面代码中的变量x，以下选项中描述正确的是（）。; fo = open(fname, \"r\"); for x in fo:; print(x); fo.close()",
     "options": [
       {
         "label": "A",
@@ -2929,7 +2929,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "文件book.txt在当前程序所在目录内，其内容是一段文本: book，下面代码的输出结果是( )。\ntxt = open(\"book.txt\", \"r\")\nprint(txt)\ntxt.close()",
+    "stem": "文件book.txt在当前程序所在目录内，其内容是一段文本: book，下面代码的输出结果是( )。; txt = open(\"book.txt\", \"r\"); print(txt); txt.close()",
     "options": [
       {
         "label": "A",
@@ -2954,7 +2954,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "设city.csv文件内容如下:\n巴哈马,巴林,孟加拉国,巴巴多斯白俄罗斯,比利时,伯利兹\n下面代码的执行结果是:\nf = open(\"city.csv\", \"r\")\nls = f.read().split(\",\")\nf.close()\nprint(ls)",
+    "stem": "设city.csv文件内容如下:; 巴哈马,巴林,孟加拉国,巴巴多斯白俄罗斯,比利时,伯利兹; 下面代码的执行结果是:; f = open(\"city.csv\", \"r\"); ls = f.read().split(\",\"); f.close(); print(ls)",
     "options": [
       {
         "label": "A",
@@ -4117,7 +4117,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面的代码绘制的是（）。\nimport turtle as t\ndef DrawCircle(n):\nt.penup()\nt.goto(0,-n)\nt.pendown()\nt.circle(n)\nfor i in range(20,80,20):\nDrawCircle(i)\nt.done()",
+    "stem": "下面的代码绘制的是（）。; import turtle as t; def DrawCircle(n):; t.penup(); t.goto(0,-n); t.pendown(); t.circle(n); for i in range(20,80,20):; DrawCircle(i); t.done()",
     "options": [
       {
         "label": "A",
@@ -4142,7 +4142,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "给出如下代码:\nimport turtle\ndef drawLine(draw):\nturtle.pendown() if draw else turtle.penup()\nturtle.fd(50)\nturtle.right(90)\ndrawLine(True)\ndrawLine(True)\ndrawLine(True)\ndrawLine(True)\n以下选项中描述错误的是（）。",
+    "stem": "给出如下代码:; import turtle; def drawLine(draw):; turtle.pendown() if draw else turtle.penup(); turtle.fd(50); turtle.right(90); drawLine(True); drawLine(True); drawLine(True); drawLine(True); 以下选项中描述错误的是（）。",
     "options": [
       {
         "label": "A",
@@ -4167,7 +4167,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "执行如下代码，以下选项中描述错误的是 ( )。\nimport time\nprint(time.time())",
+    "stem": "执行如下代码，以下选项中描述错误的是 ( )。; import time; print(time.time())",
     "options": [
       {
         "label": "A",
@@ -4192,7 +4192,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "如果当前时间是2018年5月1日10点10分9秒，下面代码的输出结果是（）。\nimport time\nprint(time.strftime(\"%Y=%m-%d@%H>%M>%S\", time.gmtime()))",
+    "stem": "如果当前时间是2018年5月1日10点10分9秒，下面代码的输出结果是（）。; import time; print(time.strftime(\"%Y=%m-%d@%H>%M>%S\", time.gmtime()))",
     "options": [
       {
         "label": "A",
@@ -4217,7 +4217,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下列代码的输出结果是（）。\nfrom datetime import datetime\ndt = datetime(2025, 5, 20)\nprint(dt.strftime(\"%Y-%m-%d\"))",
+    "stem": "下列代码的输出结果是（）。; from datetime import datetime; dt = datetime(2025, 5, 20); print(dt.strftime(\"%Y-%m-%d\"))",
     "options": [
       {
         "label": "A",
@@ -4242,7 +4242,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下列代码的输出结果是（）。\nfrom datetime import datetime\ndt = datetime(2025, 5, 20)\nprint(dt.strftime(\"%Y年%m月%d日\"))",
+    "stem": "下列代码的输出结果是（）。; from datetime import datetime; dt = datetime(2025, 5, 20); print(dt.strftime(\"%Y年%m月%d日\"))",
     "options": [
       {
         "label": "A",
@@ -4267,7 +4267,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下列代码的输出结果是（）。\nfrom datetime import datetime\ndt = datetime(2025, 5, 20)\nprint(dt.strftime(\"%m月%d日%Y年\"))",
+    "stem": "下列代码的输出结果是（）。; from datetime import datetime; dt = datetime(2025, 5, 20); print(dt.strftime(\"%m月%d日%Y年\"))",
     "options": [
       {
         "label": "A",
@@ -4342,7 +4342,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下列Python语句的运行结果是（）。\nd={1:'a',2:'b',3:'c'}\nprint(len(d))",
+    "stem": "下列Python语句的运行结果是（）。; d={1:'a',2:'b',3:'c'}; print(len(d))",
     "options": [
       {
         "label": "A",
@@ -4417,7 +4417,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "给出如下代码:\nls = [\"car\",\"truck\"]\ndef funC(a):\nls = []\nls.append(a)\nreturn\nfunC(\"bus\")\nprint(ls)\n以下选项中描述错误的是（）。",
+    "stem": "给出如下代码:; ls = [\"car\",\"truck\"]; def funC(a):; ls = []; ls.append(a); return; funC(\"bus\"); print(ls); 以下选项中描述错误的是（）。",
     "options": [
       {
         "label": "A",
@@ -4442,7 +4442,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的输出结果是\ndef change(a,b):\na = 10\nb += a\na = 4\nb = 5\nchange(a,b)\nprint(a,b)",
+    "stem": "下面代码的输出结果是; def change(a,b):; a = 10; b += a; a = 4; b = 5; change(a,b); print(a,b)",
     "options": [
       {
         "label": "A",
@@ -4467,7 +4467,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "执行如下代码:\nfname = input(\"请输入要写入的文件:\")\nfo = open(fname, \"w+\")\nls = [\"清明时节雨纷纷，\",\"路上行人欲断魂，\",\"借问酒家何处有？\",\"牧童遥指杏花村。\"]\nfo.writelines(ls)\nfo.seek(0)\nfor line in fo:\nprint(line)\nfo.close()\n以下选项中描述错误的是（）。",
+    "stem": "执行如下代码:; fname = input(\"请输入要写入的文件:\"); fo = open(fname, \"w+\"); ls = [\"清明时节雨纷纷，\",\"路上行人欲断魂，\",\"借问酒家何处有？\",\"牧童遥指杏花村。\"]; fo.writelines(ls); fo.seek(0); for line in fo:; print(line); fo.close(); 以下选项中描述错误的是（）。",
     "options": [
       {
         "label": "A",
@@ -4492,7 +4492,7 @@
     "chapter": "Python",
     "chapter_title": "选择题",
     "type": "单选题",
-    "stem": "下面代码的执行结果是\nd = {}\nfor i in range(26):\nd[chr(i+ord(\"a\"))] = chr((i+13) % 26 + ord(\"a\"))\nfor c in \"Python\":\nprint(d.get(c, c), end=\"\")",
+    "stem": "下面代码的执行结果是; d = {}; for i in range(26):; d[chr(i+ord(\"a\"))] = chr((i+13) % 26 + ord(\"a\")); for c in \"Python\":; print(d.get(c, c), end=\"\")",
     "options": [
       {
         "label": "A",
