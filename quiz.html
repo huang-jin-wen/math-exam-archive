@@ -68,6 +68,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 .fi-row-item{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .fi-row-item:last-child{margin-bottom:0}
 .fi-row-label{font-weight:600;color:#555;min-width:44px;font-size:.88em}
+.fi-fb-user{margin:10px 0 4px;padding:10px 12px;background:#fff5f5;border-radius:6px;border-left:3px solid #ff4d4f}
+.fi-fb-correct{margin:4px 0;padding:10px 12px;background:#f0fff4;border-radius:6px;border-left:3px solid #52c41a}
+.fi-fb-label{font-weight:600;font-size:.85em;margin-bottom:6px}
+.fi-fb-item{display:flex;align-items:center;gap:8px;line-height:1.8;font-size:.92em}
+.fi-fb-n{color:#888;min-width:44px;font-size:.85em}
+.fi-fb-v{font-weight:600;font-family:'Cascadia Code',Consolas,monospace}
+.fi-fb-v.ok{color:#52c41a}
+.fi-fb-v.er{color:#ff4d4f}
 
 /* ===== 代码块 ===== */
 .code-block{background:#1e293b;color:#e2e8f0;border-radius:8px;padding:12px 16px;margin:10px 0;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.85em;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
@@ -362,9 +370,9 @@ function answerQuestion(i, value) {
 function submitFillIn(i) {
   if (i in questionAnswered) return;
   const q = questionPool[i];
-  const blanks = q.blanks || [];
+  const blankCount = getFillInBlankCount(q);
   const vals = [];
-  for (let j = 0; j < blanks.length; j++) {
+  for (let j = 0; j < blankCount; j++) {
     const el = getEl('fb' + i + '_' + j);
     vals.push(el ? el.value.trim() : '');
   }
@@ -382,6 +390,13 @@ function submitMulti(i) {
   questionAnswered[i] = true;
   renderQuestion();
   updateStats();
+}
+
+/* ===== 填空题辅助 ===== */
+function getFillInBlankCount(q) {
+  const blankSet = new Set();
+  q.stem.replace(/【(\d+)】/g, (m, n) => { blankSet.add(parseInt(n)); return m; });
+  return blankSet.size || (q.answer ? q.answer.split('|').length : 1);
 }
 
 /* ===== 渲染题目 ===== */
@@ -424,14 +439,44 @@ function renderQuestion() {
   // 反馈区域
   let feedbackHTML = '';
   if (answered) {
-    const ua = userAnswers[i] || '(未作答)';
+    const ua = userAnswers[i] || '';
     const ok = checkAnswer(i);
     const fbClass = ok ? 'fc' : 'fi';
     const icon = ok ? '✅ 回答正确！' : '❌ 回答错误';
-    const yourAnswer = ok ? '' : '你的答案：<b>' + escapeHTML(ua) + '</b><br>';
 
-    feedbackHTML = '<div class="fb sh ' + fbClass + '"><strong>' + icon + '</strong><br>' +
-      yourAnswer + '正确答案：<b>' + escapeHTML(q.answer) + '</b>';
+    if (q.type === '填空题') {
+      const correctParts = q.answer.split('|');
+      const userParts = ua.split('|');
+      feedbackHTML = '<div class="fb sh ' + fbClass + '"><strong>' + icon + '</strong>';
+
+      // 错误时显示你的答案 vs 正确答案 逐空对比
+      if (!ok) {
+        feedbackHTML += '<div class="fi-fb-user">';
+        feedbackHTML += '<div class="fi-fb-label">你的答案</div>';
+        correctParts.forEach((cv, j) => {
+          const uv = userParts[j] || '(未填)';
+          const eq = uv.toLowerCase().replace(/\s/g, '') === cv.toLowerCase().replace(/\s/g, '');
+          feedbackHTML += '<div class="fi-fb-item"><span class="fi-fb-n">第' + (j + 1) + '空</span>' +
+            '<span class="fi-fb-v ' + (eq ? 'ok' : 'er') + '">' + escapeHTML(uv) + '</span>' +
+            (eq ? ' ✅' : ' ❌ → ' + escapeHTML(cv)) +
+            '</div>';
+        });
+        feedbackHTML += '</div>';
+      }
+
+      // 正确答案（始终显示）
+      feedbackHTML += '<div class="fi-fb-correct">';
+      feedbackHTML += '<div class="fi-fb-label" style="color:#52c41a">正确答案</div>';
+      correctParts.forEach((cv, j) => {
+        feedbackHTML += '<div class="fi-fb-item"><span class="fi-fb-n">第' + (j + 1) + '空</span>' +
+          '<span class="fi-fb-v ok">' + escapeHTML(cv) + '</span></div>';
+      });
+      feedbackHTML += '</div>';
+    } else {
+      const yourAnswer = ok ? '' : '你的答案：<b>' + escapeHTML(ua) + '</b><br>';
+      feedbackHTML = '<div class="fb sh ' + fbClass + '"><strong>' + icon + '</strong><br>' +
+        yourAnswer + '正确答案：<b>' + escapeHTML(q.answer) + '</b>';
+    }
 
     if (q.type === '判断题') {
       feedbackHTML += ' (' + (q.answer === '√' ? '正确' : '错误') + ')';
@@ -480,9 +525,7 @@ function renderFillIn(i, answered) {
   const stem = q.stem;
 
   // 确定空数量（去重【数字】编号）
-  const blankSet = new Set();
-  stem.replace(/【(\d+)】/g, (m, n) => { blankSet.add(parseInt(n)); return m; });
-  const blankCount = blankSet.size || (q.answer ? q.answer.split('|').length : 1);
+  const blankCount = getFillInBlankCount(q);
 
   //【数字】→ 视觉占位标记
   const marker = (n) => '<span class="fi-mk">（' + n + '）</span>';
