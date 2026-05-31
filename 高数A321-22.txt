@@ -1,0 +1,70 @@
+诚信提示
+ 
+诚信关乎个人一生，公平竞争赢得尊重。
+以下是严重作弊行为，学校将给予留校察看或开除学籍处分：1.替他人考试或由他人替考；2.通讯工具作弊；3.团伙作弊。
+ 
+ 
+ 
+一、填空题（每小题 4 分，满分 20 分）
+ 
+1、设函数z = e^{x+y} + x\ln(1+y)，则dz|_{(x=0,y=1)} =。
+2、若两平面x + ky - 2z - 9 = 0与2x - 3y + z = 0的夹角为\frac{\pi}{4}，则k =。
+3、设函数z = f(x,y)在点(1,1)的某个邻域内有连续偏导数，且满足f(x,x^3) = c（c为常数），若f_y'(1,1) = -1，则f_x'(1,1) =。
+4、过点(1,2,-1)且与直线\begin{cases} x = -t + 1 \\ y = 3t - 3 \\ z = t - 1 \end{cases}垂直的平面方程为________。
+5、设D为y = x + 1与y = \sqrt{1-x^2}及x轴所围闭区域，写出\iint\limits_D \frac{xy}{x^2+y^2}dxdy在极坐标系下的二次积分的形式______________。
+ 
+ 
+ 
+二、单项选择题（每小题 4 分，满分 20 分）
+ 
+6、设\vec{a},\vec{b}均为非零向量且满足(\vec{a}+3\vec{b}) \perp (7\vec{a}-5\vec{b})，(\vec{a}-4\vec{b}) \perp (7\vec{a}-2\vec{b})，则向量\vec{a}与\vec{b}的夹角为（  ）。
+A.0；
+B.\frac{\pi}{2}；
+C.\frac{\pi}{3}；
+D.\frac{2\pi}{3}。
+ 
+7、设函数f(x,y) = \sqrt{|xy|}，则在点(0,0)处函数f(x,y)（  ）。
+A. 可微；
+B. 偏导数存在，但不可微；
+C. 连续，但偏导数不存在；
+D. 不连续且偏导数不存在。
+ 
+8、设函数u(x,y)在有界闭区域D上具有二阶连续偏导数，且满足\frac{\partial^2 u}{\partial x\partial y} > 0及\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}=0，则（  ）。
+A. 函数u(x,y)的最大值点与最小值点都在D的内部；
+B. 函数u(x,y)的最大值点与最小值点都在D的边界上；
+C. 函数u(x,y)的最大值点在D的内部，最小值点在D的边界上；
+D. 函数u(x,y)的最小值点在D的内部，最大值点在D的边界上。
+ 
+9、设闭区域\Omega = \{(x,y,z)|\sqrt{x^2+y^2}-1 \leq z \leq 0\}，令I_1 = \iiint\limits_{\Omega} ze^{xy}dv，I_2 = \iiint\limits_{\Omega} z^2e^{xy}dv，I_3 = \iiint\limits_{\Omega} z^3e^{xy}dv，则（  ）。
+A.I_2 \geq I_3 \geq I_1；
+B.I_1 \geq I_2 \geq I_3；
+C.I_3 \geq I_2 \geq I_1；
+D.I_2 \geq I_1 \geq I_3。
+ 
+10、设闭区域\Omega = \{(x,y,z)|x^2+y^2+z^2 \leq a^2\}，则\iiint\limits_{\Omega} z^2dxdydz =（  ）
+A.\frac{2}{9}\pi a^5；
+B.\frac{4}{9}\pi a^5；
+C.\frac{2}{15}\pi a^5；
+D.\frac{4}{15}\pi a^5。
+ 
+ 
+ 
+三、解答题（共 7 题，满分 60 分）
+ 
+11、（9分）已知方程\frac{x}{z}=\ln\frac{z}{y}定义了函数z = z(x,y)，求\frac{\partial z}{\partial x}，\frac{\partial^2 z}{\partial x^2}。
+ 
+12、（9分）求曲面x^{2/3}+y^{2/3}+z^{2/3}=4上任意一点处的切平面，并计算切平面在三个坐标轴上的截距的平方和。
+ 
+13、（8分）设z = e^u \sin v，u = xy，v = x+y，求\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}。
+ 
+14、（8分）设函数f(x,y)连续，且f(x,y)=xy+\iint\limits_D f(s,t)dsdt，其中D是由y=0,y=x^2及x=1所围闭区域，求f(x,y)。
+ 
+15、（8分）计算三重积分\iiint\limits_{\Omega}(x^2+y^2)dv，其中\Omega是由曲面z=\frac{5}{2}\sqrt{x^2+y^2}和平面z=5所围闭区域。
+ 
+16、（9分）在椭球面x^2+y^2+2z^2=1上求一点，使函数f(x,y,z)=x^2+y^2+z^2在该点沿方向\vec{l}=\vec{i}-\vec{j}的方向导数最大。
+ 
+17、（9分）设f(x)>0，且在[0,1]上连续，f(x)在[0,1]上最大值和最小值记为M,m，证明：
+1 \leq I = \iint\limits_D \frac{f(x)}{f(y)}dxdy \leq \frac{m^2+M^2}{2mM}，其中D=\{(x,y)|0 \leq x \leq 1,0 \leq y \leq 1\}。
+ 
+ 
+ 

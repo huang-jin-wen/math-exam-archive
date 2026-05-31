@@ -1,0 +1,132 @@
+# 高数A3 试卷解析库 · 编辑指南
+
+## 📁 文件结构
+
+```
+数学试卷解析/
+├── index.html            ← 导航首页
+├── favicon.svg           ← 网站图标
+├── 高数A3-2024期末试卷解析.html   ← 2024年A卷
+├── 高数A3-2023期末试卷解析-v2.html ← 2023年A卷
+└── 高数A3期末试卷解析.html        ← 2022年A卷
+```
+
+## ✏️ 怎么改内容
+
+### 1. 改一道题的答案
+打开对应的 HTML 文件（用记事本/VSCode/任何文本编辑器），搜索题目关键词找到对应位置，直接改文字即可。
+
+### 2. 添加一道新题
+每道题的结构如下（找到任意一道题复制这段，改数字和内容）：
+
+```html
+<!-- ═══ PROBLEM N ═══ -->
+<div class="problem open" id="pN" style="border-left-color:var(--blue)">
+<div class="problem-header" onclick="this.parentElement.classList.toggle('open')">
+<div class="num" style="background:var(--blue);color:#0f172a">N</div>
+<div style="flex:1"><h2>题目标题</h2></div>
+<span class="toggle-icon">▶</span></div>
+<div class="problem-body"><div class="problem-body-inner">
+
+<div class="tabs">
+<button class="tab active" onclick="switchTab(this,'thinking','pN')">💡 思路讲解</button>
+<button class="tab" onclick="switchTab(this,'steps','pN')">📐 解题步骤</button>
+<button class="tab" onclick="switchTab(this,'analysis','pN')">🎯 考点分析</button>
+<button class="tab" onclick="switchTab(this,'warnings','pN')">⚠ 易错提醒</button>
+</div>
+
+<!-- 思路讲解 -->
+<div class="tab-panel active" data-panel="thinking">
+<div class="box box-math"><strong>题目：</strong>这里写题目正文</div>
+<div style="margin:8px 0"><span class="tag tag-b">标签</span></div>
+<div class="think-step"><h4>🔍 第1步：读题抓关键</h4><p>...</p></div>
+<div class="think-step"><h4>🔍 第2步：条件翻译</h4><p>...</p></div>
+<div class="think-step"><h4>🔍 第3步：找突破口</h4><p>...</p></div>
+<div class="think-step"><h4>🔍 第4步：预判陷阱</h4><p>...</p></div>
+</div>
+
+<!-- 解题步骤 -->
+<div class="tab-panel" data-panel="steps">
+<div class="step-reveal" id="steps-pN">
+<div class="step-item"><div class="step-num" style="background:var(--blue)">1</div><div class="step-text"><strong>第一步：</strong>...</div></div>
+<div class="step-item"><div class="step-num" style="background:var(--blue)">2</div><div class="step-text"><strong>第二步：</strong>...</div></div>
+<button class="btn-next" onclick="revealNext(this)">👇 下一步</button>
+</div>
+</div>
+
+<!-- 考点分析 -->
+<div class="tab-panel" data-panel="analysis">
+<div class="box"><h3>🎯 考点拆解</h3><p>...</p></div>
+<div class="tip"><p>💡 技巧：...</p></div>
+</div>
+
+<!-- 易错提醒 -->
+<div class="tab-panel" data-panel="warnings">
+<div class="warning"><p>⚠️ 易错点...</p></div>
+</div>
+
+<!-- 自测题 -->
+<div class="quiz-box">
+<p class="quiz-q">🧪 自测：问题？</p>
+<div class="quiz-opts">
+<button class="quiz-opt correct" onclick="checkQuiz(this,true,'反馈文字')">正确答案</button>
+<button class="quiz-opt" onclick="checkQuiz(this,false,'解释')">错误选项</button>
+</div>
+<div class="quiz-feedback"></div>
+</div>
+
+<div class="mastery" onclick="toggleMastery(this,'pN')"><input type="checkbox"><div class="check-box">✓</div>我已理解这道题</div>
+
+</div></div></div>
+<!-- END PROBLEM N -->
+```
+
+### 3. 颜色标签说明
+
+| 标签 | class | 适合什么题型 |
+|------|-------|------------|
+| 蓝 | `tag-b` | 极限、导数、微分、积分、全微分 |
+| 紫 | `tag-p` | 方程、不等式、级数 |
+| 粉 | `tag-pk` | 向量、空间几何、二次曲面 |
+| 绿 | `tag-g` | 概率、级数审敛 |
+| 橙 | `tag-o` | 应用题 |
+
+题的左边框和题号颜色：改 `style="border-left-color:var(--blue)"` 和 `style="background:var(--blue);"` 中的颜色名即可。
+
+### 4. 加一张新试卷
+1. 复制一份已有的试卷 HTML 文件
+2. 改文件名、标题、题目内容
+3. 在 `index.html` 里加新卡片
+
+## 🌐 怎么发布（上传到网站）
+
+改完 HTML 后，在文件夹里右键 → Git Bash Here，运行：
+
+```bash
+# 先看看改了什么
+git status
+
+# 添加所有改动
+git add .
+
+# 提交（写清楚改了什么）
+git commit -m "修改了什么内容"
+
+# 推到GitHub
+git -c http.sslBackend=schannel push origin main
+
+# 推到Gitee（国内镜像）
+git -c http.sslBackend=schannel push gitee main
+```
+
+如果 GitHub 推送报 SSL 错误，把 `schannel` 换成 `openssl` 重试。
+
+推送完等 1 分钟左右，网站就自动更新了。
+
+## 🎨 其他小技巧
+
+- **数学公式**：尽量用 Unicode（∫ ∬ ∂ ∇ √ ∑ ∏ ∞ 等）
+- **上标下标**：`<sup>上标</sup>` `<sub>下标</sub>`
+- **根号**：`<span class="sqrt"><span class="sqrt-inner">表达式</span></span>`
+- **积分上下限**：用内置的 `.intl` 类（参考现有题目里的写法）
+- **保留备份**：改之前把原文件复制一份，改坏了能恢复
