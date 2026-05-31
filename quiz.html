@@ -542,7 +542,8 @@ function renderFillIn(i, answered) {
 
     descHTML = escapeHTML(rawDesc).replace(/【(\d+)】/g, (m, n) => marker(n));
 
-    const codeLines = rawCode.split('\n').map(l => {
+    const indented = autoIndentPython(rawCode);
+    const codeLines = indented.split('\n').map(l => {
       let line = escapeHTML(l);
       line = highlightPython(line);
       line = line.replace(/【(\d+)】/g, (m, n) => marker(n));
@@ -624,7 +625,8 @@ function renderStem(stem) {
     if (stem.includes('\n')) {
       const segments = stem.split('\n');
       const desc = escapeHTML(segments[0]);
-      const code = segments.slice(1).map(l => highlightPython(escapeHTML(l))).join('\n');
+      const rawCode = segments.slice(1).join('\n');
+      const code = autoIndentPython(rawCode).split('\n').map(l => highlightPython(escapeHTML(l))).join('\n');
       if (code.trim()) {
         return desc + '<div class="code-block">' + code + '</div>';
       }
@@ -634,7 +636,8 @@ function renderStem(stem) {
 
   // 有 ; 分隔：第一段是描述，后面是代码行
   const desc = escapeHTML(parts[0].trim());
-  const codeLines = parts.slice(1).map(l => highlightPython(escapeHTML(l.trim()))).join('\n');
+  const rawCode = parts.slice(1).map(l => l.trim()).join('\n');
+  const codeLines = autoIndentPython(rawCode).split('\n').map(l => highlightPython(escapeHTML(l))).join('\n');
   if (codeLines.trim()) {
     return desc + '<div class="code-block">' + codeLines + '</div>';
   }
@@ -647,13 +650,35 @@ function highlightPython(code) {
     // 注释
     .replace(/(#.*)$/gm, '<span class="cm">$1</span>')
     // 字符串
-    .replace(/(['\"])(?:(?!\1|\\).|\\.)*\1/g, '<span class="str">$&</span>')
+    .replace(/(['"])(?:(?!\1|\\).|\\.)*\1/g, '<span class="str">$&</span>')
     // 关键字
     .replace(/\b(def|class|if|else|elif|for|while|in|import|from|return|print|and|or|not|True|False|None|as|with|try|except|finally|raise|lambda|yield|pass|break|continue|is|global|nonlocal|del|assert)\b/g, '<span class="kw">$1</span>')
     // 函数调用
     .replace(/\b([a-zA-Z_]\w*)(?=\()/g, '<span class="fn">$1</span>')
     // 数字
     .replace(/\b(\d+\.?\d*)\b/g, '<span class="num">$1</span>');
+}
+
+/* ===== Python 代码自动缩进（修复数据源缩进丢失） ===== */
+function autoIndentPython(codeText) {
+  if (!codeText || !codeText.trim()) return codeText;
+  const lines = codeText.split('\n');
+  // 有任意行已有缩进则跳过
+  const hasIndent = lines.some(l => l.length > 0 && (l[0] === ' ' || l[0] === '\t'));
+  if (hasIndent) return codeText;
+
+  let indent = 0;
+  const INDENT = 4;
+  return lines.map(line => {
+    const t = line.trim();
+    if (!t) return '';
+    // else/elif/except/finally 回退到同级
+    if (/^(else|elif|except|finally)\b/.test(t)) indent = Math.max(0, indent - 1);
+    const out = ' '.repeat(indent * INDENT) + t;
+    // : 结尾的块开头（排除切片和字符串）
+    if (t.endsWith(':') && !/^\d+:/.test(t)) indent++;
+    return out;
+  }).join('\n');
 }
 
 /* ===== HTML 转义 ===== */
