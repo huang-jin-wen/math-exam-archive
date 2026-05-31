@@ -84,7 +84,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 <div class="h"><h1 id="quizTitle">题库练习</h1><p id="quizSubtitle">加载中...</p></div>
 <div class="ct">
 <label>章节</label><select id="cf"><option value="all">全部</option></select>
-<label>题型</label><select id="tf"><option value="all">全部</option><option value="单选题">单选题</option><option value="多选题">多选题</option><option value="判断题">判断题</option><option value="填空题">填空题</option></select>
+<label>题型</label><select id="tf"><option value="all">全部</option></select>
 <label>数量</label><input type="number" id="ci" value="10" min="1" max="999" style="width:60px">
 <button class="bt bt-p" onclick="drawQuestions()">🎲 抽题</button>
 <button class="bt bt-o" onclick="resetQuiz()">🔄 重置</button>
@@ -177,6 +177,16 @@ function buildChapterUI() {
     chip.title = ch + ' ' + (q ? q.chapter_title : '');
     chip.onclick = function() { this.classList.toggle('ck'); updateChapterLabel(); };
     cml.appendChild(chip);
+  });
+
+  // 动态生成题型选项
+  const types = [...new Set(allQuestions.map(q => q.type))];
+  const tf = getEl('tf');
+  types.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t;
+    tf.appendChild(opt);
   });
 }
 
