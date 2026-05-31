@@ -58,6 +58,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 .chi{display:inline-block;padding:4px 10px;border-radius:14px;font-size:.75em;background:#f5f5f5;cursor:pointer;user-select:none;transition:background-color .12s}
 .chi:hover{background:#e6e6ff}.chi.ck{background:#667eea;color:#fff}
 @media(max-width:600px){.c{padding:10px}.ct{flex-direction:column;align-items:stretch}.ct select,.ct input{width:100%}.bt{width:100%}.jo{flex-direction:column}}
+
+.fi-wrap{line-height:2.2;margin:10px 0}
+.fi-inp{border:2px solid #d0d5dd;border-radius:6px;padding:5px 10px;font-size:.95em;width:100px;font-family:inherit;outline:none;transition:border .2s}
+.fi-inp:focus{border-color:var(--blue, #4a90d9)}
+.fi-inp:disabled{background:#f0f0f0;color:#666}
 </style>
 </head>
 <body>
@@ -104,7 +109,7 @@ fetch('data/'+subject+'.json').then(function(r){return r.json()}).then(function(
 A=d;
 document.getElementById('quizTitle').textContent=subject;
 document.getElementById('pageTitle').textContent=subject+' - 题库练习';
-var subs={'创业导论':'复旦大学 · 题库随机练习','舞蹈鉴赏':'北京舞蹈学院 · 题库随机练习','中国书法史':'南开大学 · 超星尔雅 · 题库随机练习','大学英语词汇':'词汇选择题 · 题库随机练习'};
+var subs={'创业导论':'复旦大学 · 题库随机练习','舞蹈鉴赏':'北京舞蹈学院 · 题库随机练习','中国书法史':'南开大学 · 超星尔雅 · 题库随机练习','大学英语词汇':'词汇选择题 · 题库随机练习','Python题库':'Python语言 · 题库随机练习'};
 document.getElementById('quizSubtitle').textContent=subs[subject]||'题库随机练习';
 document.getElementById('totalInfo').textContent='题库共 '+A.length+' 题';
 var chs=[...new Set(A.map(function(q){return q.chapter}))].sort(function(a,b){var x=a.split('.'),y=b.split('.');return(+x[0]-+y[0])||(+x[1]-+y[1])});
@@ -128,20 +133,23 @@ var mc=GS();if(mc){p=p.filter(function(q){return mc.indexOf(q.chapter)>=0})}
 else if(ch!=='all')p=p.filter(function(q){return q.chapter===ch});
 if(tp!=='all')p=p.filter(function(q){return q.type===tp});
 if(!p.length){alert('无符合条件题目');return}n=Math.min(n,p.length);
-Q=H(p).slice(0,n);if(document.getElementById('sfCb').checked){for(var qi=0;qi<Q.length;qi++){var q=Q[qi];if(q.type==='判断题')continue;var t=q.options.map(function(o){return o.text});for(var ti=t.length-1;ti>0;ti--){var tj=Math.floor(Math.random()*(ti+1)),tt=t[ti];t[ti]=t[tj];t[tj]=tt}var l=q.options.map(function(o){return o.label}),r=[];for(var k=0;k<l.length;k++)r.push({label:l[k],text:t[k]});var oa=q.answer.split(''),ot=[];for(var m=0;m<q.options.length;m++){if(oa.indexOf(q.options[m].label)>=0)ot.push(q.options[m].text)}var nl=[];for(var n=0;n<r.length;n++){if(ot.indexOf(r[n].text)>=0)nl.push(r[n].label)}q.options=r;q.answer=nl.sort().join('')||q.answer}}I=0;UA={};RV={};MB={};U2();V();document.getElementById('ab').style.display='flex'}
+Q=H(p).slice(0,n);if(document.getElementById('sfCb').checked){for(var qi=0;qi<Q.length;qi++){var q=Q[qi];if(q.type==='判断题'||q.type==='填空题')continue;var t=q.options.map(function(o){return o.text});for(var ti=t.length-1;ti>0;ti--){var tj=Math.floor(Math.random()*(ti+1)),tt=t[ti];t[ti]=t[tj];t[tj]=tt}var l=q.options.map(function(o){return o.label}),r=[];for(var k=0;k<l.length;k++)r.push({label:l[k],text:t[k]});var oa=q.answer.split(''),ot=[];for(var m=0;m<q.options.length;m++){if(oa.indexOf(q.options[m].label)>=0)ot.push(q.options[m].text)}var nl=[];for(var n=0;n<r.length;n++){if(ot.indexOf(r[n].text)>=0)nl.push(r[n].label)}q.options=r;q.answer=nl.sort().join('')||q.answer}}I=0;UA={};RV={};MB={};U2();V();document.getElementById('ab').style.display='flex'}
 function R(){Q=[];I=0;UA={};RV={};MB={};document.getElementById('qa').innerHTML='<div class="em"><p>&#x1F446; 选择条件，点击「抽题」开始</p><p class="ec">题库共 '+A.length+' 题</p></div>';document.getElementById('ab').style.display='none';U2()}
-function U2(){var t=Q.length,d=Object.keys(UA).length,c=0;for(var i in UA){var q=Q[i];if(q.type==='多选题'){if(UA[i].split('').sort().join('')===q.answer.split('').sort().join(''))c++}else{if(UA[i]===q.answer)c++}}document.getElementById('st').textContent=t;document.getElementById('sd').textContent=d;document.getElementById('sc').textContent=c;document.getElementById('sa').textContent=d>0?Math.round(c/d*100)+'%':'-';document.getElementById('sr').textContent=t-d}
+function U2(){var t=Q.length,d=Object.keys(UA).length,c=0;for(var i in UA){var q=Q[i];if(q.type==='多选题'){if(UA[i].split('').sort().join('')===q.answer.split('').sort().join(''))c++}else if(q.type==='填空题'){if(UA[i].toLowerCase().replace(/\s/g,'')===q.answer.toLowerCase().replace(/\s/g,''))c++}else{if(UA[i]===q.answer)c++}}document.getElementById('st').textContent=t;document.getElementById('sd').textContent=d;document.getElementById('sc').textContent=c;document.getElementById('sa').textContent=d>0?Math.round(c/d*100)+'%':'-';document.getElementById('sr').textContent=t-d}
 function T(i,v){if(i in RV)return;var q=Q[i];if(q.type==='多选题'){if(!MB[i])MB[i]={};if(MB[i][v]){delete MB[i][v]}else{MB[i][v]=1}V();return}UA[i]=v;RV[i]=1;V();U2()}
-function SM(i){if(i in RV)return;var b=MB[i]||{};var ks=Object.keys(b).sort();UA[i]=ks.join('');RV[i]=1;V();U2()}
-function V(){if(!Q.length)return;var q=Q[I],i=I,rv=i in RV,tc=q.type==='单选题'?'bs':q.type==='多选题'?'bm':'bj',oh='';
-if(q.type==='判断题'){var ua=UA[i],ca=q.answer,g=function(v){if(!rv)return ua===v?'sel':'';if(v===ca)return'ok';if(v===ua&&ua!==ca)return'er';return''};oh='<div class="jo"><div class="jb '+g('√')+' '+(rv?'di':'')+'" onclick="T('+i+',\'√\')">&#x2705; 正确</div><div class="jb '+g('X')+' '+(rv?'di':'')+'" onclick="T('+i+',\'X\')">&#x274C; 错误</div></div>'}
-else{var b=MB[i]||{},ua=UA[i]||'';oh='<div class="op">';q.options.forEach(function(o){var cl='';if(!rv){if(q.type==='多选题'){if(b[o.label])cl='sel'}else{if(ua===o.label)cl='sel'}}else{var ca=q.answer;if(q.type==='多选题'){if(ca.indexOf(o.label)>=0)cl='ok';if(ua.indexOf(o.label)>=0&&ca.indexOf(o.label)<0)cl='er'}else{if(o.label===ca)cl='ok';if(o.label===ua&&o.label!==ca)cl='er'}}if(rv)cl+=' di';var ck=rv?'':'onclick="T('+i+',\''+o.label+'\')"';oh+='<div class="oi '+cl+'" '+ck+'><div class="ol">'+o.label+'</div><div class="ot">'+o.text+(rv&&o.note?' <span style="color:#999;font-size:.9em">（'+o.note+'）</span>':'')+'</div></div>'});oh+='</div>';
-if(q.type==='多选题'&&!rv){var ks=Object.keys(b);oh+='<div class="sb"><button class="bt bt-s" onclick="SM('+i+')" '+(ks.length===0?'disabled style="opacity:.5"':'')+'>&#x1F4AC; 提交答案</button></div>'}}
-var fh='';if(rv){var ua=UA[i]||'(未作答)',ok=false;if(q.type==='多选题'){ok=ua.split('').sort().join('')===q.answer.split('').sort().join('')}else{ok=ua===q.answer}
-fh='<div class="fb sh '+(ok?'fc':'fi')+'"><strong>'+(ok?'&#x2705; 回答正确！':'&#x274C; 回答错误')+'</strong><br>'+(ok?'':'你的答案：<b>'+ua+'</b><br>')+'正确答案：<b>'+q.answer+'</b>'+(q.type==='判断题'?' ('+(q.answer==='√'?'正确':'错误')+')':'');
-if(q.trans){fh+='<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8e8e8;color:#666;font-size:.95em"><strong>&#x1F30D; 整句翻译：</strong>'+q.trans+'</div>'}
-fh+='</div>'}
-document.getElementById('qa').innerHTML='<div class="qc"><div class="qh"><span class="qb '+tc+'">'+q.type+'</span><span class="qp">'+q.chapter+' '+q.chapter_title+' · 第 '+(I+1)+'/'+Q.length+' 题</span></div><div class="qs">'+q.stem+'</div>'+oh+fh+'</div>';U2()}
+function SF(i){if(i in RV)return;var bl=Q[i].blanks||[],vals=[];for(var j=0;j<bl.length;j++){var el=document.getElementById('fb'+i+'_'+j);vals.push(el?el.value.trim():'')}UA[i]=vals.join('|');RV[i]=1;V();U2()}
+
+	function SM(i){if(i in RV)return;var b=MB[i]||{};var ks=Object.keys(b).sort();UA[i]=ks.join('');RV[i]=1;V();U2()}
+function V(){if(!Q.length)return;var q=Q[I],i=I,rv=i in RV,tc=q.type==='单选题'?'bs':q.type==='多选题'?'bm':q.type==='填空题'?'bf':'bj',oh='';
+	if(q.type==='判断题'){var ua=UA[i],ca=q.answer,g=function(v){if(!rv)return ua===v?'sel':'';if(v===ca)return'ok';if(v===ua&&ua!==ca)return'er';return''};oh='<div class="jo"><div class="jb '+g('√')+' '+(rv?'di':'')+'" onclick="T('+i+',\'√\')">&#x2705; 正确</div><div class="jb '+g('X')+' '+(rv?'di':'')+'" onclick="T('+i+',\'X\')">&#x274C; 错误</div></div>'}
+	else if(q.type==='填空题'){var bl=q.blanks||[],ua=UA[i]||'',pas=ua?ua.split('|'):[];oh='<div class="fi-wrap">'+q.stem.replace(/【(\d+)】/g,function(m,bn){var idx=parseInt(bn)-1,val=pas[idx]||'',di=rv?'disabled':'';return' <input type="text" class="fi-inp" id="fb'+i+'_'+idx+'" value="''+val.replace(/"/g,'&quot;')+'\" '+di+' placeholder="\u586b\u7a7a'+bn+'\"> '})+'</div>';if(!rv){oh+='<div class="sb"><button class="bt bt-s" onclick="SF('+i+')">&#x2709; 提交答案</button></div>'}}
+	else{var b=MB[i]||{},ua=UA[i]||'';oh='<div class="op">';q.options.forEach(function(o){var cl='';if(!rv){if(q.type==='多选题'){if(b[o.label])cl='sel'}else{if(ua===o.label)cl='sel'}}else{var ca=q.answer;if(q.type==='多选题'){if(ca.indexOf(o.label)>=0)cl='ok';if(ua.indexOf(o.label)>=0&&ca.indexOf(o.label)<0)cl='er'}else{if(o.label===ca)cl='ok';if(o.label===ua&&o.label!==ca)cl='er'}}if(rv)cl+=' di';var ck=rv?'':'onclick="T('+i+',\''+o.label+'\')"';oh+='<div class="oi '+cl+'" '+ck+'><div class="ol">'+o.label+'</div><div class="ot">'+o.text+(rv&&o.note?' <span style="color:#999;font-size:.9em">（'+o.note+'）</span>':'')+'</div></div>'});oh+='</div>';
+	if(q.type==='多选题'&&!rv){var ks=Object.keys(b);oh+='<div class="sb"><button class="bt bt-s" onclick="SM('+i+')" '+(ks.length===0?'disabled style="opacity:.5"':'')+'>&#x1F4AC; 提交答案</button></div>'}}
+	var fh='';if(rv){var ua=UA[i]||'(未作答)',ok=false;if(q.type==='多选题'){ok=ua.split('').sort().join('')===q.answer.split('').sort().join('')}else if(q.type==='填空题'){var uac=ua.toLowerCase().replace(/\s/g,''),cac=q.answer.toLowerCase().replace(/\s/g,'');ok=uac===cac;fh='<div class="fb sh '+(ok?'fc':'fi')+'"><strong>'+(ok?'&#x2705; 回答正确！':'&#x274C; 回答错误')+'</strong><br>'+(ok?'':'你的答案：<b>'+ua+'</b><br>')+'正确答案：<b>'+q.answer+'</b></div>'}else{ok=ua===q.answer}
+	if(q.type!=='填空题')fh='<div class="fb sh '+(ok?'fc':'fi')+'"><strong>'+(ok?'&#x2705; 回答正确！':'&#x274C; 回答错误')+'</strong><br>'+(ok?'':'你的答案：<b>'+ua+'</b><br>')+'正确答案：<b>'+q.answer+'</b>'+(q.type==='判断题'?' ('+(q.answer==='√'?'正确':'错误')+')':'');
+	if(q.trans){fh+='<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8e8e8;color:#666;font-size:.95em"><strong>&#x1F30D; 整句翻译：</strong>'+q.trans+'</div>'}
+	fh+='</div>'}
+	document.getElementById('qa').innerHTML='<div class="qc"><div class="qh"><span class="qb '+tc+'">'+q.type+'</span><span class="qp">'+q.chapter+' '+q.chapter_title+' · 第 '+(I+1)+'/'+Q.length+' 题</span></div><div class="qs">'+q.stem+'</div>'+oh+fh+'</div>';U2()}
 function N(){if(I<Q.length-1){I++;V();var qc=document.querySelector('.qc');if(qc)qc.scrollIntoView({behavior:'smooth',block:'start'})}}
 function P(){if(I>0){I--;V();var qc=document.querySelector('.qc');if(qc)qc.scrollIntoView({behavior:'smooth',block:'start'})}}
 
