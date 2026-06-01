@@ -484,6 +484,9 @@ function renderQuestion() {
     if (q.trans) {
       feedbackHTML += '<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8e8e8;color:#666;font-size:.95em"><strong>🌍 整句翻译：</strong>' + escapeHTML(q.trans) + '</div>';
     }
+    if (q.explanation) {
+      feedbackHTML += '<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #e8e8e8"><div style="font-weight:600;color:#667eea;margin-bottom:4px;font-size:.9em">📖 解析</div><div style="color:#555;line-height:1.7;font-size:.92em;white-space:pre-wrap">' + escapeHTML(q.explanation) + '</div></div>';
+    }
     feedbackHTML += '</div>';
   }
 
@@ -651,8 +654,9 @@ function highlightPython(code) {
     .replace(/(#.*)$/gm, '<span class="cm">$1</span>')
     // 字符串
     .replace(/(['"])(?:(?!\1|\\).|\\.)*\1/g, '<span class="str">$&</span>')
-    // 关键字
-    .replace(/\b(def|class|if|else|elif|for|while|in|import|from|return|print|and|or|not|True|False|None|as|with|try|except|finally|raise|lambda|yield|pass|break|continue|is|global|nonlocal|del|assert)\b/g, '<span class="kw">$1</span>')
+    // 关键字（class 加 (?!=") 防止匹配 HTML 的 class="str" 等属性，避免双重包裹炸裂）
+    .replace(/\bclass\b(?!=")/g, '<span class="kw">class</span>')
+    .replace(/\b(def|if|else|elif|for|while|in|import|from|return|print|and|or|not|True|False|None|as|with|try|except|finally|raise|lambda|yield|pass|break|continue|is|global|nonlocal|del|assert)\b/g, '<span class="kw">$&</span>')
     // 函数调用
     .replace(/\b([a-zA-Z_]\w*)(?=\()/g, '<span class="fn">$1</span>')
     // 数字
