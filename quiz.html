@@ -163,14 +163,14 @@ function getEl(id) { return document.getElementById(id); }
 
 /* ===== 获取题目的分组键（编号章节用 chapter，否则用 chapter_title） ===== */
 function getChapterKey(q) {
-  // 检测是否有编号章节（如 1.1）
-  const hasNumbered = allQuestions.some(q => /^\d/.test(q.chapter));
+  // 检测是否有编号章节（如 1.1、B2U1），含数字则按 chapter 分
+  const hasNumbered = allQuestions.some(q => /\d/.test(q.chapter));
   return hasNumbered ? q.chapter : (q.chapter_title || q.chapter);
 }
 
 /* ===== 章节 UI ===== */
 function buildChapterUI() {
-  const hasNumberedChapters = allQuestions.some(q => /^\d/.test(q.chapter));
+  const hasNumberedChapters = allQuestions.some(q => /\d/.test(q.chapter));
   const chapters = [...new Set(allQuestions.map(q => getChapterKey(q)))]
     .sort((a, b) => {
       // 数字编号按数值排序
