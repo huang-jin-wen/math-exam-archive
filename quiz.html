@@ -78,12 +78,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 .fi-fb-v.er{color:#ff4d4f}
 
 /* ===== 代码块 ===== */
-.code-block{background:#1e293b;color:#e2e8f0;border-radius:8px;padding:12px 16px;margin:10px 0;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.85em;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
-.code-block .kw{color:#c084fc}
-.code-block .fn{color:#38bdf8}
-.code-block .str{color:#4ade80}
-.code-block .num{color:#fb923c}
-.code-block .cm{color:#64748b;font-style:italic}
+.code-block{background:#f4f6f9;color:#334155;border-radius:8px;padding:12px 16px;margin:10px 0;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.85em;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-break:break-word;border:1px solid #e2e8f0}
+.code-block .kw{color:#7c3aed}
+.code-block .fn{color:#2563eb}
+.code-block .str{color:#059669}
+.code-block .num{color:#d97706}
+.code-block .cm{color:#94a3b8;font-style:italic}
 .code-inline{background:#f1f5f9;color:#334155;padding:2px 6px;border-radius:4px;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.9em}
 </style>
 </head>
@@ -547,9 +547,10 @@ function renderFillIn(i, answered) {
 
     const indented = autoIndentPython(rawCode);
     const codeLines = indented.split('\n').map(l => {
-      let line = escapeHTML(l);
-      line = highlightPython(line);
-      line = line.replace(/【(\d+)】/g, (m, n) => marker(n));
+      // 保护 【N】 占位符，防止数字高亮误匹配
+      let line = l.replace(/【(\d+)】/g, '\x00B$1\x00');
+      line = highlightPython(line);  // 内部已含 escapeHTML
+      line = line.replace(/\x00B(\d+)\x00/g, (m, n) => marker(n));
       return line;
     }).join('\n');
 
@@ -618,7 +619,6 @@ function renderOptions(i, answered) {
 
 /* ===== 题干渲染（支持代码块） ===== */
 function renderStem(stem) {
-  // 检测是否是 Python 代码题（包含 ; 分号分隔的代码行）
   if (!stem || typeof stem !== 'string') return escapeHTML(String(stem));
 
   // 用 ; 分隔的代码题模式：描述。; code1; code2
@@ -629,7 +629,7 @@ function renderStem(stem) {
       const segments = stem.split('\n');
       const desc = escapeHTML(segments[0]);
       const rawCode = segments.slice(1).join('\n');
-      const code = autoIndentPython(rawCode).split('\n').map(l => highlightPython(escapeHTML(l))).join('\n');
+      const code = autoIndentPython(rawCode).split('\n').map(l => highlightPython(l)).join('\n');
       if (code.trim()) {
         return desc + '<div class="code-block">' + code + '</div>';
       }
@@ -640,27 +640,47 @@ function renderStem(stem) {
   // 有 ; 分隔：第一段是描述，后面是代码行
   const desc = escapeHTML(parts[0].trim());
   const rawCode = parts.slice(1).map(l => l.trim()).join('\n');
-  const codeLines = autoIndentPython(rawCode).split('\n').map(l => highlightPython(escapeHTML(l))).join('\n');
+  const codeLines = autoIndentPython(rawCode).split('\n').map(l => highlightPython(l)).join('\n');
   if (codeLines.trim()) {
     return desc + '<div class="code-block">' + codeLines + '</div>';
   }
   return escapeHTML(stem);
 }
 
-/* ===== 简单 Python 语法高亮 ===== */
+/* ===== 简单 Python 语法高亮（占位符架构：先标记→转义→替换，不交叉污染） ===== */
 function highlightPython(code) {
-  return code
-    // 注释
-    .replace(/(#.*)$/gm, '<span class="cm">$1</span>')
-    // 字符串
-    .replace(/(['"])(?:(?!\1|\\).|\\.)*\1/g, '<span class="str">$&</span>')
-    // 关键字（class 加 (?!=") 防止匹配 HTML 的 class="str" 等属性，避免双重包裹炸裂）
-    .replace(/\bclass\b(?!=")/g, '<span class="kw">class</span>')
-    .replace(/\b(def|if|else|elif|for|while|in|import|from|return|print|and|or|not|True|False|None|as|with|try|except|finally|raise|lambda|yield|pass|break|continue|is|global|nonlocal|del|assert)\b/g, '<span class="kw">$&</span>')
-    // 函数调用
-    .replace(/\b([a-zA-Z_]\w*)(?=\()/g, '<span class="fn">$1</span>')
-    // 数字
-    .replace(/\b(\d+\.?\d*)\b/g, '<span class="num">$1</span>');
+  // 使用不可见控制字符作为占位符，避免和代码内容冲突
+  const M = { kw: '\x01', fn: '\x02', str: '\x03', num: '\x04', cm: '\x05' };
+
+  let result = code;
+
+  // 1. 注释（#开头到行尾）
+  result = result.replace(/(#.*)$/gm, (m, c) => M.cm + c + M.cm);
+
+  // 2. 字符串（必须在其他模式之前，防止内部内容被误匹配）
+  result = result.replace(/(['"])(?:(?!\1|\\).|\\.)*\1/g, (m) => M.str + m + M.str);
+
+  // 3. 关键字（优先于函数调用，真正的 Python 关键字）
+  result = result.replace(/\b(def|class|if|else|elif|for|while|in|import|from|return|and|or|not|as|with|try|except|finally|raise|lambda|yield|pass|break|continue|is|global|nonlocal|del|assert|True|False|None)\b/g, (m) => M.kw + m + M.kw);
+
+  // 4. 函数调用 identifier(（print/range/len 等内置函数）
+  result = result.replace(/\b([a-zA-Z_]\w*)(?=\()/g, (m, n) => M.fn + n + M.fn);
+
+  // 5. 数字
+  result = result.replace(/\b(\d+\.?\d*)\b/g, (m) => M.num + m + M.num);
+
+  // 6. HTML 转义（此时没有 HTML 标签，安全）
+  result = escapeHTML(result);
+
+  // 7. 替换占位符为实际 <span> 标签
+  result = result
+    .replace(new RegExp(M.kw + '(.*?)' + M.kw, 'g'), '<span class="kw">$1</span>')
+    .replace(new RegExp(M.fn + '(.*?)' + M.fn, 'g'), '<span class="fn">$1</span>')
+    .replace(new RegExp(M.str + '(.*?)' + M.str, 'g'), '<span class="str">$1</span>')
+    .replace(new RegExp(M.num + '(.*?)' + M.num, 'g'), '<span class="num">$1</span>')
+    .replace(new RegExp(M.cm + '(.*?)' + M.cm, 'g'), '<span class="cm">$1</span>');
+
+  return result;
 }
 
 /* ===== Python 代码自动缩进（修复数据源缩进丢失） ===== */
