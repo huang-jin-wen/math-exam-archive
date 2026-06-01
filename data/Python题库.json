@@ -2804,7 +2804,7 @@
         "text": "无限循环"
       }
     ],
-    "answer": "C",
+    "answer": "A",
     "explanation": "s 初始为 1，while s<=1 条件为真，执行一次 print('计数:', s) 输出 '计数: 1'，然后 s 变为 2，循环结束。"
   },
   {
