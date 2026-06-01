@@ -1,7 +1,7 @@
 [
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "pip包管理",
     "type": "单选题",
     "stem": "以下选项中，不是pip工具进行第三方库安装的作用的是()。",
     "options": [
@@ -26,7 +26,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "pip包管理",
     "type": "单选题",
     "stem": "下载第三方库安装包但并不安装的命令格式是（）。",
     "options": [
@@ -51,7 +51,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "pip包管理",
     "type": "单选题",
     "stem": "列出当前系统已经安装的第三方库的命令格式是（）。",
     "options": [
@@ -76,7 +76,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "pip包管理",
     "type": "单选题",
     "stem": "列出某个已经安装库详细信息的命令格式是（）。",
     "options": [
@@ -101,7 +101,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "以下选项中符合Python语言变量命名规则的是（）。",
     "options": [
@@ -126,7 +126,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "以下选项中，不符合Python语言变量命名规则的是 ( )。",
     "options": [
@@ -151,7 +151,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "以下选项中，不是Python语言保留字的是 ( )。",
     "options": [
@@ -176,7 +176,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "Python为源文件指定系统默认字符编码的声明是（）。",
     "options": [
@@ -201,7 +201,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x = 12.34; print(type(x))",
     "options": [
@@ -226,7 +226,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x = 0x0101; print(x)",
     "options": [
@@ -251,7 +251,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x = 0x1010; print(x)",
     "options": [
@@ -276,7 +276,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x = 0b1010; print(x)",
     "options": [
@@ -301,7 +301,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x = 0o1010; print(x)",
     "options": [
@@ -326,7 +326,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "内置函数",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; >>> bin(10)",
     "options": [
@@ -351,7 +351,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "内置函数",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; >>> hex(255)",
     "options": [
@@ -376,7 +376,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "内置函数",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; >>> oct(-255)",
     "options": [
@@ -401,7 +401,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下列表达式中，值不是1的是 ( )。",
     "options": [
@@ -426,7 +426,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; a = 5; b = 6; c = 7; print(pow(b,2) - 4*a*c)",
     "options": [
@@ -451,7 +451,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; print(pow(2,10))",
     "options": [
@@ -476,7 +476,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; print(pow(3,0.5)*pow(3,0.5)==3)",
     "options": [
@@ -501,7 +501,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x=10; y=3; print(divmod(x,y))",
     "options": [
@@ -526,7 +526,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; print(round(0.1 + 0.2,1) != 0.3)",
     "options": [
@@ -551,7 +551,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; print(0.1 + 0.2 == 0.3)",
     "options": [
@@ -576,7 +576,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; sum = 1; for i in range(1,101):; sum += i; print(sum)",
     "options": [
@@ -601,7 +601,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; sum = 0; for i in range(2,11):; if i % 2 == 0:; sum += i; else:; sum -= i; print(sum)",
     "options": [
@@ -626,7 +626,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; sum = 0; for i in range(0,10):; if i % 2 == 0:; sum -= i; else:; sum += i; print(sum)",
     "options": [
@@ -651,7 +651,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; for num in range(2,10):; if num > 1:; for i in range(2,num):; if (num % i) == 0:; break; else:; print(num,end='')",
     "options": [
@@ -676,7 +676,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; a = []; for i in range(2,10):; count = 0; for x in range(2,i-1):; if i % x == 0:; count += 1; if count != 0:; a.append(i); print(a); **答案：** [4,6,8,9]; **第29题**; 下面代码的输出结果是（）。; a = 2.0; b = 1.0; s = 0; for n in range(1,4):; s += a / b; t = a; a = a + b; b = t; print(round(s,2))",
     "options": [
@@ -701,7 +701,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; list1 = [i*2 for i in 'Python']; print(list1)",
     "options": [
@@ -726,7 +726,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; list1 = [m+n for m in 'AB' for n in 'CD']; print(list1)",
     "options": [
@@ -751,7 +751,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; list1 = [(m,n) for m in 'AB' for n in 'CD']; print(list1)",
     "options": [
@@ -776,7 +776,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; list1 = [(m,n) for m in 'ABC' for n in 'ABC' if m!=n]; print(list1)",
     "options": [
@@ -801,7 +801,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; list1 = []; for i in range(1,11):; list1.append(i**2); print(list1)",
     "options": [
@@ -826,7 +826,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; L = [1,2,3,4,5]; s1 = ','.join(str(n) for n in L); print(s1)",
     "options": [
@@ -851,7 +851,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; str1=\"k:1|k1:2|k2:3|k3:4\"; str_list=str1.split('|'); d={}; for c in str_list:; key,value=c.split(':'); d[key]=value; print(d)",
     "options": [
@@ -876,7 +876,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; s = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]; print(s[4:])",
     "options": [
@@ -901,7 +901,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; s = [\"seashell\", \"gold\", \"pink\", \"brown\", \"purple\", \"tomato\"]; print(s[1:4:2])",
     "options": [
@@ -926,7 +926,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; d = {\"大海\": \"蓝色\", \"天空\": \"灰色\", \"大地\": \"黑色\"}; print(d[\"大地\"], d.get(\"大地\", \"黄色\"))",
     "options": [
@@ -951,7 +951,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; for a in [\"torch\",\"soap\",\"bath\"]:; print(a)",
     "options": [
@@ -964,7 +964,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; for s in \"HelloWorld\":; if s==\"W\":; continue; print(s,end=\"\")",
     "options": [
@@ -989,7 +989,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; for s in \"HelloWorld\":; if s==\"W\":; break; print(s,end=\"\")",
     "options": [
@@ -1014,7 +1014,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; for s in \"abc\":; for i in range(3):; print(s,end=\"\"); if s==\"c\":; break",
     "options": [
@@ -1039,7 +1039,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; a = \"ac\"; b = \"bd\"; c = a + b; print(c)",
     "options": [
@@ -1064,7 +1064,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; a = \"alex\"; b = a.capitalize(); print(a,end=\",\"); print(b)",
     "options": [
@@ -1089,7 +1089,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; vlist = list(range(5)); print(vlist)",
     "options": [
@@ -1114,7 +1114,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; ls = list(range(1,4)); print(ls)",
     "options": [
@@ -1139,7 +1139,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; tuple(range(2,10,2))",
     "options": [
@@ -1164,7 +1164,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "输入输出",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; x=3.1415926; print(round(x,2), round(x))",
     "options": [
@@ -1189,7 +1189,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。; s = set(); type(s)",
     "options": [
@@ -1214,7 +1214,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "Python语句print(type((1,2,3,4)))的输出结果是（）。",
     "options": [
@@ -1239,7 +1239,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "Python语句print(type({1,2,3,4}))的输出结果是().",
     "options": [
@@ -1264,7 +1264,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "Python语句print(type([1,2,3,4]))的输出结果是（）。",
     "options": [
@@ -1289,7 +1289,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "对于字典D={'A':10,'B':20,'C':30,'D':40}，len(D)的是（）。",
     "options": [
@@ -1314,7 +1314,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "字典d={'abc':123, 'def':456, 'ghi':789}，len(d)的结果是（）。",
     "options": [
@@ -1339,7 +1339,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "设s=\"Happy New Year\"，则s[3:8]的值为（）。",
     "options": [
@@ -1364,7 +1364,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "给出如下代码; s = \"abcdefghijklmn\"; print(s[1:10:3]); 上述代码的输出结果是（）。",
     "options": [
@@ -1389,7 +1389,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "对于序列s，能够返回序列s中第i到j以k为步长的元素子序列的表达是（）。",
     "options": [
@@ -1414,7 +1414,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "二维列表ls=[[1,2,3],[4,5,6],[7,8,9]]，以下选项中能获取其中元素5的是（）。",
     "options": [
@@ -1439,7 +1439,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "元组变量t=(\"cat\", \"dog\", \"tiger\", \"human\")，t[::-1]的结果是（）。",
     "options": [
@@ -1464,7 +1464,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "以下选项中能输出\"海贝色\"的是（）。; DictColor = {\"seashell\":\"海贝色\",\"gold\":\"金色\",\"pink\":\"粉红色\",\"brown\":\"棕色\",\"purple\":\"紫色\",\"tomato\":\"西红柿色\"}",
     "options": [
@@ -1489,7 +1489,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "关于Python的复数类型，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1514,7 +1514,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "关于Python的浮点数类型，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1539,7 +1539,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "关于Python的数字类型，以下选项中描述错误的是（）。",
     "options": [
@@ -1564,7 +1564,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "关于Python字符串，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1589,7 +1589,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "关于Python字符编码，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1614,7 +1614,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "运算符与表达式",
     "type": "单选题",
     "stem": "关于Python语句P = -P，以下选项中描述正确的是 ( )",
     "options": [
@@ -1639,7 +1639,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "关于Python的元组类型，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1664,7 +1664,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "以下选项中，不是具体的Python序列类型的是 ( )。",
     "options": [
@@ -1689,7 +1689,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "关于Python组合数据类型，以下选项中描述错误的是（）。",
     "options": [
@@ -1714,7 +1714,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "S和T是两个集合，对S|T的描述正确的是 ( )。",
     "options": [
@@ -1739,7 +1739,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "S和T是两个集合，对S&T的描述正确的是 ( )。",
     "options": [
@@ -1764,7 +1764,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "给定字典d，以下选项中可以清空该字典并保留变量的是 ( )。",
     "options": [
@@ -1789,7 +1789,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "给定字典d，以下选项中对d.get(x, y)的描述正确的是 ( )。",
     "options": [
@@ -1814,7 +1814,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "给定字典d，以下选项中对x in d的描述正确的是 ( )。",
     "options": [
@@ -1839,7 +1839,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "以下选项中，不是建立字典的方式是 ( )",
     "options": [
@@ -1864,7 +1864,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "关于函数，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1889,7 +1889,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "关于函数的目的与意义，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1914,7 +1914,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "以下选项中，不属于函数的作用的是 ( )。",
     "options": [
@@ -1939,7 +1939,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "关于函数的参数，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1964,7 +1964,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "关于函数的关键字参数使用限制，以下选项中描述错误的是 ( )。",
     "options": [
@@ -1989,7 +1989,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "关于嵌套函数，以下选项中描述错误的是 ( )。",
     "options": [
@@ -2014,7 +2014,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "假设函数中不包括global保留字，对于改变参数值的方法，以下选项中错误的是 ( )。",
     "options": [
@@ -2039,7 +2039,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "变量与语法",
     "type": "单选题",
     "stem": "关于Python的全局变量和局部变量，以下选项中描述错误的是 ( )。",
     "options": [
@@ -2064,7 +2064,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "变量与语法",
     "type": "单选题",
     "stem": "关于局部变量和全局变量，以下选项中描述错误的是（）。",
     "options": [
@@ -2089,7 +2089,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "运算符与表达式",
     "type": "单选题",
     "stem": "关于Python语句P=-P，以下选项中描述正确的是()。",
     "options": [
@@ -2114,7 +2114,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "内置函数",
     "type": "单选题",
     "stem": "下面代码的执行结果是; >>> abs(-3+4j)",
     "options": [
@@ -2139,7 +2139,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "下面代码的执行结果是; >>> 1.23e-4 + 5.67e+8j.real",
     "options": [
@@ -2164,7 +2164,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "下面代码的执行结果是（）。; a = 10.99; print(complex(a))",
     "options": [
@@ -2189,7 +2189,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下列表式的值为True的是（）。",
     "options": [
@@ -2214,7 +2214,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "下列选项中输出结果是True的是（）",
     "options": [
@@ -2239,7 +2239,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "运算符与表达式",
     "type": "单选题",
     "stem": "Python表达式中，可以使用 () 控制运算的优先顺序。",
     "options": [
@@ -2264,7 +2264,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "实现多路分支的最佳控制结构是（）。",
     "options": [
@@ -2289,7 +2289,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "条件判断",
     "type": "单选题",
     "stem": "关于分支结构，以下选项中描述不正确的是( )。",
     "options": [
@@ -2314,7 +2314,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "条件判断",
     "type": "单选题",
     "stem": "下面if语句表示“成绩 (mark) 优秀的男生以及不及格的男生”，正确的语句为（）。",
     "options": [
@@ -2339,7 +2339,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "关于Python循环结构，以下选项中描述错误的是 ( )",
     "options": [
@@ -2364,7 +2364,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "关于Python循环结构，以下选项中描述错误的是()。",
     "options": [
@@ -2389,7 +2389,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "关于Python的无限循环，以下选项中描述错误的是 ( )。",
     "options": [
@@ -2414,7 +2414,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "以下选项中能够实现Python循环结构的是（）。",
     "options": [
@@ -2439,7 +2439,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下列while循环中print语句执行的次数为（）。; k=10; while k>1:; print(k); k=k/2",
     "options": [
@@ -2464,7 +2464,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "可以终止循环体语句执行的语句是（）。",
     "options": [
@@ -2489,7 +2489,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下列快捷键中能够中断 (Interrupt Execution) Python程序运行的是()。",
     "options": [
@@ -2514,7 +2514,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "变量与语法",
     "type": "单选题",
     "stem": "在一行上写多条Python语句使用的符号是（）。",
     "options": [
@@ -2539,7 +2539,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "关于程序的异常处理，以下选项中描述错误的是 ( )。",
     "options": [
@@ -2564,7 +2564,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "Python异常处理中不会用到的关键字是（）。",
     "options": [
@@ -2589,7 +2589,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "以下选项中Python用于异常处理结构中用来捕获特定类型的异常的保留字是（）。",
     "options": [
@@ -2614,7 +2614,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "当用户输入abc时，下面代码的输出结果是()。; try:; n = 0; n = input(\"请输入一个整数: \"); def pow10(n):; return n**10; except:; print(\"程序执行错误\")",
     "options": [
@@ -2639,7 +2639,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "运算符与表达式",
     "type": "单选题",
     "stem": "下面代码的执行结果是; >>> True / False",
     "options": [
@@ -2664,7 +2664,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "循环结构",
     "type": "单选题",
     "stem": "下面代码的输出结果是; s = 1; while(s<=1):; print('计数: ',s); s = s + 1",
     "options": [
@@ -2677,7 +2677,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "条件判断",
     "type": "单选题",
     "stem": "下面代码的输出结果是; x=2; y=2.0; if(x==y):; print(\"Equal\"); else:; print(\"Not Equal\")",
     "options": [
@@ -2702,7 +2702,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "条件判断",
     "type": "单选题",
     "stem": "下列语句执行后的输出是（）。; if 2:; print(5); else:; print(6)",
     "options": [
@@ -2727,7 +2727,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "条件判断",
     "type": "单选题",
     "stem": "while True:; guess = eval(input()); if guess == 0x452//2:; break; 作为输入能够结束程序运行的是().",
     "options": [
@@ -2752,7 +2752,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "给出如下代码; import random; num = random.randint(1,10); while True:; guess = input(); i = int(guess); if i == num:; print(\"你猜对了\"); break; elif i < num:; print(\"小了\"); elif i > num:; print(\"大了\"); 以下选项中描述错误的是（）。",
     "options": [
@@ -2777,7 +2777,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不是Python中文件操作的相关函数是()。",
     "options": [
@@ -2802,7 +2802,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "关于Python文件打开模式的描述，以下选项中错误的是 ( )。",
     "options": [
@@ -2827,7 +2827,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不是Python对文件的打开模式的是 ( )。",
     "options": [
@@ -2852,7 +2852,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不是Python文件二进制打开模式的合法组合是()。",
     "options": [
@@ -2877,7 +2877,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不是Python文件处理.seek()方法的参数是()。",
     "options": [
@@ -2902,7 +2902,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "关于下面代码中的变量x，以下选项中描述正确的是（）。; fo = open(fname, \"r\"); for x in fo:; print(x); fo.close()",
     "options": [
@@ -2927,7 +2927,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "文件book.txt在当前程序所在目录内，其内容是一段文本: book，下面代码的输出结果是( )。; txt = open(\"book.txt\", \"r\"); print(txt); txt.close()",
     "options": [
@@ -2952,7 +2952,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "设city.csv文件内容如下:; 巴哈马,巴林,孟加拉国,巴巴多斯白俄罗斯,比利时,伯利兹; 下面代码的执行结果是:; f = open(\"city.csv\", \"r\"); ls = f.read().split(\",\"); f.close(); print(ls)",
     "options": [
@@ -2977,7 +2977,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "turtle库",
     "type": "单选题",
     "stem": "关于import引用，以下选项中描述错误的是（）。",
     "options": [
@@ -3002,7 +3002,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "基本的Python内置函数ord(x)的作用是（）。",
     "options": [
@@ -3027,7 +3027,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "基本的Python内置函数chr(i)的作用是（）。",
     "options": [
@@ -3052,7 +3052,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "基本的Python内置函数type(x)的作用是（）。",
     "options": [
@@ -3077,7 +3077,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "基本的Python内置函数range(a,b,s)的作用是（）。",
     "options": [
@@ -3102,7 +3102,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字符串操作",
     "type": "单选题",
     "stem": "关于eval函数，以下选项中描述错误的是 ( )。",
     "options": [
@@ -3127,7 +3127,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "在Python函数中，用于获取用户输入的是 ( )。",
     "options": [
@@ -3152,7 +3152,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "运算符与表达式",
     "type": "单选题",
     "stem": "拟在屏幕上打印输出 \"Hello World\"，以下选项中正确的是 ( )",
     "options": [
@@ -3177,7 +3177,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不是Python打开方式的是 ( )。",
     "options": [
@@ -3202,7 +3202,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "Python内置的集成开发工具是（）。",
     "options": [
@@ -3227,7 +3227,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "Python语言的主网站网址是（）。",
     "options": [
@@ -3252,7 +3252,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "Python3.0正式发布的年份是（）。",
     "options": [
@@ -3277,7 +3277,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "关于Python语言的特点，以下选项中描述错误的是 ( )。",
     "options": [
@@ -3302,7 +3302,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "关于Python程序格式框架的描述，以下选项中错误的是 ( )。",
     "options": [
@@ -3327,7 +3327,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不是IPO模型一部分的是 ( )。",
     "options": [
@@ -3352,7 +3352,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "以下选项中，不属于IPO模式一部分的是",
     "options": [
@@ -3377,7 +3377,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "变量与语法",
     "type": "单选题",
     "stem": "给标识符关联名字的过程是（）。",
     "options": [
@@ -3402,7 +3402,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "系统采用模块化的设计思想，在Python中每个模块用()来实现。",
     "options": [
@@ -3427,7 +3427,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "Python语言中用来定义函数的关键字是（）",
     "options": [
@@ -3452,7 +3452,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "以下Python注释代码，不正确的是()。",
     "options": [
@@ -3477,7 +3477,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "关于Python语言的注释，以下选项中描述错误的是 ( )。",
     "options": [
@@ -3502,7 +3502,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "以下选项中，Python语言中代码注释使用的符号是()",
     "options": [
@@ -3527,7 +3527,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "下列Python保留字中，不用于表示分支结构的是 ( )。",
     "options": [
@@ -3552,7 +3552,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "以下选项中，不是Python语言基本控制结构的是( )",
     "options": [
@@ -3577,7 +3577,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "综合",
     "type": "单选题",
     "stem": "下列说法中不正确的是（）。",
     "options": [
@@ -3602,7 +3602,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "在面向对象程序设计的方法定义中，访问对象属性x的格式是 ( )。",
     "options": [
@@ -3627,7 +3627,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "面向对象",
     "type": "单选题",
     "stem": "以下代码创建了一个football对象:football=Ball()，调用football对象的play方法，下列选项正确的是()。",
     "options": [
@@ -3652,7 +3652,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "第三方库",
     "type": "单选题",
     "stem": "Python用于中文分词的第三方库是 ()",
     "options": [
@@ -3677,7 +3677,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "关于jieba库的描述，以下选项中错误的是 ( )。",
     "options": [
@@ -3702,7 +3702,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "以下函数中，不是jieba库函数是()。",
     "options": [
@@ -3727,7 +3727,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "第三方库",
     "type": "单选题",
     "stem": "关于jieba库的全模式分词，以下选项中描述正确的是 ( )。",
     "options": [
@@ -3752,7 +3752,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "第三方库",
     "type": "单选题",
     "stem": "关于jieba库的精确模式分词，以下选项中描述正确的是 ( )。",
     "options": [
@@ -3777,7 +3777,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "关于jieba库的函数jieba.lcut(x, cut_all = True)，以下选项中描述正确的是（）。",
     "options": [
@@ -3802,7 +3802,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "关于jieba库的函数jieba.lcut_for_search(x)，以下选项中描述正确的是（）。",
     "options": [
@@ -3827,7 +3827,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "Python数据分析方向的第三方库是（）",
     "options": [
@@ -3852,7 +3852,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "第三方库",
     "type": "单选题",
     "stem": "Python数据可视化方向的第三方库是（）",
     "options": [
@@ -3877,7 +3877,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "在Python环境下使用NumPy函数库，需要做的工作是()。",
     "options": [
@@ -3902,7 +3902,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "random库的random.randrange(start, stop[, step])函数的作用是（）。",
     "options": [
@@ -3927,7 +3927,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "random库的seed(a)函数的作用是（）。",
     "options": [
@@ -3952,7 +3952,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "random库的random.sample(pop, k)函数的作用是（）。",
     "options": [
@@ -3977,7 +3977,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "以下选项中能够最简单地在列表['apple','pear','peach','orange']中随机选取一个元素的是（）。",
     "options": [
@@ -4002,7 +4002,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "生成一个k比特长度的随机整数的函数是（）。",
     "options": [
@@ -4027,7 +4027,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "random库",
     "type": "单选题",
     "stem": "random.uniform(a,b)的作用是（）。",
     "options": [
@@ -4052,7 +4052,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "turtle库",
     "type": "单选题",
     "stem": "turtle库的运动控制函数是（）。",
     "options": [
@@ -4077,7 +4077,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "turtle库",
     "type": "单选题",
     "stem": "关于turtle库中的setup()函数，以下选项中描述错误的是 ( )。",
     "options": [
@@ -4090,7 +4090,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "异常处理",
     "type": "单选题",
     "stem": "关于matplotlib的描述，以下选项中错误的是 ( )",
     "options": [
@@ -4115,7 +4115,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "turtle库",
     "type": "单选题",
     "stem": "下面的代码绘制的是（）。; import turtle as t; def DrawCircle(n):; t.penup(); t.goto(0,-n); t.pendown(); t.circle(n); for i in range(20,80,20):; DrawCircle(i); t.done()",
     "options": [
@@ -4140,7 +4140,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "turtle库",
     "type": "单选题",
     "stem": "给出如下代码:; import turtle; def drawLine(draw):; turtle.pendown() if draw else turtle.penup(); turtle.fd(50); turtle.right(90); drawLine(True); drawLine(True); drawLine(True); drawLine(True); 以下选项中描述错误的是（）。",
     "options": [
@@ -4165,7 +4165,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "执行如下代码，以下选项中描述错误的是 ( )。; import time; print(time.time())",
     "options": [
@@ -4190,7 +4190,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "如果当前时间是2018年5月1日10点10分9秒，下面代码的输出结果是（）。; import time; print(time.strftime(\"%Y=%m-%d@%H>%M>%S\", time.gmtime()))",
     "options": [
@@ -4215,7 +4215,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "下列代码的输出结果是（）。; from datetime import datetime; dt = datetime(2025, 5, 20); print(dt.strftime(\"%Y-%m-%d\"))",
     "options": [
@@ -4240,7 +4240,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "下列代码的输出结果是（）。; from datetime import datetime; dt = datetime(2025, 5, 20); print(dt.strftime(\"%Y年%m月%d日\"))",
     "options": [
@@ -4265,7 +4265,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "下列代码的输出结果是（）。; from datetime import datetime; dt = datetime(2025, 5, 20); print(dt.strftime(\"%m月%d日%Y年\"))",
     "options": [
@@ -4290,7 +4290,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "模块与包",
     "type": "单选题",
     "stem": "以下选项中，对程序的描述错误的是 ( )。",
     "options": [
@@ -4315,7 +4315,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "综合",
     "type": "单选题",
     "stem": "以下叙述中正确的是（）。",
     "options": [
@@ -4340,7 +4340,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "下列Python语句的运行结果是（）。; d={1:'a',2:'b',3:'c'}; print(len(d))",
     "options": [
@@ -4365,7 +4365,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "表达式\",\".join(ls)中ls是列表类型，以下选项中对其功能的描述正确的是()。",
     "options": [
@@ -4390,7 +4390,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "L.reverse()和L[-1:-1-len(L):-1]的主要区别是（）。",
     "options": [
@@ -4415,7 +4415,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "给出如下代码:; ls = [\"car\",\"truck\"]; def funC(a):; ls = []; ls.append(a); return; funC(\"bus\"); print(ls); 以下选项中描述错误的是（）。",
     "options": [
@@ -4440,7 +4440,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "函数",
     "type": "单选题",
     "stem": "下面代码的输出结果是; def change(a,b):; a = 10; b += a; a = 4; b = 5; change(a,b); print(a,b)",
     "options": [
@@ -4465,7 +4465,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "文件操作",
     "type": "单选题",
     "stem": "执行如下代码:; fname = input(\"请输入要写入的文件:\"); fo = open(fname, \"w+\"); ls = [\"清明时节雨纷纷，\",\"路上行人欲断魂，\",\"借问酒家何处有？\",\"牧童遥指杏花村。\"]; fo.writelines(ls); fo.seek(0); for line in fo:; print(line); fo.close(); 以下选项中描述错误的是（）。",
     "options": [
@@ -4490,7 +4490,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "字典与集合",
     "type": "单选题",
     "stem": "下面代码的执行结果是; d = {}; for i in range(26):; d[chr(i+ord(\"a\"))] = chr((i+13) % 26 + ord(\"a\")); for c in \"Python\":; print(d.get(c, c), end=\"\")",
     "options": [
@@ -4515,7 +4515,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "数据类型",
     "type": "单选题",
     "stem": "关于Python中的复数，下列说法错误的是 ( )。",
     "options": [
@@ -4540,7 +4540,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下列类型的数据中的元素可以改变的是（）。",
     "options": [
@@ -4565,7 +4565,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "选择题",
+    "chapter_title": "列表与元组",
     "type": "单选题",
     "stem": "下列类型的数据中的元素可以改变的是（）。",
     "options": [
@@ -4590,7 +4590,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "循环结构",
     "type": "填空题",
     "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\nm=100\nn=28\nwhile(m!=n):\nif m>n:\nm=m-n\nelse:\nn=n-m\nprint((100*28)/n)\nprint(m)",
     "blanks": [
@@ -4607,7 +4607,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "循环结构",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，最后一行输出的结果是: 【2】。\nnum=6789\nwhile(num!=0):\nprint(num%10)\nnum=num//10",
     "blanks": [
@@ -4624,7 +4624,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "数据类型",
     "type": "填空题",
     "stem": "阅读下列程序，第一行输出的结果是【1】，第二行输出的结果是: 【2】。\ndef f(a,*b):\nprint(type(b))\nsum=a\nfor i in b:\nsum=sum+i\nreturn(sum)\nprint(f(1,2,3))",
     "blanks": [
@@ -4641,7 +4641,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "循环结构",
     "type": "填空题",
     "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\ndef f(a,*b):\nsum=a\nfor i in b:\nsum=sum+i\nreturn(sum)\nprint(f(1))\nprint(f(1,2,3,4))",
     "blanks": [
@@ -4658,7 +4658,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "条件判断",
     "type": "填空题",
     "stem": "阅读下列程序，一共打印几行【1】，第一行输出的结果是: 【2】。\ndef f(a,b):\nif b==0:\nprint(a)\nelse:\nprint(f(b,a%b))\nf(9,6)",
     "blanks": [
@@ -4675,7 +4675,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "字符串操作",
     "type": "填空题",
     "stem": "阅读下列程序，一共打印几行【1】，第一行输出的结果是: 【2】。\nfruits=['pear','apple','kiwi','avocado']\nprint('\\n'.join(fruits))",
     "blanks": [
@@ -4692,7 +4692,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\nx=y=[1,2]\nx.append(3)\nprint(x is y)\nprint(x==y)",
     "blanks": [
@@ -4709,7 +4709,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "阅读下列程序，第一行输出的结果是【1】，第二行输出的结果是: 【2】。\ndef fun(m,n):\nwhile n:\nm,n=n,m%n\nreturn m\narr=[24,18,120,54,36,35,72,33]\nprint(arr[-2])\nhcf=fun(arr[0],arr[2])\nfor i in range(len(arr)):\nif i>2 and i%2==0:\nhcf=fun(hcf,arr[i])\nprint(hcf)",
     "blanks": [
@@ -4726,7 +4726,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "字符串操作",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\nname='happy birthday'\nprint(name[6:11])\nname1=name.replace(name[6],'B')\nprint(name1)",
     "blanks": [
@@ -4743,7 +4743,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "函数",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\nd = lambda p: p*2\nt = lambda p: p*3\nx = 2\nx = d(x)\nprint(x)\nx = t(x)\nx = d(x)\nprint(x)",
     "blanks": [
@@ -4760,7 +4760,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "循环结构",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\ncounter=1\nnum=0\ndef TestVariable():\nglobal counter\nfor i in (1,2,3):\ncounter=counter+1\nnum=10\nTestVariable()\nprint(counter)\nprint(num)",
     "blanks": [
@@ -4777,7 +4777,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "条件判断",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\nx=False\ny=True\nz=False\nif x or y and z:\nprint('yes')\nelse:\nprint('no')\nif x or y and z==True:\nprint('yes')\nelse:\nprint('no')",
     "blanks": [
@@ -4794,7 +4794,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\ndef change1(list1):\nlist1[0] = 0\ndef change2(list2):\nlist2 = [4,5,6]\nlistA = [1,2,3]\nchange1(listA)\nprint(listA)\nlistB = [1,2,3]\nchange2(listB)\nprint(listB)",
     "blanks": [
@@ -4811,7 +4811,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是$$*，第二行输出的结果是: 【1】，最后一行输出的结果是: 【2】。\nn=3\nfor i in range(0,n):\nfor j in range(0,2-i):\nprint('$',end='')\nfor j in range(2*i+1):\nprint('*',end='')\nprint()",
     "blanks": [
@@ -4828,7 +4828,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "阅读下列程序，第一行的结果是【1】，最后一行输出的结果是: 【2】。\nimport math\nn=0\nfor m in range(101,201,2):\nk=int(math.sqrt(m))\nfor i in range(2,k+2):\nif m%i==0:\nbreak\nif i==k+1:\nprint(m)",
     "blanks": [
@@ -4845,7 +4845,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "字符串操作",
     "type": "填空题",
     "stem": "输出9*9口诀，如样图所示。\n程序空缺：【1】和【2】。\nfor i in range(1,10):\nfor j in range(1, 【1】):\nprint('{}x{}={}\\t'.format(i, j, 【2】), end='')",
     "blanks": [
@@ -4862,7 +4862,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "条件判断",
     "type": "填空题",
     "stem": "下面程序的功能是用递归法求n!。\ndef Factorial(n):\nif n == 1:\nfn=1\nelse:\nfn = 【1】\nreturn fn\ndef main():\nn = int(input(\"请输入正整数值n: \"))\nprint(\"结果为: \", 【2】)",
     "blanks": [
@@ -4879,7 +4879,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "条件判断",
     "type": "填空题",
     "stem": "下列程序实现以下功能，完善程序。有四个数字: 1、2、3、4，能组成多少个互不相同且无重复数字的三位数，各是多少。\nfor a in num:\nfor b in num:\nfor 【1】 in num:\nif (a!=b) and (【2】) and (c!=a):",
     "blanks": [
@@ -4896,7 +4896,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "输入10个整数，用选择法进行从小到大的排序。\n程序空缺：【1】和【2】。\nfor i in range(【1】, 9):\nmin=i\nfor j in range(【2】, 10):",
     "blanks": [
@@ -4913,7 +4913,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "用户输入一个数组，并对其排好序，然后再输入一个数，要求按原来的规律将它插入数组中。\n程序空缺：【1】和【2】。\narr. 【1】\n...\narr1. 【2】",
     "blanks": [
@@ -4930,7 +4930,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。\n程序空缺：【1】和【2】。\nwhile 1:\nt=0\nfor i in range(1, 【1】):\nsum = 【2】\nif (sum)%3==0:\nList.pop(i-1-t)\nt=t+1\nif len(List)==1:\nprint(...)\nbreak",
     "blanks": [
@@ -4947,7 +4947,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "random库",
     "type": "填空题",
     "stem": "读取7个1~50(包括1和50)的随机整数，每读取一个值，程序打印出该值个数个*。\n程序空缺：【1】和【2】。\nimport random\ndef main():\nfor i in range(7):\nm = random.randint(【1】)\nprint(m,'\\n')\nfor j in range(0, 【2】):\nprint('*', end='')\nprint('\\n')",
     "blanks": [
@@ -4964,7 +4964,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "下列程序实现如下功能: 输入某年某月某日，判断这一天是这一年的第几天?\n程序空缺：【1】和【2】。\nfor i in range(1, int(【1】)):\n...\n【2】\nprint(\"这一天是一年中的第%d天\"%sum)",
     "blanks": [
@@ -4981,7 +4981,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "文件操作",
     "type": "填空题",
     "stem": "从键盘输入一个字符串，将小写字母全部转换成大写字母，然后输出到一个磁盘文件 \"test\" 中保存。\n程序空缺：【1】和【2】。\nfp = open('test.txt', 【1】)\nstring = string. 【2】",
     "blanks": [
@@ -4998,7 +4998,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "条件判断",
     "type": "填空题",
     "stem": "给一个位数不多于5位的正整数。要求: 一、求它是几位数，二、逆序打印出各位数字。\n程序空缺：【1】和【2】。\nif 【1】:\nprint(\"输入数字超过限定位数\")\nelse:\nprint('逆序数字: %s' % 【2】)",
     "blanks": [
@@ -5015,7 +5015,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "甲乙丙丁4人同时开始放鞭炮，甲每隔t1 s放一次，乙每隔t2 s放一次，丙每隔t3 s放一次，丁每隔t4 s放一次，每人各放n次。\n程序空缺：【1】和【2】。\nfor t in range(1, 【1】):\nif OK(...): count+=1\nreturn 【2】",
     "blanks": [
@@ -5032,7 +5032,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "程序将输入的一个十进制正整数转换为十六进制字符形式并显示。\n程序空缺：【1】和【2】。\nnum, rem = divmod(num, 【1】)\nl.append(【2】)",
     "blanks": [
@@ -5049,7 +5049,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "turtle库",
     "type": "填空题",
     "stem": "下列程序画出如图所示的图形，完善程序。\n【1】\nturtle.up()\nturtle.setpos(-150,20)\nturtle.down()\nturtle.left(30)\nturtle.fd(100)\nturtle.left(60)\nfor i in range(5):\nturtle.fd(100)\n【2】\nturtle.fd(100)\nturtle.left(60)\nturtle.fd(100)",
     "blanks": [
@@ -5066,7 +5066,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "turtle库",
     "type": "填空题",
     "stem": "下列程序画出如图所示的图形，完善程序（另一种写法）。\nfrom turtle import *\nup()\nsetpos(-150,20)\n【1】\nleft(30)\n...\n【2】",
     "blanks": [
@@ -5083,7 +5083,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "字典与集合",
     "type": "填空题",
     "stem": "下列程序实现暂停一秒输出。完善程序。\nfor key, value in dict.items(【1】):\nprint(key, value)\ntime.sleep(【2】)",
     "blanks": [
@@ -5100,7 +5100,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "求0-7所能组成的奇数个数，完善程序。\ndef f(n):\nif n == 0: return 1\nelif n == 1: return 7\nelse: return 【1】\nfor i in range(1,9):\na = 【2】",
     "blanks": [
@@ -5117,7 +5117,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "列表与元组",
     "type": "填空题",
     "stem": "以下程序求100 ~ 200之内的素数，完善程序。\nfor j in range(2, int(math.sqrt(i))+1):\nif(【1】): break\ndef main():\n【2】",
     "blanks": [
@@ -5134,7 +5134,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "条件判断",
     "type": "填空题",
     "stem": "下列程序实现以下功能，完善程序。（另一种描述）\ndef main():\nnum=[1,2,3,4]\nsum=0\nfor a in num:\nfor b in num:\nfor 【1】 in num:\nif (a!=b) and (【2】) and (c!=a):\nsum+=1",
     "blanks": [
@@ -5151,7 +5151,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "填空题",
+    "chapter_title": "字符串操作",
     "type": "填空题",
     "stem": "输出9*9口诀，如样图所示（另一版本）。\nfor i in range(1,10):\nfor j in range(1, 【1】):\nprint('{}x{}={}\\t'.format(i, j, 【2】), end='')",
     "blanks": [

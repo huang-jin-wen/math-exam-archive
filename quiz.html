@@ -163,26 +163,22 @@ function getEl(id) { return document.getElementById(id); }
 
 /* ===== 章节 UI ===== */
 function buildChapterUI() {
-  const chapters = [...new Set(allQuestions.map(q => q.chapter))]
-    .sort((a, b) => {
-      const [ax, ay] = a.split('.').map(Number);
-      const [bx, by] = b.split('.').map(Number);
-      return (ax - bx) || ((ay || 0) - (by || 0));
-    });
+  // 按 chapter_title（知识点）分组
+  const chapters = [...new Set(allQuestions.map(q => q.chapter_title || q.chapter))]
+    .sort();
 
   const cf = getEl('cf'), cml = getEl('cml');
   chapters.forEach(ch => {
     const opt = document.createElement('option');
     opt.value = ch;
-    const q = allQuestions.find(q => q.chapter === ch);
-    const title = q ? q.chapter_title : '';
-    opt.textContent = ch + ' ' + (title.length > 15 ? title.substring(0, 14) + '…' : title);
+    const count = allQuestions.filter(q => (q.chapter_title || q.chapter) === ch).length;
+    opt.textContent = ch + ' (' + count + '题)';
     cf.appendChild(opt);
 
     const chip = document.createElement('span');
     chip.className = 'chi';
     chip.textContent = ch;
-    chip.title = ch + ' ' + (q ? q.chapter_title : '');
+    chip.title = ch + ' (' + count + '题)';
     chip.onclick = function() { this.classList.toggle('ck'); updateChapterLabel(); };
     cml.appendChild(chip);
   });
@@ -282,9 +278,9 @@ function drawQuestions() {
   let pool = allQuestions.slice();
   const selChapters = getSelectedChapters();
   if (selChapters) {
-    pool = pool.filter(q => selChapters.includes(q.chapter));
+    pool = pool.filter(q => selChapters.includes(q.chapter_title || q.chapter));
   } else if (chapter !== 'all') {
-    pool = pool.filter(q => q.chapter === chapter);
+    pool = pool.filter(q => (q.chapter_title || q.chapter) === chapter);
   }
   if (type !== 'all') pool = pool.filter(q => q.type === type);
 
