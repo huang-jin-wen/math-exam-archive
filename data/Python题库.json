@@ -22,7 +22,8 @@
         "text": "卸载一个已经安装的第三方库"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "pip 主要用于安装(A)、列出(C)、卸载(D)第三方库，但不能将 Python 脚本程序转变为可执行程序(B)，这是打包工具(如 pyinstaller)的功能。"
   },
   {
     "chapter": "Python",
@@ -47,7 +48,8 @@
         "text": "pip download <拟下载库名>"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "pip download 只下载安装包到本地而不安装。A(pip search)用于搜索，B(pip -h)查看帮助，C(pip install)会直接安装。"
   },
   {
     "chapter": "Python",
@@ -72,7 +74,8 @@
         "text": "pip download <拟下载库名>"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "pip list 列出已安装的所有第三方库。B 查看帮助，C 用于安装，D 用于下载但不安装。"
   },
   {
     "chapter": "Python",
@@ -97,7 +100,8 @@
         "text": "pip download <拟下载库名>"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "pip show <库名> 可查看某个已安装库的详细信息(版本、依赖等)。B 查看帮助，C 用于安装，D 用于下载。"
   },
   {
     "chapter": "Python",
@@ -122,7 +126,8 @@
         "text": "AI!"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 变量名只能由字母、数字和下划线组成，且不能以数字开头。A(Templist)符合规则；B 含*，C 以数字开头，D 含!，均不合法。"
   },
   {
     "chapter": "Python",
@@ -147,7 +152,8 @@
         "text": "_33keyword"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 变量名不能以数字开头，C(33_keyword)违反此规则。A、B、D 均以字母或下划线开头，合法。"
   },
   {
     "chapter": "Python",
@@ -172,7 +178,8 @@
         "text": "except"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "while、pass、except 都是 Python 保留字，do 不是(C)。Python 中没有 do-while 循环结构。"
   },
   {
     "chapter": "Python",
@@ -197,7 +204,8 @@
         "text": "#coding:GB2312"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "#coding:utf-8 是 Python 推荐的标准源文件编码声明。cp936/GBK/GB2312 虽也可用，但 utf-8 是默认和推荐的编码格式。"
   },
   {
     "chapter": "Python",
@@ -222,7 +230,8 @@
         "text": "<class 'bool'>"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "12.34 是浮点数字面量，type() 返回 <class 'float'>。A 对应复数(含j后缀)，B 对应整数，D 对应布尔值 True/False。"
   },
   {
     "chapter": "Python",
@@ -247,7 +256,8 @@
         "text": "65"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "0x0101 是十六进制数，0x0101 = 1×256 + 0×16 + 1 = 257。print 输出其十进制值 257。"
   },
   {
     "chapter": "Python",
@@ -272,7 +282,8 @@
         "text": "520"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "0x1010 是十六进制数，0x1010 = 1×4096 + 0×256 + 1×16 + 0 = 4112。print 输出十进制值 4112。"
   },
   {
     "chapter": "Python",
@@ -297,7 +308,8 @@
         "text": "16"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "0b1010 是二进制数，0b1010 = 1×8 + 0×4 + 1×2 + 0×1 = 10。print 输出十进制值 10。"
   },
   {
     "chapter": "Python",
@@ -322,7 +334,8 @@
         "text": "520"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "0o1010 是八进制数，0o1010 = 1×512 + 0×64 + 1×8 + 0×1 = 520。print 输出十进制值 520。"
   },
   {
     "chapter": "Python",
@@ -347,7 +360,8 @@
         "text": "'0x1010'"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "bin(10) 将十进制数 10 转为二进制字符串 '0b1010'。B 的 0d 前缀不存在，C 是八进制，D 是十六进制。"
   },
   {
     "chapter": "Python",
@@ -372,7 +386,8 @@
         "text": "'0xff'"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "hex(255) 将 255 转为十六进制字符串 '0xff'(255=15×16+15=0xff)。A、B、C 格式错误。"
   },
   {
     "chapter": "Python",
@@ -397,7 +412,8 @@
         "text": "'0o-377'"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "oct(-255) 将 -255 转为八进制字符串 '-0o377'。255₁₀=377₈，负数在前面加负号，其他选项符号位置错误。"
   },
   {
     "chapter": "Python",
@@ -422,7 +438,8 @@
         "text": "~1"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "A(4//3=1)、B(15%2=1)、C(1^0=1，异或)结果都是1。D(~1)是按位取反，结果为-2(因为~n = -n-1)，不是1。"
   },
   {
     "chapter": "Python",
@@ -447,7 +464,8 @@
         "text": "-104"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "pow(6,2)=36，4×5×7=140，36-140=-104。输出结果为 -104。"
   },
   {
     "chapter": "Python",
@@ -472,7 +490,8 @@
         "text": "20"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "pow(2,10)=2^10=1024。12 是加法，100 是 10^2，20 是 2×10，均不是幂运算结果。"
   },
   {
     "chapter": "Python",
@@ -497,7 +516,8 @@
         "text": "False"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "pow(3,0.5)即 √3，两个 √3 相乘理论上为3，但浮点数存在精度误差，实际结果约 2.999...，因此 == 比较返回 False。"
   },
   {
     "chapter": "Python",
@@ -522,7 +542,8 @@
         "text": "1, 3"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "divmod(10,3) 返回 (商, 余数)，10÷3=3 余 1，结果为元组 (3, 1)。C、D 不是元组格式，B 顺序错误。"
   },
   {
     "chapter": "Python",
@@ -547,7 +568,8 @@
         "text": "False"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "0.1+0.2 因浮点精度约为 0.3000...4，但 round(...,1) 四舍五入后得 0.3，0.3 != 0.3 为 False。"
   },
   {
     "chapter": "Python",
@@ -572,7 +594,8 @@
         "text": "False"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "0.1+0.2 因 IEEE 754 浮点数精度问题结果约为 0.30000000000000004，不等于 0.3，故 == 比较返回 False。"
   },
   {
     "chapter": "Python",
@@ -597,7 +620,8 @@
         "text": "5050"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "sum 初始值为 1(而非 0)，i 从 1 到 100，总和 = 1 + (1+2+...+100) = 1 + 5050 = 5051。"
   },
   {
     "chapter": "Python",
@@ -622,7 +646,8 @@
         "text": "7"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "i 从 2 到 10：偶数加(2+4+6+8+10=30)，奇数减(-3-5-7-9=-24)，sum=6。手动逐项验证亦可。"
   },
   {
     "chapter": "Python",
@@ -647,7 +672,8 @@
         "text": "4"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "i 从 0 到 9：偶数减(-0-2-4-6-8=-20)，奇数加(1+3+5+7+9=25)，sum=5。注意 0 取反仍是 0。"
   },
   {
     "chapter": "Python",
@@ -672,7 +698,8 @@
         "text": "23456789"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "该程序用 for-else 找出 2~9 中的质数：只有 2、3、5、7 不会被任何小于自身的数整除，打印 2357。"
   },
   {
     "chapter": "Python",
@@ -697,7 +724,8 @@
         "text": "3.5"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "循环计算分数序列之和：2/1+3/2+5/3≈2+1.5+1.667=5.167，round 保留两位得 5.17。"
   },
   {
     "chapter": "Python",
@@ -722,7 +750,8 @@
         "text": "[2, 4, 6, 8, 10, 12]"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "字符串 'Python' 中每个字符乘以 2 会重复两次，如 'P'*2='PP'，列表推导结果如 A 所示。"
   },
   {
     "chapter": "Python",
@@ -747,7 +776,8 @@
         "text": "AABBCCDD"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "双层列表推导 [m+n for m in 'AB' for n in 'CD'] 生成笛卡尔拼接：A+C→AC, A+D→AD, B+C→BC, B+D→BD。"
   },
   {
     "chapter": "Python",
@@ -772,7 +802,8 @@
         "text": "[('A', 'C'), ('A', 'D'), ('B', 'C'), ('B', 'D')]"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "和 Q29 类似，但生成的是元组 (m,n) 而非拼接字符串，结果为元组列表 [('A','C'),('A','D'),('B','C'),('B','D')]。"
   },
   {
     "chapter": "Python",
@@ -797,7 +828,8 @@
         "text": "[('A', 'C'), ('A', 'D'), ('B', 'C'), ('B', 'D')]"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "在 Q30 基础上增加 if m!=n 过滤，排除 ('A','A')、('B','B')、('C','C')，剩余 3×2=6 个不等组合。"
   },
   {
     "chapter": "Python",
@@ -822,7 +854,8 @@
         "text": "[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "循环 i 从 1 到 10，每个 i² 追加到列表，得到 1²~10² 即 [1,4,9,16,25,36,49,64,81,100]。"
   },
   {
     "chapter": "Python",
@@ -847,7 +880,8 @@
         "text": "1,2,3,4,5"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "join 以逗号连接将列表中每个元素转为字符串并拼接，结果为 '1,2,3,4,5'(不含方括号和空格)。"
   },
   {
     "chapter": "Python",
@@ -872,7 +906,8 @@
         "text": "{'k': '1', 'k1': '2', 'k2': '3', 'k3': '4'}"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "先用 '|' 分割成键值对列表，再按 ':' 拆分存入字典，所有 value 为字符串类型，结果为如 D 所示。"
   },
   {
     "chapter": "Python",
@@ -897,7 +932,8 @@
         "text": "['gold', 'pink', 'brown', 'purple', 'tomato']"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "列表 s 有 6 个元素，s[4:] 从索引 4(purple)开始取到末尾，即 ['purple','tomato']。"
   },
   {
     "chapter": "Python",
@@ -922,7 +958,8 @@
         "text": "['gold', 'pink', 'brown', 'purple', 'tomato']"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "s[1:4:2] 从索引 1 到 4(不含)，步长 2：取索引 1(gold)和 3(brown)，结果为 ['gold','brown']。"
   },
   {
     "chapter": "Python",
@@ -947,7 +984,8 @@
         "text": "黑色 蓝色"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "d['大地'] 直接取值返回 '黑色'；d.get('大地','黄色') 键存在时返回值 '黑色'，二者输出均为 '黑色'。"
   },
   {
     "chapter": "Python",
@@ -960,7 +998,8 @@
         "text": "torch"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "for 循环依次打印列表中每个元素，每次 print 默认换行。第一个元素是 'torch'（若只看单行输出则为 torch）。"
   },
   {
     "chapter": "Python",
@@ -985,7 +1024,8 @@
         "text": "HelloWorld"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "遍历 'HelloWorld'，遇到 'W' 执行 continue 跳过，其余字符依次打印，输出 'Helloorld'。"
   },
   {
     "chapter": "Python",
@@ -1010,7 +1050,8 @@
         "text": "HelloWorld"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "遍历 'HelloWorld'，遇到 'W' 执行 break 终止整个循环，之前已打印 'Hello'，循环结束不再打印后续。"
   },
   {
     "chapter": "Python",
@@ -1035,7 +1076,8 @@
         "text": "abbcccc"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "外层遍历 'a','b','c'，内层 range(3) 打印 3 次。内层 break 只跳出内层循环：a 打 3 次，b 打 3 次，c 打 1 次即 break，结果 'aaabbbc'。"
   },
   {
     "chapter": "Python",
@@ -1060,7 +1102,8 @@
         "text": "abcd"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "字符串拼接 a+b 将 'ac' 和 'bd' 按顺序连接为 'acbd'，不是交换或其他顺序。"
   },
   {
     "chapter": "Python",
@@ -1085,7 +1128,8 @@
         "text": "Alex, Alex"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "a.capitalize() 返回首字母大写的副本，a 本身不变。print(a) 输出 'alex'，print(b) 输出 'Alex'。"
   },
   {
     "chapter": "Python",
@@ -1110,7 +1154,8 @@
         "text": "0 1 2 3 4"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "range(5) 生成 0~4，list() 转为列表 [0,1,2,3,4]，不是字符串或分号分隔。"
   },
   {
     "chapter": "Python",
@@ -1135,7 +1180,8 @@
         "text": "{1,2,3}"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "range(1,4) 从 1 开始到 4 结束(不含4)，生成 1,2,3，list() 转为 [1,2,3]。"
   },
   {
     "chapter": "Python",
@@ -1160,7 +1206,8 @@
         "text": "(2,4,6,8,10)"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "range(2,10,2) 从 2 开始，步长 2，到 10 结束(不含)，生成 2,4,6,8；tuple() 转为元组 (2,4,6,8)。"
   },
   {
     "chapter": "Python",
@@ -1185,7 +1232,8 @@
         "text": "6.28 3"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "round(3.1415926,2) 保留 2 位小数得 3.14，round(x) 不指定位数默认取整得 3。"
   },
   {
     "chapter": "Python",
@@ -1210,7 +1258,8 @@
         "text": "<class 'set'>"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "set() 创建一个空集合，type() 返回 <class 'set'>。A 对应 {}，B 对应 ()，C 对应 []。"
   },
   {
     "chapter": "Python",
@@ -1235,7 +1284,8 @@
         "text": "<class 'list'>"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "(1,2,3,4) 是元组字面量，type() 返回 <class 'tuple'>。B 对应 {}，C 对应 {1,2,3,4}，D 对应 []。"
   },
   {
     "chapter": "Python",
@@ -1260,7 +1310,8 @@
         "text": "<class 'list'>"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "{1,2,3,4} 是集合字面量(无键值对)，type() 返回 <class 'set'>。A 对应 ()，B 对应 {'k':'v'}，D 对应 []。"
   },
   {
     "chapter": "Python",
@@ -1285,7 +1336,8 @@
         "text": "<class 'list'>"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "[1,2,3,4] 是列表字面量，type() 返回 <class 'list'>。A 对应 ()，B 对应 {}，C 对应 {1}。"
   },
   {
     "chapter": "Python",
@@ -1310,7 +1362,8 @@
         "text": "12"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "字典 D 有 4 个键值对(A,B,C,D)，len() 返回键值对数量 4，不是值的总和或字符总数。"
   },
   {
     "chapter": "Python",
@@ -1335,7 +1388,8 @@
         "text": "6"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "字典 d 有 3 个键值对(abc, def, ghi)，len() 返回键值对数量 3，不是字符长度。"
   },
   {
     "chapter": "Python",
@@ -1360,7 +1414,8 @@
         "text": "'py New'"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "字符串索引从 0 开始：H(0)a(1)p(2)p(3)y(4)空格(5)N(6)e(7)w(8)...，s[3:8] 取索引 3~7 即 'py Ne'。"
   },
   {
     "chapter": "Python",
@@ -1385,7 +1440,8 @@
         "text": "adgj"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "s[1:10:3] 从索引 1(b)开始，步长 3，依次取索引 1,4,7 即 b,e,h，结果为 'beh'。"
   },
   {
     "chapter": "Python",
@@ -1410,7 +1466,8 @@
         "text": "s[i; j; k]"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 切片语法为 s[start:stop:step]，使用冒号分隔，s[i:j:k] 表示从 i 到 j(不含)以步长 k 取子序列。"
   },
   {
     "chapter": "Python",
@@ -1435,7 +1492,8 @@
         "text": "ls[4]"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "ls[1] 是第二行 [4,5,6]，ls[1][1] 取该行的索引 1 元素即 5。ls[-1][-1] 得 9，ls[-2][-1] 得 6。"
   },
   {
     "chapter": "Python",
@@ -1460,7 +1518,8 @@
         "text": "['human', 'tiger', 'dog', 'cat']"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "t[::-1] 是切片反转操作，将元组元素反向排列，结果为 ('human','tiger','dog','cat')，仍为元组类型。"
   },
   {
     "chapter": "Python",
@@ -1485,7 +1544,8 @@
         "text": "print(DictColor.values())"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "DictColor['seashell'] 通过键名直接获取对应值 '海贝色'。B 返回所有键，C 键名错误，D 返回所有值。"
   },
   {
     "chapter": "Python",
@@ -1510,7 +1570,8 @@
         "text": "复数的虚数部分通过后缀 \"J\" 或 \"j\" 来表示"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "z.imag 返回的是虚数部分而非实数部分(B 错误)。z.real 返回实数部分(C 正确)，虚数用 j/J 后缀(D 正确)。"
   },
   {
     "chapter": "Python",
@@ -1535,7 +1596,8 @@
         "text": "浮点数有两种表示方法：十进制表示和科学计数法"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 浮点数必须带小数点或使用科学计数法，不含小数点的数字会被解释为整数(C 错误)。A、B、D 均为正确描述。"
   },
   {
     "chapter": "Python",
@@ -1560,7 +1622,8 @@
         "text": "Python语言的整数类型提供了4种进制表示：十进制、二进制、八进制和十六进制"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "复数虚数部分用 'j' 或 'J' 后缀表示，不是 'C' 或 'c'(B 错误)。A、C、D 均为正确描述。"
   },
   {
     "chapter": "Python",
@@ -1585,7 +1648,8 @@
         "text": "可以使用datatype()测试字符串的类型"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "测试字符串类型应使用 type() 函数，而不是不存在的 datatype()(D 错误)。A、B、C 均为正确描述。"
   },
   {
     "chapter": "Python",
@@ -1610,7 +1674,8 @@
         "text": "chr(x)将字符转换为Unicode编码"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "chr(x) 是将 Unicode 编码转为对应字符，而非将字符转为编码(D 错误，那是 ord() 的功能)。A、B、C 均正确。"
   },
   {
     "chapter": "Python",
@@ -1635,7 +1700,8 @@
         "text": "给P赋值为它的负数"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "P = -P 是赋值语句，将 P 的值取负后重新赋给 P。这不是判断相等或取绝对值，而是赋值操作。"
   },
   {
     "chapter": "Python",
@@ -1660,7 +1726,8 @@
         "text": "Python中元组采用逗号和圆括号(可选)来表示"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "元组中元素可以是不同类型，如 (1, 'hello', 3.14)(C 错误)。A(不可修改)、B(可嵌套)、D(逗号+可选圆括号)均正确。"
   },
   {
     "chapter": "Python",
@@ -1685,7 +1752,8 @@
         "text": "元组类型"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 内置序列类型包括字符串(str)、列表(list)、元组(tuple)。数组(array)需 import array，不是内置的具体序列类型。"
   },
   {
     "chapter": "Python",
@@ -1710,7 +1778,8 @@
         "text": "组合数据类型可以分为3类：序列类型、集合类型和映射类型"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "序列类型是一维元素向量，通过序号访问，不是二维(C 错误)。A、B、D 均正确描述了组合数据类型的特点。"
   },
   {
     "chapter": "Python",
@@ -1735,7 +1804,8 @@
         "text": "S和T的差运算，包括在集合S但不在T中的元素"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "集合运算符 | 表示并集，返回包含两个集合中所有元素的集合。& 是交集，- 是差集，^ 是对称差。"
   },
   {
     "chapter": "Python",
@@ -1760,7 +1830,8 @@
         "text": "S和T的差运算，包括在集合S但不在T中的元素"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "集合运算符 & 表示交集，返回同时存在于两个集合中的元素。| 是并集，- 是差集，^ 是对称差。"
   },
   {
     "chapter": "Python",
@@ -1785,7 +1856,8 @@
         "text": "d.pop()"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "d.clear() 清空字典所有键值对但保留字典变量本身。del d 会删除变量，d.pop() 需要参数且只删除一个键，d.remove() 不存在。"
   },
   {
     "chapter": "Python",
@@ -1810,7 +1882,8 @@
         "text": "返回字典d中键为x的值，如果不存在，则返回y"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "d.get(x, y) 查找键 x，找到则返回对应值，找不到返回默认值 y(不报错)。A、B、C 均混淆了键和值的对应关系。"
   },
   {
     "chapter": "Python",
@@ -1835,7 +1908,8 @@
         "text": "判断x是否是字典d中的键"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 中 x in d 用于判断 x 是否是字典 d 的键（key），不会检查值（value）。"
   },
   {
     "chapter": "Python",
@@ -1860,7 +1934,8 @@
         "text": "d = {[1,2]:1, [3,4]:3}"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "字典的键必须是不可变类型，列表 [1,2] 是可变的（不可哈希），因此 D 选项会报错，不是合法的字典创建方式。"
   },
   {
     "chapter": "Python",
@@ -1885,7 +1960,8 @@
         "text": "函数能完成特定的功能，对函数的使用不需要了解函数内部实现原理，只要了解函数的输入输出方式即可"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Python 使用 def 保留字定义函数，而非 del（del 用于删除对象）。B 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -1910,7 +1986,8 @@
         "text": "函数能调用未实现的函数"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "函数在调用时要求被调用的函数已经实现，不能调用尚未定义或未实现的函数。D 选项错误。"
   },
   {
     "chapter": "Python",
@@ -1935,7 +2012,8 @@
         "text": "复用代码"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "函数的主要作用是代码复用、降低复杂度和增强可读性，单纯定义函数不会直接提高代码执行速度。A 选项不属于函数的作用。"
   },
   {
     "chapter": "Python",
@@ -1960,7 +2038,8 @@
         "text": "在定义函数时，可以设计可变数量参数，通过在参数前增加星号 (*) 实现"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "在 Python 函数定义中，有默认值的可选参数必须放在无默认值的非可选参数之后。C 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -1985,7 +2064,8 @@
         "text": "关键字参数必须位于位置参数之后"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 调用函数时，关键字参数必须位于位置参数之后，而非之前。A 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2010,7 +2090,8 @@
         "text": "内层函数仅供外层函数调用，外层函数之外不得调用"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "B 选项中的 f.g() 试图把内层函数 g 当作外层函数 f 的属性来调用，这在 Python 中不合法；内层函数只能在外层函数内部被调用。"
   },
   {
     "chapter": "Python",
@@ -2035,7 +2116,8 @@
         "text": "参数是整数类型时，不改变原参数的值"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "函数参数能否改变原值取决于参数类型：可变类型（如列表）可在函数内修改原值，不可变类型（如整数）则不能。B 选项说与类型无关是错误的。"
   },
   {
     "chapter": "Python",
@@ -2060,7 +2142,8 @@
         "text": "局部变量指在函数内部使用的变量，当函数退出时，变量依然存在，下次函数调用可以继续使用"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "局部变量在函数退出后会被释放，下次调用函数时会重新创建，不能继续使用。D 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2085,7 +2168,8 @@
         "text": "函数运算结束后，局部变量不会被释放"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "函数运算结束后局部变量会被释放，这是 Python 的内存管理机制。D 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2110,7 +2194,8 @@
         "text": "P等于它的负数"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "P = -P 是赋值语句，将 P 的相反数赋给 P 自身，语义是\"给 P 赋值为它的负数\"。"
   },
   {
     "chapter": "Python",
@@ -2135,7 +2220,8 @@
         "text": "执行错误"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "abs(-3+4j) 计算复数的模，公式为 √(实部²+虚部²) = √(9+16) = 5.0。"
   },
   {
     "chapter": "Python",
@@ -2160,7 +2246,8 @@
         "text": "1.23e4"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "1.23e-4 + 5.67e+8j.real 中，j.real 返回复数 j(即0+1j) 的实部 0，因此结果为 1.23e-4 = 0.000123。"
   },
   {
     "chapter": "Python",
@@ -2185,7 +2272,8 @@
         "text": "10.99+j"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "complex(10.99) 将浮点数转换为复数，虚部默认为 0，结果为 (10.99+0j)。"
   },
   {
     "chapter": "Python",
@@ -2210,7 +2298,8 @@
         "text": "'abc'>'xyz'"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "2!=5 or 0 → True or 0 → True（or 运算符短路求值）。B 中 3>2>2 等价于 3>2 and 2>2，为 False；C 中复数不能比较大小；D 中 'abc'<'xyz' 字符串按字典序比较为 True，但题目问的是值为 True，D 也是 True... 实际上 C 和 D 都是 False/报错。"
   },
   {
     "chapter": "Python",
@@ -2235,7 +2324,8 @@
         "text": "chr(13).isprintable()"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "isinstance(255, int) 判断 255 是否为整数类型，结果为 True。B 中 chr(10) 是换行符不是数字；C 中 'Python' 首字母大写；D 中 chr(13) 是回车符不可打印。"
   },
   {
     "chapter": "Python",
@@ -2260,7 +2350,8 @@
         "text": "尖括号 < >"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 中圆括号 () 用于改变表达式运算的优先顺序。方括号 [] 用于列表/索引，大括号 {} 用于字典/集合。"
   },
   {
     "chapter": "Python",
@@ -2285,7 +2376,8 @@
         "text": "if-elif-else"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "if-elif-else 结构可以依次检查多个条件，实现多路分支，是最佳的多分支控制结构。"
   },
   {
     "chapter": "Python",
@@ -2310,7 +2402,8 @@
         "text": "多分支结构用于设置多个判断条件以及对应的多条执行路径"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "紧凑形式的二分支结构使用 if-else，而非 if-elif（elif 用于多分支）。C 选项描述不正确。"
   },
   {
     "chapter": "Python",
@@ -2335,7 +2428,8 @@
         "text": "if(gender == \"男\" or (mark < 60 or mark >= 90)):"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "条件为\"男生且（不及格或优秀）\"，需要用括号保证 or 先于 and 执行：gender=='男' and (mark<60 or mark>=90)。"
   },
   {
     "chapter": "Python",
@@ -2360,7 +2454,8 @@
         "text": "遍历循环中的遍历结构可以是字符串、文件、组合数据类型和range()函数等"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "break 语句会跳出并结束整个循环体，而不仅仅是结束当前本次语句。C 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2385,7 +2480,8 @@
         "text": "遍历循环中的遍历结构可以是字符串、文件、组合数据类型和range()函数等"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "continue 只结束当前这次循环，然后继续判断条件执行下一次循环，不会结束整个循环过程。A 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2410,7 +2506,8 @@
         "text": "无限循环需要提前确定循环次数"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "无限循环不需要提前确定循环次数，而是通过 while 条件来控制。D 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2435,7 +2532,8 @@
         "text": "while"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 中实现循环结构的关键字是 for 和 while。四个选项中只有 while 属于循环关键字。"
   },
   {
     "chapter": "Python",
@@ -2460,7 +2558,8 @@
         "text": "10"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "k 初始为 10，每次循环除以 2：10→5→2.5→1.25，当 k=0.625（≤1）时停止，共执行 4 次 print。"
   },
   {
     "chapter": "Python",
@@ -2485,7 +2584,8 @@
         "text": "quit"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "break 语句用于终止当前循环体，跳出循环后继续执行循环后的语句。continue 只跳过本次循环。"
   },
   {
     "chapter": "Python",
@@ -2510,7 +2610,8 @@
         "text": "Ctrl + F6"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "在命令行或 IDLE 中运行 Python 程序时，Ctrl+C 可以中断（KeyboardInterrupt）程序的执行。"
   },
   {
     "chapter": "Python",
@@ -2535,7 +2636,8 @@
         "text": "冒号"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 中分号 (;) 用于在同一行分隔多条语句，但通常不推荐这样做以保持可读性。"
   },
   {
     "chapter": "Python",
@@ -2560,7 +2662,8 @@
         "text": "程序异常发生后经过妥善处理可以继续执行"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "编程语言中异常（Exception）和错误（Error）不是完全相同的概念：错误可能是语法错误无法捕获，异常可以被 try-except 处理。"
   },
   {
     "chapter": "Python",
@@ -2585,7 +2688,8 @@
         "text": "else"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 异常处理结构使用 try、except、else、finally 关键字，不使用 if 关键字。"
   },
   {
     "chapter": "Python",
@@ -2610,7 +2714,8 @@
         "text": "pass"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "except 关键字用于捕获 try 块中发生的特定类型异常，可指定异常类型进行针对性处理。"
   },
   {
     "chapter": "Python",
@@ -2635,7 +2740,8 @@
         "text": "输出: n"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "try 块中定义了 pow10 函数但未调用它，input() 将 'abc' 作为字符串赋给 n 不会引发异常，因此 except 块不会执行，程序无任何输出。"
   },
   {
     "chapter": "Python",
@@ -2660,7 +2766,8 @@
         "text": "-1"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "True 和 False 在算术运算中分别相当于 1 和 0，因此 True/False 即 1/0，会触发 ZeroDivisionError（系统报错）。"
   },
   {
     "chapter": "Python",
@@ -2673,7 +2780,8 @@
         "text": "计数: 0"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "s 初始为 1，while s<=1 条件为真，执行一次 print('计数:', s) 输出 '计数: 1'，然后 s 变为 2，循环结束。"
   },
   {
     "chapter": "Python",
@@ -2698,7 +2806,8 @@
         "text": "运行时错误"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 中 == 比较两个对象的值，int 类型的 2 和 float 类型的 2.0 值相等，因此输出 'Equal'。"
   },
   {
     "chapter": "Python",
@@ -2723,7 +2832,8 @@
         "text": "6"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "在 Python 条件判断中，非零整数 2 被视为 True（真值测试），因此执行 if 分支输出 5。"
   },
   {
     "chapter": "Python",
@@ -2748,7 +2858,8 @@
         "text": "\"0x452//2\""
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "0x452 是十六进制，等于十进制 1106，1106 // 2 = 553。输入 553 时 guess == 553 条件成立，执行 break 退出循环。"
   },
   {
     "chapter": "Python",
@@ -2773,7 +2884,8 @@
         "text": "这段代码实现了简单的猜数字游戏"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "import random 用于导入 random 模块以使用 randint 函数，不能省略，否则 NameError。C 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -2798,7 +2910,8 @@
         "text": "open()"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Python 文件写入方法有 write() 和 writelines()，不存在 writeline() 方法。B 不是有效的文件操作函数。"
   },
   {
     "chapter": "Python",
@@ -2823,7 +2936,8 @@
         "text": "覆盖写模式w"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Python 文件打开模式包括 r/w/a/x 及其组合，不存在 'n' 模式。B 选项描述的 '创建写模式 n' 是错误的。"
   },
   {
     "chapter": "Python",
@@ -2848,7 +2962,8 @@
         "text": "'c'"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 合法的文件打开模式有 'r'、'w'、'a'、'x' 及其与 '+'、'b' 的组合，'c' 不是有效的打开模式。"
   },
   {
     "chapter": "Python",
@@ -2873,7 +2988,8 @@
         "text": "\"bx\""
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "'x+' 是排他性创建+更新模式，属于文本模式而非二进制模式；二进制模式必须包含 'b'。题目问\"不是二进制打开模式\"，'x+' 不符合要求。"
   },
   {
     "chapter": "Python",
@@ -2898,7 +3014,8 @@
         "text": "-1"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "seek(offset, whence) 中 whence 参数只能取 0（文件开头）、1（当前位置）、2（文件末尾），-1 不是合法的 whence 值。"
   },
   {
     "chapter": "Python",
@@ -2923,7 +3040,8 @@
         "text": "变量x表示文件中的一行字符"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "直接遍历文件对象 for x in fo 时，每次迭代 x 获取文件的一行字符（包含行尾换行符）。"
   },
   {
     "chapter": "Python",
@@ -2948,7 +3066,8 @@
         "text": "以上答案都不对"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "print(txt) 打印的是文件对象本身（如 <_io.TextIOWrapper ...>），而非文件内容。要读取内容应使用 txt.read() 或 txt.readlines()。"
   },
   {
     "chapter": "Python",
@@ -2973,7 +3092,8 @@
         "text": "['巴哈马', '巴林', '孟加拉国', '巴巴多斯', '\\n', '白俄罗斯', '比利时', '伯利兹']"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "f.read() 读取整个文件为字符串（包括换行符 \\n），再用 split(',') 按逗号分割，'巴巴多斯\\n白俄罗斯' 作为一个元素保留。"
   },
   {
     "chapter": "Python",
@@ -2998,7 +3118,8 @@
         "text": "使用import turtle as t引入turtle库，取别名为t"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "from turtle import setup 只导入 setup 这一个函数，而不是引入整个 turtle 库。C 选项描述不准确。"
   },
   {
     "chapter": "Python",
@@ -3023,7 +3144,8 @@
         "text": "将变量x转换成整数"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "内置函数 ord(x) 返回单个字符 x 对应的 Unicode 编码值（整数），例如 ord('A') 返回 65。"
   },
   {
     "chapter": "Python",
@@ -3048,7 +3170,8 @@
         "text": "创建字典类型，如果没有输入参数则创建一个空字典"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "内置函数 chr(i) 返回 Unicode 编码值为 i 的对应字符，是 ord() 的逆函数。"
   },
   {
     "chapter": "Python",
@@ -3073,7 +3196,8 @@
         "text": "对组合数据类型x进行排序，默认从小到大"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "内置函数 type(x) 返回对象 x 的数据类型，例如 type(123) 返回 <class 'int'>。"
   },
   {
     "chapter": "Python",
@@ -3098,7 +3222,8 @@
         "text": "产生一个整数序列，从a到b（不含）以s为步长"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "range(a, b, s) 产生从 a 开始到 b 结束（不含 b）、步长为 s 的整数序列，常用于 for 循环。"
   },
   {
     "chapter": "Python",
@@ -3123,7 +3248,8 @@
         "text": "eval函数的作用是将输入的字符串转为有效的Python表达式来求值"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "eval('Hello') 会尝试把 Hello 当作变量名求值（NameError），而 eval('\"Hello\"') 求值得到字符串 'Hello'，两者结果不同。B 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -3148,7 +3274,8 @@
         "text": "eval()"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "input() 函数用于从标准输入读取用户输入，返回字符串类型。eval() 是对字符串求值，不是获取输入。"
   },
   {
     "chapter": "Python",
@@ -3173,7 +3300,8 @@
         "text": "printf('Hello World')"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "print() 函数输出字符串时需要加引号，print('Hello World') 是正确的写法。printf 是 C 语言的函数，Python 中不存在。"
   },
   {
     "chapter": "Python",
@@ -3198,7 +3326,8 @@
         "text": "Windows系统的命令行工具"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 的打开/运行方式包括命令行 Shell、IDLE、Windows 命令行工具等，Office 是办公软件套件，不是 Python 打开方式。"
   },
   {
     "chapter": "Python",
@@ -3223,7 +3352,8 @@
         "text": "IDLE"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "IDLE（Integrated Development and Learning Environment）是 Python 内置的集成开发工具，安装 Python 时默认附带。"
   },
   {
     "chapter": "Python",
@@ -3248,7 +3378,8 @@
         "text": "https://www.python123.io/"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 语言的官方网站是 https://www.python.org/，是获取 Python 解释器、文档和社区资源的权威渠道。"
   },
   {
     "chapter": "Python",
@@ -3273,7 +3404,8 @@
         "text": "2018"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Python 3.0（Python 3000）于 2008 年 12 月 3 日正式发布，是一次不向后兼容的重大版本升级。"
   },
   {
     "chapter": "Python",
@@ -3298,7 +3430,8 @@
         "text": "Python语言是多模型语言"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "Python 是开源语言（Open Source），源代码完全公开，符合 OSI 开源定义。B 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -3323,7 +3456,8 @@
         "text": "判断、循环、函数等语法形式能够通过缩进包含一批Python代码，进而表达对应的语义"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python 采用严格的缩进来表明程序的格式框架和代码块的层次结构，这是其语法特点之一。A 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -3348,7 +3482,8 @@
         "text": "Program"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "IPO 模型指 Input（输入）→ Process（处理）→ Output（输出），Program（程序）不是该模型的三要素之一。"
   },
   {
     "chapter": "Python",
@@ -3373,7 +3508,8 @@
         "text": "Output (输出)"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "IPO 模式由 Input（输入）、Process（处理）、Output（输出）三部分组成，Program（程序）不属于 IPO 模式的一部分。"
   },
   {
     "chapter": "Python",
@@ -3398,7 +3534,8 @@
         "text": "表达"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "给标识符关联名字的过程称为命名（Naming），例如变量名、函数名等都是命名。赋值语句是将值与名字绑定。"
   },
   {
     "chapter": "Python",
@@ -3423,7 +3560,8 @@
         "text": "程序段"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "在 Python 中，模块化设计通过函数（function）来实现，每个函数封装特定的功能。文件级别的模块通过 .py 文件和 import 实现。"
   },
   {
     "chapter": "Python",
@@ -3448,7 +3586,8 @@
         "text": "function"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 中使用 def 关键字来定义函数，语法为 def 函数名(参数列表):。"
   },
   {
     "chapter": "Python",
@@ -3473,7 +3612,8 @@
         "text": "//Python注释代码"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 单行注释使用 #，多行注释使用三引号 ''' 或 \"\"\"。// 是 C/Java 等语言的注释符号，不是 Python 注释。"
   },
   {
     "chapter": "Python",
@@ -3498,7 +3638,8 @@
         "text": "Python语言的单行注释以#开头"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python 单行注释以 # 开头，而不是以单引号 ' 开头。C 选项描述错误。"
   },
   {
     "chapter": "Python",
@@ -3523,7 +3664,8 @@
         "text": "#"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 语言中代码注释使用的符号是 #，# 后的内容到行尾均被视为注释。"
   },
   {
     "chapter": "Python",
@@ -3548,7 +3690,8 @@
         "text": "elif"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "in 是 Python 的成员运算符，用于判断元素是否在序列中，不用于分支结构。if、else、elif 才是分支结构关键字。"
   },
   {
     "chapter": "Python",
@@ -3573,7 +3716,8 @@
         "text": "跳转结构"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 的三种基本控制结构是顺序结构、分支结构（if-elif-else）和循环结构（for/while），不存在\"跳转结构\"（goto）。"
   },
   {
     "chapter": "Python",
@@ -3598,7 +3742,8 @@
         "text": "在Python中，一个子类只能有一个父类"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "Python 支持多继承，一个子类可以同时有多个父类。D 选项说\"一个子类只能有一个父类\"是错误的。"
   },
   {
     "chapter": "Python",
@@ -3623,7 +3768,8 @@
         "text": "self.getx()"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "在类的方法定义中，通过 self.x 访问实例对象的属性 x，self 代表实例对象本身。"
   },
   {
     "chapter": "Python",
@@ -3648,7 +3794,8 @@
         "text": "football.play"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "在Python中，对象方法的调用语法是\"对象名.方法名()\"，football是Ball类的实例对象，应通过football.play()来调用其play方法。选项A用类名Ball而非对象名，选项B方法名首字母大写与定义不符，选项D缺少调用括号。"
   },
   {
     "chapter": "Python",
@@ -3673,7 +3820,8 @@
         "text": "geoplotlib"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "jieba是Python中最常用的中文分词第三方库，支持精确模式、全模式和搜索引擎模式三种分词方式。numpy是科学计算库，pandas是数据分析库，geoplotlib是地理数据可视化库，均不提供中文分词功能。"
   },
   {
     "chapter": "Python",
@@ -3698,7 +3846,8 @@
         "text": "jieba.cut(s)是精确模式，返回一个可迭代的数据类型"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "jieba是第三方库，不是Python标准函数库，需要单独通过pip install jieba安装后才能使用。其他选项描述均正确：add_word()可向词典添加新词，lcut()精确模式返回列表，cut()精确模式返回可迭代对象。"
   },
   {
     "chapter": "Python",
@@ -3723,7 +3872,8 @@
         "text": "lcut()"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "sorted()是Python内置函数，用于对可迭代对象进行排序，不属于jieba库。add_word()、lcut_for_search()和lcut()都是jieba库提供的分词相关函数。"
   },
   {
     "chapter": "Python",
@@ -3748,7 +3898,8 @@
         "text": "把句子中所有可以成词的词语都扫描出来，速度非常快，但是不能解决歧义"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "jieba全模式（cut_all=True）会把句子中所有可以成词的词语都扫描出来，速度非常快，但不能解决歧义问题。选项A和B描述的是搜索引擎模式的特点，选项C描述的是精确模式的特点。"
   },
   {
     "chapter": "Python",
@@ -3773,7 +3924,8 @@
         "text": "适合用于搜索引擎分词"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "jieba精确模式将句子最精确地切开，适合文本分析场景，是默认的分词模式。选项A是全模式的特点，选项B是搜索引擎模式的特点，选项D适合搜索引擎分词是搜索引擎模式的用途。"
   },
   {
     "chapter": "Python",
@@ -3798,7 +3950,8 @@
         "text": "全模式，返回中文文本x分词后的列表变量"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "lcut(x, cut_all=True)中参数cut_all=True表示启用全模式分词，返回分词后的列表变量。cut_all=False（默认）为精确模式；搜索引擎模式对应的函数是lcut_for_search()，而非通过cut_all参数控制。"
   },
   {
     "chapter": "Python",
@@ -3823,7 +3976,8 @@
         "text": "全模式，返回中文文本x分词后的列表变量"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "jieba.lcut_for_search(x)是搜索引擎模式的分词函数，在精确模式基础上对长词再次切分，以提高召回率，返回分词后的列表变量。精确模式使用lcut()，全模式使用lcut(x, cut_all=True)。"
   },
   {
     "chapter": "Python",
@@ -3848,7 +4002,8 @@
         "text": "PIL"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "pandas是Python数据分析方向最核心的第三方库，提供DataFrame和Series等数据结构，广泛用于数据处理和分析。random是标准库（随机数生成），jieba是中文分词库，PIL是图像处理库。"
   },
   {
     "chapter": "Python",
@@ -3873,7 +4028,8 @@
         "text": "pyinstaller"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "matplotlib是Python数据可视化方向的主流第三方库，可绘制折线图、柱状图、散点图等多种图表。PIL用于图像处理，jieba用于中文分词，pyinstaller用于将Python程序打包成可执行文件。"
   },
   {
     "chapter": "Python",
@@ -3898,7 +4054,8 @@
         "text": "需要从Python网站下载NumPy安装程序"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "NumPy是Python的第三方科学计算库，并非Python默认安装的标准库，需要在Python环境下通过pip install numpy单独安装后才能使用。不同Python版本需要安装与之兼容的NumPy版本。"
   },
   {
     "chapter": "Python",
@@ -3923,7 +4080,8 @@
         "text": "从序列类型(例如列表)中随机返回一个元素"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "random.randrange(start, stop[, step])生成一个[start, stop)区间内以step为步长的随机整数。random()生成[0.0, 1.0)之间的随机小数，shuffle()用于打乱序列，choice()用于从序列中随机选取一个元素。"
   },
   {
     "chapter": "Python",
@@ -3948,7 +4106,8 @@
         "text": "设置初始化随机数种子a"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "random.seed(a)用于设置随机数生成器的初始化种子a。设置相同的种子值可以确保每次运行程序时生成相同的随机数序列，这在调试和复现实验结果时非常有用。"
   },
   {
     "chapter": "Python",
@@ -3973,7 +4132,8 @@
         "text": "随机返回一个元素"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "random.sample(pop, k)从总体pop中随机选取k个不重复的元素，以列表类型返回。选项A错误（k-1个），选项C和D描述的是其他函数的功能。"
   },
   {
     "chapter": "Python",
@@ -3998,7 +4158,8 @@
         "text": "choice()"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "random.choice(seq)从序列seq中随机返回一个元素，是四个选项中最简单直接的实现方式。shuffle()打乱序列但不返回值，random()返回小数，sample()返回列表需要额外索引。"
   },
   {
     "chapter": "Python",
@@ -4023,7 +4184,8 @@
         "text": "random.sample(pop, k)"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "random.getrandbits(k)专门用于生成一个k比特长度的随机整数，返回一个具有k个随机比特位的整数。choice()从序列选元素，shuffle()打乱序列，sample()从总体取样。"
   },
   {
     "chapter": "Python",
@@ -4048,7 +4210,8 @@
         "text": "生成一个(a, b)之间的随机数"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "random.uniform(a, b)生成一个[a, b]之间的随机浮点数，包含两端点。randint(a, b)生成随机整数，gauss(mu, sigma)生成正态分布，区间(a, b)写法不准确（应为闭区间[a, b]）。"
   },
   {
     "chapter": "Python",
@@ -4073,7 +4236,8 @@
         "text": "begin_fill()"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "goto(x, y)是turtle库的运动控制函数，将海龟移动到指定坐标位置。pendown()和penup()是画笔起落控制，pencolor()是颜色设置函数，begin_fill()是填充控制函数。"
   },
   {
     "chapter": "Python",
@@ -4086,7 +4250,8 @@
         "text": "执行下面代码，可以获得一个宽为屏幕50%，高为屏幕75%的主窗口"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "turtle.setup(width, height, startx, starty)用于设置绘图窗口的大小和位置。当width和height为小数时表示屏幕比例，为整数时表示像素值。选项B（虽缺失文本）对setup()函数的描述有误，而选项A中宽50%高75%对应setup(0.5, 0.75)的描述是正确的。"
   },
   {
     "chapter": "Python",
@@ -4111,7 +4276,8 @@
         "text": "matplotlib是提供数据绘图功能的第三方库"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "matplotlib是Python的数据可视化第三方库，不是Web应用框架。Python生态中最流行的开源Web应用框架是Django和Flask。matplotlib主要进行二维图表数据展示，可绘制超过100种数据可视化效果。"
   },
   {
     "chapter": "Python",
@@ -4136,7 +4302,8 @@
         "text": "同切圆"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "代码中DrawCircle(n)函数先将海龟移动到(0, -n)位置，然后以n为半径画圆。循环中半径n依次取20、40、60，圆心均在y轴上，因此绘制出的是三个同心圆。"
   },
   {
     "chapter": "Python",
@@ -4161,7 +4328,8 @@
         "text": "代码def drawLine(draw)中的draw可取值True或者False"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "drawLine(True)中True替换为0后，0在Python中为假值（等价于False），条件判断为假，会执行penup()（抬笔）而非pendown()（落笔），因此不会画出线条，结果发生改变。True和-1（非零值）都使条件为真，结果不变。"
   },
   {
     "chapter": "Python",
@@ -4186,7 +4354,8 @@
         "text": "time.sleep(5)推迟调用线程的运行，单位为毫秒"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "time.sleep(5)的参数单位是秒，不是毫秒，程序中5表示推迟调用线程运行5秒。其他选项均正确：time.time()返回Unix时间戳（自1970-01-01以来的秒数），time是标准库，time.ctime()可转换为可读格式。"
   },
   {
     "chapter": "Python",
@@ -4211,7 +4380,8 @@
         "text": "True@True"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "strftime格式字符串中%Y为四位年份(2018)、%m为两位月份(05)、%d为两位日期(01)、%H为24小时制两位小时(10)、%M为两位分钟(10)、%S为两位秒(09)。其他字符（=、-、@、>）原样保留，输出为\"2018=05-01@10>10>09\"。"
   },
   {
     "chapter": "Python",
@@ -4236,7 +4406,8 @@
         "text": "出错"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "datetime(2025, 5, 20)创建了一个日期对象，strftime(\"%Y-%m-%d\")按格式输出：%Y→2025，%m→05（补零），%d→20（补零），连接符\"-\"原样输出，结果为\"2025-05-20\"。"
   },
   {
     "chapter": "Python",
@@ -4261,7 +4432,8 @@
         "text": "出错"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "strftime(\"%Y年%m月%d日\")中的中文\"年\"\"月\"\"日\"作为普通字符原样保留，%Y、%m、%d分别替换为2025、05、20（月日自动补零），结果为\"2025年05月20日\"。"
   },
   {
     "chapter": "Python",
@@ -4286,7 +4458,8 @@
         "text": "出错"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "strftime(\"%m月%d日%Y年\")按格式顺序输出：%m→05（月）、%d→20（日）、%Y→2025（年），中文字符保留，结果为\"05月20日2025年\"。注意与上题格式顺序不同，输出也不同。"
   },
   {
     "chapter": "Python",
@@ -4311,7 +4484,8 @@
         "text": "程序是由一系列代码组成的"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "机器语言（二进制指令）完全能够编写程序，计算机最初就是使用机器语言编程的，所有高级语言最终都要翻译为机器语言才能执行。结构化程序设计的基本原则是自顶向下、逐步求精，函数可以实现模块化设计。"
   },
   {
     "chapter": "Python",
@@ -4336,7 +4510,8 @@
         "text": "Python程序的每行只能写一条语句"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python使用缩进来划分代码块，同一层次的语句必须保持相同的缩进量（对齐），这是Python语法的强制要求。语句不能从任意列开始，注释中的拼写错误不会在运行时被发现，一行可以写多条语句（用分号分隔）。"
   },
   {
     "chapter": "Python",
@@ -4361,7 +4536,8 @@
         "text": "6"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "字典d={1:\"a\", 2:\"b\", 3:\"c\"}包含三个键值对，len(d)返回字典中键值对的数量，结果为3。len作用于字典时返回的是键的数量，而非所有键和值的总数。"
   },
   {
     "chapter": "Python",
@@ -4386,7 +4562,8 @@
         "text": "将列表所有元素连接成一个字符串，每个元素后增加一个逗号"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "join()是字符串方法，调用方式为\"分隔符\".join(列表)。\",\"，join(ls)将列表ls中的所有元素连接成一个字符串，各元素之间用逗号分隔，而非在每个元素后面添加逗号。"
   },
   {
     "chapter": "Python",
@@ -4411,7 +4588,8 @@
         "text": "L.reverse会改变列表L的内容，而L[-1:-1-len(L):-1]产生一个新列表，不会改变列表L原来内容"
       }
     ],
-    "answer": "D"
+    "answer": "D",
+    "explanation": "L.reverse()是列表的原地反转方法，直接修改原列表L的内容，返回None。而切片L[-1:-1-len(L):-1]创建了一个反转后的新列表，原列表L保持不变。这是二者最本质的区别。"
   },
   {
     "chapter": "Python",
@@ -4436,7 +4614,8 @@
         "text": "执行代码输出结果为['car', 'truck']"
       }
     ],
-    "answer": "B"
+    "answer": "B",
+    "explanation": "funC函数内部通过ls=[]创建了一个同名的局部变量ls，与外部全局ls不是同一个对象。函数内ls.append(\"bus\")操作的是局部ls，函数返回后局部ls被销毁，外部全局ls保持[\"car\",\"truck\"]不变。"
   },
   {
     "chapter": "Python",
@@ -4461,7 +4640,8 @@
         "text": "10 15"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "Python中整数是不可变类型，函数参数传递的是对象的引用。函数内a=10只是将局部变量a重新绑定到新对象10，不影响外部变量a的值。同样b+=a创建了新整数对象，外部b仍为5。最终输出\"4 5\"。"
   },
   {
     "chapter": "Python",
@@ -4486,7 +4666,8 @@
         "text": "fo.writelines(ls)将元素全为字符串的ls列表写入文件"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "fo.writelines(ls)将列表写入文件后，文件指针位于文件末尾。fo.seek(0)将指针移回文件开头，后续for循环才能从此处读取内容并打印。如果省略seek(0)，循环将读不到任何内容，不会输出。"
   },
   {
     "chapter": "Python",
@@ -4511,7 +4692,8 @@
         "text": "Pabugl"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "代码构建了一个ROT13替换字典（每个小写字母映射到后移13位的字母）。遍历\"Python\"时：\"P\"为大写不在字典中，get返回\"P\"本身；y→l，t→g，h→u，o→b，n→a。最终结果为\"Plguba\"。"
   },
   {
     "chapter": "Python",
@@ -4536,7 +4718,8 @@
         "text": "函数abs()可以求复数的模"
       }
     ],
-    "answer": "C"
+    "answer": "C",
+    "explanation": "Python中复数的虚部后缀j不区分大小写，J也是合法的（如1+2J和1+2j等价）。复数的实部和虚部都是浮点数类型，函数abs()可以求复数的模（即绝对值），语法为a+bj形式。"
   },
   {
     "chapter": "Python",
@@ -4561,7 +4744,8 @@
         "text": "单个字符"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "在Python中，列表(list)是可变序列类型，其元素可以被修改、添加或删除。元组(tuple)、字符串(str)以及单个字符都是不可变类型，一旦创建就不能修改其中的元素。"
   },
   {
     "chapter": "Python",
@@ -4586,7 +4770,8 @@
         "text": "单个字符"
       }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanation": "与上题相同，列表(list)是可变类型，可以改变其中的元素。元组、字符串和单个字符均属于不可变类型，创建后内容不可更改，任何修改操作都会创建新对象而非修改原对象。"
   },
   {
     "chapter": "Python",
@@ -4603,7 +4788,8 @@
         "answer": "4"
       }
     ],
-    "answer": "700|4"
+    "answer": "700|4",
+    "explanation": "程序使用辗转相减法求m=100和n=28的最大公约数，最终m=n=4即为gcd。第一行输出(100×28)/4=700（两数乘积除以最大公约数等于最小公倍数），第二行输出最大公约数m=4。"
   },
   {
     "chapter": "Python",
@@ -4620,7 +4806,8 @@
         "answer": "6"
       }
     ],
-    "answer": "9|6"
+    "answer": "9|6",
+    "explanation": "程序每次取出num的个位（num%10）并打印，然后通过整除10（num//10）去掉个位。执行顺序：6789→输出9，678→输出8，67→输出7，6→输出6。第一行输出9，最后一行输出6。"
   },
   {
     "chapter": "Python",
@@ -4637,7 +4824,8 @@
         "answer": "6"
       }
     ],
-    "answer": "<class 'tuple'>|6"
+    "answer": "<class 'tuple'>|6",
+    "explanation": "可变参数*b将多余的实参收集为一个元组，因此type(b)输出<class \"tuple\">。调用f(1,2,3)时a=1，b=(2,3)，sum=1+2+3=6，函数返回6并由print输出。"
   },
   {
     "chapter": "Python",
@@ -4654,7 +4842,8 @@
         "answer": "10"
       }
     ],
-    "answer": "1|10"
+    "answer": "1|10",
+    "explanation": "f(1)中仅有a=1，b为空元组，循环不执行，sum=a=1，返回1。f(1,2,3,4)中a=1，b=(2,3,4)，sum=1+2+3+4=10，返回10。"
   },
   {
     "chapter": "Python",
@@ -4671,7 +4860,8 @@
         "answer": "3"
       }
     ],
-    "answer": "3|3"
+    "answer": "3|3",
+    "explanation": "递归调用链：f(9,6)→f(6,3)→f(3,0)。f(3,0)中b==0，打印3（第1行）；返回到f(6,3)，打印f(3,0)的返回值None（第2行）；返回到f(9,6)，打印f(6,3)的返回值None（第3行）。共打印3行，第一行为3。"
   },
   {
     "chapter": "Python",
@@ -4688,7 +4878,8 @@
         "answer": "pear"
       }
     ],
-    "answer": "4|pear"
+    "answer": "4|pear",
+    "explanation": "\\n.join(fruits)将列表中的4个水果名用换行符连接成一个字符串，print输出后在4行上分别显示。按列表顺序，第一行输出pear，第二行apple，第三行kiwi，第四行avocado。共打印4行。"
   },
   {
     "chapter": "Python",
@@ -4705,7 +4896,8 @@
         "answer": "True"
       }
     ],
-    "answer": "True|True"
+    "answer": "True|True",
+    "explanation": "x=y=[1,2]使x和y指向内存中同一个列表对象。x.append(3)修改了该共享对象（变为[1,2,3]），因此x is y为True（同一对象）且x==y为True（值相等）。"
   },
   {
     "chapter": "Python",
@@ -4722,7 +4914,8 @@
         "answer": "12"
       }
     ],
-    "answer": "72|12"
+    "answer": "72|12",
+    "explanation": "arr[-2]获取倒数第二个元素72。fun()是辗转相除法求gcd。hcf初始为gcd(24,120)=24，然后对索引>2且为偶数的元素（arr[4]=36, arr[6]=72）依次求gcd：gcd(24,36)=12，gcd(12,72)=12。最终hcf=12。"
   },
   {
     "chapter": "Python",
@@ -4739,7 +4932,8 @@
         "answer": "happy Birthday"
       }
     ],
-    "answer": "birth|happy Birthday"
+    "answer": "birth|happy Birthday",
+    "explanation": "name[6:11]切片提取索引6到10的字符，即\"birth\"。name[6]是字符\"b\"，replace(\"b\",\"B\")将字符串中所有\"b\"替换为\"B\"，由于\"happy birthday\"中只有一个\"b\"，替换后得到\"happy Birthday\"。"
   },
   {
     "chapter": "Python",
@@ -4756,7 +4950,8 @@
         "answer": "24"
       }
     ],
-    "answer": "4|24"
+    "answer": "4|24",
+    "explanation": "依次执行：x=2→d(x)=2×2=4（输出4）→x=t(4)=4×3=12→x=d(12)=12×2=24（输出24）。lambda p: p*2和lambda p: p*3分别定义了乘2和乘3的匿名函数。"
   },
   {
     "chapter": "Python",
@@ -4773,7 +4968,8 @@
         "answer": "0"
       }
     ],
-    "answer": "4|0"
+    "answer": "4|0",
+    "explanation": "counter被声明为global全局变量，函数内for循环3次，counter从1递增到4，输出4。num在函数内被赋值为10但未声明global，是局部变量，函数外的num保持初始值0不变，输出0。"
   },
   {
     "chapter": "Python",
@@ -4790,7 +4986,8 @@
         "answer": "no"
       }
     ],
-    "answer": "no|no"
+    "answer": "no|no",
+    "explanation": "第一个if：x or y and z，and优先级高于or，y and z = True and False = False，x or False = False or False = False，输出\"no\"。第二个if：z==True为False，y and False = False，x or False = False，同样输出\"no\"。"
   },
   {
     "chapter": "Python",
@@ -4807,7 +5004,8 @@
         "answer": "[1,2,3]"
       }
     ],
-    "answer": "[0,2,3]|[1,2,3]"
+    "answer": "[0,2,3]|[1,2,3]",
+    "explanation": "change1通过list1[0]=0修改了列表的元素，直接影响了外部listA变为[0,2,3]。change2中list2=[4,5,6]是将局部变量重新绑定到新列表，不影响外部listB的引用，listB保持[1,2,3]。"
   },
   {
     "chapter": "Python",
@@ -4824,7 +5022,8 @@
         "answer": "*****"
       }
     ],
-    "answer": "$***|*****"
+    "answer": "$***|*****",
+    "explanation": "n=3时，i=0打印2个$和1个*（$$*），i=1打印1个$和3个*（$***），i=2打印0个$和5个*（*****）。第一行已给出为$$*，第二行（【1】）为$***，第三行/最后一行（【2】）为*****。"
   },
   {
     "chapter": "Python",
@@ -4841,7 +5040,8 @@
         "answer": "199"
       }
     ],
-    "answer": "101|199"
+    "answer": "101|199",
+    "explanation": "程序遍历101到200之间的所有奇数，用sqrt开方法判断是否为素数。从101开始逐个检查，101是范围内第一个素数，作为第一行输出；199是范围内最后一个素数，作为最后一行输出。"
   },
   {
     "chapter": "Python",
@@ -4858,7 +5058,8 @@
         "answer": "i*j"
       }
     ],
-    "answer": "i+1|i*j"
+    "answer": "i+1|i*j",
+    "explanation": "9×9乘法口诀表中第i行有i个算式（1×i到i×i），所以j的取值范围是range(1, i+1)，即【1】填i+1。每个算式输出\"i×j=乘积\"，乘积为i*j，即【2】填i*j。"
   },
   {
     "chapter": "Python",
@@ -4875,7 +5076,8 @@
         "answer": "Factorial(n)"
       }
     ],
-    "answer": "n * Factorial(n-1)|Factorial(n)"
+    "answer": "n * Factorial(n-1)|Factorial(n)",
+    "explanation": "递归求阶乘的核心递推公式为n! = n × (n-1)!，因此【1】填n * Factorial(n-1)。主函数main()中需要调用Factorial函数并传入用户输入的n值来计算阶乘，【2】填Factorial(n)。"
   },
   {
     "chapter": "Python",
@@ -4892,7 +5094,8 @@
         "answer": "b!=c"
       }
     ],
-    "answer": "c|b!=c"
+    "answer": "c|b!=c",
+    "explanation": "三重循环遍历1-4的数字生成三位数排列。外层a和b已有，【1】需要第三层循环变量c。条件中已有a!=b和c!=a，【2】需要b!=c确保十位和个位不同，从而实现三位互不相同的排列。"
   },
   {
     "chapter": "Python",
@@ -4909,7 +5112,8 @@
         "answer": "i+1"
       }
     ],
-    "answer": "0|i+1"
+    "answer": "0|i+1",
+    "explanation": "选择排序的外层循环控制已排序部分的边界，从第一个元素（索引0）开始到倒数第二个元素（索引8），共n-1轮，【1】填0。内层循环在未排序部分（i+1到末尾）中寻找最小值，【2】填i+1。"
   },
   {
     "chapter": "Python",
@@ -4926,7 +5130,8 @@
         "answer": "append(n)"
       }
     ],
-    "answer": "sort()|append(n)"
+    "answer": "sort()|append(n)",
+    "explanation": "先对数组arr调用sort()方法进行升序排序，【1】填sort()。然后将新输入的数字n添加到数组末尾，使用append(n)方法，【2】填append(n)。添加后可再次排序以保持有序。"
   },
   {
     "chapter": "Python",
@@ -4943,7 +5148,8 @@
         "answer": "sum+1"
       }
     ],
-    "answer": "len(List)+1|sum+1"
+    "answer": "len(List)+1|sum+1",
+    "explanation": "约瑟夫环问题中，while循环每轮遍历当前圈中所有人。range(1, len(List)+1)遍历1到当前人数，【1】填len(List)+1。sum变量从1开始报数，每次递增1，【2】填sum+1。报到3的倍数时移除对应元素。"
   },
   {
     "chapter": "Python",
@@ -4960,7 +5166,8 @@
         "answer": "m"
       }
     ],
-    "answer": "1,50|m"
+    "answer": "1,50|m",
+    "explanation": "random.randint(1, 50)生成1到50之间（包含两端）的随机整数，【1】填1,50。内层循环需要打印与随机数m等量的星号，range(0, m)循环m次，【2】填m。"
   },
   {
     "chapter": "Python",
@@ -4977,7 +5184,8 @@
         "answer": "sum += d"
       }
     ],
-    "answer": "m|sum += d"
+    "answer": "m|sum += d",
+    "explanation": "range(1, int(m))遍历从1月到输入月份之前的所有月份，m为输入的月份，【1】填m。在循环中累加各月天数后，还需要将当月的天数d加进去，【2】填sum += d。"
   },
   {
     "chapter": "Python",
@@ -4994,7 +5202,8 @@
         "answer": "upper()"
       }
     ],
-    "answer": "'w'|upper()"
+    "answer": "'w'|upper()",
+    "explanation": "以写入模式打开（或创建）文件需用参数\"w\"，【1】填\"w\"。将字符串中所有小写字母转换为大写字母的方法是upper()，【2】填upper()。"
   },
   {
     "chapter": "Python",
@@ -5011,7 +5220,8 @@
         "answer": "fun(s)"
       }
     ],
-    "answer": "len(s) > 5|fun(s)"
+    "answer": "len(s) > 5|fun(s)",
+    "explanation": "位数不多于5位即字符串长度len(s)≤5，超限则报错，所以【1】填len(s) > 5作为超限判断条件。逆序输出功能由自定义函数fun实现，【2】填fun(s)调用该函数获取逆序结果。"
   },
   {
     "chapter": "Python",
@@ -5028,7 +5238,8 @@
         "answer": "count"
       }
     ],
-    "answer": "maxt*(n-1)+1|count"
+    "answer": "maxt*(n-1)+1|count",
+    "explanation": "放炮时间范围为从第1秒到最后一次放炮的时间，最大间隔为maxt，每人放n次，时间跨度为maxt×(n-1)+1秒，【1】填maxt*(n-1)+1。OK函数统计同时鸣放的时刻数量，最终返回累计数count，【2】填count。"
   },
   {
     "chapter": "Python",
@@ -5045,7 +5256,8 @@
         "answer": "base[rem]"
       }
     ],
-    "answer": "16|base[rem]"
+    "answer": "16|base[rem]",
+    "explanation": "十进制转十六进制使用除16取余法，divmod(num, 16)进行整除和取余，【1】填16。余数rem（0-15）需要通过查表base转换为对应十六进制字符（0-F），【2】填base[rem]。"
   },
   {
     "chapter": "Python",
@@ -5062,7 +5274,8 @@
         "answer": "turtle.right(120)"
       }
     ],
-    "answer": "import turtle|turtle.right(120)"
+    "answer": "import turtle|turtle.right(120)",
+    "explanation": "程序使用turtle库画图，首先需要导入，【1】填import turtle。循环体中每次前进100像素后需要右转120度来绘制正六边形的角，【2】填turtle.right(120)。"
   },
   {
     "chapter": "Python",
@@ -5079,7 +5292,8 @@
         "answer": "right(120)"
       }
     ],
-    "answer": "down()|right(120)"
+    "answer": "down()|right(120)",
+    "explanation": "使用from turtle import *后可直接调用函数。penup()（up()）抬笔后需要pendown()（down()）落笔才能开始绘制，【1】填down()。循环中同样需要right(120)实现120度转向，【2】填right(120)。"
   },
   {
     "chapter": "Python",
@@ -5096,7 +5310,8 @@
         "answer": "1"
       }
     ],
-    "answer": "myD|1"
+    "answer": "myD|1",
+    "explanation": "遍历字典需要指定具体的字典对象，dict.items()需要传入字典变量名，【1】填myD（表示待遍历的字典）。time.sleep()的参数单位为秒，暂停一秒输出即填入1，【2】填1。"
   },
   {
     "chapter": "Python",
@@ -5113,7 +5328,8 @@
         "answer": "f(i-1)*4"
       }
     ],
-    "answer": "f(n-1)*8|f(i-1)*4"
+    "answer": "f(n-1)*8|f(i-1)*4",
+    "explanation": "递归思路：n位奇数，最后一位必须是奇数（1,3,5,7共4种），前n-1位不受奇偶限制。f(n)表示n位数总数，递推关系为f(n)=f(n-1)×8，【1】填f(n-1)*8。奇数个数为前n-1位排列数×4，【2】填f(i-1)*4。"
   },
   {
     "chapter": "Python",
@@ -5130,7 +5346,8 @@
         "answer": "shushu(101,200)"
       }
     ],
-    "answer": "i%j==0|shushu(101,200)"
+    "answer": "i%j==0|shushu(101,200)",
+    "explanation": "素数判断：若i能被j整除（i%j==0），则i不是素数，跳出循环break，【1】填i%j==0。主函数需调用素数判断函数并传入范围参数，【2】填shushu(101,200)。"
   },
   {
     "chapter": "Python",
@@ -5147,7 +5364,8 @@
         "answer": "b!=c"
       }
     ],
-    "answer": "c|b!=c"
+    "answer": "c|b!=c",
+    "explanation": "与Q202功能相同，三重循环生成1-4的全排列三位数。第三层循环变量为c，【1】填c。条件b!=c确保十位与个位不同（a!=b和c!=a已写在if中），【2】填b!=c。"
   },
   {
     "chapter": "Python",
@@ -5164,6 +5382,7 @@
         "answer": "i*j"
       }
     ],
-    "answer": "i+1|i*j"
+    "answer": "i+1|i*j",
+    "explanation": "与Q200相同的9×9乘法口诀表程序。range(1, i+1)使第i行有i个算式，【1】填i+1。format中乘积为i*j，【2】填i*j。"
   }
 ]
