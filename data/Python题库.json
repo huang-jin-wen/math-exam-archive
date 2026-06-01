@@ -2789,22 +2789,22 @@
     "options": [
       {
         "label": "A",
-        "text": "计数: 1"
+        "text": "计数: 0\n计数: 1"
       },
       {
         "label": "B",
-        "text": "计数: 0"
+        "text": "出错"
       },
       {
         "label": "C",
-        "text": "计数: 1 计数: 2"
+        "text": "计数: 1"
       },
       {
         "label": "D",
-        "text": "无限循环"
+        "text": "计数: 0"
       }
     ],
-    "answer": "A",
+    "answer": "C",
     "explanation": "s 初始为 1，while s<=1 条件为真，执行一次 print('计数:', s) 输出 '计数: 1'，然后 s 变为 2，循环结束。"
   },
   {
