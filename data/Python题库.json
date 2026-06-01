@@ -996,6 +996,18 @@
       {
         "label": "A",
         "text": "torch"
+      },
+      {
+        "label": "B",
+        "text": "soap"
+      },
+      {
+        "label": "C",
+        "text": "bath"
+      },
+      {
+        "label": "D",
+        "text": "torch soap bath"
       }
     ],
     "answer": "A",
@@ -2777,7 +2789,19 @@
     "options": [
       {
         "label": "A",
+        "text": "计数: 1"
+      },
+      {
+        "label": "B",
         "text": "计数: 0"
+      },
+      {
+        "label": "C",
+        "text": "计数: 1 计数: 2"
+      },
+      {
+        "label": "D",
+        "text": "无限循环"
       }
     ],
     "answer": "C",
@@ -4247,7 +4271,19 @@
     "options": [
       {
         "label": "A",
-        "text": "执行下面代码，可以获得一个宽为屏幕50%，高为屏幕75%的主窗口"
+        "text": "setup()用于设置主窗口的大小和位置"
+      },
+      {
+        "label": "B",
+        "text": "setup()函数必须在绘图开始前调用，否则无效"
+      },
+      {
+        "label": "C",
+        "text": "setup(width, height, startx, starty)中后两个参数可省略"
+      },
+      {
+        "label": "D",
+        "text": "setup()函数的参数单位是像素"
       }
     ],
     "answer": "B",
