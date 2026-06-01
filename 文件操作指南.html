@@ -5,499 +5,235 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Python 文件操作完全指南</title>
 <style>
-:root{--bg:#f8fafc;--card:#fff;--text:#1e293b;--sub:#64748b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#10b981;--orange:#f59e0b;--border:#e2e8f0;--code-bg:#1e293b;--code-text:#e2e8f0;--danger:#ef4444}
+:root{--bg:#0f172a;--card:#1e293b;--border:#334155;--blue:#38bdf8;--purple:#a78bfa;--pink:#f472b6;--green:#4ade80;--orange:#fb923c;--yellow:#fbbf24;--text:#e2e8f0;--sub:#94a3b8;--accent:#3b82f6}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-.container{max-width:1000px;margin:0 auto;padding:20px}
-.header{background:linear-gradient(135deg,#1e293b 0%,#334155 100%);color:#fff;padding:40px 20px 30px;text-align:center;margin-bottom:30px;border-radius:0 0 20px 20px}
-.header h1{font-size:1.8em;margin-bottom:8px}
-.header p{opacity:.8;font-size:.95em}
-.header .badges{margin-top:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.badge{background:rgba(255,255,255,.15);padding:4px 12px;border-radius:20px;font-size:.8em}
-.tabs{display:flex;gap:4px;margin-bottom:24px;overflow-x:auto;padding-bottom:4px}
-.tab{padding:8px 16px;border-radius:8px;background:var(--card);border:1px solid var(--border);cursor:pointer;font-size:.85em;white-space:nowrap;transition:all .2s;color:var(--sub)}
-.tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-.tab:hover:not(.active){border-color:var(--accent);color:var(--accent)}
-.section{display:none;animation:fade .3s}
-.section.active{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.knowledge-card{background:var(--card);border-radius:12px;padding:24px;margin-bottom:16px;border:1px solid var(--border)}
-.knowledge-card h2{font-size:1.2em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.knowledge-card h2 .icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9em}
-.icon-blue{background:#dbeafe;color:#3b82f6}.icon-purple{background:#ede9fe;color:#8b5cf6}
-.icon-green{background:#d1fae5;color:#10b981}.icon-orange{background:#fef3c7;color:#f59e0b}.icon-red{background:#fee2e2;color:#ef4444}
-.knowledge-card ul{margin-left:20px;margin-bottom:12px}
-.knowledge-card li{margin-bottom:6px;font-size:.93em}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Microsoft YaHei','PingFang SC',sans-serif;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{background:linear-gradient(135deg,#1e293b 0%,#0f172a 40%,#1a1a2e 100%);color:#fff;padding:48px 20px 36px;text-align:center;margin-bottom:32px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-60%;left:-30%;width:160%;height:200%;background:radial-gradient(ellipse at 30% 50%,rgba(56,189,248,.06) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(167,139,250,.05) 0%,transparent 60%);pointer-events:none}
+.header h1{font-size:1.8em;background:linear-gradient(90deg,#38bdf8,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative}
+.header p{color:var(--sub);font-size:.95em;margin-top:8px;position:relative}
+.header .back{display:inline-block;margin-top:16px;color:var(--blue);text-decoration:none;font-size:.85em;position:relative}
+.header .back:hover{text-decoration:underline}
+.section{margin-bottom:28px}
+.section-title{color:var(--blue);font-size:1.1em;font-weight:bold;margin-bottom:14px;padding-bottom:8px;border-bottom:2px dashed var(--border);display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:1.2em}
+.knowledge-card{background:var(--card);border-radius:12px;padding:22px 24px;border:1px solid var(--border);border-left:3px solid var(--blue)}
+.knowledge-card.purple{border-left-color:var(--purple)}
+.knowledge-card.green{border-left-color:var(--green)}
+.knowledge-card.orange{border-left-color:var(--orange)}
+.knowledge-card.pink{border-left-color:var(--pink)}
+.knowledge-card.yellow{border-left-color:var(--yellow)}
+.knowledge-card h2{font-size:1.15em;margin-bottom:10px;color:var(--text)}
+.knowledge-card p{margin:6px 0;font-size:.93em}
+.knowledge-card code{background:#334155;color:#7dd3fc;padding:2px 7px;border-radius:4px;font-size:.9em;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace}
+.knowledge-card pre{background:#0f172a;color:#e2e8f0;padding:12px 16px;border-radius:8px;font-size:.85em;line-height:1.6;overflow-x:auto;margin:10px 0;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;border:1px solid var(--border)}
 .knowledge-card table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.88em}
-.knowledge-card th{background:#f1f5f9;padding:8px 12px;text-align:left;font-weight:600;border:1px solid var(--border)}
-.knowledge-card td{padding:8px 12px;border:1px solid var(--border)}
-.knowledge-card td code{background:#f1f5f9;padding:1px 6px;border-radius:3px;font-size:.92em;color:var(--accent2)}
-.code-runner{background:var(--card);border-radius:12px;border:1px solid var(--border);overflow:hidden;margin-bottom:20px}
-.cr-header{background:#f1f5f9;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
-.cr-title{font-weight:600;font-size:.9em}.cr-desc{font-size:.8em;color:var(--sub)}
-.cr-editor-wrap textarea{width:100%;min-height:120px;padding:14px 16px;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.85em;line-height:1.6;background:var(--code-bg);color:var(--code-text);border:none;resize:vertical;tab-size:4}
-.cr-editor-wrap textarea:focus{outline:none}
-.cr-controls{padding:10px 16px;display:flex;gap:8px;align-items:center;border-top:1px solid var(--border)}
-.btn-run{padding:6px 20px;background:var(--accent);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.85em;font-weight:600}
-.btn-run:hover{background:#2563eb}.btn-run:disabled{opacity:.5;cursor:not-allowed}
-.btn-reset{padding:6px 14px;background:#fff;color:var(--sub);border:1px solid var(--border);border-radius:6px;cursor:pointer;font-size:.85em}
-.btn-reset:hover{background:#f8fafc}
-.cr-output{background:#f8fafc;padding:12px 16px;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.85em;line-height:1.5;border-top:1px solid var(--border);min-height:40px;color:#334155;white-space:pre-wrap;word-break:break-all}
-.cr-output.error{color:var(--danger);background:#fef2f2}
-.cr-output.loading{color:var(--sub)}
-.tip{background:#fffbeb;border-left:3px solid var(--orange);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:.9em}
-.tip::before{content:'💡 '}
-.pyodide-status{text-align:center;padding:20px;color:var(--sub);font-size:.9em}
-@media(max-width:640px){.container{padding:12px}.header{padding:28px 16px 22px}.header h1{font-size:1.4em}.knowledge-card{padding:16px}.tabs{gap:2px}.tab{padding:6px 12px;font-size:.78em}}
+.knowledge-card th{background:#0f172a;padding:10px 14px;text-align:left;font-weight:600;border:1px solid var(--border);color:var(--blue)}
+.knowledge-card td{padding:10px 14px;border:1px solid var(--border);color:var(--text)}
+.knowledge-card td code{background:#0f172a;color:#7dd3fc}
+.knowledge-card ul{margin:8px 0 8px 20px}
+.knowledge-card li{margin-bottom:4px;font-size:.93em}
+.tip{background:rgba(251,191,36,.08);border-left:3px solid var(--yellow);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:.9em;color:var(--yellow)}
+.tip code{background:rgba(251,191,36,.15)!important;color:var(--yellow)!important}
+.warn{background:rgba(244,114,182,.08);border-left:3px solid var(--pink);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0;font-size:.9em;color:var(--pink)}
+.tag{display:inline-block;padding:2px 10px;border-radius:16px;font-size:.75em;font-weight:500;margin:2px 3px}
+.tag-b{background:#0c4a6e;color:#7dd3fc}.tag-p{background:#3b1f6e;color:#c4b5fd}
+.tag-pk{background:#701a4e;color:#f9a8d4}.tag-g{background:#064e3b;color:#6ee7b7}
+.tag-o{background:#7c2d12;color:#fdba74}.tag-y{background:#713f12;color:#fde68a}
+.footer{text-align:center;color:var(--sub);font-size:.82em;padding:30px 20px;border-top:1px solid var(--border);margin-top:40px}
+@media(max-width:640px){.container{padding:12px}.header{padding:32px 16px 24px}.header h1{font-size:1.4em}.knowledge-card{padding:16px}}
 </style>
 </head>
 <body>
+
 <div class="header">
   <h1>🐍 Python 文件操作完全指南</h1>
-  <p>从入门到实践 — 每个知识点都有可运行的代码示例</p>
-  <div class="badges">
-    <span class="badge">📖 6 大知识点</span>
-    <span class="badge">▶️ 12 个可运行示例</span>
-    <span class="badge">⚡ Pyodide 驱动</span>
-  </div>
-  <div class="pyodide-status" id="pyodideStatus">⏳ 正在加载 Python 运行环境…</div>
+  <p>核心知识点速查 · 从入门到精通</p>
+  <a href="index.html" class="back">← 返回首页</a>
 </div>
+
 <div class="container">
-<div class="tabs" id="tabs">
-  <div class="tab active" data-section="s1">1. 打开与关闭</div>
-  <div class="tab" data-section="s2">2. 读取文件</div>
-  <div class="tab" data-section="s3">3. 写入文件</div>
-  <div class="tab" data-section="s4">4. with 语句</div>
-  <div class="tab" data-section="s5">5. 文件指针</div>
-  <div class="tab" data-section="s6">6. 综合练习</div>
-</div>
-<div class="section active" id="s1">
+
+<!-- ========== 1. 打开与关闭 ========== -->
+<div class="section">
+<div class="section-title"><span class="icon">📂</span> 文件打开 — open() 函数</div>
 <div class="knowledge-card">
-<h2><span class="icon icon-blue">📂</span> 文件打开 — open() 函数</h2>
-<p class="tip">Python 通过内置的 <code>open()</code> 函数打开文件，返回一个文件对象，所有后续操作都通过这个对象进行。</p>
-<p style="margin:8px 0"><strong>基本语法：</strong> <code>open(file, mode='r', encoding=None)</code></p>
+<p>Python 通过内置的 <code>open()</code> 函数打开文件，返回一个文件对象，所有后续操作都通过这个对象进行。</p>
+<p style="margin:10px 0"><strong>基本语法：</strong></p>
+<pre>open(file, mode='r', encoding=None)</pre>
 <table>
-<tr><td><code>file</code></td><td>文件路径（字符串）</td></tr>
+<tr><td style="width:100px"><code>file</code></td><td>文件路径（字符串）</td></tr>
 <tr><td><code>mode</code></td><td>打开模式（见下表）</td></tr>
 <tr><td><code>encoding</code></td><td>编码方式，推荐 <code>'utf-8'</code></td></tr>
 </table>
-<p style="margin:12px 0 8px"><strong>打开模式速查：</strong></p>
+<p style="margin:14px 0 8px"><strong>打开模式速查：</strong></p>
 <table>
-<tr><th>模式</th><th>含义</th><th>文件不存在时</th><th>文件存在时</th></tr>
+<tr><th>模式</th><th>含义</th><th>文件不存在</th><th>文件存在</th></tr>
 <tr><td><code>'r'</code></td><td>只读（默认）</td><td>❌ 报错</td><td>✅ 从头读</td></tr>
-<tr><td><code>'w'</code></td><td>覆盖写</td><td>✅ 创建新文件</td><td>⚠️ 清空后写</td></tr>
-<tr><td><code>'a'</code></td><td>追加写</td><td>✅ 创建新文件</td><td>✅ 末尾追加</td></tr>
-<tr><td><code>'x'</code></td><td>独占创建</td><td>✅ 创建新文件</td><td>❌ 报错</td></tr>
+<tr><td><code>'w'</code></td><td>覆盖写</td><td>✅ 创建</td><td>⚠️ 清空后写</td></tr>
+<tr><td><code>'a'</code></td><td>追加写</td><td>✅ 创建</td><td>✅ 末尾追加</td></tr>
+<tr><td><code>'x'</code></td><td>独占创建</td><td>✅ 创建</td><td>❌ 报错</td></tr>
 <tr><td><code>'r+'</code></td><td>读写</td><td>❌ 报错</td><td>✅ 从头读写</td></tr>
-<tr><td><code>'b'</code></td><td>二进制模式</td><td colspan="2">配合以上模式使用，如 <code>'rb'</code> <code>'wb'</code></td></tr>
+<tr><td><code>'b'</code></td><td>二进制</td><td colspan="2">配合以上模式：<code>'rb'</code> <code>'wb'</code> <code>'ab'</code></td></tr>
 </table>
+<div class="tip">💡 总是显式指定 <code>encoding='utf-8'</code>，避免跨平台编码问题。</div>
 </div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：创建文件并写入</span><span class="cr-desc">open('hello.txt', 'w') 创建或覆盖文件</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s1-1"># 以写入模式打开（文件不存在会自动创建）
-f = open('hello.txt', 'w', encoding='utf-8')
-f.write('Hello, Python 文件操作！')
-f.close()
+</div>
 
-# 以只读模式打开验证
-f = open('hello.txt', 'r', encoding='utf-8')
-print(f.read())
-f.close()</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s1-1')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s1-1')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s1-1">点击「运行」查看结果…</div>
-</div>
-</div>
-<div class="section" id="s2">
-<div class="knowledge-card">
-<h2><span class="icon icon-purple">📖</span> 读取文件的四种方式</h2>
+<!-- ========== 2. 读取文件 ========== -->
+<div class="section">
+<div class="section-title"><span class="icon">📖</span> 读取文件的四种方式</div>
+<div class="knowledge-card purple">
 <table>
 <tr><th>方法</th><th>行为</th><th>返回值</th></tr>
 <tr><td><code>.read()</code></td><td>读取全部内容</td><td>字符串</td></tr>
 <tr><td><code>.read(n)</code></td><td>读取 n 个字符</td><td>字符串</td></tr>
-<tr><td><code>.readline()</code></td><td>读取一行（含 \n）</td><td>字符串</td></tr>
+<tr><td><code>.readline()</code></td><td>读取一行（含换行符）</td><td>字符串</td></tr>
 <tr><td><code>.readlines()</code></td><td>读取所有行</td><td>列表（每行一个元素）</td></tr>
-<tr><td><code>for line in f:</code></td><td>逐行迭代</td><td>每次一行（推荐！省内存）</td></tr>
 </table>
-<p class="tip">处理大文件时，用 <code>for line in f</code> 逐行读取，避免一次性加载到内存。</p>
+<div class="tip">处理大文件时，用 <code>for line in f:</code> 逐行迭代，避免一次性加载到内存。</div>
+<p style="margin-top:12px"><strong>推荐写法：</strong></p>
+<pre>with open('file.txt', 'r', encoding='utf-8') as f:
+    for line in f:
+        print(line.strip())</pre>
+<p style="margin-top:8px"><strong>核心区别：</strong></p>
+<ul>
+  <li><code>.read()</code> 读完指针在末尾，再读返回空字符串</li>
+  <li><code>.readline()</code> 包含行尾 <code>
+</code>，用 <code>.strip()</code> 去掉</li>
+  <li><code>.readlines()</code> 返回列表，大文件会撑爆内存</li>
+</ul>
 </div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：四种读取方式对比</span><span class="cr-desc">read / readline / readlines / 逐行迭代</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s2-1"># 先准备一个测试文件
-with open('poem.txt', 'w', encoding='utf-8') as f:
-    f.write('静夜思\n床前明月光\n疑是地上霜\n举头望明月\n低头思故乡\n')
+</div>
 
-print('=== read() 全部读取 ===')
-f = open('poem.txt', 'r', encoding='utf-8')
-print(repr(f.read()))
-f.close()
-
-print('=== readline() 逐行读取 ===')
-f = open('poem.txt', 'r', encoding='utf-8')
-print(repr(f.readline()))
-print(repr(f.readline()))
-f.close()
-
-print('=== for line in f 迭代 ===')
-f = open('poem.txt', 'r', encoding='utf-8')
-for line in f:
-    print(line.strip())
-f.close()</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s2-1')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s2-1')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s2-1">点击「运行」查看结果…</div>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：read() 读取指定字符数</span><span class="cr-desc">read(n) 参数控制读取量</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s2-2">with open('poem.txt', 'r', encoding='utf-8') as f:
-    print('前 3 个字符:', repr(f.read(3)))
-    print('再读 5 个字符:', repr(f.read(5)))
-    print('剩余全部:', repr(f.read()))</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s2-2')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s2-2')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s2-2">点击「运行」查看结果…</div>
-</div>
-</div>
-<div class="section" id="s3">
-<div class="knowledge-card">
-<h2><span class="icon icon-green">✏️</span> 写入文件的方法</h2>
+<!-- ========== 3. 写入文件 ========== -->
+<div class="section">
+<div class="section-title"><span class="icon">✏️</span> 写入文件的方法</div>
+<div class="knowledge-card green">
 <table>
-<tr><th>方法</th><th>行为</th></tr>
-<tr><td><code>.write(s)</code></td><td>写入字符串 s，返回写入的字符数</td></tr>
-<tr><td><code>.writelines(seq)</code></td><td>写入字符串序列，<strong>不会自动加换行符</strong></td></tr>
+<tr><th>方法</th><th>行为</th><th>返回值</th></tr>
+<tr><td><code>.write(s)</code></td><td>写入字符串 s</td><td>写入的字符数</td></tr>
+<tr><td><code>.writelines(seq)</code></td><td>写入字符串序列</td><td>None</td></tr>
 </table>
-<p class="tip"><strong>⚠️ 注意：</strong><code>writelines()</code> 不会自动在元素间加换行符！如果需要每行换行，要自己加上 <code>\n</code>。</p>
-<p style="margin-top:8px"><strong>两种写模式的区别：</strong></p>
+<div class="warn">⚠️ <code>writelines()</code> 不会自动加换行符！需要手动在每个元素后加 <code>
+</code>。</div>
+<p style="margin:14px 0 8px"><strong>写模式对比：</strong></p>
 <table>
 <tr><th>模式</th><th>指针位置</th><th>行为</th></tr>
 <tr><td><code>'w'</code></td><td>文件开头</td><td>先清空，再写入</td></tr>
 <tr><td><code>'a'</code></td><td>文件末尾</td><td>追加写入，不清空</td></tr>
 </table>
+<p style="margin-top:12px"><strong>writelines 正确用法：</strong></p>
+<pre>items = ['苹果', '香蕉', '橘子']
+with open('fruits.txt', 'w', encoding='utf-8') as f:
+    f.writelines(item + '
+' for item in items)  # ← 手动加 
+</pre>
 </div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：write vs writelines</span><span class="cr-desc">对比两种写入方式</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s3-1"># write() - 每次写入一个字符串
-f = open('fruits.txt', 'w', encoding='utf-8')
-f.write('apple\n')
-f.write('banana\n')
-f.write('cherry\n')
-f.close()
+</div>
 
-# writelines() - 一次写入列表（需自己加换行）
-lines = ['dog\n', 'cat\n', 'bird\n']
-f = open('animals.txt', 'w', encoding='utf-8')
-f.writelines(lines)
-f.close()
-
-# 验证
-print('=== fruits.txt ===')
-for line in open('fruits.txt', 'r', encoding='utf-8'):
-    print(line.strip())
-print()
-print('=== animals.txt ===')
-for line in open('animals.txt', 'r', encoding='utf-8'):
-    print(line.strip())</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s3-1')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s3-1')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s3-1">点击「运行」查看结果…</div>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：追加模式 'a'</span><span class="cr-desc">每次运行都在文件末尾追加</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s3-2"># 先创建文件
-with open('log.txt', 'w', encoding='utf-8') as f:
-    f.write('第1次运行\n')
-
-# 追加模式写入
-with open('log.txt', 'a', encoding='utf-8') as f:
-    f.write('第2次运行\n')
-    f.write('第3次运行\n')
-
-# 查看结果
-print(open('log.txt', 'r', encoding='utf-8').read())</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s3-2')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s3-2')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s3-2">点击「运行」查看结果…</div>
-</div>
-</div>
-<div class="section" id="s4">
-<div class="knowledge-card">
-<h2><span class="icon icon-orange">🔄</span> with 语句 — 更安全的文件操作</h2>
-<p class="tip"><strong>强烈推荐！</strong>使用 <code>with</code> 语句打开文件，退出代码块时自动调用 <code>close()</code>，即使发生异常也不会忘记关闭。</p>
-<table>
-<tr><th>传统写法</th><th>with 语句</th></tr>
-<tr><td style="padding:10px"><code>f = open('a.txt', 'r')<br>data = f.read()<br>f.close()  ← 容易忘！</code></td>
-<td style="padding:10px"><code>with open('a.txt', 'r') as f:<br>&nbsp;&nbsp;&nbsp;&nbsp;data = f.read()<br># 自动关闭 ✓</code></td></tr>
+<!-- ========== 4. with 语句 ========== -->
+<div class="section">
+<div class="section-title"><span class="icon">🔄</span> with 语句 — 上下文管理器</div>
+<div class="knowledge-card orange">
+<div class="tip">强烈推荐！with 语句退出时自动调用 <code>close()</code>，即使发生异常也不会忘记关闭文件。</div>
+<table style="margin-top:14px">
+<tr><th>传统写法（不推荐）</th><th>with 语句（推荐）</th></tr>
+<tr>
+  <td style="padding:12px"><code>f = open('a.txt', 'r')<br>data = f.read()<br>f.close()  <span style="color:var(--pink)">← 容易忘！</span></code></td>
+  <td style="padding:12px"><code>with open('a.txt', 'r') as f:<br>&nbsp;&nbsp;&nbsp;&nbsp;data = f.read()<br><span style="color:var(--green)"># 自动关闭 ✓</span></code></td>
+</tr>
 </table>
-<p style="margin-top:10px">with 语句基于 Python 的<strong>上下文管理器</strong>协议：进入时调用 <code>__enter__()</code>，退出时调用 <code>__exit__()</code>（自动 close）。</p>
+<p style="margin-top:12px">with 基于 <strong>上下文管理器协议</strong>：进入 → <code>__enter__()</code>，退出 → <code>__exit__()</code>（自动 close）。</p>
+<pre># 同时打开多个文件
+with open('src.txt', 'r') as src,      open('dst.txt', 'w') as dst:
+    dst.write(src.read())</pre>
 </div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：with 语句读写</span><span class="cr-desc">即使中途出错也会自动关闭文件</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s4-1"># 使用 with 写入
-with open('data.txt', 'w', encoding='utf-8') as f:
-    f.write('第一行数据\n')
-    f.write('第二行数据\n')
+</div>
 
-# 使用 with 读取
-with open('data.txt', 'r', encoding='utf-8') as f:
-    content = f.read()
-    print('文件内容：')
-    print(content)
-
-# with 块外，文件已自动关闭
-print('✅ 文件已在 with 块结束后自动关闭')</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s4-1')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s4-1')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s4-1">点击「运行」查看结果…</div>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：同时打开两个文件</span><span class="cr-desc">用逗号分隔多个 with 上下文</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s4-2"># 同时打开源文件和目标文件，实现复制
-with open('data.txt', 'r', encoding='utf-8') as src, \
-     open('data_copy.txt', 'w', encoding='utf-8') as dst:
-    dst.write(src.read())
-
-# 验证
-print('原始文件：', open('data.txt', 'r', encoding='utf-8').read())
-print('复制文件：', open('data_copy.txt', 'r', encoding='utf-8').read())</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s4-2')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s4-2')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s4-2">点击「运行」查看结果…</div>
-</div>
-</div>
-<div class="section" id="s5">
-<div class="knowledge-card">
-<h2><span class="icon icon-red">📍</span> 文件指针 — seek() 和 tell()</h2>
-<p>文件对象维护一个<strong>当前位置指针</strong>，指示下一次读写从哪里开始。</p>
+<!-- ========== 5. 文件指针 ========== -->
+<div class="section">
+<div class="section-title"><span class="icon">📍</span> 文件指针 — seek() 和 tell()</div>
+<div class="knowledge-card pink">
 <table>
 <tr><th>方法</th><th>功能</th></tr>
 <tr><td><code>.tell()</code></td><td>返回当前指针位置（字节偏移）</td></tr>
 <tr><td><code>.seek(offset, whence)</code></td><td>移动指针到指定位置</td></tr>
 </table>
-<p style="margin:8px 0">seek 的 <code>whence</code> 参数：</p>
+<p style="margin:12px 0 8px"><strong>seek 的 whence 参数：</strong></p>
 <table>
-<tr><th>whence</th><th>含义</th></tr>
-<tr><td><code>0</code></td><td>从文件开头（默认）</td></tr>
-<tr><td><code>1</code></td><td>从当前位置</td></tr>
-<tr><td><code>2</code></td><td>从文件末尾</td></tr>
+<tr><th>whence</th><th>含义</th><th>示例</th></tr>
+<tr><td><code>0</code></td><td>从文件开头（默认）</td><td><code>f.seek(0)</code> 回到开头</td></tr>
+<tr><td><code>1</code></td><td>从当前位置</td><td><code>f.seek(10, 1)</code> 后移10字节</td></tr>
+<tr><td><code>2</code></td><td>从文件末尾</td><td><code>f.seek(-10, 2)</code> 倒数10字节</td></tr>
 </table>
-<p class="tip">中文 UTF-8 编码下，一个汉字占 3 字节。seek 按<strong>字节</strong>移动，跳转到汉字中间可能导致乱码！</p>
+<div class="warn">⚠️ 中文 UTF-8 下，一个汉字占 3 字节。seek 按字节移动，跳到汉字中间会导致乱码！</div>
+<p style="margin-top:12px"><strong>典型用法：读完后再读</strong></p>
+<pre>with open('data.txt', 'r') as f:
+    print(f.read())     # 读完，指针在末尾
+    f.seek(0)           # 回到开头
+    print(f.read())     # 再读一次 ✓</pre>
 </div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：tell() 追踪指针位置</span><span class="cr-desc">观察每次读取后指针的变化</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s5-1"># 确保文件存在
-with open('poem.txt', 'w', encoding='utf-8') as f:
-    f.write('静夜思\n床前明月光\n疑是地上霜\n举头望明月\n低头思故乡\n')
+</div>
 
-with open('poem.txt', 'r', encoding='utf-8') as f:
-    print('初始位置:', f.tell())
-    line = f.readline()
-    print('第1行:', repr(line.strip()))
-    print('当前位置:', f.tell(), '(字节偏移)')
-    line = f.readline()
-    print('第2行:', repr(line.strip()))
-    print('当前位置:', f.tell(), '(字节偏移)')</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s5-1')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s5-1')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s5-1">点击「运行」查看结果…</div>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">示例：seek() 跳转指针</span><span class="cr-desc">seek(0) 回到开头重新读</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s5-2"># 确保文件存在
-with open('data.txt', 'w', encoding='utf-8') as f:
-    f.write('第一行数据\n第二行数据\n')
-
-with open('data.txt', 'r', encoding='utf-8') as f:
-    print('=== 第一次读取 ===')
-    print(f.read())
-    
-    print('=== 读完后再读（什么都没有）===')
+<!-- ========== 6. 常见模式与陷阱 ========== -->
+<div class="section">
+<div class="section-title"><span class="icon">🧩</span> 常见模式与陷阱</div>
+<div class="knowledge-card yellow">
+<table>
+<tr><th>场景</th><th>推荐写法</th></tr>
+<tr>
+  <td style="white-space:nowrap">逐行处理大文件</td>
+  <td><code>for line in open('big.txt'):</code></td>
+</tr>
+<tr>
+  <td>读取全部内容</td>
+  <td><code>content = open('f.txt').read()</code></td>
+</tr>
+<tr>
+  <td>安全写入</td>
+  <td><code>with open('f.txt', 'w') as f: f.write(data)</code></td>
+</tr>
+<tr>
+  <td>追加日志</td>
+  <td><code>with open('log.txt', 'a') as f: f.write(msg + '
+')</code></td>
+</tr>
+<tr>
+  <td>避免覆盖已有文件</td>
+  <td><code>open('f.txt', 'x')</code> — 文件存在则报错</td>
+</tr>
+</table>
+<div class="warn" style="margin-top:14px"><strong>常见错误：</strong>writelines 不加换行 → 所有内容挤在一行！<br>正确：<code>f.writelines(item + '
+' for item in items)</code></div>
+<p style="margin:14px 0 8px"><strong>基础用法速查：</strong></p>
+<pre># 读取
+with open('f.txt', 'r', encoding='utf-8') as f:
     data = f.read()
-    print('读出内容:', repr(data), '← 空字符串！')
-    
-    print('=== seek(0) 回到开头 ===')
-    f.seek(0)
-    print('读出内容:', repr(f.read()[:20]), '...')</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s5-2')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s5-2')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s5-2">点击「运行」查看结果…</div>
-</div>
-</div>
-<div class="section" id="s6">
-<div class="knowledge-card">
-<h2><span class="icon icon-blue">🧩</span> 综合练习与常见陷阱</h2>
-<p>以下是文件操作中最常见的几个问题和最佳实践。</p>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">练习 1：CSV 文件读写</span><span class="cr-desc">用 split() 解析逗号分隔值</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s6-1"># 写入 CSV
-with open('students.csv', 'w', encoding='utf-8') as f:
-    f.write('姓名,年龄,成绩\n')
-    f.write('张三,20,85\n')
-    f.write('李四,21,92\n')
-    f.write('王五,19,78\n')
 
-# 读取并解析
-with open('students.csv', 'r', encoding='utf-8') as f:
-    header = f.readline().strip().split(',')
-    print('表头:', header)
-    print('---')
+# 覆盖写入
+with open('f.txt', 'w', encoding='utf-8') as f:
+    f.write('新内容
+')
+
+# 追加写入
+with open('f.txt', 'a', encoding='utf-8') as f:
+    f.write('新行
+')
+
+# 逐行处理
+with open('f.txt', 'r', encoding='utf-8') as f:
     for line in f:
-        name, age, score = line.strip().split(',')
-        print(f'{name} 年龄{age} 成绩{score}')</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s6-1')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s6-1')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s6-1">点击「运行」查看结果…</div>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">练习 2：文件行数统计</span><span class="cr-desc">逐行读取大文件的最优方法</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s6-2"># 准备测试数据
-with open('bigfile.txt', 'w', encoding='utf-8') as f:
-    for i in range(100):
-        f.write(f'这是第 {i+1} 行内容\n')
-
-# 统计行数（逐行读取，不占内存）
-line_count = 0
-char_count = 0
-with open('bigfile.txt', 'r', encoding='utf-8') as f:
-    for line in f:
-        line_count += 1
-        char_count += len(line)
-
-print(f'总行数: {line_count}')
-print(f'总字符数: {char_count}')
-print(f'平均每行: {char_count/line_count:.1f} 字符')</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s6-2')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s6-2')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s6-2">点击「运行」查看结果…</div>
-</div>
-<div class="code-runner">
-<div class="cr-header"><span class="cr-title">练习 3：⚠️ writelines 不自动换行</span><span class="cr-desc">常见错误！看看不加 \n 会发生什么</span></div>
-<div class="cr-editor-wrap">
-<textarea id="code-s6-3"># ❌ 错误示范：writelines 不自动加换行！
-items = ['苹果', '香蕉', '橘子']
-with open('bad.txt', 'w', encoding='utf-8') as f:
-    f.writelines(items)
-
-print('❌ 错误结果（全部挤在一行）：')
-print(repr(open('bad.txt', 'r', encoding='utf-8').read()))
-
-# ✅ 正确做法：手动加换行
-with open('good.txt', 'w', encoding='utf-8') as f:
-    f.writelines(item + '\n' for item in items)
-
-print('\n✅ 正确结果：')
-for line in open('good.txt', 'r', encoding='utf-8'):
-    print(' ', line.strip())</textarea>
-</div>
-<div class="cr-controls">
-<button class="btn-run" onclick="runCode('s6-3')">▶ 运行</button>
-<button class="btn-reset" onclick="resetCode('s6-3')">↺ 重置</button>
-</div>
-<div class="cr-output" id="output-s6-3">点击「运行」查看结果…</div>
+        print(line.strip())</pre>
 </div>
 </div>
 
 </div><!-- .container -->
 
-<script>
-// Tab navigation
-document.getElementById('tabs').addEventListener('click',function(e){
-  if(!e.target.classList.contains('tab'))return;
-  var sid=e.target.dataset.section;
-  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
-  document.querySelectorAll('.section').forEach(function(s){s.classList.remove('active')});
-  e.target.classList.add('active');
-  document.getElementById(sid).classList.add('active');
-});
+<div class="footer">
+  <p>开心猪和冷脸鼠的学习小站 · Made with ❤️</p>
+</div>
 
-// Pyodide
-var pyodideReady=false,pyodide=null,originalCodes={},capturedOutput='';
-
-document.querySelectorAll('textarea[id^="code-"]').forEach(function(ta){
-  originalCodes[ta.id]=ta.value;
-});
-
-async function initPyodide(){
-  var st=document.getElementById('pyodideStatus');
-  try{
-    var s=document.createElement('script');
-    s.src='https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js';
-    document.head.appendChild(s);
-    await new Promise(function(r){s.onload=r});
-    pyodide=await loadPyodide({indexURL:'https://cdn.jsdelivr.net/pyodide/v0.26.2/full/'});
-    pyodide.setStdout({batched:function(t){capturedOutput+=t}});
-    pyodide.setStderr({batched:function(t){capturedOutput+=t}});
-    pyodideReady=true;
-    st.innerHTML='<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#10b981;margin-right:6px;"></span>Python 环境就绪 ✅';
-  }catch(e){
-    st.innerHTML='<span style="color:#ef4444">⚠️ Pyodide 加载失败，代码运行功能不可用（知识内容仍可阅读）</span>';
-    console.error(e);
-  }
-}
-
-function runCode(id){
-  var out=document.getElementById('output-'+id);
-  if(!pyodideReady){out.className='cr-output error';out.textContent='⏳ Python 环境还在加载中，请等待上方状态变为「就绪」后再试…';return}
-  out.className='cr-output loading';out.textContent='运行中…';
-  var code=document.getElementById('code-'+id).value;
-  setTimeout(function(){
-    capturedOutput='';
-    try{pyodide.runPython(code);out.className='cr-output';out.textContent=capturedOutput||'(程序执行完毕，无输出)'}
-    catch(e){out.className='cr-output error';out.textContent='运行出错：\n'+String(e)}
-  },50);
-}
-
-function resetCode(id){
-  document.getElementById('code-'+id).value=originalCodes['code-'+id];
-  var out=document.getElementById('output-'+id);
-  out.className='cr-output';out.textContent='已重置，点击「运行」查看结果…';
-}
-
-initPyodide();
-</script>
 </body>
 </html>
