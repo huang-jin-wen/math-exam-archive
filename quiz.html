@@ -161,40 +161,32 @@ if (!subject) {
 
 function getEl(id) { return document.getElementById(id); }
 
-/* ===== 获取题目的分组键（编号章节用 chapter，否则用 chapter_title） ===== */
+/* ===== 获取题目的分组键：Python 按知识点，其他科目按章节编号 ===== */
 function getChapterKey(q) {
-  // 检测是否有编号章节（如 1.1、B2U1），含数字则按 chapter 分
-  const hasNumbered = allQuestions.some(q => /\d/.test(q.chapter));
-  return hasNumbered ? q.chapter : (q.chapter_title || q.chapter);
+  return (subject === 'Python题库') ? (q.chapter_title || q.chapter) : q.chapter;
 }
 
 /* ===== 章节 UI ===== */
 function buildChapterUI() {
-  const hasNumberedChapters = allQuestions.some(q => /\d/.test(q.chapter));
+  const isPython = subject === 'Python题库';
   const chapters = [...new Set(allQuestions.map(q => getChapterKey(q)))]
-    .sort((a, b) => {
-      // 数字编号按数值排序
-      const na = parseFloat(a), nb = parseFloat(b);
-      if (!isNaN(na) && !isNaN(nb)) return na - nb;
-      return String(a).localeCompare(String(b));
-    });
+    .sort((a, b) => String(a).localeCompare(String(b), undefined, {numeric: true}));
 
   const cf = getEl('cf'), cml = getEl('cml');
   chapters.forEach(ch => {
     const opt = document.createElement('option');
     opt.value = ch;
     const count = allQuestions.filter(q => getChapterKey(q) === ch).length;
-    // 编号章节显示编号+标题，知识点只显示标题
     const q = allQuestions.find(q => getChapterKey(q) === ch);
-    const display = hasNumberedChapters
-      ? ch + (q && q.chapter_title ? ' ' + q.chapter_title : '') + ' (' + count + '题)'
-      : ch + ' (' + count + '题)';
+    const display = isPython
+      ? ch + ' (' + count + '题)'
+      : ch + (q && q.chapter_title ? ' ' + q.chapter_title : '') + ' (' + count + '题)';
     opt.textContent = display;
     cf.appendChild(opt);
 
     const chip = document.createElement('span');
     chip.className = 'chi';
-    chip.textContent = hasNumberedChapters ? ch : ch;
+    chip.textContent = ch;
     chip.title = display;
     chip.onclick = function() { this.classList.toggle('ck'); updateChapterLabel(); };
     cml.appendChild(chip);
