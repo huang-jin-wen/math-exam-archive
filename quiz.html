@@ -84,6 +84,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 .code-block .str{color:#059669}
 .code-block .num{color:#d97706}
 .code-block .cm{color:#94a3b8;font-style:italic}
+.oc{background:#f4f6f9;border-radius:6px;padding:6px 10px;margin:4px 0;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.82em;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-break:break-word;border:1px solid #e2e8f0}
+.oc code{display:block}
+.oc .kw{color:#7c3aed}
+.oc .fn{color:#2563eb}
+.oc .str{color:#059669}
+.oc .num{color:#d97706}
+.oc .cm{color:#94a3b8;font-style:italic}
 .code-inline{background:#f1f5f9;color:#334155;padding:2px 6px;border-radius:4px;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:.9em}
 </style>
 </head>
@@ -585,6 +592,20 @@ function renderFillIn(i, answered) {
 }
 
 /* ===== 单选/多选渲染 ===== */
+/* 选项文本渲染：检测 ; 分隔的代码并格式化 */
+var PY_CODE_RE = /\b(def|for|while|if|print|open|import|return|class|with|try|except)\s*[:(]/;
+function renderOptionText(text) {
+  if (!text || !text.includes(';')) return escapeHTML(text);
+  var parts = text.split(';');
+  // 至少要有 2 段，且某段包含 Python 代码特征
+  var hasCode = parts.some(function(p) { return PY_CODE_RE.test(p); });
+  if (!hasCode) return escapeHTML(text);
+  var rawCode = parts.map(function(l) { return l.trim(); }).join('\n');
+  return '<div class="oc">' + autoIndentPython(rawCode).split('\n').map(function(l) {
+    return '<code>' + highlightPython(l) + '</code>';
+  }).join('\n') + '</div>';
+}
+
 function renderOptions(i, answered) {
   const q = questionPool[i];
   const ua = userAnswers[i] || '';
@@ -614,7 +635,7 @@ function renderOptions(i, answered) {
     const click = answered ? '' : 'onclick="answerQuestion(' + i + ',\'' + o.label + '\')"';
     html += '<div class="oi ' + cls + '" ' + click + '>' +
       '<div class="ol">' + o.label + '</div>' +
-      '<div class="ot">' + escapeHTML(o.text) +
+      '<div class="ot">' + renderOptionText(o.text) +
       (answered && o.note ? ' <span style="color:#999;font-size:.9em">（' + escapeHTML(o.note) + '）</span>' : '') +
       '</div></div>';
   });

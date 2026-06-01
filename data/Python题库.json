@@ -2091,11 +2091,11 @@
       },
       {
         "label": "B",
-        "text": "def f(): print(\"Outer function f\") def g(): print(\"Inner function g\") g() f.g()"
+        "text": "def f(): print(\"Outer function f\"); def g(): print(\"Inner function g\"); g(); f.g()"
       },
       {
         "label": "C",
-        "text": "def f(): print(\"Outer function f\") def g(): print(\"Inner function g\") g() f()"
+        "text": "def f(): print(\"Outer function f\"); def g(): print(\"Inner function g\"); g(); f()"
       },
       {
         "label": "D",
