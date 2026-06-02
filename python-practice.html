@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Python 实践刷题</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;background:#f5f6f7;color:#333;min-height:100vh}
+.c{max-width:900px;margin:0 auto;padding:20px}
+.h{background:#fff;border-radius:8px;padding:16px 24px;margin-bottom:16px;border:1px solid #e8e8e8}
+.h h2{font-size:1.1em;color:#1a1a1a;margin-bottom:4px}
+.h p{font-size:.85em;color:#999}
+.qc{background:#fff;border-radius:8px;padding:24px;margin-bottom:16px;border:1px solid #e8e8e8}
+.qn{font-size:.9em;color:#2775E8;font-weight:600;margin-bottom:12px}
+.qd{font-size:.95em;line-height:1.8;margin-bottom:16px}
+.example{margin-bottom:16px}
+.example .el{color:#e74c3c;font-weight:600;font-size:.85em;margin-bottom:4px}
+.example .ev{font-size:.9em;color:#555;margin-left:8px}
+.example .out{color:#27ae60}
+.lang-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.lang-bar select{padding:6px 12px;border:1px solid #d9d9d9;border-radius:4px;font-size:.85em;color:#555;background:#fafafa}
+.editor-wrap{position:relative;border:1px solid #d9d9d9;border-radius:6px;overflow:hidden;margin-bottom:10px}
+.editor-wrap:focus-within{border-color:#2775E8}
+.editor-wrap textarea{width:100%;min-height:200px;padding:12px 12px 12px 44px;border:none;outline:none;font-family:'Cascadia Code','Fira Code',Consolas,monospace;font-size:.88em;line-height:1.7;resize:vertical;background:#fafbfc;tab-size:4}
+.ln{position:absolute;left:0;top:0;bottom:0;width:36px;background:#f0f1f3;border-right:1px solid #e8e8e8;padding:12px 0;text-align:center;font-family:'Cascadia Code',Consolas,monospace;font-size:.78em;color:#bbb;line-height:1.91;pointer-events:none;overflow:hidden;user-select:none}
+.btns{display:flex;justify-content:flex-end;gap:8px;margin-bottom:10px}
+.btn{padding:7px 20px;border:none;border-radius:4px;cursor:pointer;font-size:.85em;transition:all .15s}
+.btn-run{background:#2775E8;color:#fff}
+.btn-run:hover{background:#1a5fc4}
+.btn-run:disabled{background:#a0c4f0;cursor:not-allowed}
+.btn-reset{background:#fff;color:#666;border:1px solid #d9d9d9}
+.btn-reset:hover{border-color:#999}
+.output{background:#1e1e1e;color:#d4d4d4;border-radius:6px;padding:14px 18px;font-family:'Cascadia Code',Consolas,monospace;font-size:.85em;line-height:1.6;min-height:40px;white-space:pre-wrap;word-break:break-all;display:none}
+.output.show{display:block}
+.output .pass{color:#4ec9b0}
+.output .fail{color:#f44747}
+.output .info{color:#9cdcfe}
+.nav{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:8px;padding:14px 24px;border:1px solid #e8e8e8}
+.nav .prog{font-size:.85em;color:#999}
+.nav .prog span{color:#2775E8;font-weight:600}
+.nav-btns{display:flex;gap:10px}
+.nav-btn{padding:8px 24px;border-radius:4px;border:1px solid #d9d9d9;background:#fff;color:#333;cursor:pointer;font-size:.85em;transition:all .15s}
+.nav-btn:hover{border-color:#2775E8;color:#2775E8}
+.nav-btn:disabled{opacity:.4;cursor:not-allowed}
+.status-bar{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.status-dot{width:28px;height:28px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.75em;cursor:pointer;border:1px solid #e0e0e0;background:#fff;color:#999;transition:all .15s}
+.status-dot:hover{border-color:#2775E8;color:#2775E8}
+.status-dot.active{background:#2775E8;color:#fff;border-color:#2775E8}
+.status-dot.pass{background:#e8f5e9;color:#2e7d32;border-color:#a5d6a7}
+.status-dot.fail{background:#ffebee;color:#c62828;border-color:#ef9a9a}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="h">
+  <h2>一. 程序题（共13题，13分）</h2>
+  <p>Python 实践考试真题 · 2022回忆版</p>
+</div>
+
+<div class="qc" id="questionCard"></div>
+
+<div class="nav">
+  <div class="prog">第 <span id="curNum">1</span>/13 题</div>
+  <div class="nav-btns">
+    <button class="nav-btn" id="prevBtn" onclick="prevQ()">← 上一题</button>
+    <button class="nav-btn" id="nextBtn" onclick="nextQ()">下一题 →</button>
+  </div>
+</div>
+
+<div class="status-bar" id="statusBar"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script>
+/* ===== 题库 ===== */
+const questions = [
+  {
+    title: "判断闰年",
+    desc: "写一个程序用于判断用户输入的年份是不是闰年，如果是输出\"True\"，如果不是输出\"False\"。（判断闰年的条件是年份能被4整除但不能被100整除，或者年份能被400整除）",
+    examples: [
+      {input:"2000", output:"True"},
+      {input:"2001", output:"False"},
+      {input:"2024", output:"True"},
+      {input:"1900", output:"False"}
+    ]
+  },
+  {
+    title: "素数判定",
+    desc: "从键盘输入一个整数，判断它是否为素数，是输出\"yes\"，不是输出\"no\"。（素数：大于1且只能被1和自身整除的数）",
+    examples: [
+      {input:"2", output:"yes"},
+      {input:"17", output:"yes"},
+      {input:"10", output:"no"},
+      {input:"1", output:"no"}
+    ]
+  },
+  {
+    title: "水仙花数",
+    desc: "编写程序找出所有的三位水仙花数并输出，每个数一行。（水仙花数：各位数字的立方和等于该数本身，如153 = 1³+5³+3³）",
+    examples: [
+      {input:"", output:"153\n370\n371\n407"}
+    ]
+  },
+  {
+    title: "最大公约数与最小公倍数",
+    desc: "从键盘输入两个正整数（用逗号分隔），求它们的最大公约数和最小公倍数，在一行内输出两个结果用空格分隔。",
+    examples: [
+      {input:"12,18", output:"6 36"},
+      {input:"8,12", output:"4 24"},
+      {input:"7,13", output:"1 91"}
+    ]
+  },
+  {
+    title: "回文数",
+    desc: "编写程序找出所有的五位回文数并输出，每个数一行。（回文数：正读反读相同的数，如12321）",
+    examples: [
+      {input:"", output:"10001"}
+    ]
+  },
+  {
+    title: "累加求和 1+(1+2)+...",
+    desc: "计算 S = 1 + (1+2) + (1+2+3) + … + (1+2+3+…+n) 的值。n 由键盘输入，输出 S 的值。",
+    examples: [
+      {input:"3", output:"10"},
+      {input:"5", output:"35"},
+      {input:"1", output:"1"}
+    ]
+  },
+  {
+    title: "斐波那契数列（三阶）",
+    desc: "有一个数列前三个数为 1, 2, 3，从第四项开始每项为前三项之和。输出该数列中值不超过 2000 的所有项，每项一行，最后一行输出项数。",
+    examples: [
+      {input:"", output:"1\n2\n3\n6\n11\n20\n37\n68\n125\n230\n423\n778\n1431\n13"}
+    ]
+  },
+  {
+    title: "猴子吃桃",
+    desc: "猴子第一天摘下若干桃子，当即吃了一半又多吃一个；以后每天吃前一天剩下的一半多一个。到第10天早上只剩 1 个。求第一天共摘了多少桃子。",
+    examples: [
+      {input:"", output:"1534"}
+    ]
+  },
+  {
+    title: "大于平均值的和",
+    desc: "从键盘输入一组用逗号分隔的整数，计算这些数的平均值，然后求大于平均值的所有数之和并输出。",
+    examples: [
+      {input:"1,2,3,4,5,6,7", output:"16"},
+      {input:"10,20,30", output:"30"},
+      {input:"5,5,5,5", output:"0"}
+    ]
+  },
+  {
+    title: "奇数求和",
+    desc: "从键盘输入一组用逗号分隔的整数，求其中所有奇数的和并输出。",
+    examples: [
+      {input:"1,2,3,4,5", output:"9"},
+      {input:"10,20,30", output:"0"},
+      {input:"1,3,5,7,9", output:"25"}
+    ]
+  },
+  {
+    title: "数列求和 -1+2-3+4...",
+    desc: "计算 -1 + 2 - 3 + 4 - … + (-1)ⁿ·n 的值。n 由键盘输入，输出计算结果。",
+    examples: [
+      {input:"3", output:"-2"},
+      {input:"4", output:"2"},
+      {input:"5", output:"-3"}
+    ]
+  },
+  {
+    title: "2+22+222 求和",
+    desc: "计算 2 + 22 + 222 + … 的前 n 项和。n 由键盘输入，输出计算结果。",
+    examples: [
+      {input:"3", output:"246"},
+      {input:"5", output:"24690"},
+      {input:"1", output:"2"}
+    ]
+  },
+  {
+    title: "特殊数列求和 (15+25+35...)",
+    desc: "计算 15 + 25 + 35 + … 的前 n 项和。n 由键盘输入，输出计算结果。",
+    examples: [
+      {input:"3", output:"75"},
+      {input:"5", output:"175"},
+      {input:"1", output:"15"}
+    ]
+  }
+];
+
+let currentIndex = 0;
+let userCodes = new Array(13).fill('');
+let results = new Array(13).fill(null);  // null/pass/fail
+let pyodide = null;
+
+function $(id){return document.getElementById(id)}
+
+/* ===== Pyodide 初始化 ===== */
+async function initPyodide(){
+  if(pyodide) return pyodide;
+  $('runBtn').disabled = true;
+  $('runBtn').textContent = '加载中...';
+  pyodide = await loadPyodide({indexURL:"https://cdn.jsdelivr.net/pyodide/v0.26.4/full/"});
+  $('runBtn').disabled = false;
+  $('runBtn').textContent = '运行 ▶';
+  return pyodide;
+}
+
+/* ===== 渲染题目 ===== */
+function renderQ(){
+  const q = questions[currentIndex];
+  const code = userCodes[currentIndex] || '';
+  const res = results[currentIndex];
+
+  // 行号
+  const lines = code.split('\n');
+  const lnHTML = lines.map((_,i)=>`<div>${i+1}</div>`).join('');
+
+  let examplesHTML = '';
+  q.examples.forEach(ex => {
+    examplesHTML += `<div class="el">【运行示例】<span style="color:#333">输入:</span><span class="out">${ex.input||'(无)'}</span> <span style="color:#333">输出:</span><span class="out">${escapeH(ex.output)}</span></div>`;
+  });
+
+  let outputHTML = '';
+  if(res === 'pass'){
+    outputHTML = '<div class="output show"><span class="pass">✓ 通过！输出正确</span></div>';
+  } else if(res === 'fail'){
+    outputHTML = `<div class="output show"><span class="fail">✗ 未通过</span><span class="info"> — 请检查代码后重新运行</span></div>`;
+  } else if(res === 'error'){
+    outputHTML = `<div class="output show"><span class="fail">✗ 运行出错</span></div>`;
+  }
+
+  $('questionCard').innerHTML = `
+    <div class="qn">${currentIndex+1}.(程序题 1分) ${q.title}</div>
+    <div class="qd">${q.desc}</div>
+    <div class="example">${examplesHTML}</div>
+    <div class="lang-bar">
+      <select><option>Python</option></select>
+    </div>
+    <div class="editor-wrap">
+      <div class="ln">${lnHTML}</div>
+      <textarea id="codeArea" placeholder="# 在此输入Python代码..." spellcheck="false">${code}</textarea>
+    </div>
+    <div class="btns">
+      <button class="btn btn-reset" onclick="resetCode()">重置</button>
+      <button class="btn btn-run" id="runBtn" onclick="runCode()">运行 ▶</button>
+    </div>
+    ${outputHTML}
+    <div class="output" id="outputArea"></div>
+  `;
+
+  $('curNum').textContent = currentIndex+1;
+  $('prevBtn').disabled = currentIndex===0;
+  $('nextBtn').disabled = currentIndex===12;
+  renderStatusBar();
+  updateLN();
+}
+
+/* ===== 行号同步 ===== */
+function updateLN(){
+  const ta = $('codeArea');
+  const ln = document.querySelector('.ln');
+  if(!ta || !ln) return;
+  ta.addEventListener('input', ()=>{
+    const lines = ta.value.split('\n');
+    ln.innerHTML = lines.map((_,i)=>`<div>${i+1}</div>`).join('');
+  });
+  ta.addEventListener('scroll', ()=>{
+    ln.style.transform = `translateY(-${ta.scrollTop}px)`;
+  });
+}
+
+/* ===== 运行代码 ===== */
+async function runCode(){
+  saveCode();
+  const q = questions[currentIndex];
+  const code = userCodes[currentIndex];
+  const outArea = $('outputArea');
+  
+  if(!code.trim()){
+    outArea.className = 'output show';
+    outArea.innerHTML = '<span class="fail">请先输入代码</span>';
+    return;
+  }
+
+  outArea.className = 'output show';
+  outArea.innerHTML = '<span class="info">运行中...</span>';
+
+  try{
+    await initPyodide();
+
+    // 逐用例运行：每个用例作为独立一次执行
+    let allOutputs = [];
+    let allPass = true;
+    const inputs = q.examples.map(e=>e.input).filter(i=>i!=='');
+    
+    if(inputs.length === 0){
+      // 无输入题（如水仙花数）——直接跑一次
+      let output = '';
+      pyodide.setStdout({batched:(s)=>{output+=s+'\n'}});
+      await pyodide.runPythonAsync(code);
+      output = output.trim();
+      allOutputs.push({input:'', output, expected:q.examples[0].output});
+    } else {
+      for(let ti=0; ti<q.examples.length; ti++){
+        const ex = q.examples[ti];
+        let output = '';
+        pyodide.setStdout({batched:(s)=>{output+=s+'\n'}});
+        pyodide.setStdin({stdin:()=>ex.input});
+        await pyodide.runPythonAsync(code);
+        output = output.trim();
+        allOutputs.push({input:ex.input, output, expected:ex.output});
+      }
+    }
+
+    // 汇总结果
+    const actualJoined = allOutputs.map(r=>r.output).join('\n');
+    const expectedJoined = allOutputs.map(r=>r.expected).join('\n');
+    const normOut = actualJoined.replace(/\s+/g,' ').trim();
+    const normExp = expectedJoined.replace(/\s+/g,' ').trim();
+
+    if(normOut === normExp){
+      results[currentIndex] = 'pass';
+      outArea.innerHTML = '<span class="pass">✓ 全部通过！</span>\n' + allOutputs.map(r=>{
+        return '<span class="info">输入 '+escapeH(r.input||'(无)')+' → </span><span class="pass">'+escapeH(r.output)+'</span>';
+      }).join('\n');
+    } else {
+      results[currentIndex] = 'fail';
+      outArea.innerHTML = '<span class="fail">✗ 未通过</span>\n' + allOutputs.map(r=>{
+        const ok = r.output.replace(/\s+/g,' ').trim() === r.expected.replace(/\s+/g,' ').trim();
+        const cls = ok ? 'pass' : 'fail';
+        const mark = ok ? '✓' : '✗';
+        return '<span class="info">输入 '+escapeH(r.input||'(无)')+' → </span><span class="'+cls+'">'+mark+' 你的:'+escapeH(r.output)+' 预期:'+escapeH(r.expected)+'</span>';
+      }).join('\n');
+    }
+  }catch(e){
+    results[currentIndex] = 'error';
+    outArea.innerHTML = '<span class="fail">✗ 运行错误</span>\n' + escapeH(e.message||String(e));
+  }
+
+  renderStatusBar();
+}
+
+/* ===== 辅助 ===== */
+function saveCode(){
+  const ta = $('codeArea');
+  if(ta) userCodes[currentIndex] = ta.value;
+}
+function resetCode(){
+  userCodes[currentIndex] = '';
+  results[currentIndex] = null;
+  renderQ();
+}
+function escapeH(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+/* ===== 导航 ===== */
+function prevQ(){saveCode();if(currentIndex>0){currentIndex--;renderQ()}}
+function nextQ(){saveCode();if(currentIndex<12){currentIndex++;renderQ()}}
+function goTo(i){saveCode();currentIndex=i;renderQ()}
+
+/* ===== 状态栏 ===== */
+function renderStatusBar(){
+  let html = '';
+  for(let i=0;i<13;i++){
+    let cls = 'status-dot';
+    if(i===currentIndex) cls += ' active';
+    if(results[i]==='pass') cls += ' pass';
+    if(results[i]==='fail'||results[i]==='error') cls += ' fail';
+    html += `<div class="${cls}" onclick="goTo(${i})" title="第${i+1}题">${i+1}</div>`;
+  }
+  $('statusBar').innerHTML = html;
+}
+
+/* ===== 启动 ===== */
+renderQ();
+initPyodide();
+</script>
+</body>
+</html>
