@@ -441,14 +441,14 @@ function renderQuestion() {
   if (q.type === '多选题' && !answered) {
     const sel = multiSelectState[i] || {};
     const keys = Object.keys(sel);
-    optionHTML += '<div class="sb"><button class="bt bt-s" onclick="submitMulti(' + i + ')"' +
+    optionHTML += '<div class="sb"><button type="button" class="bt bt-s" onclick="submitMulti(' + i + ')"' +
       (keys.length === 0 ? ' disabled style="opacity:.5"' : '') +
       '>💬 提交答案</button></div>';
   }
 
   // 填空题提交按钮
   if (q.type === '填空题' && !answered) {
-    optionHTML += '<div class="sb"><button class="bt bt-s" onclick="submitFillIn(' + i + ')">✉ 提交答案</button></div>';
+    optionHTML += '<div class="sb"><button type="button" class="bt bt-s" onclick="submitFillIn(' + i + ')">✉ 提交答案</button></div>';
   }
 
   // 反馈区域
