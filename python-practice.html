@@ -36,6 +36,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 .output .pass{color:#4ec9b0}
 .output .fail{color:#f44747}
 .output .info{color:#9cdcfe}
+.solution-wrap{margin-top:10px;display:none}
+.solution-wrap.show{display:block}
+.solution-wrap .sol-code{background:#f8f9fc;border:1px solid #e0e0e0;border-radius:4px;padding:10px 14px;font-family:'Cascadia Code',Consolas,monospace;font-size:.82em;line-height:1.6;white-space:pre-wrap}
+.solution-wrap .sol-label{color:#2775E8;font-size:.82em;font-weight:600;margin-bottom:6px}
+.btn-ans{background:#fff;color:#2775E8;border:1px solid #2775E8}
+.btn-ans:hover{background:#e8f0fe}
 .nav{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:8px;padding:14px 24px;border:1px solid #e8e8e8}
 .nav .prog{font-size:.85em;color:#999}
 .nav .prog span{color:#2775E8;font-weight:600}
@@ -83,7 +89,8 @@ const questions = [
       {input:"2001", output:"False"},
       {input:"2024", output:"True"},
       {input:"1900", output:"False"}
-    ]
+    ],
+    solution: "y = int(input())\nif y%4==0 and y%100!=0 or y%400==0:\n    print(\"True\")\nelse:\n    print(\"False\")",
   },
   {
     title: "素数判定",
@@ -93,14 +100,16 @@ const questions = [
       {input:"17", output:"yes"},
       {input:"10", output:"no"},
       {input:"1", output:"no"}
-    ]
+    ],
+    solution: "x = int(input())\nif x == 2:\n    print(\"yes\")\nelse:\n    for i in range(2, x):\n        if x % i == 0:\n            print(\"no\")\n            break\n    else:\n        print(\"yes\")",
   },
   {
     title: "水仙花数",
     desc: "编写程序找出所有的三位水仙花数并输出，每个数一行。（水仙花数：各位数字的立方和等于该数本身，如153 = 1³+5³+3³）",
     examples: [
       {input:"", output:"153\n370\n371\n407"}
-    ]
+    ],
+    solution: "for i in range(100, 1000):\n    if i == (i%10)**3 + (i//100)**3 + (i%100//10)**3:\n        print(i)",
   },
   {
     title: "最大公约数与最小公倍数",
@@ -109,14 +118,16 @@ const questions = [
       {input:"12,18", output:"6 36"},
       {input:"8,12", output:"4 24"},
       {input:"7,13", output:"1 91"}
-    ]
+    ],
+    solution: "a, b = eval(input())\nc = a * b\nwhile b != 0:\n    a, b = b, a % b\nprint(a, c // a)",
   },
   {
     title: "回文数",
     desc: "编写程序找出所有的五位回文数并输出，每个数一行。（回文数：正读反读相同的数，如12321）",
     examples: [
       {input:"", output:"10001"}
-    ]
+    ],
+    solution: "for i in range(10000, 100000):\n    s = str(i)\n    if s[0] == s[-1] and s[1] == s[-2]:\n        print(i)",
   },
   {
     title: "累加求和 1+(1+2)+...",
@@ -125,21 +136,24 @@ const questions = [
       {input:"3", output:"10"},
       {input:"5", output:"35"},
       {input:"1", output:"1"}
-    ]
+    ],
+    solution: "n = int(input())\ntotal = 0\nfor i in range(1, n+1):\n    s = 0\n    for j in range(1, i+1):\n        s += j\n    total += s\nprint(total)",
   },
   {
     title: "斐波那契数列（三阶）",
     desc: "有一个数列前三个数为 1, 2, 3，从第四项开始每项为前三项之和。输出该数列中值不超过 2000 的所有项，每项一行，最后一行输出项数。",
     examples: [
       {input:"", output:"1\n2\n3\n6\n11\n20\n37\n68\n125\n230\n423\n778\n1431\n13"}
-    ]
+    ],
+    solution: "f1, f2, f3 = 1, 2, 3\na = [1, 2, 3]\nn = 3\nwhile True:\n    f4 = f1 + f2 + f3\n    if f4 > 2000:\n        break\n    a.append(f4)\n    f1, f2, f3 = f2, f3, f4\n    n += 1\nfor x in a:\n    print(x)\nprint(n)",
   },
   {
     title: "猴子吃桃",
     desc: "猴子第一天摘下若干桃子，当即吃了一半又多吃一个；以后每天吃前一天剩下的一半多一个。到第10天早上只剩 1 个。求第一天共摘了多少桃子。",
     examples: [
       {input:"", output:"1534"}
-    ]
+    ],
+    solution: "x = 1\nfor i in range(9):\n    x = (x + 1) * 2\nprint(x)",
   },
   {
     title: "大于平均值的和",
@@ -148,7 +162,8 @@ const questions = [
       {input:"1,2,3,4,5,6,7", output:"16"},
       {input:"10,20,30", output:"30"},
       {input:"5,5,5,5", output:"0"}
-    ]
+    ],
+    solution: "s = input()\nnums = [int(x) for x in s.split(\",\")]\navg = sum(nums) / len(nums)\nprint(sum(x for x in nums if x > avg))",
   },
   {
     title: "奇数求和",
@@ -157,7 +172,8 @@ const questions = [
       {input:"1,2,3,4,5", output:"9"},
       {input:"10,20,30", output:"0"},
       {input:"1,3,5,7,9", output:"25"}
-    ]
+    ],
+    solution: "s = input()\nnums = [int(x) for x in s.split(\",\")]\nprint(sum(x for x in nums if x % 2 != 0))",
   },
   {
     title: "数列求和 -1+2-3+4...",
@@ -166,7 +182,8 @@ const questions = [
       {input:"3", output:"-2"},
       {input:"4", output:"2"},
       {input:"5", output:"-3"}
-    ]
+    ],
+    solution: "n = int(input())\ntotal = 0\nfor i in range(1, n+1):\n    total += (-1)**i * i\nprint(total)",
   },
   {
     title: "2+22+222 求和",
@@ -175,7 +192,8 @@ const questions = [
       {input:"3", output:"246"},
       {input:"5", output:"24690"},
       {input:"1", output:"2"}
-    ]
+    ],
+    solution: "n = int(input())\ntotal = 0\nfor i in range(1, n+1):\n    total += int(\"2\" * i)\nprint(total)",
   },
   {
     title: "特殊数列求和 (15+25+35...)",
@@ -184,8 +202,9 @@ const questions = [
       {input:"3", output:"75"},
       {input:"5", output:"175"},
       {input:"1", output:"15"}
-    ]
-  }
+    ],
+    solution: "n = int(input())\nprint(sum(i * 10 + 5 for i in range(1, n+1)))",
+  },
 ];
 
 let currentIndex = 0;
@@ -243,7 +262,12 @@ function renderQ(){
     </div>
     <div class="btns">
       <button class="btn btn-reset" onclick="resetCode()">重置</button>
+      <button class="btn btn-ans" onclick="toggleSolution()">💡 查看答案</button>
       <button class="btn btn-run" id="runBtn" onclick="runCode()">运行 ▶</button>
+    </div>
+    <div class="solution-wrap" id="solutionWrap">
+      <div class="sol-label">📖 参考解法</div>
+      <div class="sol-code">${escapeH(q.solution||'')}</div>
     </div>
     ${outputHTML}
     <div class="output" id="outputArea"></div>
@@ -356,6 +380,10 @@ function resetCode(){
   userCodes[currentIndex] = '';
   results[currentIndex] = null;
   renderQ();
+}
+function toggleSolution(){
+  const wrap = $('solutionWrap');
+  if(wrap) wrap.classList.toggle('show');
 }
 function escapeH(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
