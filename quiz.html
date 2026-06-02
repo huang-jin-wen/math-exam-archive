@@ -598,9 +598,18 @@ function renderFillIn(i, answered) {
 /* 选项文本渲染：检测 ; 分隔的代码并格式化 */
 var PY_CODE_RE = /\b(def|for|while|if|print|open|import|return|class|with|try|except)\s*[:(]/;
 function renderOptionText(text) {
-  if (!text || !text.includes(';')) return escapeHTML(text);
+  if (!text) return escapeHTML(String(text));
+
+  // \n 换行格式（预嵌缩进，跳过 autoIndentPython）
+  if (text.includes('\n') && PY_CODE_RE.test(text)) {
+    return '<div class="oc">' + text.split('\n').map(function(l) {
+      return '<code>' + highlightPython(l) + '</code>';
+    }).join('\n') + '</div>';
+  }
+
+  // ; 分隔格式（旧格式，需 autoIndentPython 推断缩进）
+  if (!text.includes(';')) return escapeHTML(text);
   var parts = text.split(';');
-  // 至少要有 2 段，且某段包含 Python 代码特征
   var hasCode = parts.some(function(p) { return PY_CODE_RE.test(p); });
   if (!hasCode) return escapeHTML(text);
   var rawCode = parts.map(function(l) { return l.trim(); }).join('\n');
