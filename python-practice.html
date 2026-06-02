@@ -284,7 +284,13 @@ async function runCode(){
   }
 
   outArea.className = 'output show';
-  outArea.innerHTML = '<span class="info">运行中...</span>';
+  outArea.innerHTML = '<span class="info">运行中...（请勿写死循环，如需中断请刷新页面）</span>';
+
+  // 简单死循环检测
+  if(/while\s+True\s*:/.test(code) && !/break/.test(code)){
+    outArea.innerHTML = '<span class="fail">⚠ 检测到 while True 且无 break，疑似死循环，请检查代码后再运行</span>';
+    return;
+  }
 
   try{
     await initPyodide();
