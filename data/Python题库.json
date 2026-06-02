@@ -2733,7 +2733,7 @@
     "chapter": "Python",
     "chapter_title": "异常处理",
     "type": "单选题",
-    "stem": "当用户输入abc时，下面代码的输出结果是()。; try:; n = 0; n = input(\"请输入一个整数: \"); def pow10(n):; return n**10; except:; print(\"程序执行错误\")",
+    "stem": "当用户输入abc时，下面代码的输出结果是()。\ntry:\n    n = 0\n    n = input(\"请输入一个整数: \")\n    def pow10(n):\n        return n**10\nexcept:\n    print(\"程序执行错误\")",
     "options": [
       {
         "label": "A",
@@ -4631,7 +4631,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "单选题",
-    "stem": "给出如下代码:; ls = [\"car\",\"truck\"]; def funC(a):; ls = []; ls.append(a); return; funC(\"bus\"); print(ls); 以下选项中描述错误的是（）。",
+    "stem": "给出如下代码:\nls = [\"car\",\"truck\"]\ndef funC(a):\n    ls = []\n    ls.append(a)\n    return\nfunC(\"bus\")\nprint(ls)\n以下选项中描述错误的是（）。",
     "options": [
       {
         "label": "A",
@@ -4657,7 +4657,7 @@
     "chapter": "Python",
     "chapter_title": "函数",
     "type": "单选题",
-    "stem": "下面代码的输出结果是; def change(a,b):; a = 10; b += a; a = 4; b = 5; change(a,b); print(a,b)",
+    "stem": "下面代码的输出结果是\ndef change(a,b):\n    a = 10\n    b += a\na = 4\nb = 5\nchange(a,b)\nprint(a,b)",
     "options": [
       {
         "label": "A",

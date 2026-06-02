@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在线考试</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;background:#eef1f5;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+/* ── Header ── */
+.hd{background:linear-gradient(135deg,#1a5cc8,#2563eb);color:#fff;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;box-shadow:0 2px 8px rgba(26,92,200,.25)}
+.hd-l{display:flex;align-items:center;gap:12px}
+.hd-logo{width:32px;height:32px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;color:#1a5cc8}
+.hd-title{font-size:16px;font-weight:600;letter-spacing:.5px}
+.hd-r{display:flex;align-items:center;gap:16px;font-size:13px}
+.hd-r span{opacity:.9}
+.hd-r .sp{opacity:.5}
+.hd-btn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;padding:4px 12px;border-radius:4px;cursor:pointer;font-size:12px}
+.hd-btn:hover{background:rgba(255,255,255,.25)}
+/* ── Nav bar ── */
+.nav{background:#fff;border-bottom:1px solid #e2e8f0;padding:0 24px;height:44px;display:flex;align-items:center;gap:20px;font-size:13px;color:#475569;flex-shrink:0}
+.nav .tp{background:#eff6ff;color:#2563eb;padding:2px 10px;border-radius:4px;font-weight:600}
+.nav .sq{border-left:1px solid #e2e8f0;padding-left:16px}
+/* ── Main layout ── */
+.main{display:flex;flex:1;overflow:hidden}
+/* ── Content area ── */
+.ct{flex:1;overflow-y:auto;padding:24px 32px;background:#fff;margin:12px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.ct .q-stem{font-size:15px;color:#1e293b;line-height:1.8;margin-bottom:16px}
+/* Code block */
+.code-block{background:#1e293b;color:#e2e8f0;border-radius:8px;padding:16px 20px;margin:12px 0 20px;font-family:'Cascadia Code','Fira Code','JetBrains Mono',Consolas,monospace;font-size:14px;line-height:1.8;overflow-x:auto;white-space:pre;border:1px solid #334155}
+.code-block .kw{color:#c084fc}
+.code-block .fn{color:#60a5fa}
+.code-block .str{color:#34d399}
+.code-block .num{color:#fbbf24}
+.code-block .cm{color:#64748b;font-style:italic}
+.code-block .op{color:#94a3b8}
+.code-block .bu{color:#38bdf8}
+/* Options */
+.opt-hint{background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af;padding:8px 16px;border-radius:6px;margin-bottom:16px;font-size:13px;display:flex;align-items:center;gap:6px}
+.opt-hint::before{content:'💡'}
+.opt-list{display:flex;flex-direction:column;gap:8px}
+.opt-item{display:flex;align-items:center;gap:12px;padding:12px 16px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all .15s;font-size:15px;color:#334155}
+.opt-item:hover{border-color:#93c5fd;background:#f8fafc}
+.opt-item.sel{border-color:#2563eb;background:#eff6ff;box-shadow:0 0 0 1px rgba(37,99,235,.2)}
+.opt-letter{width:32px;height:32px;border-radius:50%;background:#f1f5f9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#64748b;flex-shrink:0}
+.opt-item.sel .opt-letter{background:#2563eb;color:#fff}
+.opt-text{flex:1;font-family:'Cascadia Code','Fira Code',monospace;font-size:14px}
+/* Feedback */
+.fb{margin-top:16px;padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.6;display:none}
+.fb.correct{display:block;background:#f0fdf4;border:1px solid #bbf7d0;color:#166534}
+.fb.wrong{display:block;background:#fef2f2;border:1px solid #fecaca;color:#991b1b}
+/* ── Sidebar ── */
+.sb{width:260px;background:#f8fafc;border-left:1px solid #e2e8f0;display:flex;flex-direction:column;overflow:hidden;flex-shrink:0}
+.sb-header{background:#eff6ff;padding:12px 16px;font-size:14px;font-weight:600;color:#1e40af;border-bottom:1px solid #dbeafe}
+.sb-list{flex:1;overflow-y:auto;padding:8px}
+.sb-item{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:6px;cursor:pointer;font-size:13px;color:#475569;transition:all .12s;margin-bottom:2px}
+.sb-item:hover{background:#e2e8f0}
+.sb-item.active{background:#2563eb;color:#fff;font-weight:600}
+.sb-item .chk{width:18px;height:18px;border:2px solid #cbd5e1;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:11px}
+.sb-item.done .chk{background:#22c55e;border-color:#22c55e;color:#fff}
+.sb-item.active .chk{border-color:#fff}
+.sb-item.active.done .chk{background:#fff;color:#22c55e}
+.sb-summary{padding:12px 16px;border-top:1px solid #e2e8f0;font-size:12px;color:#64748b;display:flex;gap:12px}
+.sb-summary b{color:#1e293b}
+/* ── Footer ── */
+.ft{background:#fff;border-top:1px solid #e2e8f0;padding:0 24px;height:52px;display:flex;align-items:center;justify-content:flex-end;gap:16px;flex-shrink:0}
+.ft-timer{font-size:14px;color:#64748b;display:flex;align-items:center;gap:6px}
+.ft-timer .time{font-family:'Cascadia Code',monospace;font-size:18px;font-weight:700;color:#1e293b}
+.ft-timer.warn .time{color:#dc2626;animation:pulse .8s infinite}
+@keyframes pulse{50%{opacity:.5}}
+.ft-btn{padding:8px 24px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .15s}
+.ft-btn.prev{background:#f1f5f9;color:#475569;border:1px solid #e2e8f0}
+.ft-btn.prev:hover{background:#e2e8f0}
+.ft-btn.next{background:#2563eb;color:#fff}
+.ft-btn.next:hover{background:#1d4ed8}
+.ft-btn.submit{background:#f97316;color:#fff}
+.ft-btn.submit:hover{background:#ea580c}
+.ft-ver{font-size:11px;color:#94a3b8}
+/* ── Subject selector ── */
+.sel-bar{background:#fff;padding:12px 24px;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.sel-bar label{font-size:13px;color:#475569;font-weight:600}
+.sel-bar select{padding:6px 12px;border:1px solid #cbd5e1;border-radius:6px;font-size:13px;color:#1e293b;background:#fff;cursor:pointer;min-width:180px}
+.sel-bar select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 2px rgba(37,99,235,.1)}
+.sel-bar .ch-count{font-size:12px;color:#64748b}
+/* ── Loading ── */
+.loading{display:flex;align-items:center;justify-content:center;height:200px;color:#94a3b8;font-size:14px;gap:8px}
+.spinner{width:20px;height:20px;border:2px solid #e2e8f0;border-top-color:#2563eb;border-radius:50%;animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<!-- Subject selector -->
+<div class="sel-bar">
+  <label>📋 选择科目</label>
+  <select id="subject" onchange="loadExam()">
+    <option value="">-- 请选择 --</option>
+    <option value="Python题库">Python题库 (219题)</option>
+    <option value="创业导论">创业导论 (160题)</option>
+    <option value="大学英语词汇">大学英语词汇 (150题)</option>
+    <option value="中国书法史">中国书法史 (200题)</option>
+    <option value="舞蹈鉴赏">舞蹈鉴赏 (240题)</option>
+  </select>
+  <span class="ch-count" id="qCount"></span>
+</div>
+
+<!-- Header -->
+<div class="hd">
+  <div class="hd-l">
+    <div class="hd-logo">W</div>
+    <div class="hd-title">万维全自动网络考试平台</div>
+  </div>
+  <div class="hd-r">
+    <span>👤 黄锦文</span>
+    <span class="sp">|</span>
+    <span>学号: 14252347</span>
+    <span class="sp">|</span>
+    <span id="examName">请选择科目</span>
+    <button class="hd-btn" onclick="toggleInfo()">更多信息</button>
+  </div>
+</div>
+
+<!-- Nav -->
+<div class="nav">
+  <span class="tp" id="qType">单选</span>
+  <span>第 <b id="qNum">-</b> 题</span>
+  <span class="sq"><b id="qScore">-</b> 分</span>
+  <span class="sq">共 <b id="totalQ">-</b> 题</span>
+  <span class="sq">共 <b id="totalS">-</b> 分</span>
+</div>
+
+<!-- Main -->
+<div class="main">
+  <div class="ct" id="content">
+    <div class="loading"><div class="spinner"></div> 请先选择科目</div>
+  </div>
+  <div class="sb">
+    <div class="sb-header">📝 答题卡</div>
+    <div class="sb-list" id="sbList"></div>
+    <div class="sb-summary">
+      <span>未答: <b id="unanswered">-</b></span>
+      <span>已答: <b id="answered">-</b></span>
+      <span>标记: <b id="marked">0</b></span>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="ft">
+  <div class="ft-timer" id="timerBox">
+    ⏱ <span class="time" id="timer">00:00:00</span>
+  </div>
+  <button class="ft-btn prev" onclick="prevQ()">◀ 上一题</button>
+  <button class="ft-btn next" onclick="nextQ()">下一题 ▶</button>
+  <button class="ft-btn submit" onclick="submitExam()">📝 交卷</button>
+  <span class="ft-ver">版本: 21.2202.0.2400</span>
+</div>
+
+<script>
+// ═══════════ State ═══════════
+var questions = [];
+var answers = {};     // {idx: 'A'}
+var correctMap = {};  // {idx: 'A'}
+var currentIdx = 0;
+var timerSec = 0;
+var timerInt = null;
+var examSubmitted = false;
+
+// ═══════════ Syntax highlight ═══════════
+function escapeHTML(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function highlightPython(code) {
+  var M = {kw:'\x01',fn:'\x02',str:'\x03',num:'\x04',cm:'\x05'};
+  // comments
+  code = code.replace(/(#.*)$/gm, M.cm+'$1'+M.cm);
+  // strings
+  code = code.replace(/(['"])(?:(?!\1|\\).|\\.)*\1/g, function(m){
+    return m.indexOf(M.cm)>=0 ? m : M.str+m+M.str;
+  });
+  // strings (triple-quoted, simplified)
+  code = code.replace(/('''[\s\S]*?'''|"""[\s\S]*?""")/g, M.str+'$1'+M.str);
+  // keywords
+  var kws = 'False|None|True|and|as|assert|async|await|break|class|continue|def|del|elif|else|except|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|raise|return|try|while|with|yield';
+  code = code.replace(new RegExp('\\b('+kws+')\\b','g'), M.kw+'$1'+M.kw);
+  // built-in functions
+  var bis = 'abs|all|any|bin|bool|chr|dict|dir|divmod|enumerate|eval|exec|filter|float|format|frozenset|getattr|hasattr|hash|help|hex|id|input|int|isinstance|issubclass|iter|len|list|locals|map|max|min|next|object|oct|open|ord|pow|print|range|repr|reversed|round|set|setattr|slice|sorted|str|sum|super|tuple|type|vars|zip';
+  code = code.replace(new RegExp('\\b('+bis+')\\s*(?=\\()','g'), M.fn+'$1'+M.fn);
+  // numbers
+  code = code.replace(/\b(\d+\.?\d*)\b/g, M.num+'$1'+M.num);
+  // escape
+  code = escapeHTML(code);
+  // replace markers
+  code = code.replace(/\x01/g,'<span class="kw">').replace(/\x02/g,'<span class="fn">');
+  code = code.replace(/\x03/g,'<span class="str">').replace(/\x04/g,'<span class="num">');
+  code = code.replace(/\x05/g,'<span class="cm">');
+  code = code.replace(/<\/span>/g,'</span>'); // close all
+  return code;
+}
+
+function autoIndentPython(codeText) {
+  if (!codeText || !codeText.trim()) return codeText;
+  var lines = codeText.split('\n');
+  var hasIndent = lines.some(function(l){return l.length>0 && (l[0]===' '||l[0]==='\t');});
+  if (hasIndent) return codeText;
+  var indent=0, INDENT=4;
+  return lines.map(function(line){
+    var t=line.trim(); if(!t) return '';
+    if(/^(else|elif|except|finally)\b/.test(t)) indent=Math.max(0,indent-1);
+    var out=' '.repeat(indent*INDENT)+t;
+    if(t.endsWith(':') && !/^\d+:/.test(t)) indent++;
+    return out;
+  }).join('\n');
+}
+
+function renderCodeBlock(code) {
+  if (!code || !code.trim()) return '';
+  var lines = code.split('\n');
+  // detect if it's Python code
+  var isPy = lines.some(function(l){return /\b(def|class|import|print|for|while|if|return|with|try|except)\b/.test(l);});
+  if (!isPy) {
+    return '<div class="code-block">'+escapeHTML(code)+'</div>';
+  }
+  var indented = autoIndentPython(code);
+  var html = indented.split('\n').map(function(l){return highlightPython(l);}).join('\n');
+  return '<div class="code-block">'+html+'</div>';
+}
+
+// ═══════════ Load exam ═══════════
+function loadExam() {
+  var subj = document.getElementById('subject').value;
+  if (!subj) return;
+  document.getElementById('content').innerHTML = '<div class="loading"><div class="spinner"></div> 加载中…</div>';
+  document.getElementById('examName').textContent = subj + ' - 练习';
+  fetch('data/'+subj+'.json')
+    .then(function(r){return r.json();})
+    .then(function(data){
+      questions = data;
+      answers = {};
+      correctMap = {};
+      questions.forEach(function(q,i){
+        correctMap[i] = q.answer;
+      });
+      currentIdx = 0;
+      examSubmitted = false;
+      timerSec = questions.length * 90; // 90s per question
+      startTimer();
+      document.getElementById('totalQ').textContent = questions.length;
+      document.getElementById('totalS').textContent = (questions.length*2).toFixed(1);
+      document.getElementById('qCount').textContent = '共 '+questions.length+' 题';
+      buildSidebar();
+      renderQuestion();
+      updateFooter();
+    })
+    .catch(function(e){
+      document.getElementById('content').innerHTML = '<div class="loading" style="color:#dc2626">⚠ 加载失败: '+escapeHTML(e.message)+'<br><small>请确认已通过 HTTP 服务器打开此页面</small></div>';
+    });
+}
+
+// ═══════════ Sidebar ═══════════
+function buildSidebar() {
+  var html = '';
+  for (var i=0; i<questions.length; i++) {
+    var cls = (i===currentIdx) ? ' active' : '';
+    if (answers[i] !== undefined) cls += ' done';
+    html += '<div class="sb-item'+cls+'" onclick="jumpTo('+i+')">';
+    html += '<span class="chk">'+(answers[i]!==undefined?'✓':'')+'</span>';
+    html += '第'+(i+1)+'题</div>';
+  }
+  document.getElementById('sbList').innerHTML = html;
+  updateSidebarSummary();
+}
+
+function updateSidebarSummary() {
+  var a=0, u=0;
+  for (var i=0; i<questions.length; i++) {
+    if (answers[i] !== undefined) a++; else u++;
+  }
+  document.getElementById('answered').textContent = a;
+  document.getElementById('unanswered').textContent = u;
+}
+
+function updateSidebarHighlight() {
+  var items = document.querySelectorAll('.sb-item');
+  for (var i=0; i<items.length; i++) {
+    items[i].classList.remove('active');
+    if (i===currentIdx) items[i].classList.add('active');
+  }
+}
+
+// ═══════════ Render question ═══════════
+function renderQuestion() {
+  var q = questions[currentIdx];
+  if (!q) return;
+  document.getElementById('qNum').textContent = currentIdx+1;
+  document.getElementById('qType').textContent = q.type || '单选';
+  document.getElementById('qScore').textContent = '2.0';
+  updateSidebarHighlight();
+  var html = '';
+  // stem
+  var stem = q.stem || q.question || '';
+  if (stem) {
+    // Smart split: if stem has ';' and part after looks like code, separate
+    var scIdx = stem.indexOf(';');
+    var hasCodeAfter = false;
+    if (scIdx > 0) {
+      var after = stem.substring(scIdx+1).trim();
+      // detect code: assignment, function call, >>>, keywords, import, class, def
+      hasCodeAfter = /^[\w.\s]+=|^>>>|^print\(|^type\(|^import\b|^from\b|^def\b|^class\b|^for\b|^while\b|^if\b|^try\b|^with\b|^return\b|^open\(|^len\(|^range\(|^sorted\(|^list\(/.test(after);
+    }
+    if (hasCodeAfter) {
+      html += '<div class="q-stem">'+escapeHTML(stem.substring(0,scIdx).trim().replace(/。*$/,''))+'</div>';
+      html += renderCodeBlock(stem.substring(scIdx+1));
+    } else {
+      html += '<div class="q-stem">'+escapeHTML(stem)+'</div>';
+    }
+  }
+  // options
+  html += '<div class="opt-hint">在下面选择答案（点击选项字母或内容进行选择）</div>';
+  html += '<div class="opt-list">';
+  var opts = q.options || [];
+  var letters = ['A','B','C','D','E','F'];
+  var sel = answers[currentIdx];
+  for (var i=0; i<opts.length; i++) {
+    var optText = (typeof opts[i]==='object') ? (opts[i].text||'') : String(opts[i]);
+    var letter = (typeof opts[i]==='object' && opts[i].label) ? opts[i].label : letters[i];
+    var cls = (sel===letter) ? ' sel' : '';
+    html += '<div class="opt-item'+cls+'" onclick="selectAnswer(\''+letter+'\')">';
+    html += '<span class="opt-letter">'+letter+'</span>';
+    html += '<span class="opt-text">'+escapeHTML(optText)+'</span>';
+    html += '</div>';
+  }
+  html += '</div>';
+  // feedback
+  html += '<div class="fb" id="fb"></div>';
+  document.getElementById('content').innerHTML = html;
+  // show existing feedback if answered
+  if (sel && examSubmitted) showFeedback();
+}
+
+function selectAnswer(letter) {
+  if (examSubmitted) return;
+  answers[currentIdx] = letter;
+  // update UI
+  var items = document.querySelectorAll('.opt-item');
+  items.forEach(function(item,i){
+    item.classList.toggle('sel', String.fromCharCode(65+i)===letter);
+  });
+  buildSidebar();
+  updateFooter();
+}
+
+// ═══════════ Navigation ═══════════
+function jumpTo(idx) {
+  currentIdx = idx;
+  renderQuestion();
+  updateFooter();
+}
+
+function prevQ() {
+  if (currentIdx > 0) { currentIdx--; renderQuestion(); updateFooter(); }
+}
+
+function nextQ() {
+  if (currentIdx < questions.length-1) { currentIdx++; renderQuestion(); updateFooter(); }
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e){
+  if (e.key==='ArrowLeft') prevQ();
+  if (e.key==='ArrowRight') nextQ();
+  if (e.key>='1' && e.key<='6' && !examSubmitted) {
+    var idx = parseInt(e.key)-1;
+    if (idx < (questions[currentIdx]?.options?.length||0)) {
+      selectAnswer(String.fromCharCode(65+idx));
+    }
+  }
+});
+
+// ═══════════ Timer ═══════════
+function startTimer() {
+  if (timerInt) clearInterval(timerInt);
+  updateTimerDisplay();
+  timerInt = setInterval(function(){
+    if (timerSec <= 0) { clearInterval(timerInt); submitExam(); return; }
+    timerSec--;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  var h=Math.floor(timerSec/3600), m=Math.floor((timerSec%3600)/60), s=timerSec%60;
+  var str = String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+  document.getElementById('timer').textContent = str;
+  var box = document.getElementById('timerBox');
+  if (timerSec < 600) box.classList.add('warn'); else box.classList.remove('warn');
+}
+
+// ═══════════ Submit ═══════════
+function submitExam() {
+  if (examSubmitted) return;
+  if (!confirm('确定要交卷吗？')) return;
+  examSubmitted = true;
+  if (timerInt) clearInterval(timerInt);
+  // grade
+  var correct=0, total=questions.length;
+  for (var i=0; i<total; i++) {
+    if (answers[i] && answers[i]===correctMap[i]) correct++;
+  }
+  var score = (correct/total*100).toFixed(1);
+  var msg = '交卷完成！\n\n✅ 正确: '+correct+'/'+total+' ('+score+'分)\n❌ 错误: '+(total-correct);
+  document.getElementById('content').innerHTML = '<div style="text-align:center;padding:60px 20px">'+
+    '<div style="font-size:48px;margin-bottom:16px">📝</div>'+
+    '<div style="font-size:24px;font-weight:700;color:#1e293b;margin-bottom:24px">考试结束</div>'+
+    '<div style="background:#f8fafc;border-radius:12px;padding:24px;display:inline-block;text-align:left;line-height:2;font-size:15px">'+
+    '<div>✅ 正确: <b style="color:#16a34a">'+correct+'</b> / '+total+'</div>'+
+    '<div>❌ 错误: <b style="color:#dc2626">'+(total-correct)+'</b></div>'+
+    '<div>📊 得分: <b style="color:#2563eb;font-size:20px">'+score+'</b> 分</div>'+
+    '</div>'+
+    '<div style="margin-top:24px"><button class="ft-btn next" onclick="reviewExam()" style="font-size:15px;padding:10px 32px">🔍 查看解析</button></div>'+
+    '</div>';
+  document.getElementById('sbList').innerHTML = '';
+  updateSidebarSummary();
+}
+
+function reviewExam() {
+  examSubmitted = false; // allow navigation
+  currentIdx = 0;
+  buildSidebar();
+  renderQuestion();
+  // show all feedback
+  for (var i=0; i<questions.length; i++) { answers[i] = answers[i] || ''; }
+}
+
+function showFeedback() {
+  var fb = document.getElementById('fb');
+  if (!fb) return;
+  var q = questions[currentIdx];
+  var userAns = answers[currentIdx];
+  var correctAns = correctMap[currentIdx];
+  if (!userAns) return;
+  var isCorrect = userAns === correctAns;
+  fb.className = 'fb ' + (isCorrect ? 'correct' : 'wrong');
+  fb.style.display = 'block';
+  if (isCorrect) {
+    fb.innerHTML = '✅ 回答正确！';
+  } else {
+    fb.innerHTML = '❌ 回答错误！正确答案是 <b>'+correctAns+'</b>';
+  }
+  if (q.explanation) {
+    fb.innerHTML += '<div style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(0,0,0,.1)"><b>📖 解析：</b>'+escapeHTML(q.explanation)+'</div>';
+  }
+}
+
+// ═══════════ Footer ═══════════
+function updateFooter() {
+  var btns = document.querySelectorAll('.ft-btn.prev, .ft-btn.next');
+  if (btns.length>=2) {
+    btns[0].style.visibility = currentIdx===0 ? 'hidden' : 'visible';
+    btns[1].style.visibility = currentIdx===questions.length-1 ? 'hidden' : 'visible';
+  }
+}
+
+function toggleInfo() {
+  alert('考试平台 v21.2202.0.2400\n仿万维全自动网络考试平台\n黄锦文 14252347');
+}
+</script>
+</body>
+</html>
