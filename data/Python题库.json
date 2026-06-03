@@ -5423,7 +5423,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于 Python 函数定义的选项中，描述错误的是（）。",
     "options": [
@@ -5449,7 +5449,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下选项中，关于函数 return 语句的描述错误的是（）。",
     "options": [
@@ -5475,7 +5475,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "def f(a, b, c=10): 定义了三个参数，以下调用中错误的是（）。",
     "options": [
@@ -5501,7 +5501,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "关于函数参数的定义，以下选项中描述错误的是（）。",
     "options": [
@@ -5527,7 +5527,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\ndef add(*tup):\n    print(type(tup))\nadd(1, 2, 3)",
     "answer": "<class 'tuple'>",
@@ -5535,7 +5535,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。\ndef func(lst):\n    lst = [10, 20, 30]\nlst = [1, 2, 3]\nfunc(lst)\nprint(lst)",
     "options": [
@@ -5561,7 +5561,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。\ndef func(lst):\n    lst[2] = 30\nlst = [1, 2, 3]\nfunc(lst)\nprint(lst)",
     "options": [
@@ -5587,7 +5587,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于 lambda 函数的描述，错误的是（）。",
     "options": [
@@ -5613,7 +5613,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\nf = lambda x, y: x * y\nprint(f(3, 5))",
     "answer": "15",
@@ -5621,7 +5621,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "执行下列代码后，输出结果是（）。\nlist(map(lambda x: x ** 2, range(1, 5)))",
     "options": [
@@ -5647,7 +5647,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "执行下列代码后，输出结果是（）。\nlist(filter(lambda x: x % 3 == 0, range(1, 13)))",
     "options": [
@@ -5673,7 +5673,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于变量作用域的描述，正确的是（）。",
     "options": [
@@ -5699,7 +5699,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，第一行输出结果是【1】，第二行输出结果是【2】。\nx = 10\ndef f():\n    x = 100\n    print(x)\nf()\nprint(x)",
     "answer": "100|10",
@@ -5707,7 +5707,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "下面代码会发生什么？\nx = 5\ndef f():\n    print(x)\n    x = 10\nf()",
     "options": [
@@ -5733,7 +5733,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\ndef fac(n):\n    if n == 1:\n        return 1\n    return n * fac(n - 1)\nprint(fac(4))",
     "answer": "24",
@@ -5741,7 +5741,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "关于递归函数，以下描述错误的是（）。",
     "options": [
@@ -5767,7 +5767,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\ndef gcd(m, n):\n    if m % n == 0:\n        return n\n    return gcd(n, m % n)\nprint(gcd(24, 18))",
     "answer": "6",
@@ -5775,7 +5775,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "在 Python 中，一个 .py 文件被当作模块导入时，该文件中的以下哪段代码不会被执行？",
     "options": [
@@ -5801,7 +5801,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\nfrom datetime import datetime\ndt = datetime(2024, 6, 1, 12, 30, 0)\nprint(dt.strftime('%Y-%m-%d'))",
     "answer": "2024-06-01",
@@ -5809,7 +5809,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于 datetime 库的描述，错误的是（）。",
     "options": [
@@ -5835,7 +5835,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于函数调用时机的描述，正确的是（）。",
     "options": [
@@ -5861,7 +5861,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "如果想定义一个暂时不写函数体的函数，应该使用（）。",
     "options": [
@@ -5887,7 +5887,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\ndef f():\n    return 1, 2, 3\nprint(type(f()))",
     "answer": "<class 'tuple'>",
@@ -5895,7 +5895,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于函数调用时实参和形参的描述，错误的是（）。",
     "options": [
@@ -5921,7 +5921,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "def f(a, b, *args): 定义函数后，调用 f(1, 2, 3, 4, 5)，则 args 的值是（）。",
     "options": [
@@ -5947,7 +5947,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "def f(a, *b): 定义函数后，调用 f(1)，则 b 的值是（）。",
     "options": [
@@ -5973,7 +5973,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "调用函数时，以下关于关键字参数的说法，错误的是（）。",
     "options": [
@@ -5999,7 +5999,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】。\ndef total(**dic):\n    s = 0\n    for i in dic.values():\n        s = s + i\n    return s\nprint(total(语文=98, 数学=95, 英语=80))",
     "answer": "273",
@@ -6007,7 +6007,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下代码输出结果是（）。\ndef f(x, y):\n    if y:\n        print(x, 'and y both correct')\n    print(x, 'is OK')\nf(y=False, x=68)",
     "options": [
@@ -6033,7 +6033,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "关于函数参数传递，以下描述正确的是（）。",
     "options": [
@@ -6059,7 +6059,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "下面代码的输出结果是（）。\ndef change(a):\n    a = a + 10\n    return a\nx = 5\ny = change(x)\nprint(x, y)",
     "options": [
@@ -6085,7 +6085,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下代码的输出结果是（）。\nEngS = {'李刚':93, '陈静':78, '张金柱':88}\nresult = sorted(EngS.items(), key=lambda k: k[1], reverse=True)\nprint(result[0])",
     "options": [
@@ -6111,7 +6111,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "执行下列代码后，输出结果是【1】。\nlist(map(str.upper, ['hello', 'world']))",
     "answer": "['HELLO', 'WORLD']",
@@ -6119,7 +6119,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "关于 filter(None, iterable) 的执行结果，以下描述正确的是（）。",
     "options": [
@@ -6145,7 +6145,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "关于全局变量和局部变量，下面代码会发生什么？\ndef f():\n    global x\n    x = 100\nx = 10\nf()\nprint(x)",
     "options": [
@@ -6171,7 +6171,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "关于局部变量的生命周期，以下描述正确的是（）。",
     "options": [
@@ -6197,7 +6197,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于递归调用的执行过程，描述正确的是（）。",
     "options": [
@@ -6223,7 +6223,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "如果递归函数缺少终止条件，会发生什么？",
     "options": [
@@ -6249,7 +6249,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "单选题",
     "stem": "以下关于模块导入的说法，错误的是（）。",
     "options": [
@@ -6275,7 +6275,7 @@
   },
   {
     "chapter": "Python",
-    "chapter_title": "第四章自测",
+    "chapter_title": "第4章自测",
     "type": "填空题",
     "stem": "阅读下列程序，输出结果是【1】秒。\nfrom datetime import datetime\nstart = datetime(2024, 1, 1, 0, 0, 0)\nend = datetime(2024, 1, 1, 0, 0, 45)\ndelta = end - start\nprint(delta.seconds)",
     "answer": "45",
@@ -6975,5 +6975,453 @@
     "options": [],
     "answer": "False",
     "explanation": "运算符优先级：算术 > 关系 > 逻辑。先算 3+5=8 和 2+1=3，再比较 8>3=True 和 'a'>'b'=False，最后 True and False = False。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "以下代码的输出结果是（）。\nx = 5\nif x > 0:\n    print('正数')\nelse:\n    print('非正数')",
+    "options": [
+      {
+        "label": "A",
+        "text": "正数"
+      },
+      {
+        "label": "B",
+        "text": "非正数"
+      },
+      {
+        "label": "C",
+        "text": "无输出"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "A",
+    "explanation": "x=5>0，执行 if 分支，输出'正数'。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "填空题",
+    "stem": "以下代码的输出结果是【1】。\nx = 3\ny = 5\nm = x if x > y else y\nprint(m)",
+    "answer": "5",
+    "explanation": "条件运算：x=3 不大于 y=5，取 y 的值 5。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "以下关于 if-elif-else 语句的描述，错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "elif 可以有多个"
+      },
+      {
+        "label": "B",
+        "text": "else 可以省略"
+      },
+      {
+        "label": "C",
+        "text": "elif 等价于 else if"
+      },
+      {
+        "label": "D",
+        "text": "一旦某个分支匹配，后续不再判断"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Python 中 elif 是独立关键字，不能写成 else if（那是嵌套另一个 if）。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "if 语句的嵌套是指（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "多个 if 并列使用"
+      },
+      {
+        "label": "B",
+        "text": "在一个 if 内部再使用 if"
+      },
+      {
+        "label": "C",
+        "text": "用 elif 代替 else"
+      },
+      {
+        "label": "D",
+        "text": "合并条件表达式"
+      }
+    ],
+    "answer": "B",
+    "explanation": "if 嵌套是在一个 if 代码块内部再写另一个 if，用于多层判断。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "填空题",
+    "stem": "统计正整数 n 是几位数，输出结果是【1】。\nn = 12345\ncount = 0\nwhile n > 0:\n    count = count + 1\n    n = n // 10\nprint(count)",
+    "answer": "5",
+    "explanation": "每次 n//10 去一位，12345→1234→123→12→1→0，count 累加 5 次。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "关于 while 循环，正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "while 至少执行一次"
+      },
+      {
+        "label": "B",
+        "text": "条件在循环体后判断"
+      },
+      {
+        "label": "C",
+        "text": "条件初始为 False 则一次不执行"
+      },
+      {
+        "label": "D",
+        "text": "while 不能嵌套"
+      }
+    ],
+    "answer": "C",
+    "explanation": "while 先判断后执行，初始 False 则循环体一次都不执行。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "辗转相除法求最大公约数的核心循环是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "for i in range(m):"
+      },
+      {
+        "label": "B",
+        "text": "while r!=0: m=n; n=r; r=m%n"
+      },
+      {
+        "label": "C",
+        "text": "while m>0: m=m-n"
+      },
+      {
+        "label": "D",
+        "text": "for i in range(n,0,-1):"
+      }
+    ],
+    "answer": "B",
+    "explanation": "辗转相除：余数 r≠0 时，n→m，r→n，重新求余，直到 r=0。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "以下代码输出结果是（）。\nfor i in range(1,10,2):\n    print(i,end=',')\nprint('end')",
+    "options": [
+      {
+        "label": "A",
+        "text": "1,3,5,7,9,end"
+      },
+      {
+        "label": "B",
+        "text": "1,3,5,7,9,end,"
+      },
+      {
+        "label": "C",
+        "text": "1,2,...,10,end"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "A",
+    "explanation": "range(1,10,2) 生成 1,3,5,7,9，不含 10。最后打印 'end'。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "list(range(10,0,-1)) 的结果是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "[]"
+      },
+      {
+        "label": "B",
+        "text": "[10,9,8,7,6,5,4,3,2,1]"
+      },
+      {
+        "label": "C",
+        "text": "[10,...,1,0]"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "B",
+    "explanation": "range(10,0,-1) 从 10 到 1，不含 0。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "列表推导式 [i*i for i in range(1,6) if i%2==0] 的结果是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "[1,9,25]"
+      },
+      {
+        "label": "B",
+        "text": "[4,16]"
+      },
+      {
+        "label": "C",
+        "text": "[2,4]"
+      },
+      {
+        "label": "D",
+        "text": "[1,4,9,16,25]"
+      }
+    ],
+    "answer": "B",
+    "explanation": "range(1,6)→[1,2,3,4,5]，偶数为 2,4，平方得 [4,16]。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "以下代码输出结果是（）。\nfor i in range(10):\n    if i==5: break\n    print(i,end=' ')",
+    "options": [
+      {
+        "label": "A",
+        "text": "0 1 2 3 4"
+      },
+      {
+        "label": "B",
+        "text": "0 1 2 3 4 5"
+      },
+      {
+        "label": "C",
+        "text": "5 6 7 8 9"
+      },
+      {
+        "label": "D",
+        "text": "不输出"
+      }
+    ],
+    "answer": "A",
+    "explanation": "i==5 时 break 终止，只输出 0~4。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "填空题",
+    "stem": "以下代码的输出结果是【1】。\ni=0\nwhile i<10:\n    i=i+1\n    if i%2==0: continue\n    print(i,end=',')\nprint('end')",
+    "answer": "1,3,5,7,9,end",
+    "explanation": "i%2==0 时 continue 跳过 print，只输出奇数 1,3,5,7,9，最后打印 'end'。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "关于 for-else 结构，以下代码输出结果是（）。\nfor i in range(2,11):\n    for j in range(2,i):\n        if i%j==0: break\n    else:\n        print(i,end=' ')",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 3 5 7"
+      },
+      {
+        "label": "B",
+        "text": "2 3 4 5 6 7 8 9 10"
+      },
+      {
+        "label": "C",
+        "text": "2 3 5 7 11"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "A",
+    "explanation": "for-else: 内层没被 break 时 else 执行，输出素数 2,3,5,7。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "break 和 continue 的区别，正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "break 跳过本次，continue 结束整个循环"
+      },
+      {
+        "label": "B",
+        "text": "break 结束整个循环，continue 跳过本次"
+      },
+      {
+        "label": "C",
+        "text": "两者功能相同"
+      },
+      {
+        "label": "D",
+        "text": "break 只用于 for，continue 只用于 while"
+      }
+    ],
+    "answer": "B",
+    "explanation": "break 终止整个循环，continue 只跳过本次迭代。两者都可用于 for 和 while。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "关于 random.seed()，正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "seed() 用于生成随机小数"
+      },
+      {
+        "label": "B",
+        "text": "相同 seed 值产生相同随机序列"
+      },
+      {
+        "label": "C",
+        "text": "seed() 不需要参数"
+      },
+      {
+        "label": "D",
+        "text": "seed() 返回一个随机数"
+      }
+    ],
+    "answer": "B",
+    "explanation": "seed(a) 固定随机种子为 a，相同种子产生相同序列，方便调试。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "返回 [a,b] 之间随机整数的函数是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "random()"
+      },
+      {
+        "label": "B",
+        "text": "uniform(a,b)"
+      },
+      {
+        "label": "C",
+        "text": "randint(a,b)"
+      },
+      {
+        "label": "D",
+        "text": "choice([a,b])"
+      }
+    ],
+    "answer": "C",
+    "explanation": "randint(a,b) 返回 [a,b] 之间的随机整数，包含两端。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "random.sample([1,2,3,4,5],2) 返回（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "一个随机整数"
+      },
+      {
+        "label": "B",
+        "text": "含 2 个不重复元素的列表"
+      },
+      {
+        "label": "C",
+        "text": "含 2 个元素的元组"
+      },
+      {
+        "label": "D",
+        "text": "一个随机小数"
+      }
+    ],
+    "answer": "B",
+    "explanation": "sample(seq,k) 随机选取 k 个不重复元素，返回列表。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "关于 try-except 的 else 子句，正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "发生异常时执行"
+      },
+      {
+        "label": "B",
+        "text": "没有异常时执行"
+      },
+      {
+        "label": "C",
+        "text": "无论是否异常都执行"
+      },
+      {
+        "label": "D",
+        "text": "在 except 之前执行"
+      }
+    ],
+    "answer": "B",
+    "explanation": "else 只在 try 块没有异常时执行。发生异常则跳到 except。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "单选题",
+    "stem": "输入 'abc' 时，以下代码输出是（）。\ntry:\n    x=int(input('请输入整数:'))\n    print(10/x)\nexcept ValueError:\n    print('输入不是整数')",
+    "options": [
+      {
+        "label": "A",
+        "text": "输入不是整数"
+      },
+      {
+        "label": "B",
+        "text": "程序报错终止"
+      },
+      {
+        "label": "C",
+        "text": "无输出"
+      },
+      {
+        "label": "D",
+        "text": "输出 0"
+      }
+    ],
+    "answer": "A",
+    "explanation": "int('abc') 抛出 ValueError，被 except 捕获，输出'输入不是整数'。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第3章自测",
+    "type": "填空题",
+    "stem": "以下代码输出结果是【1】（用逗号分隔，如 A,C,E）。\ntry:\n    print('A')\n    x=1/0\n    print('B')\nexcept:\n    print('C')\nelse:\n    print('D')\nfinally:\n    print('E')",
+    "answer": "A,C,E",
+    "explanation": "输出 A→1/0 触发异常→跳到 except 输出 C→finally 输出 E。B 和 D（else）不执行。"
   }
 ]
