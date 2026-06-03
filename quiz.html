@@ -180,7 +180,12 @@ function getChapterKey(q) {
 function buildChapterUI() {
   const isPython = subject === 'Python题库';
   const chapters = [...new Set(allQuestions.map(q => getChapterKey(q)))]
-    .sort((a, b) => String(a).localeCompare(String(b), undefined, {numeric: true}));
+      .sort((a, b) => {
+        const aTest = String(a).includes('自测'), bTest = String(b).includes('自测');
+        if (aTest && !bTest) return 1;
+        if (!aTest && bTest) return -1;
+        return String(a).localeCompare(String(b), undefined, {numeric: true});
+      });
 
   const cf = getEl('cf'), cml = getEl('cml');
   chapters.forEach(ch => {
