@@ -5420,5 +5420,865 @@
     ],
     "answer": "i+1|i*j",
     "explanation": "与Q200相同的9×9乘法口诀表程序。range(1, i+1)使第i行有i个算式，【1】填i+1。format中乘积为i*j，【2】填i*j。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于 Python 函数定义的选项中，描述错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "函数定义使用 def 关键字，函数体必须缩进"
+      },
+      {
+        "label": "B",
+        "text": "函数可以没有参数，但调用时圆括号不能省略"
+      },
+      {
+        "label": "C",
+        "text": "函数可以没有 return 语句，此时返回 None"
+      },
+      {
+        "label": "D",
+        "text": "return 语句可以放在函数体的任意位置，包括 if/for 等语句块之外"
+      }
+    ],
+    "answer": "D",
+    "explanation": "return 语句必须出现在函数体内部，可以出现在 if/for 等语句块中，但不能独立于函数体存在。A、B、C 描述均正确。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下选项中，关于函数 return 语句的描述错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "return 可以返回多个值，多个值会被打包成一个元组"
+      },
+      {
+        "label": "B",
+        "text": "如果函数没有 return 语句，默认返回 None"
+      },
+      {
+        "label": "C",
+        "text": "return 语句执行后，函数立即结束，后面的代码不再执行"
+      },
+      {
+        "label": "D",
+        "text": "一个函数中最多只能有一条 return 语句"
+      }
+    ],
+    "answer": "D",
+    "explanation": "一个函数中可以有多个 return 语句，通常放在不同的条件分支中。例如在 if/else 的不同分支各写一个 return。D 选项错误。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "def f(a, b, c=10): 定义了三个参数，以下调用中错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "f(1, 2, 3)"
+      },
+      {
+        "label": "B",
+        "text": "f(1, 2)"
+      },
+      {
+        "label": "C",
+        "text": "f(a=1, b=2, c=3)"
+      },
+      {
+        "label": "D",
+        "text": "f(c=3, 1, 2)"
+      }
+    ],
+    "answer": "D",
+    "explanation": "关键字参数必须放在位置参数之后。D 选项中 c=3（关键字参数）出现在 1 和 2（位置参数）之前，违反规则。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "关于函数参数的定义，以下选项中描述错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "def f(a, b=10): 中 b 是默认参数，调用时可省略"
+      },
+      {
+        "label": "B",
+        "text": "def f(a=10, b): 是合法的函数定义"
+      },
+      {
+        "label": "C",
+        "text": "def f(*args): 中 args 接收到的类型是元组"
+      },
+      {
+        "label": "D",
+        "text": "def f(**kwargs): 中 kwargs 接收到的类型是字典"
+      }
+    ],
+    "answer": "B",
+    "explanation": "默认参数必须放在非默认参数之后。B 中 a=10 是默认参数却放在 b 前面，是非法的定义。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\ndef add(*tup):\n    print(type(tup))\nadd(1, 2, 3)",
+    "answer": "<class 'tuple'>",
+    "explanation": "可变长度参数 *tup 将多余的实参收集为一个元组，type(tup) 输出 <class 'tuple'>，而非 list。这是高频考点。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "下面代码的输出结果是（）。\ndef func(lst):\n    lst = [10, 20, 30]\nlst = [1, 2, 3]\nfunc(lst)\nprint(lst)",
+    "options": [
+      {
+        "label": "A",
+        "text": "[1, 2, 3]"
+      },
+      {
+        "label": "B",
+        "text": "[10, 20, 30]"
+      },
+      {
+        "label": "C",
+        "text": "[1, 2, 3, 10, 20, 30]"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "A",
+    "explanation": "函数内 lst=[10,20,30] 是对形参重新赋值，形参指向了新对象，不影响外部实参。外部 lst 仍为 [1,2,3]。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "下面代码的输出结果是（）。\ndef func(lst):\n    lst[2] = 30\nlst = [1, 2, 3]\nfunc(lst)\nprint(lst)",
+    "options": [
+      {
+        "label": "A",
+        "text": "[1, 2, 3]"
+      },
+      {
+        "label": "B",
+        "text": "[1, 2, 30]"
+      },
+      {
+        "label": "C",
+        "text": "[1, 30, 3]"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "B",
+    "explanation": "lst[2]=30 是逐个修改列表元素，而非对形参整体赋值，修改的是同一对象。因此外部实参同步变化，输出 [1,2,30]。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于 lambda 函数的描述，错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "lambda 函数是一种匿名函数"
+      },
+      {
+        "label": "B",
+        "text": "lambda 函数可以包含多行语句"
+      },
+      {
+        "label": "C",
+        "text": "lambda 函数的函数体只能是一个表达式"
+      },
+      {
+        "label": "D",
+        "text": "lambda 函数可以赋值给一个变量名"
+      }
+    ],
+    "answer": "B",
+    "explanation": "lambda 函数体只能是单个表达式，不能包含多行语句（如 for 循环、if/else 多分支等）。B 选项错误。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\nf = lambda x, y: x * y\nprint(f(3, 5))",
+    "answer": "15",
+    "explanation": "lambda x, y: x * y 定义了一个匿名乘法函数。f(3, 5) 等价于 3×5=15。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "执行下列代码后，输出结果是（）。\nlist(map(lambda x: x ** 2, range(1, 5)))",
+    "options": [
+      {
+        "label": "A",
+        "text": "[1, 4, 9, 16]"
+      },
+      {
+        "label": "B",
+        "text": "[1, 2, 3, 4]"
+      },
+      {
+        "label": "C",
+        "text": "[2, 4, 6, 8]"
+      },
+      {
+        "label": "D",
+        "text": "[1, 4, 9, 16, 25]"
+      }
+    ],
+    "answer": "A",
+    "explanation": "map(lambda x: x**2, range(1,5)) 对 1~4 每个元素求平方：1²=1, 2²=4, 3²=9, 4²=16。range(1,5) 不含 5。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "执行下列代码后，输出结果是（）。\nlist(filter(lambda x: x % 3 == 0, range(1, 13)))",
+    "options": [
+      {
+        "label": "A",
+        "text": "[3, 6, 9, 12]"
+      },
+      {
+        "label": "B",
+        "text": "[3, 6, 9]"
+      },
+      {
+        "label": "C",
+        "text": "[1, 2, 4, 5, 7, 8, 10, 11]"
+      },
+      {
+        "label": "D",
+        "text": "[3, 6, 9, 12, 15]"
+      }
+    ],
+    "answer": "A",
+    "explanation": "filter(lambda x: x%3==0, range(1,13)) 筛选 1~12 中能被 3 整除的数：3, 6, 9, 12。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于变量作用域的描述，正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "函数内部定义的变量可以在函数外部直接使用"
+      },
+      {
+        "label": "B",
+        "text": "局部变量和全局变量同名时，函数内部优先使用全局变量"
+      },
+      {
+        "label": "C",
+        "text": "使用 global 关键字可以在函数内部修改全局变量的值"
+      },
+      {
+        "label": "D",
+        "text": "函数外部定义的变量不能在函数内部访问"
+      }
+    ],
+    "answer": "C",
+    "explanation": "A 错，局部变量仅函数内有效。B 错，同名时局部遮蔽全局。C 正确，global 声明后可修改全局变量。D 错，全局变量在函数内可读（只要不同名遮蔽）。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，第一行输出结果是【1】，第二行输出结果是【2】。\nx = 10\ndef f():\n    x = 100\n    print(x)\nf()\nprint(x)",
+    "answer": "100|10",
+    "explanation": "函数内 x=100 创建同名局部变量，遮蔽全局 x。函数内 print(x) 输出 100。函数结束后局部 x 释放，外部 print(x) 输出全局值 10。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "下面代码会发生什么？\nx = 5\ndef f():\n    print(x)\n    x = 10\nf()",
+    "options": [
+      {
+        "label": "A",
+        "text": "先输出 5，然后 x 变为 10"
+      },
+      {
+        "label": "B",
+        "text": "输出 5"
+      },
+      {
+        "label": "C",
+        "text": "报错 UnboundLocalError"
+      },
+      {
+        "label": "D",
+        "text": "输出 10"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Python 编译时发现函数内有 x=10 的赋值，将整个函数内的 x 视为局部变量。print(x) 执行时局部 x 尚未赋值，抛出 UnboundLocalError。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\ndef fac(n):\n    if n == 1:\n        return 1\n    return n * fac(n - 1)\nprint(fac(4))",
+    "answer": "24",
+    "explanation": "递归求阶乘：fac(4)=4×fac(3)=4×3×fac(2)=4×3×2×fac(1)=4×3×2×1=24。注意终止条件 n==1 返回 1。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "关于递归函数，以下描述错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "递归函数必须有一个终止条件"
+      },
+      {
+        "label": "B",
+        "text": "每次递归调用必须向终止条件靠近"
+      },
+      {
+        "label": "C",
+        "text": "递归函数一定比循环执行速度快"
+      },
+      {
+        "label": "D",
+        "text": "递归函数在自身内部调用自己"
+      }
+    ],
+    "answer": "C",
+    "explanation": "递归函数调用自身有函数调用开销，通常比等价的循环实现速度慢。递归的优势在于代码简洁易读，而非执行速度。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\ndef gcd(m, n):\n    if m % n == 0:\n        return n\n    return gcd(n, m % n)\nprint(gcd(24, 18))",
+    "answer": "6",
+    "explanation": "辗转相除求最大公约数：gcd(24,18)→gcd(18,6)→6（因 18%6==0）→返回 6。24 和 18 的最大公约数为 6。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "在 Python 中，一个 .py 文件被当作模块导入时，该文件中的以下哪段代码不会被执行？",
+    "options": [
+      {
+        "label": "A",
+        "text": "函数定义 def func(): ..."
+      },
+      {
+        "label": "B",
+        "text": "类定义 class MyClass: ..."
+      },
+      {
+        "label": "C",
+        "text": "if __name__ == '__main__': 下面的代码块"
+      },
+      {
+        "label": "D",
+        "text": "模块顶层的 print('hello')"
+      }
+    ],
+    "answer": "C",
+    "explanation": "if __name__ == '__main__': 保护的代码只在直接运行该文件时执行，被 import 时 __name__ 等于模块名（不是 '__main__'），因此该代码块不执行。D 中顶层的 print 被 import 时仍会执行。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\nfrom datetime import datetime\ndt = datetime(2024, 6, 1, 12, 30, 0)\nprint(dt.strftime('%Y-%m-%d'))",
+    "answer": "2024-06-01",
+    "explanation": "strftime('%Y-%m-%d') 格式化输出年月日：%Y 四位年份、%m 两位月份、%d 两位日期。结果为 2024-06-01。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于 datetime 库的描述，错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "datetime.now() 可以获取当前日期和时间"
+      },
+      {
+        "label": "B",
+        "text": "两个 datetime 对象相减得到一个 timedelta 对象"
+      },
+      {
+        "label": "C",
+        "text": "strftime('%H') 可以获取当前小时（24 小时制）"
+      },
+      {
+        "label": "D",
+        "text": "strftime('%Y%m%d') 会输出类似 '2024-06-01' 的格式"
+      }
+    ],
+    "answer": "D",
+    "explanation": "strftime('%Y%m%d') 输出格式为 '20240601'（无分隔符），而非 '2024-06-01'（有连字符）。要输出带连字符的格式应使用 '%Y-%m-%d'。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于函数调用时机的描述，正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "函数可以在定义之前调用"
+      },
+      {
+        "label": "B",
+        "text": "函数定义和调用的先后顺序没有关系"
+      },
+      {
+        "label": "C",
+        "text": "函数必须先定义，然后才可以被调用"
+      },
+      {
+        "label": "D",
+        "text": "只要 import 了模块，就可以调用还未定义的函数"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Python 中函数必须先定义后调用。A 错误，调用未定义函数会报 NameError。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "如果想定义一个暂时不写函数体的函数，应该使用（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "return"
+      },
+      {
+        "label": "B",
+        "text": "pass"
+      },
+      {
+        "label": "C",
+        "text": "continue"
+      },
+      {
+        "label": "D",
+        "text": "None"
+      }
+    ],
+    "answer": "B",
+    "explanation": "pass 是空语句，用作占位符。定义空函数体时写 pass，否则缩进块为空会导致 SyntaxError。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\ndef f():\n    return 1, 2, 3\nprint(type(f()))",
+    "answer": "<class 'tuple'>",
+    "explanation": "return 1,2,3 返回多个值时，Python 自动将它们打包成一个元组。type(f()) 输出 <class 'tuple'>。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于函数调用时实参和形参的描述，错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "实参和形参的个数通常应该相同"
+      },
+      {
+        "label": "B",
+        "text": "实参可以是常量、变量或表达式"
+      },
+      {
+        "label": "C",
+        "text": "形参只有在函数被调用时才分配内存空间"
+      },
+      {
+        "label": "D",
+        "text": "形参在函数定义时就已经分配了内存空间"
+      }
+    ],
+    "answer": "D",
+    "explanation": "形参只有在函数被调用后才分配内存空间，调用结束后释放。定义时只是声明参数名，不分配空间。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "def f(a, b, *args): 定义函数后，调用 f(1, 2, 3, 4, 5)，则 args 的值是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "(3, 4, 5)"
+      },
+      {
+        "label": "B",
+        "text": "[3, 4, 5]"
+      },
+      {
+        "label": "C",
+        "text": "(1, 2, 3, 4, 5)"
+      },
+      {
+        "label": "D",
+        "text": "(3,)"
+      }
+    ],
+    "answer": "A",
+    "explanation": "位置参数 a=1, b=2 先匹配，剩余 3,4,5 被 *args 收集为元组 (3,4,5)。注意类型是元组不是列表。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "def f(a, *b): 定义函数后，调用 f(1)，则 b 的值是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "None"
+      },
+      {
+        "label": "B",
+        "text": "()"
+      },
+      {
+        "label": "C",
+        "text": "[]"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "B",
+    "explanation": "当没有多余实参时，*b 收集到空元组 ()。可变参数允许传入 0 个额外实参，不会报错。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "调用函数时，以下关于关键字参数的说法，错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "关键字参数可以改变参数传递的顺序"
+      },
+      {
+        "label": "B",
+        "text": "同一个参数不能同时通过位置和关键字两种方式传递"
+      },
+      {
+        "label": "C",
+        "text": "关键字参数可以让调用时每个参数的含义更清晰"
+      },
+      {
+        "label": "D",
+        "text": "关键字参数可以出现在位置参数之前"
+      }
+    ],
+    "answer": "D",
+    "explanation": "关键字参数必须放在位置参数之后。f(y=1, 2) 会报 SyntaxError。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】。\ndef total(**dic):\n    s = 0\n    for i in dic.values():\n        s = s + i\n    return s\nprint(total(语文=98, 数学=95, 英语=80))",
+    "answer": "273",
+    "explanation": "**dic 收集关键字参数为字典 {'语文':98,'数学':95,'英语':80}。遍历 values 求和：98+95+80=273。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下代码输出结果是（）。\ndef f(x, y):\n    if y:\n        print(x, 'and y both correct')\n    print(x, 'is OK')\nf(y=False, x=68)",
+    "options": [
+      {
+        "label": "A",
+        "text": "68 is OK"
+      },
+      {
+        "label": "B",
+        "text": "报错"
+      },
+      {
+        "label": "C",
+        "text": "68 and y both correct\\n68 is OK"
+      },
+      {
+        "label": "D",
+        "text": "无输出"
+      }
+    ],
+    "answer": "A",
+    "explanation": "y=False 为假，不执行 if 内的 print。只执行最后的 print(x,'is OK')，输出 68 is OK。关键字参数可以任意顺序。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "关于函数参数传递，以下描述正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无论实参是否可变，调用函数后实参都不会改变"
+      },
+      {
+        "label": "B",
+        "text": "如果实参是不可变类型（如整数），函数内对形参的修改一定会影响实参"
+      },
+      {
+        "label": "C",
+        "text": "如果实参是可变类型（如列表），对形参整个重新赋值不会影响实参"
+      },
+      {
+        "label": "D",
+        "text": "所有类型实参在函数内被修改后，外部实参都会同步变化"
+      }
+    ],
+    "answer": "C",
+    "explanation": "对形参整个重新赋值（如 lst=[10,20]）是让形参指向新对象，不影响外部实参——无论实参是什么类型。逐个修改元素（如 lst[2]=30）才会影响外部。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "下面代码的输出结果是（）。\ndef change(a):\n    a = a + 10\n    return a\nx = 5\ny = change(x)\nprint(x, y)",
+    "options": [
+      {
+        "label": "A",
+        "text": "5 15"
+      },
+      {
+        "label": "B",
+        "text": "15 15"
+      },
+      {
+        "label": "C",
+        "text": "5 5"
+      },
+      {
+        "label": "D",
+        "text": "15 5"
+      }
+    ],
+    "answer": "A",
+    "explanation": "整数不可变，函数内 a=a+10 创建了新整数对象，不影响外部 x（仍为 5）。返回值 15 赋给 y。所以 x=5, y=15。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下代码的输出结果是（）。\nEngS = {'李刚':93, '陈静':78, '张金柱':88}\nresult = sorted(EngS.items(), key=lambda k: k[1], reverse=True)\nprint(result[0])",
+    "options": [
+      {
+        "label": "A",
+        "text": "('陈静', 78)"
+      },
+      {
+        "label": "B",
+        "text": "('张金柱', 88)"
+      },
+      {
+        "label": "C",
+        "text": "('李刚', 93)"
+      },
+      {
+        "label": "D",
+        "text": "报错"
+      }
+    ],
+    "answer": "C",
+    "explanation": "sorted 按 key=lambda k:k[1]（元组第二个元素=分数）降序排列，最高分 93 的李刚排第一。而 sorted 返回列表并非原地排序，原 EngS 不变。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "执行下列代码后，输出结果是【1】。\nlist(map(str.upper, ['hello', 'world']))",
+    "answer": "['HELLO', 'WORLD']",
+    "explanation": "map 的第一个参数可以是已有函数名（如 str.upper），对每个元素调用该方法。也可写成 map(lambda s: s.upper(), ...)。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "关于 filter(None, iterable) 的执行结果，以下描述正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "返回可迭代对象中的所有元素"
+      },
+      {
+        "label": "B",
+        "text": "过滤掉值为 0、False、空字符串等假值元素"
+      },
+      {
+        "label": "C",
+        "text": "将所有元素转为 None"
+      },
+      {
+        "label": "D",
+        "text": "报错，因为 None 不是函数"
+      }
+    ],
+    "answer": "B",
+    "explanation": "filter(None, iterable) 等价于 filter(lambda x: x, iterable)，过滤掉所有假值（0、False、None、''、[]等）。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "关于全局变量和局部变量，下面代码会发生什么？\ndef f():\n    global x\n    x = 100\nx = 10\nf()\nprint(x)",
+    "options": [
+      {
+        "label": "A",
+        "text": "输出 10"
+      },
+      {
+        "label": "B",
+        "text": "输出 100"
+      },
+      {
+        "label": "C",
+        "text": "报错"
+      },
+      {
+        "label": "D",
+        "text": "输出 None"
+      }
+    ],
+    "answer": "B",
+    "explanation": "global x 声明后，函数内 x=100 直接修改全局变量 x。外部 print(x) 输出 100。没有 global 声明则输出 10。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "关于局部变量的生命周期，以下描述正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "函数调用结束后局部变量仍然保留，下次调用可继续使用"
+      },
+      {
+        "label": "B",
+        "text": "函数调用结束后局部变量被释放，下次调用会重新创建"
+      },
+      {
+        "label": "C",
+        "text": "局部变量的值会一直保留到程序结束"
+      },
+      {
+        "label": "D",
+        "text": "局部变量可以在不同的函数之间共享"
+      }
+    ],
+    "answer": "B",
+    "explanation": "局部变量随函数调用创建，调用结束即释放。每次调用函数都是全新的局部变量空间。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于递归调用的执行过程，描述正确的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "只有递推过程，没有回归过程"
+      },
+      {
+        "label": "B",
+        "text": "先递推（逐层调用），再回归（逐层返回）"
+      },
+      {
+        "label": "C",
+        "text": "先回归再递推"
+      },
+      {
+        "label": "D",
+        "text": "递推和回归同时进行"
+      }
+    ],
+    "answer": "B",
+    "explanation": "递归分两阶段：递推阶段逐层调用自身直到终止条件，回归阶段从最底层逐层返回计算结果。如 fac(4)→4*fac(3)→...→24。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "如果递归函数缺少终止条件，会发生什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "函数正常返回 None"
+      },
+      {
+        "label": "B",
+        "text": "函数只执行一次"
+      },
+      {
+        "label": "C",
+        "text": "无限递归，最终抛出 RecursionError"
+      },
+      {
+        "label": "D",
+        "text": "Python 会自动添加终止条件"
+      }
+    ],
+    "answer": "C",
+    "explanation": "缺少终止条件的递归会无限调用自身，直到超出 Python 递归深度限制（默认约 1000 层），抛出 RecursionError。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "单选题",
+    "stem": "以下关于模块导入的说法，错误的是（）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "import math 导入后，调用 math.floor(4.8)"
+      },
+      {
+        "label": "B",
+        "text": "from math import floor 导入后，可以直接调用 floor(4.8)"
+      },
+      {
+        "label": "C",
+        "text": "同一个模块被多次 import 时，每次都会重新执行模块代码"
+      },
+      {
+        "label": "D",
+        "text": "if __name__ == '__main__' 保护的代码被导入时不执行"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Python 的 import 有缓存机制，同一个模块被多次 import 时只执行一次，后续 import 直接从缓存读取。C 错误。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "函数",
+    "type": "填空题",
+    "stem": "阅读下列程序，输出结果是【1】秒。\nfrom datetime import datetime\nstart = datetime(2024, 1, 1, 0, 0, 0)\nend = datetime(2024, 1, 1, 0, 0, 45)\ndelta = end - start\nprint(delta.seconds)",
+    "answer": "45",
+    "explanation": "两个 datetime 对象相减得到 timedelta 对象。delta.seconds 返回时间差的秒数（只含时分秒部分，不含天数）。45 秒 = 45。"
   }
 ]
