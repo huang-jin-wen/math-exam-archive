@@ -7817,5 +7817,968 @@
     "stem": "以下递推代码中，变量 t 的更新公式是【1】（用 t,x,n 表示）。\nt = x\nn = 1\nwhile abs(t) >= 0.000001:\n    t = t * x / n\n    n = n + 1",
     "answer": "t*x/n",
     "explanation": "递推公式 t_n = t_{n-1} × x / n，用于求 e^x 的泰勒展开。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "下列选项中，类的构造方法（初始化方法）的正确写法是哪一个？",
+    "options": [
+      {
+        "label": "A",
+        "text": "def _init_(self):"
+      },
+      {
+        "label": "B",
+        "text": "def __init__(self):"
+      },
+      {
+        "label": "C",
+        "text": "def __init(self):"
+      },
+      {
+        "label": "D",
+        "text": "def init__(self):"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Python中构造方法必须写作__init__，前后各两个下划线。A少一个下划线，C和D下划线数量或位置不对，均无法被Python识别为构造方法。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，执行p.show()时会发生什么？\n\nclass Person:\n    def __init__(self, name):\n        self.name = name\n    def show():\n        print(self.name)\n\np = Person(\"Jack\")\np.show()",
+    "options": [
+      {
+        "label": "A",
+        "text": "输出 Jack"
+      },
+      {
+        "label": "B",
+        "text": "抛出 TypeError，提示 show() 缺少参数"
+      },
+      {
+        "label": "C",
+        "text": "抛出 NameError"
+      },
+      {
+        "label": "D",
+        "text": "输出 None"
+      }
+    ],
+    "answer": "B",
+    "explanation": "show() 定义时缺少了self参数。调用实例方法时，Python会自动将实例本身作为第一个参数传入，因此实际传了1个参数但show()接受0个参数，导致TypeError。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，输出结果是什么？\n\nclass Dog:\n    legs = 4\n    def __init__(self, name):\n        self.name = name\n\nd1 = Dog(\"旺财\")\nd2 = Dog(\"来福\")\nd1.legs = 3\nprint(d1.legs, d2.legs, Dog.legs)",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 3 3"
+      },
+      {
+        "label": "B",
+        "text": "3 4 4"
+      },
+      {
+        "label": "C",
+        "text": "4 4 4"
+      },
+      {
+        "label": "D",
+        "text": "3 4 3"
+      }
+    ],
+    "answer": "B",
+    "explanation": "legs=4是类属性，所有实例共享。d1.legs=3是在d1上新建了一个同名的实例属性，只影响d1。d2没有实例属性legs，依然读取类属性4；Dog.legs访问类属性，仍为4。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "关于isinstance()函数，以下说法正确的是？\n\nclass A: pass\nclass B(A): pass\nb = B()",
+    "options": [
+      {
+        "label": "A",
+        "text": "isinstance(b, B) 返回 True，isinstance(b, A) 返回 False"
+      },
+      {
+        "label": "B",
+        "text": "isinstance(b, A) 返回 True，isinstance(b, B) 返回 False"
+      },
+      {
+        "label": "C",
+        "text": "isinstance(b, B) 和 isinstance(b, A) 都返回 True"
+      },
+      {
+        "label": "D",
+        "text": "isinstance(b, B) 和 isinstance(b, A) 都返回 False"
+      }
+    ],
+    "answer": "C",
+    "explanation": "isinstance()会检查继承链。B是A的子类，因此B的实例b既是B的实例，也是A的实例，两个检查都返回True。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，c.show()的输出是什么？\n\nclass Parent:\n    def show(self):\n        print(\"Parent\")\n\nclass Child(Parent):\n    def show(self):\n        print(\"Child\")\n\nc = Child()\nc.show()",
+    "options": [
+      {
+        "label": "A",
+        "text": "Parent"
+      },
+      {
+        "label": "B",
+        "text": "Child"
+      },
+      {
+        "label": "C",
+        "text": "先输出 Parent，再输出 Child"
+      },
+      {
+        "label": "D",
+        "text": "抛出错误"
+      }
+    ],
+    "answer": "B",
+    "explanation": "子类Child重写（override）了父类的show方法，因此调用c.show()时执行的是子类自己的show()，只输出\"Child\"。父类的show()被完全覆盖，不会自动执行。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，输出结果是什么？\n\nclass A:\n    def __init__(self):\n        print(\"A\", end=\" \")\n\nclass B(A):\n    def __init__(self):\n        print(\"B\", end=\" \")\n        super().__init__()\n\nB()",
+    "options": [
+      {
+        "label": "A",
+        "text": "A B"
+      },
+      {
+        "label": "B",
+        "text": "B A"
+      },
+      {
+        "label": "C",
+        "text": "A"
+      },
+      {
+        "label": "D",
+        "text": "B"
+      }
+    ],
+    "answer": "B",
+    "explanation": "B()触发B.__init__()，先执行print(\"B\")，再通过super().__init__()调用父类A的__init__()输出\"A\"。因此最终输出为\"B A\"。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，执行print(s.name)时会发生什么？\n\nclass Person:\n    def __init__(self, name):\n        self.name = name\n\nclass Student(Person):\n    def __init__(self, name, grade):\n        self.grade = grade\n\ns = Student(\"小明\", 90)\nprint(s.name)",
+    "options": [
+      {
+        "label": "A",
+        "text": "输出 小明"
+      },
+      {
+        "label": "B",
+        "text": "输出 None"
+      },
+      {
+        "label": "C",
+        "text": "抛出 AttributeError: 'Student' object has no attribute 'name'"
+      },
+      {
+        "label": "D",
+        "text": "输出 90"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Student.__init__()覆盖了父类的__init__()，但没有调用super().__init__()或Person.__init__()，因此self.name从未被赋值，访问s.name时抛出AttributeError。这是子类覆盖父类__init__时的常见陷阱。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下多继承代码，c.show()的输出是什么？\n\nclass A:\n    def show(self):\n        print(\"A\")\n\nclass B:\n    def show(self):\n        print(\"B\")\n\nclass C(A, B):\n    pass\n\nc = C()\nc.show()",
+    "options": [
+      {
+        "label": "A",
+        "text": "A"
+      },
+      {
+        "label": "B",
+        "text": "B"
+      },
+      {
+        "label": "C",
+        "text": "先输出 A，再输出 B"
+      },
+      {
+        "label": "D",
+        "text": "抛出错误，因为两个父类都有show方法"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Python多继承按照MRO（方法解析顺序）查找方法。C(A, B)中A写在前面，MRO顺序为C→A→B→object。A中找到了show()，直接调用，不再继续查找B。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，Counter.count的输出是什么？\n\nclass Counter:\n    count = 0\n    def __init__(self):\n        Counter.count += 1\n\na = Counter()\nb = Counter()\nc = Counter()\nprint(Counter.count)",
+    "options": [
+      {
+        "label": "A",
+        "text": "0"
+      },
+      {
+        "label": "B",
+        "text": "1"
+      },
+      {
+        "label": "C",
+        "text": "2"
+      },
+      {
+        "label": "D",
+        "text": "3"
+      }
+    ],
+    "answer": "D",
+    "explanation": "count是类属性，所有实例共享。每创建一个实例，__init__中通过Counter.count += 1修改类属性。创建了a、b、c三个实例，count从0累加到3。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "单选题",
+    "stem": "阅读以下代码，执行t.method(5)时会发生什么？\n\nclass Test:\n    def __init__(self, x):\n        self.x = x\n    def method(x, self):\n        return self.x + x\n\nt = Test(10)\nt.method(5)",
+    "options": [
+      {
+        "label": "A",
+        "text": "返回 15"
+      },
+      {
+        "label": "B",
+        "text": "返回 5"
+      },
+      {
+        "label": "C",
+        "text": "抛出 AttributeError"
+      },
+      {
+        "label": "D",
+        "text": "抛出 TypeError，参数数量不匹配"
+      }
+    ],
+    "answer": "C",
+    "explanation": "method定义时参数顺序写反了（self应放第一个）。调用t.method(5)时，Python把t传给x，把5传给self。self实际是整数5，self.x试图访问整数5的x属性，导致AttributeError。self必须永远是第一个参数。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "填空题",
+    "stem": "阅读以下代码，程序的输出结果为【1】。\n\nclass Book:\n    def __init__(self, title):\n        self.title = title\n\nb = Book(\"Python程序设计\")\nprint(b.title)",
+    "options": [],
+    "answer": "Python程序设计",
+    "explanation": "创建Book实例时，__init__将参数\"Python程序设计\"赋值给实例属性self.title。通过b.title访问该属性，输出\"Python程序设计\"。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "填空题",
+    "stem": "阅读以下代码，程序的输出结果为【1】。\n\nclass Animal:\n    def __init__(self):\n        self.type = \"动物\"\n\nclass Cat(Animal):\n    def __init__(self):\n        super().__init__()\n        self.name = \"猫咪\"\n\nc = Cat()\nprint(c.type, c.name)",
+    "options": [],
+    "answer": "动物 猫咪",
+    "explanation": "Cat.__init__()中先通过super().__init__()调用父类Animal的__init__()，设置self.type=\"动物\"；再设置self.name=\"猫咪\"。因此打印时两个属性都已正确赋值。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "填空题",
+    "stem": "阅读以下代码，程序的输出结果为【1】。\n\nclass Vehicle:\n    pass\n\nclass Car(Vehicle):\n    pass\n\nc = Car()\nprint(isinstance(c, Vehicle))",
+    "options": [],
+    "answer": "True",
+    "explanation": "Car继承自Vehicle，因此Car的实例c也是Vehicle的实例，isinstance(c, Vehicle)返回True。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "填空题",
+    "stem": "阅读以下代码，程序的输出结果为【1】。\n\nclass Father:\n    def greet(self):\n        return \"Hello\"\n\nclass Son(Father):\n    def greet(self):\n        return super().greet() + \" World\"\n\ns = Son()\nprint(s.greet())",
+    "options": [],
+    "answer": "Hello World",
+    "explanation": "Son重写了greet方法，内部通过super().greet()调用父类Father的greet()得到\"Hello\"，再拼接\" World\"，返回\"Hello World\"。这体现了方法重写中复用父类逻辑的典型模式。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第5章自测",
+    "type": "填空题",
+    "stem": "阅读以下代码，程序的输出结果为【1】。【2】【3】（三个值之间用一个空格分隔）。\n\nclass Demo:\n    x = 1\n    def __init__(self, y):\n        self.y = y\n\nd = Demo(10)\nprint(d.x, d.y, Demo.x)",
+    "options": [],
+    "answer": "1 10 1",
+    "explanation": "x=1是类属性，通过实例d.x和类名Demo.x均可访问，值都为1。d.y=10是实例属性（通过__init__设置）。因此输出\"1 10 1\"。类属性被所有实例共享，但实例属性各自独立。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第6章自测",
+    "type": "单选题",
+    "stem": "以下选项中，哪一项不属于算法的基本特征？",
+    "options": [
+      {
+        "label": "A",
+        "text": "确定性"
+      },
+      {
+        "label": "B",
+        "text": "可行性"
+      },
+      {
+        "label": "C",
+        "text": "无限性"
+      },
+      {
+        "label": "D",
+        "text": "有穷性"
+      }
+    ],
+    "answer": "C",
+    "explanation": "算法的五个基本特征是：确定性、可行性、有穷性、输入和输出。'无限性'与'有穷性'相反，不是算法的特征——算法必须在执行有限步之后终止。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第6章自测",
+    "type": "单选题",
+    "stem": "使用二分查找（折半查找）算法时，待查找的数据必须满足什么条件？",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据必须是整数类型"
+      },
+      {
+        "label": "B",
+        "text": "数据必须已经有序排列"
+      },
+      {
+        "label": "C",
+        "text": "数据量必须大于100"
+      },
+      {
+        "label": "D",
+        "text": "数据中不能有重复元素"
+      }
+    ],
+    "answer": "B",
+    "explanation": "二分查找也叫折半查找，它通过每次将查找范围缩小一半来提高效率，因此只适用于有序序列。如果数据无序，二分查找将无法正确工作，此时应使用顺序查找。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第6章自测",
+    "type": "单选题",
+    "stem": "关于冒泡排序算法（升序），以下描述正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "每次从未排序部分选出最小元素放到已排序末尾"
+      },
+      {
+        "label": "B",
+        "text": "不断比较相邻元素，将较大的元素逐步交换到后面"
+      },
+      {
+        "label": "C",
+        "text": "先将数据二分，再递归排序各半"
+      },
+      {
+        "label": "D",
+        "text": "随机选取一个基准元素进行分区排序"
+      }
+    ],
+    "answer": "B",
+    "explanation": "冒泡排序的核心思想是不断比较相邻的两个元素，如果前一个比后一个大（升序），则交换它们。每一轮比较会将当前未排序部分的最大值'冒泡'到最后。选项A描述的是选择排序。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第6章自测",
+    "type": "填空题",
+    "stem": "凯撒密码是一种简单且广为人知的替换加密技术，它将明文中的每个字母按固定的______进行移位后得到密文。例如偏移量为3时，明文HELLO加密后变为KHOOR。",
+    "answer": "偏移量",
+    "explanation": "凯撒密码的核心就是按固定偏移量移位字母。加密时每个字母在字母表中向后移动k位（k为偏移量），解密时向前移动k位。PPT中以偏移量3为例进行了演示。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第6章自测",
+    "type": "填空题",
+    "stem": "评价算法优劣的四个主要标准是：正确性、______、健壮性和时空性。",
+    "answer": "易读性",
+    "explanation": "算法的四个评价标准：正确性（能否正确实现功能）、易读性（是否易于阅读理解和调试修改）、健壮性（对非法输入能否妥善处理）、时空性（执行时间和内存占用的效率）。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "关于文本文件和二进制文件的区别，以下说法正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "文本文件有统一的字符编码，二进制文件没有统一的字符编码"
+      },
+      {
+        "label": "B",
+        "text": "二进制文件不能用文本方式打开"
+      },
+      {
+        "label": "C",
+        "text": "文本文件只能存储英文字符"
+      },
+      {
+        "label": "D",
+        "text": "二进制文件只能用二进制方式打开"
+      }
+    ],
+    "answer": "A",
+    "explanation": "文本文件由特定编码（如UTF-8、ANSI）的字符组成；二进制文件由0和1组成，没有统一字符编码。无论哪类文件，都可以用文本方式和二进制方式打开，故B、D错误。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "open()函数的默认打开模式是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "'w'（写入模式）"
+      },
+      {
+        "label": "B",
+        "text": "'a'（追加模式）"
+      },
+      {
+        "label": "C",
+        "text": "'r'（只读模式），且默认为文本文件方式"
+      },
+      {
+        "label": "D",
+        "text": "'rb'（二进制只读模式）"
+      }
+    ],
+    "answer": "C",
+    "explanation": "open()函数打开模式的默认值为'r'（读文件）；若不指定文本方式(t)还是二进制方式(b)，则默认以文本文件方式打开。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "执行 fp = open('test.txt', 'w') 后，如果 test.txt 文件已存在，以下说法正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "新写入的内容会追加到文件末尾"
+      },
+      {
+        "label": "B",
+        "text": "文件原有内容会被清空，然后写入新内容"
+      },
+      {
+        "label": "C",
+        "text": "程序会报错，因为文件已存在"
+      },
+      {
+        "label": "D",
+        "text": "程序会提示用户确认是否覆盖"
+      }
+    ],
+    "answer": "B",
+    "explanation": "'w'模式表示写入模式，如果文件已存在，会先清空文件原有内容，再写入新内容。若想保留原有内容并在末尾追加，应使用'a'（追加）模式。这是一道常见易错题。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "对于代码 fp = open('data.txt', 'r')，执行 s = fp.read() 后，s 的数据类型是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "列表（list）"
+      },
+      {
+        "label": "B",
+        "text": "字节流（bytes）"
+      },
+      {
+        "label": "C",
+        "text": "字符串（str）"
+      },
+      {
+        "label": "D",
+        "text": "文件对象（file object）"
+      }
+    ],
+    "answer": "C",
+    "explanation": "以文本方式（'r'）打开文件时，read()方法返回一个字符串；若以二进制方式（'rb'）打开，则read()返回字节流（bytes）。两者容易混淆。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "关于文件读取方法，以下描述错误的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "read() 不指定参数时读取整个文件，返回一个字符串"
+      },
+      {
+        "label": "B",
+        "text": "readline() 每次读取一行，读到文件末尾时返回空字符串 ''"
+      },
+      {
+        "label": "C",
+        "text": "readlines() 返回一个列表，每个元素是文件的一行"
+      },
+      {
+        "label": "D",
+        "text": "readline(n) 中的参数 n 表示跳过前 n 行后开始读取"
+      }
+    ],
+    "answer": "D",
+    "explanation": "readline(n)中的n表示从当前行读取n个字符（文本模式）或n个字节（二进制模式），而不是「跳过前n行」。如果n超出当前行剩余字符数，则读取到行尾为止。A、B、C的描述均正确。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "执行 lines = fp.readlines() 后，lines 的数据类型是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "字符串（str）"
+      },
+      {
+        "label": "B",
+        "text": "字节流（bytes）"
+      },
+      {
+        "label": "C",
+        "text": "列表（list），列表元素为字符串"
+      },
+      {
+        "label": "D",
+        "text": "元组（tuple）"
+      }
+    ],
+    "answer": "C",
+    "explanation": "readlines()方法以行为单位读取文件，返回一个列表，列表中的每个元素是文件中的一行（字符串类型，包含换行符）。注意与read()返回字符串的区别。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "执行 fp.write('Hello') 的返回值是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "None"
+      },
+      {
+        "label": "B",
+        "text": "True，表示写入成功"
+      },
+      {
+        "label": "C",
+        "text": "写入的字符数，即 5"
+      },
+      {
+        "label": "D",
+        "text": "字符串 'Hello'"
+      }
+    ],
+    "answer": "C",
+    "explanation": "write()方法返回写入的字符数（文本模式）或字节数（二进制模式）。'Hello'共5个字符，因此返回5。这是PPT中明确演示的知识点。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "关于 with 语句打开文件，以下说法错误的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "with 语句结束后文件会被自动关闭"
+      },
+      {
+        "label": "B",
+        "text": "即使 with 语句块内发生异常，文件也会被正确关闭"
+      },
+      {
+        "label": "C",
+        "text": "with 语句可以同时打开多个文件"
+      },
+      {
+        "label": "D",
+        "text": "使用 with 语句后仍需手动调用 close() 方法"
+      }
+    ],
+    "answer": "D",
+    "explanation": "with语句的核心好处是文件在语句块结束后会被自动关闭，无需手动调用close()。即使发生异常也能正确关闭。with可以同时打开多个文件（用逗号分隔多个open()）。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "使用 csv.writer 写入 csv 文件时，open() 中设置 newline='' 的原因是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "为了提高写入速度"
+      },
+      {
+        "label": "B",
+        "text": "避免 writerow 写入的换行符与系统默认换行符叠加产生多余空行"
+      },
+      {
+        "label": "C",
+        "text": "newline='' 是 csv 模块的强制要求，否则会报错"
+      },
+      {
+        "label": "D",
+        "text": "为了让 csv 文件以二进制方式写入"
+      }
+    ],
+    "answer": "B",
+    "explanation": "newline默认值为换行符，而csv的writerow/writerows函数在写入每行后还会自动添加换行符。如果不设置newline=''，就会产生两个换行符，导致出现多余空行。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "执行 import jieba; result = jieba.lcut('我爱北京天安门') 后，result 的类型和内容是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "字符串 '我 爱 北京 天安门'"
+      },
+      {
+        "label": "B",
+        "text": "列表 ['我', '爱', '北京', '天安门']"
+      },
+      {
+        "label": "C",
+        "text": "生成器对象"
+      },
+      {
+        "label": "D",
+        "text": "集合 {'我', '爱', '北京', '天安门'}"
+      }
+    ],
+    "answer": "B",
+    "explanation": "jieba.lcut()返回的是列表类型，每个元素是一个分词结果字符串。注意lcut（带l）返回列表，而cut返回生成器。这是jieba分词的基础考点。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "关于文件指针和 seek() 方法，以下描述正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "seek(0, 1) 表示将指针移动到文件开头"
+      },
+      {
+        "label": "B",
+        "text": "seek(5) 等价于 seek(5, 0)，表示从文件开头偏移5个字节"
+      },
+      {
+        "label": "C",
+        "text": "seek() 方法只能在二进制模式下使用"
+      },
+      {
+        "label": "D",
+        "text": "seek(-3, 2) 表示从当前位置向前移动3个字节"
+      }
+    ],
+    "answer": "B",
+    "explanation": "seek(offset, whence)中，whence默认为0（文件开头），seek(5)等价于seek(5, 0)。whence=1表示从当前位置，whence=2表示从文件末尾。seek(-3, 2)是从文件末尾向前偏移3字节，而非从当前位置。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "以下路径中，属于绝对路径的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": ".\\Project.txt"
+      },
+      {
+        "label": "B",
+        "text": "..\\Downloads\\File.pdf"
+      },
+      {
+        "label": "C",
+        "text": "C:\\Documents\\Project.txt"
+      },
+      {
+        "label": "D",
+        "text": "Project.txt"
+      }
+    ],
+    "answer": "C",
+    "explanation": "绝对路径是从盘符或根目录开始的完整路径，如C:\\Documents\\Project.txt。以.\\开头的是当前目录的相对路径，以..\\开头的是上级目录的相对路径，仅有文件名的也是相对路径。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "使用 openpyxl 库读取已有 Excel 文件，正确的语句是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "wb = openpyxl.read('data.xlsx')"
+      },
+      {
+        "label": "B",
+        "text": "wb = openpyxl.load_workbook('data.xlsx')"
+      },
+      {
+        "label": "C",
+        "text": "wb = openpyxl.open('data.xlsx')"
+      },
+      {
+        "label": "D",
+        "text": "wb = openpyxl.Workbook('data.xlsx')"
+      }
+    ],
+    "answer": "B",
+    "explanation": "openpyxl使用load_workbook()函数来读取已有Excel工作簿文件。Workbook()是用于创建新工作簿对象的构造函数，不能用于读取已有文件。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "以下程序片段的作用是？\n\nwith open('data.txt', 'r', encoding='utf-8') as f:\n    content = f.read()\n    words = content.split(',')",
+    "options": [
+      {
+        "label": "A",
+        "text": "读取文件所有内容，按行拆分为列表"
+      },
+      {
+        "label": "B",
+        "text": "读取文件所有内容为一个字符串，按逗号拆分为列表"
+      },
+      {
+        "label": "C",
+        "text": "逐行读取文件，统计行数"
+      },
+      {
+        "label": "D",
+        "text": "将文件内容写入一个新文件"
+      }
+    ],
+    "answer": "B",
+    "explanation": "f.read()读取整个文件为一个字符串，然后split(',')以逗号为分隔符将字符串拆分为列表。这是PPT成绩统计例题的典型模式——文件中成绩数据以逗号分隔。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "以下代码尝试以二进制方式打开文件，正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "fp = open('data.txt', 'r')"
+      },
+      {
+        "label": "B",
+        "text": "fp = open('data.txt', 'b')"
+      },
+      {
+        "label": "C",
+        "text": "fp = open('data.txt', 'rb')"
+      },
+      {
+        "label": "D",
+        "text": "fp = open('data.txt', mode='binary')"
+      }
+    ],
+    "answer": "C",
+    "explanation": "以二进制方式打开文件需要在模式字符串中加上'b'，如'rb'（二进制只读）、'wb'（二进制写入）。单独的'b'不是有效模式，'r'是文本只读。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "读取含有中文的文本文件时，如果打开文件指定的编码与实际文件编码不一致，会导致什么结果？",
+    "options": [
+      {
+        "label": "A",
+        "text": "程序直接抛出异常报错"
+      },
+      {
+        "label": "B",
+        "text": "文件可以读取，但中文显示为乱码"
+      },
+      {
+        "label": "C",
+        "text": "Python会自动检测并转换为正确编码"
+      },
+      {
+        "label": "D",
+        "text": "中文部分会被自动跳过不读取"
+      }
+    ],
+    "answer": "B",
+    "explanation": "如果编码不一致（如文件用gbk保存但用utf-8读取），中文会显示为乱码，但不一定报错。PPT明确指出「若文件中有汉字，则读写文件的编码一定要一样」，否则出乱码。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "csv.reader(f) 读取文件后返回的对象，需要经过什么处理才能像普通列表一样操作？",
+    "options": [
+      {
+        "label": "A",
+        "text": "使用 str() 转换为字符串"
+      },
+      {
+        "label": "B",
+        "text": "使用 list() 转换为列表"
+      },
+      {
+        "label": "C",
+        "text": "使用 int() 转换为整数"
+      },
+      {
+        "label": "D",
+        "text": "不需要任何处理，可以直接用索引访问元素"
+      }
+    ],
+    "answer": "B",
+    "explanation": "csv.reader()返回的是一个csv.reader对象，该类型数据无法直接处理。PPT明确指出需要使用list()函数将其转换为列表类型后才能像普通列表一样操作。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "单选题",
+    "stem": "关于文件关闭，以下说法正确的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "程序运行结束系统会自动关闭文件，所以不需要手动 close()"
+      },
+      {
+        "label": "B",
+        "text": "不调用 close() 可能导致缓冲区数据未写入，造成数据丢失"
+      },
+      {
+        "label": "C",
+        "text": "close() 只能关闭以写模式打开的文件"
+      },
+      {
+        "label": "D",
+        "text": "文件关闭后 fp.closed 属性值为字符串 'True'"
+      }
+    ],
+    "answer": "B",
+    "explanation": "PPT明确指出「不建议使用系统自动关闭」。不手动close()可能导致缓冲区数据未写入文件。文件关闭后fp.closed值为布尔值True而非字符串。这是一道陷阱题，A是错误做法。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "打开D盘根目录下的data.txt文件用于读取，编码为utf-8，代码为：\nfp = open(【1】, 【2】, encoding=【3】)",
+    "answer": "r'd:\\data.txt' 或 'd:\\\\data.txt'; 'r' 或 mode='r'; 'utf-8'",
+    "explanation": "文件路径可用原始字符串r'd:\\data.txt'避免转义，也可用双反斜杠；打开模式为'r'；编码参数为'utf-8'。三个空分别填入：文件路径、打开模式、编码值。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "使用 with 语句以只读方式打开 test.txt，将全部内容读入变量 content：\nwith open('test.txt', 【1】) as f:\n    content = f.【2】",
+    "answer": "'r'; read()",
+    "explanation": "with语句中打开模式为'r'（可省略，因为默认就是'r'）。f.read()读取文件全部内容并返回一个字符串。with结束后文件自动关闭。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "使用 jieba 统计中文文本中出现频率最高的前3个词，补全代码：\nimport jieba\nwith open('report.txt', encoding='utf-8') as f:\n    content = f.read()\nwords = jieba.【1】\nfreq = {}\nfor w in words:\n    if len(w) < 2:\n        【2】\n    freq[w] = freq.get(w, 0) + 1\nresult = sorted(freq.items(), key=lambda x: 【3】, reverse=True)\nprint(result[:3])",
+    "answer": "lcut(content); continue; x[1]",
+    "explanation": "jieba.lcut(content)分词返回列表；len(w)<2时跳过单字和标点符号，用continue进入下一轮；sorted按词频排序，key=lambda x: x[1]表示按元组第二个元素（词频）排序。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "将数据写入 csv 文件，补全代码：\nimport csv\nwith open('output.csv', 'w', 【1】) as f:\n    writer = csv.【2】\n    writer.writerow(['姓名', '分数'])\n    writer.writerow(['张三', '90'])",
+    "answer": "newline=''; writer(f)",
+    "explanation": "open()中需设置newline=''避免产生多余空行；csv.writer(f)创建csv写入对象。writerow()的参数是列表，每个元素对应一行中的一列。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "将字符串列表 lines = ['Hello\\n', 'World\\n'] 一次性全部写入文件：\nwith open('out.txt', 'w') as f:\n    f.【1】",
+    "answer": "writelines(lines)",
+    "explanation": "writelines()方法用于一次写入一个字符串序列（如列表）。注意writelines本身不会自动添加换行符，需列表中每个元素自己包含换行符。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "使用 seek() 将文件指针移动到文件末尾前5个字节处：\nfp.seek(【1】, 【2】)",
+    "answer": "-5; 2",
+    "explanation": "seek(offset, whence)中offset=-5表示向文件开头方向偏移5字节，whence=2表示以文件末尾为基准。因此seek(-5, 2)定位到文件末尾前5字节处。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "使用 openpyxl 打开 Excel 文件并读取名为'一班'的工作表：\nimport openpyxl\nwb = openpyxl.【1】('scores.xlsx')\nws = wb【2】",
+    "answer": "load_workbook; ['一班']",
+    "explanation": "load_workbook()用于读取已有Excel文件；用工作簿对象['工作表名']获取指定工作表，如wb['一班']。wb.active获取当前激活的工作表。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "检查文件对象 fp 是否已关闭，应使用属性 fp.【1】，文件关闭后该属性值为【2】。",
+    "answer": "closed; True",
+    "explanation": "文件对象的closed属性用于检查关闭状态：文件打开时为False，调用fp.close()后变为True。这是PPT演示过的用法，注意值为布尔型True而非字符串。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "逐行读取文件直到末尾，补全代码：\nwith open('data.txt', 'r') as f:\n    while True:\n        line = f.【1】\n        if line == 【2】:\n            break\n        print(line.strip())",
+    "answer": "readline(); ''",
+    "explanation": "使用readline()逐行读取，当读到文件末尾时readline()返回空字符串''，以此作为循环终止条件。这是PPT示例中演示的经典逐行读取模式。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "将文件指针移回文件开头，以便重新读取文件内容：\nfp.【1】",
+    "answer": "seek(0) 或 seek(0, 0)",
+    "explanation": "seek(0)将文件指针移动到文件开头（偏移0，默认whence=0表示从文件开头计算）。这是重新读取文件前的常用操作。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "使用 requests 库判断网页请求是否成功，补全代码：\nimport requests\nr = requests.get('https://example.com')\nif r.【1】 == requests.codes.ok:\n    print('请求成功，状态码为【2】')",
+    "answer": "status_code; 200",
+    "explanation": "r.status_code返回HTTP状态码，200表示请求成功；requests.codes.ok就是200的常量表示。这两者相等即表示请求成功。"
+  },
+  {
+    "chapter": "Python",
+    "chapter_title": "第7章自测",
+    "type": "填空题",
+    "stem": "以追加模式（不覆盖原有内容）打开 data.txt 用于写入：\nfp = open('data.txt', 【1】)",
+    "answer": "'a'",
+    "explanation": "'a'（append）追加模式会将新内容添加到文件末尾，不清空原有内容。与'w'模式的关键区别：'w'会先清空文件再写入，'a'保留原内容并在末尾追加。"
   }
 ]
