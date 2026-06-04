@@ -815,7 +815,7 @@ document.addEventListener('keydown', e => {
 
   if (!answered) {
     const k = e.key.toUpperCase();
-    if ('ABCDE'.includes(k) && q.type !== '判断题') { e.preventDefault(); answerQuestion(i, k); }
+    if ('ABCDE'.includes(k) && (q.type === '单选题' || q.type === '多选题')) { e.preventDefault(); answerQuestion(i, k); }
     if (e.key === 'Enter' && q.type === '多选题') { e.preventDefault(); submitMulti(i); }
     if (q.type === '判断题') {
       if (k === 'A' || e.key === '1') { e.preventDefault(); answerQuestion(i, '√'); }
