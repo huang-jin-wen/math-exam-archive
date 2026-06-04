@@ -4813,7 +4813,7 @@
     "chapter": "Python",
     "chapter_title": "循环结构",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\nm=100\nn=28\nwhile(m!=n):\nif m>n:\nm=m-n\nelse:\nn=n-m\nprint((100*28)/n)\nprint(m)",
+    "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\nm=100\nn=28\nwhile(m!=n):\n    if m>n:\n        m=m-n\n    else:\n        n=n-m\nprint((100*28)/n)\nprint(m)",
     "blanks": [
       {
         "blank": "1",
@@ -4831,7 +4831,7 @@
     "chapter": "Python",
     "chapter_title": "循环结构",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行的结果是【1】，最后一行输出的结果是: 【2】。\nnum=6789\nwhile(num!=0):\nprint(num%10)\nnum=num//10",
+    "stem": "阅读下列程序，第一行的结果是【1】，最后一行输出的结果是: 【2】。\nnum=6789\nwhile(num!=0):\n    print(num%10)\n    num=num//10",
     "blanks": [
       {
         "blank": "1",
@@ -4849,7 +4849,7 @@
     "chapter": "Python",
     "chapter_title": "数据类型",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行输出的结果是【1】，第二行输出的结果是: 【2】。\ndef f(a,*b):\nprint(type(b))\nsum=a\nfor i in b:\nsum=sum+i\nreturn(sum)\nprint(f(1,2,3))",
+    "stem": "阅读下列程序，第一行输出的结果是【1】，第二行输出的结果是: 【2】。\ndef f(a,*b):\n    print(type(b))\n    sum=a\n    for i in b:\n        sum=sum+i\n    return(sum)\nprint(f(1,2,3))",
     "blanks": [
       {
         "blank": "1",
@@ -4867,7 +4867,7 @@
     "chapter": "Python",
     "chapter_title": "循环结构",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\ndef f(a,*b):\nsum=a\nfor i in b:\nsum=sum+i\nreturn(sum)\nprint(f(1))\nprint(f(1,2,3,4))",
+    "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\ndef f(a,*b):\n    sum=a\n    for i in b:\n        sum=sum+i\n    return(sum)\nprint(f(1))\nprint(f(1,2,3,4))",
     "blanks": [
       {
         "blank": "1",
@@ -4885,7 +4885,7 @@
     "chapter": "Python",
     "chapter_title": "条件判断",
     "type": "填空题",
-    "stem": "阅读下列程序，一共打印几行【1】，第一行输出的结果是: 【2】。\ndef f(a,b):\nif b==0:\nprint(a)\nelse:\nprint(f(b,a%b))\nf(9,6)",
+    "stem": "阅读下列程序，一共打印几行【1】，第一行输出的结果是: 【2】。\ndef f(a,b):\n    if b==0:\n        print(a)\n    else:\n        print(f(b,a%b))\nf(9,6)",
     "blanks": [
       {
         "blank": "1",
@@ -4939,7 +4939,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行输出的结果是【1】，第二行输出的结果是: 【2】。\ndef fun(m,n):\nwhile n:\nm,n=n,m%n\nreturn m\narr=[24,18,120,54,36,35,72,33]\nprint(arr[-2])\nhcf=fun(arr[0],arr[2])\nfor i in range(len(arr)):\nif i>2 and i%2==0:\nhcf=fun(hcf,arr[i])\nprint(hcf)",
+    "stem": "阅读下列程序，第一行输出的结果是【1】，第二行输出的结果是: 【2】。\ndef fun(m,n):\n    while n:\n        m,n=n,m%n\n    return m\narr=[24,18,120,54,36,35,72,33]\nprint(arr[-2])\nhcf=fun(arr[0],arr[2])\nfor i in range(len(arr)):\n    if i>2 and i%2==0:\n        hcf=fun(hcf,arr[i])\nprint(hcf)",
     "blanks": [
       {
         "blank": "1",
@@ -4993,7 +4993,7 @@
     "chapter": "Python",
     "chapter_title": "循环结构",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\ncounter=1\nnum=0\ndef TestVariable():\nglobal counter\nfor i in (1,2,3):\ncounter=counter+1\nnum=10\nTestVariable()\nprint(counter)\nprint(num)",
+    "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\ncounter=1\nnum=0\ndef TestVariable():\n    global counter\n    for i in (1,2,3):\n        counter=counter+1\n    num=10\nTestVariable()\nprint(counter)\nprint(num)",
     "blanks": [
       {
         "blank": "1",
@@ -5011,7 +5011,7 @@
     "chapter": "Python",
     "chapter_title": "条件判断",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\nx=False\ny=True\nz=False\nif x or y and z:\nprint('yes')\nelse:\nprint('no')\nif x or y and z==True:\nprint('yes')\nelse:\nprint('no')",
+    "stem": "阅读下列程序，第一行的结果是【1】，第二行输出的结果是: 【2】。\nx=False\ny=True\nz=False\nif x or y and z:\n    print('yes')\nelse:\n    print('no')\nif x or y and z==True:\n    print('yes')\nelse:\n    print('no')",
     "blanks": [
       {
         "blank": "1",
@@ -5029,7 +5029,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\ndef change1(list1):\nlist1[0] = 0\ndef change2(list2):\nlist2 = [4,5,6]\nlistA = [1,2,3]\nchange1(listA)\nprint(listA)\nlistB = [1,2,3]\nchange2(listB)\nprint(listB)",
+    "stem": "阅读下列程序，第一行输出的结果是: 【1】，第二行输出的结果是: 【2】。\ndef change1(list1):\n    list1[0] = 0\ndef change2(list2):\n    list2 = [4,5,6]\nlistA = [1,2,3]\nchange1(listA)\nprint(listA)\nlistB = [1,2,3]\nchange2(listB)\nprint(listB)",
     "blanks": [
       {
         "blank": "1",
@@ -5047,7 +5047,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行的结果是$$*，第二行输出的结果是: 【1】，最后一行输出的结果是: 【2】。\nn=3\nfor i in range(0,n):\nfor j in range(0,2-i):\nprint('$',end='')\nfor j in range(2*i+1):\nprint('*',end='')\nprint()",
+    "stem": "阅读下列程序，第一行的结果是$$*，第二行输出的结果是: 【1】，最后一行输出的结果是: 【2】。\nn=3\nfor i in range(0,n):\n    for j in range(0,2-i):\n        print('$',end='')\n    for j in range(2*i+1):\n        print('*',end='')\n    print()",
     "blanks": [
       {
         "blank": "1",
@@ -5065,7 +5065,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "阅读下列程序，第一行的结果是【1】，最后一行输出的结果是: 【2】。\nimport math\nn=0\nfor m in range(101,201,2):\nk=int(math.sqrt(m))\nfor i in range(2,k+2):\nif m%i==0:\nbreak\nif i==k+1:\nprint(m)",
+    "stem": "阅读下列程序，第一行的结果是【1】，最后一行输出的结果是: 【2】。\nimport math\nn=0\nfor m in range(101,201,2):\n    k=int(math.sqrt(m))\n    for i in range(2,k+2):\n        if m%i==0:\n            break\n    if i==k+1:\n        print(m)",
     "blanks": [
       {
         "blank": "1",
@@ -5083,7 +5083,7 @@
     "chapter": "Python",
     "chapter_title": "字符串操作",
     "type": "填空题",
-    "stem": "输出9*9口诀，如样图所示。\n程序空缺：【1】和【2】。\nfor i in range(1,10):\nfor j in range(1, 【1】):\nprint('{}x{}={}\\t'.format(i, j, 【2】), end='')",
+    "stem": "输出9*9口诀，如样图所示。\n程序空缺：【1】和【2】。\nfor i in range(1,10):\n    for j in range(1, 【1】):\n        print('{}x{}={}\\t'.format(i, j, 【2】), end='')\n    print()",
     "blanks": [
       {
         "blank": "1",
@@ -5101,7 +5101,7 @@
     "chapter": "Python",
     "chapter_title": "条件判断",
     "type": "填空题",
-    "stem": "下面程序的功能是用递归法求n!。\ndef Factorial(n):\nif n == 1:\nfn=1\nelse:\nfn = 【1】\nreturn fn\ndef main():\nn = int(input(\"请输入正整数值n: \"))\nprint(\"结果为: \", 【2】)",
+    "stem": "下面程序的功能是用递归法求n!。\ndef Factorial(n):\n    if n == 1:\n        fn=1\n    else:\n        fn = 【1】\n    return fn\ndef main():\n    n = int(input(\"请输入正整数值n: \"))\n    print(\"结果为: \", 【2】)",
     "blanks": [
       {
         "blank": "1",
@@ -5119,7 +5119,7 @@
     "chapter": "Python",
     "chapter_title": "条件判断",
     "type": "填空题",
-    "stem": "下列程序实现以下功能，完善程序。有四个数字: 1、2、3、4，能组成多少个互不相同且无重复数字的三位数，各是多少。\nfor a in num:\nfor b in num:\nfor 【1】 in num:\nif (a!=b) and (【2】) and (c!=a):",
+    "stem": "下列程序实现以下功能，完善程序。有四个数字: 1、2、3、4，能组成多少个互不相同且无重复数字的三位数，各是多少。\nfor a in num:\n    for b in num:\n        for 【1】 in num:\n            if (a!=b) and (【2】) and (c!=a):\n                sum+=1",
     "blanks": [
       {
         "blank": "1",
@@ -5137,7 +5137,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "输入10个整数，用选择法进行从小到大的排序。\n程序空缺：【1】和【2】。\nfor i in range(【1】, 9):\nmin=i\nfor j in range(【2】, 10):",
+    "stem": "输入10个整数，用选择法进行从小到大的排序。\n程序空缺：【1】和【2】。\nfor i in range(【1】, 9):\n    min=i\n    for j in range(【2】, 10):\n        if L[j] < L[min]:",
     "blanks": [
       {
         "blank": "1",
@@ -5173,7 +5173,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。\n程序空缺：【1】和【2】。\nwhile 1:\nt=0\nfor i in range(1, 【1】):\nsum = 【2】\nif (sum)%3==0:\nList.pop(i-1-t)\nt=t+1\nif len(List)==1:\nprint(...)\nbreak",
+    "stem": "有n个人围成一圈，顺序排号。从第一个人开始报数（从1到3报数），凡报到3的人退出圈子，问最后留下的是原来第几号的那位。\n程序空缺：【1】和【2】。\nwhile 1:\n    t=0\n    for i in range(1, 【1】):\n        sum = 【2】\n        if (sum)%3==0:\n            List.pop(i-1-t)\n            t=t+1\n    if len(List)==1:\n        print(...)\n        break",
     "blanks": [
       {
         "blank": "1",
@@ -5191,7 +5191,7 @@
     "chapter": "Python",
     "chapter_title": "random库",
     "type": "填空题",
-    "stem": "读取7个1~50(包括1和50)的随机整数，每读取一个值，程序打印出该值个数个*。\n程序空缺：【1】和【2】。\nimport random\ndef main():\nfor i in range(7):\nm = random.randint(【1】)\nprint(m,'\\n')\nfor j in range(0, 【2】):\nprint('*', end='')\nprint('\\n')",
+    "stem": "读取7个1~50(包括1和50)的随机整数，每读取一个值，程序打印出该值个数个*。\n程序空缺：【1】和【2】。\nimport random\ndef main():\n    for i in range(7):\n        m = random.randint(【1】)\n        print(m,'\\n')\n        for j in range(0, 【2】):\n            print('*', end='')\n        print('\\n')",
     "blanks": [
       {
         "blank": "1",
@@ -5209,7 +5209,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "下列程序实现如下功能: 输入某年某月某日，判断这一天是这一年的第几天?\n程序空缺：【1】和【2】。\nfor i in range(1, int(【1】)):\n...\n【2】\nprint(\"这一天是一年中的第%d天\"%sum)",
+    "stem": "下列程序实现如下功能: 输入某年某月某日，判断这一天是这一年的第几天?\n程序空缺：【1】和【2】。\nfor i in range(1, int(【1】)):\n    if (i%400==0) or ((i%4==0) and (i%100!=0)):\n        sum+=leap[i-1]\n    else:\n        sum+=nor[i-1]\n【2】\nprint(\"这一天是一年中的第%d天\"%sum)",
     "blanks": [
       {
         "blank": "1",
@@ -5245,7 +5245,7 @@
     "chapter": "Python",
     "chapter_title": "条件判断",
     "type": "填空题",
-    "stem": "给一个位数不多于5位的正整数。要求: 一、求它是几位数，二、逆序打印出各位数字。\n程序空缺：【1】和【2】。\nif 【1】:\nprint(\"输入数字超过限定位数\")\nelse:\nprint('逆序数字: %s' % 【2】)",
+    "stem": "给一个位数不多于5位的正整数。要求: 一、求它是几位数，二、逆序打印出各位数字。\n程序空缺：【1】和【2】。\nif 【1】:\n    print(\"输入数字超过限定位数\")\nelse:\n    print('逆序数字: %s' % 【2】)",
     "blanks": [
       {
         "blank": "1",
@@ -5263,7 +5263,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "甲乙丙丁4人同时开始放鞭炮，甲每隔t1 s放一次，乙每隔t2 s放一次，丙每隔t3 s放一次，丁每隔t4 s放一次，每人各放n次。\n程序空缺：【1】和【2】。\nfor t in range(1, 【1】):\nif OK(...): count+=1\nreturn 【2】",
+    "stem": "甲乙丙丁4人同时开始放鞭炮，甲每隔t1 s放一次，乙每隔t2 s放一次，丙每隔t3 s放一次，丁每隔t4 s放一次，每人各放n次。\n程序空缺：【1】和【2】。\nfor t in range(1, 【1】):\n    if OK(...): count+=1",
     "blanks": [
       {
         "blank": "1",
@@ -5299,7 +5299,7 @@
     "chapter": "Python",
     "chapter_title": "turtle库",
     "type": "填空题",
-    "stem": "下列程序画出如图所示的图形，完善程序。\n【1】\nturtle.up()\nturtle.setpos(-150,20)\nturtle.down()\nturtle.left(30)\nturtle.fd(100)\nturtle.left(60)\nfor i in range(5):\nturtle.fd(100)\n【2】\nturtle.fd(100)\nturtle.left(60)\nturtle.fd(100)",
+    "stem": "下列程序画出如图所示的图形，完善程序。\n【1】\nturtle.up()\nturtle.setpos(-150,20)\nturtle.down()\nturtle.left(30)\nturtle.fd(100)\nturtle.left(60)\nturtle.fd(100)\n【2】\nturtle.fd(100)\nturtle.left(60)\nturtle.fd(100)",
     "blanks": [
       {
         "blank": "1",
@@ -5317,7 +5317,7 @@
     "chapter": "Python",
     "chapter_title": "turtle库",
     "type": "填空题",
-    "stem": "下列程序画出如图所示的图形，完善程序（另一种写法）。\nfrom turtle import *\nup()\nsetpos(-150,20)\n【1】\nleft(30)\n...\n【2】",
+    "stem": "下列程序画出如图所示的图形，完善程序（另一种写法）。\nfrom turtle import *\nup()\nsetpos(-150,20)\n【1】\nleft(30)\nfd(100)\nleft(60)\nfd(100)\n【2】\nfd(100)\nleft(60)\nfd(100)",
     "blanks": [
       {
         "blank": "1",
@@ -5335,7 +5335,7 @@
     "chapter": "Python",
     "chapter_title": "字典与集合",
     "type": "填空题",
-    "stem": "下列程序实现暂停一秒输出。完善程序。\nfor key, value in dict.items(【1】):\nprint(key, value)\ntime.sleep(【2】)",
+    "stem": "下列程序实现暂停一秒输出。完善程序。\nfor key, value in dict.items(【1】):\n    print(key, value)\n    time.sleep(【2】)",
     "blanks": [
       {
         "blank": "1",
@@ -5353,7 +5353,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "求0-7所能组成的奇数个数，完善程序。\ndef f(n):\nif n == 0: return 1\nelif n == 1: return 7\nelse: return 【1】\nfor i in range(1,9):\na = 【2】",
+    "stem": "求0-7所能组成的奇数个数，完善程序。\ndef f(n):\n    if n == 0: return 1\n    elif n == 1: return 7\n    else: return 【1】\nfor i in range(1,9):\n    a = 【2】",
     "blanks": [
       {
         "blank": "1",
@@ -5371,7 +5371,7 @@
     "chapter": "Python",
     "chapter_title": "列表与元组",
     "type": "填空题",
-    "stem": "以下程序求100 ~ 200之内的素数，完善程序。\nfor j in range(2, int(math.sqrt(i))+1):\nif(【1】): break\ndef main():\n【2】",
+    "stem": "以下程序求100 ~ 200之内的素数，完善程序。\nfor j in range(2, int(math.sqrt(i))+1):\n    if(【1】): break\ndef main():\n    【2】",
     "blanks": [
       {
         "blank": "1",
@@ -5389,7 +5389,7 @@
     "chapter": "Python",
     "chapter_title": "条件判断",
     "type": "填空题",
-    "stem": "下列程序实现以下功能，完善程序。（另一种描述）\ndef main():\nnum=[1,2,3,4]\nsum=0\nfor a in num:\nfor b in num:\nfor 【1】 in num:\nif (a!=b) and (【2】) and (c!=a):\nsum+=1",
+    "stem": "下列程序实现以下功能，完善程序。（另一种描述）\ndef main():\n    num=[1,2,3,4]\n    sum=0\n    for a in num:\n        for b in num:\n            for 【1】 in num:\n                if (a!=b) and (【2】) and (c!=a):\n                    sum+=1",
     "blanks": [
       {
         "blank": "1",
@@ -5407,7 +5407,7 @@
     "chapter": "Python",
     "chapter_title": "字符串操作",
     "type": "填空题",
-    "stem": "输出9*9口诀，如样图所示（另一版本）。\nfor i in range(1,10):\nfor j in range(1, 【1】):\nprint('{}x{}={}\\t'.format(i, j, 【2】), end='')",
+    "stem": "输出9*9口诀，如样图所示（另一版本）。\nfor i in range(1,10):\n    for j in range(1, 【1】):\n        print('{}x{}={}\\t'.format(i, j, 【2】), end='')\n    print()",
     "blanks": [
       {
         "blank": "1",
