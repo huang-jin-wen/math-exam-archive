@@ -807,6 +807,9 @@ function prevQuestion() {
 /* ===== 键盘快捷键 ===== */
 document.addEventListener('keydown', e => {
   if (!questionPool.length) return;
+  // 输入框聚焦时禁用所有快捷键
+  const ae = document.activeElement;
+  if (ae && (ae.tagName === 'INPUT' || ae.tagName === 'TEXTAREA')) return;
   const i = currentIndex;
   const q = questionPool[i];
   const answered = i in questionAnswered;
