@@ -6545,7 +6545,7 @@
     "chapter": "Python",
     "chapter_title": "第2章自测",
     "type": "填空题",
-    "stem": "bStr = 'No pain, No gain.'，执行 bStr.find('no') 的结果是 ______。",
+    "stem": "bStr = 'No pain, No gain.'，执行 bStr.find('no') 的结果是【1】。",
     "options": [],
     "answer": "-1",
     "explanation": "find() 方法区分大小写。'no'（小写）在 bStr 中不存在，find() 找不到时返回 -1。如果使用 index() 则会抛出 ValueError。注意：字符串中有 'No'（首字母大写），但没有 'no'（全小写）。"
@@ -6554,7 +6554,7 @@
     "chapter": "Python",
     "chapter_title": "第2章自测",
     "type": "填空题",
-    "stem": "cStr = 'Hope is Hope'；执行 cStr.replace('Hope', 'Love') 后 cStr 的值是 ______。",
+    "stem": "cStr = 'Hope is Hope'；执行 cStr.replace('Hope', 'Love') 后 cStr 的值是【1】。",
     "options": [],
     "answer": "'Hope is Hope'",
     "explanation": "字符串是不可变类型，replace() 返回新字符串，原字符串不变。所以 cStr 仍然是 'Hope is Hope'。replace() 的返回值才是 'Love is Love'。这是经典的字符串不可变性陷阱！"
@@ -6797,7 +6797,7 @@
     "chapter": "Python",
     "chapter_title": "第2章自测",
     "type": "填空题",
-    "stem": "执行 `set('hello')` 的结果中包含几个元素？",
+    "stem": "执行 `set('hello')` 的结果中包含几个元素？【1】",
     "options": [],
     "answer": "4",
     "explanation": "集合自动去重，'hello' 中去重后为 {'h', 'e', 'l', 'o'}，共 4 个元素。注意 'l' 出现两次但只保留一个。"
@@ -6858,7 +6858,7 @@
     "chapter": "Python",
     "chapter_title": "第2章自测",
     "type": "填空题",
-    "stem": "执行 `eval('5 + 6 * 2')` 的结果是______。",
+    "stem": "执行 `eval('5 + 6 * 2')` 的结果是【1】。",
     "options": [],
     "answer": "17",
     "explanation": "eval 计算字符串中的 Python 表达式：5 + 6*2 = 5 + 12 = 17。注意运算符优先级：乘法在加法之前。"
@@ -6971,7 +6971,7 @@
     "chapter": "Python",
     "chapter_title": "第2章自测",
     "type": "填空题",
-    "stem": "表达式 `3 + 5 > 2 + 1 and 'a' > 'b'` 的结果是______。（填 True 或 False）",
+    "stem": "表达式 `3 + 5 > 2 + 1 and 'a' > 'b'` 的结果是【1】。（填 True 或 False）",
     "options": [],
     "answer": "False",
     "explanation": "运算符优先级：算术 > 关系 > 逻辑。先算 3+5=8 和 2+1=3，再比较 8>3=True 和 'a'>'b'=False，最后 True and False = False。"
@@ -8120,7 +8120,7 @@
     "type": "填空题",
     "stem": "阅读以下代码，程序的输出结果为【1】。【2】【3】（三个值之间用一个空格分隔）。\n\nclass Demo:\n    x = 1\n    def __init__(self, y):\n        self.y = y\n\nd = Demo(10)\nprint(d.x, d.y, Demo.x)",
     "options": [],
-    "answer": "1 10 1",
+    "answer": "1;10;1",
     "explanation": "x=1是类属性，通过实例d.x和类名Demo.x均可访问，值都为1。d.y=10是实例属性（通过__init__设置）。因此输出\"1 10 1\"。类属性被所有实例共享，但实例属性各自独立。"
   },
   {
@@ -8205,7 +8205,7 @@
     "chapter": "Python",
     "chapter_title": "第6章自测",
     "type": "填空题",
-    "stem": "凯撒密码是一种简单且广为人知的替换加密技术，它将明文中的每个字母按固定的______进行移位后得到密文。例如偏移量为3时，明文HELLO加密后变为KHOOR。",
+    "stem": "凯撒密码是一种简单且广为人知的替换加密技术，它将明文中的每个字母按固定的【1】进行移位后得到密文。例如偏移量为3时，明文HELLO加密后变为KHOOR。",
     "answer": "偏移量",
     "explanation": "凯撒密码的核心就是按固定偏移量移位字母。加密时每个字母在字母表中向后移动k位（k为偏移量），解密时向前移动k位。PPT中以偏移量3为例进行了演示。"
   },
@@ -8213,7 +8213,7 @@
     "chapter": "Python",
     "chapter_title": "第6章自测",
     "type": "填空题",
-    "stem": "评价算法优劣的四个主要标准是：正确性、______、健壮性和时空性。",
+    "stem": "评价算法优劣的四个主要标准是：正确性、【1】、健壮性和时空性。",
     "answer": "易读性",
     "explanation": "算法的四个评价标准：正确性（能否正确实现功能）、易读性（是否易于阅读理解和调试修改）、健壮性（对非法输入能否妥善处理）、时空性（执行时间和内存占用的效率）。"
   },

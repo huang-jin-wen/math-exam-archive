@@ -345,7 +345,8 @@ function checkAnswer(idx) {
     return ua.split('').sort().join('') === q.answer.split('').sort().join('');
   }
   if (q.type === '填空题') {
-    return ua.toLowerCase().replace(/\s/g, '') === q.answer.toLowerCase().replace(/\s/g, '');
+    // 统一分隔符：| → ; 再去空白比较
+    return ua.toLowerCase().replace(/\s/g, '').replace(/\|/g, ';') === q.answer.toLowerCase().replace(/\s/g, '').replace(/\|/g, ';');
   }
   return ua === q.answer;
 }
