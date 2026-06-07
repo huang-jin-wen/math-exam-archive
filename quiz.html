@@ -604,6 +604,7 @@ function renderFillIn(i, answered) {
 /* 选项文本渲染：检测 ; 分隔的代码并格式化 */
 var PY_CODE_RE = /\b(def|for|while|if|print|open|import|return|class|with|try|except)\s*[:(]/;
 function renderOptionText(text) {
+  if (subject !== 'Python题库') return escapeHTML(text || '');
   if (!text) return escapeHTML(String(text));
 
   // \n 换行格式（预嵌缩进，跳过 autoIndentPython）
@@ -663,6 +664,7 @@ function renderOptions(i, answered) {
 
 /* ===== 题干渲染（支持代码块） ===== */
 function renderStem(stem) {
+  if (subject !== 'Python题库') return escapeHTML(stem || '');
   if (!stem || typeof stem !== 'string') return escapeHTML(String(stem));
 
   // 用 ; 分隔的代码题模式：描述。; code1; code2
