@@ -1453,8 +1453,8 @@
       }
     ],
     "answer": "C",
-    "trans": "团队领导同意监督该项目，确保所有截止日期都得到遵守，资源得到高效分配。",
-    "full": "The team leader agreed to supervise the project, ensuring all deadlines are met and resources are allocated efficiently."
+    "trans": "团队领导同意承担该项目，确保所有截止日期都得到遵守，资源得到高效分配。",
+    "full": "The team leader agreed to undertake the project, ensuring all deadlines are met and resources are allocated efficiently."
   },
   {
     "chapter": "B2U2",
@@ -1856,8 +1856,8 @@
       }
     ],
     "answer": "A",
-    "trans": "在激烈的辩论中，他突然想出了一个疯狂的主意，让房间里的每个人都大吃一惊。",
-    "full": "During the heated debate, he suddenly came up with a wild idea, surprising everyone in the room."
+    "trans": "在激烈的辩论中，他突然随口抛出了一个疯狂的主意，让房间里的每个人都大吃一惊。",
+    "full": "During the heated debate, he suddenly threw out a wild idea, surprising everyone in the room."
   },
   {
     "chapter": "B2U3",
@@ -3252,7 +3252,7 @@
     ],
     "answer": "D",
     "trans": "他们互赠金戒指以象征他们的婚姻承诺。",
-    "full": "They give each other a gold ring to symbolize their marriage reverement."
+    "full": "They give each other a gold ring to symbolize their marriage commitment."
   },
   {
     "chapter": "B2U4",
@@ -3933,8 +3933,8 @@
       }
     ],
     "answer": "C",
-    "trans": "作为演讲比赛的评委，她的主要义务是在给学生表现打分时保持公平公正。",
-    "full": "Being a judge for the speech contest, her main obligation is to be fair and impartial when scoring the students' performance."
+    "trans": "作为演讲比赛的评委，她的主要目标是在给学生表现打分时保持公平公正。",
+    "full": "Being a judge for the speech contest, her main objective is to be fair and impartial when scoring the students’ performance."
   },
   {
     "chapter": "B2U5",
