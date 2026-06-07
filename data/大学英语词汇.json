@@ -840,7 +840,7 @@
     "chapter": "B2U1",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "Without a map or a functioning GPS, it's easy to get ______ in the winding streets of the old town, especially when the signs are written in an unfamiliar language.",
+    "stem": "Without a map or a functioning GPS, it's easy to ________ in the winding streets of the old town, especially when the signs are written in an unfamiliar language.",
     "options": [
       {
         "label": "A",
@@ -1739,7 +1739,7 @@
     "chapter": "B2U2",
     "chapter_title": "词汇练习",
     "type": "单选题",
-    "stem": "After completing his foundational courses, he decided to formalize his academic priorities by majoring in economics and minoring in sociology as complementary fields ______.",
+    "stem": "After completing his foundational courses, he decided to formalize his academic priorities by ______ economics and ______ sociology as complementary fields.",
     "options": [
       {
         "label": "A",
