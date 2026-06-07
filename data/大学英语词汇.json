@@ -1452,7 +1452,7 @@
         "note": "监督"
       }
     ],
-    "answer": "D",
+    "answer": "C",
     "trans": "团队领导同意监督该项目，确保所有截止日期都得到遵守，资源得到高效分配。",
     "full": "The team leader agreed to supervise the project, ensuring all deadlines are met and resources are allocated efficiently."
   },
@@ -1855,7 +1855,7 @@
         "note": "指出"
       }
     ],
-    "answer": "B",
+    "answer": "A",
     "trans": "在激烈的辩论中，他突然想出了一个疯狂的主意，让房间里的每个人都大吃一惊。",
     "full": "During the heated debate, he suddenly came up with a wild idea, surprising everyone in the room."
   },
@@ -3932,7 +3932,7 @@
         "note": "观察"
       }
     ],
-    "answer": "B",
+    "answer": "C",
     "trans": "作为演讲比赛的评委，她的主要义务是在给学生表现打分时保持公平公正。",
     "full": "Being a judge for the speech contest, her main obligation is to be fair and impartial when scoring the students' performance."
   },
