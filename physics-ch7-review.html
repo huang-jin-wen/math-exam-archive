@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 静止电荷的电场 — 复习笔记</title>
+<script>
+MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+:root{--c1:#1a56db;--c2:#e67e22;--c3:#059669;--c4:#dc2626;--bg:#f8f9fb;--card:#fff;--tx:#1e293b;--tx2:#64748b;--br:#e2e8f0;--sh:0 1px 3px rgba(0,0,0,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--tx);line-height:1.8;display:flex}
+/* Sidebar */
+.sidebar{width:260px;height:100vh;position:fixed;left:0;top:0;background:#fff;border-right:1px solid var(--br);overflow-y:auto;padding:20px 0;z-index:100;box-shadow:1px 0 8px rgba(0,0,0,.03)}
+.sidebar h2{font-size:1rem;color:var(--c1);padding:0 20px 12px;border-bottom:2px solid var(--c1);margin-bottom:8px}
+.sidebar h2 span{font-size:.75rem;color:var(--tx2);font-weight:400}
+.sidebar a{display:block;padding:8px 20px;color:var(--tx2);text-decoration:none;font-size:.88rem;transition:all .15s;border-left:3px solid transparent}
+.sidebar a:hover,.sidebar a.active{color:var(--c1);background:#f0f4ff;border-left-color:var(--c1)}
+.sidebar a.star{font-weight:600;color:var(--tx)}
+.sidebar a.sub{padding-left:32px;font-size:.82rem}
+/* Main */
+.main{margin-left:260px;flex:1;padding:32px 40px;max-width:960px}
+.main h1{font-size:1.8rem;color:var(--c1);margin-bottom:4px}
+.main .subtitle{color:var(--tx2);font-size:.9rem;margin-bottom:32px}
+/* Section card */
+.sec{background:var(--card);border-radius:12px;padding:28px 32px;margin-bottom:24px;box-shadow:var(--sh);border:1px solid var(--br);scroll-margin-top:100px}
+.sec h2{font-size:1.3rem;color:var(--c1);margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.sec h2 .tag{font-size:.7rem;background:var(--c1);color:#fff;padding:2px 8px;border-radius:4px;font-weight:400}
+.sec h3{font-size:1.05rem;color:var(--tx);margin:20px 0 10px;padding-bottom:6px;border-bottom:1px dashed var(--br)}
+/* Formula card */
+.fml{background:#f0f4ff;border-radius:8px;padding:14px 18px;margin:12px 0;border-left:3px solid var(--c1);overflow-x:auto}
+.fml .label{font-size:.75rem;color:var(--c1);font-weight:600;margin-bottom:4px;text-transform:uppercase}
+.fml.red{border-left-color:var(--c4);background:#fef2f2}
+.fml.green{border-left-color:var(--c3);background:#f0fdf4}
+.fml.orange{border-left-color:var(--c2);background:#fff7ed}
+/* Derivation toggle */
+.der{background:#fafbfc;border:1px solid var(--br);border-radius:8px;margin:12px 0;overflow:hidden}
+.der summary{padding:12px 16px;cursor:pointer;font-weight:600;color:var(--c1);font-size:.92rem;user-select:none;list-style:none;display:flex;align-items:center;gap:6px}
+.der summary::-webkit-details-marker{display:none}
+.der summary::before{content:'▶';font-size:.7rem;transition:transform .2s;display:inline-block;width:16px}
+.der[open] summary::before{transform:rotate(90deg)}
+.der .body{padding:0 16px 16px}
+/* Example card */
+.ex{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;margin:16px 0;overflow:hidden}
+.ex .exh{padding:12px 16px;background:#fef3c7;font-weight:600;font-size:.9rem;color:#92400e;display:flex;align-items:center;gap:6px}
+.ex .exb{padding:14px 16px;font-size:.9rem}
+.ex .ans{display:none;padding:12px 16px;background:#f0fdf4;border-top:1px solid #bbf7d0;font-size:.9rem;color:#166534}
+.ex .ans.show{display:block}
+.ex .ans .sol{margin-top:8px;font-size:.85rem;color:var(--tx2)}
+.ex .exb button{cursor:pointer;background:var(--c1);color:#fff;border:none;padding:6px 16px;border-radius:6px;font-size:.85rem;transition:all .15s}
+.ex .exb button:hover{opacity:.9;transform:translateY(-1px)}
+/* Canvas container */
+.cv{text-align:center;margin:16px 0}
+.cv canvas{border-radius:8px;background:#fafbfc;border:1px solid var(--br);max-width:100%}
+.cv .cap{font-size:.8rem;color:var(--tx2);margin-top:6px}
+/* Grid for formulas */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+/* Highlight keyword */
+.kw{color:var(--c1);font-weight:600}
+.star-badge{color:var(--c2);font-size:.85rem;font-weight:600}
+/* Table */
+.tb{width:100%;border-collapse:collapse;margin:12px 0;font-size:.88rem}
+.tb th{background:#f0f4ff;padding:8px 12px;text-align:left;font-weight:600;color:var(--c1);border:1px solid var(--br)}
+.tb td{padding:8px 12px;border:1px solid var(--br)}
+.tb tr:hover td{background:#f8fafc}
+/* Quick nav buttons */
+.qnav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.qnav a{display:inline-block;background:#fff;border:1px solid var(--br);padding:6px 14px;border-radius:20px;text-decoration:none;color:var(--tx2);font-size:.85rem;transition:all .15s}
+.qnav a:hover{background:var(--c1);color:#fff;border-color:var(--c1)}
+/* Responsive */
+@media(max-width:768px){.sidebar{display:none}.main{margin-left:0;padding:20px}.grid2,.grid3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+<h2>第7章 复习<span><br>静止电荷的电场</span></h2>
+<a href="#s1">一、库仑定律与电场强度</a>
+<a href="#s2" class="star">二、高斯定理 ⭐</a>
+<a href="#s3">三、电势与电势梯度</a>
+<a href="#s4">四、静电场中的导体</a>
+<a href="#s5">五、电容与电介质</a>
+<a href="#s6">六、静电场能量</a>
+<a href="#exams" style="color:var(--c2);font-weight:700;margin-top:8px;border-top:1px solid var(--br);padding-top:12px">📝 经典必考题型</a>
+</nav>
+
+<!-- Main Content -->
+<div class="main">
+
+<h1>⚡ 第7章 静止电荷的电场</h1>
+<p class="subtitle">程守洙《普通物理学》第八版 上册 · 公式推导 + 交互图形 + 经典例题</p>
+
+<!-- Quick Nav -->
+<div class="qnav">
+<a href="#s1">库仑定律</a><a href="#s2">高斯定理</a><a href="#s3">电势</a>
+<a href="#s4">导体</a><a href="#s5">电容</a><a href="#s6">电场能量</a>
+<a href="#exams">必考题型</a>
+</div>
+
+<!-- ==================== 一、库仑定律与电场强度 ==================== -->
+<div class="sec" id="s1">
+<h2>一、库仑定律与电场强度 <span class="tag">基础</span></h2>
+
+<h3>1.1 库仑定律</h3>
+
+<div class="fml"><div class="label">库仑定律（真空中）</div>
+$$\vec{F}_{12}=\frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}\,\hat{r}_{12}$$
+其中 $\varepsilon_0=8.85\times10^{-12}\,\text{C}^2/(\text{N}\!\cdot\!\text{m}^2)$
+</div>
+
+<details class="der"><summary>库仑定律的要点</summary><div class="body">
+<ul>
+<li>适用于 <b>点电荷</b>（电荷线度远小于间距）</li>
+<li>满足 <b>平方反比</b> 规律（与万有引力形式相似）</li>
+<li>$\hat{r}_{12}$ 是从 $q_1$ 指向 $q_2$ 的单位矢量</li>
+<li>同号相斥、异号相吸——由符号自动确定方向</li>
+<li>库仑力是 <b>保守力</b>（可定义电势能）</li>
+</ul>
+</div></details>
+
+<h3>1.2 电场强度</h3>
+
+<div class="fml"><div class="label">定义</div>
+$$\vec{E}=\frac{\vec{F}}{q_0}\quad\text{单位：}\text{N/C 或 V/m}$$
+</div>
+
+<div class="fml"><div class="label">点电荷的场强</div>
+$$E=\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\quad \text{方向：正电荷向外，负电荷向内}$$
+</div>
+
+<h3>1.3 电场叠加原理</h3>
+
+<div class="fml green"><div class="label">点电荷系</div>
+$$\vec{E}=\sum_{i}\vec{E}_i=\sum_{i}\frac{1}{4\pi\varepsilon_0}\frac{q_i}{r_i^2}\,\hat{r}_i$$
+</div>
+
+<div class="fml green"><div class="label">连续带电体</div>
+$$\vec{E}=\int d\vec{E}=\int\frac{1}{4\pi\varepsilon_0}\frac{dq}{r^2}\,\hat{r}$$
+</div>
+
+<details class="der"><summary>连续带电体计算三步法</summary><div class="body">
+<p><b>Step 1</b> — 取微元 $dq$：</p>
+<ul>
+<li>线电荷：$dq = \lambda\,dl$</li>
+<li>面电荷：$dq = \sigma\,dS$</li>
+<li>体电荷：$dq = \rho\,dV$</li>
+</ul>
+<p><b>Step 2</b> — 写出 $d\vec{E}$，利用对称性分解分量</p>
+<p><b>Step 3</b> — 对保留分量积分（注意方向的 ± 号！）</p>
+</div></details>
+
+<div class="fml orange"><div class="label">电偶极子</div>
+$$\vec{p}=q\vec{l}\quad\text{（方向：}-q\rightarrow+q\text{）}$$
+轴线延长线上：$E\approx\frac{1}{2\pi\varepsilon_0}\frac{p}{r^3}$<br>
+中垂线上：$E\approx\frac{1}{4\pi\varepsilon_0}\frac{p}{r^3}$
+</div>
+
+<div class="cv"><canvas id="cvsDipole" width="480" height="240"></canvas><div class="cap">图1：电偶极子的电场线分布（+q 在上，−q 在下）</div></div>
+
+<h3>1.4 常见结论速记</h3>
+
+<div class="grid3">
+<div class="fml"><div class="label">均匀带电直线（中垂线）</div>
+$$E_x=0,\;E_y=\frac{\lambda}{2\pi\varepsilon_0 a}\sin\theta_0$$
+</div>
+<div class="fml"><div class="label">均匀带电圆环（轴线上）</div>
+$$E=\frac{1}{4\pi\varepsilon_0}\frac{qx}{(R^2+x^2)^{3/2}}$$
+</div>
+<div class="fml"><div class="label">均匀带电圆盘（轴线上）</div>
+$$E=\frac{\sigma}{2\varepsilon_0}\left[1-\frac{x}{\sqrt{R^2+x^2}}\right]$$
+</div>
+</div>
+
+<!-- Example -->
+<div class="ex"><div class="exh">📌 经典例题 — 带电直线中垂线场强</div>
+<div class="exb">
+<p>长 $L$ 的均匀带电直线，电荷线密度 $\lambda$，求中垂线上距直线 $a$ 处的场强。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：</b>取微元 $dq=\lambda\,dy$<br>
+对称性 → $E_x$ 分量抵消，只剩 $E_y$ 分量<br>
+$$dE_y=\frac{1}{4\pi\varepsilon_0}\frac{\lambda\,dy}{a^2+y^2}\cdot\frac{a}{\sqrt{a^2+y^2}}$$
+积分：$E_y=\frac{\lambda}{4\pi\varepsilon_0 a}\int_{-L/2}^{L/2}\frac{dy}{(a^2+y^2)^{3/2}}=\frac{\lambda}{2\pi\varepsilon_0 a}\cdot\frac{L/2}{\sqrt{a^2+(L/2)^2}}$<br>
+<b>注意</b>：积分上限和下限代入时符号要搞对！
+</div>
+</div></div>
+
+</div>
+
+<!-- ==================== 二、高斯定理 ==================== -->
+<div class="sec" id="s2">
+<h2>二、高斯定理 <span class="tag" style="background:var(--c2)">⭐⭐ 重点</span></h2>
+
+<h3>2.1 电通量</h3>
+
+<div class="fml"><div class="label">定义</div>
+通量 = 场强在法向的投影 × 面积：$\Phi_e=\int_S\vec{E}\cdot d\vec{S}$
+</div>
+
+<details class="der"><summary>电通量正负的物理含义</summary><div class="body">
+<ul>
+<li>$d\vec{S}$ 方向取<b>外法线</b>（闭合面）</li>
+<li>电场线<b>穿出</b>闭合面 → $\vec{E}\cdot d\vec{S}>0$ → $\Phi_e>0$</li>
+<li>电场线<b>穿入</b>闭合面 → $\vec{E}\cdot d\vec{S}<0$ → $\Phi_e<0$</li>
+<li>总通量 = 穿出减穿入的净通量</li>
+</ul>
+</div></details>
+
+<h3>2.2 高斯定理</h3>
+
+<div class="fml red"><div class="label">🔑 核心公式</div>
+$$\oint_S \vec{E}\cdot d\vec{S}=\frac{1}{\varepsilon_0}\sum q_{\text{内}}$$
+</div>
+
+<details class="der"><summary>⚠️ 最容易踩的坑</summary><div class="body">
+<ul>
+<li style="color:var(--c4)"><b>坑1</b>：等式左边 $\vec{E}$ 是<b>全部电荷</b>产生的场，不仅仅是曲面内的电荷！</li>
+<li style="color:var(--c4)"><b>坑2</b>：右边只用<b>曲面内</b>的电荷代数和，曲面外电荷不参与</li>
+<li style="color:var(--c4)"><b>坑3</b>：高斯定理对任何闭合曲面都成立，但只有高对称性情况才能直接求 E</li>
+</ul>
+</div></details>
+
+<div class="cv"><canvas id="cvsGauss" width="480" height="260"></canvas><div class="cap">图2：高斯定理示意——电场线穿入/穿出闭合曲面，净通量仅取决于内部电荷</div></div>
+
+<h3>2.3 三大标准应用</h3>
+
+<table class="tb">
+<tr><th>对称性</th><th>高斯面</th><th>场强</th><th>典型场景</th></tr>
+<tr><td><span class="kw">球对称</span></td><td>同心球面</td><td>$E=\frac{1}{4\pi\varepsilon_0}\frac{q_{\text{内}}}{r^2}$</td><td>点电荷、球壳、球体</td></tr>
+<tr><td><span class="kw">轴对称</span></td><td>同轴柱面</td><td>$E=\frac{\lambda}{2\pi\varepsilon_0 r}$</td><td>无限长直线、圆柱</td></tr>
+<tr><td><span class="kw">面对称</span></td><td>垂直柱面</td><td>$E=\frac{\sigma}{2\varepsilon_0}$</td><td>无限大平面</td></tr>
+</table>
+
+<details class="der"><summary>高斯定理解题三步法</summary><div class="body">
+<p><b>Step 1</b> — <b>对称性分析</b>：判断场强方向（径向？轴向？垂直平面？）</p>
+<p><b>Step 2</b> — <b>选高斯面</b>：</p>
+<ul>
+<li>高斯面上各点 E 大小相等</li>
+<li>E 方向与面元法向平行（或垂直）</li>
+</ul>
+<p><b>Step 3</b> — <b>代公式</b>：$\oint E\,dS = E\cdot S = \frac{q_{\text{内}}}{\varepsilon_0}$</p>
+</div></details>
+
+<h3>2.4 重要结论速记</h3>
+<div class="grid2">
+<div class="fml"><div class="label">均匀带电球壳</div>
+壳内 $r<R$：$E=0$<br>壳外 $r>R$：$E=\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}$
+</div>
+<div class="fml"><div class="label">均匀带电球体</div>
+体内 $r<R$：$E=\frac{1}{4\pi\varepsilon_0}\frac{q}{R^3}r$（∝ r）<br>体外 $r>R$：同球壳
+</div>
+<div class="fml"><div class="label">无限大平板</div>
+$E=\frac{\sigma}{2\varepsilon_0}$（均匀，与距离无关！）
+</div>
+<div class="fml"><div class="label">两平行板之间</div>
+内部：$E=\frac{\sigma}{\varepsilon_0}$（两板场强叠加）<br>外部：$E=0$（互相抵消）
+</div>
+</div>
+
+<!-- Examples -->
+<div class="ex"><div class="exh">📌 经典例题1 — 均匀带电球体</div>
+<div class="exb"><p>半径 $R$ 的均匀带电球体，总电量 $Q$。求球内外的场强分布。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：球对称 → 选同心球面为高斯面</b><br><br>
+<b>球外 ($r>R$)：</b> $\oint E\,dS = E\cdot4\pi r^2 = \frac{Q}{\varepsilon_0}$ → $E=\frac{Q}{4\pi\varepsilon_0 r^2}$<br><br>
+<b>球内 ($r<R$)：</b> 高斯面内电荷 $q_{\text{内}}=Q\cdot\frac{r^3}{R^3}$<br>
+$E\cdot4\pi r^2 = \frac{Q}{\varepsilon_0}\cdot\frac{r^3}{R^3}$ → $E=\frac{Q}{4\pi\varepsilon_0 R^3}r$<br><br>
+✅ 体内 E ∝ r（线性增长），体外 E ∝ 1/r²
+</div>
+</div></div>
+
+<div class="ex"><div class="exh">📌 经典例题2 — 补面法求电通量</div>
+<div class="exb"><p>圆锥高 $h$、底半径 $R$，顶点与底面圆心连线中点处有点电荷 $q$。求通过圆锥侧面的电通量。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：这是你问过的那道题！</b><br><br>
+补上底面构成<b>闭合面</b> → 高斯定理得总通量 $q/\varepsilon_0$<br>
+底面圆对点电荷所张立体角 $\Omega=2\pi(1-\cos\theta)$，$\cos\theta=\frac{h}{\sqrt{h^2+4R^2}}$<br>
+底面通量 $\Phi_{\text{底}}=\frac{q}{2\varepsilon_0}(1-\cos\theta)$<br><br>
+$$\Phi_{\text{侧}}=\frac{q}{\varepsilon_0}-\Phi_{\text{底}}=\frac{q}{2\varepsilon_0}\left(1+\frac{h}{\sqrt{h^2+4R^2}}\right)$$
+</div>
+</div></div>
+
+<div class="ex"><div class="exh">📌 经典例题3 — 导体球壳+点电荷</div>
+<div class="exb"><p>半径 $R$ 的接地导体球壳中心有一点电荷 $q$。求球壳内表面感应电荷、球壳外场强。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：</b><br>
+导体接地 → 球壳电势为 0<br>
+内表面感应电荷 $q' = -q$（高斯定理：球壳内高斯面包围 $q+q'=0$）<br>
+球壳为等势体 → $r>R$ 处 $E=0$（接地后外表面电荷流入大地）
+</div>
+</div></div>
+
+</div>
+
+<!-- ==================== 三、电势 ==================== -->
+<div class="sec" id="s3">
+<h2>三、电势与电势梯度</h2>
+
+<h3>3.1 环路定理</h3>
+
+<div class="fml"><div class="label">静电场环路定理</div>
+$$\oint \vec{E}\cdot d\vec{l}=0$$
+→ 静电场是<b>保守场</b>（无旋场），可以定义<b>电势</b>
+</div>
+
+<h3>3.2 电势与电势差</h3>
+
+<div class="fml green"><div class="label">电势定义</div>
+$$U_a=\int_a^{\text{零势点}}\vec{E}\cdot d\vec{l}$$
+</div>
+
+<div class="fml green"><div class="label">电势差</div>
+$$U_{ab}=U_a-U_b=\int_a^b\vec{E}\cdot d\vec{l}$$
+</div>
+
+<details class="der"><summary>关键点：电势是标量</summary><div class="body">
+<ul>
+<li>电势是<b>标量</b>——计算电势时做标量叠加，比电场矢量叠加简单得多</li>
+<li>零势点：通常取无穷远（有限电荷分布）或大地（实际电路）</li>
+<li>$U_{ab}>0$ 表示 a 点电势高于 b 点</li>
+<li>电场力做功：$W_{ab}=q_0 U_{ab}$</li>
+</ul>
+</div></details>
+
+<h3>3.3 电势的计算</h3>
+
+<table class="tb">
+<tr><th>方法</th><th>公式</th><th>适用场景</th></tr>
+<tr><td><span class="kw">叠加法</span></td><td>$U=\sum\frac{1}{4\pi\varepsilon_0}\frac{q_i}{r_i}$</td><td>点电荷系</td></tr>
+<tr><td><span class="kw">积分法</span></td><td>$U=\int\frac{1}{4\pi\varepsilon_0}\frac{dq}{r}$</td><td>连续带电体</td></tr>
+<tr><td><span class="kw">场强积分法</span></td><td>$U=\int_r^\infty E\,dr$</td><td>先用高斯定理求出 E，再积分</td></tr>
+</table>
+
+<div class="fml orange"><div class="label">⚠️ 技巧</div>
+能用<b>叠加法/积分法</b>直接用，因为电势是标量不用分解分量！能用高斯定理先求 E 再积分的情况也很常见。
+</div>
+
+<h3>3.4 电势梯度（场强与电势的关系）</h3>
+
+<div class="fml red"><div class="label">🔑 核心公式</div>
+$$\vec{E}=-\nabla U=-\left(\frac{\partial U}{\partial x}\hat{i}+\frac{\partial U}{\partial y}\hat{j}+\frac{\partial U}{\partial z}\hat{k}\right)$$
+一维情况下：$E=-\frac{dU}{dx}$
+</div>
+
+<details class="der"><summary>物理意义</summary><div class="body">
+<ul>
+<li>电场线指向<b>电势降低最快</b>的方向（负号）</li>
+<li>等势面越密 → 电势变化越快 → 场强越大</li>
+<li>等势面 ⊥ 电场线（处处垂直）</li>
+</ul>
+</div></details>
+
+<h3>3.5 常见电势公式</h3>
+<div class="grid2">
+<div class="fml"><div class="label">点电荷</div>$U=\frac{1}{4\pi\varepsilon_0}\frac{q}{r}$</div>
+<div class="fml"><div class="label">均匀带电球壳</div>壳外：$U=\frac{1}{4\pi\varepsilon_0}\frac{q}{r}$<br>壳内：$U=\frac{1}{4\pi\varepsilon_0}\frac{q}{R}$（等势）</div>
+<div class="fml"><div class="label">均匀带电球体</div>体外同球壳，体内 $U$ 是 $r$ 的二次函数</div>
+<div class="fml"><div class="label">电偶极子</div>$U=\frac{1}{4\pi\varepsilon_0}\frac{p\cos\theta}{r^2}$</div>
+</div>
+
+<div class="cv"><canvas id="cvsEquipot" width="480" height="240"></canvas><div class="cap">图3：点电荷的等势面（虚线圆）+ 电场线（径向实线），两者处处正交</div></div>
+
+<!-- Example -->
+<div class="ex"><div class="exh">📌 经典例题 — 均匀带电圆环轴线上电势</div>
+<div class="exb"><p>半径 $R$ 的均匀带电圆环，总电量 $q$，求轴线上距圆心 $x$ 处的电势，并由电势梯度求场强。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：</b><br>
+微元 $dq$ 到轴线上点的距离 $r=\sqrt{R^2+x^2}$<br>
+$$U=\int\frac{1}{4\pi\varepsilon_0}\frac{dq}{r}=\frac{1}{4\pi\varepsilon_0}\frac{q}{\sqrt{R^2+x^2}}$$
+由 $E_x=-\frac{dU}{dx}$：
+$$E_x=\frac{1}{4\pi\varepsilon_0}\frac{qx}{(R^2+x^2)^{3/2}}$$
+✅ 与之前直接积分场强的结果一致！
+</div>
+</div></div>
+
+</div>
+
+<!-- ==================== 四、导体 ==================== -->
+<div class="sec" id="s4">
+<h2>四、静电场中的导体</h2>
+
+<h3>4.1 静电平衡条件</h3>
+
+<div class="fml red"><div class="label">🔑 两个条件</div>
+<b>①</b> 导体内部电场强 $E_{\text{内}}=0$<br>
+<b>②</b> 导体表面附近 $E\perp$ 表面，大小 $E=\frac{\sigma}{\varepsilon_0}$
+</div>
+
+<table class="tb">
+<tr><th>性质</th><th>说明</th></tr>
+<tr><td>导体是等势体</td><td>内部 $E=0$ → 任意两点电势差为 0</td></tr>
+<tr><td>表面是等势面</td><td>$E\perp$ 表面 → 沿表面移动不做功</td></tr>
+<tr><td>电荷只分布在表面</td><td>内部 $E=0$ → 高斯面内净电荷为 0</td></tr>
+<tr><td>曲率大处电荷密度大</td><td>尖端放电的物理原因</td></tr>
+<tr><td>表面场强 $E=\sigma/\varepsilon_0$</td><td>由高斯面（圆柱形）直接推出</td></tr>
+</table>
+
+<details class="der"><summary>$E=\sigma/\varepsilon_0$ 推导</summary><div class="body">
+<p>取一小圆柱高斯面：一端在导体内部（E=0），一端在导体外。</p>
+<p>只有外端面有通量：$E\cdot\Delta S = \frac{\sigma\Delta S}{\varepsilon_0}$ → $E=\frac{\sigma}{\varepsilon_0}$</p>
+</div></details>
+
+<h3>4.2 静电屏蔽</h3>
+
+<div class="grid2">
+<div class="fml"><div class="label">空腔导体屏蔽外电场</div>空腔内无电荷时，腔内 $E=0$，内表面无电荷</div>
+<div class="fml"><div class="label">接地屏蔽</div>接地后内外部完全隔离，内外电场互不影响</div>
+</div>
+
+<div class="cv"><canvas id="cvsShield" width="480" height="220"></canvas><div class="cap">图4：导体球壳静电屏蔽（外电场无法进入内腔）</div></div>
+
+<!-- Example -->
+<div class="ex"><div class="exh">📌 经典例题 — 同心导体球壳</div>
+<div class="exb"><p>半径为 $R_1$ 的导体球带电 $Q$，外有内半径 $R_2$、外半径 $R_3$ 的同心导体球壳。球壳接地。求各区域场强分布。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：</b><br>
+① 导体球表面电荷 $Q$（均匀分布在外表面 $R_1$）<br>
+② 球壳接地 → 电势为 0<br>
+③ 球壳内表面感应 $-Q$，外表面电荷为 0（接地后流入大地）<br><br>
+<b>场强分布：</b><br>
+$r<R_1$：$E=0$（导体内部）<br>
+$R_1<r<R_2$：$E=\frac{Q}{4\pi\varepsilon_0 r^2}$<br>
+$R_2<r<R_3$：$E=0$（球壳导体内部）<br>
+$r>R_3$：$E=0$（球壳外表面无净电荷）
+</div>
+</div></div>
+
+</div>
+
+<!-- ==================== 五、电容与电介质 ==================== -->
+<div class="sec" id="s5">
+<h2>五、电容与电介质</h2>
+
+<h3>5.1 电容</h3>
+
+<div class="fml"><div class="label">定义</div>
+$$C=\frac{Q}{U}\quad\text{单位：法拉 F}$$
+</div>
+
+<h3>5.2 常见电容器</h3>
+
+<table class="tb">
+<tr><th>类型</th><th>公式</th><th>记忆技巧</th></tr>
+<tr><td><span class="kw">平行板</span></td><td>$C=\frac{\varepsilon_0 S}{d}$</td><td>面积大→电容大，间距大→电容小</td></tr>
+<tr><td><span class="kw">球形</span></td><td>$C=4\pi\varepsilon_0\frac{R_1 R_2}{R_2-R_1}$</td><td>$R_2\to\infty$ → 孤立球 $C=4\pi\varepsilon_0 R_1$</td></tr>
+<tr><td><span class="kw">圆柱形</span></td><td>$C=\frac{2\pi\varepsilon_0 L}{\ln(R_2/R_1)}$</td><td>对数出现在圆柱几何中</td></tr>
+</table>
+
+<h3>5.3 电容的串并联</h3>
+<div class="grid2">
+<div class="fml"><div class="label">串联</div>$$\frac{1}{C}=\sum\frac{1}{C_i}$$电压相加，电荷相等</div>
+<div class="fml"><div class="label">并联</div>$$C=\sum C_i$$电压相等，电荷相加</div>
+</div>
+
+<h3>5.4 电介质</h3>
+
+<div class="fml orange"><div class="label">关键概念</div>
+<b>相对介电常数</b> $\varepsilon_r$：填入介质后电容增大 $\varepsilon_r$ 倍<br>
+<b>电位移矢量</b>：$\vec{D}=\varepsilon_0\varepsilon_r\vec{E}=\varepsilon\vec{E}$<br>
+<b>介质中高斯定理</b>：$\oint\vec{D}\cdot d\vec{S}=q_0$（$q_0$ 为自由电荷）
+</div>
+
+<details class="der"><summary>介质中高斯定理的妙用</summary><div class="body">
+<p>介质中的高斯定理 $\oint\vec{D}\cdot d\vec{S}=q_0$ 不依赖束缚电荷——先用它求出 $\vec{D}$，再 $E=D/\varepsilon$ 得到场强。</p>
+<p>步骤：$q_0$ → $\vec{D}$ → $\vec{E}$，避免了处理复杂的束缚电荷分布。</p>
+</div></details>
+
+<!-- Example -->
+<div class="ex"><div class="exh">📌 经典例题 — 填介质后的平行板电容</div>
+<div class="exb"><p>平行板电容器面积 $S$、间距 $d$。填满 $\varepsilon_r$ 的电介质。求电容变化及电场能量变化。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：</b><br>
+真空：$C_0=\frac{\varepsilon_0 S}{d}$<br>
+填满介质：$C=\varepsilon_r C_0$<br><br>
+<b>两种情况：</b><br>
+① 断开电源（Q 不变）：$U=U_0/\varepsilon_r$，$W=W_0/\varepsilon_r$<br>
+② 保持电压（U 不变）：$Q=\varepsilon_r Q_0$，$W=\varepsilon_r W_0$<br><br>
+✅ 关键：先判断是 Q 不变还是 U 不变！
+</div>
+</div></div>
+
+</div>
+
+<!-- ==================== 六、静电场能量 ==================== -->
+<div class="sec" id="s6">
+<h2>六、静电场能量</h2>
+
+<h3>6.1 电容器储能</h3>
+<div class="fml red"><div class="label">🔑 三种等价形式</div>
+$$W=\frac{1}{2}CU^2=\frac{Q^2}{2C}=\frac{1}{2}QU$$
+</div>
+
+<h3>6.2 能量密度与电场能量</h3>
+<div class="fml green"><div class="label">能量密度</div>
+$$w=\frac{1}{2}\varepsilon E^2$$
+</div>
+<div class="fml green"><div class="label">总能量（对空间积分）</div>
+$$W=\int w\,dV=\int\frac{1}{2}\varepsilon E^2\,dV$$
+</div>
+
+<details class="der"><summary>两种求能量的思路对比</summary><div class="body">
+<table class="tb">
+<tr><th>方法</th><th>公式</th><th>适用</th></tr>
+<tr><td>电容法</td><td>$W=\frac{1}{2}CU^2$</td><td>已知电容和电压</td></tr>
+<tr><td>能量密度积分</td><td>$W=\int\frac{1}{2}\varepsilon E^2 dV$</td><td>已知电场分布（任何情况）</td></tr>
+</table>
+<p>后者更普适，但需要先求出 E 的空间分布。</p>
+</div></details>
+
+<!-- Example -->
+<div class="ex"><div class="exh">📌 经典例题 — 均匀带电球体的静电能</div>
+<div class="exb"><p>半径 $R$、总电量 $Q$ 的均匀带电球体。求其静电自能。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>解：用法2——能量密度积分</b><br><br>
+球内外场强：<br>
+$r<R$：$E_1=\frac{Qr}{4\pi\varepsilon_0 R^3}$<br>
+$r>R$：$E_2=\frac{Q}{4\pi\varepsilon_0 r^2}$<br><br>
+$$W=\int_0^R\frac{1}{2}\varepsilon_0 E_1^2\cdot4\pi r^2 dr+\int_R^\infty\frac{1}{2}\varepsilon_0 E_2^2\cdot4\pi r^2 dr$$
+$$=\frac{Q^2}{40\pi\varepsilon_0 R}+\frac{Q^2}{8\pi\varepsilon_0 R}=\frac{3Q^2}{20\pi\varepsilon_0 R}$$
+</div>
+</div></div>
+
+</div>
+
+<!-- ==================== 经典必考题型 ==================== -->
+<div class="sec" id="exams" style="border-left:4px solid var(--c2)">
+<h2>📝 经典必考题型汇编 <span class="tag" style="background:var(--c2);font-size:.9rem">考前必做</span></h2>
+
+<div class="ex"><div class="exh">题型1 — 高斯定理求场强（球/柱/面对称）</div>
+<div class="exb">
+<p><b>考法：</b>给出对称的电荷分布（球壳、球体、柱面、平面……），求场强分布。</p>
+<p><b>套路：</b>对称分析 → 选高斯面 → $ES=q_{\text{内}}/\varepsilon_0$</p>
+<p><b>陷阱：</b>电荷分布分区域时，$q_{\text{内}}$ 计算容易出错。球体体内 $q_{\text{内}}\propto r^3$！</p>
+</div></div>
+
+<div class="ex"><div class="exh">题型2 — 补面法求电通量</div>
+<div class="exb">
+<p><b>考法：</b>非闭合曲面的电通量。如圆锥面、半球面等。</p>
+<p><b>套路：</b>补面构成闭合曲面 → 高斯定理求总通量 → 减去补面的通量。</p>
+<p><b>补面通量求法：</b>立体角法 $\Phi=\frac{q}{4\pi\varepsilon_0}\cdot\Omega$</p>
+</div></div>
+
+<div class="ex"><div class="exh">题型3 — 电势叠加与电势梯度</div>
+<div class="exb">
+<p><b>考法：</b>已知电荷分布求电势，或已知电势求场强（$E=-\nabla U$）。</p>
+<p><b>注意：</b>电势是标量！能用叠加法就优先用，比先求 E 再积分简单。</p>
+</div></div>
+
+<div class="ex"><div class="exh">题型4 — 导体静电平衡综合</div>
+<div class="exb">
+<p><b>考法：</b>多个导体 + 电荷 + 接地/不接地，求电荷分布和场强。</p>
+<p><b>核心三步：</b></p>
+<ol>
+<li>电荷守恒（各导体总电荷已知或可求）</li>
+<li>高斯定理（关联各表面的电荷）</li>
+<li>等势条件（导体之间电势差 = 0）</li>
+</ol>
+<p><b>常见组合：</b>同心球壳、平行导体板、点电荷+导体球</p>
+</div></div>
+
+<div class="ex"><div class="exh">题型5 — 电容器 + 电介质混合</div>
+<div class="exb">
+<p><b>考法：</b>电容器部分填介质，或串联/并联含介质的电容器。</p>
+<p><b>关键判断：</b></p>
+<ul>
+<li>断开电源 → Q 不变 → $W=Q^2/(2C)$</li>
+<li>保持电压 → U 不变 → $W=\frac{1}{2}CU^2$</li>
+</ul>
+</div></div>
+
+<div class="ex"><div class="exh">题型6 — 电场能量计算</div>
+<div class="exb">
+<p><b>考法：</b>已知场强分布求静电能，或已知电容求储能。</p>
+<p><b>区分：</b>$W=\frac{1}{2}CU^2$（电容器）vs $W=\int\frac{1}{2}\varepsilon E^2 dV$（任意电场）</p>
+</div></div>
+
+</div>
+
+</div><!-- /.main -->
+
+<script>
+// ========== Sidebar active highlight ==========
+(function(){
+  const links = document.querySelectorAll('.sidebar a');
+  const sections = [...document.querySelectorAll('.sec')];
+  function highlight(){
+    let cur = sections[0].id;
+    const top = window.scrollY + 120;
+    for(const s of sections){if(s.offsetTop <= top) cur = s.id;}
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#'+cur));
+  }
+  window.addEventListener('scroll', highlight);
+  highlight();
+})();
+
+// ========== Canvas: Electric Dipole (cvsDipole) ==========
+(function(){
+  const c = document.getElementById('cvsDipole');
+  if(!c) return;
+  const ctx = c.getContext('2d');
+  const W=480, H=240, cx=W/2, cy=H/2;
+  const qp={x:cx, y:cy-60}, qn={x:cx, y:cy+60};
+  function Efield(px,py){
+    let ex=0,ey=0;
+    const dx1=px-qp.x, dy1=py-qp.y, r1=Math.hypot(dx1,dy1)||1;
+    ex+=+dx1/(r1*r1*r1); ey+=+dy1/(r1*r1*r1);
+    const dx2=px-qn.x, dy2=py-qn.y, r2=Math.hypot(dx2,dy2)||1;
+    ex+=-dx2/(r2*r2*r2); ey+=-dy2/(r2*r2*r2);
+    const m=Math.hypot(ex,ey)||1;
+    return {x:ex/m*12, y:ey/m*12};
+  }
+  ctx.fillStyle='#fafbfc'; ctx.fillRect(0,0,W,H);
+  // Field lines
+  ctx.strokeStyle='#93c5fd'; ctx.lineWidth=1;
+  for(let ang=0;ang<Math.PI*2;ang+=Math.PI/10){
+    if(Math.abs(Math.cos(ang))>0.98) continue;
+    const sx=qp.x+Math.cos(ang)*6, sy=qp.y+Math.sin(ang)*6;
+    ctx.beginPath(); ctx.moveTo(sx,sy);
+    let x=sx, y=sy, steps=0;
+    while(steps<200){
+      const e=Efield(x,y);
+      x+=e.x; y+=e.y; steps++;
+      if(y>H||y<0||x<0||x>W) break;
+      if(steps%2===0) ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+    // Negative side
+    const sx2=qn.x+Math.cos(ang)*6, sy2=qn.y+Math.sin(ang)*6;
+    ctx.beginPath(); ctx.moveTo(sx2,sy2);
+    x=sx2; y=sy2; steps=0;
+    while(steps<200){
+      const e=Efield(x,y);
+      x-=e.x; y-=e.y; steps++;
+      if(y>H||y<0||x<0||x>W) break;
+      if(steps%2===0) ctx.lineTo(x,y);
+    }
+    ctx.stroke();
+  }
+  // Charges
+  function drawCharge(x,y,sign,color){
+    ctx.beginPath(); ctx.arc(x,y,10,0,Math.PI*2);
+    ctx.fillStyle=color; ctx.fill();
+    ctx.fillStyle='#fff'; ctx.font='bold 14px sans-serif';
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(sign,x,y);
+  }
+  drawCharge(qp.x,qp.y,'+','#ef4444');
+  drawCharge(qn.x,qn.y,'−','#3b82f6');
+  ctx.fillStyle='#64748b'; ctx.font='11px sans-serif';
+  ctx.fillText('p⃗',qp.x-20,qp.y-30);
+})();
+
+// ========== Canvas: Gauss Surface (cvsGauss) ==========
+(function(){
+  const c=document.getElementById('cvsGauss');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  const W=480, H=260;
+  ctx.fillStyle='#fafbfc'; ctx.fillRect(0,0,W,H);
+  // Closed surface (irregular)
+  ctx.beginPath();
+  ctx.ellipse(240,130,120,80,0,0,Math.PI*2);
+  ctx.strokeStyle='#3b82f6'; ctx.lineWidth=2.5; ctx.stroke();
+  ctx.fillStyle='rgba(219,234,254,0.3)'; ctx.fill();
+  // Internal charges
+  function drawDot(x,y,c){ctx.beginPath();ctx.arc(x,y,5,0,Math.PI*2);ctx.fillStyle=c;ctx.fill();}
+  drawDot(220,120,'#ef4444'); ctx.fillText('+',217,125);
+  drawDot(265,130,'#ef4444'); ctx.fillText('+',262,135);
+  drawDot(240,105,'#3b82f6'); ctx.fillText('−',237,110);
+  // External charge
+  drawDot(380,80,'#ef4444'); ctx.fillText('+',377,85);
+  // Field lines
+  ctx.strokeStyle='#93c5fd'; ctx.lineWidth=1;
+  const arr=[{x:150,y:120,dx:1,dy:-0.2},{x:180,y:140,dx:1,dy:0.1},{x:160,y:100,dx:1,dy:0.3},
+            {x:320,y:120,dx:1,dy:0},{x:340,y:140,dx:1,dy:-0.15},{x:310,y:155,dx:1,dy:-0.25}];
+  arr.forEach(p=>{
+    ctx.beginPath(); ctx.moveTo(p.x,p.y);
+    let x=p.x,y=p.y;
+    for(let i=0;i<30;i++){
+      ctx.lineTo(x,y); x+=p.dx*5; y+=p.dy*5;
+    }
+    ctx.stroke();
+    // Arrow
+    ctx.beginPath();
+    ctx.moveTo(x,y);
+    ctx.lineTo(x-6*p.dx+2*p.dy,y-6*p.dy+2*p.dx);
+    ctx.lineTo(x-6*p.dx-2*p.dy,y-6*p.dy-2*p.dx);
+    ctx.fillStyle='#3b82f6'; ctx.fill();
+  });
+  // Labels
+  ctx.fillStyle='#1e293b'; ctx.font='12px sans-serif';
+  ctx.fillText('q₁=+',200,118); ctx.fillText('q₂=−',240,98); ctx.fillText('q₃=+',290,128);
+  ctx.fillText('q_ext=+',350,75);
+  ctx.fillStyle='#64748b'; ctx.font='11px sans-serif';
+  ctx.fillText('闭合曲面S',200,170);
+  ctx.fillText('∮E·dS = (q₁+q₂)/ε₀',170,240);
+})();
+
+// ========== Canvas: Equipotential lines (cvsEquipot) ==========
+(function(){
+  const c=document.getElementById('cvsEquipot');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  const W=480, H=240, cx=W/2, cy=H/2;
+  ctx.fillStyle='#fafbfc'; ctx.fillRect(0,0,W,H);
+  // Equipotential circles
+  [30,55,80,105,130].forEach(r=>{
+    ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2);
+    ctx.setLineDash([5,5]); ctx.strokeStyle='#f97316'; ctx.lineWidth=1; ctx.stroke();
+    ctx.setLineDash([]);
+  });
+  // Field lines (radial)
+  for(let ang=0;ang<Math.PI*2;ang+=Math.PI/6){
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.lineTo(cx+Math.cos(ang)*155,cy+Math.sin(ang)*155);
+    ctx.strokeStyle='#93c5fd'; ctx.lineWidth=1.2; ctx.stroke();
+  }
+  // Point charge
+  ctx.beginPath(); ctx.arc(cx,cy,10,0,Math.PI*2);
+  ctx.fillStyle='#ef4444'; ctx.fill();
+  ctx.fillStyle='#fff'; ctx.font='bold 14px sans-serif';
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+  ctx.fillText('+q',cx,cy);
+  // Legend
+  ctx.fillStyle='#64748b'; ctx.font='11px sans-serif';
+  ctx.setLineDash([5,5]);
+  ctx.beginPath(); ctx.moveTo(370,30); ctx.lineTo(410,30); ctx.strokeStyle='#f97316'; ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillText('等势面',415,34);
+  ctx.beginPath(); ctx.strokeStyle='#93c5fd'; ctx.moveTo(370,50); ctx.lineTo(410,50); ctx.stroke();
+  ctx.fillText('电场线',415,54);
+})();
+
+// ========== Canvas: Shielding (cvsShield) ==========
+(function(){
+  const c=document.getElementById('cvsShield');
+  if(!c) return;
+  const ctx=c.getContext('2d');
+  const W=480, H=220;
+  ctx.fillStyle='#fafbfc'; ctx.fillRect(0,0,W,H);
+  // External field lines (horizontal)
+  for(let y=30;y<=190;y+=20){
+    ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(160,y);
+    ctx.strokeStyle='#93c5fd'; ctx.lineWidth=1; ctx.stroke();
+  }
+  // Sphere
+  ctx.beginPath(); ctx.arc(240,110,90,0,Math.PI*2);
+  ctx.strokeStyle='#3b82f6'; ctx.lineWidth=2.5; ctx.stroke();
+  ctx.fillStyle='rgba(219,234,254,0.3)'; ctx.fill();
+  // Inner cavity
+  ctx.beginPath(); ctx.arc(240,110,50,0,Math.PI*2);
+  ctx.strokeStyle='#94a3b8'; ctx.lineWidth=1.5; ctx.setLineDash([4,4]); ctx.stroke();
+  ctx.setLineDash([]);
+  // Inner charge
+  ctx.beginPath(); ctx.arc(240,110,6,0,Math.PI*2);
+  ctx.fillStyle='#ef4444'; ctx.fill();
+  ctx.fillText('+q',235,104);
+  // Labels
+  ctx.fillStyle='#1e293b'; ctx.font='12px sans-serif';
+  ctx.fillText('外电场',40,20);
+  ctx.fillText('壳内 E=0',245,130);
+  ctx.fillText('内壁感应 −q',300,110);
+  ctx.fillText('外壁感应 +q',320,90);
+  ctx.fillStyle='#64748b'; ctx.font='11px sans-serif';
+  ctx.fillText('导体球壳',240,190);
+})();
+
+// ========== Smooth scroll for sidebar links ==========
+document.querySelectorAll('.sidebar a').forEach(a=>{
+  a.addEventListener('click',e=>{
+    e.preventDefault();
+    const id=a.getAttribute('href').slice(1);
+    document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡ 第7章 静止电荷的电场 — 交互复习</title>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f1f5f9;color:#1e293b;line-height:1.8}
+/* Top nav */
+.topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0;padding:0 16px;display:flex;align-items:center;gap:4px;overflow-x:auto;height:48px}
+.topbar .logo{font-weight:700;color:#2563eb;font-size:.92rem;flex-shrink:0;margin-right:8px}
+.topbar a{text-decoration:none;color:#64748b;font-size:.78rem;padding:5px 10px;border-radius:6px;flex-shrink:0;transition:all .15s}
+.topbar a:hover,.topbar a.on{background:#eff6ff;color:#2563eb}
+.topbar a.star{font-weight:600}
+/* Main */
+.wrap{max-width:920px;margin:0 auto;padding:16px 16px 60px}
+h1{text-align:center;color:#2563eb;margin:20px 0 4px;font-size:1.8rem}
+.sub{text-align:center;color:#64748b;margin-bottom:24px;font-size:.9rem}
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:28px}
+.chip{cursor:pointer;padding:6px 16px;border-radius:20px;background:#fff;border:1px solid #e2e8f0;font-size:.82rem;color:#64748b;transition:all .15s;user-select:none}
+.chip:hover,.chip.on{background:#2563eb;color:#fff;border-color:#2563eb}
+/* Section */
+.sec{background:#fff;border-radius:14px;margin-bottom:16px;overflow:hidden;scroll-margin-top:60px}
+.sec summary{padding:16px 22px;cursor:pointer;font-weight:700;font-size:1.02rem;color:#1e293b;list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary::before{content:'▸';width:20px;color:#94a3b8;transition:transform .2s;font-size:.85rem}
+.sec[open] summary::before{transform:rotate(90deg)}
+.sec summary:hover{background:#f8fafc}
+.sec summary .badge{font-size:.62rem;padding:2px 8px;border-radius:4px;font-weight:600}
+.sec .ct{padding:0 22px 18px}
+/* Formula */
+.fb{background:#f8fafc;border-radius:8px;padding:14px 18px;margin:8px 0;border-left:4px solid #2563eb;font-size:.9rem}
+.fb.r{border-left-color:#dc2626}.fb.g{border-left-color:#059669}.fb.o{border-left-color:#ea580c}
+.fb .lbl{font-size:.68rem;font-weight:700;text-transform:uppercase;margin-bottom:3px;opacity:.7}
+/* Grid */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+/* Table */
+.tb{width:100%;border-collapse:collapse;margin:10px 0;font-size:.84rem}
+.tb th{background:#f1f5f9;padding:8px 12px;text-align:left;font-weight:600;color:#2563eb;border:1px solid #e2e8f0}
+.tb td{padding:8px 12px;border:1px solid #e2e8f0}
+.tb tr:hover td{background:#fafbfc}
+/* Steps */
+.step{display:flex;align-items:flex-start;gap:8px;margin:6px 0;font-size:.86rem}
+.step .n{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:#2563eb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700}
+.step .b{background:#f8fafc;border-radius:6px;padding:8px 12px;flex:1}
+/* Example */
+.ex{border:1px solid #fde68a;border-radius:10px;margin:12px 0;overflow:hidden}
+.ex .eh{padding:10px 16px;background:#fef3c7;font-weight:600;font-size:.86rem;color:#92400e}
+.ex .eb{padding:12px 16px;font-size:.86rem}
+.ex button{cursor:pointer;background:#2563eb;color:#fff;border:none;padding:5px 14px;border-radius:6px;font-size:.78rem;margin:6px 2px 0 0;transition:all .15s}
+.ex button:hover{opacity:.85}
+.ex .ans{display:none;margin-top:10px;padding:10px 14px;background:#f0fdf4;border-radius:6px;border:1px solid #bbf7d0;font-size:.83rem;color:#166534}
+.ex .ans.show{display:block}
+/* Quiz */
+.qz{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;margin:10px 0}
+.qz .q{font-weight:600;color:#2563eb;margin-bottom:8px;font-size:.88rem}
+.qz label{display:block;cursor:pointer;padding:5px 10px;border-radius:6px;margin:3px 0;font-size:.85rem;transition:background .15s}
+.qz label:hover{background:#dbeafe}
+.qz input{margin-right:8px}
+.qz .fb{display:none;margin-top:8px;padding:8px 12px;border-radius:6px;font-size:.83rem;font-weight:600}
+.qz .fb.correct{display:block;background:#dcfce7;color:#166534}
+.qz .fb.wrong{display:block;background:#fef2f2;color:#991b1b}
+/* Simulator */
+.sim{background:#f8fafc;border-radius:12px;padding:12px;margin:12px 0;text-align:center}
+.sim canvas{border-radius:8px;cursor:grab;max-width:100%}
+.sim canvas:active{cursor:grabbing}
+.sim .info{font-size:.8rem;color:#64748b;margin-top:6px}
+.sim .info b{color:#2563eb}
+/* Flip cards */
+.flip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin:8px 0}
+.flip{perspective:800px;height:100px}
+.flip-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d;cursor:pointer}
+.flip.hover .flip-inner{transform:rotateY(180deg)}
+.flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:10px;text-align:center;font-size:.82rem}
+.flip-front{background:#eff6ff;border:1px solid #bfdbfe;color:#2563eb;font-weight:600;flex-direction:column;gap:2px}
+.flip-front .i{font-size:1.3rem}
+.flip-back{background:#f0fdf4;border:1px solid #bbf7d0;transform:rotateY(180deg);color:#059669;overflow-y:auto}
+/* Progress */
+.prog{position:fixed;top:48px;left:0;right:0;height:3px;z-index:99}
+.prog-bar{height:100%;background:linear-gradient(90deg,#2563eb,#059669);width:0%;transition:width .1s}
+/* Canvas */
+.cvs{text-align:center;margin:12px 0}
+.cvs canvas{border-radius:8px;border:1px solid #e2e8f0;max-width:100%}
+.cvs .cap{font-size:.78rem;color:#64748b;margin-top:4px}
+@media(max-width:600px){.g2,.g3,.flip-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="prog"><div class="prog-bar" id="prog"></div></div>
+
+<nav class="topbar">
+<span class="logo">⚡ 第7章</span>
+<a href="#s1">库仑定律</a><a href="#s2" class="star">高斯定理</a>
+<a href="#s3">电势</a><a href="#s4">导体</a><a href="#s5">电容</a>
+<a href="#s6">能量</a><a href="#s7" style="color:#ea580c;font-weight:700">必考题型</a>
+</nav>
+
+<div class="wrap">
+
+<h1>⚡ 静止电荷的电场</h1>
+<p class="sub">程守洙《普通物理学》第八版 上册 · 第7章</p>
+
+<div class="chips" id="chips">
+<span class="chip on" data-t="all">全部</span>
+<span class="chip" data-t="s1">库仑定律</span>
+<span class="chip" data-t="s2">高斯定理 ⭐</span>
+<span class="chip" data-t="s3">电势</span>
+<span class="chip" data-t="s4">导体</span>
+<span class="chip" data-t="s5">电容&介质</span>
+<span class="chip" data-t="s6">电场能量</span>
+<span class="chip" data-t="s7">必考题型</span>
+</div>
+
+<!-- ===== S1 ===== -->
+<details class="sec" open id="s1">
+<summary>一、库仑定律与电场强度 <span class="badge" style="background:#dbeafe;color:#2563eb">基础</span></summary>
+<div class="ct">
+
+<div class="flip-grid">
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">📐</span>库仑定律</div><div class="flip-back">\(F=\frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}\)<br>平方反比·点电荷</div></div></div>
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">⚡</span>电场强度</div><div class="flip-back">\(\vec{E}=\vec{F}/q_0\)<br>点电荷 \(E=\frac{q}{4\pi\varepsilon_0 r^2}\)</div></div></div>
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">➕</span>叠加原理</div><div class="flip-back">\(\vec{E}=\sum\vec{E}_i\)<br>矢量叠加！</div></div></div>
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">🧲</span>电偶极子</div><div class="flip-back">\(\vec{p}=q\vec{l}\)<br>\(E\propto p/r^3\)</div></div></div>
+</div>
+
+<div class="cvs"><canvas id="cv1" width="520" height="200"></canvas><div class="cap">🖱 点击翻转卡片查看公式 · 上图：电偶极子电场线</div></div>
+
+<div class="fb o"><div class="lbl">重要结论</div>圆环轴线 \(E=\frac{qx}{4\pi\varepsilon_0(R^2+x^2)^{3/2}}\) · 圆盘轴线 \(E=\frac{\sigma}{2\varepsilon_0}[1-\frac{x}{\sqrt{R^2+x^2}}]\)</div>
+
+<div class="ex"><div class="eh">📌 例题 — 带电直线中垂线场强</div><div class="eb">
+<p>长 \(L\)、线密度 \(\lambda\) 的均匀带电直线，求中垂线上距直线 \(a\) 处的场强。</p>
+<button onclick="stepShow(this)">分步求解</button>
+<div class="ans"><b>Step 1</b> 取微元 \(dq=\lambda dy\)<br><b>Step 2</b> 对称性→水平抵消，\(dE_y=dE\cdot\frac{a}{\sqrt{a^2+y^2}}\)<br><b>Step 3</b> 积分 \(E=\frac{\lambda}{2\pi\varepsilon_0 a}\cdot\frac{L/2}{\sqrt{a^2+(L/2)^2}}\)<br><b>Step 4</b> \(L\to\infty\) 时 \(E=\frac{\lambda}{2\pi\varepsilon_0 a}\)</div>
+</div></div>
+
+</div>
+</details>
+
+<!-- ===== S2 ===== -->
+<details class="sec" open id="s2">
+<summary>二、高斯定理 <span class="badge" style="background:#fed7aa;color:#ea580c">⭐⭐ 重点</span></summary>
+<div class="ct">
+
+<div class="fb r"><div class="lbl">核心公式</div>
+$$\oint_S \vec{E}\cdot d\vec{S}=\frac{1}{\varepsilon_0}\sum q_{\text{内}}$$
+</div>
+
+<div class="step"><div class="n">!</div><div class="b" style="background:#fef2f2;border:1px solid #fecaca">
+<b>⚠️ 三个坑：</b>① 左边 E 是<b>全部电荷</b>产生的场 ② 右边只用<b>面内</b>电荷 ③ 只有<b>高对称性</b>才能直接求 E
+</div></div>
+
+<!-- 🎮 交互模拟器 -->
+<div class="sim">
+<canvas id="simGauss" width="700" height="320"></canvas>
+<div class="info">🖱 <b>拖动电荷</b>进出高斯面 — 观察通量变化 &nbsp;|&nbsp; 面内净电荷 <b id="gIn">+2</b> &nbsp; 净通量 ∝ <b id="gFlux">+2</b></div>
+</div>
+
+<table class="tb">
+<tr><th>对称性</th><th>高斯面</th><th>场强</th></tr>
+<tr><td>球对称</td><td>同心球面</td><td>\(E=\frac{q_{\text{内}}}{4\pi\varepsilon_0 r^2}\)</td></tr>
+<tr><td>轴对称</td><td>同轴柱面</td><td>\(E=\frac{\lambda}{2\pi\varepsilon_0 r}\)</td></tr>
+<tr><td>面对称</td><td>垂直柱面</td><td>\(E=\frac{\sigma}{2\varepsilon_0}\)</td></tr>
+</table>
+
+<div class="g2">
+<div class="fb g"><div class="lbl">均匀带电球壳</div>壳内 r<R：E=0<br>壳外 r>R：同点电荷</div>
+<div class="fb g"><div class="lbl">均匀带电球体</div>体内 E∝r（线性）<br>体外同点电荷</div>
+<div class="fb g"><div class="lbl">无限大平板</div>\(E=\frac{\sigma}{2\varepsilon_0}\)<br>与距离无关！</div>
+<div class="fb g"><div class="lbl">两平行板间</div>内部 \(E=\frac{\sigma}{\varepsilon_0}\)<br>外部 E=0</div>
+</div>
+
+<div class="ex"><div class="eh">📌 例1 — 均匀带电球体</div><div class="eb">
+<p>半径 R、总电量 Q。求场强分布。</p>
+<button onclick="stepShow(this)">分步求解</button>
+<div class="ans"><b>球外 r>R：</b>\(E=\frac{Q}{4\pi\varepsilon_0 r^2}\)<br><b>球内 r<R：</b>\(q_{\text{内}}=Q\frac{r^3}{R^3}\) → \(E=\frac{Q}{4\pi\varepsilon_0 R^3}r\)</div>
+</div></div>
+
+<div class="ex"><div class="eh">📌 例2 — 补面法：圆锥侧面电通量（你问过的那题）</div><div class="eb">
+<p>圆锥高 h、底半径 R，顶点与底面圆心连线中点有点电荷 q。求侧面电通量。</p>
+<button onclick="stepShow(this)">分步求解</button>
+<div class="ans">补底面 → 总通量 \(q/\varepsilon_0\)<br>\(\cos\theta=\frac{h}{\sqrt{h^2+4R^2}}\)，底面通量 \(\Phi_{\text{底}}=\frac{q}{2\varepsilon_0}(1-\cos\theta)\)<br>\(\Phi_{\text{侧}}=\frac{q}{2\varepsilon_0}(1+\cos\theta)=\frac{q}{2\varepsilon_0}(1+\frac{h}{\sqrt{h^2+4R^2}})\)</div>
+</div></div>
+
+</div>
+</details>
+
+<!-- ===== S3 ===== -->
+<details class="sec" open id="s3">
+<summary>三、电势与电势梯度</summary>
+<div class="ct">
+
+<div class="flip-grid">
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">🔄</span>环路定理</div><div class="flip-back">\(\oint\vec{E}\cdot d\vec{l}=0\)<br>静电场是保守场</div></div></div>
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">📏</span>电势定义</div><div class="flip-back">\(U_a=\int_a^{\infty}\vec{E}\cdot d\vec{l}\)<br>标量！叠加简单</div></div></div>
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">📐</span>电势梯度</div><div class="flip-back">\(\vec{E}=-\nabla U\)<br>E 指向 U 降低最快方向</div></div></div>
+<div class="flip" onclick="this.classList.toggle('hover')"><div class="flip-inner"><div class="flip-front"><span class="i">🎯</span>点电荷电势</div><div class="flip-back">\(U=\frac{q}{4\pi\varepsilon_0 r}\)<br>球壳内 U=常数</div></div></div>
+</div>
+
+<div class="fb r"><div class="lbl">场强与电势的关系</div>\(\vec{E}=-\nabla U\) · 一维 \(E=-\frac{dU}{dx}\) · 等势面 ⊥ 电场线 · 等势面越密场强越大</div>
+
+<div class="fb o"><div class="lbl">⚠️ 技巧</div>电势是<b>标量</b>！能用叠加法就优先用（比先求 E 再积分更简单）</div>
+
+<div class="ex"><div class="eh">📌 圆环轴线上先求电势再求场强</div><div class="eb">
+<p>半径 R、电量 q 的圆环，求轴线上电势和场强。</p>
+<button onclick="stepShow(this)">分步求解</button>
+<div class="ans">\(U=\int\frac{dq}{4\pi\varepsilon_0\sqrt{R^2+x^2}}=\frac{q}{4\pi\varepsilon_0\sqrt{R^2+x^2}}\)<br>\(E=-\frac{dU}{dx}=\frac{qx}{4\pi\varepsilon_0(R^2+x^2)^{3/2}}\) ✅</div>
+</div></div>
+
+<div class="qz"><div class="q">🧪 球壳内部电势为？</div>
+<label><input type="radio" name="qz1" onchange="qcheck(this,'c')">A. 0</label>
+<label><input type="radio" name="qz1" onchange="qcheck(this,'c')">B. 随 r 变化</label>
+<label><input type="radio" name="qz1" onchange="qcheck(this,'c')">C. 常数（等于表面电势）</label>
+<div class="fb"></div></div>
+
+</div>
+</details>
+
+<!-- ===== S4 ===== -->
+<details class="sec" open id="s4">
+<summary>四、静电场中的导体</summary>
+<div class="ct">
+
+<div class="step"><div class="n">1</div><div class="b">静电平衡：内部 E=0 · 表面 \(E\perp\) 表面，\(E=\sigma/\varepsilon_0\)</div></div>
+<div class="step"><div class="n">2</div><div class="b">推论：导体是等势体 · 表面是等势面 · 电荷只分布在表面 · 尖端放电</div></div>
+<div class="step"><div class="n">3</div><div class="b">表面场强推导：圆柱高斯面（一端在导体内）→ \(E=\sigma/\varepsilon_0\)</div></div>
+<div class="step"><div class="n">4</div><div class="b">静电屏蔽：空腔导体内不受外场影响；接地后内外完全隔离</div></div>
+
+<div class="cvs"><canvas id="cv4" width="520" height="200"></canvas><div class="cap">导体球壳静电屏蔽（外电场无法进入内腔）</div></div>
+
+<div class="ex"><div class="eh">📌 必考 — 同心导体球壳</div><div class="eb">
+<p>内球（\(R_1\)）带电 \(Q\)，同心球壳（内 \(R_2\) 外 \(R_3\)）接地。求各区域场强。</p>
+<button onclick="stepShow(this)">分步求解</button>
+<div class="ans"><b>①</b> 内球电荷在表面 \(R_1\)<br><b>②</b> 球壳内 E=0 → 内表面感应 \(-Q\)<br><b>③</b> 接地 → 外表面无电荷<br><b>④</b> r<\(R_1\)：E=0 · \(R_1\)<r<\(R_2\)：\(E=\frac{Q}{4\pi\varepsilon_0 r^2}\) · r>\(R_2\)：E=0</div>
+</div></div>
+
+</div>
+</details>
+
+<!-- ===== S5 ===== -->
+<details class="sec" open id="s5">
+<summary>五、电容与电介质</summary>
+<div class="ct">
+
+<div class="g2">
+<div class="fb"><div class="lbl">平行板</div>\(C=\frac{\varepsilon_0 S}{d}\)</div>
+<div class="fb"><div class="lbl">球形</div>\(C=4\pi\varepsilon_0\frac{R_1 R_2}{R_2-R_1}\)</div>
+<div class="fb"><div class="lbl">串并联</div>串联 \(\frac{1}{C}=\sum\frac{1}{C_i}\)<br>并联 \(C=\sum C_i\)</div>
+<div class="fb"><div class="lbl">圆柱形</div>\(C=\frac{2\pi\varepsilon_0 L}{\ln(R_2/R_1)}\)</div>
+</div>
+
+<div class="fb o"><div class="lbl">电介质</div>\(\vec{D}=\varepsilon\vec{E}\) · \(\oint\vec{D}\cdot d\vec{S}=q_0\)（自由电荷）· 填充介质 \(C=\varepsilon_r C_0\)<br><b>介质中高斯定理妙用：</b>先求 D → E=D/ε，避免处理束缚电荷</div>
+
+<div class="qz"><div class="q">🧪 平行板填满介质，断开电源后抽出介质——C 和 U 如何变？</div>
+<label><input type="radio" name="qz2" onchange="qcheck(this,'c')">A. C增大 U减小</label>
+<label><input type="radio" name="qz2" onchange="qcheck(this,'c')">B. C减小 U不变</label>
+<label><input type="radio" name="qz2" onchange="qcheck(this,'c')">C. C减小 U增大</label>
+<label><input type="radio" name="qz2" onchange="qcheck(this,'c')">D. C和U都不变</label>
+<div class="fb"></div></div>
+
+</div>
+</details>
+
+<!-- ===== S6 ===== -->
+<details class="sec" open id="s6">
+<summary>六、静电场能量</summary>
+<div class="ct">
+
+<div class="fb r"><div class="lbl">电容器储能</div>
+$$W=\frac{1}{2}CU^2=\frac{Q^2}{2C}=\frac{1}{2}QU$$
+</div>
+
+<div class="g2">
+<div class="fb g"><div class="lbl">能量密度</div>\(w=\frac{1}{2}\varepsilon E^2\)<br>任何电场都适用</div>
+<div class="fb g"><div class="lbl">总能量</div>\(W=\int w\,dV=\int\frac{1}{2}\varepsilon E^2 dV\)</div>
+</div>
+
+<div class="ex"><div class="eh">📌 均匀带电球体静电自能</div><div class="eb">
+<p>半径 R、电量 Q。求静电能。</p>
+<button onclick="stepShow(this)">分步求解</button>
+<div class="ans">体内 \(E_1=\frac{Qr}{4\pi\varepsilon_0 R^3}\) · 体外 \(E_2=\frac{Q}{4\pi\varepsilon_0 r^2}\)<br>\(W=\int_0^R\frac{1}{2}\varepsilon_0 E_1^2\cdot4\pi r^2 dr+\int_R^{\infty}\frac{1}{2}\varepsilon_0 E_2^2\cdot4\pi r^2 dr\)<br>\(=\frac{3Q^2}{20\pi\varepsilon_0 R}\)</div>
+</div></div>
+
+</div>
+</details>
+
+<!-- ===== S7 ===== -->
+<details class="sec" open id="s7">
+<summary>📝 经典必考题型汇编 <span class="badge" style="background:#fed7aa;color:#ea580c">考前必看</span></summary>
+<div class="ct">
+
+<div class="g2">
+<div class="ex" style="margin:4px 0"><div class="eh">题型1 高斯定理求场强</div><div class="eb" style="font-size:.8rem"><b>考法：</b>球壳/球体/柱面/平面<br><b>套路：</b>对称→高斯面→\(ES=q_{\text{内}}/\varepsilon_0\)<br><b>陷阱：</b>球体体内 \(q_{\text{内}}\propto r^3\)</div></div>
+<div class="ex" style="margin:4px 0"><div class="eh">题型2 补面法求通量</div><div class="eb" style="font-size:.8rem"><b>考法：</b>锥面/半球面<br><b>套路：</b>补面→高斯→减补面<br><b>补面：</b>立体角 \(\Phi=\frac{q}{4\pi\varepsilon_0}\Omega\)</div></div>
+<div class="ex" style="margin:4px 0"><div class="eh">题型3 电势叠加/梯度</div><div class="eb" style="font-size:.8rem"><b>技巧：</b>标量叠加优先！<br>\(\vec{E}=-\nabla U\) 双向互推</div></div>
+<div class="ex" style="margin:4px 0"><div class="eh">题型4 导体综合</div><div class="eb" style="font-size:.8rem"><b>三步：</b>电荷守恒+高斯定理+等势条件<br><b>经典：</b>同心球壳/平行板</div></div>
+<div class="ex" style="margin:4px 0"><div class="eh">题型5 电容+介质</div><div class="eb" style="font-size:.8rem"><b>关键：</b>先判断 Q不变/U不变<br>填介质：C=ε<sub>r</sub>C<sub>0</sub></div></div>
+<div class="ex" style="margin:4px 0"><div class="eh">题型6 电场能量</div><div class="eb" style="font-size:.8rem">\(W=\frac{1}{2}CU^2\) 或<br>\(W=\int\frac{1}{2}\varepsilon E^2 dV\)</div></div>
+</div>
+
+</div>
+</details>
+
+</div>
+
+<script>
+// ===== Self-test quiz =====
+function qcheck(r,c){
+  var fb=r.closest('.qz').querySelector('.fb');
+  var ok=r.value===c;
+  fb.textContent=ok?'✅ 正确！':'❌ 不对，再想想';
+  fb.className='fb '+(ok?'correct':'wrong');
+}
+
+// ===== Step reveal (click to show answer) =====
+function stepShow(btn){
+  var ans=btn.parentElement.querySelector('.ans');
+  ans.classList.toggle('show');
+  btn.textContent=ans.classList.contains('show')?'收起':'分步求解';
+}
+
+// ===== Chip navigation =====
+document.getElementById('chips').addEventListener('click',function(e){
+  if(!e.target.classList.contains('chip'))return;
+  var t=e.target.dataset.t;
+  if(t==='all'){
+    document.querySelectorAll('.sec').forEach(function(s){s.open=true;});
+  }else{
+    var s=document.getElementById(t);
+    if(s){s.open=true;s.scrollIntoView({behavior:'smooth',block:'start'});}
+  }
+});
+
+// ===== Nav highlight =====
+var navs=document.querySelectorAll('.topbar a[href]');
+var secs=Array.from(document.querySelectorAll('.sec'));
+window.addEventListener('scroll',function(){
+  var cur=secs[0]?secs[0].id:'';
+  var top=window.scrollY+70;
+  secs.forEach(function(s){if(s.offsetTop<=top)cur=s.id;});
+  navs.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
+});
+
+// ===== Progress bar =====
+window.addEventListener('scroll',function(){
+  var h=document.documentElement.scrollHeight-window.innerHeight;
+  document.getElementById('prog').style.width=h>0?(window.scrollY/h*100)+'%':'0%';
+});
+
+// ===== Canvas 1: Electric dipole =====
+(function(){
+  var c=document.getElementById('cv1');if(!c)return;
+  var ctx=c.getContext('2d'),W=520,H=200,cx=W/2,cy=H/2;
+  var qp={x:cx,y:cy-45},qn={x:cx,y:cy+45};
+  function ef(px,py){
+    var dx1=px-qp.x,dy1=py-qp.y,r1=Math.hypot(dx1,dy1)||1;
+    var dx2=px-qn.x,dy2=py-qn.y,r2=Math.hypot(dx2,dy2)||1;
+    var ex=dx1/(r1*r1*r1)-dx2/(r2*r2*r2),ey=dy1/(r1*r1*r1)-dy2/(r2*r2*r2);
+    var m=Math.hypot(ex,ey)||1;return{x:ex/m*12,y:ey/m*12};
+  }
+  ctx.fillStyle='#fafbfc';ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle='#93c5fd';ctx.lineWidth=1;
+  for(var a=0;a<Math.PI*2;a+=Math.PI/10){
+    if(Math.abs(Math.cos(a))>0.98)continue;
+    var sx=qp.x+Math.cos(a)*5,sy=qp.y+Math.sin(a)*5,x=sx,y=sy,st=0;
+    ctx.beginPath();ctx.moveTo(sx,sy);
+    while(st<160){var e=ef(x,y);x+=e.x;y+=e.y;st++;if(y>H||y<0||x<0||x>W)break;if(st%2===0)ctx.lineTo(x,y);}
+    ctx.stroke();
+    sx=qn.x+Math.cos(a)*5;sy=qn.y+Math.sin(a)*5;x=sx;y=sy;st=0;
+    ctx.beginPath();ctx.moveTo(sx,sy);
+    while(st<160){e=ef(x,y);x-=e.x;y-=e.y;st++;if(y>H||y<0||x<0||x>W)break;if(st%2===0)ctx.lineTo(x,y);}
+    ctx.stroke();
+  }
+  ctx.beginPath();ctx.arc(qp.x,qp.y,8,0,Math.PI*2);ctx.fillStyle='#ef4444';ctx.fill();
+  ctx.fillStyle='#fff';ctx.font='bold 13px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillText('+',qp.x,qp.y);
+  ctx.beginPath();ctx.arc(qn.x,qn.y,8,0,Math.PI*2);ctx.fillStyle='#3b82f6';ctx.fill();
+  ctx.fillText('−',qn.x,qn.y);
+})();
+
+// ===== Canvas 4: Shielding =====
+(function(){
+  var c=document.getElementById('cv4');if(!c)return;
+  var ctx=c.getContext('2d'),W=520,H=200;
+  ctx.fillStyle='#fafbfc';ctx.fillRect(0,0,W,H);
+  for(var y=25;y<=175;y+=22){ctx.beginPath();ctx.moveTo(30,y);ctx.lineTo(190,y);ctx.strokeStyle='#93c5fd';ctx.lineWidth=1;ctx.stroke();}
+  ctx.beginPath();ctx.arc(260,100,80,0,Math.PI*2);ctx.strokeStyle='#3b82f6';ctx.lineWidth=2.5;ctx.stroke();
+  ctx.fillStyle='rgba(219,234,254,.3)';ctx.fill();
+  ctx.beginPath();ctx.arc(260,100,45,0,Math.PI*2);ctx.strokeStyle='#94a3b8';ctx.lineWidth=1.5;ctx.setLineDash([4,4]);ctx.stroke();ctx.setLineDash([]);
+  ctx.beginPath();ctx.arc(260,100,5,0,Math.PI*2);ctx.fillStyle='#ef4444';ctx.fill();
+  ctx.fillText('+q',253,95);
+  ctx.fillStyle='#1e293b';ctx.font='11px sans-serif';ctx.fillText('外电场 →',50,18);
+  ctx.fillText('壳内 E=0',270,120);ctx.fillText('内壁 −q',310,105);ctx.fillText('外壁 +q',340,85);
+})();
+
+// ===== 🎮 Gauss Simulator =====
+(function(){
+  var cv=document.getElementById('simGauss');if(!cv)return;
+  var ctx=cv.getContext('2d'),W=700,H=320;
+  var cx=300,cy=160,gr=120;
+  var charges=[{x:cx-35,y:cy-15,q:1},{x:cx+40,y:cy+10,q:1},{x:cx+200,y:cy-50,q:1}];
+  var drag=null;
+  function inside(ch){return Math.pow((ch.x-cx)/gr,2)+Math.pow((ch.y-cy)/(gr*.7),2)<1;}
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // Surface
+    ctx.save();ctx.beginPath();ctx.ellipse(cx,cy,gr,gr*.7,0,0,Math.PI*2);
+    ctx.fillStyle='rgba(219,234,254,.3)';ctx.fill();
+    ctx.strokeStyle='#3b82f6';ctx.lineWidth=2.5;ctx.setLineDash([8,4]);ctx.stroke();ctx.setLineDash([]);ctx.restore();
+    // Field arrows
+    for(var i=0;i<16;i++){var ang=Math.random()*Math.PI*2;var rx=cx+Math.cos(ang)*(gr+12),ry=cy+Math.sin(ang)*(gr+12)*.7;ctx.beginPath();ctx.moveTo(rx,ry);ctx.lineTo(rx+Math.cos(ang)*8,ry+Math.sin(ang)*8*.7);ctx.strokeStyle='#93c5fd';ctx.lineWidth=1;ctx.stroke();}
+    // Charges
+    charges.forEach(function(ch){
+      var ins=inside(ch);
+      ctx.beginPath();ctx.arc(ch.x,ch.y,13,0,Math.PI*2);ctx.fillStyle=ch.q>0?'#ef4444':'#3b82f6';ctx.fill();
+      ctx.fillStyle='#fff';ctx.font='bold 13px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillText(ch.q>0?'+':'−',ch.x,ch.y);
+    });
+    ctx.fillStyle='#1e293b';ctx.font='12px sans-serif';ctx.textAlign='center';ctx.fillText('高斯面 S',cx,cy-10);
+    var inC=charges.reduce(function(s,c){return s+(inside(c)?c.q:0);},0);
+    document.getElementById('gIn').textContent=(inC>=0?'+':'')+inC;
+    document.getElementById('gFlux').textContent=(inC>=0?'+':'')+inC;
+  }
+  function getXY(e){var r=cv.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
+  cv.addEventListener('mousedown',function(e){var p=getXY(e);charges.forEach(function(ch){if(Math.hypot(p.x-ch.x,p.y-ch.y)<16)drag=ch;});});
+  cv.addEventListener('mousemove',function(e){if(!drag)return;var p=getXY(e);drag.x=Math.max(15,Math.min(W-15,p.x));drag.y=Math.max(15,Math.min(H-15,p.y));draw();});
+  cv.addEventListener('mouseup',function(){drag=null;});
+  cv.addEventListener('mouseleave',function(){drag=null;});
+  cv.addEventListener('touchstart',function(e){e.preventDefault();var p=getXY(e.touches[0]);charges.forEach(function(ch){if(Math.hypot(p.x-ch.x,p.y-ch.y)<20)drag=ch;});},{passive:false});
+  cv.addEventListener('touchmove',function(e){e.preventDefault();if(!drag)return;var p=getXY(e.touches[0]);drag.x=Math.max(15,Math.min(W-15,p.x));drag.y=Math.max(15,Math.min(H-15,p.y));draw();},{passive:false});
+  cv.addEventListener('touchend',function(){drag=null;});
+  draw();
+})();
+</script>
+</body>
+</html>

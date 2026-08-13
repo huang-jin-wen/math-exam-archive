@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 静止电荷的电场 复习</title>
+<script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f1f5f9;color:#1e293b;line-height:1.8;padding:20px}
+h1{text-align:center;color:#2563eb;margin:20px 0 4px;font-size:1.8rem}
+.sub{text-align:center;color:#64748b;margin-bottom:30px;font-size:.9rem}
+.sec{background:#fff;border-radius:14px;margin:0 auto 18px;max-width:880px;box-shadow:0 1px 4px rgba(0,0,0,.06);overflow:hidden}
+.sec summary{padding:18px 24px;cursor:pointer;font-weight:700;font-size:1.05rem;color:#1e293b;list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary::before{content:'▸';width:20px;color:#94a3b8;transition:transform .2s;font-size:.85rem}
+.sec[open] summary::before{transform:rotate(90deg)}
+.sec summary:hover{background:#f8fafc}
+.sec summary .badge{font-size:.65rem;padding:3px 8px;border-radius:4px;font-weight:600}
+.sec .content{padding:0 24px 20px}
+.fml{background:#f8fafc;border-radius:8px;padding:14px 18px;margin:10px 0;border-left:4px solid #2563eb;font-size:.92rem}
+.fml.r{border-left-color:#dc2626}.fml.g{border-left-color:#059669}.fml.o{border-left-color:#ea580c}
+.fml .lbl{font-size:.7rem;color:inherit;font-weight:700;text-transform:uppercase;margin-bottom:4px;opacity:.7}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tb{width:100%;border-collapse:collapse;margin:12px 0;font-size:.85rem}
+.tb th{background:#f1f5f9;padding:8px 12px;text-align:left;font-weight:600;color:#2563eb;border:1px solid #e2e8f0}
+.tb td{padding:8px 12px;border:1px solid #e2e8f0}
+.tb tr:hover td{background:#fafbfc}
+.ex{border:1px solid #fde68a;border-radius:10px;margin:14px 0;overflow:hidden}
+.ex .eh{padding:10px 16px;background:#fef3c7;font-weight:600;font-size:.88rem;color:#92400e}
+.ex .eb{padding:12px 16px;font-size:.88rem}
+.ex .eb button{cursor:pointer;background:#2563eb;color:#fff;border:none;padding:6px 14px;border-radius:6px;font-size:.8rem;margin-top:8px}
+.ex .eb button:hover{opacity:.85}
+.ex .ans{display:none;margin-top:10px;padding:10px 14px;background:#f0fdf4;border-radius:6px;border:1px solid #bbf7d0;font-size:.84rem;color:#166534}
+.ex .ans.show{display:block}
+.qz{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px;margin:12px 0}
+.qz .q{font-weight:600;color:#2563eb;margin-bottom:8px;font-size:.9rem}
+.qz label{display:block;cursor:pointer;padding:6px 10px;border-radius:6px;margin:3px 0;font-size:.88rem;transition:background .15s}
+.qz label:hover{background:#dbeafe}
+.qz input{margin-right:8px}
+.qz .fb{display:none;margin-top:8px;padding:8px 12px;border-radius:6px;font-size:.85rem;font-weight:600}
+.qz .fb.correct{display:block;background:#dcfce7;color:#166534}
+.qz .fb.wrong{display:block;background:#fef2f2;color:#991b1b}
+.step{display:flex;align-items:flex-start;gap:8px;margin:8px 0;font-size:.88rem}
+.step .n{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:#2563eb;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700}
+.step .b{background:#f8fafc;border-radius:6px;padding:8px 12px;flex:1}
+@media(max-width:600px){.g2,.g3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<h1>⚡ 第7章 静止电荷的电场</h1>
+<p class="sub">程守洙《普通物理学》第八版 上册 · 完整复习 · 点击章节展开</p>
+
+<details class="sec" open>
+<summary>一、库仑定律与电场强度 <span class="badge" style="background:#dbeafe;color:#2563eb">基础</span></summary>
+<div class="content">
+
+<div class="fml"><div class="lbl">库仑定律</div>
+$$F_{12}= \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}\hat{r}_{12},\quad \varepsilon_0=8.85 \times 10^{-12}$$
+</div>
+
+<div class="fml g"><div class="lbl">电场强度</div>
+定义：\( \vec{E}= \vec{F}/q_0 \) · 点电荷：\(E= \frac{q}{4\pi\varepsilon_0 r^2}\) · 叠加原理：\( \vec{E}= \sum \vec{E}_i \)
+</div>
+
+<div class="fml o"><div class="lbl">电偶极子</div>
+\( \vec{p}=q\vec{l} \)（方向：-q → +q）· 轴线上 \(E \approx \frac{p}{2\pi\varepsilon_0 r^3}\) · 中垂线上 \(E \approx \frac{p}{4\pi\varepsilon_0 r^3}\)
+</div>
+
+<div class="g3">
+<div class="fml"><div class="lbl">均匀带电直线（中垂线）</div>\(E_y= \frac{\lambda}{2\pi\varepsilon_0 a}\sin\theta_0\)</div>
+<div class="fml"><div class="lbl">圆环轴线上</div>\(E= \frac{qx}{4\pi\varepsilon_0(R^2+x^2)^{3/2}}\)</div>
+<div class="fml"><div class="lbl">圆盘轴线上</div>\(E= \frac{\sigma}{2\varepsilon_0}\left[1- \frac{x}{\sqrt{R^2+x^2}}\right]\)</div>
+</div>
+
+<div class="ex"><div class="eh">📌 例题 — 带电直线中垂线场强</div>
+<div class="eb">
+<p>长 \(L\)、线密度 \(\lambda\) 的均匀带电直线，求中垂线上距直线 \(a\) 处的场强。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans">
+<b>Step 1</b> 取微元 \(dq= \lambda dy\)<br>
+<b>Step 2</b> 对称性 → 水平分量抵消，\(dE_y=dE\cdot \frac{a}{\sqrt{a^2+y^2}}\)<br>
+<b>Step 3</b> 积分 \(E_y= \frac{\lambda a}{4\pi\varepsilon_0}\int_{-L/2}^{L/2} \frac{dy}{(a^2+y^2)^{3/2}}\)<br>
+<b>Step 4</b> 结果：\(E= \frac{\lambda}{2\pi\varepsilon_0 a}\cdot \frac{L/2}{\sqrt{a^2+(L/2)^2}}\)<br>
+当 \(L \to \infty\)：\(E= \frac{\lambda}{2\pi\varepsilon_0 a}\)
+</div>
+</div></div>
+
+</div>
+</details>
+
+<details class="sec" open>
+<summary>二、高斯定理 <span class="badge" style="background:#fed7aa;color:#ea580c">⭐⭐ 重点</span></summary>
+<div class="content">
+
+<div class="fml r"><div class="lbl">核心公式</div>
+$$\oint_S \vec{E}\cdot d\vec{S}= \frac{1}{\varepsilon_0}\sum q_{\text{内}}$$
+</div>
+
+<div class="step"><div class="n">!</div><div class="b" style="background:#fef2f2;border:1px solid #fecaca">
+<b>⚠️ 最易踩坑：</b>① 左边 E 是<b>全部电荷</b>产生的场（不限于面内）② 右边只用<b>面内</b>电荷 ③ 只有<b>高对称性</b>才能直接求 E
+</div></div>
+
+<table class="tb">
+<tr><th>对称性</th><th>高斯面</th><th>场强公式</th><th>典型场景</th></tr>
+<tr><td>球对称</td><td>同心球面</td><td>\(E= \frac{q_{\text{内}}}{4\pi\varepsilon_0 r^2}\)</td><td>点电荷、球壳、球体</td></tr>
+<tr><td>轴对称</td><td>同轴柱面</td><td>\(E= \frac{\lambda}{2\pi\varepsilon_0 r}\)</td><td>无限长直线、圆柱</td></tr>
+<tr><td>面对称</td><td>垂直柱面</td><td>\(E= \frac{\sigma}{2\varepsilon_0}\)</td><td>无限大平面</td></tr>
+</table>
+
+<div class="g2">
+<div class="fml g"><div class="lbl">均匀带电球壳</div>壳内 r < R：\(E=0\)<br>壳外 r > R：同点电荷</div>
+<div class="fml g"><div class="lbl">均匀带电球体</div>体内：\(E \propto r\)（线性！）<br>体外：同点电荷</div>
+<div class="fml g"><div class="lbl">无限大平板</div>\(E= \frac{\sigma}{2\varepsilon_0}\)<br>与距离无关！</div>
+<div class="fml g"><div class="lbl">两平行板间</div>内部 \(E= \frac{\sigma}{\varepsilon_0}\)<br>外部 \(E=0\)（抵消）</div>
+</div>
+
+<div class="ex"><div class="eh">📌 例1 — 均匀带电球体场强</div><div class="eb">
+<p>半径 \(R\)、总电量 \(Q\)，求内外场强分布。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>球外</b> r > R：\(E= \frac{Q}{4\pi\varepsilon_0 r^2}\)<br><b>球内</b> r < R：\(q_{\text{内}}=Q \frac{r^3}{R^3}\) → \(E= \frac{Q}{4\pi\varepsilon_0 R^3}r\)（∝ r）</div>
+</div></div>
+
+<div class="ex"><div class="eh">📌 例2 — 补面法：圆锥侧面电通量</div><div class="eb">
+<p>圆锥高 h、底半径 R，顶点与底面圆心连线中点有点电荷 q。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans">补底面 → 闭合面总通量 \(q/\varepsilon_0\)<br>底面立体角 \(\Omega=2\pi(1-\cos\theta)\)，其中 \(\cos\theta= \frac{h}{\sqrt{h^2+4R^2}}\)<br>\(\Phi_{\text{底}}= \frac{q}{2\varepsilon_0}(1-\cos\theta)\)<br>\(\Phi_{\text{侧}}= \frac{q}{2\varepsilon_0}\left(1+ \frac{h}{\sqrt{h^2+4R^2}}\right)\)</div>
+</div></div>
+
+</div>
+</details>
+
+<details class="sec" open>
+<summary>三、电势与电势梯度</summary>
+<div class="content">
+
+<div class="fml g"><div class="lbl">环路定理 → 保守场 → 可定义电势</div>
+\(\oint \vec{E}\cdot d\vec{l}=0\)</div>
+
+<div class="g2">
+<div class="fml"><div class="lbl">电势定义（标量！）</div>\(U_a=\int_a^{\infty} \vec{E}\cdot d\vec{l}\)</div>
+<div class="fml"><div class="lbl">电势差</div>\(U_{ab}=U_a-U_b=\int_a^b \vec{E}\cdot d\vec{l}\)</div>
+</div>
+
+<div class="fml r"><div class="lbl">电势梯度（场强与电势关系）</div>
+\( \vec{E}=-\nabla U\) · 一维 \(E=-\frac{dU}{dx}\)<br>
+场强指向电势<b>降低最快</b>的方向 · 等势面 ⊥ 电场线</div>
+
+<div class="fml o"><div class="lbl">⚠️ 重要技巧</div>
+电势是<b>标量</b>！能用叠加法就优先用（比矢量叠加简单）<br>
+点电荷：\(U= \frac{q}{4\pi\varepsilon_0 r}\) · 连续体：\(U=\int \frac{dq}{4\pi\varepsilon_0 r}\)</div>
+
+<div class="g2">
+<div class="fml g"><div class="lbl">均匀带电球壳电势</div>壳外：同点电荷<br>壳内：\(U= \frac{q}{4\pi\varepsilon_0 R}\)（常数/等势）</div>
+<div class="fml g"><div class="lbl">均匀带电球体电势</div>体外同球壳，体内 U 是 r 的二次函数</div>
+</div>
+
+<div class="ex"><div class="eh">📌 例题 — 圆环轴线上先求电势再求场强</div><div class="eb">
+<p>半径 R、总电量 q 的均匀带电圆环，求轴线上电势和场强。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans">\(U=\int \frac{dq}{4\pi\varepsilon_0 \sqrt{R^2+x^2}}= \frac{q}{4\pi\varepsilon_0 \sqrt{R^2+x^2}}\)<br>\(E_x=-\frac{dU}{dx}= \frac{qx}{4\pi\varepsilon_0(R^2+x^2)^{3/2}}\) ✅ 与直接积分结果一致</div>
+</div></div>
+
+<div class="qz"><div class="q">🧪 自测：均匀带电球壳内部电势为？</div>
+<label><input type="radio" name="q1" onchange="qcheck(this,'c')">A. 0</label>
+<label><input type="radio" name="q1" onchange="qcheck(this,'c')">B. 随 r 增大</label>
+<label><input type="radio" name="q1" onchange="qcheck(this,'c')">C. 常数（等于表面电势）</label>
+<label><input type="radio" name="q1" onchange="qcheck(this,'c')">D. 随 r 减小</label>
+<div class="fb"></div></div>
+
+</div>
+</details>
+
+<details class="sec" open>
+<summary>四、静电场中的导体</summary>
+<div class="content">
+
+<div class="step"><div class="n">1</div><div class="b"><b>静电平衡条件</b>：内部 \(E_{\text{内}}=0\) · 表面 \(E\perp\) 表面，大小 \(E=\sigma/\varepsilon_0\)</div></div>
+<div class="step"><div class="n">2</div><div class="b"><b>推论</b>：导体是等势体 · 表面是等势面 · 电荷只在表面 · 曲率大处密度大（尖端放电）</div></div>
+<div class="step"><div class="n">3</div><div class="b"><b>表面场强推导</b>：取圆柱高斯面（一端在导体内 E=0）→ \(E\Delta S=\sigma\Delta S/\varepsilon_0\) → \(E=\sigma/\varepsilon_0\)</div></div>
+<div class="step"><div class="n">4</div><div class="b"><b>静电屏蔽</b>：空腔导体内不受外场影响 · 接地后内外完全隔离</div></div>
+
+<div class="ex"><div class="eh">📌 必考 — 同心导体球壳电荷分布</div><div class="eb">
+<p>内球（半径 \(R_1\)）带电 \(Q\)，同心球壳（内 \(R_2\) 外 \(R_3\)）接地。求各区域场强。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans"><b>①</b> 内球电荷分布在表面 \(R_1\) 处<br><b>②</b> 球壳导体内 E=0 → 内表面感应 \(-Q\)<br><b>③</b> 接地 → 外表面电荷流入大地<br><b>④</b> r < \(R_1\)：E=0 | \(R_1\) < r < \(R_2\)：\(E=Q/(4\pi\varepsilon_0 r^2)\) | r > \(R_2\)：E=0</div>
+</div></div>
+
+</div>
+</details>
+
+<details class="sec" open>
+<summary>五、电容与电介质</summary>
+<div class="content">
+
+<div class="g2">
+<div class="fml"><div class="lbl">定义</div>\(C=Q/U\)（法拉 F）</div>
+<div class="fml"><div class="lbl">平行板</div>\(C=\frac{\varepsilon_0 S}{d}\)</div>
+<div class="fml"><div class="lbl">球形</div>\(C=4\pi\varepsilon_0 \frac{R_1 R_2}{R_2-R_1}\)</div>
+<div class="fml"><div class="lbl">圆柱形</div>\(C= \frac{2\pi\varepsilon_0 L}{\ln(R_2/R_1)}\)</div>
+</div>
+
+<div class="fml g"><div class="lbl">串并联</div>串联：\(\frac{1}{C}=\sum\frac{1}{C_i}\)（Q 相等）· 并联：\(C=\sum C_i\)（U 相等）</div>
+
+<div class="fml o"><div class="lbl">电介质</div>
+电位移矢量：\(\vec{D}=\varepsilon_0\varepsilon_r\vec{E}=\varepsilon\vec{E}\)<br>
+介质中高斯定理：\(\oint\vec{D}\cdot d\vec{S}=q_0\)（\(q_0\) 为自由电荷，不含束缚电荷）<br>
+填满介质后：\(C=\varepsilon_r C_0\)</div>
+
+<div class="qz"><div class="q">🧪 自测：平行板电容器填满介质，断开电源后抽出介质——C 和 U 如何变化？</div>
+<label><input type="radio" name="q2" onchange="qcheck(this,'c')">A. C增大 U减小</label>
+<label><input type="radio" name="q2" onchange="qcheck(this,'c')">B. C减小 U不变</label>
+<label><input type="radio" name="q2" onchange="qcheck(this,'c')">C. C减小 U增大</label>
+<label><input type="radio" name="q2" onchange="qcheck(this,'c')">D. C和U都不变</label>
+<div class="fb"></div></div>
+
+</div>
+</details>
+
+<details class="sec" open>
+<summary>六、静电场能量</summary>
+<div class="content">
+
+<div class="fml r"><div class="lbl">电容器储能（三种等价形式）</div>
+$$W=\frac{1}{2}CU^2=\frac{Q^2}{2C}=\frac{1}{2}QU$$
+</div>
+
+<div class="g2">
+<div class="fml g"><div class="lbl">能量密度</div>\(w=\frac{1}{2}\varepsilon E^2\)<br>（适用于任何电场分布）</div>
+<div class="fml g"><div class="lbl">总能量</div>\(W=\int w\,dV=\int \frac{1}{2}\varepsilon E^2\,dV\)</div>
+</div>
+
+<div class="ex"><div class="eh">📌 均匀带电球体的静电自能</div><div class="eb">
+<p>半径 R、总电量 Q 的均匀带电球体，求静电能。</p>
+<button onclick="this.nextElementSibling.classList.toggle('show')">显示解答</button>
+<div class="ans">体内 \(E_1= \frac{Qr}{4\pi\varepsilon_0 R^3}\) · 体外 \(E_2= \frac{Q}{4\pi\varepsilon_0 r^2}\)<br>
+\(W=\int_0^R \frac{1}{2}\varepsilon_0 E_1^2\cdot 4\pi r^2 dr + \int_R^{\infty} \frac{1}{2}\varepsilon_0 E_2^2\cdot 4\pi r^2 dr\)<br>
+\(= \frac{Q^2}{40\pi\varepsilon_0 R}+ \frac{Q^2}{8\pi\varepsilon_0 R}= \frac{3Q^2}{20\pi\varepsilon_0 R}\)</div>
+</div></div>
+
+</div>
+</details>
+
+<details class="sec" open>
+<summary>📝 经典必考题型汇编 <span class="badge" style="background:#fed7aa;color:#ea580c">考前必看</span></summary>
+<div class="content">
+
+<div class="g2">
+<div class="ex" style="margin:6px 0"><div class="eh">题型1 高斯定理求场强</div><div class="eb" style="font-size:.82rem"><b>考法：</b>球壳/球体/柱面/平面<br><b>套路：</b>对称→高斯面→\(ES=q_{\text{内}}/\varepsilon_0\)<br><b>陷阱：</b>球体体内 \(q_{\text{内}}\propto r^3\)！</div></div>
+<div class="ex" style="margin:6px 0"><div class="eh">题型2 补面法求通量</div><div class="eb" style="font-size:.82rem"><b>考法：</b>锥面/半球面电通量<br><b>套路：</b>补面→高斯定理→减补面通量<br><b>补面通量：</b>立体角法 \(\Phi=\frac{q}{4\pi\varepsilon_0}\Omega\)</div></div>
+<div class="ex" style="margin:6px 0"><div class="eh">题型3 电势叠加/梯度</div><div class="eb" style="font-size:.82rem"><b>考法：</b>已知电荷求U，或已知U求E<br><b>技巧：</b>电势是标量，优先用叠加！</div></div>
+<div class="ex" style="margin:6px 0"><div class="eh">题型4 导体综合</div><div class="eb" style="font-size:.82rem"><b>考法：</b>多导体+接地+电荷分布<br><b>三步：</b>电荷守恒+高斯定理+等势条件</div></div>
+<div class="ex" style="margin:6px 0"><div class="eh">题型5 电容+介质</div><div class="eb" style="font-size:.82rem"><b>考法：</b>部分填介质/串并联<br><b>关键：</b>先判断 Q不变还是U不变！</div></div>
+<div class="ex" style="margin:6px 0"><div class="eh">题型6 电场能量</div><div class="eb" style="font-size:.82rem"><b>考法：</b>已知E分布求能量<br><b>公式：</b>\(W=\int\frac{1}{2}\varepsilon E^2 dV\)</div></div>
+</div>
+
+</div>
+</details>
+
+<script>
+function qcheck(radio,correct){
+  var fb=radio.closest('.qz').querySelector('.fb');
+  var ok=radio.value===correct;
+  fb.textContent=ok?'✅ 正确！':'❌ 不对，再想想';
+  fb.className='fb '+(ok?'correct':'wrong');
+}
+</script>
+</body>
+</html>

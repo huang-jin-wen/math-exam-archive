@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第7章 静止电荷的电场 — 习题答案解析</title>
+<style>
+:root {
+    --bg: #f8f9fa;
+    --card-bg: #fff;
+    --text: #2d3436;
+    --muted: #636e72;
+    --border: #e0e0e0;
+    --accent: #0984e3;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, "Segoe UI", "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+.header { text-align: center; padding: 40px 0 24px; }
+.header h1 { font-size: 2em; font-weight: 700; }
+.header p { color: var(--muted); margin-top: 4px; }
+
+.qr-section { background: var(--card-bg); border-radius: 12px; padding: 28px; margin-bottom: 32px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+.qr-section h2 { font-size: 1.3em; margin-bottom: 16px; }
+.qr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 8px; }
+.qr-item { display: flex; align-items: center; justify-content: center; padding: 6px 10px; border-radius: 6px; font-size: .85em; font-weight: 600; background: #f1f2f6; }
+.qr-item .ans { color: var(--accent); }
+
+.solution-card { background: var(--card-bg); border-radius: 12px; margin-bottom: 10px; box-shadow: 0 1px 6px rgba(0,0,0,.04); overflow: hidden; }
+.solution-header { display: flex; align-items: center; padding: 14px 20px; cursor: pointer; user-select: none; transition: background .15s; }
+.solution-header:hover { background: #fafafa; }
+.solution-card.open .solution-header { border-bottom: 1px solid var(--border); }
+.solution-num { font-weight: 700; font-size: 1.05em; min-width: 70px; }
+.solution-title { flex: 1; font-size: .92em; }
+.solution-diff { padding: 2px 10px; border-radius: 10px; font-size: .75em; font-weight: 600; margin: 0 8px; }
+.diff-easy { background: #dfe6e9; color: #00b894; }
+.diff-medium { background: #ffeaa7; color: #e17055; }
+.diff-hard { background: #fab1a0; color: #d63031; }
+.solution-answer { font-weight: 700; color: var(--accent); margin: 0 8px; font-size: .9em; }
+.solution-arrow { color: var(--muted); font-size: .8em; transition: transform .2s; }
+.solution-card.open .solution-arrow { transform: rotate(180deg); }
+.solution-body { display: none; padding: 18px 20px; font-size: .9em; line-height: 1.9; }
+.solution-card.open .solution-body { display: block; }
+.solution-body p { margin-bottom: 8px; }
+.solution-body ul { margin: 4px 0 8px 18px; }
+
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: .78em; margin-right: 4px; }
+.tag-formula { background: #e8f4fd; color: #0984e3; }
+.tag-concept { background: #fff3e0; color: #e17055; }
+.tag-trap { background: #ffe0e0; color: #d63031; }
+
+.section-tabs { display: flex; gap: 8px; margin: 20px 0; flex-wrap: wrap; }
+.section-tab { padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer; font-size: .9em; font-weight: 600; background: var(--card-bg); color: var(--text); transition: all .15s; }
+.section-tab:hover { background: #e8f4fd; }
+.section-tab.active { background: var(--accent); color: #fff; }
+
+.divider { border: none; border-top: 2px solid var(--border); margin: 28px 0; }
+
+.footer { text-align: center; color: var(--muted); font-size: .8em; padding: 30px 0; }
+
+@media (max-width: 600px) {
+    .container { padding: 12px; }
+    .qr-section { padding: 18px; }
+    .qr-grid { grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 4px; }
+    .qr-item { padding: 4px 6px; font-size: .78em; }
+    .solution-header { padding: 10px 14px; }
+    .solution-body { padding: 12px 14px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>第7章 静止电荷的电场</h1>
+    <p>习题答案解析 · 大学物理（普通物理学 第八版 程守洙）</p>
+    <p style="font-size:.85em;margin-top:8px;">选择题20题 + 填空题18题 + 计算题8题</p>
+</div>
+
+<!-- ============== 速查：选择题 ============== -->
+<div class="qr-section" id="quick-mc">
+    <h2>📋 选择题答案速查</h2>
+    <div class="qr-grid">
+<div class="qr-item"><span>1</span><span class="ans">&nbsp;C</span></div>
+<div class="qr-item"><span>2</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>3</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>4</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>5</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>6</span><span class="ans">&nbsp;C</span></div>
+<div class="qr-item"><span>7</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>8</span><span class="ans">&nbsp;A</span></div>
+<div class="qr-item"><span>9</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>10</span><span class="ans">&nbsp;B,C</span></div>
+<div class="qr-item"><span>11</span><span class="ans">&nbsp;B</span></div>
+<div class="qr-item"><span>12</span><span class="ans">&nbsp;C</span></div>
+<div class="qr-item"><span>13</span><span class="ans">&nbsp;B</span></div>
+<div class="qr-item"><span>14</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>15</span><span class="ans">&nbsp;A</span></div>
+<div class="qr-item"><span>16</span><span class="ans">&nbsp;A</span></div>
+<div class="qr-item"><span>17</span><span class="ans">&nbsp;A</span></div>
+<div class="qr-item"><span>18</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>19</span><span class="ans">&nbsp;D</span></div>
+<div class="qr-item"><span>20</span><span class="ans">&nbsp;A</span></div>
+
+    </div>
+</div>
+
+<div class="qr-section" id="quick-fill">
+    <h2>📋 填空题答案速查</h2>
+    <div style="font-size:.88em;line-height:2.2;">
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题1</strong><span>E=q/(4πε₀)·√(1/a²+1/b²)，方向指向空顶点</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题2</strong><span>0；ρ(r³−R₁³)/(3ε₀r²)；ρ(R₂³−R₁³)/(3ε₀r²)</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题3</strong><span>πR²E；0</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题4</strong><span>σ_A=2ε₀E₀/3；σ_B=4ε₀E₀/3</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题5</strong><span>6q/(4πε₀a)；0</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题6</strong><span>变小</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题7</strong><span>q/(4πε₀r)+σR/ε₀</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题8</strong><span>q₁(1/R₁−1/R₂)/(4πε₀)</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题9</strong><span>(q₁+q₂)/(4πε₀R₂)</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题10</strong><span>0；0</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题11</strong><span>处处为零；均匀电场（恒矢量）</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题12</strong><span>(4+√2)q²/(4πε₀L)</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题13</strong><span>R/r；r/R</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题14</strong><span>−2PE cosα</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题15</strong><span>√(qλ/(2πε₀m))</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题16</strong><span>−8.85×10⁻¹⁰ C/m²；负</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题17</strong><span>(Q₁+Q₂)/2S；(Q₁−Q₂)/2S；(Q₂−Q₁)/2S；(Q₁+Q₂)/2S</span></div>
+<div style="display:flex;border-bottom:1px solid #f0f0f0;padding:5px 0;"><strong style="min-width:50px;">题18</strong><span>D=σ；E=σ/(ε₀εᵣ)</span></div>
+
+    </div>
+</div>
+
+<h2 style="margin-bottom:8px;">📖 逐题解析</h2>
+<p style="color:var(--muted);font-size:.85em;margin-bottom:16px;">点击题目展开解析 | ⭐基础 ⭐⭐中等 ⭐⭐⭐较难</p>
+
+<div class="section-tabs">
+    <button class="section-tab active" onclick="expandAll()">📂 展开全部</button>
+    <button class="section-tab" onclick="collapseAll()">📁 收起全部</button>
+    <button class="section-tab" onclick="expandMC()">选择题</button>
+    <button class="section-tab" onclick="expandFill()">填空题</button>
+    <button class="section-tab" onclick="expandCalc()">计算题</button>
+</div>
+
+<h3 style="margin:20px 0 12px;color:var(--muted);font-size:.95em;">一、选择题（第1-20题）</h3>
+
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题1</span>
+    <span class="solution-title">同心球面电场分布（E-r图）</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：C</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-concept">高斯定理</span> 内球(+Q)、外球(-Q)同心，半径R₁&lt;R₂。</p><ul><li><strong>r &lt; R₁</strong>：高斯面内无电荷 → <strong>E = 0</strong></li><li><strong>R₁ &lt; r &lt; R₂</strong>：高斯面内电荷+Q → <strong>E = Q/(4πε₀r²)</strong></li><li><strong>r &gt; R₂</strong>：净电荷0 → <strong>E = 0</strong></li></ul><p>E-r图特征：中间递减，两头为零。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题2</span>
+    <span class="solution-title">闭合曲面内电荷移动</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-trap">易错</span> q从P→T，OP=OT。</p><ul><li><strong>Φ</strong>：只取决于面内总电荷 → <strong>不变</strong></li><li><strong>O点E大小</strong>：OP=OT，距离相同 → E大小<strong>不变</strong></li></ul><p>方向会变，但题目问大小。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题3</span>
+    <span class="solution-title">正方体中心点电荷—单面通量</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-formula">Φ=q/(6ε₀)</span> 六面对称各1/6。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题4</span>
+    <span class="solution-title">E与V的关系</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>E=−∇V。V为常量 → ∇V=0 → E=0。选D。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题5</span>
+    <span class="solution-title">高斯定理理解</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>E处处为零 → Φ=0 → 面内无净电荷。D正确。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题6</span>
+    <span class="solution-title">电势差取决于什么</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：C</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>U=∫E·dl，与路径有关（题目语境下选路径）。与试探电荷和端点场强无关。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题7</span>
+    <span class="solution-title">等势面与场强方向</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>场强方向从高电势指向低电势（E=−∇V的负号体现）。D正确。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题8</span>
+    <span class="solution-title">导体表面电荷分布</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：A</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>曲率越大→电荷密度越大。a点最尖。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题9</span>
+    <span class="solution-title">正电荷在电场中轨迹</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>正电荷受力沿电场线方向，轨迹沿d。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题10</span>
+    <span class="solution-title">空腔导体静电屏蔽</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：B,C</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>(1)腔内场强：屏蔽→<strong>不变(B)</strong></p><p>(2)腔内电势：外部中性导体不影响腔内电势分布→<strong>不变(C)</strong></p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题11</span>
+    <span class="solution-title">孤立导体球内部</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：B</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>静电平衡：E=0，V=恒量(非零)。选B。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题12</span>
+    <span class="solution-title">两电子库仑力—守恒量</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：C</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>无外力→<strong>动量守恒</strong>。动能增、势能减、库仑力变化。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题13</span>
+    <span class="solution-title">电容器断开→充满介质</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：B</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-formula">Q不变</span> W₀=Q²/(2C₀)，C=εᵣC₀→W'=W₀/εᵣ。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题14</span>
+    <span class="solution-title">电容器断开→拉开极板</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-formula">Q不变</span> σ不变→E不变→C=ε₀S/d↓→<strong>U=Ed↑</strong>。选D。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题15</span>
+    <span class="solution-title">正电体移近不带电导体</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：A</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>B处于A的正电势区域→B电势<strong>升高</strong>。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题16</span>
+    <span class="solution-title">负电体靠近+左端接地</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：A</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-trap">接地→V=0</span> 远端负电荷入地，留下净正电荷。选A。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题17</span>
+    <span class="solution-title">点电荷+导体球球心</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：A</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>球心E=0(静电平衡)，V=q/(4πε₀d)(感应电荷对球心电势等效)。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题18</span>
+    <span class="solution-title">串联电容插入介质</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>C₁↑→C总↑(A❌)；串联Q相等(B❌)；U₁↓(C❌)；<strong>W=½CU²↑(D✅)</strong></p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题19</span>
+    <span class="solution-title">平行板插入介质位置</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：D</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>等效三电容串联，位置不同→各层厚度不同→<strong>与位置有关</strong>。有介质总比空气大。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">选择题20</span>
+    <span class="solution-title">电介质中电场强度</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：A</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>A✅：介质充满全场且Q分布不变→E=E₀/εᵣ。B❌：「一定」太绝对。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题1</span>
+    <span class="solution-title">矩形顶点电荷—中心场强</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：指向空顶点</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>三个顶点各q，中心O。两对角顶点对O的场强抵消，剩下一个顶点的场强：</p><p>距离 r=½√(a²+b²)，E=q/(4πε₀r²)，方向指向空顶点。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题2</span>
+    <span class="solution-title">均匀带电球壳三区域场强</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：0; ρ(r³-R₁³)/(3ε₀r²); ρ(R₂³-R₁³)/(3ε₀r²)</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p><span class="tag tag-formula">高斯定理</span> 电荷体密度ρ。</p><ul><li>r&lt;R₁：面内无电荷 → E=0</li><li>R₁&lt;r&lt;R₂：面内电荷 ρ·⁴/₃π(r³−R₁³) → E=ρ(r³−R₁³)/(3ε₀r²)</li><li>r&gt;R₂：面内总电荷 ρ·⁴/₃π(R₂³−R₁³) → E=ρ(R₂³−R₁³)/(3ε₀r²)</li></ul>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题3</span>
+    <span class="solution-title">均匀电场中半球面电通量</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：πR²E; 0</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>半球面在垂直于E方向的投影面积为πR² → 通量=πR²E。</p><p>封闭半球面=半球面+底面圆 → 闭合面内无电荷 → 总通量=0。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题4</span>
+    <span class="solution-title">两无限大带电平面</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：σ_A=2ε₀E₀/3; σ_B=4ε₀E₀/3</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>设σ_A,σ_B。间区：E₀=(σ_A−σ_B)/(2ε₀)（假设…实际取决于符号）。</p><p>外围E₀/3=(σ_A+σ_B)/(2ε₀)。联立解得。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题5</span>
+    <span class="solution-title">正六边形顶点电荷</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：6q/(4πε₀a); 0</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>六个顶点各q，中心O到各顶点距离=a。</p><p>V=6q/(4πε₀a)。由对称性，E=0（六方向抵消）。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题6</span>
+    <span class="solution-title">挖去同心圆盘后圆心电势</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：变小</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>挖去带电部分→圆心处电荷贡献减少→<strong>电势变小</strong>。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题7</span>
+    <span class="solution-title">球面带电+球心点电荷</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：q/(4πε₀r)+σR/ε₀</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>叠加原理：球心q贡献V₁=q/(4πε₀r)；球面σ贡献V₂=σ·4πR²/(4πε₀R)=σR/ε₀。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题8</span>
+    <span class="solution-title">两同心球面间电势差</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：q₁(1/R₁−1/R₂)/(4πε₀)</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>U₁₂=V₁−V₂=q₁/(4πε₀R₁)−q₁/(4πε₀R₂)。外球q₂对两球面电势贡献相同，抵消。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题9</span>
+    <span class="solution-title">两同心球壳导线连接</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：(q₁+q₂)/(4πε₀R₂)</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>导线连接→等势。电荷全部分布在外表面→等效为半径R₂带总电荷q₁+q₂。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题10</span>
+    <span class="solution-title">对称圆弧电荷圆心场强与电势</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：0; 0</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>正负λ对称→场强抵消→E=0。电势代数和→+λ与−λ贡献等大异号→V=0。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题11</span>
+    <span class="solution-title">电势为恒量/线性变化→场强</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：处处为零; 均匀电场</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>E=−∇V。V=恒量→∇V=0→E=0。V线性变化→∇V=常数→E为恒矢量（均匀电场）。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题12</span>
+    <span class="solution-title">四点电荷置于正方形顶点做功</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-answer">答案：(4√2+2)q²/(4πε₀L)</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>外力做功=系统电势能。四条边各一对(q²/(4πε₀L))，两条对角线各一对(q²/(4πε₀·√2L))。</p><p>W=(4+2/√2)·q²/(4πε₀L)=(4+√2)q²/(4πε₀L)。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题13</span>
+    <span class="solution-title">两球形导体电容比与面密度比</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：R/r; r/R</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>孤立球电容C=4πε₀R → C_R/C_r=R/r。</p><p>导线连接→等势：Q_R/(4πε₀R)=Q_r/(4πε₀r)→Q∝R→σ=Q/(4πR²)→σ_R/σ_r=r/R。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题14</span>
+    <span class="solution-title">电偶极子在电场中转过180°做功</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：−2PEcosα</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>力矩做功=∫τdθ。初始势能U₀=−PEcosα，转过180°后U₁=−PEcos(α+π)=PEcosα。</p><p>A=−ΔU=−(U₁−U₀)=−2PEcosα。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题15</span>
+    <span class="solution-title">带电质点在无限长带电直线场中圆周运动</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-answer">答案：√(qλ/(2πε₀m))</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>无限长直线E=λ/(2πε₀r)。质点匀速圆周运动：qE=mv²/r。</p><p>q·λ/(2πε₀r)=mv²/r → v=√(qλ/(2πε₀m))。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题16</span>
+    <span class="solution-title">地球表面电荷面密度</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-answer">答案：−8.85×10⁻¹⁰ C/m²; 负</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>E=σ/ε₀（无限大平面近似）→σ=ε₀E=8.85×10⁻¹²×100=8.85×10⁻¹⁰ C/m²。</p><p>E垂直向下→地面带<strong>负</strong>电。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题17</span>
+    <span class="solution-title">两导体平板四表面电荷面密度</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-answer">答案：(Q₁+Q₂)/2S; (Q₁−Q₂)/2S; (Q₂−Q₁)/2S; (Q₁+Q₂)/2S</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>静电平衡+电荷守恒。设σ_A,σ_B,σ_C,σ_D。导体内部E=0条件+总电荷守恒联立。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">填空题18</span>
+    <span class="solution-title">介质中D和E</span>
+    <span class="solution-diff diff-easy">⭐</span>
+    <span class="solution-answer">答案：D=σ; E=σ/(ε₀εᵣ)</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>D的高斯定理：D=σ(自由电荷面密度)。E=D/(ε₀εᵣ)=σ/(ε₀εᵣ)。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题1</span>
+    <span class="solution-title">均匀带电线段延长线上场强与电势</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>L=15cm,λ=5×10⁻⁹C/m,d=5cm。</p><p><strong>场强</strong>：dE=λdx/(4πε₀(d+x)²)，积分x从0到L。</p><p>E=λ/(4πε₀)·(1/d−1/(d+L))=λL/(4πε₀·d(d+L))</p><p><strong>电势</strong>：dV=λdx/(4πε₀(d+x))，V=λ/(4πε₀)·ln((d+L)/d)</p><p>代入数值计算。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题2</span>
+    <span class="solution-title">圆弧形带电棒圆心场强</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>R=50cm，d=2cm≪R，Q=3.12×10⁻⁹C。</p><p>近完整圆弧，总弧长约2πR=314cm，缺2cm→电荷分布约完整圆的99.4%。</p><p>对称性：圆心处场强来自缺口对面那段弧的贡献（其余对称抵消）。</p><p>用dE=λRdθ/(4πε₀R²)积分，或等效为缺口处"缺失电荷"贡献的反向场强。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题3</span>
+    <span class="solution-title">无限大非均匀带电平板</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>ρ=kx(0≤x≤a)。由对称性，板外场强均匀，方向垂直板面。</p><p><strong>(1)板外</strong>：用高斯定理，单位面积总电荷∫₀ᵃρdx=∫₀ᵃkxdx=ka²/2。</p><p>E_外=(ka²/2)/(2ε₀)=ka²/(4ε₀)。M₁和M₂大小相等方向相反。</p><p><strong>(2)板内</strong>：x处高斯面内电荷∫₀ˣktdt=kx²/2。E_内=kx²/(2ε₀)。</p><p><strong>(3)</strong>E_内=kx²/(2ε₀)在x=0处最小→E=0。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题4</span>
+    <span class="solution-title">点电荷电场中圆形平面的E通量</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>用立体角法。圆形平面对点电荷A所张立体角Ω=2π(1−cosθ)，cosθ=d/√(d²+R²)。</p><p>Φ=qΩ/(4πε₀)=q/(2ε₀)·(1−d/√(d²+R²))。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题5</span>
+    <span class="solution-title">均匀带电球内挖小球</span>
+    <span class="solution-diff diff-hard">⭐⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>用补偿法（叠加原理）。等效为：完整大球(+ρ)+小球区域叠加(−ρ)。</p><p>P和P'的场强=大球贡献+小球贡献的矢量和。</p><p>大球：E₁=ρr/(3ε₀)；小球位置：E₂=−ρ(r−a)/(3ε₀)（a为两球心距）。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题6</span>
+    <span class="solution-title">均匀带电球体内电势(r&lt;R)</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>Q均匀分布球内。球内场强E=Qr/(4πε₀R³)。</p><p>V(r)=∫ᵣ∞Edr=∫ᵣᴿ(Qr/(4πε₀R³))dr+∫ᴿ∞(Q/(4πε₀r²))dr</p><p>=Q(3R²−r²)/(8πε₀R³)。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题7</span>
+    <span class="solution-title">均匀带电薄圆盘轴线上电势与场强</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>R=8cm,σ=2×10⁻⁵C/m²。</p><p><strong>电势</strong>：V=σ/(2ε₀)·(√(x²+R²)−|x|)。</p><p><strong>场强</strong>：E=−dV/dx=σ/(2ε₀)·(1−x/√(x²+R²))（x>0时）。</p><p>x=6cm时代入数值。</p>
+</div>
+</div>
+<div class="solution-card">
+<div class="solution-header" onclick="this.parentElement.classList.toggle('open')">
+    <span class="solution-num">计算题8</span>
+    <span class="solution-title">两同心球面电势分布</span>
+    <span class="solution-diff diff-medium">⭐⭐</span>
+    <span class="solution-arrow">▼</span>
+</div>
+<div class="solution-body">
+<p>R₁,R₂各带Q₁,Q₂。</p><ul><li>r&lt;R₁：V=Q₁/(4πε₀R₁)+Q₂/(4πε₀R₂)</li><li>R₁&lt;r&lt;R₂：V=Q₁/(4πε₀r)+Q₂/(4πε₀R₂)</li><li>r&gt;R₂：V=(Q₁+Q₂)/(4πε₀r)</li></ul><p>U₁₂=V(R₁)−V(R₂)=Q₁/(4πε₀)(1/R₁−1/R₂)。</p>
+</div>
+</div>
+<h3 style="margin:20px 0 12px;color:var(--muted);font-size:.95em;">三、计算题（第1-8题）</h3>
+<p style="color:var(--muted);font-size:.85em;margin-bottom:16px;">计算题为推导性解答，建议先独立完成再对照。</p>
+
+<div class="footer">
+    <p>由 AI 辅助整理 · 仅供学习参考</p>
+    <p>大学物理教学中心 ©</p>
+</div>
+
+</div>
+
+<script>
+function expandAll() {
+    document.querySelectorAll('.solution-card').forEach(c => c.classList.add('open'));
+}
+function collapseAll() {
+    document.querySelectorAll('.solution-card').forEach(c => c.classList.remove('open'));
+}
+function expandMC() {
+    collapseAll();
+    let found = false;
+    document.querySelectorAll('.solution-card').forEach(c => {
+        if (c.querySelector('.solution-num').textContent.includes('选择')) { c.classList.add('open'); found = true; }
+        else if (found && c.querySelector('.solution-num').textContent.includes('填空')) return;
+    });
+}
+function expandFill() {
+    collapseAll();
+    let found = false;
+    document.querySelectorAll('.solution-card').forEach(c => {
+        if (c.querySelector('.solution-num').textContent.includes('填空')) { c.classList.add('open'); found = true; }
+        else if (found && c.querySelector('.solution-num').textContent.includes('计算')) return;
+    });
+}
+function expandCalc() {
+    collapseAll();
+    let found = false;
+    document.querySelectorAll('.solution-card').forEach(c => {
+        if (c.querySelector('.solution-num').textContent.includes('计算')) { c.classList.add('open'); found = true; }
+    });
+}
+</script>
+
+</body>
+</html>
