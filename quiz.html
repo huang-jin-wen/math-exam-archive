@@ -25,9 +25,9 @@
 <label style="display:flex;align-items:center;gap:4px;cursor:pointer;font-size:.85em;color:#666;white-space:nowrap"><input type="checkbox" id="sfCb" style="width:auto;margin:0">🔀 选项乱序</label>
 </div>
 <div class="cm" id="cm">
-<span class="cmt" onclick="toggleChapterPanel()">📋 多选章节 ▸</span>
+<button type="button" class="cmt" onclick="toggleChapterPanel()">📋 多选章节 ▸</button>
 <div class="cmp" id="cmp" style="display:none">
-<span class="cpl" onclick="selectAllChapters()">全选</span><span class="cpl" onclick="deselectAllChapters()">清除</span>
+<button type="button" class="cpl" onclick="selectAllChapters()">全选</button><button type="button" class="cpl" onclick="deselectAllChapters()">清除</button>
 <div class="cml" id="cml"></div>
 </div>
 </div>
@@ -45,9 +45,9 @@
 </div>
 <div id="qa"><div class="em"><p>👆 选择条件，点击「抽题」开始</p><p class="ec" id="totalInfo"></p></div></div>
 <div class="ab" id="ab" style="display:none">
-<button class="bt bt-o" onclick="prevQuestion()">⬅ 上一题</button>
-<button class="bt bt-p" onclick="nextQuestion()">下一题 ➡</button>
-<button class="bt bt-d" onclick="resetQuiz()">🔄 重新抽题</button>
+<button class="bt bt-o" id="prevButton" onclick="prevQuestion()">⬅ 上一题</button>
+<button class="bt bt-p" id="nextButton" onclick="nextQuestion()">下一题 ➡</button>
+<button class="bt bt-d mobile-secondary" onclick="resetQuiz()">🔄 重新抽题</button>
 </div>
 </div>
 <script src="assets/js/quiz.js"></script>

@@ -269,7 +269,8 @@ function buildChapterUI() {
     opt.textContent = display;
     cf.appendChild(opt);
 
-    const chip = document.createElement('span');
+    const chip = document.createElement('button');
+    chip.type = 'button';
     chip.className = 'chi';
     chip.textContent = ch;
     chip.title = display;
@@ -669,7 +670,16 @@ function renderQuestion() {
     optionHTML + feedbackHTML +
     '</div>';
 
+  updateNavigationButtons();
   updateStats();
+}
+
+function updateNavigationButtons() {
+  const prevButton = getEl('prevButton');
+  const nextButton = getEl('nextButton');
+  if (!prevButton || !nextButton) return;
+  prevButton.disabled = currentIndex === 0;
+  nextButton.disabled = currentIndex === questionPool.length - 1;
 }
 
 /* ===== 判断题渲染 ===== */
@@ -683,9 +693,10 @@ function renderTrueFalse(i, answered) {
     return '';
   };
   const disabled = answered ? 'di' : '';
+  const disabledAttr = answered ? ' disabled' : '';
   return '<div class="jo">' +
-    '<div class="jb ' + btnClass('√') + ' ' + disabled + '" onclick="answerQuestion(' + i + ',\'√\')">✅ 正确</div>' +
-    '<div class="jb ' + btnClass('X') + ' ' + disabled + '" onclick="answerQuestion(' + i + ',\'X\')">❌ 错误</div>' +
+    '<button type="button" class="jb ' + btnClass('√') + ' ' + disabled + '" onclick="answerQuestion(' + i + ',\'√\')"' + disabledAttr + '>✅ 正确</button>' +
+    '<button type="button" class="jb ' + btnClass('X') + ' ' + disabled + '" onclick="answerQuestion(' + i + ',\'X\')"' + disabledAttr + '>❌ 错误</button>' +
     '</div>';
 }
 
@@ -757,9 +768,9 @@ function renderOptionText(text) {
 
   // \n 换行格式（预嵌缩进，跳过 autoIndentPython）
   if (text.includes('\n') && PY_CODE_RE.test(text)) {
-    return '<div class="oc">' + text.split('\n').map(function(l) {
+    return '<span class="oc">' + text.split('\n').map(function(l) {
       return '<code>' + highlightPython(l) + '</code>';
-    }).join('\n') + '</div>';
+    }).join('\n') + '</span>';
   }
 
   // ; 分隔格式（旧格式，需 autoIndentPython 推断缩进）
@@ -768,9 +779,9 @@ function renderOptionText(text) {
   var hasCode = parts.some(function(p) { return PY_CODE_RE.test(p); });
   if (!hasCode) return escapeHTML(text);
   var rawCode = parts.map(function(l) { return l.trim(); }).join('\n');
-  return '<div class="oc">' + autoIndentPython(rawCode).split('\n').map(function(l) {
+  return '<span class="oc">' + autoIndentPython(rawCode).split('\n').map(function(l) {
     return '<code>' + highlightPython(l) + '</code>';
-  }).join('\n') + '</div>';
+  }).join('\n') + '</span>';
 }
 
 function renderOptions(i, answered) {
@@ -799,12 +810,12 @@ function renderOptions(i, answered) {
     }
     if (answered) cls += ' di';
 
-    const click = answered ? '' : 'onclick="answerQuestion(' + i + ',\'' + o.label + '\')"';
-    html += '<div class="oi ' + cls + '" ' + click + '>' +
-      '<div class="ol">' + o.label + '</div>' +
-      '<div class="ot">' + renderOptionText(o.text) +
+    const click = answered ? ' disabled' : ' onclick="answerQuestion(' + i + ',\'' + o.label + '\')"';
+    html += '<button type="button" class="oi ' + cls + '"' + click + '>' +
+      '<span class="ol">' + o.label + '</span>' +
+      '<span class="ot">' + renderOptionText(o.text) +
       (answered && o.note ? ' <span style="color:#999;font-size:.9em">（' + escapeHTML(o.note) + '）</span>' : '') +
-      '</div></div>';
+      '</span></button>';
   });
   html += '</div>';
   return html;
@@ -928,33 +939,6 @@ function prevQuestion() {
     if (qc) qc.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
-
-/* ===== 快速点击（移动端 300ms 延迟优化） ===== */
-(function() {
-  let target = null, startX = 0, startY = 0;
-  const CLICKABLE = ['BUTTON', 'A'];
-  document.addEventListener('touchstart', e => {
-    target = e.target;
-    startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
-  }, true);
-  document.addEventListener('touchend', e => {
-    if (!target) return;
-    const tag = target.tagName;
-    const cls = target.className || '';
-    const isClickable = CLICKABLE.includes(tag) ||
-      cls.includes('oi') || cls.includes('jb') || cls.includes('chi');
-    if (isClickable) {
-      const dx = e.changedTouches[0].clientX - startX;
-      const dy = e.changedTouches[0].clientY - startY;
-      if (Math.abs(dx) < 10 && Math.abs(dy) < 10) {
-        e.preventDefault();
-        target.click();
-      }
-    }
-    target = null;
-  }, true);
-})();
 
 /* ===== 键盘快捷键 ===== */
 document.addEventListener('keydown', e => {
