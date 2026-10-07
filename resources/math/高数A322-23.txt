@@ -1,0 +1,80 @@
+诚信提示
+ 
+诚信关乎个人一生，公平竞争赢得尊重。
+以下是严重作弊行为，学校将给予留校察看或开除学籍处分：1.替他人考试或由他人替考；2.通讯工具作弊；3.团伙作弊。
+ 
+中国矿业大学 2022-2023 学年第二学期课程考试试卷
+ 
+考试科目：高等数学A（3）
+试卷类型：A卷
+课程代码：M10853
+考试时长：100分钟
+考试方式：闭卷
+开课学院：数学学院
+年级专业：2022级
+ 
+ 
+ 
+一、填空题（共5题，每小题4分，满分20分）
+ 
+1. 平行于向量\boldsymbol{a}=(6,7,-6)的两个单位向量是________。
+2. 设向量\boldsymbol{a}=(2,1,2),\boldsymbol{b}=(4,-1,10),\boldsymbol{c}=\boldsymbol{b}-\lambda\boldsymbol{a}，且\boldsymbol{a}\perp\boldsymbol{c}，则\lambda=________。
+3. 函数z = \ln(2 + x^2 + y^2)在点(1,2)处的全微分是________。
+4. 函数u = \ln\left(x + \sqrt{y^2 + z^2}\right)在点(1,0,1)处沿方向\boldsymbol{l}=(2,-2,1)的方向导数是________。
+5. 曲面e^z - z + xy = 3在点(2,1,0)处的切平面方程是________。
+ 
+ 
+ 
+二、单项选择题（共5题，每小题4分，满分20分）
+ 
+6. 函数z=f(x,y)在点(x,y)可微分是函数在该点的偏导数\frac{\partial z}{\partial x},\frac{\partial z}{\partial y}存在的（  ）。
+（A）充分条件；（B）必要条件；（C）充分必要条件；（D）以上都不是。
+7. 平面x+2y+z+1=0与2x+y-z+2=0的夹角为（  ）。
+（A）\pi/6；（B）\pi/4；（C）\pi/2；（D）\pi/3。
+8. 下列关于二次曲面的结论错误的是（  ）。
+（A）z + 2x^2 + y^2 = 0 表示椭圆抛物面；
+（B）x^2 + 2y^2 = 1 + 3z^2表示双叶双曲面；
+（C）x^2 + y^2 - (z-1)^2 = 0 表示圆锥面；
+（D）y^2 = 5x表示抛物柱面。
+9. 设下列二重积分都存在，则关于二重积分的性质错误的是（  ）。
+（A）\iint\limits_D \left(f(x,y)-g(x,y)\right)d\sigma=\iint\limits_D f(x,y)d\sigma-\iint\limits_D g(x,y)d\sigma；
+（B）\iint\limits_D \alpha f(x,y)d\sigma=\alpha\iint\limits_D f(x,y)d\sigma，其中\alpha是常数；
+（C）\iint\limits_D f(x,y)d\sigma=\iint\limits_{D_1} f(x,y)d\sigma+\iint\limits_{D_2} f(x,y)d\sigma，其中D=D_1\cup D_2；
+（D）\iint\limits_D 1d\sigma=S，其中S是D的面积。
+10. 设D=\{(x,y)\mid -a \leq x \leq a,\ x \leq y \leq a\},\ E=\{(x,y)\mid 0 \leq x \leq a,\ x \leq y \leq a\}，则\iint\limits_D (xy + \cos x \sin y)dxdy=（  ）。
+（A）2\iint\limits_E \cos x \sin y\ dxdy；
+（B）2\iint\limits_E xy\ dxdy；
+（C）4\iint\limits_E (xy + \cos x \sin y)dxdy；
+（D）0。
+ 
+ 
+ 
+三、解答题（共7题，满分60分）
+ 
+11.（9分）设y=y(x),z=z(x)是由方程组
+$\begin{cases}
+x^2 + 2y^2 - z = 0 \
+x^2 + y^2 + 3z^2 = 30
+\end{cases}$
+所确定，求\displaystyle \frac{dy}{dx},\frac{dz}{dx}。
+ 
+12.（9分）设z = f(x-y,\ x+y,\ xy)，其中f具有二阶连续偏导数，求\displaystyle \frac{\partial z}{\partial x}和\displaystyle \frac{\partial^2 z}{\partial x\partial y}。
+ 
+13.（9分）设\Omega:\ x^2+y^2+z^2 \leq 1，计算三重积分
+\iiint\limits_{\Omega} \left(x^2 - x^2y + xy + y^2\right)dv。
+ 
+14.（9分）设平面区域D:\ x^2+y^2 \leq 2x,\ x \leq y，计算二重积分\iint\limits_D y\ d\sigma。
+ 
+15.（9分）求函数f(x,y)=x^3+y^3-3(x^2+y^2)的极值。
+ 
+16.（9分）求曲线x=t,\ y=-t^2,\ z=t^3在t=1对应点处的切线方程，并求原点到该切线的距离。
+ 
+17.（6分）设二元函数z=f(x,y)有连续偏导数，且在单位圆周上的值为0，记D=\{(x,y)\mid 0 < t^2 \leq x^2+y^2 \leq 1\}。
+证明：
+ 
+
+\lim_{t \to 0^+} \iint\limits_D \frac{xf_x(x,y)+yf_y(x,y)}{x^2+y^2}d\sigma = -2\pi f(0,0)
+
+ 
+ 
+ 

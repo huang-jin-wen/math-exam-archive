@@ -1,0 +1,33 @@
+/* 全站通用的白色简约设计变量与基础交互规则。 */
+:root {
+  color-scheme: light;
+  --ui-bg: #f7f8fa;
+  --ui-surface: #ffffff;
+  --ui-surface-soft: #f5f7fa;
+  --ui-text: #1f2937;
+  --ui-muted: #6b7280;
+  --ui-border: #e5e7eb;
+  --ui-primary: #2563eb;
+  --ui-primary-hover: #1d4ed8;
+  --ui-shadow: 0 4px 18px rgba(15, 23, 42, .06);
+  --ui-shadow-hover: 0 10px 28px rgba(15, 23, 42, .10);
+}
+
+html { scroll-behavior: smooth; }
+body { text-rendering: optimizeLegibility; }
+button, input, select { font: inherit; }
+a, button, select, input { -webkit-tap-highlight-color: transparent; }
+
+:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .32);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

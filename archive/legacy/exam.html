@@ -233,7 +233,7 @@ function loadExam() {
   if (!subj) return;
   document.getElementById('content').innerHTML = '<div class="loading"><div class="spinner"></div> 加载中…</div>';
   document.getElementById('examName').textContent = subj + ' - 练习';
-  fetch('data/'+subj+'.json')
+  fetch('../../data/'+subj+'.json')
     .then(function(r){return r.json();})
     .then(function(data){
       questions = data;

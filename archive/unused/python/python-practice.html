@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="../../../assets/css/site-base.css">
 <title>Python 实践刷题</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -77,7 +78,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;b
 <div class="status-bar" id="statusBar"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
 <script>
 /* ===== 题库 ===== */
 const questions = [
@@ -210,19 +210,68 @@ const questions = [
 let currentIndex = 0;
 let userCodes = new Array(13).fill('');
 let results = new Array(13).fill(null);  // null/pass/fail
-let pyodide = null;
+let runnerWorker = null;
+let runnerReady = false;
+let runnerLoadError = false;
+let runnerBusy = false;
+let runSequence = 0;
 
 function $(id){return document.getElementById(id)}
 
-/* ===== Pyodide 初始化 ===== */
-async function initPyodide(){
-  if(pyodide) return pyodide;
-  $('runBtn').disabled = true;
-  $('runBtn').textContent = '加载中...';
-  pyodide = await loadPyodide({indexURL:"https://cdn.jsdelivr.net/pyodide/v0.26.4/full/"});
-  $('runBtn').disabled = false;
-  $('runBtn').textContent = '运行 ▶';
-  return pyodide;
+/* ===== Python 独立运行线程 ===== */
+function updateRunButton(){
+  const button = $('runBtn');
+  if(!button) return;
+  button.disabled = !runnerReady || runnerBusy;
+  button.textContent = runnerLoadError ? '加载失败' : runnerBusy ? '运行中...' : runnerReady ? '运行 ▶' : '加载中...';
+}
+
+function startRunner(){
+  if(runnerWorker) runnerWorker.terminate();
+  runnerReady = false;
+  runnerLoadError = false;
+  runnerBusy = false;
+  runnerWorker = new Worker('python-runner.worker.js');
+  runnerWorker.addEventListener('message', event => {
+    if(event.data.type === 'ready'){
+      runnerReady = true;
+      updateRunButton();
+    }else if(event.data.type === 'load-error'){
+      runnerLoadError = true;
+      updateRunButton();
+    }
+  });
+  runnerWorker.addEventListener('error', () => {
+    runnerLoadError = true;
+    updateRunButton();
+  });
+  updateRunButton();
+}
+
+function runInWorker(code, examples){
+  return new Promise((resolve, reject) => {
+    const id = ++runSequence;
+    const timeout = setTimeout(() => {
+      runnerWorker.removeEventListener('message', handleMessage);
+      runnerWorker.terminate();
+      runnerWorker = null;
+      runnerReady = false;
+      startRunner();
+      reject(new Error('运行超过 5 秒，已自动终止。请检查是否存在死循环。'));
+    }, 5000);
+
+    function handleMessage(event){
+      const message = event.data || {};
+      if(message.id !== id) return;
+      clearTimeout(timeout);
+      runnerWorker.removeEventListener('message', handleMessage);
+      if(message.type === 'result') resolve(message.outputs);
+      else reject(new Error(message.message || 'Python 运行失败'));
+    }
+
+    runnerWorker.addEventListener('message', handleMessage);
+    runnerWorker.postMessage({ type: 'run', id, code, examples });
+  });
 }
 
 /* ===== 渲染题目 ===== */
@@ -278,6 +327,7 @@ function renderQ(){
   $('nextBtn').disabled = currentIndex===12;
   renderStatusBar();
   updateLN();
+  updateRunButton();
 }
 
 /* ===== 行号同步 ===== */
@@ -297,6 +347,7 @@ function updateLN(){
 /* ===== 运行代码 ===== */
 async function runCode(){
   saveCode();
+  const runIndex = currentIndex;
   const q = questions[currentIndex];
   const code = userCodes[currentIndex];
   const outArea = $('outputArea');
@@ -307,41 +358,19 @@ async function runCode(){
     return;
   }
 
-  outArea.className = 'output show';
-  outArea.innerHTML = '<span class="info">运行中...（请勿写死循环，如需中断请刷新页面）</span>';
-
-  // 简单死循环检测
-  if(/while\s+True\s*:/.test(code) && !/break/.test(code)){
-    outArea.innerHTML = '<span class="fail">⚠ 检测到 while True 且无 break，疑似死循环，请检查代码后再运行</span>';
+  if(!runnerReady){
+    outArea.className = 'output show';
+    outArea.innerHTML = '<span class="info">Python 运行环境仍在加载，请稍后再试。</span>';
     return;
   }
 
-  try{
-    await initPyodide();
+  outArea.className = 'output show';
+  outArea.innerHTML = '<span class="info">运行中...（超过 5 秒将自动终止）</span>';
+  runnerBusy = true;
+  updateRunButton();
 
-    // 逐用例运行：每个用例作为独立一次执行
-    let allOutputs = [];
-    let allPass = true;
-    const inputs = q.examples.map(e=>e.input).filter(i=>i!=='');
-    
-    if(inputs.length === 0){
-      // 无输入题（如水仙花数）——直接跑一次
-      let output = '';
-      pyodide.setStdout({batched:(s)=>{output+=s+'\n'}});
-      await pyodide.runPythonAsync(code);
-      output = output.trim();
-      allOutputs.push({input:'', output, expected:q.examples[0].output});
-    } else {
-      for(let ti=0; ti<q.examples.length; ti++){
-        const ex = q.examples[ti];
-        let output = '';
-        pyodide.setStdout({batched:(s)=>{output+=s+'\n'}});
-        pyodide.setStdin({stdin:()=>ex.input});
-        await pyodide.runPythonAsync(code);
-        output = output.trim();
-        allOutputs.push({input:ex.input, output, expected:ex.output});
-      }
-    }
+  try{
+    const allOutputs = await runInWorker(code, q.examples);
 
     // 汇总结果
     const actualJoined = allOutputs.map(r=>r.output).join('\n');
@@ -350,12 +379,12 @@ async function runCode(){
     const normExp = expectedJoined.replace(/\s+/g,' ').trim();
 
     if(normOut === normExp){
-      results[currentIndex] = 'pass';
+      results[runIndex] = 'pass';
       outArea.innerHTML = '<span class="pass">✓ 全部通过！</span>\n' + allOutputs.map(r=>{
         return '<span class="info">输入 '+escapeH(r.input||'(无)')+' → </span><span class="pass">'+escapeH(r.output)+'</span>';
       }).join('\n');
     } else {
-      results[currentIndex] = 'fail';
+      results[runIndex] = 'fail';
       outArea.innerHTML = '<span class="fail">✗ 未通过</span>\n' + allOutputs.map(r=>{
         const ok = r.output.replace(/\s+/g,' ').trim() === r.expected.replace(/\s+/g,' ').trim();
         const cls = ok ? 'pass' : 'fail';
@@ -364,8 +393,11 @@ async function runCode(){
       }).join('\n');
     }
   }catch(e){
-    results[currentIndex] = 'error';
+    results[runIndex] = 'error';
     outArea.innerHTML = '<span class="fail">✗ 运行错误</span>\n' + escapeH(e.message||String(e));
+  }finally{
+    runnerBusy = false;
+    updateRunButton();
   }
 
   renderStatusBar();
@@ -407,7 +439,7 @@ function renderStatusBar(){
 
 /* ===== 启动 ===== */
 renderQ();
-initPyodide();
+startRunner();
 </script>
 </body>
 </html>
