@@ -16,13 +16,15 @@
 <a class="page-back" href="index.html">← 返回学习小站</a>
 <div class="h"><h1 id="quizTitle">题库练习</h1><p id="quizSubtitle">加载中...</p></div>
 <div class="ct">
-<label>章节</label><select id="cf"><option value="all">全部</option></select>
-<label>题型</label><select id="tf"><option value="all">全部</option></select>
-<label>数量</label><input type="number" id="ci" value="10" min="1" max="999" style="width:60px">
+<div class="control-field"><label for="cf">章节</label><select id="cf"><option value="all">全部</option></select></div>
+<div class="control-field"><label for="tf">题型</label><select id="tf"><option value="all">全部</option></select></div>
+<div class="control-field"><label for="ci">数量</label><input type="number" id="ci" value="10" min="1" max="999"></div>
+<div class="control-actions">
 <button class="bt bt-p" onclick="drawQuestions()">🎲 抽题</button>
 <button class="bt bt-o" id="wrongBookButton" onclick="startWrongPractice()">错题本（0）</button>
 <button class="bt bt-o" onclick="resetQuiz()">🔄 重置</button>
-<label style="display:flex;align-items:center;gap:4px;cursor:pointer;font-size:.85em;color:#666;white-space:nowrap"><input type="checkbox" id="sfCb" style="width:auto;margin:0">🔀 选项乱序</label>
+<label class="shuffle-control"><input type="checkbox" id="sfCb">🔀 选项乱序</label>
+</div>
 </div>
 <div class="cm" id="cm">
 <button type="button" class="cmt" onclick="toggleChapterPanel()">📋 多选章节 ▸</button>
